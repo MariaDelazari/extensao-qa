@@ -2,12 +2,12 @@
 
 ### 📌 1. **Identificação**
 
-* **Nome do Projeto**: OrangeHRM - Sistema de Gestão de Recursos Humanos
-* **Versão Avaliada**: Demo pública
-* **Ambiente de Testes**: [https://opensource-demo.orangehrmlive.com](https://opensource-demo.orangehrmlive.com)
-* **Tipo de Teste**: Teste Funcional Manual
-* **Data do Documento**: xx/xx/xxxx
-* **Responsável**: Aluno aplicado que ama aprender 
+- **Nome do Projeto**: OrangeHRM - Sistema de Gestão de Recursos Humanos
+- **Versão Avaliada**: Demo pública
+- **Ambiente de Testes**: [https://opensource-demo.orangehrmlive.com](https://opensource-demo.orangehrmlive.com)
+- **Tipo de Teste**: Teste Funcional Manual
+- **Data do Documento**: xx/xx/xxxx
+- **Responsável**: Aluno aplicado que ama aprender.
 
 ---
 
@@ -21,55 +21,55 @@ Realizar a verificação manual dos principais requisitos funcionais do sistema 
 
 **Incluído:**
 
-* Autenticação de usuário
-* Dashboard inicial
-* Gestão de funcionários (PIM)
-* Férias (Leave)
-* Recrutamento
-* Administração (Admin)
-* Controle de ponto (Time)
-* Diretório e relatórios
+- Autenticação de usuário
+- Dashboard inicial
+- Gestão de funcionários (PIM)
+- Férias (Leave)
+- Recrutamento
+- Administração (Admin)
+- Controle de ponto (Time)
+- Diretório e relatórios
 
 **Excluído:**
 
-* Testes de integração com sistemas externos (não disponíveis na demo)
-* Testes em dispositivos móveis
-* Testes de performance ou carga
+- Testes de integração com sistemas externos (não disponíveis na demo)
+- Testes em dispositivos móveis
+- Testes de performance ou carga
 
 ---
 
 ### 🔧 4. **Ferramentas Utilizadas**
 
-* Navegador Google Chrome / Firefox / Brave
-* Ferramentas de inspeção do navegador (DevTools)
-* Google Sheets ou Excel (registro de casos e evidências)
-* Captura de tela (Snipping Tool ou Lightshot)
+- Navegador Google Chrome / Firefox / Brave
+- Ferramentas de inspeção do navegador (DevTools)
+- Google Sheets ou Excel (registro de casos e evidências)
+- Captura de tela (Snipping Tool ou Lightshot)
 
 ---
 
 ### 🧪 5. **Técnicas de Teste**
 
-* Particionamento de equivalência
-* Análise de valor limite
-* Caminho feliz (Happy Path)
-* Testes negativos
-* Testes exploratórios
+- Particionamento de equivalência
+- Análise de valor limite
+- Caminho feliz (Happy Path)
+- Testes negativos
+- Testes exploratórios
 
 ---
 
 ### 📄 6. **Critérios de Aceitação**
 
-* Todos os casos de teste devem passar com sucesso, conforme o resultado esperado.
-* Nenhuma falha crítica deve estar presente em funcionalidades principais.
-* Mensagens de erro e validações devem ser consistentes.
+- Todos os casos de teste devem passar com sucesso, conforme o resultado esperado.
+- Nenhuma falha crítica deve estar presente em funcionalidades principais.
+- Mensagens de erro e validações devem ser consistentes.
 
 ---
 
 ### 🚦 7. **Critérios de Saída (Exit Criteria)**
 
-* Todos os testes do escopo foram executados.
-* Falhas foram registradas, analisadas e reexecutadas se necessário.
-* Documentação de evidências de sucesso e falhas está completa.
+- Todos os testes do escopo foram executados.
+- Falhas foram registradas, analisadas e reexecutadas se necessário.
+- Documentação de evidências de sucesso e falhas está completa.
 
 ---
 
@@ -104,14 +104,14 @@ Realizar a verificação manual dos principais requisitos funcionais do sistema 
 
 ### 🐞 10. **Gestão de Defeitos**
 
-* Bugs serão documentados com:
+- Bugs serão documentados com:
+  - Título
+  - Descrição
+  - Passos para reproduzir
+  - Evidência (print ou vídeo)
+  - Gravidade (Crítica, Alta, Média, Baixa)
 
-  * Título
-  * Descrição
-  * Passos para reproduzir
-  * Evidência (print ou vídeo)
-  * Gravidade (Crítica, Alta, Média, Baixa)
-* Ferramenta sugerida: Trello (para simulação)
+- Ferramenta sugerida: Trello (para simulação)
 
 ---
 
@@ -127,9 +127,9 @@ Realizar a verificação manual dos principais requisitos funcionais do sistema 
 
 ### 📁 12. **Entregáveis**
 
-* Plano de Testes (.md ou .pdf)
-* Casos de Teste (.md ou planilha)
-* Evidências de Execução (prints organizados por RF)
-* Registro de Bugs (se houver)
-* Registro de Melhoria (se houver)
-* Relatório Final de Execução
+- Plano de Testes (.md ou .pdf)
+- Casos de Teste (.md ou planilha)
+- Evidências de Execução (prints organizados por RF)
+- Registro de Bugs (se houver)
+- Registro de Melhoria (se houver)
+- Relatório Final de Execução
