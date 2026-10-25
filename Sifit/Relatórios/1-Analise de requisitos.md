@@ -32,3 +32,18 @@
 
 ---
 
+### 🔐 RF03 - Validação dos Campos Obrigatórios no Login
+
+**Descrição:** O sistema deve exigir o preenchimento dos campos de nome de usuário e senha antes de realizar a autenticação.
+
+**Funcionalidades esperadas:**
+
+- Identificar quando o campo de nome de usuário estiver vazio.
+- Identificar quando o campo de senha estiver vazio.
+- Impedir o envio da requisição de login enquanto houver campos obrigatórios não preenchidos.
+- Informar ao usuário quais campos precisam ser preenchidos.
+
+**Resultado esperado:** O sistema deve impedir a tentativa de login com os campos obrigatórios vazios e apresentar mensagens claras na interface, orientando o usuário a preencher os dados necessários.
+
+---
+
