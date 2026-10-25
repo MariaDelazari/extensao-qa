@@ -2,9 +2,13 @@
 
 **Software:** Sifit Centrion
 
+**Versão:** Sifit Centrion e Sifit Unialfa
+
+**Ambiente:** Sifit Centrion até 23/10/2026. A partir de 24/10/2026, https://sifitalfa.centrion.com.br/
+
 **QA responsável:** Maria Eduarda Pacheco Delazari
 
-**Data:** 12.10.26
+**Data:** 12.10.26. Em 24/10/2026, os testes continuaram no Sifit Unialfa.
 
 ---
 
