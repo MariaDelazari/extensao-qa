@@ -7,7 +7,8 @@
 
 * Sistema operacional: Ubuntu 26.04 LTS
 * Navegador: Google Chrome 150.0.7871.46
-* URL: https://sifitalfa.centrion.com.br/profile a partir de 24/10/2026. A URL usada antes dessa data não foi anotada.
+* URL até dia 23/10/2026 : https://sifit.centrion.com.br/
+* URL a partir do dia 24/10/2026: https://sifitalfa.centrion.com.br/ 
 
 ---
 
