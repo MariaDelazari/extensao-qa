@@ -8,7 +8,7 @@
 
 ---
 
-### 🐞 **Bug 01: Falha no login ao inserir espaços extras nas credenciais válidas**
+###  ✅🐞 **Bug 01: Falha no login ao inserir espaços extras nas credenciais válidas**
 
 | **ID**  | **Descrição**                                                                                                                                                            |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -30,15 +30,16 @@
 |---|---|
 |O sistema deve tratar os espaços extras no início e no final dos campos de credenciais adequadamente, permitindo o login quando os dados informados forem válidos.|O sistema pode rejeitar as credenciais e impedir o login quando são inseridos espaços extras nos campos, mesmo que os dados estejam corretos.|
 
-|**Ambiente**|
-|---|
-|Ambiente de testes.|
-|Aplicação web.|
-|Navegador utilizado durante o teste.|
+| **Ambiente**                |
+| --------------------------- |
+| Ambiente de testes.         |
+| Desktop Ubuntu 26.04 LTS.   |
+| Google Chrome 150.0.7871.46 |
+| Sifit Centrion              |
 
-|**Funcionalidade Afetada**|**Caso de Teste Relacionado**|
-|---|---|
-|Login / Autenticação|Caso de teste de login com credenciais válidas contendo espaços extras.|
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado**                                     |
+| -------------------------- | ----------------------------------------------------------------- |
+| Login / Autenticação       | C01-CT01:  login com credenciais válidas contendo espaços extras. |
 
 | **Evidência(s)**                                                 |
 | ---------------------------------------------------------------- |
@@ -48,7 +49,7 @@
 
 
 ---
-### 🐞 **Bug 02: Link "Esqueci minha senha" não funciona** 
+### ✅ 🐞 **Bug 02: Link "Esqueci minha senha" não funciona** 
 
 | **ID**  | **Descrição**                                                                                                                                                         |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -69,11 +70,12 @@
 | -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | O sistema deve direcionar o usuário para a página de recuperação de senha. | Ao clicar no link, nenhum redirecionamento é realizado e o usuário permanece na tela de login. |
 
-|**Ambiente**|
-|---|
-|Navegador Google Chrome.|
-|Aplicação web.|
-|Tela de login.|
+| **Ambiente**                |
+| --------------------------- |
+| Ambiente de testes.         |
+| Desktop Ubuntu 26.04 LTS.   |
+| Google Chrome 150.0.7871.46 |
+| Sifit Centrion              |
 
 | **Funcionalidade Afetada**   | **Caso de Teste Relacionado**                              |
 | ---------------------------- | ---------------------------------------------------------- |
