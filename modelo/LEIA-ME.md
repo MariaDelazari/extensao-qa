@@ -4,7 +4,7 @@ Este texto é para quem vai ajudar e não estava na aula. Ele explica o que entr
 
 A pasta `OrangeHRM` é o exemplo do professor. Ela serve só para copiar o formato. Não altere nada dentro dela.
 
-A pasta `Sifit` é o trabalho de verdade. É lá que entram os textos, os casos e os bugs do sistema testado.
+A pasta `Sifit` é o meu trabalho. É nela que entram os textos, os casos e os bugs do sistema que eu testei.
 
 A pasta `modelo` é só este guia. Os arquivos em `modelo/exemplo-de-arquivos` mostram o formato vazio. Não coloque resultado real neles.
 
@@ -12,7 +12,7 @@ A pasta `modelo` é só este guia. Os arquivos em `modelo/exemplo-de-arquivos` m
 
 O trabalho é um teste manual de um sistema web. A pessoa entra no site, usa as telas, grava o que aconteceu e escreve isso em Markdown.
 
-Não é para programar o sistema. Não é para inventar o que a tela deveria fazer se ninguém viu isso. O texto descreve o que foi observado.
+O documento descreve e evidencia oq foi observado.
 
 Cada coisa que foi testada e tem vídeo vira um caso de teste. Cada coisa que quebrou vira um bug, também com vídeo. No fim, um relatório conta quantos casos passaram, quantos falharam e quantos bugs foram abertos.
 
@@ -31,7 +31,7 @@ Faça nesta ordem. Cada passo usa o anterior.
 
 ## Onde fica cada arquivo
 
-No Sifit a organização ficou assim:
+No meu Sifit a organização ficou assim:
 
 ```
 Sifit/
@@ -43,15 +43,16 @@ Sifit/
   Cenarios de testes/
     CT_RF01_ Login na plataforma.md
     CT_RF02_ Página inicial do dashboard.md
+    ...
 ```
 
 O nome do caso tem um espaço depois do código: `CT_RF01_ Login na plataforma.md`. O relatório final também tem um espaço: `4- Relatorio dos testes.md`. Esse espaço está no exemplo do professor. Mantenha.
 
-No OrangeHRM esses quatro relatórios ficam direto na pasta do sistema, sem a pasta `Relatórios`. No Sifit eles foram agrupados em `Relatórios`. Siga a pasta do Sifit quando for continuar este trabalho.
+No OrangeHRM esses quatro relatórios ficam direto na pasta do sistema, sem a pasta `Relatórios`. No meu trabalho a pasta Sifit eles foram agrupados em `Relatórios`. 
 
 ## O que cada arquivo responde
 
-**1. Análise de requisitos.** O que o sistema deve fazer. Cada requisito ganha um código RF01, RF02, e assim por diante. Em cada um: uma descrição, o que se espera ver, e o resultado esperado. Escreva só o que a tela ou a aula mostraram. Se o sistema não tem uma lista oficial de requisitos, deixe isso claro no texto. Não crie regra nova para completar a lista.
+**1. Análise de requisitos.** O que o sistema deve fazer. Cada requisito ganha um código RF01, RF02, e assim por diante. Em cada um: uma descrição, o que se espera ver, e o resultado esperado. Escreva só oq a tela ou a aula mostraram. 
 
 **2. Plano de testes.** Como o teste vai ser feito. Nome do sistema, ambiente, datas, o que está incluído, o que está fora, ferramentas e riscos. O plano não substitui o caso nem o bug. Ele só diz o recorte.
 
@@ -95,17 +96,17 @@ Um caso termina com `---`. O próximo caso começa abaixo.
 
 ## Vídeo e nome no Jam
 
-Grave no Jam. Cada caso executado recebe um link. No caso, o link se chama `[Vídeo](https://jam.dev/c/...)`.
+Grave no Jam. Cada caso executado precisa de um link. Esse link entra como evidência de que o critério de aceitação foi demonstrado. No caso, ele fica assim: `[Vídeo](https://jam.dev/c/...)`.
 
-No bug, o mesmo tipo de link muda de nome para a ordem do bug: `[BUG:01](https://jam.dev/c/...)`, `[BUG:02](https://jam.dev/c/...)`. Não use a palavra Vídeo no bug.
+No bug, a lógica é a mesma: cada bug recebe o link do Jam. O que muda no meu trabalho é o nome do link. Eu uso a ordem do bug, e não a palavra Vídeo: `[BUG:01](https://jam.dev/c/...)`, `[BUG:02](https://jam.dev/c/...)`. (esse foi o meu padrão de organização em nomear os bugs)
 
-Título do vídeo no Jam, no mesmo padrão dos que já existem:
+O título que eu uso no Jam:
 
-- Caso: `✅ 01 - Login com credenciais válidas`
-- Bug: `✅ 01 - [BUG] Login: Credenciais válidas com espaço a mais`
-- Mais de uma falha no mesmo vídeo: `[BUGS]`, no plural
+- Caso: `01 - Login com credenciais válidas`
+- Bug: `01 - [BUG] Login: Credenciais válidas com espaço a mais`
+- Quando o mesmo vídeo mostra mais de uma falha: `[BUGS]`, no plural
 
-A descrição do vídeo diz o que a pessoa fez e o que a tela mostrou. Uma ou duas frases. Se um número, um nome ou uma mensagem importam, escreva o que apareceu na tela.
+Na descrição eu conto o que eu fiz e o que a tela mostrou. Uma ou duas frases bastam. Se aparecer um número, um nome ou uma mensagem importante, eu escrevo exatamente o que estava na tela.
 
 O número do caso e o número do bug podem coincidir. O `[BUG]` é o que diferencia os dois.
 
@@ -142,40 +143,26 @@ Até 23/10/2026 os testes foram em https://sifit.centrion.com.br/.
 
 A partir de 24/10/2026 o professor pediu para continuar em https://sifitalfa.centrion.com.br/. Esse endereço é o Sifit Unialfa.
 
-Quando anotar um vídeo, diga em qual dos dois endereços ele foi gravado. Não troque um pelo outro.
+Se você for começar agora, use só o Sifit Unialfa: https://sifitalfa.centrion.com.br/. Não precisa repetir o que já foi feito no endereço antigo.
 
-Login usado nos testes: `marcelo_zandonadi`. A senha do primeiro endereço, anotada no caso C01-CT01, é `12345678`. No Unialfa a senha informada para o reteste foi `Password`. Se o login não entrar, registre a mensagem da tela. Não invente outro usuário.
+O login dos testes é `marcelo_zandonadi`.
+
+No primeiro endereço, a senha anotada no caso C01-CT01 é `12345678`.
+
+No [sifitalfa](https://sifitalfa.centrion.com.br/), a senha do reteste é `Password`.
 
 ## O que não fazer durante o teste
 
-Olhar a tela e abrir um detalhe faz parte do teste. Confirmar uma ação que muda dado de aluno, de dinheiro ou de mensagem não faz.
+Olhar a tela e abrir um detalhe faz parte do teste.
 
-Não clique para concluir:
-
-- Cobrar agora, Enviar mensagem, Abrir WhatsApp, Cobrar todos no WhatsApp
-- Solicitar saque, Nova cobrança
-- Gerar relatório e baixar arquivo
-- Aprovar ou recusar post
-- Salvar cadastro, salvar configuração, registrar check-in
-
-Pode abrir a janela, ler os valores e fechar. O bug descreve o que já estava na tela.
-
-## Linguagem
-
-Escreva em português, como se estivesse explicando para alguém que vai repetir o teste amanhã.
-
-Uma frase diz uma coisa. Use o nome que está na tela, entre aspas quando for texto literal. Exemplo: a saudação mostrou "Boa tarde, Jair!".
-
-Não use a palavra “deve” para esconder uma hipótese. Se você viu, diga que viu. Se não viu, diga que não deu para confirmar.
 
 ## Commit
 
 Depois de um conjunto fechado de mudanças, faça um commit. A mensagem diz por que a mudança existe, em uma frase. Exemplo: `Registra a falha do card de avaliações pendentes.`
 
-Não reescreva o histórico. Não faça push, a menos que peçam.
 
 ## Onde olhar quando travar
 
-- Formato das tabelas e dos nomes: pasta `OrangeHRM`.
-- Trabalho já feito, com vídeo de verdade: pasta `Sifit`.
-- Arquivo vazio para copiar a estrutura: pasta `modelo/exemplo-de-arquivos`.
+- Formato das tabelas, dos nomes e o exemplo que o professor trouxe: pasta `OrangeHRM`.
+- Meu trabalho em andamento, com os vídeos reais: pasta `Sifit`.
+- Arquivos vazios para copiar a estrutura e usar como base: pasta `modelo/exemplo-de-arquivos`.
