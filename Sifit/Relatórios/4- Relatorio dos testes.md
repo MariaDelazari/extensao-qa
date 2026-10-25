@@ -2,12 +2,12 @@
 
 **Sistema testado:** Sifit Centrion
 **Responsável:** Maria Eduarda Pacheco Delazari
-**Data de execução:** 12.10.26
-**Ambiente:** ambiente de testes
+**Data de execução:** 12/10/2026. A partir de 24/10/2026, os testes continuaram em outro endereço.
+**Ambiente:** Sifit Centrion até 23/10/2026. Depois disso, https://sifitalfa.centrion.com.br/
 
 * Sistema operacional: Ubuntu 26.04 LTS
 * Navegador: Google Chrome 150.0.7871.46
-* URL: não informada nos registros
+* URL: https://sifitalfa.centrion.com.br/ a partir de 24/10/2026. A URL usada antes dessa data não foi anotada.
 
 ---
 
@@ -78,4 +78,4 @@ Os casos C01-CT01 e C01-CT02 têm vídeos próprios. Os casos C01-CT03 a C01-CT0
 
 O login com credenciais válidas não gerou defeito registrado. As outras verificações falharam. Senha incorreta responde com erro 500, em vez de uma mensagem de autenticação. Campos vazios seguem para a API sem aviso na tela. Espaços nas pontas das credenciais válidas derrubam o login. O link "Esqueci minha senha" não sai da tela. "Manter conectado" pede a senha de novo no retorno, e mesmo assim o `/dashboard` abre sem sessão válida.
 
-A versão do sistema e a URL do ambiente não foram anotadas. Na próxima execução, esses dois dados precisam entrar no relatório de bugs.
+A versão do sistema não foi anotada. A URL usada até 23/10/2026 também não. Em 24/10/2026, o professor pediu para continuar os testes em https://sifitalfa.centrion.com.br/.

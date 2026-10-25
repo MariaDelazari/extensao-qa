@@ -272,7 +272,7 @@
 | Ambiente de testes |
 | Desktop Ubuntu 26.04 LTS |
 | Google Chrome 150.0.7871.46 |
-| sifitalfa.centrion |
+| https://sifitalfa.centrion.com.br/ |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 |---|---|

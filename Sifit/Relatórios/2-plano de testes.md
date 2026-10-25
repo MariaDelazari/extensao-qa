@@ -4,7 +4,7 @@
 
 - **Nome do Projeto**: Sifit Centrion
 - **Versão Avaliada**: não informada nos registros de execução
-- **Ambiente de Testes**: ambiente de testes do Sifit Centrion
+- **Ambiente de Testes**: Sifit Centrion. Em 24/10/2026, o professor pediu para continuar os testes em https://sifitalfa.centrion.com.br/
 - **Tipo de Teste**: Teste funcional manual
 - **Data do Documento**: 12/10/2026
 - **Responsável**: Maria Eduarda Pacheco Delazari
@@ -81,7 +81,7 @@ Verificar o login do Sifit Centrion: acesso com credenciais válidas, rejeição
 | Registro e Report de Bugs   | 12/10/2026     | 12/10/2026     |
 | Encerramento e Evidências   | 12/10/2026     | 12/10/2026     |
 
-A única data escrita nos registros é 12.10.26, no relatório de bugs. As datas de planejamento e de escrita dos casos não foram anotadas.
+A execução registrada no relatório de bugs começa em 12/10/2026. Em 24/10/2026, os testes passaram para https://sifitalfa.centrion.com.br/. As datas de planejamento e de escrita dos casos não foram anotadas.
 
 ---
 
