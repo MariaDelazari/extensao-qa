@@ -3,7 +3,7 @@
 ### 📌 1. **Identificação**
 
 - **Nome do Projeto**: Sifit Centrion
-- **Versão Avaliada**: não informada nos registros de execução
+- **Versão Avaliada**: Sifit Centrion e Sifit Unialfa
 - **Ambiente de Testes**: Sifit Centrion. Em 24/10/2026, o professor pediu para continuar os testes em https://sifitalfa.centrion.com.br/
 - **Tipo de Teste**: Teste funcional manual
 - **Data do Documento**: 12/10/2026
