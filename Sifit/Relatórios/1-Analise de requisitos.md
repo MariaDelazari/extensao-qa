@@ -90,3 +90,18 @@
 
 ---
 
+### 🔐 RF07 - Controle de Acesso às Áreas Autenticadas
+
+**Descrição:** O sistema deve permitir o acesso ao dashboard somente quando o usuário possuir uma sessão válida e estiver autenticado.
+
+**Funcionalidades esperadas:**
+
+- Validar a autenticação do usuário ao acessar áreas restritas.
+- Verificar a validade da sessão antes de permitir o acesso ao dashboard.
+- Impedir o acesso a áreas autenticadas quando o usuário não possuir uma sessão válida.
+- Aplicar a validação de acesso mesmo quando o usuário inserir diretamente a URL `/dashboard` na barra de endereços do navegador.
+- Redirecionar usuários não autenticados à tela de login.
+
+**Resultado esperado:** O sistema deve permitir o acesso ao dashboard somente para usuários autenticados com uma sessão válida, independentemente de acessarem a área pela navegação da interface ou diretamente pela URL.
+
+---
