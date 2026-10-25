@@ -440,3 +440,39 @@
 | [BUG:11](https://jam.dev/c/4f672eb2-1483-4e93-8181-cea811350409) |
 
 
+---
+
+### 🐞 **Bug 12: O campo de senha não deixa ver o que foi digitado**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-012 | Na tela de login, o campo de senha não tem ícone nem outra opção para mostrar os caracteres. A pessoa não consegue conferir a senha antes de clicar em Entrar. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Abrir a tela de login. |
+| 2. Clicar no campo de senha. |
+| 3. Digitar uma senha. |
+| 4. Procurar um ícone ou botão para mostrar o que foi digitado. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O campo deve ter um controle para mostrar e esconder a senha, para a pessoa conferir o que digitou antes de entrar. | A senha fica oculta o tempo todo. Não há controle para exibi-la. |
+
+| **Ambiente** |
+|---|
+| Sifit Centrion |
+| Desktop com Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Login / Campo de senha | C01-CT01: Login com credenciais válidas. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:12](https://jam.dev/c/1c6d4e56-7c8b-43d3-9134-c3bde64d0d80) |
