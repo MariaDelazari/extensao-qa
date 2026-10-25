@@ -240,3 +240,44 @@
 | **Evidência(s)** |
 |---|
 | [BUG:06](https://jam.dev/c/070f284b-e3a2-4514-8fe3-4290f33d77ee) |
+
+
+---
+
+### 🐞 **Bug 07: Inconsistência na identificação do usuário e na autenticação**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-007 | Ao tentar realizar o login com o usuário `marcelo_zandonadi`, o sistema exibe a mensagem "O nome de usuário e senha não correspondem", impedindo a autenticação. Na mesma gravação, é exibido o perfil de um usuário identificado como Jair, porém não há informação visível no perfil que permita confirmar se esse nome está associado ao login utilizado na tentativa de autenticação. Dessa forma, não é possível confirmar a correspondência entre o usuário informado no login e o perfil apresentado no sistema. |
+
+| **Severidade** | **Prioridade** | **Status** |
+|---|---|---|
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Acessar a tela de login do sistema Sifit Centrion. |
+| 2. Informar o usuário `marcelo_zandonadi` e a senha da conta de teste. |
+| 3. Clicar no botão "Entrar". |
+| 4. Verificar a mensagem apresentada pelo sistema após a tentativa de autenticação. |
+| 5. Acessar o perfil exibido na gravação e verificar os dados disponíveis sobre a identificação do usuário. |
+| 6. Verificar se existe alguma informação que relacione o nome apresentado no perfil ao nome de usuário utilizado no login. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O sistema deve permitir a autenticação quando as credenciais forem válidas e apresentar informações que permitam identificar corretamente o usuário autenticado. | A tentativa de login com `marcelo_zandonadi` é rejeitada com a mensagem "O nome de usuário e senha não correspondem". O perfil exibido posteriormente apresenta o nome Jair, mas não há informação visível que confirme sua relação com o login utilizado. |
+
+| **Ambiente** |
+|---|
+| Ambiente de testes |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| Sifit Centrion |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Login / Autenticação / Identificação do usuário | C02-CT01: Abrir a página inicial depois do login. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:07](https://jam.dev/c/ca20044a-89b1-4723-b121-2863cfb8d4a7). |
