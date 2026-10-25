@@ -82,5 +82,5 @@ A identificação da causa raiz é uma etapa essencial no processo de garantia d
 
 Ao encontrar um bug, o QA não deve apenas registrá-lo, mas também investigar sua origem. A causa raiz pode estar em erros de lógica no código, falhas de validação, má comunicação entre equipes, requisitos mal definidos ou até inconsistências no ambiente de teste. Ferramentas como 5 Porquês, Diagrama de Ishikawa ou análise de logs podem ser utilizadas para essa investigação.
 
-Identificar corretamente a causa raiz permite que os desenvolvedores corrijam o erro de forma precisa e que o time evite retrabalhos, contribuindo para entregas mais estáveis, eficientes e com menor custo.
+Identificar corretamente a causa raiz permite que os desenvolvedores corrijam o erro de forma precisa e que o time evite retrabalhos, contribuindo para entregas mais estáveis, eficientes e com menor custo..
 
