@@ -285,3 +285,158 @@
 | **Evidência(s)** |
 |---|
 | [BUG:07](https://jam.dev/c/ca20044a-89b1-4723-b121-2863cfb8d4a7) |
+
+---
+
+### 🐞 **Bug 08: Radar de Evasão mostra a faixa errada de alunos**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-008 | No Sifit Unialfa, o detalhe "Radar de Evasão" informa no rodapé que está exibindo os alunos 3 a 4 de um total de 4. A tabela visível no mesmo quadro lista quatro alunos. O botão "Exportar relatório" é acionado várias vezes na gravação, sem mensagem de confirmação. |
+
+| **Severidade** | **Prioridade** | **Status** |
+|---|---|---|
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar em https://sifitalfa.centrion.com.br/dashboard. |
+| 2. Abrir o detalhe dos alunos em risco de evasão. |
+| 3. Conferir o rodapé "Exibindo..." e a quantidade de linhas da tabela. |
+| 4. Clicar em "Exportar relatório". |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O rodapé deve indicar a faixa real de linhas visíveis. O exportar deve gerar o relatório ou avisar se não foi possível. | Em 25/10/2026, o rodapé aparece como "Exibindo 3 a 4 de 4 alunos em risco", com quatro linhas na tabela. A gravação não mostra o arquivo exportado nem um aviso. O Jam desse vídeo não trouxe registro de rede, então não dá para afirmar que a requisição deixou de sair. |
+
+| **Ambiente** |
+|---|
+| https://sifitalfa.centrion.com.br/dashboard |
+| Linux |
+| Google Chrome 150.0.7871.46 |
+| 25/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Página inicial / Radar de Evasão | C02-CT02: Conferir os cards do resumo da academia. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:08](https://jam.dev/c/fa584de0-d641-465a-a2b3-d0a311bc1c5a) |
+
+---
+
+### 🐞 **Bug 09: Cobrança e perfil de Rafael Santos não fecham com a lista**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-009 | Na cobrança de Rafael Santos pelo WhatsApp, a tela mostra mensalidade de R$ 350,00 e multa de R$ 1,00, mas o total atualizado é R$ 375,59. A mensagem pronta repete esse total. Na mesma gravação, a lista de clientes mostra o aluno 398 com plano Treino Personal e status ATIVO, e o perfil dele mostra "Sem matrícula" e "Sem registros". |
+
+| **Severidade** | **Prioridade** | **Status** |
+|---|---|---|
+| Alta | Alta | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar em https://sifitalfa.centrion.com.br/dashboard. |
+| 2. Abrir a cobrança de Rafael Santos, vencimento 12/05/2026. |
+| 3. Comparar valor, multa e total atualizado na janela "Cobrar via WhatsApp". |
+| 4. Abrir Clientes, localizar o código 398 e entrar em Visualizar Cliente. |
+| 5. Comparar plano e matrícula da lista com os do perfil. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O total da cobrança deve ser a soma dos valores apresentados, ou a tela deve mostrar a parcela que falta. O plano e a matrícula do perfil devem ser os mesmos da lista. | O total fica em R$ 375,59, e a multa exibida é R$ 1,00. A lista diz Treino Personal e ATIVO. O perfil diz Sem matrícula, 0/3 aulas e sem registros. O vencimento visto no perfil é 08/07/2026. |
+
+| **Ambiente** |
+|---|
+| https://sifitalfa.centrion.com.br/dashboard |
+| Linux |
+| Google Chrome 150.0.7871.46 |
+| 25/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Página inicial / Cobrança e cadastro do aluno | C02-CT04: Ver as ações recomendadas sem disparar mensagem. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:09](https://jam.dev/c/cca56c7a-000b-43b7-9fb8-2012e445ee9a) |
+
+---
+
+### 🐞 **Bug 10: Card de valor em aberto não confere com o detalhe**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-010 | Na página inicial do Sifit Unialfa, o card mostra R$ 200,00 em aberto. Ao abrir "Financeiro em Aberto", o total exibido é R$ 450,00. A linha de Rafael Santos mostra R$ 350,00 e um acréscimo de R$ 100,00. |
+
+| **Severidade** | **Prioridade** | **Status** |
+|---|---|---|
+| Alta | Alta | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar em https://sifitalfa.centrion.com.br/dashboard. |
+| 2. Anotar o valor do card "em aberto". |
+| 3. Abrir o detalhe Financeiro em Aberto. |
+| 4. Comparar o total do detalhe, a quantidade de alunos em atraso e o valor da linha de Rafael Santos. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O total do detalhe deve ser o mesmo valor do card, e a soma das linhas deve explicar esse total. | O card mostra R$ 200,00. O detalhe mostra R$ 450,00, com 2 alunos em atraso e 8 mensalidades. A linha visível de Rafael Santos está em R$ 350,00, com +R$ 100,00. |
+
+| **Ambiente** |
+|---|
+| https://sifitalfa.centrion.com.br/dashboard |
+| Linux |
+| Google Chrome 150.0.7871.46 |
+| 25/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Página inicial / Mensalidades em aberto | C02-CT02: Conferir os cards do resumo da academia. C02-CT05: Conferir movimento, mensalidades, agenda, entradas e aniversariantes. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:10](https://jam.dev/c/63ec10f5-e5b6-4150-a1f6-8e0c1978f806) |
+
+---
+
+### 🐞 **Bug 11: Card de avaliações pendentes não confere com a lista**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-011 | Na página inicial do Sifit Unialfa, o card mostra 0 avaliações pendentes. Ao abrir o filtro Pendente, a tela Avaliações lista registros com status PENDENTE, entre eles os códigos 79, 67, 66 e 52. O resumo "Avaliação no Mês" mostra 2. |
+
+| **Severidade** | **Prioridade** | **Status** |
+|---|---|---|
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar em https://sifitalfa.centrion.com.br/dashboard. |
+| 2. Anotar o número do card de avaliações pendentes. |
+| 3. Abrir https://sifitalfa.centrion.com.br/avaliacoes?status=pendente. |
+| 4. Comparar o card, o resumo "Avaliação no Mês" e as linhas com status PENDENTE. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O card deve mostrar a mesma quantidade de avaliações pendentes que a lista filtrada. | O card mostra 0. A lista filtrada exibe avaliações PENDENTE, e o resumo do mês mostra 2. |
+
+| **Ambiente** |
+|---|
+| https://sifitalfa.centrion.com.br/avaliacoes?status=pendente |
+| Linux |
+| Google Chrome 150.0.7871.46 |
+| 25/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Página inicial / Avaliações | C02-CT06: Abrir as avaliações pendentes pelo card. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:11](https://jam.dev/c/4f672eb2-1483-4e93-8181-cea811350409) |
+
+
