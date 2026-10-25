@@ -273,10 +273,10 @@
 
 | **Ambiente** |
 |---|
-| Ambiente de testes |
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
 | Desktop Ubuntu 26.04 LTS |
 | Google Chrome 150.0.7871.46 |
-| https://sifitalfa.centrion.com.br/ |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 |---|---|
@@ -311,8 +311,9 @@
 
 | **Ambiente** |
 |---|
+| Sifit Unialfa |
 | https://sifitalfa.centrion.com.br/dashboard |
-| Linux |
+| Desktop Ubuntu 26.04 LTS |
 | Google Chrome 150.0.7871.46 |
 | 25/10/2026 |
 
@@ -350,8 +351,9 @@
 
 | **Ambiente** |
 |---|
+| Sifit Unialfa |
 | https://sifitalfa.centrion.com.br/dashboard |
-| Linux |
+| Desktop Ubuntu 26.04 LTS |
 | Google Chrome 150.0.7871.46 |
 | 25/10/2026 |
 
@@ -388,8 +390,9 @@
 
 | **Ambiente** |
 |---|
+| Sifit Unialfa |
 | https://sifitalfa.centrion.com.br/dashboard |
-| Linux |
+| Desktop Ubuntu 26.04 LTS |
 | Google Chrome 150.0.7871.46 |
 | 25/10/2026 |
 
