@@ -280,7 +280,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 |---|---|
-| Login / Autenticação / Identificação do usuário | C01-CT01: Login com credenciais válidas. C03-CT02: Ver o usuário logado no topo. |
+| Login / Autenticação / Identificação do usuário | C01-CT01: Login com credenciais válidas. C02-CT01: Abrir a página inicial depois do login. |
 
 | **Evidência(s)** |
 |---|
@@ -357,7 +357,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 |---|---|
-| Página inicial / Cobrança e cadastro do aluno | C02-CT04: Ver as ações recomendadas sem disparar mensagem. |
+| Página inicial / Cobrança e cadastro do aluno | C02-CT02: Conferir os cards do resumo da academia. |
 
 | **Evidência(s)** |
 |---|
@@ -395,7 +395,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 |---|---|
-| Página inicial / Mensalidades em aberto | C02-CT02: Conferir os cards do resumo da academia. C02-CT05: Conferir movimento, mensalidades, agenda, entradas e aniversariantes. |
+| Página inicial / Mensalidades em aberto | C02-CT02: Conferir os cards do resumo da academia. |
 
 | **Evidência(s)** |
 |---|
@@ -433,7 +433,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 |---|---|
-| Página inicial / Avaliações | C02-CT06: Abrir as avaliações pendentes pelo card. |
+| Página inicial / Avaliações | C02-CT03: Abrir as avaliações pendentes pelo card. |
 
 | **Evidência(s)** |
 |---|

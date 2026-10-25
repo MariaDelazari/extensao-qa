@@ -54,94 +54,11 @@
 
 ---
 
-### Caso de Teste 03: Conferir a inteligência de retenção.
-
-| ID       | Descrição                                                                       |
-| :------- | :------------------------------------------------------------------------------ |
-| C02-CT03 | O bloco de retenção mostra risco, saúde da academia e a data da última análise. |
-
-| **Pré-condições**                          |
-| :----------------------------------------- |
-| A página inicial `/dashboard` está aberta. |
-
-| **Passos**                                                                               |
-| :--------------------------------------------------------------------------------------- |
-| **DADO** que estamos na página inicial                                                   |
-| **QUANDO** localizamos o bloco Inteligência de Retenção                                  |
-| **ENTÃO** a tela mostra Alto risco, Médio risco, Baixo risco e o bloco SAÚDE DA ACADEMIA |
-| **E** mostra a última análise e o link Ver análise completa                              |
-
-| **Critérios de aceitação**                                                           |
-| :----------------------------------------------------------------------------------- |
-| O bloco de retenção fica visível, com os três níveis de risco e a saúde da academia. |
-
-| **Evidência(s)**                              |
-| :-------------------------------------------- |
-| [Vídeo](https://jam.dev/c/COLE_O_CODIGO_AQUI) |
-
----
-
-### Caso de Teste 04: Ver as ações recomendadas sem disparar mensagem.
-
-| ID       | Descrição                                                            |
-| :------- | :------------------------------------------------------------------- |
-| C02-CT04 | As ações do dia aparecem, e os botões de cobrança não são acionados. |
-
-| **Pré-condições**                          |
-| :----------------------------------------- |
-| A página inicial `/dashboard` está aberta. |
-
-| **Passos**                                                                            |
-| :------------------------------------------------------------------------------------ |
-| **DADO** que estamos na página inicial                                                |
-| **QUANDO** localizamos Ações recomendadas para hoje                                   |
-| **ENTÃO** a tela mostra as ações de cobrança, de contato com inativos e de avaliações |
-| **E** não clicamos em Cobrar agora, Enviar mensagem nem Cobrar todos no WhatsApp      |
-
-| **Critérios de aceitação**                                       |
-| :--------------------------------------------------------------- |
-| As ações ficam visíveis e nenhuma mensagem é enviada aos alunos. |
-
-| **Evidência(s)**                              |
-| :-------------------------------------------- |
-| [Vídeo](https://jam.dev/c/COLE_O_CODIGO_AQUI) |
-
----
-
-### Caso de Teste 05: Conferir movimento, mensalidades, agenda, entradas e aniversariantes.
-
-| ID       | Descrição                                                              |
-| :------- | :--------------------------------------------------------------------- |
-| C02-CT05 | Os blocos inferiores da página inicial carregam lista ou estado vazio. |
-
-| **Pré-condições**                          |
-| :----------------------------------------- |
-| A página inicial `/dashboard` está aberta. |
-
-| **Passos**                                                                                       |
-| :----------------------------------------------------------------------------------------------- |
-| **DADO** que estamos na página inicial                                                           |
-| **QUANDO** descemos a página                                                                     |
-| **ENTÃO** aparecem Movimento da Academia por horário e por dia da semana                         |
-| **E** aparecem Mensalidades pendentes, Agenda de hoje, Últimas entradas e Aniversariantes do dia |
-| **E** a tabela de últimas entradas tem as colunas NOME, UNIDADE e DATA / HORA                    |
-| **E** agenda e aniversariantes mostram os itens do dia ou a mensagem de que não há registros     |
-
-| **Critérios de aceitação**                                                             |
-| :------------------------------------------------------------------------------------- |
-| Os cinco blocos carregam. Lista vazia aparece com mensagem, e não como área em branco. |
-
-| **Evidência(s)**                              |
-| :-------------------------------------------- |
-| [Vídeo](https://jam.dev/c/COLE_O_CODIGO_AQUI) |
-
----
-
-### Caso de Teste 06: Abrir as avaliações pendentes pelo card.
+### Caso de Teste 03: Abrir as avaliações pendentes pelo card.
 
 | ID       | Descrição                                                                      |
 | :------- | :----------------------------------------------------------------------------- |
-| C02-CT06 | O card de avaliações pendentes abre a lista filtrada pelo mesmo status.       |
+| C02-CT03 | O card de avaliações pendentes abre a lista filtrada pelo mesmo status.       |
 
 | **Pré-condições**                                              |
 | :------------------------------------------------------------- |

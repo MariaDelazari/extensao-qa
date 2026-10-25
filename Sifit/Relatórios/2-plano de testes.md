@@ -28,10 +28,11 @@ Verificar o login do Sifit Centrion: acesso com credenciais válidas, rejeição
 - Link "Esqueci minha senha"
 - Opção "Manter conectado"
 - Acesso direto ao endereço `/dashboard`
+- Página inicial: saudação, cards do resumo e avaliações pendentes
 
 **Excluído:**
 
-- Módulos internos depois do login, porque a execução registrada ficou na autenticação
+- Menus, consultas e formulários depois do login que ficaram sem vídeo
 - Testes em dispositivos móveis
 - Testes de performance ou carga
 
@@ -126,6 +127,6 @@ A execução registrada no relatório de bugs começa em 12/10/2026. Em 24/10/20
 
 - Plano de Testes
 - Análise de requisitos
-- Casos de teste do login
+- Casos de teste do login e da página inicial, só os que têm vídeo
 - Relatório de bugs com vídeos
 - Relatório final de execução
