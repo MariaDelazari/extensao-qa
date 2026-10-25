@@ -43,7 +43,7 @@
 
 |                         **Evidência(s)**                        |
 | :-------------------------------------------------------------: |
-| [Vídeo](https://jam.dev/c/51531b19-254b-468b-ad89-7487194fc22a) |
+| [BUG:01](https://jam.dev/c/51531b19-254b-468b-ad89-7487194fc22a) |
 
 ---
 
@@ -81,7 +81,7 @@
 
 |                         **Evidência(s)**                        |
 | :-------------------------------------------------------------: |
-| [Vídeo](https://jam.dev/c/c647a93a-812e-418f-8f05-d080e188b70f) |
+| [BUG:02](https://jam.dev/c/c647a93a-812e-418f-8f05-d080e188b70f) |
 
 ---
 
@@ -120,7 +120,7 @@
 
 |                         **Evidência(s)**                        |
 | :-------------------------------------------------------------: |
-| [Vídeo](https://jam.dev/c/a6cbb545-f415-4e44-b446-20f146f32a1c) |
+| [BUG:03](https://jam.dev/c/a6cbb545-f415-4e44-b446-20f146f32a1c) |
 
 ---
 
@@ -158,7 +158,7 @@
 
 |                         **Evidência(s)**                        |
 | :-------------------------------------------------------------: |
-| [Vídeo](https://jam.dev/c/fcd3f7a9-9e1b-4aa3-a683-f5155d753e53) |
+| [BUG:04](https://jam.dev/c/fcd3f7a9-9e1b-4aa3-a683-f5155d753e53) |
 
 ---
 
@@ -199,4 +199,44 @@
 
 |                         **Evidência(s)**                        |
 | :-------------------------------------------------------------: |
-| [Vídeo](https://jam.dev/c/0e862f82-e4d0-49df-9406-0ff970332873) |
+| [BUG:05](https://jam.dev/c/0e862f82-e4d0-49df-9406-0ff970332873) |
+
+---
+
+### 🐞 **Bug 06 Login: Erro interno do servidor ao autenticar com credenciais válidas**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-006| Ao informar credenciais válidas na tela de login e tentar acessar o sistema, a requisição `POST /api/login` para o endpoint de autenticação retorna o status `500 Internal Server Error`. A resposta da API contém `"verifica_erro": true` e a mensagem `"Erro interno inesperado."`, impedindo a conclusão da autenticação. Dessa forma, o usuário não consegue acessar o sistema, mesmo informando as credenciais da conta de teste. |
+
+| **Severidade** | **Prioridade** | **Status** |
+|---|---|---|
+| Alta | Alta | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Acessar a tela de login do sistema Sifit Centrion. |
+| 2. Informar as credenciais válidas da conta de teste. |
+| 3. Clicar no botão "Entrar". |
+| 4. Abrir as ferramentas de desenvolvedor do navegador e acessar a aba Network. |
+| 5. Localizar a requisição `POST /api/login` e verificar o status e o conteúdo da resposta. |
+| 6. Verificar se a autenticação é concluída e se o usuário consegue acessar o sistema. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| Ao informar credenciais válidas, o sistema deve autenticar o usuário e permitir o acesso à aplicação, sem retornar erros internos do servidor. | A requisição `POST /api/login` retorna o status `500 Internal Server Error`. A resposta da API contém `"verifica_erro": true` e a mensagem `"Erro interno inesperado."`, impedindo a autenticação e o acesso ao sistema. |
+
+| **Ambiente** |
+|---|
+| Ambiente de testes |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| Sifit Centrion |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Login / Autenticação com credenciais válidas | C01-CT07 Login com credenciais válidas. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:06](https://jam.dev/c/070f284b-e3a2-4514-8fe3-4290f33d77ee) |
