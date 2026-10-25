@@ -12,4 +12,3 @@
 - Exibir as funcionalidades e os menus conforme as permissões do usuário autenticado.
 
 **Resultado esperado:** O login deve ser realizado com sucesso!, permitindo que o usuário acesse o sistema e visualize o dashboard inicial do sistema Sifit.
-
