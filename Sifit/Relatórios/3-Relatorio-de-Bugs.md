@@ -165,3 +165,43 @@
 
 ---
 
+### 🐞 **Bug 05: Falha na persistência e no controle da sessão de login**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-005 | Ao marcar a opção "Manter conectado" e retornar ao sistema Sifit, o usuário é redirecionado à tela de login e precisa informar suas credenciais novamente, mesmo tendo selecionado essa opção. Entretanto, ao permanecer na tela de login e inserir diretamente a URL `/dashboard` no navegador, o sistema permite o acesso à área autenticada sem solicitar novamente o login. <br><br>Dessa forma, o sistema apresenta duas falhas: não mantém o usuário conectado conforme esperado e permite o acesso ao dashboard diretamente pela URL, sem exigir autenticação. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Alta | Alta | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Acessar a tela de login do sistema Sifit Centrion. |
+| 2. Informar credenciais válidas nos campos de nome de usuário e senha. |
+| 3. Marcar a opção "Manter conectado". |
+| 4. Clicar no botão "Entrar" e abrir o sistema em uma nova aba do navegador. |
+| 5. Retornar à tela de login e verificar se o sistema solicita novamente as credenciais. |
+| 6. Permanecer na tela de login e inserir diretamente a URL `/dashboard` na barra de endereços do navegador. |
+| 7. Verificar se o sistema permite o acesso ao dashboard sem solicitar autenticação novamente. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| Ao marcar a opção "Manter conectado", o sistema deve manter a autenticação do usuário ao retornar à aplicação, conforme o comportamento esperado dessa funcionalidade. Caso o usuário não possua uma sessão válida, o sistema deve bloquear o acesso ao dashboard, inclusive quando a URL `/dashboard` for inserida diretamente na barra de endereços do navegador, redirecionando-o à tela de login e exigindo autenticação. | Ao marcar a opção "Manter conectado", o usuário é redirecionado à tela de login ao retornar ao sistema e precisa informar suas credenciais novamente. Entretanto, ao permanecer na tela de login e inserir diretamente a URL `/dashboard` na barra de endereços do navegador, o sistema permite o acesso à área autenticada sem solicitar novamente o login. |
+
+| **Ambiente** |
+|---|
+| Ambiente de testes. |
+| Desktop com Ubuntu 26.04 LTS. |
+| Google Chrome 150.0.7871.46. |
+| Sifit Centrion. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Login / Persistência da sessão / Controle de acesso | C01-CT05: Validar a persistência da sessão e o acesso ao dashboard sem autenticação. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:05](https://jam.dev/c/0e862f82-e4d0-49df-9406-0ff970332873) |
+
+---
