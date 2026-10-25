@@ -403,50 +403,11 @@
 
 ---
 
-### 🐞 **Bug 11: Card de avaliações pendentes não confere com a lista**
+### 🐞 **Bug 11: O campo de senha não deixa ver o que foi digitado**
 
 | **ID** | **Descrição** |
 |---|---|
-| BUG-011 | Na página inicial do Sifit Unialfa, o card mostra 0 avaliações pendentes. Ao abrir o filtro Pendente, a tela Avaliações lista registros com status PENDENTE, entre eles os códigos 79, 67, 66 e 52. O resumo "Avaliação no Mês" mostra 2. |
-
-| **Severidade** | **Prioridade** | **Status** |
-|---|---|---|
-| Média | Média | Aberto |
-
-| **Passo a passo para simular o bug** |
-|---|
-| 1. Entrar em https://sifitalfa.centrion.com.br/dashboard. |
-| 2. Anotar o número do card de avaliações pendentes. |
-| 3. Abrir https://sifitalfa.centrion.com.br/avaliacoes?status=pendente. |
-| 4. Comparar o card, o resumo "Avaliação no Mês" e as linhas com status PENDENTE. |
-
-| **Comportamento Esperado** | **Comportamento Obtido** |
-|---|---|
-| O card deve mostrar a mesma quantidade de avaliações pendentes que a lista filtrada. | O card mostra 0. A lista filtrada exibe avaliações PENDENTE, e o resumo do mês mostra 2. |
-
-| **Ambiente** |
-|---|
-| https://sifitalfa.centrion.com.br/avaliacoes?status=pendente |
-| Linux |
-| Google Chrome 150.0.7871.46 |
-| 25/10/2026 |
-
-| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
-|---|---|
-| Página inicial / Avaliações | C02-CT03: Abrir as avaliações pendentes pelo card. |
-
-| **Evidência(s)** |
-|---|
-| [BUG:11](https://jam.dev/c/4f672eb2-1483-4e93-8181-cea811350409) |
-
-
----
-
-### 🐞 **Bug 12: O campo de senha não deixa ver o que foi digitado**
-
-| **ID** | **Descrição** |
-|---|---|
-| BUG-012 | Na tela de login, o campo de senha não tem ícone nem outra opção para mostrar os caracteres. A pessoa não consegue conferir a senha antes de clicar em Entrar. |
+| BUG-011 | Na tela de login, o campo de senha não tem ícone nem outra opção para mostrar os caracteres. A pessoa não consegue conferir a senha antes de clicar em Entrar. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 |---|---|---|
@@ -475,4 +436,4 @@
 
 | **Evidência(s)** |
 |---|
-| [BUG:12](https://jam.dev/c/1c6d4e56-7c8b-43d3-9134-c3bde64d0d80) |
+| [BUG:11](https://jam.dev/c/1c6d4e56-7c8b-43d3-9134-c3bde64d0d80) |

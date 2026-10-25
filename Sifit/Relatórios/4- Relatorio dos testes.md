@@ -16,7 +16,7 @@
 
 | Total de Casos de Teste | Casos Passaram | Casos Falharam | Bugs Registrados |
 | ----------------------- | -------------- | -------------- | ---------------- |
-| 10                      | 1              | 9              | 12               |
+| 10                      | 1              | 9              | 11               |
 
 Os 7 casos de login foram executados. O C01-CT01 chegou a ter vídeo de entrada no dashboard, mas os bugs BUG-006 e BUG-007 mostram que o login válido falha ou entra com o nome Jair. Por isso ele não entra mais como aprovado. O BUG-005 continua cobrindo C01-CT05 e C01-CT06.
 
@@ -28,14 +28,14 @@ Na página inicial ficaram só os casos com vídeo: C02-CT01, C02-CT02 e C02-CT0
 
 | Código RF | Módulo                             | Casos Testados | Casos Passaram | Bugs encontrados | Bug(s) Associado(s) |
 | --------- | ---------------------------------- | -------------- | -------------- | ---------------- | ------------------- |
-| RF01      | Login com credenciais válidas      | 1              | 0              | 3                | BUG-006, BUG-007, BUG-012 |
+| RF01      | Login com credenciais válidas      | 1              | 0              | 3                | BUG-006, BUG-007, BUG-011 |
 | RF02      | Validação de credenciais inválidas | 1              | 0              | 1                | BUG-003             |
 | RF03      | Campos obrigatórios no login       | 1              | 0              | 1                | BUG-004             |
 | RF04      | Espaços extras nas credenciais     | 1              | 0              | 1                | BUG-001             |
 | RF05      | Recuperação de senha               | 1              | 0              | 1                | BUG-002             |
 | RF06      | Persistência da sessão             | 1              | 0              | 1                | BUG-005             |
 | RF07      | Controle de acesso ao dashboard    | 1              | 0              | 1                | BUG-005             |
-| RF08      | Página inicial do dashboard        | 3              | 1              | 4                | BUG-008, BUG-009, BUG-010, BUG-011 |
+| RF08      | Página inicial do dashboard        | 3              | 1              | 3                | BUG-008, BUG-009, BUG-010 |
 
 ---
 
@@ -53,8 +53,7 @@ Na página inicial ficaram só os casos com vídeo: C02-CT01, C02-CT02 e C02-CT0
 | BUG-008 | Radar de Evasão mostra a faixa errada de alunos                    | Média      | Aberto |
 | BUG-009 | Cobrança e perfil de Rafael Santos não fecham com a lista          | Alta       | Aberto |
 | BUG-010 | Card de valor em aberto não confere com o detalhe                  | Alta       | Aberto |
-| BUG-011 | Card de avaliações pendentes não confere com a lista               | Média      | Aberto |
-| BUG-012 | O campo de senha não deixa ver o que foi digitado                  | Média      | Aberto |
+| BUG-011 | O campo de senha não deixa ver o que foi digitado                  | Média      | Aberto |
 
 ---
 
@@ -68,7 +67,7 @@ Na página inicial ficaram só os casos com vídeo: C02-CT01, C02-CT02 e C02-CT0
 **Severidade dos bugs:**
 
 * Alta: 5
-* Média: 7
+* Média: 6
 * Baixa: 0
 
 ---
@@ -87,6 +86,6 @@ Os casos C01-CT01 e C01-CT02 têm vídeos próprios. Os casos C01-CT03 a C01-CT0
 
 ## ✅ **Conclusão**
 
-Dos 10 casos com vídeo, 1 passou e 9 falharam. O login válido falha com erro 500 ou entra mostrando o nome Jair. Senha incorreta responde com erro 500, em vez de uma mensagem de autenticação. Campos vazios seguem para a API sem aviso na tela. Espaços nas pontas das credenciais válidas derrubam o login. O link "Esqueci minha senha" não sai da tela. "Manter conectado" pede a senha de novo no retorno, e mesmo assim o `/dashboard` abre sem sessão válida. Na página inicial, os cards aparecem, mas a saudação, o valor em aberto, a cobrança e as avaliações pendentes não fecham com o detalhe. O campo de senha do login não tem opção para mostrar o que foi digitado.
+Dos 10 casos com vídeo, 1 passou e 9 falharam. O login válido falha com erro 500 ou entra mostrando o nome Jair. Senha incorreta responde com erro 500, em vez de uma mensagem de autenticação. Campos vazios seguem para a API sem aviso na tela. Espaços nas pontas das credenciais válidas derrubam o login. O link "Esqueci minha senha" não sai da tela. "Manter conectado" pede a senha de novo no retorno, e mesmo assim o `/dashboard` abre sem sessão válida. Na página inicial, os cards aparecem, mas a saudação, o valor em aberto e a cobrança não fecham com o detalhe. O campo de senha do login não tem opção para mostrar o que foi digitado.
 
 Até 23/10/2026 os testes usaram https://sifit.centrion.com.br/. A partir de 24/10/2026, usam https://sifitalfa.centrion.com.br/. A versão interna do sistema não foi anotada.
