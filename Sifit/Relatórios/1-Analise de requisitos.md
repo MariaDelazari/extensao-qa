@@ -47,3 +47,17 @@
 
 ---
 
+### 🔐 RF04 - Tratamento de Espaços Extras nas Credenciais
+
+**Descrição:** O sistema deve tratar adequadamente os espaços extras inseridos no início ou no final dos campos de credenciais, conforme as regras de autenticação definidas para a aplicação.
+
+**Funcionalidades esperadas:**
+
+- Verificar como os espaços extras são tratados nos campos de nome de usuário e senha.
+- Aplicar o tratamento definido para cada campo durante a validação das credenciais.
+- Evitar que espaços acidentais provoquem falhas de autenticação quando os dados deveriam ser considerados válidos.
+
+**Resultado esperado:** O sistema deve processar as credenciais de acordo com as regras definidas para cada campo, permitindo a autenticação quando os dados forem válidos segundo essas regras.
+
+---
+
