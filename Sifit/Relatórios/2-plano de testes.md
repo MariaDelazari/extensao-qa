@@ -41,7 +41,7 @@ Verificar o login do Sifit Centrion: acesso com credenciais válidas, rejeição
 ### 🔧 4. **Ferramentas Utilizadas**
 
 - Google Chrome 150.0.7871.46
-- Ferramentas de inspeção do navegador (aba Network e console), usadas na análise dos bugs de login
+- Ferramentas de inspeção do navegador (DevTools), para analisar envio das requisições e bugs
 - Jam, para gravar os vídeos de execução
 - Markdown e Git, para registrar os casos, os bugs e este plano
 
