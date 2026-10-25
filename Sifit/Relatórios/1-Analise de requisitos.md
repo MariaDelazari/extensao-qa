@@ -61,3 +61,32 @@
 
 ---
 
+### 🔐 RF05 - Recuperação de Senha
+
+**Descrição:** O sistema deve disponibilizar uma funcionalidade que permita ao usuário iniciar o processo de recuperação de senha pela tela de login.
+
+**Funcionalidades esperadas:**
+
+- Disponibilizar o link "Esqueci minha senha" na tela de login.
+- Permitir que o usuário acesse a funcionalidade de recuperação de senha pelo link correspondente.
+- Direcionar o usuário para a página ou etapa de recuperação de senha.
+
+**Resultado esperado:** Ao clicar em "Esqueci minha senha", o sistema deve direcionar o usuário para o fluxo de recuperação de senha.
+
+---
+
+### 🔐 RF06 - Persistência da Sessão de Login
+
+**Descrição:** O sistema deve permitir que o usuário mantenha sua autenticação ao retornar à aplicação quando a opção "Manter conectado" estiver selecionada, conforme o comportamento previsto para essa funcionalidade.
+
+**Funcionalidades esperadas:**
+
+- Disponibilizar a opção "Manter conectado" na tela de login.
+- Considerar a opção selecionada durante o processo de autenticação.
+- Manter a autenticação do usuário ao retornar à aplicação, conforme as regras de persistência da sessão.
+- Solicitar uma nova autenticação quando não houver uma sessão válida, de acordo com as regras definidas para o sistema.
+
+**Resultado esperado:** Quando a opção "Manter conectado" estiver selecionada, o sistema deve preservar a autenticação conforme o comportamento previsto. Caso não exista uma sessão válida, o usuário deve ser direcionado à tela de login.
+
+---
+
