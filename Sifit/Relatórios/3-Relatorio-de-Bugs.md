@@ -235,7 +235,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 |---|---|
-| Login / Autenticação com credenciais válidas | C01-CT07 Login com credenciais válidas. |
+| Login / Autenticação com credenciais válidas | C01-CT01: Login com credenciais válidas. |
 
 | **Evidência(s)** |
 |---|
@@ -272,12 +272,12 @@
 | Ambiente de testes |
 | Desktop Ubuntu 26.04 LTS |
 | Google Chrome 150.0.7871.46 |
-| Sifit Centrion |
+| sifitalfa.centrion |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 |---|---|
-| Login / Autenticação / Identificação do usuário | C02-CT01: Abrir a página inicial depois do login. |
+| Login / Autenticação / Identificação do usuário | C01-CT01: Login com credenciais válidas. C03-CT02: Ver o usuário logado no topo. |
 
 | **Evidência(s)** |
 |---|
-| [BUG:07](https://jam.dev/c/ca20044a-89b1-4723-b121-2863cfb8d4a7). |
+| [BUG:07](https://jam.dev/c/ca20044a-89b1-4723-b121-2863cfb8d4a7) |
