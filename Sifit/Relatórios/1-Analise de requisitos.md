@@ -105,3 +105,19 @@
 **Resultado esperado:** O sistema deve permitir o acesso ao dashboard somente para usuários autenticados com uma sessão válida, independentemente de acessarem a área pela navegação da interface ou diretamente pela URL.
 
 ---
+
+---
+
+### 🏠 RF08 - Página Inicial do Dashboard
+
+**Descrição:** Depois do login, o sistema deve exibir a página inicial com o resumo da academia, com saudação, data e indicadores que levam ao detalhe de cada informação.
+
+**Funcionalidades esperadas:**
+
+- Exibir a saudação com o nome da conta autenticada e a data de hoje.
+- Exibir o texto "Aqui está o resumo da sua academia hoje".
+- Exibir os cards de alunos em risco de evasão, valor em aberto, pico de movimento e avaliações pendentes, cada um com o link "Ver detalhes".
+- Exibir os cards Clientes Ativos, Clientes Ausentes, Sem Matrículas, Personais, Matrículas no Período, Desistências no Período e Renovações.
+- Abrir o detalhe de cada card, com valores iguais aos do card.
+
+**Resultado esperado:** A página inicial abre em `/dashboard` com o nome de quem entrou, e os valores dos cards conferem com as telas de detalhe.

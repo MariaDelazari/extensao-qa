@@ -97,6 +97,7 @@ A execução registrada no relatório de bugs começa em 12/10/2026. Em 24/10/20
 | RF05      | Recuperação de senha               | Alta       |
 | RF06      | Persistência da sessão             | Alta       |
 | RF07      | Controle de acesso ao dashboard    | Alta       |
+| RF08      | Página inicial do dashboard        | Alta       |
 
 ---
 
