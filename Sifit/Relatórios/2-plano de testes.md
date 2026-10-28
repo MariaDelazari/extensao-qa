@@ -89,11 +89,11 @@ Verificar o login do Sifit Centrion: acesso com credenciais válidas, rejeição
 | --------------------------- | -------------- | -------------- |
 | Planejamento de Testes      | não registrado | não registrado |
 | Criação de Casos de Teste   | não registrado | não registrado |
-| Execução dos Testes Manuais | 12/10/2026     | 12/10/2026     |
-| Registro e Report de Bugs   | 12/10/2026     | 12/10/2026     |
-| Encerramento e Evidências   | 12/10/2026     | 12/10/2026     |
+| Execução dos Testes Manuais | 12/10/2026     | 28/10/2026     |
+| Registro e Report de Bugs   | 12/10/2026     | 28/10/2026     |
+| Encerramento e Evidências   | 12/10/2026     | Pendente (vídeos) |
 
-A execução registrada no relatório de bugs começa em 12/10/2026. Em 24/10/2026, os testes passaram para https://sifitalfa.centrion.com.br/. As datas de planejamento e de escrita dos casos não foram anotadas.
+A execução registrada no relatório de bugs começa em 12/10/2026. Em 24/10/2026, os testes passaram para https://sifitalfa.centrion.com.br/. As datas de planejamento e de escrita dos casos não foram anotadas. Os cenários C03 a C12 foram executados em 28/10/2026 e aguardam os vídeos.
 
 ---
 
@@ -143,6 +143,7 @@ A execução registrada no relatório de bugs começa em 12/10/2026. Em 24/10/20
 | --------------------------------------------------------------------------------- | ------- | -------------------------------------------------------------- |
 | A versão do sistema não foi registrada                                            | Médio   | Anotar a versão na próxima execução                            |
 | O erro 500 no login inválido esconde a mensagem de credencial incorreta           | Alto    | Conferir a resposta de `POST /api/login` além do texto da tela |
+| Os testes de formulário vazio criaram 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12) | Médio | Excluir os registros depois de gravar os vídeos dos BUG-030, 031 e 032 |
 | A sessão se comporta de um jeito no retorno ao sistema e de outro no `/dashboard` | Alto    | Repetir os dois caminhos no mesmo vídeo, como no BUG-005       |
 
 ---
