@@ -29,10 +29,20 @@ Verificar o login do Sifit Centrion: acesso com credenciais válidas, rejeição
 - Opção "Manter conectado"
 - Acesso direto ao endereço `/dashboard`
 - Página inicial: saudação, cards do resumo e avaliações pendentes
+- Dashboard: título, gráficos e indicadores da Inteligência Sifit
+- Clientes: listagem, paginação, busca por nome e por código, cadastro com campos vazios
+- Matrículas: listagem, cadastro sem cliente e coerência com os clientes ativos
+- Contas a receber: totais e valores da listagem
+- Contas a pagar, Caixas e Colaboradores: salvar com os campos vazios
+- Check-in: indicadores, lista e horário de pico
+- Avaliações: cadastro sem aluno
+- Cadastros de apoio (16 telas): salvar com o formulário vazio
 
 **Excluído:**
 
 - Menus, consultas e formulários depois do login que ficaram sem vídeo
+- Cadastro completo com dados válidos, edição e exclusão de registros nas telas novas (não executados, para não alterar os dados do ambiente compartilhado)
+- Pagar.me, Inteligência & Automação, Resultados IA, Relatórios, Configurações, Aplicativo, Fichas de Treino, Modelos de Contrato e Anamnese (telas abertas sem erro, mas sem caso de teste)
 - Testes em dispositivos móveis
 - Testes de performance ou carga
 
@@ -53,6 +63,7 @@ Verificar o login do Sifit Centrion: acesso com credenciais válidas, rejeição
 - Testes negativos
 - Particionamento de equivalência nos dados de login (válido, inválido, vazio e com espaços)
 - Teste exploratório no retorno da sessão e no acesso direto pela URL
+- Validação de formulário vazio e conferência de números entre telas (indicadores contra listas)
 
 ---
 
@@ -98,6 +109,18 @@ A execução registrada no relatório de bugs começa em 12/10/2026. Em 24/10/20
 | RF06      | Persistência da sessão             | Alta       |
 | RF07      | Controle de acesso ao dashboard    | Alta       |
 | RF08      | Página inicial do dashboard        | Alta       |
+| RF09      | Dashboard                          | Média      |
+| RF10      | Gestão de clientes                 | Alta       |
+| RF11      | Gestão de matrículas               | Alta       |
+| RF12      | Contas a receber                   | Alta       |
+| RF13      | Contas a pagar                     | Média      |
+| RF14      | Caixas                             | Média      |
+| RF15      | Check-in e presenças               | Média      |
+| RF16      | Avaliações físicas                 | Média      |
+| RF17      | Colaboradores                      | Média      |
+| RF18      | Cadastros de apoio                 | Média      |
+
+**Cenário de cada requisito:** C01 cobre RF01 a RF07. C02 cobre RF08. C03 a C12 cobrem RF09 a RF18, na mesma ordem (C03 = RF09, C04 = RF10 e assim por diante).
 
 ---
 
@@ -128,6 +151,7 @@ A execução registrada no relatório de bugs começa em 12/10/2026. Em 24/10/20
 
 - Plano de Testes
 - Análise de requisitos
-- Casos de teste do login e da página inicial, só os que têm vídeo
+- Casos de teste do login, da página inicial e dos demais módulos; os casos novos aguardam o vídeo ([PENDENTE VÍDEO])
+- Roteiro dos vídeos a gravar (`5-Roteiro-de-videos.md`)
 - Relatório de bugs com vídeos
 - Relatório final de execução
