@@ -8,7 +8,7 @@
 
 **QA responsável:** Maria Eduarda Pacheco Delazari
 
-**Data:** 12.10.26. Em 24/10/2026, os testes continuaram no Sifit Unialfa.
+**Data:** 12.10.26. Em 24/10/2026, os testes continuaram no Sifit Unialfa. Os BUG-012 a BUG-033 foram observados em 28/10/2026.
 
 ---
 
@@ -440,3 +440,857 @@
 | **Evidência(s)** |
 |---|
 | [BUG:11](https://jam.dev/c/1c6d4e56-7c8b-43d3-9134-c3bde64d0d80) |
+
+---
+
+### 🐞 **Bug 12: Dashboard mostra o título "Despesas Fixas"**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-012 | Ao abrir a página Dashboard pelo menu, o título da página e o caminho de navegação mostram "Despesas Fixas". |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa. |
+| 2. Clicar em "Dashboard" no menu lateral (rota `/dash`). |
+| 3. Olhar o título da página e o caminho de navegação no topo. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O título e o caminho de navegação devem mostrar "Dashboard". | O topo mostra "Início > Despesas Fixas" e o título "Despesas Fixas", enquanto o conteúdo é o do Dashboard. |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Dashboard / Título da página | C03-CT01: Abrir a página Dashboard. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:12] [PENDENTE BUGS] (roteiro V01) |
+
+---
+
+### 🐞 **Bug 13: Títulos dos gráficos do Dashboard ficam ilegíveis**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-013 | No Dashboard, os títulos dos blocos de gráficos e dos próprios gráficos quase não aparecem, por causa da cor do texto sobre o fundo. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Baixa | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa, com o tema Claro. |
+| 2. Abrir o Dashboard (`/dash`). |
+| 3. Rolar a página olhando os blocos Clientes, Matrículas, Contas a Receber, Cancelamentos e Avaliações. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| Os títulos dos blocos e dos gráficos devem ter contraste suficiente para serem lidos. | Os títulos (por exemplo "Clientes", "Matrículas", "Frequência", "Idade", "Sexo") aparecem em cor muito próxima à do fundo e quase não dá para ler. |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Dashboard / Gráficos | C03-CT02: Conferir os títulos dos gráficos. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:13] [PENDENTE BUGS] (roteiro V02) |
+
+---
+
+### 🐞 **Bug 14: Quantidade de alunos em risco diverge entre as telas**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-014 | A quantidade de alunos em risco é diferente na Página Inicial, na Inteligência de Retenção da Página Inicial e no Dashboard. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Alta | Alta | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa e olhar o card "alunos em risco de evasão" da Página Inicial. |
+| 2. Na mesma página, olhar os totais de Alto, Médio e Baixo risco de "Inteligência de Retenção". |
+| 3. Abrir o Dashboard (`/dash`) e olhar o card "Alunos em risco". |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| A mesma quantidade de alunos em risco nas três áreas. | Em 28/10/2026: Página Inicial mostra "1 alunos em risco de evasão"; Inteligência de Retenção mostra 0 alto, 4 médio e 0 baixo; Dashboard mostra "0 Alunos em risco". |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Página inicial e Dashboard / Alunos em risco | C03-CT03: Conferir os alunos em risco entre as telas. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:14] [PENDENTE BUGS] (roteiro V03) |
+
+---
+
+### 🐞 **Bug 15: Card de avaliações pendentes mostra 0, mas a lista tem pendentes**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-015 | O card da Página Inicial mostra "0 avaliações pendentes", mas a lista de avaliações filtrada por Pendente mostra 4 avaliações. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Alta | Alta | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa e olhar o card de avaliações pendentes da Página Inicial. |
+| 2. Clicar em "Ver detalhes" do card (rota `/avaliacoes?status=pendente`). |
+| 3. Contar as linhas da lista com status PENDENTE. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O número do card deve ser igual à quantidade de avaliações pendentes da lista. | O card mostra "0 avaliações pendentes". A lista abre com o filtro Pendente e mostra 4 avaliações PENDENTE (#79, #69, #67 e #52). |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Página inicial / Avaliações pendentes | C02-CT03: Abrir as avaliações pendentes pelo card. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:15] [PENDENTE BUGS] (roteiro V04) |
+
+---
+
+### 🐞 **Bug 16: Paginação de clientes mostra 3 páginas para 1 resultado**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-016 | Na lista de clientes com o filtro Status "Ativo", a tabela tem 1 cliente, mas a paginação oferece as páginas 1, 2 e 3. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Baixa | Baixa | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa. |
+| 2. Abrir "Clientes" (`/clientes`) mantendo o Status "Ativo". |
+| 3. Olhar a tabela e a paginação abaixo dela. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| A paginação deve oferecer só as páginas que têm clientes (uma página). | A tabela mostra 1 cliente (408 - Lila) e o card "Clientes Ativos" mostra 1, mas a paginação mostra "Anterior 1 2 3 Próxima". Com Status "Todos", a lista mostra 122 clientes. |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Clientes / Paginação | C04-CT01: Listar clientes e conferir a paginação. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:16] [PENDENTE BUGS] (roteiro V05) |
+
+---
+
+### 🐞 **Bug 17: Campo Código da busca de clientes aceita letras**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-017 | O campo Código da busca de clientes aceita letras, embora o código seja numérico. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Baixa | Baixa | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa. |
+| 2. Abrir "Clientes" (`/clientes`). |
+| 3. Digitar "abc" no campo Código. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O campo deve aceitar só números. | O campo mantém o texto "abc". |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Clientes / Busca por código | C04-CT04: Digitar letras no campo Código. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:17] [PENDENTE BUGS] (roteiro V07) |
+
+---
+
+### 🐞 **Bug 18: Matrículas ativas pertencem a clientes inativos**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-018 | A tela de Matrículas mostra 3 matrículas ativas, mas a tela de Clientes mostra só 1 cliente ativo. Os clientes das outras duas matrículas ativas aparecem como INATIVO. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Alta | Alta | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa. |
+| 2. Abrir "Matrículas" (`/matriculas`) e anotar as matrículas com status ATIVO. |
+| 3. Abrir "Clientes" (`/clientes`) com Status "Ativo" e depois com "Todos". |
+| 4. Procurar os nomes das matrículas ativas. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| Cada matrícula ativa deve pertencer a um cliente ativo, e a quantidade de clientes ativos deve ser coerente com as matrículas ativas. | Matrículas ativas: 242 (Marcelo Longo Zandonadi), 241 (Rafaela Andrade) e 240 (Lila). Clientes ativos: apenas 408 (Lila). Os cadastros de Marcelo Longo Zandonadi e Rafaela Andrade aparecem como INATIVO. A Página Inicial também mostra 1 cliente ativo. |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Matrículas / Clientes | C05-CT03: Conferir matrículas ativas com os clientes ativos. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:18] [PENDENTE BUGS] (roteiro V10) |
+
+---
+
+### 🐞 **Bug 19: Totais de Contas a Receber não fecham com a listagem**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-019 | No período do mês, "Entradas" mostra R$ 499,50 (soma das linhas), mas "Recebido no Mês" mostra R$ 475,00 com "100,00% recebido". A conta 1608 tem valor recebido maior que o valor a receber. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa. |
+| 2. Abrir "Contas a Receber" (`/contas-receber`) com o período do mês. |
+| 3. Somar a coluna "Valor recebido" das linhas. |
+| 4. Comparar com "Entradas", "Previsto para o Mês" e "Recebido no Mês". |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| Os totais devem bater com as linhas, e um valor recebido acima do valor a receber deve ser explicado ou impedido. | As seis linhas somam R$ 499,50 (igual a "Entradas"). "Previsto para o Mês" e "Recebido no Mês" mostram R$ 475,00. A conta 1608 (Lila, Matrícula) tem R$ 75,50 a receber e R$ 100,00 recebido. |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Contas a Receber / Totais | C06-CT01: Conferir os totais com a listagem. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:19] [PENDENTE BUGS] (roteiro V11) |
+
+---
+
+### 🐞 **Bug 20: Erro 500 ao salvar conta a pagar com campos vazios**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-020 | Ao salvar uma nova conta a pagar sem preencher nada, a requisição retorna 500 e a tela mostra apenas "Erro ao salvar conta a pagar". |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa. |
+| 2. Abrir "Contas a Pagar" (`/contas-pagar`). |
+| 3. Clicar em "Nova Conta". |
+| 4. Sem preencher nada, clicar em salvar. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O sistema deve informar quais campos obrigatórios faltam, sem erro de servidor. | `POST /api/cadastrar-conta-pagar/1` retorna 500 e a tela mostra "Erro ao salvar conta a pagar", sem dizer o que falta. |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Contas a Pagar / Nova conta | C07-CT01: Criar conta a pagar com campos vazios. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:20] [PENDENTE BUGS] (roteiro V12) |
+
+---
+
+### 🐞 **Bug 21: Erro 500 ao abrir caixa com campos vazios**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-021 | Ao tentar abrir um caixa sem preencher nada, a requisição retorna 500 e a tela mostra "Erro no servidor. Erro interno inesperado.". |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa. |
+| 2. Abrir "Caixas" (`/caixas`). |
+| 3. Clicar em "Abrir Caixa". |
+| 4. Sem preencher nada, confirmar a abertura. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O sistema deve informar quais campos faltam, sem erro de servidor. | `POST /api/abrir-caixa/1` retorna 500 e a tela mostra "Erro no servidor. Erro interno inesperado.". |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Caixas / Abrir caixa | C08-CT01: Abrir caixa com campos vazios. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:21] [PENDENTE BUGS] (roteiro V13) |
+
+---
+
+### 🐞 **Bug 22: Check-ins do dia não batem com a lista de check-ins**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-022 | O card "Check-ins hoje" mostra 3 e "18% vs ontem", mas a tabela está vazia, "Presentes agora" é 0 e a meta do dia está em 0%. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Alta | Alta | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa. |
+| 2. Abrir "Check-in" (`/checkin`). |
+| 3. Olhar o card "Check-ins hoje", "Meta do dia" e a tabela de check-ins. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| A quantidade de check-ins do dia deve ser a mesma nos indicadores e na tabela, e a meta deve considerar esses check-ins. | Em 28/10/2026: "3 Check-ins hoje", "18% vs ontem", "Presentes agora 0", "0% da meta" (meta 100) e a tabela mostra "Nenhum registro encontrado". Em "Presenças" também aparece "Nenhuma presença encontrada". |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Check-in / Indicadores | C09-CT01: Conferir os indicadores do Check-in com a lista. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:22] [PENDENTE BUGS] (roteiro V14) |
+
+---
+
+### 🐞 **Bug 23: Horário de pico diferente entre Página Inicial e Check-in**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-023 | A Página Inicial mostra o pico de movimento em "00h - 01h", e a tela de Check-in mostra "18h às 20h". |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Baixa | Baixa | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa e olhar o card "Pico de movimento" da Página Inicial. |
+| 2. Abrir "Check-in" (`/checkin`) e olhar "Pico de movimento". |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O horário de pico deve ser o mesmo nas duas telas. | Página Inicial: "00h - 01h". Check-in: "Horário de maior movimento: 18h às 20h". |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Página inicial / Check-in / Pico de movimento | C09-CT02: Conferir o horário de pico entre as telas. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:23] [PENDENTE BUGS] (roteiro V15) |
+
+---
+
+### 🐞 **Bug 24: Erro 500 ao salvar colaborador com campos vazios**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-024 | Ao salvar um novo colaborador sem preencher nada, a requisição retorna 500 e a tela mostra "Erro no servidor. Erro interno inesperado.". |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa. |
+| 2. Abrir "Colaboradores" (`/colaboradores`). |
+| 3. Clicar em "Novo Colaborador". |
+| 4. Sem preencher nada, clicar em "Salvar". |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O sistema deve informar quais campos obrigatórios faltam, sem erro de servidor. | `POST /api/salvar/colaborador/1` retorna 500 e a tela mostra "Erro no servidor. Erro interno inesperado.". |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Colaboradores / Cadastro | C11-CT01: Cadastrar colaborador com campos vazios. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:24] [PENDENTE BUGS] (roteiro V17) |
+
+---
+
+### 🐞 **Bug 25: Cadastro de Planos não avisa nada ao salvar vazio**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-025 | Ao clicar em "Salvar Plano" com o formulário vazio, o sistema não mostra mensagem e nenhuma requisição é enviada. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa. |
+| 2. Abrir "Planos" (`/planos`). |
+| 3. Clicar em "Novo Plano". |
+| 4. Sem preencher nada, clicar em "Salvar Plano". |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O sistema deve informar o campo obrigatório que falta. | Nada acontece: nenhuma mensagem aparece e nenhuma requisição é enviada. A pessoa não sabe por que o cadastro não foi salvo. |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Planos / Cadastro | C12-CT01: Salvar Planos com o formulário vazio. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:25] [PENDENTE BUGS] (roteiro V19) |
+
+---
+
+### 🐞 **Bug 26: Cadastro de Prospecção não avisa nada ao salvar vazio**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-026 | Ao clicar em "Salvar Lead" com o formulário vazio, o sistema não mostra mensagem e nenhuma requisição é enviada. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa. |
+| 2. Abrir "Prospecção" (`/prospeccao`). |
+| 3. Clicar em "Adicionar Lead". |
+| 4. Sem preencher nada, clicar em "Salvar Lead". |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O sistema deve informar o campo obrigatório que falta. | Nada acontece: nenhuma mensagem aparece e nenhuma requisição é enviada. A pessoa não sabe por que o cadastro não foi salvo. |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Prospecção / Cadastro | C12-CT04: Salvar Prospecção com o formulário vazio. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:26] [PENDENTE BUGS] (roteiro V20) |
+
+---
+
+### 🐞 **Bug 27: Cadastro de Funções não avisa nada ao salvar vazio**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-027 | Ao clicar em "Salvar Função" com o formulário vazio, o sistema não mostra mensagem e nenhuma requisição é enviada. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa. |
+| 2. Abrir "Funções" (`/funcoes`). |
+| 3. Clicar em "Nova Função". |
+| 4. Sem preencher nada, clicar em "Salvar Função". |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O sistema deve informar o campo obrigatório que falta. | Nada acontece: nenhuma mensagem aparece e nenhuma requisição é enviada. A pessoa não sabe por que o cadastro não foi salvo. |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Funções / Cadastro | C12-CT05: Salvar Funções com o formulário vazio. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:27] [PENDENTE BUGS] (roteiro V21) |
+
+---
+
+### 🐞 **Bug 28: Erro genérico ao salvar produto vazio**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-028 | Ao salvar um produto vazio, a requisição retorna 400 e a tela mostra só "Erro ao salvar produto", sem indicar o campo que falta. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Baixa | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa. |
+| 2. Abrir "Produtos" (`/produtos`). |
+| 3. Clicar em "Novo". |
+| 4. Sem preencher nada, clicar em "Salvar". |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O sistema deve informar o campo obrigatório que falta. | `POST /api/criar-produto/1` retorna 400 e a tela mostra "Erro ao salvar produto". |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Produtos / Cadastro | C12-CT06: Salvar Produtos com o formulário vazio. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:28] [PENDENTE BUGS] (roteiro V22) |
+
+---
+
+### 🐞 **Bug 29: Erro genérico ao salvar enquete vazia**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-029 | Ao salvar uma enquete vazia, a requisição retorna 200, mas a tela mostra "Erro ao salvar enquete", sem indicar o que falta. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Baixa | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa. |
+| 2. Abrir "Enquetes" (`/enquetes`). |
+| 3. Clicar em "Nova Enquete". |
+| 4. Sem preencher nada, clicar em "Salvar". |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O sistema deve informar o campo obrigatório que falta. | `POST /api/enquete/salvar/1` retorna 200 e a tela mostra "Erro ao salvar enquete". |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Enquetes / Cadastro | C12-CT09: Salvar Enquetes com o formulário vazio. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:29] [PENDENTE BUGS] (roteiro V23) |
+
+---
+
+### 🐞 **Bug 30: Atividades permite salvar registro em branco**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-030 | Ao salvar o formulário de Atividades vazio, o sistema aceita e cria um registro sem nome. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa. |
+| 2. Abrir "Atividades" (`/atividades`). |
+| 3. Clicar em "Nova Atividade". |
+| 4. Sem preencher nada, clicar em "Salvar". |
+| 5. Olhar a lista. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O sistema deve exigir o nome e não criar o registro. | `POST /api/salvar-atividade/1` retorna 201 e a lista passa de 4 para 5 registros, com a linha 5 sem nome. Nenhuma mensagem de validação aparece. |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Atividades / Cadastro | C12-CT10: Salvar Atividades com o formulário vazio. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:30] [PENDENTE BUGS] (roteiro V24) |
+
+---
+
+### 🐞 **Bug 31: Objetivos de Treino permite salvar registro em branco**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-031 | Ao salvar o formulário de Objetivos de Treino vazio, o sistema aceita e cria um registro sem nome. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa. |
+| 2. Abrir "Objetivos de Treino" (`/objetivos-treino`). |
+| 3. Clicar em "Novo Objetivo". |
+| 4. Sem preencher nada, clicar em "Salvar". |
+| 5. Olhar a lista. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O sistema deve exigir o nome e não criar o registro. | `POST /api/objetivo-treino/salvar/1` retorna 201 e a lista passa de 0 para 1 registros, com a linha 1 sem nome. Nenhuma mensagem de validação aparece. |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Objetivos de Treino / Cadastro | C12-CT14: Salvar Objetivos de Treino com o formulário vazio. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:31] [PENDENTE BUGS] (roteiro V25) |
+
+---
+
+### 🐞 **Bug 32: Tipos de Pagamento permite salvar registro em branco**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-032 | Ao salvar o formulário de Tipos de Pagamento vazio, o sistema aceita e cria um registro sem nome. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa. |
+| 2. Abrir "Tipos de Pagamento" (`/tipos-pagamento`). |
+| 3. Clicar em "Novo". |
+| 4. Sem preencher nada, clicar em "Salvar". |
+| 5. Olhar a lista. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O sistema deve exigir o nome e não criar o registro. | `POST /api/cria/tipo-pagamento/1` retorna 201 e a lista passa de 10 para 11 registros, com a linha 12 sem nome. Nenhuma mensagem de validação aparece. |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Tipos de Pagamento / Cadastro | C12-CT15: Salvar Tipos de Pagamento com o formulário vazio. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:32] [PENDENTE BUGS] (roteiro V26) |
+
+---
+
+### 🐞 **Bug 33: Erro 500 ao salvar pergunta de anamnese vazia**
+
+| **ID** | **Descrição** |
+|---|---|
+| BUG-033 | Ao salvar uma pergunta de anamnese vazia, a requisição retorna 500 e a tela mostra "Erro ao salvar pergunta". |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+|---|---|---|
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+|---|
+| 1. Entrar no Sifit Unialfa. |
+| 2. Abrir "Perguntas" de Anamnese (`/perguntas-anamnese`). |
+| 3. Clicar em "Nova Pergunta". |
+| 4. Sem preencher nada, clicar em "Salvar". |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+|---|---|
+| O sistema deve informar o campo obrigatório que falta, sem erro de servidor. | `POST /api/pergunta-anamnese/salvar/1` retorna 500 e a tela mostra "Erro ao salvar pergunta". |
+
+| **Ambiente** |
+|---|
+| Sifit Unialfa |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS |
+| Google Chrome 150.0.7871.46 |
+| 28/10/2026 |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+|---|---|
+| Perguntas de Anamnese / Cadastro | C12-CT16: Salvar Perguntas de Anamnese com o formulário vazio. |
+
+| **Evidência(s)** |
+|---|
+| [BUG:33] [PENDENTE BUGS] (roteiro V27) |
+
+---
