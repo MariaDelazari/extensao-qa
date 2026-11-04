@@ -25,10 +25,6 @@
 | :------------------------ |
 | **Falhou.** A requisição `POST /api/abrir-caixa/1` retornou 500 e a tela mostrou "Erro no servidor. Erro interno inesperado.". |
 
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-021 |
-
 | **Evidência(s)** |
 | :--------------- |
 | [PENDENTE VÍDEO] (roteiro V13) |

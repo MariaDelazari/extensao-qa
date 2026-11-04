@@ -25,10 +25,6 @@
 | :------------------------ |
 | **Falhou.** A saudação mostra "Jair" em vez do nome da conta autenticada. |
 
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-007 |
-
 | **Evidência(s)**                              |
 | :-------------------------------------------- |
 | [Vídeo](https://jam.dev/c/67051a38-ef40-40f3-9179-3ded2aadb3bc) |
@@ -60,10 +56,6 @@
 | :------------------------ |
 | **Falhou.** Os cards aparecem, mas o rodapé do Radar de Evasão, a cobrança de Rafael Santos e o valor em aberto não fecham com o detalhe. |
 
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-008, BUG-009, BUG-010 |
-
 | **Evidência(s)**                              |
 | :-------------------------------------------- |
 | [Vídeo](https://jam.dev/c/798502ef-5170-4d69-a87a-fe8cc504d77a) |
@@ -94,10 +86,6 @@
 | **Resultado da execução** |
 | :------------------------ |
 | **Falhou.** Em 28/10/2026 o card mostra "0 avaliações pendentes" e a lista filtrada por Pendente mostra 4 avaliações. |
-
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-015 |
 
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |

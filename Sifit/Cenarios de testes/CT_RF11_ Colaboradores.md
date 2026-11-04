@@ -25,10 +25,6 @@
 | :------------------------ |
 | **Falhou.** A requisição `POST /api/salvar/colaborador/1` retornou 500 e a tela mostrou "Erro no servidor. Erro interno inesperado.". |
 
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-024 |
-
 | **Evidência(s)** |
 | :--------------- |
 | [PENDENTE VÍDEO] (roteiro V17) |

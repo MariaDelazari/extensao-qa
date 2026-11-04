@@ -25,10 +25,6 @@
 | :------------------------ |
 | **Falhou.** A tabela mostra 1 cliente (408 - Lila) e o card "Clientes Ativos" mostra 1, mas a paginação oferece as páginas 1, 2 e 3. |
 
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-016 |
-
 | **Evidência(s)** |
 | :--------------- |
 | [PENDENTE VÍDEO] (roteiro V05) |
@@ -121,10 +117,6 @@
 | **Resultado da execução** |
 | :------------------------ |
 | **Falhou.** O campo aceitou e manteve o texto "abc". |
-
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-017 |
 
 | **Evidência(s)** |
 | :--------------- |

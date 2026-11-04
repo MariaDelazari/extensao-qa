@@ -25,10 +25,6 @@
 | :------------------------ |
 | **Falhou.** A rota `/dash` abre, mas o título e o caminho de navegação mostram "Despesas Fixas". |
 
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-012 |
-
 | **Evidência(s)** |
 | :--------------- |
 | [PENDENTE VÍDEO] (roteiro V01) |
@@ -58,10 +54,6 @@
 | **Resultado da execução** |
 | :------------------------ |
 | **Falhou.** Os títulos dos gráficos (por exemplo "Frequência", "Idade", "Sexo") e os títulos de bloco ("Clientes", "Matrículas") aparecem em cor escura ou branca sobre fundo de cor parecida e quase não dá para ler. |
-
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-013 |
 
 | **Evidência(s)** |
 | :--------------- |
@@ -93,10 +85,6 @@
 | **Resultado da execução** |
 | :------------------------ |
 | **Falhou.** Página Inicial: "1 alunos em risco de evasão". Inteligência de Retenção: 0 alto risco, 4 médio risco, 0 baixo risco. Dashboard: "0 Alunos em risco". |
-
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-014 |
 
 | **Evidência(s)** |
 | :--------------- |

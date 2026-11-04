@@ -25,10 +25,6 @@
 | :------------------------ |
 | **Falhou.** Nada acontece: nenhuma mensagem aparece e nenhuma requisição é enviada. |
 
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-025 |
-
 | **Evidência(s)** |
 | :--------------- |
 | [PENDENTE VÍDEO] (roteiro V19) |
@@ -122,10 +118,6 @@
 | :------------------------ |
 | **Falhou.** Nada acontece: nenhuma mensagem aparece e nenhuma requisição é enviada. |
 
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-026 |
-
 | **Evidência(s)** |
 | :--------------- |
 | [PENDENTE VÍDEO] (roteiro V20) |
@@ -157,10 +149,6 @@
 | :------------------------ |
 | **Falhou.** Nada acontece: nenhuma mensagem aparece e nenhuma requisição é enviada. |
 
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-027 |
-
 | **Evidência(s)** |
 | :--------------- |
 | [PENDENTE VÍDEO] (roteiro V21) |
@@ -191,10 +179,6 @@
 | **Resultado da execução** |
 | :------------------------ |
 | **Falhou.** A requisição `POST /api/criar-produto/1` retornou 400 e a tela mostrou só "Erro ao salvar produto", sem indicar o campo que falta. |
-
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-028 |
 
 | **Evidência(s)** |
 | :--------------- |
@@ -289,10 +273,6 @@
 | :------------------------ |
 | **Falhou.** A requisição `POST /api/enquete/salvar/1` retornou 200, mas a tela mostrou "Erro ao salvar enquete", sem indicar o que falta. |
 
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-029 |
-
 | **Evidência(s)** |
 | :--------------- |
 | [PENDENTE VÍDEO] (roteiro V23) |
@@ -323,10 +303,6 @@
 | **Resultado da execução** |
 | :------------------------ |
 | **Falhou.** A requisição `POST /api/salvar-atividade/1` retornou 201 com nome, descrição e pontuação vazios e a lista passou de 4 para 5 atividades, com a linha 5 em branco. |
-
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-030 |
 
 | **Evidência(s)** |
 | :--------------- |
@@ -452,10 +428,6 @@
 | :------------------------ |
 | **Falhou.** A requisição `POST /api/objetivo-treino/salvar/1` retornou 201 com o nome vazio e a lista passou de 0 para 1 objetivo, com a linha 1 em branco. |
 
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-031 |
-
 | **Evidência(s)** |
 | :--------------- |
 | [PENDENTE VÍDEO] (roteiro V25) |
@@ -487,10 +459,6 @@
 | :------------------------ |
 | **Falhou.** A requisição `POST /api/cria/tipo-pagamento/1` retornou 201 com o nome vazio e a lista passou de 10 para 11 tipos, com a linha 12 em branco. |
 
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-032 |
-
 | **Evidência(s)** |
 | :--------------- |
 | [PENDENTE VÍDEO] (roteiro V26) |
@@ -521,10 +489,6 @@
 | **Resultado da execução** |
 | :------------------------ |
 | **Falhou.** A requisição `POST /api/pergunta-anamnese/salvar/1` retornou 500 e a tela mostrou "Erro ao salvar pergunta". |
-
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-033 |
 
 | **Evidência(s)** |
 | :--------------- |

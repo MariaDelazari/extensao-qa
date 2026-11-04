@@ -25,10 +25,6 @@
 | :------------------------ |
 | **Falhou.** A requisição `POST /api/cadastrar-conta-pagar/1` retornou 500 e a tela mostrou "Erro ao salvar conta a pagar". |
 
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-020 |
-
 | **Evidência(s)** |
 | :--------------- |
 | [PENDENTE VÍDEO] (roteiro V12) |

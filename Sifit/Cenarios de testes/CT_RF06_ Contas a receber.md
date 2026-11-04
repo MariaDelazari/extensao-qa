@@ -25,10 +25,6 @@
 | :------------------------ |
 | **Falhou.** As linhas somam R$ 499,50 (igual a "Entradas"), mas "Recebido no Mês" mostra R$ 475,00 com "100,00% recebido". A conta 1608 (Lila) tem R$ 75,50 a receber e R$ 100,00 recebido. |
 
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-019 |
-
 | **Evidência(s)** |
 | :--------------- |
 | [PENDENTE VÍDEO] (roteiro V11) |

@@ -24,11 +24,7 @@
 
 | **Resultado da execução** |
 | :------------------------ |
-| **Falhou.** O login válido retornou erro 500 (BUG-006) ou entrou com o nome "Jair" no lugar da conta de teste (BUG-007). Em 28/10/2026 o login com a senha atual entrou e a saudação mostrou "Jair". |
-
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-006, BUG-007, BUG-011 |
+| **Falhou.** O login válido retornou erro 500 ou entrou com o nome "Jair" no lugar da conta de teste. Em 28/10/2026 o login com a senha atual entrou e a saudação mostrou "Jair". |
 
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |
@@ -62,10 +58,6 @@
 | :------------------------ |
 | **Falhou.** Com senha incorreta, `POST /api/login` retornou 500 e a tela mostrou "Erro no servidor. Erro interno inesperado.", e não "O nome de usuário e senha não correspondem.". |
 
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-003 |
-
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |
 | [Vídeo](https://jam.dev/c/37a1e688-e126-4bb3-989c-de2732780ce4) |
@@ -96,10 +88,6 @@
 | **Resultado da execução** |
 | :------------------------ |
 | **Falhou.** Com os campos vazios, o login seguiu para a API sem aviso de campos obrigatórios. |
-
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-004 |
 
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |
@@ -133,10 +121,6 @@
 | :------------------------ |
 | **Falhou.** Com espaços nas pontas das credenciais válidas, o login foi recusado. |
 
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-001 |
-
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |
 | [Vídeo](https://jam.dev/c/51531b19-254b-468b-ad89-7487194fc22a) |
@@ -169,10 +153,6 @@
 | :------------------------ |
 | **Falhou.** Com "Manter conectado", o retorno ao Sifit pediu o login de novo. |
 
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-005 |
-
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |
 | [Vídeo](https://jam.dev/c/0e862f82-e4d0-49df-9406-0ff970332873) |
@@ -202,10 +182,6 @@
 | **Resultado da execução** |
 | :------------------------ |
 | **Falhou.** O endereço `/dashboard` abriu sem sessão válida. |
-
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-005 |
 
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |
@@ -237,10 +213,6 @@
 | **Resultado da execução** |
 | :------------------------ |
 | **Falhou.** O link "Esqueci minha senha" não saiu da tela de login. |
-
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-002 |
 
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |

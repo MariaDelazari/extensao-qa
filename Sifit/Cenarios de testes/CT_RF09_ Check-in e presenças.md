@@ -25,10 +25,6 @@
 | :------------------------ |
 | **Falhou.** O card mostra "3 Check-ins hoje" e "18% vs ontem", mas a tabela mostra "Nenhum registro encontrado", "Presentes agora" é 0 e "Meta do dia" mostra "0% da meta". |
 
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-022 |
-
 | **Evidência(s)** |
 | :--------------- |
 | [PENDENTE VÍDEO] (roteiro V14) |
@@ -58,10 +54,6 @@
 | **Resultado da execução** |
 | :------------------------ |
 | **Falhou.** Página Inicial: "00h - 01h". Check-in: "Horário de maior movimento: 18h às 20h". |
-
-| **Bug(s) relacionado(s)** |
-| :------------------------ |
-| BUG-023 |
 
 | **Evidência(s)** |
 | :--------------- |
