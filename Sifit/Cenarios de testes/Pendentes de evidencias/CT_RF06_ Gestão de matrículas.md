@@ -428,6 +428,6 @@
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Falhou.** Matrículas tem 3 ativas (242 - Marcelo Longo Zandonadi, 241 - Rafaela Andrade, 240 - Lila). Clientes com Status "Ativo" mostra só 1 (408 - Lila); os cadastros de Marcelo Longo Zandonadi e Rafaela Andrade aparecem como INATIVO. |
 
-| **Evidência(s)**               |
-| :----------------------------- |
-| [PENDENTE VÍDEO] (roteiro V10) |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |

@@ -489,6 +489,6 @@
 | :--------------------------------------------------- |
 | **Falhou.** O campo aceitou e manteve o texto "abc". |
 
-| **Evidência(s)**               |
-| :----------------------------- |
-| [PENDENTE VÍDEO] (roteiro V07) |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |

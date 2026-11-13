@@ -22,7 +22,7 @@ Os 221 casos estão nos cenários C01 a C19. Um caso falhou quando existe um bug
 
 Alguns casos foram executados mais de uma vez, em datas ou endereços diferentes. O resultado do caso junta essas execuções, e a evidência é o vídeo que mostra o resultado registrado. Nos casos C01-CT01, C01-CT02, C02-CT01, C04-CT04, C04-CT10, C06-CT07 e C09-CT03, uma execução passou e outra encontrou a falha; o caso conta como falhou.
 
-Evidências: 95 casos têm vídeo ou print, e 126 aguardam o vídeo ([PENDENTE VÍDEO]). Dos 105 bugs, 54 têm vídeo ou print, e 51 aguardam o vídeo ([PENDENTE BUGS]). O roteiro está em `5-Roteiro-de-videos.md`.
+Evidências: 95 casos têm vídeo ou print, e 126 aguardam o vídeo (marcados com `[Vídeo](coloque o link do video aqui)`). Dos 105 bugs, 54 têm vídeo ou print, e 51 aguardam o vídeo (`[BUG:NN](coloque o link do video aqui)`). O roteiro está em `5-Roteiro-de-videos.md`.
 
 ---
 
@@ -229,7 +229,7 @@ No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado.
 
 * Plano de Testes
 * Análise de requisitos
-* Casos de teste (C01 a C19); os casos sem vídeo estão marcados com [PENDENTE VÍDEO]. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C02, C04, C06 e C09 a C19)
+* Casos de teste (C01 a C19); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C02, C04, C06 e C09 a C19)
 * Relatório de bugs, com o vídeo da falha
 * Vídeos no Jam e prints na pasta `Sifit/Evidencias`
 * Roteiro dos vídeos a gravar (`5-Roteiro-de-videos.md`)
@@ -244,6 +244,6 @@ As falhas mais graves impedem o uso de módulos centrais. Não é possível cada
 
 Funcionam bem a prospecção (11 de 12 casos), as turmas (10 de 13) e a validação do campo obrigatório em Clientes, Matrículas, Avaliações, Fornecedores, Turmas, Bandeiras, Pontuação, Tipos de Documentos, Exercícios e Categorias Crossfit.
 
-Ficaram sem caso de teste: Pagar.me, WhatsApp, Inteligência & Automação, Resultados IA, Relatórios, Configurações, Aplicativo e Modelos de Contrato. O teste de formulário vazio criou 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12), que devem ser excluídos.
+Ficaram fora do escopo: Pagar.me, WhatsApp e Aplicativo. Em 13/11/2026, o sistema foi aberto no navegador e estas telas ainda não têm caso de teste: Grupos, Modelos de contrato, Box - Turmas, Grupos musculares, Modelos de ficha, Configurações, Relatórios, Importar avaliações, Inteligência & Automação, Resultados IA, Local de contas, Bancos, Banco recorrente, Categorias de conta a pagar, Métricas do cliente e Modelos e categorias de anamnese. Elas estão no plano como RF20 a RF33. A tela Local de contas abre com o título "Fichas de Treino", sem menu e com a lista vazia, e Modelos de contrato mostra a lista vazia, embora existam registros; os dois pontos precisam ser investigados com vídeo. O teste de formulário vazio criou 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12), que devem ser excluídos.
 
 Até 23/10/2026 os testes usaram https://sifit.centrion.com.br/. A partir de 24/10/2026, usam https://sifitalfa.centrion.com.br/. A versão interna do sistema não foi anotada.

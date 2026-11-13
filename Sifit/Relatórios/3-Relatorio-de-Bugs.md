@@ -590,7 +590,7 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:15] [PENDENTE BUGS] (roteiro V04) |
+| [BUG:15](coloque o link do video aqui) |
 
 ---
 
@@ -666,7 +666,7 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:17] [PENDENTE BUGS] (roteiro V07) |
+| [BUG:17](coloque o link do video aqui) |
 
 ---
 
@@ -705,7 +705,7 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:18] [PENDENTE BUGS] (roteiro V10) |
+| [BUG:18](coloque o link do video aqui) |
 
 ---
 
@@ -783,7 +783,7 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:20] [PENDENTE BUGS] (roteiro V12) |
+| [BUG:20](coloque o link do video aqui) |
 
 ---
 
@@ -822,7 +822,7 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:21] [PENDENTE BUGS] (roteiro V13) |
+| [BUG:21](coloque o link do video aqui) |
 
 ---
 
@@ -860,7 +860,7 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:22] [PENDENTE BUGS] (roteiro V14) |
+| [BUG:22](coloque o link do video aqui) |
 
 ---
 
@@ -897,7 +897,7 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:23] [PENDENTE BUGS] (roteiro V15) |
+| [BUG:23](coloque o link do video aqui) |
 
 ---
 
@@ -936,7 +936,7 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:24] [PENDENTE BUGS] (roteiro V17) |
+| [BUG:24](coloque o link do video aqui) |
 
 ---
 
@@ -975,7 +975,7 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:25] [PENDENTE BUGS] (roteiro V19) |
+| [BUG:25](coloque o link do video aqui) |
 
 ---
 
@@ -1014,7 +1014,7 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:26] [PENDENTE BUGS] (roteiro V20) |
+| [BUG:26](coloque o link do video aqui) |
 
 ---
 
@@ -1053,7 +1053,7 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:27] [PENDENTE BUGS] (roteiro V21) |
+| [BUG:27](coloque o link do video aqui) |
 
 ---
 
@@ -1092,7 +1092,7 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:28] [PENDENTE BUGS] (roteiro V22) |
+| [BUG:28](coloque o link do video aqui) |
 
 ---
 
@@ -1131,7 +1131,7 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:29] [PENDENTE BUGS] (roteiro V23) |
+| [BUG:29](coloque o link do video aqui) |
 
 ---
 
@@ -1171,7 +1171,7 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:30] [PENDENTE BUGS] (roteiro V24) |
+| [BUG:30](coloque o link do video aqui) |
 
 ---
 
@@ -1211,7 +1211,7 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:31] [PENDENTE BUGS] (roteiro V25) |
+| [BUG:31](coloque o link do video aqui) |
 
 ---
 
@@ -1251,7 +1251,7 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:32] [PENDENTE BUGS] (roteiro V26) |
+| [BUG:32](coloque o link do video aqui) |
 
 ---
 
@@ -1290,7 +1290,7 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:33] [PENDENTE BUGS] (roteiro V27) |
+| [BUG:33](coloque o link do video aqui) |
 
 ---
 
@@ -2344,9 +2344,9 @@
 | :------------------------: | :----------------------------------------------------: |
 |    Check-in / Presenças    | C09-CT10: Exibição dos check-ins na tela de Presenças. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:62] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:62](coloque o link do video aqui) |
 
 ---
 
@@ -2455,9 +2455,9 @@
 | :-------------------------: | :------------------------------------------------: |
 | Check-in / Regras de acesso | C09-CT04: Check-in de cliente sem matrícula ativa. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:65] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:65](coloque o link do video aqui) |
 
 ---
 
@@ -2530,9 +2530,9 @@
 | :--------------------------: | :----------------------------------------: |
 | Avaliações / Fazer avaliação | C10-CT10: Registro da avaliação realizada. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:67] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:67](coloque o link do video aqui) |
 
 ---
 
@@ -2567,9 +2567,9 @@
 | :-----------------------------------: | :----------------------------------------------: |
 | Avaliações / Alteração de data e hora | C10-CT08: Alteração da data e hora da avaliação. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:68] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:68](coloque o link do video aqui) |
 
 ---
 
@@ -2604,9 +2604,9 @@
 | :------------------------: | :------------------------------------------------: |
 |   Avaliações / Cadastro    | C10-CT06: Cadastro de avaliação com hora inválida. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:69] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:69](coloque o link do video aqui) |
 
 ---
 
@@ -2640,9 +2640,9 @@
 | :--------------------------: | :---------------------------: |
 | Avaliações / Fazer avaliação |   C10-CT09: Cálculo do IMC.   |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:70] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:70](coloque o link do video aqui) |
 
 ---
 
@@ -2676,9 +2676,9 @@
 | :------------------------: | :---------------------------: |
 |     Turmas / Alteração     | C11-CT10: Alteração de turma. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:71] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:71](coloque o link do video aqui) |
 
 ---
 
@@ -2713,9 +2713,9 @@
 | :------------------------: | :------------------------------------------------------------: |
 |     Turmas / Cadastro      | C11-CT09: Cadastro de turma com hora final anterior à inicial. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:72] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:72](coloque o link do video aqui) |
 
 ---
 
@@ -2748,9 +2748,9 @@
 | :------------------------: | :-------------------------------------: |
 |      SifitBox / Aulas      | C11-CT13: Geração de aulas do SifitBox. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:73] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:73](coloque o link do video aqui) |
 
 ---
 
@@ -2785,9 +2785,9 @@
 | :------------------------: | :-------------------------------------------------------: |
 |    Caixas / Fechamento     | C12-CT10: Fechamento de caixa com conferência das contas. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:74] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:74](coloque o link do video aqui) |
 
 ---
 
@@ -2821,9 +2821,9 @@
 | :------------------------: | :-------------------------------------------------: |
 |    Caixas / Fechamento     | C12-CT11: Fechamento de caixa sem buscar as contas. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:75] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:75](coloque o link do video aqui) |
 
 ---
 
@@ -2857,9 +2857,9 @@
 | :------------------------: | :---------------------------------------------------: |
 |     Caixas / Abertura      | C12-CT08: Abertura de caixa duplicado no mesmo local. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:76] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:76](coloque o link do video aqui) |
 
 ---
 
@@ -2892,9 +2892,9 @@
 | :------------------------: | :-------------------------------------------------: |
 |    Caixas / Indicadores    | C12-CT09: Indicadores de caixas abertos e fechados. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:77] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:77](coloque o link do video aqui) |
 
 ---
 
@@ -2928,9 +2928,9 @@
 | :------------------------: | :----------------------------------------------------: |
 |     Caixas / Listagem      | C12-CT02: Listagem inicial conforme o período exibido. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:78] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:78](coloque o link do video aqui) |
 
 ---
 
@@ -2964,9 +2964,9 @@
 | :------------------------: | :---------------------------------------: |
 | Contas a Pagar / Pagamento | C13-CT08: Registro do pagamento da conta. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:79] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:79](coloque o link do video aqui) |
 
 ---
 
@@ -2999,9 +2999,9 @@
 | :--------------------------: | :---------------------------------------: |
 | Contas a Pagar / Indicadores | C13-CT04: Indicadores de valores a pagar. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:80] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:80](coloque o link do video aqui) |
 
 ---
 
@@ -3035,9 +3035,9 @@
 | :------------------------: | :----------------------------------: |
 | Contas a Pagar / Exclusão  | C13-CT09: Exclusão de conta a pagar. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:81] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:81](coloque o link do video aqui) |
 
 ---
 
@@ -3070,9 +3070,9 @@
 | :---------------------------: | :--------------------------------------: |
 | Contas a Pagar / Visualização | C13-CT07: Visualização da conta a pagar. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:82] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:82](coloque o link do video aqui) |
 
 ---
 
@@ -3107,9 +3107,9 @@
 | :------------------------: | :----------------------------------------------------: |
 | Despesas Fixas / Cadastro  | C13-CT13: Cadastro de despesa fixa com valor negativo. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:83] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:83](coloque o link do video aqui) |
 
 ---
 
@@ -3144,9 +3144,9 @@
 | :----------------------------------------: | :----------------------------------------------------------------------------------------------: |
 | Fichas de Treino / Montagem e visualização | C14-CT05: Montagem e salvamento dos treinos da ficha. C14-CT06: Visualização da ficha de treino. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:84] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:84](coloque o link do video aqui) |
 
 ---
 
@@ -3180,9 +3180,9 @@
 | :-------------------------: | :---------------------------------------: |
 | Fichas de Treino / Cadastro | C14-CT03: Cadastro de ficha sem objetivo. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:85] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:85](coloque o link do video aqui) |
 
 ---
 
@@ -3216,9 +3216,9 @@
 | :-------------------------: | :------------------------------------: |
 | Fichas de Treino / Exclusão | C14-CT07: Exclusão de ficha de treino. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:86] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:86](coloque o link do video aqui) |
 
 ---
 
@@ -3291,9 +3291,9 @@
 | :---------------------------: | :-----------------------------------: |
 | Prospecção / Cadastro de lead | C15-CT10: Cadastro de lead duplicado. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:88] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:88](coloque o link do video aqui) |
 
 ---
 
@@ -3327,9 +3327,9 @@
 | :------------------------: | :----------------------------------------------------: |
 |   Colaboradores / Busca    | C16-CT03: Busca de colaborador com código inexistente. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:89] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:89](coloque o link do video aqui) |
 
 ---
 
@@ -3363,9 +3363,9 @@
 | :------------------------: | :---------------------------------: |
 | Colaboradores / Alteração  | C16-CT07: Alteração de colaborador. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:90] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:90](coloque o link do video aqui) |
 
 ---
 
@@ -3399,9 +3399,9 @@
 | :----------------------------: | :---------------------------------------: |
 | Funções / Alteração e exclusão | C16-CT16: Alteração e exclusão de função. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:91] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:91](coloque o link do video aqui) |
 
 ---
 
@@ -3435,9 +3435,9 @@
 | :------------------------: | :-------------------------------------: |
 |     Funções / Cadastro     | C16-CT15: Cadastro de função duplicada. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:92] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:92](coloque o link do video aqui) |
 
 ---
 
@@ -3471,9 +3471,9 @@
 | :------------------------: | :----------------------------------------------: |
 |    Produtos / Cadastro     | C17-CT07: Cadastro de produto do tipo Pontuação. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:93] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:93](coloque o link do video aqui) |
 
 ---
 
@@ -3507,9 +3507,9 @@
 | :------------------------: | :-----------------------------------------------: |
 |    Produtos / Cadastro     | C17-CT05: Cadastro de produto com preço negativo. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:94] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:94](coloque o link do video aqui) |
 
 ---
 
@@ -3541,9 +3541,9 @@
 | :------------------------: | :---------------------------------------: |
 |    Produtos / Listagem     | C17-CT08: Exibição do valor dos produtos. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:95] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:95](coloque o link do video aqui) |
 
 ---
 
@@ -3577,9 +3577,9 @@
 | :---------------------------: | :-----------------------------------------: |
 | Fichas de Anamnese / Listagem | C18-CT07: Listagem das anamneses aplicadas. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:96] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:96](coloque o link do video aqui) |
 
 ---
 
@@ -3613,9 +3613,9 @@
 | :----------------------------: | :-----------------------------------------: |
 | Fichas de Anamnese / Aplicação | C18-CT05: Exibição das perguntas do modelo. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:97] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:97](coloque o link do video aqui) |
 
 ---
 
@@ -3649,9 +3649,9 @@
 | :----------------------------: | :-------------------------------------: |
 | Fichas de Anamnese / Aplicação | C18-CT02: Avançar sem selecionar aluno. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:98] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:98](coloque o link do video aqui) |
 
 ---
 
@@ -3684,9 +3684,9 @@
 | :----------------------------: | :-----------------------------------------------: |
 | Fichas de Anamnese / Aplicação | C18-CT04: Exibição do aluno na escolha do modelo. |
 
-|     **Evidência(s)**     |
-| :----------------------: |
-| [BUG:99] [PENDENTE BUGS] |
+|            **Evidência(s)**            |
+| :------------------------------------: |
+| [BUG:99](coloque o link do video aqui) |
 
 ---
 

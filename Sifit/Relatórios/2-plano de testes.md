@@ -41,12 +41,20 @@ Verificar manualmente os requisitos funcionais do Sifit: o login, a página inic
 - RF18 Fichas de anamnese: assistente de aplicação e listagem
 - RF19 Cadastros de apoio (9 telas): salvar com o formulário vazio
 
+**Incluído, ainda sem caso de teste (próximos cenários, RF20 a RF33):**
+
+- Grupos (RF20), Modelos de contrato (RF21) e Box - Turmas (RF22)
+- Grupos musculares (RF23), Modelos de ficha (RF24) e Configurações (RF25)
+- Relatórios (RF26), Importar avaliações (RF27) e Inteligência & Automação com Resultados IA (RF28)
+- Local de contas (RF29), Bancos e Banco recorrente (RF30), Categorias de conta a pagar (RF31) e Métricas do cliente (RF32); essas telas não aparecem no menu e abrem pelo endereço
+- Modelos e categorias de anamnese (RF33)
+
 **Excluído:**
 
 - Menus, consultas e formulários sem caso de teste
 - Integração com a Pagar.me, por envolver cobranças reais
 - Envio de mensagens pelo WhatsApp ("Cobrar todos no WhatsApp", "Enviar mensagem"), por enviar mensagens a pessoas reais
-- Inteligência & Automação, Resultados IA, Relatórios, Configurações, Aplicativo e Modelos de Contrato (sem caso de teste)
+- Aplicativo do aluno
 - Testes em dispositivos móveis
 - Testes de performance, carga e segurança
 
@@ -162,6 +170,7 @@ Quando houve diferença de prioridade entre os trabalhos, ficou a maior.
 | A sessão se comporta de um jeito no retorno ao sistema e de outro no `/dashboard` | Alto    | Repetir os dois caminhos no mesmo vídeo, como no BUG-005       |
 | Ambiente compartilhado: outros usuários alteram ou excluem dados                  | Alto    | Usar registros de teste identificáveis pelo nome e não fixar IDs na documentação |
 | Execuções em datas e endereços diferentes deram resultados diferentes (C01-CT01, C01-CT02, C02-CT01, C04-CT04, C04-CT10, C06-CT07, C09-CT03) | Médio | O resultado de cada execução está descrito no caso. Repetir no Sifit Unialfa antes da entrega |
+| A tela Local de contas abre com o título "Fichas de Treino", sem menu e com a lista vazia, e Modelos de contrato mostra a lista vazia, embora existam registros | Médio | Investigar e registrar nos cenários RF29 e RF21 |
 | Os casos executados por automação de navegador não mostram o aviso nativo do navegador ("Preencha este campo.") | Médio | Conferir em vídeo os BUG-025, 026 e 027, que estão em revisão |
 | 126 casos e 60 bugs ainda sem vídeo                                               | Alto    | Gravar os vídeos seguindo o `5-Roteiro-de-videos.md` e os casos que ainda estão sem vídeo |
 | Ações que enviam mensagens ou cobranças reais (WhatsApp e Pagar.me)              | Alto    | Manter essas ações fora do escopo                              |
@@ -202,7 +211,7 @@ Estes casos foram escritos, mas não foram executados, e não têm vídeo nem re
 
 - Plano de Testes
 - Análise de requisitos
-- Casos de teste (C01 a C19); os casos sem vídeo estão marcados como [PENDENTE VÍDEO]. Os cenários com algum caso sem vídeo ficam em `Cenarios de testes/Pendentes de evidencias`
+- Casos de teste (C01 a C19); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo ficam em `Cenarios de testes/Pendentes de evidencias`
 - Roteiro dos vídeos a gravar (`5-Roteiro-de-videos.md`)
 - Relatório de bugs com vídeos
 - Relatório final de execução

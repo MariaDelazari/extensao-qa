@@ -24,9 +24,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -54,9 +54,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -84,9 +84,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -114,9 +114,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -144,9 +144,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -174,9 +174,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -205,9 +205,9 @@
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. Em 28/10/2026, no Sifit Unialfa, o caso falhou: nada acontece: nenhuma mensagem aparece e nenhuma requisição é enviada. O BUG-026 está em revisão: a execução automatizada não captura o aviso nativo do navegador. |
 
-| **Evidência(s)**               |
-| :----------------------------- |
-| [PENDENTE VÍDEO] (roteiro V20) |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -236,9 +236,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -267,9 +267,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -298,9 +298,9 @@
 | :---------------------------------------------- |
 | **Falhou.** O lead é cadastrado em duplicidade. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -329,9 +329,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -360,6 +360,6 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |

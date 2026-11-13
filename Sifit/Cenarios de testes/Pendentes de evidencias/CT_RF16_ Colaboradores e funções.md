@@ -24,9 +24,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -55,9 +55,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -86,9 +86,9 @@
 | :---------------------------------------------------- |
 | **Falhou.** A listagem exibe uma linha vazia com "/". |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -117,9 +117,9 @@
 | :------------------------------------------------------------------------------------------------------------------------------------ |
 | **Falhou.** A requisição `POST /api/salvar/colaborador/1` retornou 500 e a tela mostrou "Erro no servidor. Erro interno inesperado.". |
 
-| **Evidência(s)**               |
-| :----------------------------- |
-| [PENDENTE VÍDEO] (roteiro V17) |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -149,9 +149,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -181,9 +181,9 @@
 | :--------------------------------------------------------------------------------------------------------------------- |
 | **Falhou.** `POST /api/salvar/colaborador/1` retorna 500 e a tela mostra "Erro no servidor. Erro interno inesperado.". |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -212,9 +212,9 @@
 | :------------------------------------------------------------ |
 | **Falhou.** A resposta da API contém o comando SQL executado. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -243,9 +243,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -274,9 +274,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -305,9 +305,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -335,9 +335,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -366,9 +366,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -397,9 +397,9 @@
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. Em 28/10/2026, no Sifit Unialfa, o caso falhou: nada acontece: nenhuma mensagem aparece e nenhuma requisição é enviada. O BUG-027 está em revisão: a execução automatizada não captura o aviso nativo do navegador. |
 
-| **Evidência(s)**               |
-| :----------------------------- |
-| [PENDENTE VÍDEO] (roteiro V21) |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -428,9 +428,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -459,9 +459,9 @@
 | :------------------------------------------------ |
 | **Falhou.** A função é cadastrada em duplicidade. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -489,9 +489,9 @@
 | :-------------------------------------------------------------------- |
 | **Falhou.** Os campos são somente leitura e não há opção de exclusão. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -520,6 +520,6 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |

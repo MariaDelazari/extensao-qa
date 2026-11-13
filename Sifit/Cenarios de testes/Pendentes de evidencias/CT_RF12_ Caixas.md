@@ -24,9 +24,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -55,9 +55,9 @@
 | :--------------------------------------------------------------------- |
 | **Falhou.** A listagem inicial exibe todos os caixas, fora do período. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -85,9 +85,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -116,9 +116,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -146,9 +146,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -177,9 +177,9 @@
 | :----------------------------------------------------------------------------------------------------------------------------- |
 | **Falhou.** A requisição `POST /api/abrir-caixa/1` retornou 500 e a tela mostrou "Erro no servidor. Erro interno inesperado.". |
 
-| **Evidência(s)**               |
-| :----------------------------- |
-| [PENDENTE VÍDEO] (roteiro V13) |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -208,9 +208,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -239,9 +239,9 @@
 | :---------------------------------------------------- |
 | **Falhou.** Um segundo caixa é aberto no mesmo local. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -269,9 +269,9 @@
 | :-------------------------------------------------------------- |
 | **Falhou.** "Caixas Fechados" diminui em 1 a cada caixa aberto. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -300,9 +300,9 @@
 | :---------------------------------------------------- |
 | **Falhou.** Nada acontece e o caixa permanece aberto. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -331,6 +331,6 @@
 | :--------------------------------------------------- |
 | **Falhou.** O caixa é fechado com os totais zerados. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |

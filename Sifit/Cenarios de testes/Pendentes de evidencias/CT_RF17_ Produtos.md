@@ -24,9 +24,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -55,9 +55,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -86,9 +86,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -117,9 +117,9 @@
 | :--------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Falhou.** A requisição `POST /api/criar-produto/1` retornou 400 e a tela mostrou só "Erro ao salvar produto", sem indicar o campo que falta. |
 
-| **Evidência(s)**               |
-| :----------------------------- |
-| [PENDENTE VÍDEO] (roteiro V22) |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -148,9 +148,9 @@
 | :----------------------------------------------------- |
 | **Falhou.** O produto é cadastrado com preço negativo. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -179,9 +179,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -211,9 +211,9 @@
 | :--------------------------------------------------------------------------------- |
 | **Falhou.** O sistema exibe "Erro ao salvar produto" e o produto não é cadastrado. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -241,9 +241,9 @@
 | :---------------------------------------------------------------------------- |
 | **Falhou.** Os valores são exibidos como "R$ 1550", "R$ 7000.99" e "R$ 49.9". |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -272,9 +272,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -303,9 +303,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -334,6 +334,6 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |

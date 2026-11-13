@@ -24,9 +24,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -55,9 +55,9 @@
 | :------------------------------------------------------------------------ |
 | **Falhou.** O assistente avança e a finalização exibe "Erro no servidor". |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -86,9 +86,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -116,9 +116,9 @@
 | :------------------------------------------------- |
 | **Falhou.** O texto é exibido sem o nome do aluno. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -146,9 +146,9 @@
 | :------------------------------------------------------------------------------ |
 | **Falhou.** O assistente pula para "Revisar e Finalizar" sem exibir a pergunta. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -176,9 +176,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -206,6 +206,6 @@
 | :---------------------------------------------------------------------------------------- |
 | **Falhou.** A listagem exibe "Nenhuma ficha encontrada" e os indicadores permanecem em 0. |
 
-| **Evidência(s)** |
-| :--------------- |
-| [PENDENTE VÍDEO] |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |

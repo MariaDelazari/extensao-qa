@@ -238,9 +238,9 @@
 | :-------------------------------------------------------------------------------------------------------------------- |
 | **Falhou.** Em 28/10/2026 o card mostra "0 avaliações pendentes" e a lista filtrada por Pendente mostra 4 avaliações. |
 
-| **Evidência(s)**               |
-| :----------------------------- |
-| [PENDENTE VÍDEO] (roteiro V04) |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 

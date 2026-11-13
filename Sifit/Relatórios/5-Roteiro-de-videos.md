@@ -2,7 +2,7 @@
 
 Entrar em https://sifitalfa.centrion.com.br/ com o login `marcelo_zandonadi` e a senha `password`, no Google Chrome.
 
-Depois de gravar no Jam, mande para a Maria o número do caso, o link e se o resultado foi igual ou diferente do que está escrito. Ela cola o link no caso (`[Vídeo](link)`) e no bug (`[BUG:NN](link)`). Um mesmo vídeo serve para o caso e para o bug.
+Depois de gravar no Jam, cole o link no GitHub: no caso, troque `coloque o link do video aqui` pelo link, deixando `[Vídeo](link)`; no bug, faça o mesmo, deixando `[BUG:NN](link)`. Um mesmo vídeo serve para o caso e para o bug. Se o resultado for diferente do que está escrito, corrija o resultado e avise no grupo.
 
 Quando o vídeo pedir o DevTools, deixar a aba Network aberta durante a gravação.
 

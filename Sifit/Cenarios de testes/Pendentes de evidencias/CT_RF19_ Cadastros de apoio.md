@@ -25,9 +25,9 @@
 | :------------------------------------------------------------------------------------------- |
 | **Passou.** Apareceu o aviso "Informe o nome da bandeira." e nenhuma requisição foi enviada. |
 
-| **Evidência(s)**               |
-| :----------------------------- |
-| [PENDENTE VÍDEO] (roteiro V18) |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -56,9 +56,9 @@
 | :-------------------------------------------------------------------------------------------- |
 | **Passou.** Apareceu o aviso "Informe o nome da pontuação." e nenhuma requisição foi enviada. |
 
-| **Evidência(s)**               |
-| :----------------------------- |
-| [PENDENTE VÍDEO] (roteiro V18) |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -87,9 +87,9 @@
 | :---------------------------------------------------------------------------------------------------------------------------------------- |
 | **Falhou.** A requisição `POST /api/enquete/salvar/1` retornou 200, mas a tela mostrou "Erro ao salvar enquete", sem indicar o que falta. |
 
-| **Evidência(s)**               |
-| :----------------------------- |
-| [PENDENTE VÍDEO] (roteiro V23) |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -118,9 +118,9 @@
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Falhou.** A requisição `POST /api/salvar-atividade/1` retornou 201 com nome, descrição e pontuação vazios e a lista passou de 4 para 5 atividades, com a linha 5 em branco. |
 
-| **Evidência(s)**               |
-| :----------------------------- |
-| [PENDENTE VÍDEO] (roteiro V24) |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -149,9 +149,9 @@
 | :---------------------------------------------------------------------------------------------------- |
 | **Passou.** Apareceu o aviso "Informe o nome do tipo de documento." e nenhuma requisição foi enviada. |
 
-| **Evidência(s)**               |
-| :----------------------------- |
-| [PENDENTE VÍDEO] (roteiro V18) |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -180,9 +180,9 @@
 | :-------------------------------------------------------------------------------------------- |
 | **Passou.** Apareceu o aviso "Informe o nome da categoria." e nenhuma requisição foi enviada. |
 
-| **Evidência(s)**               |
-| :----------------------------- |
-| [PENDENTE VÍDEO] (roteiro V18) |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -211,9 +211,9 @@
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Falhou.** A requisição `POST /api/objetivo-treino/salvar/1` retornou 201 com o nome vazio e a lista passou de 0 para 1 objetivo, com a linha 1 em branco. |
 
-| **Evidência(s)**               |
-| :----------------------------- |
-| [PENDENTE VÍDEO] (roteiro V25) |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -242,9 +242,9 @@
 | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Falhou.** A requisição `POST /api/cria/tipo-pagamento/1` retornou 201 com o nome vazio e a lista passou de 10 para 11 tipos, com a linha 12 em branco. |
 
-| **Evidência(s)**               |
-| :----------------------------- |
-| [PENDENTE VÍDEO] (roteiro V26) |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
@@ -273,6 +273,6 @@
 | :----------------------------------------------------------------------------------------------------------------------- |
 | **Falhou.** A requisição `POST /api/pergunta-anamnese/salvar/1` retornou 500 e a tela mostrou "Erro ao salvar pergunta". |
 
-| **Evidência(s)**               |
-| :----------------------------- |
-| [PENDENTE VÍDEO] (roteiro V27) |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
