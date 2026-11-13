@@ -4,7 +4,7 @@ Este texto é para quem vai ajudar e não estava na aula. Ele explica o que entr
 
 A pasta `OrangeHRM` é o exemplo do professor. Ela serve só para copiar o formato. Não altere nada dentro dela.
 
-A pasta `Sifit` é o meu trabalho. É nela que entram os textos, os casos e os bugs do sistema que eu testei.
+A pasta `Sifit` é o trabalho do grupo. É nela que entram os textos, os casos e os bugs do sistema que testamos.
 
 A pasta `modelo` é só este guia. Os arquivos em `modelo/exemplo-de-arquivos` mostram o formato vazio. Não coloque resultado real neles.
 
@@ -40,11 +40,24 @@ Sifit/
     2-plano de testes.md
     3-Relatorio-de-Bugs.md
     4- Relatorio dos testes.md
+    5-Roteiro-de-videos.md
   Cenarios de testes/
     CT_RF01_ Login na plataforma.md
-    CT_RF02_ Página inicial do dashboard.md
+    CT_RF03_ Dashboard.md
     ...
+    Pendentes de evidencias/
+      CT_RF02_ Página inicial do dashboard.md
+      ...
+      CT_RF19_ Cadastros de apoio.md
+  Evidencias/
+    C02-CT01.png  (prints, com o ID do caso no nome)
 ```
+
+Na pasta `Pendentes de evidencias` ficam os cenários que ainda têm algum caso sem vídeo. Quando todos os casos do cenário tiverem vídeo, mova o arquivo para `Cenarios de testes` e troque `../../Evidencias/` por `../Evidencias/` nos links dos prints.
+
+O número do RF é o número do cenário e do arquivo: o RF05 é testado no cenário C05, no arquivo `CT_RF05_`. É o mesmo padrão da pasta OrangeHRM.
+
+Quando o mesmo caso foi executado mais de uma vez, ele continua sendo um caso só: o resultado junta as execuções e a evidência é um único vídeo, o que mostra o resultado registrado. Não coloque o nome de quem gravou no link: é sempre `[Vídeo](...)` no caso e `[BUG:NN](...)` no bug.
 
 O nome do caso tem um espaço depois do código: `CT_RF01_ Login na plataforma.md`. O relatório final também tem um espaço: `4- Relatorio dos testes.md`. Esse espaço está no exemplo do professor. Mantenha.
 
@@ -149,7 +162,7 @@ O login dos testes é `marcelo_zandonadi`.
 
 No primeiro endereço, a senha anotada no caso C01-CT01 é `12345678`.
 
-No [sifitalfa](https://sifitalfa.centrion.com.br/), a senha do reteste é `Password`.
+No [sifitalfa](https://sifitalfa.centrion.com.br/), a senha atual é `password`, tudo minúsculo (conferido em 13/11/2026).
 
 ## O que não fazer durante o teste
 
