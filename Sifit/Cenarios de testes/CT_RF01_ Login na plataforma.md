@@ -22,9 +22,9 @@
 | :------------------------------------------------------------- |
 | O redirecionamento para o Dashboard deve ocorrer corretamente. |
 
-| **Resultado da execução**                                                                                                                                                                                                                                                                                                                             |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** O login válido retornou erro 500 ou entrou com o nome "Jair" no lugar da conta de teste. Em 28/10/2026 o login com a senha atual entrou e a saudação mostrou "Jair". Em outra execução, o caso passou. Em 23 a 24/10/2026, no sifit.centrion.com.br, o caso passou: redirecionado para /dashboard com a mensagem "Boa noite, (nome do usuário)!". |
+| **Resultado da execução**                                                                                                                                                                                                                                                                                                                                              |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** O login válido mostrou "Erro no servidor" ou entrou com o nome "Jair" no lugar da conta de teste. Em 28/10/2026 o login com a senha atual entrou e a saudação mostrou "Jair". Em outra execução, o caso passou. Em 23 a 24/10/2026, no sifit.centrion.com.br, o caso passou: redirecionado para /dashboard com a mensagem "Boa noite, (nome do usuário)!". |
 
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |
@@ -54,9 +54,9 @@
 | :------------------------------------------------------------------------------------------------- |
 | A mensagem "O nome de usuário e senha não correspondem." fica visível e a página inicial não abre. |
 
-| **Resultado da execução**                                                                                                                                                                                             |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** Com senha incorreta, `POST /api/login` retornou 500 e a tela mostrou "Erro no servidor. Erro interno inesperado.", e não "O nome de usuário e senha não correspondem.". Em outra execução, o caso passou. |
+| **Resultado da execução**                                                                                                                                                              |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** Com a senha incorreta, a tela mostrou "Erro no servidor. Erro interno inesperado.", e não "O nome de usuário e senha não correspondem.". Em outra execução, o caso passou. |
 
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |
@@ -85,9 +85,9 @@
 | :--------------------------------------------------------- |
 | A tela indica os campos que faltam e o Dashboard não abre. |
 
-| **Resultado da execução**                                                                                                                                                                                                                                                         |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** Com os campos vazios, o login seguiu para a API sem aviso de campos obrigatórios. Em 23 a 24/10/2026, no sifit.centrion.com.br, o caso falhou: o formulário é enviado e retorna "O nome de usuário e senha não correspondem."; não há validação de campo obrigatório. |
+| **Resultado da execução**                                                                                                                                                                                                                                     |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Falhou.** Com os campos vazios, o login foi tentado sem nenhum aviso de campo obrigatório. Em 23 a 24/10/2026, no sifit.centrion.com.br, o caso falhou: a tela mostra "O nome de usuário e senha não correspondem."; não há validação de campo obrigatório. |
 
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |

@@ -201,9 +201,9 @@
 | :--------------------------------------------------------------- |
 | O sistema deve impedir o cadastro até que o nome seja informado. |
 
-| **Resultado da execução**                                                                                                                                                                                                                                                                      |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Passou.** O sistema se comportou como descrito no critério de aceitação. Em 28/10/2026, no Sifit Unialfa, o caso falhou: nada acontece: nenhuma mensagem aparece e nenhuma requisição é enviada. O BUG-026 está em revisão: a execução automatizada não captura o aviso nativo do navegador. |
+| **Resultado da execução**                                                                                                                                                                                                                                        |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Passou.** O sistema se comportou como descrito no critério de aceitação. Em 28/10/2026, no Sifit Unialfa, o caso falhou: nada acontece e nenhuma mensagem aparece. O BUG-026 está em revisão: a execução automatizada não captura o aviso nativo do navegador. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |

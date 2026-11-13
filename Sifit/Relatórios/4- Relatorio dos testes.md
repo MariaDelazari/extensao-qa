@@ -77,11 +77,11 @@ O BUG-007 aparece em RF01 e RF02, e o BUG-014 em RF02 e RF03, porque cada um apo
 | BUG-017 | Campo Código da busca de clientes aceita letras | Baixa | Aberto |
 | BUG-018 | Matrículas ativas pertencem a clientes inativos | Alta | Aberto |
 | BUG-019 | Totais de Contas a Receber não fecham com a listagem | Média | Aberto |
-| BUG-020 | Erro 500 ao salvar conta a pagar com campos vazios | Média | Aberto |
-| BUG-021 | Erro 500 ao abrir caixa com campos vazios | Média | Aberto |
+| BUG-020 | Erro no servidor ao salvar conta a pagar com campos vazios | Média | Aberto |
+| BUG-021 | Erro no servidor ao abrir caixa com campos vazios | Média | Aberto |
 | BUG-022 | Check-ins do dia não batem com a lista de check-ins | Alta | Aberto |
 | BUG-023 | Horário de pico diferente entre Página Inicial e Check-in | Baixa | Aberto |
-| BUG-024 | Erro 500 ao salvar colaborador com campos vazios | Média | Aberto |
+| BUG-024 | Erro no servidor ao salvar colaborador com campos vazios | Média | Aberto |
 | BUG-025 | Cadastro de Planos não avisa nada ao salvar vazio | Média | Em revisão |
 | BUG-026 | Cadastro de Prospecção não avisa nada ao salvar vazio | Média | Em revisão |
 | BUG-027 | Cadastro de Funções não avisa nada ao salvar vazio | Média | Em revisão |
@@ -90,7 +90,7 @@ O BUG-007 aparece em RF01 e RF02, e o BUG-014 em RF02 e RF03, porque cada um apo
 | BUG-030 | Atividades permite salvar registro em branco | Média | Aberto |
 | BUG-031 | Objetivos de Treino permite salvar registro em branco | Média | Aberto |
 | BUG-032 | Tipos de Pagamento permite salvar registro em branco | Média | Aberto |
-| BUG-033 | Erro 500 ao salvar pergunta de anamnese vazia | Média | Aberto |
+| BUG-033 | Erro ao salvar pergunta de anamnese vazia | Média | Aberto |
 | BUG-034 | Quantidade de clientes ausentes diverge entre a Página Inicial e a tela de Clientes | Média | Aberto |
 | BUG-035 | Lista de desistências vazia, embora o total informe 3 desistências | Média | Aberto |
 | BUG-036 | Erro ao cadastrar cliente com dados válidos | Crítica | Aberto |
@@ -143,11 +143,11 @@ O BUG-007 aparece em RF01 e RF02, e o BUG-014 em RF02 e RF03, porque cada um apo
 | BUG-083 | Despesa fixa aceita valor negativo e erro interno com valor em texto | Média | Aberto |
 | BUG-084 | Ficha de treino não pode ser aberta nem salva | Alta | Aberto |
 | BUG-085 | Mensagem genérica ao criar ficha sem objetivo do treino | Média | Aberto |
-| BUG-086 | Exclusão de ficha de treino retorna comandos SQL na resposta da API | Média | Aberto |
+| BUG-086 | Exclusão de ficha de treino expõe comandos SQL | Média | Aberto |
 | BUG-087 | Sistema permite cadastrar exercício duplicado no mesmo grupo | Baixa | Aberto |
 | BUG-088 | Sistema permite cadastrar lead duplicado | Baixa | Aberto |
 | BUG-089 | Busca de colaborador por código inexistente exibe linha vazia | Baixa | Aberto |
-| BUG-090 | Alteração de colaborador retorna comandos SQL na resposta da API | Média | Aberto |
+| BUG-090 | Alteração de colaborador expõe comandos SQL | Média | Aberto |
 | BUG-091 | Funções não podem ser alteradas nem excluídas | Média | Aberto |
 | BUG-092 | Sistema permite cadastrar função duplicada | Baixa | Aberto |
 | BUG-093 | Produto do tipo Pontuação não pode ser cadastrado | Alta | Aberto |
@@ -238,12 +238,12 @@ No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado.
 
 ## ✅ **Conclusão**
 
-Dos 221 casos, 116 passaram e 105 falharam, com 105 bugs registrados: 102 abertos e 3 em revisão. No login, só o usuário inexistente e o logout passaram: o login válido falha com erro 500 ou entra mostrando o nome Jair, a senha incorreta já respondeu com erro 500, os campos vazios seguem para a API sem aviso, os espaços nas pontas derrubam o login, o link "Esqueci minha senha" não faz nada e a sessão não é controlada.
+Dos 221 casos, 116 passaram e 105 falharam, com 105 bugs registrados: 102 abertos e 3 em revisão. No login, só o usuário inexistente e o logout passaram: o login válido mostra erro no servidor ou entra mostrando o nome Jair, a senha incorreta já mostrou erro no servidor, os campos vazios seguem para a API sem aviso, os espaços nas pontas derrubam o login, o link "Esqueci minha senha" não faz nada e a sessão não é controlada.
 
 As falhas mais graves impedem o uso de módulos centrais. Não é possível cadastrar nem alterar clientes (BUG-036 e BUG-040, severidade Crítica) e fornecedores (BUG-060 e BUG-061). A inativação do plano não é salva (BUG-046). O fechamento de caixa com conferência não é gravado (BUG-074). Não há como registrar o pagamento de conta a pagar (BUG-079). A ficha de treino não abre nem salva (BUG-084). A avaliação realizada não é salva (BUG-067). As anamneses aplicadas não aparecem (BUG-096 e BUG-097). Também se repetem formulários vazios que geram erro 500, respostas da API que expõem comandos SQL, registros em branco aceitos (Atividades, Objetivos de Treino e Tipos de Pagamento) e números que mudam de uma tela para outra (alunos em risco, avaliações pendentes, check-ins do dia, matrículas ativas contra clientes ativos e totais de contas a receber).
 
 Funcionam bem a prospecção (11 de 12 casos), as turmas (10 de 13) e a validação do campo obrigatório em Clientes, Matrículas, Avaliações, Fornecedores, Turmas, Bandeiras, Pontuação, Tipos de Documentos, Exercícios e Categorias Crossfit.
 
-Ficaram fora do escopo: Pagar.me, WhatsApp e Aplicativo. Em 13/11/2026, o sistema foi aberto no navegador e estas telas ainda não têm caso de teste: Grupos, Modelos de contrato, Box - Turmas, Grupos musculares, Modelos de ficha, Configurações, Relatórios, Importar avaliações, Inteligência & Automação, Resultados IA, Local de contas, Bancos, Banco recorrente, Categorias de conta a pagar, Métricas do cliente e Modelos e categorias de anamnese. Elas estão no plano como RF20 a RF33. A tela Local de contas abre com o título "Fichas de Treino", sem menu e com a lista vazia, e Modelos de contrato mostra a lista vazia, embora existam registros; os dois pontos precisam ser investigados com vídeo. O teste de formulário vazio criou 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12), que devem ser excluídos.
+Ficaram fora do escopo: Pagar.me, WhatsApp e Aplicativo. Ainda não têm caso de teste: Grupos, Modelos de contrato, Box - Turmas, Grupos musculares, Modelos de ficha, Configurações, Relatórios, Importar avaliações, Inteligência & Automação, Resultados IA, Local de contas, Bancos, Banco recorrente, Categorias de conta a pagar, Métricas do cliente e Modelos e categorias de anamnese (RF20 a RF33 no plano). O teste de formulário vazio criou 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12), que devem ser excluídos.
 
 Até 23/10/2026 os testes usaram https://sifit.centrion.com.br/. A partir de 24/10/2026, usam https://sifitalfa.centrion.com.br/. A versão interna do sistema não foi anotada.

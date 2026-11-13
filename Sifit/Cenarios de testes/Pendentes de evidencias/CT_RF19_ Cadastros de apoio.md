@@ -21,9 +21,9 @@
 | :------------------------------------------------------------- |
 | O sistema bloqueia o salvamento e informa o campo obrigatório. |
 
-| **Resultado da execução**                                                                    |
-| :------------------------------------------------------------------------------------------- |
-| **Passou.** Apareceu o aviso "Informe o nome da bandeira." e nenhuma requisição foi enviada. |
+| **Resultado da execução**                                                              |
+| :------------------------------------------------------------------------------------- |
+| **Passou.** Apareceu o aviso "Informe o nome da bandeira." e o cadastro não foi salvo. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
@@ -52,9 +52,9 @@
 | :------------------------------------------------------------- |
 | O sistema bloqueia o salvamento e informa o campo obrigatório. |
 
-| **Resultado da execução**                                                                     |
-| :-------------------------------------------------------------------------------------------- |
-| **Passou.** Apareceu o aviso "Informe o nome da pontuação." e nenhuma requisição foi enviada. |
+| **Resultado da execução**                                                               |
+| :-------------------------------------------------------------------------------------- |
+| **Passou.** Apareceu o aviso "Informe o nome da pontuação." e o cadastro não foi salvo. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
@@ -83,9 +83,9 @@
 | :------------------------------------------------------------------------------------------------------------------ |
 | O sistema bloqueia o salvamento e informa o campo obrigatório, sem criar registro em branco e sem erro de servidor. |
 
-| **Resultado da execução**                                                                                                                 |
-| :---------------------------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** A requisição `POST /api/enquete/salvar/1` retornou 200, mas a tela mostrou "Erro ao salvar enquete", sem indicar o que falta. |
+| **Resultado da execução**                                                                                             |
+| :-------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** Ao salvar a enquete sem preencher nada, a tela mostrou "Erro ao salvar enquete", sem indicar o que falta. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
@@ -114,9 +114,9 @@
 | :------------------------------------------------------------------------------------------------------------------ |
 | O sistema bloqueia o salvamento e informa o campo obrigatório, sem criar registro em branco e sem erro de servidor. |
 
-| **Resultado da execução**                                                                                                                                                     |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** A requisição `POST /api/salvar-atividade/1` retornou 201 com nome, descrição e pontuação vazios e a lista passou de 4 para 5 atividades, com a linha 5 em branco. |
+| **Resultado da execução**                                                                                 |
+| :-------------------------------------------------------------------------------------------------------- |
+| **Falhou.** O formulário vazio foi salvo: a lista passou de 4 para 5 atividades, com a linha 5 em branco. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
@@ -145,9 +145,9 @@
 | :------------------------------------------------------------- |
 | O sistema bloqueia o salvamento e informa o campo obrigatório. |
 
-| **Resultado da execução**                                                                             |
-| :---------------------------------------------------------------------------------------------------- |
-| **Passou.** Apareceu o aviso "Informe o nome do tipo de documento." e nenhuma requisição foi enviada. |
+| **Resultado da execução**                                                                       |
+| :---------------------------------------------------------------------------------------------- |
+| **Passou.** Apareceu o aviso "Informe o nome do tipo de documento." e o cadastro não foi salvo. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
@@ -176,9 +176,9 @@
 | :------------------------------------------------------------- |
 | O sistema bloqueia o salvamento e informa o campo obrigatório. |
 
-| **Resultado da execução**                                                                     |
-| :-------------------------------------------------------------------------------------------- |
-| **Passou.** Apareceu o aviso "Informe o nome da categoria." e nenhuma requisição foi enviada. |
+| **Resultado da execução**                                                               |
+| :-------------------------------------------------------------------------------------- |
+| **Passou.** Apareceu o aviso "Informe o nome da categoria." e o cadastro não foi salvo. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
@@ -207,9 +207,9 @@
 | :------------------------------------------------------------------------------------------------------------------ |
 | O sistema bloqueia o salvamento e informa o campo obrigatório, sem criar registro em branco e sem erro de servidor. |
 
-| **Resultado da execução**                                                                                                                                   |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** A requisição `POST /api/objetivo-treino/salvar/1` retornou 201 com o nome vazio e a lista passou de 0 para 1 objetivo, com a linha 1 em branco. |
+| **Resultado da execução**                                                                               |
+| :------------------------------------------------------------------------------------------------------ |
+| **Falhou.** O formulário vazio foi salvo: a lista passou de 0 para 1 objetivo, com a linha 1 em branco. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
@@ -238,9 +238,9 @@
 | :------------------------------------------------------------------------------------------------------------------ |
 | O sistema bloqueia o salvamento e informa o campo obrigatório, sem criar registro em branco e sem erro de servidor. |
 
-| **Resultado da execução**                                                                                                                                |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** A requisição `POST /api/cria/tipo-pagamento/1` retornou 201 com o nome vazio e a lista passou de 10 para 11 tipos, com a linha 12 em branco. |
+| **Resultado da execução**                                                                               |
+| :------------------------------------------------------------------------------------------------------ |
+| **Falhou.** O formulário vazio foi salvo: a lista passou de 10 para 11 tipos, com a linha 12 em branco. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
@@ -271,7 +271,7 @@
 
 | **Resultado da execução**                                                                                                |
 | :----------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** A requisição `POST /api/pergunta-anamnese/salvar/1` retornou 500 e a tela mostrou "Erro ao salvar pergunta". |
+| **Falhou.** Ao salvar a pergunta sem preencher nada, a tela mostrou só "Erro ao salvar pergunta", sem dizer o que falta. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |

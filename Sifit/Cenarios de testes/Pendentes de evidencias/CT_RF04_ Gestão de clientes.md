@@ -207,9 +207,9 @@
 | :--------------------------------------------------------- |
 | O cadastro é bloqueado e a tela informa o campo que falta. |
 
-| **Resultado da execução**                                                                                                                                                                                                                                                                                                                                                  |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Passou.** O sistema se comportou como descrito no critério de aceitação. Em 28/10/2026, no Sifit Unialfa, o caso passou: o sistema permaneceu em `/adicionar-cliente`, não enviou requisição e mostrou "Preencha o nome da pessoa". Em 23 a 24/10/2026, no sifit.centrion.com.br, o caso passou: cadastro bloqueado; a validação é exibida um campo obrigatório por vez. |
+| **Resultado da execução**                                                                                                                                                                                                                                                                                                                       |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Passou.** O sistema se comportou como descrito no critério de aceitação. Em 28/10/2026, no Sifit Unialfa, o caso passou: o sistema permaneceu na tela de cadastro e mostrou "Preencha o nome da pessoa". Em 23 a 24/10/2026, no sifit.centrion.com.br, o caso passou: cadastro bloqueado; a validação é exibida um campo obrigatório por vez. |
 
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |

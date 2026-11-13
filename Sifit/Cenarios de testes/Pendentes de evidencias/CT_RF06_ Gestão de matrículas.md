@@ -143,9 +143,9 @@
 | :-------------------------------------------------------------- |
 | O sistema bloqueia o salvamento e mostra aviso sobre o cliente. |
 
-| **Resultado da execução**                                                                                                                                                                                                                                                                                 |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Passou.** O sistema se comportou como descrito no critério de aceitação. Em 28/10/2026, no Sifit Unialfa, o caso passou: apareceu o aviso "Selecione o cliente!" e nenhuma requisição foi enviada. Em 23 a 24/10/2026, no sifit.centrion.com.br, o caso passou: exibido o aviso "Selecione o cliente!". |
+| **Resultado da execução**                                                                                                                                                                                                                                                                           |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Passou.** O sistema se comportou como descrito no critério de aceitação. Em 28/10/2026, no Sifit Unialfa, o caso passou: apareceu o aviso "Selecione o cliente!" e o cadastro não foi salvo. Em 23 a 24/10/2026, no sifit.centrion.com.br, o caso passou: exibido o aviso "Selecione o cliente!". |
 
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |
@@ -207,9 +207,9 @@
 | :----------------------------------------------------------------------------- |
 | O sistema deve cadastrar a matrícula e gerar as contas a receber das parcelas. |
 
-| **Resultado da execução**                                                                                                                                                                          |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** O sistema exibe "Não foi possível concluir" com a instrução SQL que falhou. Em 23 a 24/10/2026, no sifit.centrion.com.br, o caso passou: matrícula ATIVA; conta gerada (ver C07-CT01). |
+| **Resultado da execução**                                                                                                                                                                                      |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** O sistema exibe "Não foi possível concluir" com uma mensagem de erro do banco de dados. Em 23 a 24/10/2026, no sifit.centrion.com.br, o caso passou: matrícula ATIVA; conta gerada (ver C07-CT01). |
 
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |

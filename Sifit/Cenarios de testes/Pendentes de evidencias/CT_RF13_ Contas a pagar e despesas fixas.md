@@ -145,7 +145,7 @@
 
 | **Resultado da execução**                                                                                                  |
 | :------------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** A requisição `POST /api/cadastrar-conta-pagar/1` retornou 500 e a tela mostrou "Erro ao salvar conta a pagar". |
+| **Falhou.** Ao salvar a conta sem preencher nada, a tela mostrou só "Erro ao salvar conta a pagar", sem dizer o que falta. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |

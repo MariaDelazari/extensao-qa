@@ -206,9 +206,9 @@
 | :------------------------------------------------------ |
 | O sistema deve solicitar confirmação e excluir a ficha. |
 
-| **Resultado da execução**                                     |
-| :------------------------------------------------------------ |
-| **Falhou.** A resposta da API contém o comando SQL executado. |
+| **Resultado da execução**                                                                            |
+| :--------------------------------------------------------------------------------------------------- |
+| **Falhou.** Ao excluir a ficha, o DevTools (aba Network) mostra comandos SQL na resposta do sistema. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
@@ -267,9 +267,9 @@
 | :------------------------------------------------------------- |
 | O sistema bloqueia o salvamento e informa o campo obrigatório. |
 
-| **Resultado da execução**                                                                                                                                                                     |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Passou.** Exibido o aviso "Informe o nome do exercício.". Em 28/10/2026, no Sifit Unialfa, o caso passou: apareceu o aviso "Informe o nome do exercicio." e nenhuma requisição foi enviada. |
+| **Resultado da execução**                                                                                                                                                               |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Passou.** Exibido o aviso "Informe o nome do exercício.". Em 28/10/2026, no Sifit Unialfa, o caso passou: apareceu o aviso "Informe o nome do exercicio." e o cadastro não foi salvo. |
 
 | **Evidência(s)**                    |
 | :---------------------------------- |

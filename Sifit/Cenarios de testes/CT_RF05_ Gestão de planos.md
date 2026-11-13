@@ -143,9 +143,9 @@
 | :---------------------------------------------------------------------------- |
 | O sistema deve validar o grupo e exibir uma mensagem clara, sem erro interno. |
 
-| **Resultado da execução**                                                                                                                                                                                                                                            |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** O sistema exibe "Erro ao salvar plano" e a API retorna erro 500 com a instrução SQL que falhou. Em 23 a 24/10/2026, no sifit.centrion.com.br, o caso falhou: modal genérico "Erro ao salvar plano"; o console mostra HTTP 500. O Grupo não é sinalizado. |
+| **Resultado da execução**                                                                                                                                                                    |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** O sistema exibe só "Erro ao salvar plano" e não indica que o campo Grupo é obrigatório. Em 23 a 24/10/2026, no sifit.centrion.com.br, o caso também falhou com a mesma mensagem. |
 
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |
@@ -360,9 +360,9 @@
 | :------------------------------------------------------------- |
 | O cadastro deve ser bloqueado e o campo obrigatório informado. |
 
-| **Resultado da execução**                                                                                                                                                                                                                                                     |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Passou.** Validação do navegador exibida no campo Nome. Em 28/10/2026, no Sifit Unialfa, o caso falhou: nada acontece: nenhuma mensagem aparece e nenhuma requisição é enviada. O BUG-025 está em revisão: a execução automatizada não captura o aviso nativo do navegador. |
+| **Resultado da execução**                                                                                                                                                                                                                       |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Passou.** Validação do navegador exibida no campo Nome. Em 28/10/2026, no Sifit Unialfa, o caso falhou: nada acontece e nenhuma mensagem aparece. O BUG-025 está em revisão: a execução automatizada não captura o aviso nativo do navegador. |
 
 | **Evidência(s)**                    |
 | :---------------------------------- |

@@ -113,9 +113,9 @@
 | :------------------------------------------------------------------------------------------------------------------ |
 | O sistema bloqueia o salvamento e informa o campo obrigatório, sem criar registro em branco e sem erro de servidor. |
 
-| **Resultado da execução**                                                                                                                      |
-| :--------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** A requisição `POST /api/criar-produto/1` retornou 400 e a tela mostrou só "Erro ao salvar produto", sem indicar o campo que falta. |
+| **Resultado da execução**                                                                                                      |
+| :----------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** Ao salvar o produto sem preencher nada, a tela mostrou só "Erro ao salvar produto", sem indicar o campo que falta. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |

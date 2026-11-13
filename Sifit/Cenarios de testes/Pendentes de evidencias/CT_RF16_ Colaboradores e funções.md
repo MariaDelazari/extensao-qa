@@ -113,9 +113,9 @@
 | :----------------------------------------------------------------------- |
 | Um aviso de campos obrigatórios é exibido e nenhum erro interno aparece. |
 
-| **Resultado da execução**                                                                                                             |
-| :------------------------------------------------------------------------------------------------------------------------------------ |
-| **Falhou.** A requisição `POST /api/salvar/colaborador/1` retornou 500 e a tela mostrou "Erro no servidor. Erro interno inesperado.". |
+| **Resultado da execução**                                                                                                                                 |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** Ao salvar o colaborador sem preencher nada, a tela mostrou "Erro no servidor. Erro interno inesperado." e não indicou os campos obrigatórios. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
@@ -177,9 +177,9 @@
 | :------------------------------------------------------------------------ |
 | Os valores exibidos nos campos devem ser os valores enviados no cadastro. |
 
-| **Resultado da execução**                                                                                              |
-| :--------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** `POST /api/salvar/colaborador/1` retorna 500 e a tela mostra "Erro no servidor. Erro interno inesperado.". |
+| **Resultado da execução**                                                                                    |
+| :----------------------------------------------------------------------------------------------------------- |
+| **Falhou.** Salvando sem escolher Status e Sexo, a tela mostra "Erro no servidor. Erro interno inesperado.". |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
@@ -208,9 +208,9 @@
 | :-------------------------------------------------- |
 | O sistema deve salvar as alterações do colaborador. |
 
-| **Resultado da execução**                                     |
-| :------------------------------------------------------------ |
-| **Falhou.** A resposta da API contém o comando SQL executado. |
+| **Resultado da execução**                                                                               |
+| :------------------------------------------------------------------------------------------------------ |
+| **Falhou.** Ao salvar a alteração, o DevTools (aba Network) mostra comandos SQL na resposta do sistema. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
@@ -393,9 +393,9 @@
 | :--------------------------------------------------------------- |
 | O sistema deve impedir o cadastro até que o nome seja informado. |
 
-| **Resultado da execução**                                                                                                                                                                                                                                                                      |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Passou.** O sistema se comportou como descrito no critério de aceitação. Em 28/10/2026, no Sifit Unialfa, o caso falhou: nada acontece: nenhuma mensagem aparece e nenhuma requisição é enviada. O BUG-027 está em revisão: a execução automatizada não captura o aviso nativo do navegador. |
+| **Resultado da execução**                                                                                                                                                                                                                                        |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Passou.** O sistema se comportou como descrito no critério de aceitação. Em 28/10/2026, no Sifit Unialfa, o caso falhou: nada acontece e nenhuma mensagem aparece. O BUG-027 está em revisão: a execução automatizada não captura o aviso nativo do navegador. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |

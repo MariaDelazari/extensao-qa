@@ -143,9 +143,9 @@
 | :------------------------------------------------------------- |
 | O sistema bloqueia o salvamento e informa o campo obrigatório. |
 
-| **Resultado da execução**                                                                 |
-| :---------------------------------------------------------------------------------------- |
-| **Passou.** Apareceu o aviso "Informe o nome da turma." e nenhuma requisição foi enviada. |
+| **Resultado da execução**                                                           |
+| :---------------------------------------------------------------------------------- |
+| **Passou.** Apareceu o aviso "Informe o nome da turma." e o cadastro não foi salvo. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |

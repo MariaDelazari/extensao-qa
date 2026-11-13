@@ -46,7 +46,7 @@ Verificar manualmente os requisitos funcionais do Sifit: o login, a página inic
 - Grupos (RF20), Modelos de contrato (RF21) e Box - Turmas (RF22)
 - Grupos musculares (RF23), Modelos de ficha (RF24) e Configurações (RF25)
 - Relatórios (RF26), Importar avaliações (RF27) e Inteligência & Automação com Resultados IA (RF28)
-- Local de contas (RF29), Bancos e Banco recorrente (RF30), Categorias de conta a pagar (RF31) e Métricas do cliente (RF32); essas telas não aparecem no menu e abrem pelo endereço
+- Local de contas (RF29), Bancos e Banco recorrente (RF30), Categorias de conta a pagar (RF31) e Métricas do cliente (RF32)
 - Modelos e categorias de anamnese (RF33)
 
 **Excluído:**
@@ -165,12 +165,11 @@ Quando houve diferença de prioridade entre os trabalhos, ficou a maior.
 | Risco                                                                             | Impacto | Mitigação                                                      |
 | --------------------------------------------------------------------------------- | ------- | -------------------------------------------------------------- |
 | A versão do sistema não foi registrada                                            | Médio   | Anotar a versão na próxima execução                            |
-| O erro 500 no login inválido esconde a mensagem de credencial incorreta           | Alto    | Conferir a resposta de `POST /api/login` além do texto da tela |
+| O erro no servidor no login inválido esconde a mensagem de credencial incorreta           | Alto    | Conferir a resposta no DevTools além do texto da tela |
 | Os testes de formulário vazio criaram 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12) | Médio | Excluir os registros depois de gravar os vídeos dos BUG-030, 031 e 032 |
 | A sessão se comporta de um jeito no retorno ao sistema e de outro no `/dashboard` | Alto    | Repetir os dois caminhos no mesmo vídeo, como no BUG-005       |
 | Ambiente compartilhado: outros usuários alteram ou excluem dados                  | Alto    | Usar registros de teste identificáveis pelo nome e não fixar IDs na documentação |
 | Execuções em datas e endereços diferentes deram resultados diferentes (C01-CT01, C01-CT02, C02-CT01, C04-CT04, C04-CT10, C06-CT07, C09-CT03) | Médio | O resultado de cada execução está descrito no caso. Repetir no Sifit Unialfa antes da entrega |
-| A tela Local de contas abre com o título "Fichas de Treino", sem menu e com a lista vazia, e Modelos de contrato mostra a lista vazia, embora existam registros | Médio | Investigar e registrar nos cenários RF29 e RF21 |
 | Os casos executados por automação de navegador não mostram o aviso nativo do navegador ("Preencha este campo.") | Médio | Conferir em vídeo os BUG-025, 026 e 027, que estão em revisão |
 | 126 casos e 60 bugs ainda sem vídeo                                               | Alto    | Gravar os vídeos seguindo o `5-Roteiro-de-videos.md` e os casos que ainda estão sem vídeo |
 | Ações que enviam mensagens ou cobranças reais (WhatsApp e Pagar.me)              | Alto    | Manter essas ações fora do escopo                              |

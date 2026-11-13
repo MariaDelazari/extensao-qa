@@ -144,9 +144,9 @@
 | :------------------------------------------------------------- |
 | O sistema bloqueia o salvamento e informa o campo obrigatório. |
 
-| **Resultado da execução**                                                                                                                                                                                     |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Passou.** O sistema se comportou como descrito no critério de aceitação. Em 28/10/2026, no Sifit Unialfa, o caso passou: apareceu o aviso "Informe o nome do fornecedor." e nenhuma requisição foi enviada. |
+| **Resultado da execução**                                                                                                                                                                               |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Passou.** O sistema se comportou como descrito no critério de aceitação. Em 28/10/2026, no Sifit Unialfa, o caso passou: apareceu o aviso "Informe o nome do fornecedor." e o cadastro não foi salvo. |
 
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |

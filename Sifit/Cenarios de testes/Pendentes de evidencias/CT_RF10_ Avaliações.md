@@ -113,9 +113,9 @@
 | :------------------------------------------------------------ |
 | O sistema bloqueia o salvamento e mostra aviso sobre o aluno. |
 
-| **Resultado da execução**                                                            |
-| :----------------------------------------------------------------------------------- |
-| **Passou.** Apareceu o aviso "Selecione um aluno." e nenhuma requisição foi enviada. |
+| **Resultado da execução**                                                      |
+| :----------------------------------------------------------------------------- |
+| **Passou.** Apareceu o aviso "Selecione um aluno." e o cadastro não foi salvo. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |

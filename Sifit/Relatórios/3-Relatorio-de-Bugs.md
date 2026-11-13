@@ -748,11 +748,11 @@
 
 ---
 
-### 🐞 **Bug 20: Erro 500 ao salvar conta a pagar com campos vazios**
+### 🐞 **Bug 20: Erro no servidor ao salvar conta a pagar com campos vazios**
 
-| **ID**  | **Descrição**                                                                                                                                                                                |
-| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-020 | Ao salvar uma nova conta a pagar sem preencher nada, a requisição retorna 500 e a tela mostra apenas "Erro ao salvar conta a pagar". O mesmo acontece ao salvar sem fornecedor ou sem valor. |
+| **ID**  | **Descrição**                                                                                                                                                                            |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-020 | Ao salvar uma nova conta a pagar sem preencher nada, a tela mostra apenas "Erro ao salvar conta a pagar", sem dizer o que falta. O mesmo acontece ao salvar sem fornecedor ou sem valor. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -765,9 +765,9 @@
 | 3. Clicar em "Nova Conta".                   |
 | 4. Sem preencher nada, clicar em salvar.     |
 
-|                            **Comportamento Esperado**                           |                                                **Comportamento Obtido**                                                |
-| :-----------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
-| O sistema deve informar quais campos obrigatórios faltam, sem erro de servidor. | `POST /api/cadastrar-conta-pagar/1` retorna 500 e a tela mostra "Erro ao salvar conta a pagar", sem dizer o que falta. |
+|                            **Comportamento Esperado**                           |                       **Comportamento Obtido**                       |
+| :-----------------------------------------------------------------------------: | :------------------------------------------------------------------: |
+| O sistema deve informar quais campos obrigatórios faltam, sem erro de servidor. | A tela mostra "Erro ao salvar conta a pagar", sem dizer o que falta. |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -787,11 +787,11 @@
 
 ---
 
-### 🐞 **Bug 21: Erro 500 ao abrir caixa com campos vazios**
+### 🐞 **Bug 21: Erro no servidor ao abrir caixa com campos vazios**
 
-| **ID**  | **Descrição**                                                                                                                                                                                           |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-021 | Ao tentar abrir um caixa sem preencher nada, a requisição retorna 500 e a tela mostra "Erro no servidor. Erro interno inesperado.". O erro também aparece quando só o local de contas fica sem seleção. |
+| **ID**  | **Descrição**                                                                                                                                                                |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-021 | Ao tentar abrir um caixa sem preencher nada, a tela mostra "Erro no servidor. Erro interno inesperado.". O erro também aparece quando só o local de contas fica sem seleção. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -804,9 +804,9 @@
 | 3. Clicar em "Abrir Caixa".                  |
 | 4. Sem preencher nada, confirmar a abertura. |
 
-|                     **Comportamento Esperado**                     |                                       **Comportamento Obtido**                                      |
-| :----------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
-| O sistema deve informar quais campos faltam, sem erro de servidor. | `POST /api/abrir-caixa/1` retorna 500 e a tela mostra "Erro no servidor. Erro interno inesperado.". |
+|                     **Comportamento Esperado**                     |                               **Comportamento Obtido**                               |
+| :----------------------------------------------------------------: | :----------------------------------------------------------------------------------: |
+| O sistema deve informar quais campos faltam, sem erro de servidor. | A tela mostra "Erro no servidor. Erro interno inesperado." e não indica o que falta. |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -901,11 +901,11 @@
 
 ---
 
-### 🐞 **Bug 24: Erro 500 ao salvar colaborador com campos vazios**
+### 🐞 **Bug 24: Erro no servidor ao salvar colaborador com campos vazios**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-024 | Ao salvar um novo colaborador sem preencher nada, a requisição retorna 500 e a tela mostra "Erro no servidor. Erro interno inesperado.". Os campos "Status" e "Sexo" mostram "Ativo" e "Masculino", mas sem valor selecionado: salvar sem alterá-los, mesmo com os demais dados válidos, também gera o erro 500. O cadastro só funciona quando Status e Sexo são escolhidos. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                    |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| BUG-024 | Ao salvar um novo colaborador sem preencher nada, a tela mostra "Erro no servidor. Erro interno inesperado.". Os campos "Status" e "Sexo" mostram "Ativo" e "Masculino", mas sem valor selecionado: salvar sem alterá-los, mesmo com os demais dados válidos, também gera esse erro. O cadastro só funciona quando Status e Sexo são escolhidos. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -918,9 +918,9 @@
 | 3. Clicar em "Novo Colaborador".             |
 | 4. Sem preencher nada, clicar em "Salvar".   |
 
-|                            **Comportamento Esperado**                           |                                          **Comportamento Obtido**                                          |
-| :-----------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------: |
-| O sistema deve informar quais campos obrigatórios faltam, sem erro de servidor. | `POST /api/salvar/colaborador/1` retorna 500 e a tela mostra "Erro no servidor. Erro interno inesperado.". |
+|                            **Comportamento Esperado**                           |                                     **Comportamento Obtido**                                    |
+| :-----------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
+| O sistema deve informar quais campos obrigatórios faltam, sem erro de servidor. | A tela mostra "Erro no servidor. Erro interno inesperado." e não indica os campos obrigatórios. |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -942,9 +942,9 @@
 
 ### 🐞 **Bug 25: Cadastro de Planos não avisa nada ao salvar vazio**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                              |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-025 | Ao clicar em "Salvar Plano" com o formulário vazio, o sistema não mostra mensagem e nenhuma requisição é enviada. Este registro está em revisão: veio de uma execução automatizada em 28/10/2026, sem vídeo, e em outras execuções o navegador mostrou o aviso "Preencha este campo." ao salvar o mesmo formulário vazio. Se o vídeo do roteiro mostrar o aviso, o bug deve ser cancelado. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-025 | Ao clicar em "Salvar Plano" com o formulário vazio, o sistema não mostra nenhuma mensagem e o cadastro não é salvo. Este registro está em revisão: veio de uma execução automatizada em 28/10/2026, sem vídeo, e em outras execuções o navegador mostrou o aviso "Preencha este campo." ao salvar o mesmo formulário vazio. Se o vídeo do roteiro mostrar o aviso, o bug deve ser cancelado. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -957,9 +957,9 @@
 | 3. Clicar em "Novo Plano".                       |
 | 4. Sem preencher nada, clicar em "Salvar Plano". |
 
-|               **Comportamento Esperado**               |                                                   **Comportamento Obtido**                                                  |
-| :----------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: |
-| O sistema deve informar o campo obrigatório que falta. | Nada acontece: nenhuma mensagem aparece e nenhuma requisição é enviada. A pessoa não sabe por que o cadastro não foi salvo. |
+|               **Comportamento Esperado**               |                                    **Comportamento Obtido**                                   |
+| :----------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
+| O sistema deve informar o campo obrigatório que falta. | Nada acontece e nenhuma mensagem aparece. A pessoa não sabe por que o cadastro não foi salvo. |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -981,9 +981,9 @@
 
 ### 🐞 **Bug 26: Cadastro de Prospecção não avisa nada ao salvar vazio**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                             |
-| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-026 | Ao clicar em "Salvar Lead" com o formulário vazio, o sistema não mostra mensagem e nenhuma requisição é enviada. Este registro está em revisão: veio de uma execução automatizada em 28/10/2026, sem vídeo, e em outras execuções o navegador mostrou o aviso "Preencha este campo." ao salvar o mesmo formulário vazio. Se o vídeo do roteiro mostrar o aviso, o bug deve ser cancelado. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                               |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-026 | Ao clicar em "Salvar Lead" com o formulário vazio, o sistema não mostra nenhuma mensagem e o cadastro não é salvo. Este registro está em revisão: veio de uma execução automatizada em 28/10/2026, sem vídeo, e em outras execuções o navegador mostrou o aviso "Preencha este campo." ao salvar o mesmo formulário vazio. Se o vídeo do roteiro mostrar o aviso, o bug deve ser cancelado. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -996,9 +996,9 @@
 | 3. Clicar em "Adicionar Lead".                  |
 | 4. Sem preencher nada, clicar em "Salvar Lead". |
 
-|               **Comportamento Esperado**               |                                                   **Comportamento Obtido**                                                  |
-| :----------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: |
-| O sistema deve informar o campo obrigatório que falta. | Nada acontece: nenhuma mensagem aparece e nenhuma requisição é enviada. A pessoa não sabe por que o cadastro não foi salvo. |
+|               **Comportamento Esperado**               |                                    **Comportamento Obtido**                                   |
+| :----------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
+| O sistema deve informar o campo obrigatório que falta. | Nada acontece e nenhuma mensagem aparece. A pessoa não sabe por que o cadastro não foi salvo. |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -1020,9 +1020,9 @@
 
 ### 🐞 **Bug 27: Cadastro de Funções não avisa nada ao salvar vazio**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                               |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-027 | Ao clicar em "Salvar Função" com o formulário vazio, o sistema não mostra mensagem e nenhuma requisição é enviada. Este registro está em revisão: veio de uma execução automatizada em 28/10/2026, sem vídeo, e em outras execuções o navegador mostrou o aviso "Preencha este campo." ao salvar o mesmo formulário vazio. Se o vídeo do roteiro mostrar o aviso, o bug deve ser cancelado. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                 |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-027 | Ao clicar em "Salvar Função" com o formulário vazio, o sistema não mostra nenhuma mensagem e o cadastro não é salvo. Este registro está em revisão: veio de uma execução automatizada em 28/10/2026, sem vídeo, e em outras execuções o navegador mostrou o aviso "Preencha este campo." ao salvar o mesmo formulário vazio. Se o vídeo do roteiro mostrar o aviso, o bug deve ser cancelado. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1035,9 +1035,9 @@
 | 3. Clicar em "Nova Função".                       |
 | 4. Sem preencher nada, clicar em "Salvar Função". |
 
-|               **Comportamento Esperado**               |                                                   **Comportamento Obtido**                                                  |
-| :----------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: |
-| O sistema deve informar o campo obrigatório que falta. | Nada acontece: nenhuma mensagem aparece e nenhuma requisição é enviada. A pessoa não sabe por que o cadastro não foi salvo. |
+|               **Comportamento Esperado**               |                                    **Comportamento Obtido**                                   |
+| :----------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
+| O sistema deve informar o campo obrigatório que falta. | Nada acontece e nenhuma mensagem aparece. A pessoa não sabe por que o cadastro não foi salvo. |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -1059,9 +1059,9 @@
 
 ### 🐞 **Bug 28: Erro genérico ao salvar produto vazio**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                  |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-028 | Ao salvar um produto vazio, a requisição retorna 400 e a tela mostra só "Erro ao salvar produto", sem indicar o campo que falta. A resposta da API traz o erro do banco de dados "Data truncated for column 'valor' at row 1". |
+| **ID**  | **Descrição**                                                                                         |
+| ------- | ----------------------------------------------------------------------------------------------------- |
+| BUG-028 | Ao salvar um produto vazio, a tela mostra só "Erro ao salvar produto", sem indicar o campo que falta. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1074,9 +1074,9 @@
 | 3. Clicar em "Novo".                       |
 | 4. Sem preencher nada, clicar em "Salvar". |
 
-|               **Comportamento Esperado**               |                              **Comportamento Obtido**                             |
-| :----------------------------------------------------: | :-------------------------------------------------------------------------------: |
-| O sistema deve informar o campo obrigatório que falta. | `POST /api/criar-produto/1` retorna 400 e a tela mostra "Erro ao salvar produto". |
+|               **Comportamento Esperado**               |          **Comportamento Obtido**          |
+| :----------------------------------------------------: | :----------------------------------------: |
+| O sistema deve informar o campo obrigatório que falta. | A tela mostra só "Erro ao salvar produto". |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -1098,9 +1098,9 @@
 
 ### 🐞 **Bug 29: Erro genérico ao salvar enquete vazia**
 
-| **ID**  | **Descrição**                                                                                                               |
-| ------- | --------------------------------------------------------------------------------------------------------------------------- |
-| BUG-029 | Ao salvar uma enquete vazia, a requisição retorna 200, mas a tela mostra "Erro ao salvar enquete", sem indicar o que falta. |
+| **ID**  | **Descrição**                                                                                 |
+| ------- | --------------------------------------------------------------------------------------------- |
+| BUG-029 | Ao salvar uma enquete vazia, a tela mostra "Erro ao salvar enquete", sem indicar o que falta. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1113,9 +1113,9 @@
 | 3. Clicar em "Nova Enquete".               |
 | 4. Sem preencher nada, clicar em "Salvar". |
 
-|               **Comportamento Esperado**               |                              **Comportamento Obtido**                              |
-| :----------------------------------------------------: | :--------------------------------------------------------------------------------: |
-| O sistema deve informar o campo obrigatório que falta. | `POST /api/enquete/salvar/1` retorna 200 e a tela mostra "Erro ao salvar enquete". |
+|               **Comportamento Esperado**               |                     **Comportamento Obtido**                     |
+| :----------------------------------------------------: | :--------------------------------------------------------------: |
+| O sistema deve informar o campo obrigatório que falta. | A tela mostra "Erro ao salvar enquete", sem indicar o que falta. |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -1153,9 +1153,9 @@
 | 4. Sem preencher nada, clicar em "Salvar". |
 | 5. Olhar a lista.                          |
 
-|              **Comportamento Esperado**              |                                                             **Comportamento Obtido**                                                             |
-| :--------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------: |
-| O sistema deve exigir o nome e não criar o registro. | `POST /api/salvar-atividade/1` retorna 201 e a lista passa de 4 para 5 registros, com a linha 5 sem nome. Nenhuma mensagem de validação aparece. |
+|              **Comportamento Esperado**              |                                                     **Comportamento Obtido**                                                     |
+| :--------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: |
+| O sistema deve exigir o nome e não criar o registro. | O formulário vazio é salvo e a lista passa de 4 para 5 registros, com a linha 5 sem nome. Nenhuma mensagem de validação aparece. |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -1193,9 +1193,9 @@
 | 4. Sem preencher nada, clicar em "Salvar".            |
 | 5. Olhar a lista.                                     |
 
-|              **Comportamento Esperado**              |                                                                **Comportamento Obtido**                                                                |
-| :--------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------: |
-| O sistema deve exigir o nome e não criar o registro. | `POST /api/objetivo-treino/salvar/1` retorna 201 e a lista passa de 0 para 1 registros, com a linha 1 sem nome. Nenhuma mensagem de validação aparece. |
+|              **Comportamento Esperado**              |                                                     **Comportamento Obtido**                                                    |
+| :--------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------: |
+| O sistema deve exigir o nome e não criar o registro. | O formulário vazio é salvo e a lista passa de 0 para 1 registro, com a linha 1 sem nome. Nenhuma mensagem de validação aparece. |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -1233,9 +1233,9 @@
 | 4. Sem preencher nada, clicar em "Salvar".          |
 | 5. Olhar a lista.                                   |
 
-|              **Comportamento Esperado**              |                                                                **Comportamento Obtido**                                                                |
-| :--------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------: |
-| O sistema deve exigir o nome e não criar o registro. | `POST /api/cria/tipo-pagamento/1` retorna 201 e a lista passa de 10 para 11 registros, com a linha 12 sem nome. Nenhuma mensagem de validação aparece. |
+|              **Comportamento Esperado**              |                                                       **Comportamento Obtido**                                                      |
+| :--------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------: |
+| O sistema deve exigir o nome e não criar o registro. | O formulário vazio é salvo e a lista passa de 10 para 11 registros, com a linha 12 sem nome. Nenhuma mensagem de validação aparece. |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -1255,11 +1255,11 @@
 
 ---
 
-### 🐞 **Bug 33: Erro 500 ao salvar pergunta de anamnese vazia**
+### 🐞 **Bug 33: Erro ao salvar pergunta de anamnese vazia**
 
-| **ID**  | **Descrição**                                                                                                 |
-| ------- | ------------------------------------------------------------------------------------------------------------- |
-| BUG-033 | Ao salvar uma pergunta de anamnese vazia, a requisição retorna 500 e a tela mostra "Erro ao salvar pergunta". |
+| **ID**  | **Descrição**                                                                                                  |
+| ------- | -------------------------------------------------------------------------------------------------------------- |
+| BUG-033 | Ao salvar uma pergunta de anamnese vazia, a tela mostra só "Erro ao salvar pergunta", sem indicar o que falta. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1272,9 +1272,9 @@
 | 3. Clicar em "Nova Pergunta".                             |
 | 4. Sem preencher nada, clicar em "Salvar".                |
 
-|                          **Comportamento Esperado**                          |                                    **Comportamento Obtido**                                   |
-| :--------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
-| O sistema deve informar o campo obrigatório que falta, sem erro de servidor. | `POST /api/pergunta-anamnese/salvar/1` retorna 500 e a tela mostra "Erro ao salvar pergunta". |
+|                          **Comportamento Esperado**                          |           **Comportamento Obtido**          |
+| :--------------------------------------------------------------------------: | :-----------------------------------------: |
+| O sistema deve informar o campo obrigatório que falta, sem erro de servidor. | A tela mostra só "Erro ao salvar pergunta". |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -1368,9 +1368,9 @@
 
 ### 🐞 **Bug 36: Erro ao cadastrar cliente com dados válidos**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                            |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-036 | Ao preencher todos os campos obrigatórios (e também os opcionais) com dados válidos e clicar em "Cadastrar Cliente", o sistema exibe a mensagem "Erro ao criar cliente." e o cliente não é cadastrado. A API retorna erro 500 com a mensagem "Erro interno inesperado.". |
+| **ID**  | **Descrição**                                                                                                                                                                                          |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| BUG-036 | Ao preencher todos os campos obrigatórios (e também os opcionais) com dados válidos e clicar em "Cadastrar Cliente", o sistema exibe a mensagem "Erro ao criar cliente." e o cliente não é cadastrado. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1513,9 +1513,9 @@
 
 ### 🐞 **Bug 40: Erro ao salvar alterações dos dados do cliente**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                         |
-| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-040 | Ao alterar os dados de um cliente existente (ex.: nome ou status) e clicar em "Salvar Alterações", o sistema exibe a mensagem "Erro ao criar cliente." e as alterações não são salvas. A API de atualização retorna erro 500 com a mensagem "Erro interno inesperado.". Além disso, a mensagem exibida menciona "criar" em uma operação de alteração. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                        |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-040 | Ao alterar os dados de um cliente existente (ex.: nome ou status) e clicar em "Salvar Alterações", o sistema exibe a mensagem "Erro ao criar cliente." e as alterações não são salvas. Além disso, a mensagem exibida menciona "criar" em uma operação de alteração. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1564,9 +1564,9 @@
 | 2. Acessar a URL /visualizar-cliente/407 (cliente excluído). |
 | 3. Verificar a mensagem exibida pelo sistema.                |
 
-|                                      **Comportamento Esperado**                                      |                          **Comportamento Obtido**                         |
-| :--------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------: |
-| O sistema deve informar que o cliente não foi encontrado e redirecionar para a listagem de clientes. | O sistema exibe "Erro no servidor - Erro interno inesperado." (erro 500). |
+|                                      **Comportamento Esperado**                                      |                    **Comportamento Obtido**                    |
+| :--------------------------------------------------------------------------------------------------: | :------------------------------------------------------------: |
+| O sistema deve informar que o cliente não foi encontrado e redirecionar para a listagem de clientes. | O sistema exibe "Erro no servidor - Erro interno inesperado.". |
 
 | **Ambiente**                     |
 | -------------------------------- |
@@ -1657,9 +1657,9 @@
 
 ### 🐞 **Bug 44: Erro interno com exposição de SQL ao salvar plano sem grupo**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-044 | Ao salvar um plano informando apenas o nome, o sistema exibe a mensagem genérica "Erro ao salvar plano". A API retorna erro 500 com a mensagem do banco de dados "SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'grupo_id' cannot be null", o que indica ausência de validação do campo "Grupo" e expõe detalhes internos do banco de dados. O campo Grupo não tem opção selecionada nem indicação de obrigatório. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                     |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-044 | Ao salvar um plano informando apenas o nome, o sistema exibe a mensagem genérica "Erro ao salvar plano". No DevTools (aba Network), a resposta mostra uma mensagem do banco de dados dizendo que o grupo não pode ficar vazio. Ou seja, o campo "Grupo" não é validado e o sistema expõe detalhes internos. O campo Grupo não tem opção selecionada nem indicação de obrigatório. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1671,11 +1671,11 @@
 | 2. Clicar no botão "Novo Plano".                                               |
 | 3. Informar apenas o nome "Plano Teste Ville".                                 |
 | 4. Clicar no botão "Salvar Plano".                                             |
-| 5. Verificar a mensagem exibida e a resposta da API no DevTools (aba Network). |
+| 5. Verificar a mensagem exibida e, no DevTools (aba Network), a resposta do sistema. |
 
-|                                              **Comportamento Esperado**                                             |                                     **Comportamento Obtido**                                    |
-| :-----------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
-| O sistema deve informar que o campo "Grupo" é obrigatório, sem erro interno e sem expor detalhes do banco de dados. | O sistema exibe "Erro ao salvar plano" e a API retorna erro 500 com a instrução SQL que falhou. |
+|                                              **Comportamento Esperado**                                             |                                        **Comportamento Obtido**                                       |
+| :-----------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: |
+| O sistema deve informar que o campo "Grupo" é obrigatório, sem erro interno e sem expor detalhes do banco de dados. | A tela mostra só "Erro ao salvar plano". No DevTools, a resposta mostra a mensagem do banco de dados. |
 
 | **Ambiente**                     |
 | -------------------------------- |
@@ -1731,9 +1731,9 @@
 
 ### 🐞 **Bug 46: Inativação do plano não é salva**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                          |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-046 | Ao alterar o status de um plano para "Inativo" e clicar em "Salvar Plano", o sistema envia o status "inativo" e a API responde com sucesso, porém o plano permanece "ATIVO" na listagem e ao ser reaberto. As demais alterações (nome e valor) são salvas normalmente. |
+| **ID**  | **Descrição**                                                                                                                                                                                   |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-046 | Ao alterar o status de um plano para "Inativo" e clicar em "Salvar Plano", o plano permanece "ATIVO" na listagem e ao ser reaberto. As demais alterações (nome e valor) são salvas normalmente. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1841,9 +1841,9 @@
 
 ### 🐞 **Bug 49: Mensagem incorreta ao cadastrar matrícula para cliente com matrícula ativa**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                     |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-049 | Ao tentar cadastrar uma matrícula para um cliente que já possui matrícula ativa, o sistema impede o cadastro, porém exibe a mensagem genérica "Erro ao Cadastrar com Assinatura". O motivo real ("Já existe matrícula ativa") é retornado pela API, mas não é exibido ao usuário. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                              |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| BUG-049 | Ao tentar cadastrar uma matrícula para um cliente que já possui matrícula ativa, o sistema impede o cadastro, porém exibe a mensagem genérica "Erro ao Cadastrar com Assinatura". A tela não informa que o cliente já tem matrícula ativa. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1914,9 +1914,9 @@
 
 ### 🐞 **Bug 51: Erro no servidor ao excluir matrícula, embora a exclusão seja efetivada**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                           |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-051 | Ao confirmar a exclusão de uma matrícula, o sistema exibe o modal "Erro no servidor - Erro interno inesperado." (API retorna erro 500), porém a matrícula é removida da listagem. O usuário é informado de uma falha em uma operação que foi realizada. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                    |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-051 | Ao confirmar a exclusão de uma matrícula, o sistema exibe o modal "Erro no servidor - Erro interno inesperado.", porém a matrícula é removida da listagem. O usuário é informado de uma falha em uma operação que foi realizada. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2023,9 +2023,9 @@
 
 ### 🐞 **Bug 54: Campo "Dia Vencimento" aceita data e exibe erro de SQL ao salvar a matrícula**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                                             |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-054 | O campo "Dia Vencimento" do cadastro de matrícula aceita qualquer texto, como uma data completa ("26/11/2026"). Ao salvar, o sistema exibe a janela "Não foi possível concluir" com a mensagem do banco de dados "SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'dia_venc_pag' at row 1", sem orientar que o campo deve conter apenas o dia (1 a 31) e expondo detalhes internos do banco. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                    |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-054 | O campo "Dia Vencimento" do cadastro de matrícula aceita qualquer texto, como uma data completa ("26/11/2026"). Ao salvar, o sistema exibe a janela "Não foi possível concluir" com uma mensagem do banco de dados ("Data too long for column 'dia_venc_pag'"), sem orientar que o campo deve conter apenas o dia (1 a 31) e expondo detalhes internos do banco. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2039,9 +2039,9 @@
 | 4. Clicar no botão "Salvar".                                                                           |
 | 5. Verificar a mensagem exibida.                                                                       |
 
-|                                                   **Comportamento Esperado**                                                  |                           **Comportamento Obtido**                          |
-| :---------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------: |
-| O campo deve aceitar apenas números de 1 a 31 e o sistema deve informar o formato correto, sem expor erros do banco de dados. | O sistema exibe "Não foi possível concluir" com a instrução SQL que falhou. |
+|                                                   **Comportamento Esperado**                                                  |                             **Comportamento Obtido**                            |
+| :---------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
+| O campo deve aceitar apenas números de 1 a 31 e o sistema deve informar o formato correto, sem expor erros do banco de dados. | O sistema exibe "Não foi possível concluir" com uma mensagem do banco de dados. |
 
 | **Ambiente**                     |
 | -------------------------------- |
@@ -2242,9 +2242,9 @@
 
 ### 🐞 **Bug 60: Erro ao cadastrar fornecedor com dados válidos**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                     |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-060 | Ao salvar um novo fornecedor, o sistema exibe a mensagem "Erro ao salvar fornecedor." e o fornecedor não é cadastrado. A API retorna erro 500 ("Erro interno inesperado.") tanto com todos os campos preenchidos quanto informando apenas o nome. |
+| **ID**  | **Descrição**                                                                                                                                                                                 |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-060 | Ao salvar um novo fornecedor, o sistema exibe a mensagem "Erro ao salvar fornecedor." e o fornecedor não é cadastrado, tanto com todos os campos preenchidos quanto informando apenas o nome. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2279,9 +2279,9 @@
 
 ### 🐞 **Bug 61: Erro interno com exposição de SQL ao alterar fornecedor**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-061 | Ao alterar qualquer dado de um fornecedor existente (nome ou status) e clicar em "Salvar", o sistema exibe "Erro no servidor - Ocorreu um erro interno no servidor." e a alteração não é salva. A API retorna erro 500 com a mensagem do banco de dados "SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'tipo_pessoa' cannot be null". O problema ocorre com os fornecedores 299 (Jao) e 394 (Copel). Além disso, salvar com o nome vazio não é validado na tela e também gera o erro do servidor. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-061 | Ao alterar qualquer dado de um fornecedor existente (nome ou status) e clicar em "Salvar", o sistema exibe "Erro no servidor - Ocorreu um erro interno no servidor." e a alteração não é salva. No DevTools (aba Network), a resposta mostra uma mensagem do banco de dados dizendo que o tipo de pessoa (Física ou Jurídica) não pode ficar vazio. O problema ocorre com os fornecedores 299 (Jao) e 394 (Copel). Além disso, salvar com o nome vazio não é validado na tela e também gera o erro do servidor. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2352,9 +2352,9 @@
 
 ### 🐞 **Bug 63: Check-in permanece "Pendente" e não há retorno ao registrar entrada novamente**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-063 | Após o check-in, o cliente permanece com status "Pendente" na listagem, com o botão "Registrar entrada" disponível, e o indicador "Presentes agora" continua em 0. Ao clicar novamente em "Registrar entrada", a API responde "Cliente ja possui check-in aberto.", mas nenhuma mensagem é exibida ao usuário. Na janela de check-in manual, o mesmo cliente ainda aparece como "Cliente liberado para realizar o check-in.". Não existe opção para registrar a saída. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                                      |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| BUG-063 | Após o check-in, o cliente permanece com status "Pendente" na listagem, com o botão "Registrar entrada" disponível, e o indicador "Presentes agora" continua em 0. Ao clicar novamente em "Registrar entrada", nada acontece e nenhuma mensagem é exibida. Na janela de check-in manual, o mesmo cliente ainda aparece como "Cliente liberado para realizar o check-in.". Não existe opção para registrar a saída. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2463,9 +2463,9 @@
 
 ### 🐞 **Bug 66: Ausência de mensagens no check-in manual e na entrada rápida**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                              |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-066 | Ao registrar um check-in com sucesso (manual ou pela entrada rápida), nenhuma mensagem de confirmação é exibida, embora a API retorne "Checkin criado com sucesso!". Ao clicar em "Realizar check-in" com o campo "Código do cliente" vazio, nada acontece e nenhuma orientação é exibida. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                          |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-066 | Ao registrar um check-in com sucesso (manual ou pela entrada rápida), nenhuma mensagem de confirmação é exibida. Ao clicar em "Realizar check-in" com o campo "Código do cliente" vazio, nada acontece e nenhuma orientação é exibida. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2501,9 +2501,9 @@
 
 ### 🐞 **Bug 67: Erro ao salvar avaliação realizada**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                           |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-067 | Ao clicar em "Fazer Avaliação", informar altura (1,75) e peso (80) e clicar em "Salvar", o sistema exibe "Erro ao salvar avaliação" e a avaliação permanece "PENDENTE". A API retorna erro 500 ("Erro interno inesperado."). O mesmo ocorre ao salvar sem medidas, caso em que o sistema também não orienta o preenchimento dos campos. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                      |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-067 | Ao clicar em "Fazer Avaliação", informar altura (1,75) e peso (80) e clicar em "Salvar", o sistema exibe "Erro ao salvar avaliação" e a avaliação permanece "PENDENTE". O mesmo ocorre ao salvar sem medidas, caso em que o sistema também não orienta o preenchimento dos campos. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2538,9 +2538,9 @@
 
 ### 🐞 **Bug 68: Alteração de data e hora da avaliação não é salva**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                          |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-068 | Na janela "Alterar Data / Hora", ao informar a nova data (26/10/2026) e a nova hora (11:00) e clicar em "Salvar", nenhuma requisição é enviada, nenhuma mensagem é exibida e a avaliação permanece com a data e a hora originais. O mesmo ocorre com os campos vazios. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                           |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-068 | Na janela "Alterar Data / Hora", ao informar a nova data (26/10/2026) e a nova hora (11:00) e clicar em "Salvar", nada acontece, nenhuma mensagem é exibida e a avaliação permanece com a data e a hora originais. O mesmo ocorre com os campos vazios. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2575,9 +2575,9 @@
 
 ### 🐞 **Bug 69: Cadastro de avaliação aceita hora inválida e retorna erro interno**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-069 | O campo de hora aceita valores inexistentes, como "25:99". Ao salvar, o sistema exibe a mensagem genérica "Erro ao cadastrar Avaliação." e a API retorna erro 500, em vez de informar que a hora é inválida. |
+| **ID**  | **Descrição**                                                                                                                                                                       |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-069 | O campo de hora aceita valores inexistentes, como "25:99". Ao salvar, o sistema exibe a mensagem genérica "Erro ao cadastrar Avaliação.", em vez de informar que a hora é inválida. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2593,7 +2593,7 @@
 
 |                         **Comportamento Esperado**                        |                  **Comportamento Obtido**                  |
 | :-----------------------------------------------------------------------: | :--------------------------------------------------------: |
-| O sistema deve informar que a hora é inválida antes de enviar o cadastro. | O sistema exibe "Erro ao cadastrar Avaliação." (erro 500). |
+| O sistema deve informar que a hora é inválida antes de enviar o cadastro. | O sistema exibe "Erro ao cadastrar Avaliação.". |
 
 | **Ambiente**                     |
 | -------------------------------- |
@@ -2648,9 +2648,9 @@
 
 ### 🐞 **Bug 71: Erro ao salvar alterações da turma**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-071 | Ao clicar em "Editar" de qualquer turma e em "Salvar", o sistema exibe "Erro ao salvar turma." e a API retorna erro 500 ("Erro interno inesperado."). O erro ocorre ao alterar nome, horário ou status e até ao salvar sem nenhuma alteração (testado nas turmas #10 e #11). |
+| **ID**  | **Descrição**                                                                                                                                                                                                          |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-071 | Ao clicar em "Editar" de qualquer turma e em "Salvar", o sistema exibe "Erro ao salvar turma.". O erro ocorre ao alterar nome, horário ou status e até ao salvar sem nenhuma alteração (testado nas turmas #10 e #11). |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2721,9 +2721,9 @@
 
 ### 🐞 **Bug 73: "Gerar aulas" do SifitBox não informa o resultado**
 
-| **ID**  | **Descrição**                                                                                                                                                                                               |
-| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-073 | Ao clicar em "Gerar aulas" na tela do SifitBox, nenhuma mensagem é exibida. A API retorna "criadas: 0", mas o usuário não é informado se aulas foram geradas, nem o motivo de nenhuma aula ter sido criada. |
+| **ID**  | **Descrição**                                                                                                                                                               |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-073 | Ao clicar em "Gerar aulas" na tela do SifitBox, nenhuma mensagem é exibida. O usuário não é informado se aulas foram geradas, nem o motivo de nenhuma aula ter sido criada. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2756,9 +2756,9 @@
 
 ### 🐞 **Bug 74: Fechamento de caixa não é salvo após "Buscar Contas"**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                           |
-| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-074 | Na janela "Fechamento de Caixa", após selecionar o local e clicar em "Buscar Contas", o botão "Salvar" não executa nenhuma ação: nenhuma requisição é enviada e o caixa permanece "ABERTO". O fechamento só é salvo quando o usuário não busca as contas (ver BUG-048). |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                            |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-074 | Na janela "Fechamento de Caixa", após selecionar o local e clicar em "Buscar Contas", o botão "Salvar" não executa nenhuma ação: nada acontece e o caixa permanece "ABERTO". O fechamento só é salvo quando o usuário não busca as contas (ver BUG-048). |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3080,7 +3080,7 @@
 
 | **ID**  | **Descrição**                                                                                                                                                                                                             |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-083 | O campo "Valor" da despesa fixa não possui validação: o valor "-100" é aceito e a despesa é cadastrada com "-R$ 100,00"; ao informar "abc", o sistema exibe a mensagem genérica "Erro ao salvar despesa fixa" (erro 500). |
+| BUG-083 | O campo "Valor" da despesa fixa não possui validação: o valor "-100" é aceito e a despesa é cadastrada com "-R$ 100,00"; ao informar "abc", o sistema exibe a mensagem genérica "Erro ao salvar despesa fixa". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3115,9 +3115,9 @@
 
 ### 🐞 **Bug 84: Ficha de treino não pode ser aberta nem salva**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-084 | Após criar a ficha, a tela de montagem dos treinos é exibida, mas ao clicar em "Salvar Ficha" o sistema exibe "Erro no servidor - Erro interno inesperado." (erro 500). Ao clicar em "Visualizar" na listagem, o sistema também exibe "Erro no servidor". A API de consulta da ficha retorna o erro do banco de dados "SQLSTATE[42S22]: Column not found: 1054 Unknown column 'f.descanso_padrao' in 'field list'", indicando uma coluna inexistente no banco. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                  |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-084 | Após criar a ficha, a tela de montagem dos treinos é exibida, mas ao clicar em "Salvar Ficha" o sistema exibe "Erro no servidor - Erro interno inesperado.". Ao clicar em "Visualizar" na listagem, o sistema também exibe "Erro no servidor". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3152,9 +3152,9 @@
 
 ### 🐞 **Bug 85: Mensagem genérica ao criar ficha sem objetivo do treino**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                            |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-085 | Ao criar a ficha sem objetivo, o sistema exibe apenas "Erro ao salvar Ficha.". A API retorna a mensagem correta "Escolha o objetivo do treino.", mas ela não é exibida ao usuário. Além disso, o campo "Objetivo" não apresenta opções quando não há objetivos cadastrados, sem orientar o usuário a cadastrá-los em "Objetivos Treino". |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                     |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-085 | Ao criar a ficha sem objetivo, o sistema exibe apenas "Erro ao salvar Ficha.". A tela não diz que o objetivo é obrigatório. Além disso, o campo "Objetivo" não apresenta opções quando não há objetivos cadastrados, sem orientar o usuário a cadastrá-los em "Objetivos Treino". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3186,11 +3186,11 @@
 
 ---
 
-### 🐞 **Bug 86: Exclusão de ficha de treino retorna comandos SQL na resposta da API**
+### 🐞 **Bug 86: Exclusão de ficha de treino expõe comandos SQL**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                            |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-086 | Ao excluir uma ficha de treino, a exclusão é realizada, porém a resposta da API contém o comando SQL executado e os parâmetros ("DELETE FROM ficha_treino WHERE id = 1 AND empresa_id = ..."), expondo detalhes internos do banco de dados. A falha é visível no DevTools (aba Network). |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                   |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-086 | Ao excluir uma ficha de treino, a exclusão é realizada, porém no DevTools (aba Network), a resposta mostra o comando SQL executado e os parâmetros ("DELETE FROM ficha_treino WHERE id = 1 AND empresa_id = ..."), expondo detalhes internos do banco de dados. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3201,11 +3201,11 @@
 | 1. Acessar "Ficha de Treino".                             |
 | 2. Abrir o DevTools do navegador na aba "Network".        |
 | 3. Clicar em "Deletar" de uma ficha de teste e confirmar. |
-| 4. Verificar a resposta da requisição "deletar-ficha".    |
+| 4. Na aba Network, abrir a resposta da exclusão.    |
 
-|                          **Comportamento Esperado**                         |              **Comportamento Obtido**             |
-| :-------------------------------------------------------------------------: | :-----------------------------------------------: |
-| A API deve retornar apenas o resultado da operação, sem expor comandos SQL. | A resposta da API contém o comando SQL executado. |
+|                           **Comportamento Esperado**                           |                 **Comportamento Obtido**                |
+| :----------------------------------------------------------------------------: | :-----------------------------------------------------: |
+| A resposta deve trazer apenas o resultado da operação, sem expor comandos SQL. | No DevTools, a resposta mostra o comando SQL executado. |
 
 | **Ambiente**                     |
 | -------------------------------- |
@@ -3333,11 +3333,11 @@
 
 ---
 
-### 🐞 **Bug 90: Alteração de colaborador retorna comandos SQL na resposta da API**
+### 🐞 **Bug 90: Alteração de colaborador expõe comandos SQL**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                              |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-090 | Ao salvar a alteração de um colaborador, a alteração é realizada, porém a resposta da API contém o comando SQL executado ("UPDATE pessoas SET nome = :nome, cpf = :cpf, ...") e seus parâmetros, expondo detalhes internos do banco de dados. A falha é visível no DevTools (aba Network). |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                     |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-090 | Ao salvar a alteração de um colaborador, a alteração é realizada, porém no DevTools (aba Network), a resposta mostra o comando SQL executado ("UPDATE pessoas SET nome = :nome, cpf = :cpf, ...") e seus parâmetros, expondo detalhes internos do banco de dados. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3348,11 +3348,11 @@
 | 1. Acessar o perfil de um colaborador e clicar em "Editar".    |
 | 2. Abrir o DevTools do navegador na aba "Network".             |
 | 3. Alterar o nome e clicar em "Salvar".                        |
-| 4. Verificar a resposta da requisição "atualizar/colaborador". |
+| 4. Na aba Network, abrir a resposta da alteração. |
 
-|                          **Comportamento Esperado**                         |              **Comportamento Obtido**             |
-| :-------------------------------------------------------------------------: | :-----------------------------------------------: |
-| A API deve retornar apenas o resultado da operação, sem expor comandos SQL. | A resposta da API contém o comando SQL executado. |
+|                           **Comportamento Esperado**                           |                 **Comportamento Obtido**                |
+| :----------------------------------------------------------------------------: | :-----------------------------------------------------: |
+| A resposta deve trazer apenas o resultado da operação, sem expor comandos SQL. | No DevTools, a resposta mostra o comando SQL executado. |
 
 | **Ambiente**                     |
 | -------------------------------- |
@@ -3443,9 +3443,9 @@
 
 ### 🐞 **Bug 93: Produto do tipo Pontuação não pode ser cadastrado**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                            |
-| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-093 | Ao selecionar o tipo "Pontuação", o campo "Preço" é substituído pelo campo "Pontuação". Ao salvar o produto com 100 pontos, o sistema exibe "Erro ao salvar produto" e a API retorna o erro do banco de dados "Data truncated for column 'valor' at row 1", pois o valor é enviado vazio. Assim, nenhum produto de troca por pontos pode ser cadastrado. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                        |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| BUG-093 | Ao selecionar o tipo "Pontuação", o campo "Preço" é substituído pelo campo "Pontuação". Ao salvar o produto com 100 pontos, o sistema exibe "Erro ao salvar produto". Assim, nenhum produto de troca por pontos pode ser cadastrado. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3549,9 +3549,9 @@
 
 ### 🐞 **Bug 96: Anamneses aplicadas não aparecem na listagem**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                          |
-| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-096 | Após finalizar a anamnese do aluno Steven Kaiki (a API confirma a gravação com o código 11), a tela de fichas de anamnese continua exibindo "Nenhuma ficha encontrada" e todos os indicadores em 0. A consulta da listagem é enviada com o parâmetro "id": null e retorna lista vazia. |
+| **ID**  | **Descrição**                                                                                                                                                                           |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-096 | Após finalizar a anamnese do aluno Steven Kaiki (o assistente termina sem erro), a tela de fichas de anamnese continua exibindo "Nenhuma ficha encontrada" e todos os indicadores em 0. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3623,7 +3623,7 @@
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                  |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-098 | Ao clicar em "Próxima" sem selecionar aluno, o assistente avança para a escolha do modelo. Ao concluir o fluxo, o sistema exibe "Erro no servidor - Erro interno inesperado." (erro 500), pois a anamnese é enviada sem aluno. |
+| BUG-098 | Ao clicar em "Próxima" sem selecionar aluno, o assistente avança para a escolha do modelo. Ao concluir o fluxo, o sistema exibe "Erro no servidor - Erro interno inesperado.", porque a anamnese foi enviada sem aluno. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |

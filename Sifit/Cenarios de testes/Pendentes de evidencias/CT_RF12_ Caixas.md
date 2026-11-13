@@ -173,9 +173,9 @@
 | :----------------------------------------------------------------------- |
 | Um aviso de campos obrigatórios é exibido e nenhum erro interno aparece. |
 
-| **Resultado da execução**                                                                                                      |
-| :----------------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** A requisição `POST /api/abrir-caixa/1` retornou 500 e a tela mostrou "Erro no servidor. Erro interno inesperado.". |
+| **Resultado da execução**                                                                                                               |
+| :-------------------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** Ao abrir o caixa sem preencher nada, a tela mostrou "Erro no servidor. Erro interno inesperado." e não indicou o que falta. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
