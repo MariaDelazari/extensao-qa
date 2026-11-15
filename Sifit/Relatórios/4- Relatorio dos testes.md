@@ -16,13 +16,13 @@
 
 | Total de Casos de Teste | Casos Passaram | Casos Falharam | Bugs Registrados |
 | ----------------------- | -------------- | -------------- | ---------------- |
-| 250                     | 133            | 117            | 114              |
+| 250                     | 133            | 117            | 115              |
 
-Os 250 casos estão nos cenários C01 a C22. Um caso falhou quando existe um bug aberto apontando para ele: 117 falharam e 133 passaram. 133 + 117 = 250. O relatório de bugs tem 114 bugs: 112 abertos e 2 em revisão (BUG-025 e BUG-026), que não fazem nenhum caso falhar.
+Os 250 casos estão nos cenários C01 a C22. Um caso falhou quando existe um bug aberto apontando para ele: 117 falharam e 133 passaram. 133 + 117 = 250. O relatório de bugs tem 115 bugs: 113 abertos e 2 em revisão (BUG-025 e BUG-026), que não fazem nenhum caso falhar.
 
 Alguns casos foram executados mais de uma vez, em datas ou endereços diferentes. O resultado do caso junta essas execuções, e a evidência é o vídeo que mostra o resultado registrado. Nos casos C01-CT01, C01-CT02, C02-CT01, C04-CT04, C04-CT10, C06-CT07 e C09-CT03, uma execução passou e outra encontrou a falha; o caso conta como falhou.
 
-Evidências: 152 casos têm vídeo ou print, e 98 aguardam o vídeo (marcados com `[Vídeo](coloque o link do video aqui)`). Dos 114 bugs, 71 têm vídeo ou print, e 43 aguardam o vídeo (`[BUG:NN](coloque o link do video aqui)`). O roteiro está em `5-Roteiro-de-videos.md`.
+Evidências: 152 casos têm vídeo ou print, e 98 aguardam o vídeo (marcados com `[Vídeo](coloque o link do video aqui)`). Dos 115 bugs, 73 têm vídeo ou print, e 42 aguardam o vídeo (`[BUG:NN](coloque o link do video aqui)`). O roteiro está em `5-Roteiro-de-videos.md`.
 
 ---
 
@@ -39,7 +39,7 @@ Evidências: 152 casos têm vídeo ou print, e 98 aguardam o vídeo (marcados co
 | RF07      | Contas a receber                | 13             | 8              | 5                | BUG-019, BUG-054, BUG-055, BUG-056, BUG-057                                                                |
 | RF08      | Gestão de fornecedores          | 9              | 6              | 3                | BUG-058, BUG-059, BUG-060                                                                                  |
 | RF09      | Check-in e presenças            | 12             | 4              | 7                | BUG-022, BUG-023, BUG-061, BUG-062, BUG-063, BUG-064, BUG-065                                              |
-| RF10      | Avaliações físicas              | 11             | 7              | 4                | BUG-066, BUG-067, BUG-068, BUG-069                                                                         |
+| RF10      | Avaliações físicas              | 11             | 7              | 5                | BUG-066, BUG-067, BUG-068, BUG-069, BUG-115                                                                |
 | RF11      | Turmas e SifitBox               | 13             | 11             | 2                | BUG-070, BUG-071                                                                                           |
 | RF12      | Caixas                          | 11             | 6              | 5                | BUG-021, BUG-072, BUG-073, BUG-074, BUG-075                                                                |
 | RF13      | Contas a pagar e despesas fixas | 16             | 10             | 6                | BUG-020, BUG-076, BUG-077, BUG-078, BUG-079, BUG-080                                                       |
@@ -175,6 +175,7 @@ O BUG-007 aparece em RF01 e RF02, e o BUG-014 em RF02 e RF03, porque cada um apo
 | BUG-112 | Turma do Box aceita quantidade de vagas negativa                                    | Média      | Aberto     |
 | BUG-113 | Modalidade inativa aparece no cadastro de turma do Box                              | Baixa      | Aberto     |
 | BUG-114 | Exclusão de turma do Box não pede confirmação e mantém a turma na lista             | Média      | Aberto     |
+| BUG-115 | Janela "Alterar Data / Hora" aceita data e hora sem formato                         | Média      | Aberto     |
 
 ---
 
@@ -189,7 +190,7 @@ O BUG-007 aparece em RF01 e RF02, e o BUG-014 em RF02 e RF03, porque cada um apo
 
 - Crítica: 2
 - Alta: 23
-- Média: 53
+- Média: 54
 - Baixa: 34
 
 **Em revisão:** 2
@@ -228,14 +229,14 @@ As hipóteses abaixo foram levantadas a partir do comportamento na tela, do cons
 - **BUG-108, BUG-110, BUG-111, BUG-112, BUG-113**: o cadastro do Box (SifitBox) não valida os campos na tela e o back-end aceita horário invertido, turma sem dias, vagas negativas e modalidade inativa; o mesmo padrão aparece em Turmas (BUG-071).
 - **BUG-114**: a exclusão do Box faz uma inativação (exclusão lógica), mas a listagem de turmas não filtra nem mostra o status.
 
-| Grupo de bugs                                                 | Causa raiz provável                                                                                                                  |
-| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-004, BUG-043, BUG-065, BUG-084, BUG-098, BUG-099, BUG-102 | Validações ausentes ou parciais no front-end e sem regra no back-end (dados inválidos chegam ao banco; campo faltante gera HTTP 500) |
-| BUG-016, BUG-100                                              | Filtros não enviados na listagem inicial e na troca de página                                                                        |
-| BUG-010, BUG-019, BUG-062                                     | Indicadores calculados com consulta diferente da usada nas listagens                                                                 |
-| BUG-063                                                       | Data e hora gravadas em UTC sem conversão para America/Sao_Paulo                                                                     |
-| BUG-101                                                       | Componentes da ficha com valores fixos (mock) e campos nulos exibidos como "null"                                                    |
-| BUG-002, BUG-046, BUG-097                                     | Regras de negócio não implementadas (recuperação de senha, filtro de plano ativo, validação de período)                              |
+| Grupo de bugs                                                          | Causa raiz provável                                                                                                                  |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| BUG-004, BUG-043, BUG-065, BUG-084, BUG-098, BUG-099, BUG-102, BUG-115 | Validações ausentes ou parciais no front-end e sem regra no back-end (dados inválidos chegam ao banco; campo faltante gera HTTP 500) |
+| BUG-016, BUG-100                                                       | Filtros não enviados na listagem inicial e na troca de página                                                                        |
+| BUG-010, BUG-019, BUG-062                                              | Indicadores calculados com consulta diferente da usada nas listagens                                                                 |
+| BUG-063                                                                | Data e hora gravadas em UTC sem conversão para America/Sao_Paulo                                                                     |
+| BUG-101                                                                | Componentes da ficha com valores fixos (mock) e campos nulos exibidos como "null"                                                    |
+| BUG-002, BUG-046, BUG-097                                              | Regras de negócio não implementadas (recuperação de senha, filtro de plano ativo, validação de período)                              |
 
 No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado. A coluna `cpf` da tabela `pessoas` é guardada criptografada, por isso a validação do CPF inválido (BUG-099) foi feita pela tela de edição.
 
@@ -254,7 +255,7 @@ No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado.
 
 ## ✅ **Conclusão**
 
-Dos 250 casos, 133 passaram e 117 falharam, com 114 bugs registrados: 112 abertos e 2 em revisão. No login, só o usuário inexistente e o logout passaram: o login válido mostra erro no servidor ou entra mostrando o nome Jair, a senha incorreta já mostrou erro no servidor, os campos vazios seguem para a API sem aviso, os espaços nas pontas derrubam o login, o link "Esqueci minha senha" não faz nada e a sessão não é controlada.
+Dos 250 casos, 133 passaram e 117 falharam, com 115 bugs registrados: 113 abertos e 2 em revisão. No login, só o usuário inexistente e o logout passaram: o login válido mostra erro no servidor ou entra mostrando o nome Jair, a senha incorreta já mostrou erro no servidor, os campos vazios seguem para a API sem aviso, os espaços nas pontas derrubam o login, o link "Esqueci minha senha" não faz nada e a sessão não é controlada.
 
 As falhas mais graves impedem o uso de módulos centrais. Não é possível cadastrar nem alterar clientes (BUG-035 e BUG-039, severidade Crítica) e fornecedores (BUG-059 e BUG-060). A inativação do plano não é salva (BUG-045). O fechamento de caixa com conferência não é gravado (BUG-072). Não há como registrar o pagamento de conta a pagar (BUG-076). A ficha de treino não abre nem salva (BUG-081). A avaliação realizada não é salva (BUG-066). As anamneses aplicadas não aparecem (BUG-093 e BUG-094). Também se repetem formulários vazios que geram erro 500, respostas da API que expõem comandos SQL, registros em branco aceitos (Atividades, Objetivos de Treino e Tipos de Pagamento) e números que mudam de uma tela para outra (alunos em risco, avaliações pendentes, check-ins do dia, matrículas ativas contra clientes ativos e totais de contas a receber).
 

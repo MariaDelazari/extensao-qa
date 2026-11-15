@@ -4302,3 +4302,43 @@
 |             **Evidência(s)**            |
 | :-------------------------------------: |
 | [BUG:114](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 115: Janela "Alterar Data / Hora" aceita data e hora sem formato**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                         |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-115 | Na janela "Alterar Data / Hora" da avaliação, os campos "Nova Data" e "Nova Hora" aceitam "101010" e "1411", sem máscara e sem validação. Ao clicar em "Salvar", nada acontece e nenhuma mensagem é exibida. Os valores digitados continuam nos campos ao abrir a janela de outra avaliação (Marcelo Longo Zandonadi e Raquel Dodge). |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                               |
+| ------------------------------------------------------------------ |
+| 1. Acessar a tela Avaliações com o filtro Pendente.                |
+| 2. Clicar em "Alterar" da avaliação de Manual SIFIT Aluno Exemplo. |
+| 3. Informar "101010" em "Nova Data" e "1411" em "Nova Hora".       |
+| 4. Clicar em "Salvar" e depois em "Cancelar".                      |
+| 5. Clicar em "Alterar" de outra avaliação.                         |
+
+|                                                             **Comportamento Esperado**                                                              |                                                          **Comportamento Obtido**                                                          |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------: |
+| Os campos devem aceitar só data no padrão DD/MM/AAAA e hora no padrão HH:MM, com mensagem para valor inválido, e abrir vazios na próxima avaliação. | Os valores inválidos são aceitos, "Salvar" não faz nada nem mostra mensagem, e "101010" e "1411" aparecem na janela das outras avaliações. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
+
+|      **Funcionalidade Afetada**       |          **Caso de Teste Relacionado**           |
+| :-----------------------------------: | :----------------------------------------------: |
+| Avaliações / Alteração de data e hora | C10-CT08: Alteração da data e hora da avaliação. |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:115](https://jam.dev/c/e7b3f5ff-5bd1-4fde-be72-0c33ebfac152) |
