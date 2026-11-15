@@ -10,25 +10,25 @@
 | :------------------------------------------------------------- |
 | As credenciais fornecidas (usuário e senha) devem ser válidas. |
 
-| **Passos**                                                          |
-| :------------------------------------------------------------------ |
-| **DADO** que estamos na página de login do Sifit                    |
-| **E** preenchemos "marcelo_zandonadi" no campo Login                |
-| **E** preenchemos a senha "12345678" válida da conta no campo Senha |
-| **QUANDO** clicarmos no botão "Entrar"                              |
-| **ENTÃO** seremos redirecionados para o Dashboard do sistema        |
+| **Passos**                                                                                                                   |
+| :--------------------------------------------------------------------------------------------------------------------------- |
+| **DADO** que estamos na página de login do Sifit                                                                             |
+| **E** preenchemos "marcelo_zandonadi" no campo Login                                                                         |
+| **E** preenchemos a senha válida da conta no campo Senha ("12345678" no sifit.centrion.com.br e "password" no Sifit Unialfa) |
+| **QUANDO** clicarmos no botão "Entrar"                                                                                       |
+| **ENTÃO** seremos redirecionados para o Dashboard do sistema                                                                 |
 
 | **Critérios de aceitação**                                     |
 | :------------------------------------------------------------- |
 | O redirecionamento para o Dashboard deve ocorrer corretamente. |
 
-| **Resultado da execução**                                                                                                                                                                                                                                                                                                                                              |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** O login válido mostrou "Erro no servidor" ou entrou com o nome "Jair" no lugar da conta de teste. Em 28/10/2026 o login com a senha atual entrou e a saudação mostrou "Jair". Em outra execução, o caso passou. Em 23 a 24/10/2026, no sifit.centrion.com.br, o caso passou: redirecionado para /dashboard com a mensagem "Boa noite, (nome do usuário)!". |
+| **Resultado da execução**                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** O login válido mostrou "Erro no servidor" ou entrou com o nome "Jair" no lugar da conta de teste. Em 28/10/2026 o login com a senha atual entrou e a saudação mostrou "Jair". Em outra execução, o caso passou. Em 23 a 24/10/2026, no sifit.centrion.com.br, o caso passou: redirecionado para /dashboard com a mensagem "Boa noite, (nome do usuário)!". Em 15/11/2026, no Sifit Unialfa, o login entrou no Dashboard e a saudação mostrou "Boa noite, Jair!". |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/a0483819-6991-4271-91fd-13b1e7539ca9) |
 
 ---
 
