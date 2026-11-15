@@ -52,10 +52,10 @@ Evidências: 178 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados co
 | RF20      | Grupos                          | 10             | 7              | 3                | BUG-103, BUG-104, BUG-105                                                                                  |
 | RF21      | Modelos de contrato             | 6              | 3              | 3                | BUG-106, BUG-107                                                                                           |
 | RF22      | Box - Turmas                    | 13             | 5              | 8                | BUG-108, BUG-109, BUG-110, BUG-111, BUG-112, BUG-113, BUG-114                                              |
-| RF30      | Bancos e Banco Recorrente       | 7              | 3              | 4                | BUG-116, BUG-117, BUG-118, BUG-119                                                                         |
-| RF31      | Categorias de conta a pagar     | 5              | 1              | 4                | BUG-116, BUG-120, BUG-121, BUG-122                                                                         |
+| RF30      | Bancos e Banco Recorrente       | 7              | 3              | 4                | BUG-126, BUG-127, BUG-128, BUG-129                                                                         |
+| RF31      | Categorias de conta a pagar     | 5              | 1              | 4                | BUG-126, BUG-130, BUG-131, BUG-132                                                                         |
 
-O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, e o BUG-116 em RF30 e RF31, porque cada um aponta para casos dos dois cenários.
+O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, e o BUG-126 em RF30 e RF31, porque cada um aponta para casos dos dois cenários.
 
 ---
 
@@ -178,13 +178,13 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, e o BUG-116 em RF30 
 | BUG-113 | Modalidade inativa aparece no cadastro de turma do Box                              | Baixa      | Aberto     |
 | BUG-114 | Exclusão de turma do Box não pede confirmação e mantém a turma na lista             | Média      | Aberto     |
 | BUG-115 | Janela "Alterar Data / Hora" aceita data e hora sem formato                         | Média      | Aberto     |
-| BUG-116 | Telas de bancos e de categorias de conta a pagar não estão no menu                  | Média      | Aberto     |
-| BUG-117 | Banco é salvo sem nome                                                              | Baixa      | Aberto     |
-| BUG-118 | Banco duplicado é aceito                                                            | Baixa      | Aberto     |
-| BUG-119 | Excluir banco chama a exclusão de tipo de pagamento                                 | Crítica    | Aberto     |
-| BUG-120 | Listagem de categorias de conta a pagar aparece vazia                               | Alta       | Aberto     |
-| BUG-121 | Categoria de conta a pagar é salva sem nome                                         | Baixa      | Aberto     |
-| BUG-122 | Categoria de conta a pagar duplicada é aceita                                       | Baixa      | Aberto     |
+| BUG-126 | Telas de bancos e de categorias de conta a pagar não estão no menu                  | Média      | Aberto     |
+| BUG-127 | Banco é salvo sem nome                                                              | Baixa      | Aberto     |
+| BUG-128 | Banco duplicado é aceito                                                            | Baixa      | Aberto     |
+| BUG-129 | Excluir banco chama a exclusão de tipo de pagamento                                 | Crítica    | Aberto     |
+| BUG-130 | Listagem de categorias de conta a pagar aparece vazia                               | Alta       | Aberto     |
+| BUG-131 | Categoria de conta a pagar é salva sem nome                                         | Baixa      | Aberto     |
+| BUG-132 | Categoria de conta a pagar duplicada é aceita                                       | Baixa      | Aberto     |
 
 ---
 
@@ -237,9 +237,9 @@ As hipóteses abaixo foram levantadas a partir do comportamento na tela, do cons
 - **BUG-106**: a API retorna os modelos de contrato, mas a tabela renderiza cada linha como um elemento "corpo-modelo" vazio, o que indica que o componente da linha não está registrado no front-end.
 - **BUG-108, BUG-110, BUG-111, BUG-112, BUG-113**: o cadastro do Box (SifitBox) não valida os campos na tela e o back-end aceita horário invertido, turma sem dias, vagas negativas e modalidade inativa; o mesmo padrão aparece em Turmas (BUG-071).
 - **BUG-114**: a exclusão do Box faz uma inativação (exclusão lógica), mas a listagem de turmas não filtra nem mostra o status.
-- **BUG-116, BUG-119**: as telas de Bancos, Banco Recorrente e Categorias de conta a pagar parecem copiadas de outras telas e não foram terminadas: não estão no menu, abrem fora do layout e a exclusão de banco usa a rota e a mensagem de Tipos de Pagamento.
-- **BUG-117, BUG-118, BUG-121, BUG-122**: o back-end de bancos e categorias aceita nome vazio e nome duplicado, e a tela não valida nada antes de enviar.
-- **BUG-120**: a API retorna as categorias, mas a tabela da tela não as renderiza.
+- **BUG-126, BUG-129**: as telas de Bancos, Banco Recorrente e Categorias de conta a pagar parecem copiadas de outras telas e não foram terminadas: não estão no menu, abrem fora do layout e a exclusão de banco usa a rota e a mensagem de Tipos de Pagamento.
+- **BUG-127, BUG-128, BUG-131, BUG-132**: o back-end de bancos e categorias aceita nome vazio e nome duplicado, e a tela não valida nada antes de enviar.
+- **BUG-130**: a API retorna as categorias, mas a tabela da tela não as renderiza.
 
 | Grupo de bugs                                                          | Causa raiz provável                                                                                                                  |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
@@ -258,7 +258,7 @@ No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado.
 
 - Plano de Testes
 - Análise de requisitos
-- Casos de teste (C01 a C22, C30 e C31); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C02, C04, C06, C09, C10, C13 a C15, C17 a C19 e C31)
+- Casos de teste (C01 a C22, C30 e C31); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C02, C04, C06, C10, C13, C15, C18 e C19)
 - Relatório de bugs, com o vídeo da falha
 - Vídeos no Jam e prints na pasta `Sifit/Evidencias`
 - Roteiro dos vídeos a gravar (`5-Roteiro-de-videos.md`)
@@ -277,6 +277,6 @@ Ficaram fora do escopo: Pagar.me, WhatsApp e Aplicativo. Ainda não têm caso de
 
 Em Grupos, Modelos de contrato e Box - Turmas (C20 a C22, testados em 15/11/2026), os modelos de contrato não aparecem na listagem (BUG-106, severidade Alta), o status "Inativo" do grupo não é salvo (BUG-104) e o grupo não pode ser excluído (BUG-105). O cadastro de turmas do Box aceita horário invertido, turma sem dias e vagas negativas (BUG-110 a BUG-112). Ficaram no ambiente os grupos de teste #8, #9 e #10, que não podem ser excluídos nem inativados, e os modelos de contrato 8 e 9, que não aparecem na listagem. A modalidade e as turmas de teste do Box ficaram inativas.
 
-Em Bancos, Banco Recorrente e Categorias de conta a pagar (C30 e C31, testados em 15/11/2026), as três telas não têm item no menu e só abrem pelo link (BUG-116). O botão de excluir banco chama a exclusão de Tipo de Pagamento com o id do banco (BUG-119, severidade Crítica): no teste, só não apagou o tipo de pagamento 11 porque ele estava em uso. A listagem de categorias fica vazia (BUG-120), e as duas telas aceitam registros sem nome e duplicados. Na gravação do C30-CT07, a exclusão do Banco Brasil mostrou "Erro ao deletar tipo de pagamento", e o tipo de pagamento 1 (Dinheiro) continuou cadastrado. Como a exclusão de banco não é segura, os registros de teste não foram excluídos: bancos 8 a 17 e categorias 25 a 29 e as gravadas nos vídeos.
+Em Bancos, Banco Recorrente e Categorias de conta a pagar (C30 e C31, testados em 15/11/2026), as três telas não têm item no menu e só abrem pelo link (BUG-126). O botão de excluir banco chama a exclusão de Tipo de Pagamento com o id do banco (BUG-129, severidade Crítica): no teste, só não apagou o tipo de pagamento 11 porque ele estava em uso. A listagem de categorias fica vazia (BUG-130), e as duas telas aceitam registros sem nome e duplicados. Na gravação do C30-CT07, a exclusão do Banco Brasil mostrou "Erro ao deletar tipo de pagamento", e o tipo de pagamento 1 (Dinheiro) continuou cadastrado. Como a exclusão de banco não é segura, os registros de teste não foram excluídos: bancos 8 a 17 e categorias 25 a 29 e as gravadas nos vídeos.
 
 Até 23/10/2026 os testes usaram https://sifit.centrion.com.br/. A partir de 24/10/2026, usam https://sifitalfa.centrion.com.br/. A versão interna do sistema não foi anotada.

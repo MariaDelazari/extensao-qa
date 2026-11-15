@@ -196,7 +196,7 @@
 | **Pré-condições**                                                                                         |
 | :-------------------------------------------------------------------------------------------------------- |
 | O usuário deve estar autenticado na plataforma SIFIT.                                                     |
-| Atenção: ao confirmar, o sistema tenta excluir o tipo de pagamento com o mesmo código do banco (BUG-119). |
+| Atenção: ao confirmar, o sistema tenta excluir o tipo de pagamento com o mesmo código do banco (BUG-129). |
 
 | **Passos**                                                                              |
 | :-------------------------------------------------------------------------------------- |
