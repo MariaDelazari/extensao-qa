@@ -26,7 +26,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/7b8f2086-48da-49a7-ae49-1cd24456d0b0) |
 
 ---
 
@@ -57,7 +57,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/74916f35-5d48-454b-8619-826584ba2f9c) |
 
 ---
 
@@ -88,7 +88,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/6ebe6a2e-6c51-4736-8476-8fcbe56f6845) |
 
 ---
 
@@ -119,7 +119,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/d3df52b8-feaf-4066-a988-6f1850a7ef19) |
 
 ---
 
@@ -149,7 +149,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/d9b13459-c818-46c1-97e0-75acd067f8ed) |
 
 ---
 
@@ -179,7 +179,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/cfcffad0-0b7b-4d44-97e1-4f392ebcb34d) |
 
 ---
 
@@ -210,7 +210,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/f15db91c-a5d3-44f0-b1f0-db64a1f71324) |
 
 ---
 
@@ -241,7 +241,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/0d60d44e-1515-473a-9bec-0256ac5b11ee) |
 
 ---
 
@@ -272,7 +272,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/c795c2dd-5974-4a61-95d1-c4d3fc0734f5) |
 
 ---
 
@@ -289,7 +289,7 @@
 | **Passos**                                                                                                              |
 | :---------------------------------------------------------------------------------------------------------------------- |
 | **DADO** que abrimos a janela "Grupo Muscular"                                                                          |
-| **E** informamos o nome "Grupo Teste Keltton" e selecionamos "Superiores" em "Tipo Membro"                              |
+| **E** informamos o nome "Teste" e selecionamos "Superiores" em "Tipo Membro"                              |
 | **QUANDO** clicarmos no botão "Salvar"                                                                                  |
 | **ENTÃO** o grupo deverá constar na listagem e os indicadores "Grupos cadastrados" e "Superiores" deverão aumentar em 1 |
 
@@ -299,11 +299,11 @@
 
 | **Resultado da execução**                                                                                               |
 | :---------------------------------------------------------------------------------------------------------------------- |
-| **Passou.** O grupo "Grupo Teste Keltton" apareceu na listagem como "Superiores" e os dois indicadores aumentaram em 1. |
+| **Passou.** O grupo "Teste" apareceu na listagem como "Superiores" e os dois indicadores aumentaram em 1. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/60718def-2be2-4683-af14-d250077db522) |
 
 ---
 
@@ -319,7 +319,7 @@
 
 | **Passos**                                                                       |
 | :------------------------------------------------------------------------------- |
-| **DADO** que o grupo "Grupo Teste Keltton" já está cadastrado                    |
+| **DADO** que o grupo "Teste" já está cadastrado                    |
 | **E** abrimos a janela "Grupo Muscular" e informamos o mesmo nome e o mesmo tipo |
 | **QUANDO** clicarmos no botão "Salvar"                                           |
 | **ENTÃO** o sistema deverá informar que o grupo já existe                        |
@@ -334,7 +334,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/413c4e06-4999-4b2e-b9f6-8e13ae2a7e46) |
 
 ---
 
@@ -350,8 +350,8 @@
 
 | **Passos**                                                                                                                 |
 | :------------------------------------------------------------------------------------------------------------------------- |
-| **DADO** que clicamos no botão "Visualizar" do grupo "Grupo Teste Keltton"                                                 |
-| **E** alteramos o nome para "Grupo Teste Keltton Editado" e o "Tipo Membro" para "Inferiores"                              |
+| **DADO** que clicamos no botão "Visualizar" do grupo "Teste"                                                 |
+| **E** alteramos o nome para "Keltton" e o "Tipo Membro" para "Inferiores"                              |
 | **QUANDO** clicarmos no botão "Salvar"                                                                                     |
 | **ENTÃO** a listagem deverá exibir o nome e o tipo atualizados, e os indicadores "Superiores" e "Inferiores" deverão mudar |
 
@@ -361,11 +361,11 @@
 
 | **Resultado da execução**                                                                                                          |
 | :--------------------------------------------------------------------------------------------------------------------------------- |
-| **Passou.** A listagem exibiu "Grupo Teste Keltton Editado" como "Inferiores"; "Superiores" diminuiu e "Inferiores" aumentou em 1. |
+| **Passou.** A listagem exibiu "Keltton" como "Inferiores"; "Superiores" diminuiu e "Inferiores" aumentou em 1. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/018f87df-85f1-4eb3-bccf-80b672c3c85c) |
 
 ---
 
@@ -396,7 +396,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/f812432a-814f-417d-9e88-f6f69c4a4422) |
 
 ---
 
@@ -408,13 +408,13 @@
 
 | **Pré-condições**                                                                 |
 | :-------------------------------------------------------------------------------- |
-| O usuário deve estar autenticado e existir o grupo "Grupo Teste Keltton Editado". |
+| O usuário deve estar autenticado e existir o grupo "Keltton". |
 
 | **Passos**                                                                            |
 | :------------------------------------------------------------------------------------ |
-| **DADO** que cadastramos o grupo "Grupo Teste Keltton Editado"                        |
+| **DADO** que cadastramos o grupo "Keltton"                        |
 | **QUANDO** acessarmos o menu "Exercícios" e clicarmos em "Adicionar" no card do grupo |
-| **E** salvarmos o exercício "Exercicio Teste Keltton"                                 |
+| **E** salvarmos o exercício "Teste Keltton"                                 |
 | **ENTÃO** o exercício deverá constar no card do grupo                                 |
 
 | **Critérios de aceitação**                                      |
@@ -423,11 +423,11 @@
 
 | **Resultado da execução**                                                                                            |
 | :------------------------------------------------------------------------------------------------------------------- |
-| **Passou.** O card "Grupo Teste Keltton Editado" apareceu em Exercícios e passou a listar "Exercicio Teste Keltton". |
+| **Passou.** O card "Keltton" apareceu em Exercícios e passou a listar "Teste Keltton". |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/726c0ef8-7c8c-4d8f-b39e-fb9e2228b28c) |
 
 ---
 
@@ -458,6 +458,6 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/03438160-a0a6-4bce-b9b6-2c79b0d3a692) |
 
 ---
