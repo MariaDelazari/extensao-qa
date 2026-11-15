@@ -4068,15 +4068,16 @@
 
 |             **Evidência(s)**            |
 | :-------------------------------------: |
-| [BUG:108](coloque o link do video aqui) |
+| [BUG:108 - modalidade](https://jam.dev/c/bbce3086-ea71-4f96-984f-30bece9b67e4) |
+| [BUG:108 - turma](https://jam.dev/c/3587cecb-d159-4fcb-9c58-534e9430bcea) |
 
 ---
 
-### 🐞 **Bug 109: Erro 500 sem mensagem ao cadastrar modalidade duplicada**
+### 🐞 **Bug 109: Erro 500 e mensagem genérica ao cadastrar modalidade duplicada**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                  |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-109 | Ao cadastrar uma modalidade com o nome de uma já existente ("Modalidade Teste Ville"), a modalidade não é duplicada, mas a tela não mostra nenhuma mensagem. No DevTools (aba Network), a API retorna erro 500 com "Erro interno inesperado.". |
+| BUG-109 | Ao cadastrar uma modalidade com o nome de uma já existente ("Modalidade Teste Ville"), a modalidade não é duplicada, mas a tela mostra só a mensagem genérica "Erro ao salvar modalidade", sem informar que o nome já existe. No DevTools (aba Network), a API retorna erro 500 com "Erro interno inesperado.". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -4091,7 +4092,7 @@
 
 |              **Comportamento Esperado**             |               **Comportamento Obtido**               |
 | :-------------------------------------------------: | :--------------------------------------------------: |
-| O sistema deve informar que a modalidade já existe. | Nenhuma mensagem é exibida e a API retorna erro 500. |
+| O sistema deve informar que a modalidade já existe. | Aparece "Erro ao salvar modalidade" e a API retorna erro 500. |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -4107,7 +4108,7 @@
 
 |             **Evidência(s)**            |
 | :-------------------------------------: |
-| [BUG:109](coloque o link do video aqui) |
+| [BUG:109](https://jam.dev/c/b66fe3ca-342c-4605-9fa7-10417c54e174) |
 
 ---
 
@@ -4146,7 +4147,7 @@
 
 |             **Evidência(s)**            |
 | :-------------------------------------: |
-| [BUG:110](coloque o link do video aqui) |
+| [BUG:110](https://jam.dev/c/005742d4-d9e7-4724-8363-f5636b983438) |
 
 ---
 
@@ -4185,7 +4186,7 @@
 
 |             **Evidência(s)**            |
 | :-------------------------------------: |
-| [BUG:111](coloque o link do video aqui) |
+| [BUG:111](https://jam.dev/c/b504ede6-2ed2-4caf-9c94-a83e4702866c) |
 
 ---
 
@@ -4202,7 +4203,7 @@
 | **Passo a passo para simular o bug**                            |
 | --------------------------------------------------------------- |
 | 1. Acessar o menu "Box - Turmas".                               |
-| 2. Informar o nome, a modalidade, o horário e um dia da semana. |
+| 2. Informar o nome, a modalidade e um dia da semana.            |
 | 3. Informar -5 no campo de vagas.                               |
 | 4. Clicar no botão "Turma".                                     |
 
@@ -4224,7 +4225,7 @@
 
 |             **Evidência(s)**            |
 | :-------------------------------------: |
-| [BUG:112](coloque o link do video aqui) |
+| [BUG:112](https://jam.dev/c/24af9192-9c04-47b9-8937-7641f4446a78) |
 
 ---
 
@@ -4232,7 +4233,7 @@
 
 | **ID**  | **Descrição**                                                                                                                                  |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-113 | O campo "Modalidade" do cadastro de turma lista a modalidade inativa "Leo valesk", e a turma "Turma Box Ville Inativa" foi cadastrada com ela. |
+| BUG-113 | O campo "Modalidade" do cadastro de turma lista a modalidade inativa "Leo valesk", e a turma "Turma Box Ville Vagas" foi cadastrada com ela. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -4262,7 +4263,7 @@
 
 |             **Evidência(s)**            |
 | :-------------------------------------: |
-| [BUG:113](coloque o link do video aqui) |
+| [BUG:113](https://jam.dev/c/e12097b4-c4db-4d08-9cf7-372201929e55) |
 
 ---
 
@@ -4270,7 +4271,7 @@
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                                                      |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-114 | Ao clicar no botão de excluir de uma turma do Box, a ação é executada na hora, sem confirmação. A API responde sem erro, mas a turma continua na listagem: pela API, ela só passa para "inativo", e a listagem não tem coluna de status. O mesmo ocorre com modalidades, que ficam como "inativo". |
+| BUG-114 | Ao clicar no botão de excluir de uma turma do Box, a ação é executada na hora, sem confirmação, e os dados da turma são carregados no formulário com o status "Inativo". A API responde sem erro, mas a turma continua na listagem: pela API, ela só passa para "inativo", e a listagem não tem coluna de status. O mesmo ocorre com modalidades, que ficam como "inativo". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -4301,7 +4302,7 @@
 
 |             **Evidência(s)**            |
 | :-------------------------------------: |
-| [BUG:114](coloque o link do video aqui) |
+| [BUG:114](https://jam.dev/c/b1f29d33-a1f6-45c6-a289-8aa62f3d39a6) |
 
 ---
 

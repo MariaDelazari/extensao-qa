@@ -26,7 +26,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/fe6d908a-a000-4449-aee4-620762f98a81) |
 
 ---
 
@@ -57,7 +57,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/bbce3086-ea71-4f96-984f-30bece9b67e4) |
 
 ---
 
@@ -74,7 +74,7 @@
 | **Passos**                                                                                                      |
 | :-------------------------------------------------------------------------------------------------------------- |
 | **DADO** que estamos na tela Box - Turmas                                                                       |
-| **E** informamos o nome "Modalidade Teste Ville", a descrição "Modalidade criada pelo Ville" e o status "Ativo" |
+| **E** informamos o nome "Modalidade Teste Ville", a descrição "Modalidade Criada por ville" e o status "Ativo" |
 | **QUANDO** clicarmos no botão "Modalidade"                                                                      |
 | **ENTÃO** a modalidade deverá constar na listagem como "ativo" e ficar disponível no cadastro de turmas         |
 
@@ -84,11 +84,11 @@
 
 | **Resultado da execução**                                                                      |
 | :--------------------------------------------------------------------------------------------- |
-| **Passou.** A modalidade foi listada como "ativo" e apareceu no campo "Modalidade" das turmas. |
+| **Passou.** A modalidade foi listada como "ativo" e depois usada no cadastro de turma (C22-CT07). |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/ac74fb7a-39fb-4afe-9156-1f228390101f) |
 
 ---
 
@@ -115,11 +115,11 @@
 
 | **Resultado da execução**                                                                                                                               |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Falhou.** A modalidade não é duplicada, mas nenhuma mensagem é exibida. No DevTools (aba Network), a API retorna erro 500 "Erro interno inesperado.". |
+| **Falhou.** A modalidade não é duplicada, mas aparece só a mensagem genérica "Erro ao salvar modalidade", sem dizer que o nome já existe. No DevTools (aba Network), a API retorna erro 500 "Erro interno inesperado.". |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/b66fe3ca-342c-4605-9fa7-10417c54e174) |
 
 ---
 
@@ -150,7 +150,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/9b764563-0040-47d6-a906-0e488e609eed) |
 
 ---
 
@@ -181,7 +181,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/3587cecb-d159-4fcb-9c58-534e9430bcea) |
 
 ---
 
@@ -212,7 +212,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/5dd76f68-2c4b-4f22-bcd2-1a43c1e8ff45) |
 
 ---
 
@@ -244,7 +244,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/005742d4-d9e7-4724-8363-f5636b983438) |
 
 ---
 
@@ -276,7 +276,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/b504ede6-2ed2-4caf-9c94-a83e4702866c) |
 
 ---
 
@@ -293,7 +293,7 @@
 | **Passos**                                                                            |
 | :------------------------------------------------------------------------------------ |
 | **DADO** que estamos na tela Box - Turmas                                             |
-| **E** informamos o nome "Turma Box Ville Vagas", a modalidade, o horário e o dia Sex  |
+| **E** informamos o nome "Turma Box Ville Vagas", a modalidade e o dia Seg               |
 | **E** informamos -5 no campo de vagas                                                 |
 | **QUANDO** clicarmos no botão "Turma"                                                 |
 | **ENTÃO** o sistema deverá informar que a quantidade de vagas deve ser maior que zero |
@@ -304,11 +304,11 @@
 
 | **Resultado da execução**                                |
 | :------------------------------------------------------- |
-| **Falhou.** A turma é cadastrada e listada com -5 vagas. |
+| **Falhou.** A turma é cadastrada e listada com -5 vagas. Como o horário ficou vazio, ela aparece com "00:00:00 - 00:00:00". |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/24af9192-9c04-47b9-8937-7641f4446a78) |
 
 ---
 
@@ -334,11 +334,11 @@
 
 | **Resultado da execução**                                                                                                  |
 | :------------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** A modalidade inativa "Leo valesk" aparece na lista e a turma "Turma Box Ville Inativa" foi cadastrada com ela. |
+| **Falhou.** A modalidade inativa "Leo valesk" aparece na lista e a turma "Turma Box Ville Vagas" foi cadastrada com ela. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/e12097b4-c4db-4d08-9cf7-372201929e55) |
 
 ---
 
@@ -369,7 +369,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/f5be5977-72ef-445e-99fd-703737d440f0) |
 
 ---
 
@@ -395,8 +395,8 @@
 
 | **Resultado da execução**                                                                                                                          |
 | :------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** Não há confirmação e a turma continua na listagem. Pela API, a turma só passa para "inativo", mas a listagem não tem coluna de status. |
+| **Falhou.** Não há confirmação: ao clicar em excluir, os dados da turma são carregados no formulário com o status "Inativo" e a turma continua na listagem. Pela API, a turma só passa para "inativo", e a listagem não tem coluna de status. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/b1f29d33-a1f6-45c6-a289-8aa62f3d39a6) |

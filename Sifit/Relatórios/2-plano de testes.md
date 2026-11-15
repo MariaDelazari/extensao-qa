@@ -98,7 +98,7 @@ Verificar manualmente os requisitos funcionais do Sifit: o login, a página inic
 - Os casos deste plano foram executados e têm vídeo ou print.
 - As falhas encontradas foram registradas no relatório de bugs, com vídeo.
 - O relatório final informa quantos casos passaram, quantos falharam e qual bug está ligado a cada um.
-- Situação atual: 98 dos 251 casos e 42 dos 115 bugs ainda aguardam o vídeo (ver o relatório final).
+- Situação atual: 85 dos 251 casos e 35 dos 115 bugs ainda aguardam o vídeo (ver o relatório final).
 
 ---
 
@@ -173,7 +173,7 @@ Quando houve diferença de prioridade entre os trabalhos, ficou a maior.
 | Ambiente compartilhado: outros usuários alteram ou excluem dados                                                                             | Alto    | Usar registros de teste identificáveis pelo nome e não fixar IDs na documentação              |
 | Execuções em datas e endereços diferentes deram resultados diferentes (C01-CT01, C01-CT02, C02-CT01, C04-CT04, C04-CT10, C06-CT07, C09-CT03) | Médio   | O resultado de cada execução está descrito no caso. Repetir no Sifit Unialfa antes da entrega |
 | Os casos executados por automação de navegador não mostram o aviso nativo do navegador ("Preencha este campo.")                              | Médio   | Conferir em vídeo os BUG-025 e 026, que estão em revisão                                 |
-| 98 casos e 43 bugs ainda sem vídeo                                                                                                           | Alto    | Gravar os vídeos seguindo o `5-Roteiro-de-videos.md` e os casos que ainda estão sem vídeo     |
+| 85 casos e 35 bugs ainda sem vídeo                                                                                                           | Alto    | Gravar os vídeos seguindo o `5-Roteiro-de-videos.md` e os casos que ainda estão sem vídeo     |
 | Ações que enviam mensagens ou cobranças reais (WhatsApp e Pagar.me)                                                                          | Alto    | Manter essas ações fora do escopo                                                             |
 | Dados pessoais reais na base                                                                                                                 | Alto    | Não publicar prints com nome ou CPF de terceiros (LGPD)                                       |
 | Testes limitados a um único usuário (perfil administrador)                                                                                   | Médio   | Documentar esse limite no escopo                                                              |

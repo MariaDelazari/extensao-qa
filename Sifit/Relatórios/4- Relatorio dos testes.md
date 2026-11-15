@@ -22,7 +22,7 @@ Os 251 casos estão nos cenários C01 a C22. Um caso falhou quando existe um bug
 
 Alguns casos foram executados mais de uma vez, em datas ou endereços diferentes. O resultado do caso junta essas execuções, e a evidência é o vídeo que mostra o resultado registrado. Nos casos C01-CT01, C01-CT02, C02-CT01, C04-CT04, C04-CT10, C06-CT07 e C09-CT03, uma execução passou e outra encontrou a falha; o caso conta como falhou.
 
-Evidências: 153 casos têm vídeo ou print, e 98 aguardam o vídeo (marcados com `[Vídeo](coloque o link do video aqui)`). Dos 115 bugs, 73 têm vídeo ou print, e 42 aguardam o vídeo (`[BUG:NN](coloque o link do video aqui)`). O roteiro está em `5-Roteiro-de-videos.md`.
+Evidências: 166 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados com `[Vídeo](coloque o link do video aqui)`). Dos 115 bugs, 80 têm vídeo ou print, e 35 aguardam o vídeo (`[BUG:NN](coloque o link do video aqui)`). O roteiro está em `5-Roteiro-de-videos.md`.
 
 ---
 
@@ -30,20 +30,20 @@ Evidências: 153 casos têm vídeo ou print, e 98 aguardam o vídeo (marcados co
 
 | Código RF | Módulo                          | Casos Testados | Casos Passaram | Bugs encontrados | Bug(s) Associado(s)                                                                                        |
 | --------- | ------------------------------- | -------------- | -------------- | ---------------- | ---------------------------------------------------------------------------------------------------------- |
-| RF01      | Login na plataforma             | 9              | 2              | 8                | BUG-001, BUG-002, BUG-003, BUG-004, BUG-005, BUG-006, BUG-007, BUG-011                                     |
-| RF02      | Página inicial do dashboard     | 10             | 3              | 9                | BUG-007, BUG-008, BUG-009, BUG-010, BUG-014, BUG-015, BUG-033, BUG-034, BUG-097                            |
+| RF01      | Login na plataforma             | 9              | 2              | 7                | BUG-001, BUG-002, BUG-003, BUG-004, BUG-005, BUG-006, BUG-007, BUG-011                                     |
+| RF02      | Página inicial do dashboard     | 10             | 3              | 7                | BUG-007, BUG-008, BUG-009, BUG-010, BUG-014, BUG-015, BUG-033, BUG-034, BUG-097                            |
 | RF03      | Dashboard                       | 4              | 1              | 3                | BUG-012, BUG-013, BUG-014                                                                                  |
 | RF04      | Gestão de clientes              | 16             | 4              | 12               | BUG-016, BUG-017, BUG-035, BUG-036, BUG-037, BUG-038, BUG-039, BUG-040, BUG-098, BUG-099, BUG-100, BUG-101 |
 | RF05      | Gestão de planos                | 14             | 8              | 6                | BUG-041, BUG-042, BUG-043, BUG-044, BUG-045, BUG-046 (em revisão: BUG-025)                                 |
-| RF06      | Gestão de matrículas            | 14             | 4              | 9                | BUG-018, BUG-047, BUG-048, BUG-049, BUG-050, BUG-051, BUG-052, BUG-053, BUG-102                            |
+| RF06      | Gestão de matrículas            | 14             | 4              | 10               | BUG-018, BUG-047, BUG-048, BUG-049, BUG-050, BUG-051, BUG-052, BUG-053, BUG-102                            |
 | RF07      | Contas a receber                | 13             | 8              | 5                | BUG-019, BUG-054, BUG-055, BUG-056, BUG-057                                                                |
 | RF08      | Gestão de fornecedores          | 9              | 6              | 3                | BUG-058, BUG-059, BUG-060                                                                                  |
-| RF09      | Check-in e presenças            | 12             | 4              | 7                | BUG-022, BUG-023, BUG-061, BUG-062, BUG-063, BUG-064, BUG-065                                              |
+| RF09      | Check-in e presenças            | 12             | 4              | 8                | BUG-022, BUG-023, BUG-061, BUG-062, BUG-063, BUG-064, BUG-065                                              |
 | RF10      | Avaliações físicas              | 12             | 7              | 5                | BUG-066, BUG-067, BUG-068, BUG-069, BUG-115                                                                |
 | RF11      | Turmas e SifitBox               | 13             | 11             | 2                | BUG-070, BUG-071                                                                                           |
 | RF12      | Caixas                          | 11             | 6              | 5                | BUG-021, BUG-072, BUG-073, BUG-074, BUG-075                                                                |
 | RF13      | Contas a pagar e despesas fixas | 16             | 10             | 6                | BUG-020, BUG-076, BUG-077, BUG-078, BUG-079, BUG-080                                                       |
-| RF14      | Fichas de treino e exercícios   | 13             | 8              | 4                | BUG-081, BUG-082, BUG-083, BUG-084                                                                         |
+| RF14      | Fichas de treino e exercícios   | 13             | 8              | 5                | BUG-081, BUG-082, BUG-083, BUG-084                                                                         |
 | RF15      | Prospecção                      | 12             | 11             | 1                | BUG-085 (em revisão: BUG-026)                                                                              |
 | RF16      | Colaboradores e funções         | 17             | 11             | 6                | BUG-024, BUG-086, BUG-087, BUG-088, BUG-089                                                              |
 | RF17      | Produtos                        | 11             | 7              | 4                | BUG-027, BUG-090, BUG-091, BUG-092                                                                         |
@@ -169,7 +169,7 @@ O BUG-007 aparece em RF01 e RF02, e o BUG-014 em RF02 e RF03, porque cada um apo
 | BUG-106 | Listagem de modelos de contrato aparece vazia                                       | Alta       | Aberto     |
 | BUG-107 | Modelo de contrato é salvo sem texto                                                | Baixa      | Aberto     |
 | BUG-108 | Box - Turmas não avisa nada ao salvar modalidade ou turma vazia                     | Baixa      | Aberto     |
-| BUG-109 | Erro 500 sem mensagem ao cadastrar modalidade duplicada                             | Média      | Aberto     |
+| BUG-109 | Erro 500 e mensagem genérica ao cadastrar modalidade duplicada                      | Média      | Aberto     |
 | BUG-110 | Turma do Box aceita hora final anterior à hora inicial                              | Média      | Aberto     |
 | BUG-111 | Turma do Box é cadastrada sem dias da semana                                        | Média      | Aberto     |
 | BUG-112 | Turma do Box aceita quantidade de vagas negativa                                    | Média      | Aberto     |
@@ -224,7 +224,7 @@ As hipóteses abaixo foram levantadas a partir do comportamento na tela, do cons
 - **BUG-083, BUG-087**: as rotas de exclusão de ficha e de atualização de colaborador devolvem a saída de depuração do SQL, o que indica modo de depuração ativo no back-end de homologação.
 - **BUG-027, BUG-090**: o back-end grava o campo "valor" mesmo para produtos de pontuação e não trata o valor vazio, devolvendo o erro do banco de dados ("Data truncated for column 'valor'") na resposta.
 - **BUG-093, BUG-094, BUG-095**: a listagem consulta as fichas com o parâmetro "id" nulo; o assistente não carrega as perguntas do modelo e não valida o aluno antes de avançar, enviando a anamnese sem respostas ou sem aluno.
-- **BUG-104, BUG-105, BUG-109**: a rota de gravação de grupo ignora o campo de status enviado pela tela; a exclusão de grupo retorna erro 500 (a tela mostra só "Erro ao deletar Grupo") e o cadastro de modalidade duplicada retorna erro 500 sem nenhuma mensagem.
+- **BUG-104, BUG-105, BUG-109**: a rota de gravação de grupo ignora o campo de status enviado pela tela; a exclusão de grupo retorna erro 500 (a tela mostra só "Erro ao deletar Grupo") e o cadastro de modalidade duplicada retorna erro 500 e a tela mostra só "Erro ao salvar modalidade".
 - **BUG-106**: a API retorna os modelos de contrato, mas a tabela renderiza cada linha como um elemento "corpo-modelo" vazio, o que indica que o componente da linha não está registrado no front-end.
 - **BUG-108, BUG-110, BUG-111, BUG-112, BUG-113**: o cadastro do Box (SifitBox) não valida os campos na tela e o back-end aceita horário invertido, turma sem dias, vagas negativas e modalidade inativa; o mesmo padrão aparece em Turmas (BUG-071).
 - **BUG-114**: a exclusão do Box faz uma inativação (exclusão lógica), mas a listagem de turmas não filtra nem mostra o status.
@@ -246,7 +246,7 @@ No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado.
 
 - Plano de Testes
 - Análise de requisitos
-- Casos de teste (C01 a C22); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C02, C04, C06, C09, C10, C13 a C15, C17 a C19 e C22)
+- Casos de teste (C01 a C22); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C02, C04, C06, C09, C10, C13 a C15 e C17 a C19)
 - Relatório de bugs, com o vídeo da falha
 - Vídeos no Jam e prints na pasta `Sifit/Evidencias`
 - Roteiro dos vídeos a gravar (`5-Roteiro-de-videos.md`)
