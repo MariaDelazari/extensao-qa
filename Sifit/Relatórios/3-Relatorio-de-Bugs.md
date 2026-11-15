@@ -6,7 +6,7 @@
 
 **Ambiente:** Sifit Centrion até 23/10/2026. A partir de 24/10/2026, https://sifitalfa.centrion.com.br/
 
-**QA responsável:** Maria Eduarda Pacheco Delazari, RA: 240017; Ville Nunes Figueiredo da Silva, RA: 14534; Keltton Felipe, RA: ...; Daniel Satel Pereira, RA: 14567; Rafael Colombo da Silva, RA: 14551
+**QA responsável:** Maria Eduarda Pacheco Delazari, RA: 240017; Ville Nunes Figueiredo da Silva, RA: 14534; Keltton Felipe Alves Silveira, RA: 14509; Daniel Satel Pereira, RA: 14567; Rafael Colombo da Silva, RA: 14551
 
 **Data:** 12.10.26. Em 24/10/2026, os testes continuaram no Sifit Unialfa. Os bugs foram observados entre 12/10/2026 e 28/10/2026; o ambiente de cada um está na própria tabela.
 
@@ -68,7 +68,7 @@
 | 3. Clicar no link.                                                               |
 | 4. Verificar se ocorre o redirecionamento para a página de recuperação de senha. |
 
-|                                          **Comportamento Esperado**                                         |                                     **Comportamento Obtido**                                    |
+|                                         **Comportamento Esperado**                                          |                                    **Comportamento Obtido**                                     |
 | :---------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
 | O sistema deve direcionar o usuário para a página de recuperação de senha ao clicar no link correspondente. | Ao clicar no link, nenhum redirecionamento é realizado, e o usuário permanece na tela de login. |
 
@@ -97,7 +97,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                                                                  |
 | --------------------------------------------------------------------------------------------------------------------- |
@@ -107,7 +107,7 @@
 | 4. Clicar no botão verde "Entrar".                                                                                    |
 | 5. Verificar a resposta da requisição `POST /api/login` na aba Network das ferramentas de desenvolvedor do navegador. |
 
-|                                                                                               **Comportamento Esperado**                                                                                               |                                                                                              **Comportamento Obtido**                                                                                             |
+|                                                                                               **Comportamento Esperado**                                                                                               |                                                                                             **Comportamento Obtido**                                                                                              |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | O sistema deve validar as credenciais informadas e, caso sejam inválidas, retornar uma resposta apropriada de falha de autenticação, como "Nome de usuário ou senha inválidos", sem gerar um erro interno do servidor. | A requisição `POST /api/login` retorna o status `500 Internal Server Error`, e a interface exibe a mensagem "Erro no servidor. Erro interno inesperado.", em vez de informar que as credenciais estão incorretas. |
 
@@ -174,7 +174,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                                                        |
 | ----------------------------------------------------------------------------------------------------------- |
@@ -186,7 +186,7 @@
 | 6. Permanecer na tela de login e inserir diretamente a URL `/dashboard` na barra de endereços do navegador. |
 | 7. Verificar se o sistema permite o acesso ao dashboard sem solicitar autenticação novamente.               |
 
-|                                                                                                                                                                                                   **Comportamento Esperado**                                                                                                                                                                                                  |                                                                                                                                                                   **Comportamento Obtido**                                                                                                                                                                   |
+|                                                                                                                                                                                                  **Comportamento Esperado**                                                                                                                                                                                                   |                                                                                                                                                                   **Comportamento Obtido**                                                                                                                                                                   |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | Ao marcar a opção "Manter conectado", o sistema deve manter a autenticação do usuário ao retornar à aplicação, conforme o comportamento esperado dessa funcionalidade. Caso o usuário não possua uma sessão válida, o sistema deve bloquear o acesso ao dashboard, inclusive quando a URL `/dashboard` for inserida diretamente na barra de endereços do navegador, redirecionando-o à tela de login e exigindo autenticação. | Ao marcar a opção "Manter conectado", o usuário é redirecionado à tela de login ao retornar ao sistema e precisa informar suas credenciais novamente. Entretanto, ao permanecer na tela de login e inserir diretamente a URL `/dashboard` na barra de endereços do navegador, o sistema permite o acesso à área autenticada sem solicitar novamente o login. |
 
@@ -197,7 +197,7 @@
 | Google Chrome 150.0.7871.46   |
 | Sifit Centrion.               |
 
-|              **Funcionalidade Afetada**             |                                       **Caso de Teste Relacionado**                                       |
+|             **Funcionalidade Afetada**              |                                       **Caso de Teste Relacionado**                                       |
 | :-------------------------------------------------: | :-------------------------------------------------------------------------------------------------------: |
 | Login / Persistência da sessão / Controle de acesso | C01-CT05: Persistência da sessão com "Manter conectado". C01-CT06: Acesso ao dashboard sem sessão válida. |
 
@@ -215,7 +215,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                                       |
 | ------------------------------------------------------------------------------------------ |
@@ -277,7 +277,7 @@
 | Desktop Ubuntu 26.04 LTS           |
 | Google Chrome 150.0.7871.46        |
 
-|            **Funcionalidade Afetada**           |                               **Caso de Teste Relacionado**                                |
+|           **Funcionalidade Afetada**            |                               **Caso de Teste Relacionado**                                |
 | :---------------------------------------------: | :----------------------------------------------------------------------------------------: |
 | Login / Autenticação / Identificação do usuário | C01-CT01: Login com credenciais válidas. C02-CT01: Abrir a página inicial depois do login. |
 
@@ -304,7 +304,7 @@
 | 3. Conferir o rodapé "Exibindo..." e a quantidade de linhas da tabela. |
 | 4. Clicar em "Exportar relatório".                                     |
 
-|                                                **Comportamento Esperado**                                               |                                                                                                                          **Comportamento Obtido**                                                                                                                          |
+|                                               **Comportamento Esperado**                                                |                                                                                                                          **Comportamento Obtido**                                                                                                                          |
 | :---------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | O rodapé deve indicar a faixa real de linhas visíveis. O exportar deve gerar o relatório ou avisar se não foi possível. | Em 25/10/2026, o rodapé aparece como "Exibindo 3 a 4 de 4 alunos em risco", com quatro linhas na tabela. A gravação não mostra o arquivo exportado nem um aviso. O Jam desse vídeo não trouxe registro de rede, então não dá para afirmar que a requisição deixou de sair. |
 
@@ -334,7 +334,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                         |
 | ---------------------------------------------------------------------------- |
@@ -344,7 +344,7 @@
 | 4. Abrir Clientes, localizar o código 398 e entrar em Visualizar Cliente.    |
 | 5. Comparar plano e matrícula da lista com os do perfil.                     |
 
-|                                                                        **Comportamento Esperado**                                                                       |                                                                                    **Comportamento Obtido**                                                                                    |
+|                                                                       **Comportamento Esperado**                                                                        |                                                                                    **Comportamento Obtido**                                                                                    |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | O total da cobrança deve ser a soma dos valores apresentados, ou a tela deve mostrar a parcela que falta. O plano e a matrícula do perfil devem ser os mesmos da lista. | O total fica em R$ 375,59, e a multa exibida é R$ 1,00. A lista diz Treino Personal e ATIVO. O perfil diz Sem matrícula, 0/3 aulas e sem registros. O vencimento visto no perfil é 08/07/2026. |
 
@@ -356,7 +356,7 @@
 | Google Chrome 150.0.7871.46                 |
 | 25/10/2026                                  |
 
-|           **Funcionalidade Afetada**          |           **Caso de Teste Relacionado**            |
+|          **Funcionalidade Afetada**           |           **Caso de Teste Relacionado**            |
 | :-------------------------------------------: | :------------------------------------------------: |
 | Página inicial / Cobrança e cadastro do aluno | C02-CT10: Conferir os cards do resumo da academia. |
 
@@ -374,7 +374,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                                                  |
 | ----------------------------------------------------------------------------------------------------- |
@@ -383,7 +383,7 @@
 | 3. Abrir o detalhe Financeiro em Aberto.                                                              |
 | 4. Comparar o total do detalhe, a quantidade de alunos em atraso e o valor da linha de Rafael Santos. |
 
-|                                    **Comportamento Esperado**                                    |                                                                      **Comportamento Obtido**                                                                     |
+|                                    **Comportamento Esperado**                                    |                                                                     **Comportamento Obtido**                                                                      |
 | :----------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | O total do detalhe deve ser o mesmo valor do card, e a soma das linhas deve explicar esse total. | O card mostra R$ 200,00. O detalhe mostra R$ 450,00, com 2 alunos em atraso e 8 mensalidades. A linha visível de Rafael Santos está em R$ 350,00, com +R$ 100,00. |
 
@@ -395,7 +395,7 @@
 | Google Chrome 150.0.7871.46                 |
 | 25/10/2026                                  |
 
-|        **Funcionalidade Afetada**       |           **Caso de Teste Relacionado**            |
+|       **Funcionalidade Afetada**        |           **Caso de Teste Relacionado**            |
 | :-------------------------------------: | :------------------------------------------------: |
 | Página inicial / Mensalidades em aberto | C02-CT10: Conferir os cards do resumo da academia. |
 
@@ -422,7 +422,7 @@
 | 3. Digitar uma senha.                                          |
 | 4. Procurar um ícone ou botão para mostrar o que foi digitado. |
 
-|                                              **Comportamento Esperado**                                             |                     **Comportamento Obtido**                     |
+|                                             **Comportamento Esperado**                                              |                     **Comportamento Obtido**                     |
 | :-----------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------: |
 | O campo deve ter um controle para mostrar e esconder a senha, para a pessoa conferir o que digitou antes de entrar. | A senha fica oculta o tempo todo. Não há controle para exibi-la. |
 
@@ -496,7 +496,7 @@
 | 2. Abrir o Dashboard (`/dash`).                                                                         |
 | 3. Rolar a página olhando os blocos Clientes, Matrículas, Contas a Receber, Cancelamentos e Avaliações. |
 
-|                               **Comportamento Esperado**                              |                                                              **Comportamento Obtido**                                                              |
+|                              **Comportamento Esperado**                               |                                                              **Comportamento Obtido**                                                              |
 | :-----------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------: |
 | Os títulos dos blocos e dos gráficos devem ter contraste suficiente para serem lidos. | Os títulos (por exemplo "Clientes", "Matrículas", "Frequência", "Idade", "Sexo") aparecem em cor muito próxima à do fundo e quase não dá para ler. |
 
@@ -526,7 +526,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                                            |
 | ----------------------------------------------------------------------------------------------- |
@@ -534,7 +534,7 @@
 | 2. Na mesma página, olhar os totais de Alto, Médio e Baixo risco de "Inteligência de Retenção". |
 | 3. Abrir o Dashboard (`/dash`) e olhar o card "Alunos em risco".                                |
 
-|               **Comportamento Esperado**              |                                                                       **Comportamento Obtido**                                                                       |
+|              **Comportamento Esperado**               |                                                                       **Comportamento Obtido**                                                                       |
 | :---------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | A mesma quantidade de alunos em risco nas três áreas. | Em 28/10/2026: Página Inicial mostra "1 alunos em risco de evasão"; Inteligência de Retenção mostra 0 alto, 4 médio e 0 baixo; Dashboard mostra "0 Alunos em risco". |
 
@@ -564,7 +564,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                                 |
 | ------------------------------------------------------------------------------------ |
@@ -584,7 +584,7 @@
 | Google Chrome 150.0.7871.46        |
 | 28/10/2026                         |
 
-|       **Funcionalidade Afetada**      |           **Caso de Teste Relacionado**            |
+|      **Funcionalidade Afetada**       |           **Caso de Teste Relacionado**            |
 | :-----------------------------------: | :------------------------------------------------: |
 | Página inicial / Avaliações pendentes | C02-CT08: Abrir as avaliações pendentes pelo card. |
 
@@ -610,7 +610,7 @@
 | 2. Abrir "Clientes" (`/clientes`) mantendo o Status "Ativo". |
 | 3. Olhar a tabela e a paginação abaixo dela.                 |
 
-|                       **Comportamento Esperado**                       |                                                                            **Comportamento Obtido**                                                                           |
+|                       **Comportamento Esperado**                       |                                                                           **Comportamento Obtido**                                                                            |
 | :--------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | A paginação deve oferecer só as páginas que têm clientes (uma página). | A tabela mostra 1 cliente (408 - Lila) e o card "Clientes Ativos" mostra 1, mas a paginação mostra "Anterior 1 2 3 Próxima". Com Status "Todos", a lista mostra 122 clientes. |
 
@@ -648,7 +648,7 @@
 | 2. Abrir "Clientes" (`/clientes`).   |
 | 3. Digitar "abc" no campo Código.    |
 
-|    **Comportamento Esperado**    |    **Comportamento Obtido**   |
+|    **Comportamento Esperado**    |   **Comportamento Obtido**    |
 | :------------------------------: | :---------------------------: |
 | O campo deve aceitar só números. | O campo mantém o texto "abc". |
 
@@ -660,7 +660,7 @@
 | Google Chrome 150.0.7871.46        |
 | 28/10/2026                         |
 
-|  **Funcionalidade Afetada** |       **Caso de Teste Relacionado**       |
+| **Funcionalidade Afetada**  |       **Caso de Teste Relacionado**       |
 | :-------------------------: | :---------------------------------------: |
 | Clientes / Busca por código | C04-CT16: Digitar letras no campo Código. |
 
@@ -678,7 +678,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                           |
 | ------------------------------------------------------------------------------ |
@@ -687,7 +687,7 @@
 | 3. Abrir "Clientes" (`/clientes`) com Status "Ativo" e depois com "Todos".     |
 | 4. Procurar os nomes das matrículas ativas.                                    |
 
-|                                                       **Comportamento Esperado**                                                      |                                                                                                                  **Comportamento Obtido**                                                                                                                  |
+|                                                      **Comportamento Esperado**                                                       |                                                                                                                  **Comportamento Obtido**                                                                                                                  |
 | :-----------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | Cada matrícula ativa deve pertencer a um cliente ativo, e a quantidade de clientes ativos deve ser coerente com as matrículas ativas. | Matrículas ativas: 242 (Marcelo Longo Zandonadi), 241 (Rafaela Andrade) e 240 (Lila). Clientes ativos: apenas 408 (Lila). Os cadastros de Marcelo Longo Zandonadi e Rafaela Andrade aparecem como INATIVO. A Página Inicial também mostra 1 cliente ativo. |
 
@@ -726,7 +726,7 @@
 | 3. Somar a coluna "Valor recebido" das linhas.                         |
 | 4. Comparar com "Entradas", "Previsto para o Mês" e "Recebido no Mês". |
 
-|                                             **Comportamento Esperado**                                            |                                                                                    **Comportamento Obtido**                                                                                   |
+|                                            **Comportamento Esperado**                                             |                                                                                   **Comportamento Obtido**                                                                                    |
 | :---------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | Os totais devem bater com as linhas, e um valor recebido acima do valor a receber deve ser explicado ou impedido. | As seis linhas somam R$ 499,50 (igual a "Entradas"). "Previsto para o Mês" e "Recebido no Mês" mostram R$ 475,00. A conta 1608 (Lila, Matrícula) tem R$ 75,50 a receber e R$ 100,00 recebido. |
 
@@ -765,7 +765,7 @@
 | 3. Clicar em "Nova Conta".                   |
 | 4. Sem preencher nada, clicar em salvar.     |
 
-|                            **Comportamento Esperado**                           |                       **Comportamento Obtido**                       |
+|                           **Comportamento Esperado**                            |                       **Comportamento Obtido**                       |
 | :-----------------------------------------------------------------------------: | :------------------------------------------------------------------: |
 | O sistema deve informar quais campos obrigatórios faltam, sem erro de servidor. | A tela mostra "Erro ao salvar conta a pagar", sem dizer o que falta. |
 
@@ -777,7 +777,7 @@
 | Google Chrome 150.0.7871.46        |
 | 28/10/2026                         |
 
-|  **Funcionalidade Afetada** |          **Caso de Teste Relacionado**           |
+| **Funcionalidade Afetada**  |          **Caso de Teste Relacionado**           |
 | :-------------------------: | :----------------------------------------------: |
 | Contas a Pagar / Nova conta | C13-CT05: Criar conta a pagar com campos vazios. |
 
@@ -834,7 +834,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                     |
 | ------------------------------------------------------------------------ |
@@ -891,7 +891,7 @@
 | Google Chrome 150.0.7871.46        |
 | 28/10/2026                         |
 
-|           **Funcionalidade Afetada**          |            **Caso de Teste Relacionado**             |
+|          **Funcionalidade Afetada**           |            **Caso de Teste Relacionado**             |
 | :-------------------------------------------: | :--------------------------------------------------: |
 | Página inicial / Check-in / Pico de movimento | C09-CT12: Conferir o horário de pico entre as telas. |
 
@@ -918,7 +918,7 @@
 | 3. Clicar em "Novo Colaborador".             |
 | 4. Sem preencher nada, clicar em "Salvar".   |
 
-|                            **Comportamento Esperado**                           |                                     **Comportamento Obtido**                                    |
+|                           **Comportamento Esperado**                            |                                    **Comportamento Obtido**                                     |
 | :-----------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
 | O sistema deve informar quais campos obrigatórios faltam, sem erro de servidor. | A tela mostra "Erro no servidor. Erro interno inesperado." e não indica os campos obrigatórios. |
 
@@ -957,7 +957,7 @@
 | 3. Clicar em "Novo Plano".                       |
 | 4. Sem preencher nada, clicar em "Salvar Plano". |
 
-|               **Comportamento Esperado**               |                                    **Comportamento Obtido**                                   |
+|               **Comportamento Esperado**               |                                   **Comportamento Obtido**                                    |
 | :----------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
 | O sistema deve informar o campo obrigatório que falta. | Nada acontece e nenhuma mensagem aparece. A pessoa não sabe por que o cadastro não foi salvo. |
 
@@ -996,7 +996,7 @@
 | 3. Clicar em "Adicionar Lead".                  |
 | 4. Sem preencher nada, clicar em "Salvar Lead". |
 
-|               **Comportamento Esperado**               |                                    **Comportamento Obtido**                                   |
+|               **Comportamento Esperado**               |                                   **Comportamento Obtido**                                    |
 | :----------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
 | O sistema deve informar o campo obrigatório que falta. | Nada acontece e nenhuma mensagem aparece. A pessoa não sabe por que o cadastro não foi salvo. |
 
@@ -1035,7 +1035,7 @@
 | 3. Clicar em "Nova Função".                       |
 | 4. Sem preencher nada, clicar em "Salvar Função". |
 
-|               **Comportamento Esperado**               |                                    **Comportamento Obtido**                                   |
+|               **Comportamento Esperado**               |                                   **Comportamento Obtido**                                    |
 | :----------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
 | O sistema deve informar o campo obrigatório que falta. | Nada acontece e nenhuma mensagem aparece. A pessoa não sabe por que o cadastro não foi salvo. |
 
@@ -1193,7 +1193,7 @@
 | 4. Sem preencher nada, clicar em "Salvar".            |
 | 5. Olhar a lista.                                     |
 
-|              **Comportamento Esperado**              |                                                     **Comportamento Obtido**                                                    |
+|              **Comportamento Esperado**              |                                                    **Comportamento Obtido**                                                     |
 | :--------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------: |
 | O sistema deve exigir o nome e não criar o registro. | O formulário vazio é salvo e a lista passa de 0 para 1 registro, com a linha 1 sem nome. Nenhuma mensagem de validação aparece. |
 
@@ -1233,7 +1233,7 @@
 | 4. Sem preencher nada, clicar em "Salvar".          |
 | 5. Olhar a lista.                                   |
 
-|              **Comportamento Esperado**              |                                                       **Comportamento Obtido**                                                      |
+|              **Comportamento Esperado**              |                                                      **Comportamento Obtido**                                                       |
 | :--------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------: |
 | O sistema deve exigir o nome e não criar o registro. | O formulário vazio é salvo e a lista passa de 10 para 11 registros, com a linha 12 sem nome. Nenhuma mensagem de validação aparece. |
 
@@ -1245,7 +1245,7 @@
 | Google Chrome 150.0.7871.46        |
 | 28/10/2026                         |
 
-|   **Funcionalidade Afetada**  |                **Caso de Teste Relacionado**                |
+|  **Funcionalidade Afetada**   |                **Caso de Teste Relacionado**                |
 | :---------------------------: | :---------------------------------------------------------: |
 | Tipos de Pagamento / Cadastro | C19-CT08: Salvar Tipos de Pagamento com o formulário vazio. |
 
@@ -1272,7 +1272,7 @@
 | 3. Clicar em "Nova Pergunta".                             |
 | 4. Sem preencher nada, clicar em "Salvar".                |
 
-|                          **Comportamento Esperado**                          |           **Comportamento Obtido**          |
+|                          **Comportamento Esperado**                          |          **Comportamento Obtido**           |
 | :--------------------------------------------------------------------------: | :-----------------------------------------: |
 | O sistema deve informar o campo obrigatório que falta, sem erro de servidor. | A tela mostra só "Erro ao salvar pergunta". |
 
@@ -1311,7 +1311,7 @@
 | 3. Acessar a tela de Clientes.          |
 | 4. Observar o indicador "Ausentes".     |
 
-|                      **Comportamento Esperado**                     |                **Comportamento Obtido**                |
+|                     **Comportamento Esperado**                      |                **Comportamento Obtido**                |
 | :-----------------------------------------------------------------: | :----------------------------------------------------: |
 | As duas telas devem exibir a mesma quantidade de clientes ausentes. | A Página Inicial exibe 4 e a tela de Clientes exibe 0. |
 
@@ -1322,7 +1322,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Página Inicial / Clientes  |  C02-CT03: Clientes ausentes. |
+| Página Inicial / Clientes  | C02-CT03: Clientes ausentes.  |
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
@@ -1347,7 +1347,7 @@
 | 3. Clicar no card.                            |
 | 4. Verificar a lista e o total exibidos.      |
 
-|             **Comportamento Esperado**             |                      **Comportamento Obtido**                     |
+|             **Comportamento Esperado**             |                     **Comportamento Obtido**                      |
 | :------------------------------------------------: | :---------------------------------------------------------------: |
 | A janela deve listar as 3 desistências do período. | A janela informa que não há desistências, mas exibe o total de 3. |
 
@@ -1356,7 +1356,7 @@
 | Endereço e data não registrados. |
 | Google Chrome                    |
 
-|   **Funcionalidade Afetada**  |   **Caso de Teste Relacionado**    |
+|  **Funcionalidade Afetada**   |   **Caso de Teste Relacionado**    |
 | :---------------------------: | :--------------------------------: |
 | Página Inicial / Desistências | C02-CT05: Desistências no período. |
 
@@ -1384,7 +1384,7 @@
 | 4. Clicar no botão "Cadastrar Cliente".                                                       |
 | 5. Verificar a mensagem exibida pelo sistema.                                                 |
 
-|                                 **Comportamento Esperado**                                 |                                **Comportamento Obtido**                               |
+|                                 **Comportamento Esperado**                                 |                               **Comportamento Obtido**                                |
 | :----------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
 | O sistema deve cadastrar o cliente, exibir mensagem de sucesso e apresentá-lo na listagem. | O sistema exibe o modal "Erro - Erro ao criar cliente." e o cliente não é cadastrado. |
 
@@ -1420,7 +1420,7 @@
 | 3. Clicar no botão "Buscar".                  |
 | 4. Verificar a listagem exibida.              |
 
-|                   **Comportamento Esperado**                   |                                                **Comportamento Obtido**                                               |
+|                   **Comportamento Esperado**                   |                                               **Comportamento Obtido**                                                |
 | :------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------: |
 | O sistema deve exibir o cliente que possui o código informado. | A tela de clientes fica totalmente em branco após clicar em "Buscar", embora o cliente 408 esteja cadastrado e ativo. |
 
@@ -1429,7 +1429,7 @@
 | Endereço e data não registrados. |
 | Google Chrome                    |
 
-|  **Funcionalidade Afetada** |     **Caso de Teste Relacionado**     |
+| **Funcionalidade Afetada**  |     **Caso de Teste Relacionado**     |
 | :-------------------------: | :-----------------------------------: |
 | Clientes / Busca por código | C04-CT04: Buscar cliente pelo código. |
 
@@ -1456,7 +1456,7 @@
 | 3. Clicar no botão "Buscar".                                    |
 | 4. Contar a quantidade de clientes exibidos na primeira página. |
 
-|              **Comportamento Esperado**              |                               **Comportamento Obtido**                              |
+|              **Comportamento Esperado**              |                              **Comportamento Obtido**                               |
 | :--------------------------------------------------: | :---------------------------------------------------------------------------------: |
 | A primeira página deve exibir no máximo 50 clientes. | A primeira página exibe todos os clientes cadastrados (125 no momento da gravação). |
 
@@ -1600,7 +1600,7 @@
 | 3. Observar a coluna "Alunos" do plano "Treino Livre" na listagem.               |
 | 4. Observar o indicador "Receita Estimada".                                      |
 
-|                                                           **Comportamento Esperado**                                                          |                                        **Comportamento Obtido**                                       |
+|                                                          **Comportamento Esperado**                                                           |                                       **Comportamento Obtido**                                        |
 | :-------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: |
 | A coluna "Alunos", o ranking e a receita estimada devem refletir as matrículas ativas (ex.: Treino Livre com 1 aluno e mensalidade R$ 52,00). | A coluna "Alunos" exibe 0, a receita estimada exibe R$ 0,00 e a mensalidade no ranking exibe R$ 0,00. |
 
@@ -1609,7 +1609,7 @@
 | Endereço e data não registrados. |
 | Google Chrome                    |
 
-|    **Funcionalidade Afetada**   |                    **Caso de Teste Relacionado**                    |
+|   **Funcionalidade Afetada**    |                    **Caso de Teste Relacionado**                    |
 | :-----------------------------: | :-----------------------------------------------------------------: |
 | Planos / Listagem e indicadores | C05-CT02: Exibição da quantidade de alunos e da receita dos planos. |
 
@@ -1636,7 +1636,7 @@
 | 3. Clicar no botão "Buscar".          |
 | 4. Verificar os planos exibidos.      |
 
-|              **Comportamento Esperado**             |              **Comportamento Obtido**              |
+|             **Comportamento Esperado**              |              **Comportamento Obtido**              |
 | :-------------------------------------------------: | :------------------------------------------------: |
 | O sistema deve exibir somente o plano de código #1. | O sistema exibe os planos #1, #11, #16, #41 e #51. |
 
@@ -1665,15 +1665,15 @@
 | :-------------------: | :------------------------: | :--------: |
 |         Média         |            Alta            |   Aberto   |
 
-| **Passo a passo para simular o bug**                                           |
-| ------------------------------------------------------------------------------ |
-| 1. Acessar a tela de planos do SIFIT.                                          |
-| 2. Clicar no botão "Novo Plano".                                               |
-| 3. Informar apenas o nome "Plano Teste Ville".                                 |
-| 4. Clicar no botão "Salvar Plano".                                             |
+| **Passo a passo para simular o bug**                                                 |
+| ------------------------------------------------------------------------------------ |
+| 1. Acessar a tela de planos do SIFIT.                                                |
+| 2. Clicar no botão "Novo Plano".                                                     |
+| 3. Informar apenas o nome "Plano Teste Ville".                                       |
+| 4. Clicar no botão "Salvar Plano".                                                   |
 | 5. Verificar a mensagem exibida e, no DevTools (aba Network), a resposta do sistema. |
 
-|                                              **Comportamento Esperado**                                             |                                        **Comportamento Obtido**                                       |
+|                                             **Comportamento Esperado**                                              |                                       **Comportamento Obtido**                                        |
 | :-----------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: |
 | O sistema deve informar que o campo "Grupo" é obrigatório, sem erro interno e sem expor detalhes do banco de dados. | A tela mostra só "Erro ao salvar plano". No DevTools, a resposta mostra a mensagem do banco de dados. |
 
@@ -1710,7 +1710,7 @@
 | 4. Informar "-3" no campo "Parcelas".                       |
 | 5. Clicar no botão "Salvar Plano".                          |
 
-|                                     **Comportamento Esperado**                                     |         **Comportamento Obtido**        |
+|                                     **Comportamento Esperado**                                     |        **Comportamento Obtido**         |
 | :------------------------------------------------------------------------------------------------: | :-------------------------------------: |
 | O sistema deve impedir o cadastro e informar que a quantidade de parcelas deve ser maior que zero. | O plano é cadastrado com "-3" parcelas. |
 
@@ -1737,7 +1737,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                                  |
 | ------------------------------------------------------------------------------------- |
@@ -1747,7 +1747,7 @@
 | 4. Clicar no botão "Salvar Plano".                                                    |
 | 5. Verificar o status do plano na listagem.                                           |
 
-|         **Comportamento Esperado**         |        **Comportamento Obtido**       |
+|         **Comportamento Esperado**         |       **Comportamento Obtido**        |
 | :----------------------------------------: | :-----------------------------------: |
 | O plano deve constar com status "INATIVO". | O plano permanece com status "ATIVO". |
 
@@ -1756,7 +1756,7 @@
 | Endereço e data não registrados. |
 | Google Chrome                    |
 
-|  **Funcionalidade Afetada** | **Caso de Teste Relacionado**  |
+| **Funcionalidade Afetada**  | **Caso de Teste Relacionado**  |
 | :-------------------------: | :----------------------------: |
 | Planos / Alteração de plano | C05-CT09: Inativação do plano. |
 
@@ -1783,7 +1783,7 @@
 | 3. Abrir o campo "Modalidade".                                                   |
 | 4. Verificar se os planos inativos são exibidos.                                 |
 
-|                    **Comportamento Esperado**                   |                      **Comportamento Obtido**                     |
+|                   **Comportamento Esperado**                    |                     **Comportamento Obtido**                      |
 | :-------------------------------------------------------------: | :---------------------------------------------------------------: |
 | Somente planos ativos devem ser exibidos no campo "Modalidade". | Os planos inativos "AVA" e "Teste Final" são exibidos como opção. |
 
@@ -1820,7 +1820,7 @@
 | 4. Informar "10" no campo "Desconto" e verificar o "Valor Total". |
 | 5. Salvar a matrícula e clicar em "Visualizar" na listagem.       |
 
-|                             **Comportamento Esperado**                             |                          **Comportamento Obtido**                         |
+|                             **Comportamento Esperado**                             |                         **Comportamento Obtido**                          |
 | :--------------------------------------------------------------------------------: | :-----------------------------------------------------------------------: |
 | O valor total deve ser R$ 42,00 e a visualização deve exibir desconto de R$ 10,00. | O valor total permanece R$ 52,00 e a visualização exibe "Desconto 52,00". |
 
@@ -1893,7 +1893,7 @@
 | 3. Verificar a paginação e o botão "Próxima".                               |
 | 4. Alterar para "100" registros por página e contar as matrículas exibidas. |
 
-|                       **Comportamento Esperado**                       |                           **Comportamento Obtido**                          |
+|                       **Comportamento Esperado**                       |                          **Comportamento Obtido**                           |
 | :--------------------------------------------------------------------: | :-------------------------------------------------------------------------: |
 | A paginação deve exibir 2 páginas e permitir acessar as 84 matrículas. | A paginação exibe somente a página 1 e o botão "Próxima" fica desabilitado. |
 
@@ -1929,7 +1929,7 @@
 | 3. Confirmar a mensagem "Deseja deletar essa matrícula?". |
 | 4. Verificar a mensagem exibida e a listagem.             |
 
-|                    **Comportamento Esperado**                    |                                                                                    **Comportamento Obtido**                                                                                   |
+|                    **Comportamento Esperado**                    |                                                                                   **Comportamento Obtido**                                                                                    |
 | :--------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | O sistema deve excluir a matrícula e exibir mensagem de sucesso. | O sistema exibe "Erro no servidor - Erro interno inesperado." e a listagem não é atualizada (a matrícula continua aparecendo até a página ser recarregada), embora a exclusão seja efetivada. |
 
@@ -1966,7 +1966,7 @@
 | 4. Selecionar um tipo de pagamento (ex.: "Cheque").        |
 | 5. Verificar a mensagem abaixo do campo "Tipo Pagamento".  |
 
-|                        **Comportamento Esperado**                       |                    **Comportamento Obtido**                   |
+|                       **Comportamento Esperado**                        |                   **Comportamento Obtido**                    |
 | :---------------------------------------------------------------------: | :-----------------------------------------------------------: |
 | A mensagem de validação deve desaparecer quando o campo for preenchido. | A mensagem "Selecione o Tipo de Pagamento" permanece exibida. |
 
@@ -2002,7 +2002,7 @@
 | 3. Clicar no botão "Buscar".                     |
 | 4. Verificar a listagem exibida.                 |
 
-|                        **Comportamento Esperado**                       |                           **Comportamento Obtido**                           |
+|                       **Comportamento Esperado**                        |                           **Comportamento Obtido**                           |
 | :---------------------------------------------------------------------: | :--------------------------------------------------------------------------: |
 | O sistema deve exibir uma mensagem como "Nenhuma matrícula encontrada". | O sistema exibe somente o cabeçalho da tabela, sem registros e sem mensagem. |
 
@@ -2011,7 +2011,7 @@
 | Endereço e data não registrados. |
 | Google Chrome                    |
 
-|  **Funcionalidade Afetada** |           **Caso de Teste Relacionado**            |
+| **Funcionalidade Afetada**  |           **Caso de Teste Relacionado**            |
 | :-------------------------: | :------------------------------------------------: |
 | Matrículas / Busca por nome | C06-CT03: Busca de matrícula com nome inexistente. |
 
@@ -2039,7 +2039,7 @@
 | 4. Clicar no botão "Salvar".                                                                           |
 | 5. Verificar a mensagem exibida.                                                                       |
 
-|                                                   **Comportamento Esperado**                                                  |                             **Comportamento Obtido**                            |
+|                                                  **Comportamento Esperado**                                                   |                            **Comportamento Obtido**                             |
 | :---------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
 | O campo deve aceitar apenas números de 1 a 31 e o sistema deve informar o formato correto, sem expor erros do banco de dados. | O sistema exibe "Não foi possível concluir" com uma mensagem do banco de dados. |
 
@@ -2075,7 +2075,7 @@
 | 3. Selecionar "Vencido" no filtro "Status".     |
 | 4. Clicar no botão "Buscar".                    |
 
-|                      **Comportamento Esperado**                      |       **Comportamento Obtido**      |
+|                      **Comportamento Esperado**                      |      **Comportamento Obtido**       |
 | :------------------------------------------------------------------: | :---------------------------------: |
 | A listagem deve exibir as 2 contas atrasadas indicadas no indicador. | A listagem não exibe nenhuma conta. |
 
@@ -2112,7 +2112,7 @@
 | 4. Não selecionar o tipo de pagamento e clicar em "Salvar".                |
 | 5. Confirmar a mensagem "O caixa aberto não é de hoje, deseja continuar?". |
 
-|                               **Comportamento Esperado**                               |                  **Comportamento Obtido**                 |
+|                               **Comportamento Esperado**                               |                 **Comportamento Obtido**                  |
 | :------------------------------------------------------------------------------------: | :-------------------------------------------------------: |
 | O sistema deve exigir a seleção do tipo de pagamento antes de registrar o recebimento. | O recebimento é registrado com o tipo de pagamento vazio. |
 
@@ -2149,7 +2149,7 @@
 | 4. Informar o valor recebido de R$ 100,00, o tipo de pagamento e o local de recebimento. |
 | 5. Clicar em "Salvar" e confirmar a mensagem do caixa.                                   |
 
-|                                  **Comportamento Esperado**                                  |                   **Comportamento Obtido**                  |
+|                                  **Comportamento Esperado**                                  |                  **Comportamento Obtido**                   |
 | :------------------------------------------------------------------------------------------: | :---------------------------------------------------------: |
 | O sistema deve alertar sobre a divergência ou impedir o recebimento acima do valor da conta. | O recebimento é registrado com R$ 100,00 sem nenhum alerta. |
 
@@ -2185,7 +2185,7 @@
 | 3. Clicar no botão "Buscar".                                |
 | 4. Verificar a listagem exibida.                            |
 
-|                      **Comportamento Esperado**                     |                           **Comportamento Obtido**                           |
+|                     **Comportamento Esperado**                      |                           **Comportamento Obtido**                           |
 | :-----------------------------------------------------------------: | :--------------------------------------------------------------------------: |
 | O sistema deve exibir uma mensagem como "Nenhuma conta encontrada". | O sistema exibe somente o cabeçalho da tabela, sem registros e sem mensagem. |
 
@@ -2221,7 +2221,7 @@
 | 3. Clicar no botão "Buscar".                |
 | 4. Verificar os fornecedores exibidos.      |
 
-|                                        **Comportamento Esperado**                                       |                                **Comportamento Obtido**                               |
+|                                       **Comportamento Esperado**                                        |                               **Comportamento Obtido**                                |
 | :-----------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
 | A listagem não deve exibir fornecedores e o sistema deve informar que nenhum fornecedor foi encontrado. | O sistema exibe "Erro no servidor" e a listagem continua com todos os 8 fornecedores. |
 
@@ -2230,7 +2230,7 @@
 | Endereço e data não registrados. |
 | Google Chrome                    |
 
-|    **Funcionalidade Afetada**   |             **Caso de Teste Relacionado**             |
+|   **Funcionalidade Afetada**    |             **Caso de Teste Relacionado**             |
 | :-----------------------------: | :---------------------------------------------------: |
 | Fornecedores / Busca por código | C08-CT04: Busca de fornecedor com código inexistente. |
 
@@ -2248,7 +2248,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                   |
 | ---------------------------------------------------------------------- |
@@ -2258,7 +2258,7 @@
 | 4. Clicar no botão "Salvar".                                           |
 | 5. Verificar a mensagem exibida.                                       |
 
-|                      **Comportamento Esperado**                     |                            **Comportamento Obtido**                           |
+|                     **Comportamento Esperado**                      |                           **Comportamento Obtido**                            |
 | :-----------------------------------------------------------------: | :---------------------------------------------------------------------------: |
 | O sistema deve cadastrar o fornecedor e exibir mensagem de sucesso. | O sistema exibe "Erro ao salvar fornecedor." e o fornecedor não é cadastrado. |
 
@@ -2285,7 +2285,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                 |
 | ---------------------------------------------------- |
@@ -2295,7 +2295,7 @@
 | 4. Alterar o nome para "Jao Teste Ville".            |
 | 5. Clicar no botão "Salvar".                         |
 
-|                         **Comportamento Esperado**                        |                            **Comportamento Obtido**                           |
+|                        **Comportamento Esperado**                         |                           **Comportamento Obtido**                            |
 | :-----------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
 | O sistema deve salvar a alteração e exibir o nome atualizado na listagem. | O sistema exibe "Erro no servidor" e o fornecedor permanece com o nome "Jao". |
 
@@ -2322,7 +2322,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**         |
 | -------------------------------------------- |
@@ -2331,7 +2331,7 @@
 | 3. Acessar o menu "Presenças".               |
 | 4. Clicar no atalho "Hoje".                  |
 
-|                    **Comportamento Esperado**                   |                **Comportamento Obtido**               |
+|                   **Comportamento Esperado**                    |               **Comportamento Obtido**                |
 | :-------------------------------------------------------------: | :---------------------------------------------------: |
 | A tela de Presenças deve listar os check-ins realizados no dia. | A tela exibe "Nenhuma presença encontrada" e total 0. |
 
@@ -2367,7 +2367,7 @@
 | 3. Observar o status na listagem e o indicador "Presentes agora". |
 | 4. Clicar no botão "Registrar entrada" da linha do cliente.       |
 
-|                                                        **Comportamento Esperado**                                                       |                                          **Comportamento Obtido**                                         |
+|                                                       **Comportamento Esperado**                                                        |                                         **Comportamento Obtido**                                          |
 | :-------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------: |
 | O cliente deve constar como presente, o indicador deve ser atualizado e uma nova tentativa deve informar que já existe check-in aberto. | O status permanece "Pendente", "Presentes agora" fica em 0 e a nova tentativa não exibe nenhuma mensagem. |
 
@@ -2404,7 +2404,7 @@
 | 2. Realizar o check-in manual de um cliente.                                 |
 | 3. Observar o horário exibido na coluna "Entrada".                           |
 
-|                        **Comportamento Esperado**                        |     **Comportamento Obtido**    |
+|                        **Comportamento Esperado**                        |    **Comportamento Obtido**     |
 | :----------------------------------------------------------------------: | :-----------------------------: |
 | A coluna "Entrada" deve exibir o horário local do check-in (ex.: 18:11). | A coluna "Entrada" exibe 21:11. |
 
@@ -2433,7 +2433,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                              |
 | ----------------------------------------------------------------- |
@@ -2442,7 +2442,7 @@
 | 3. Pesquisar e selecionar a cliente "Lila" (sem matrícula ativa). |
 | 4. Clicar em "Registrar entrada".                                 |
 
-|                                **Comportamento Esperado**                               |         **Comportamento Obtido**        |
+|                               **Comportamento Esperado**                                |        **Comportamento Obtido**         |
 | :-------------------------------------------------------------------------------------: | :-------------------------------------: |
 | O sistema deve informar que a cliente não possui matrícula ativa e bloquear o check-in. | O sistema libera e registra o check-in. |
 
@@ -2451,7 +2451,7 @@
 | Endereço e data não registrados. |
 | Google Chrome                    |
 
-|  **Funcionalidade Afetada** |           **Caso de Teste Relacionado**            |
+| **Funcionalidade Afetada**  |           **Caso de Teste Relacionado**            |
 | :-------------------------: | :------------------------------------------------: |
 | Check-in / Regras de acesso | C09-CT04: Check-in de cliente sem matrícula ativa. |
 
@@ -2507,7 +2507,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                    |
 | ------------------------------------------------------- |
@@ -2554,7 +2554,7 @@
 | 4. Clicar no botão "Salvar".                                |
 | 5. Verificar a data e a hora na listagem.                   |
 
-|                     **Comportamento Esperado**                    |                    **Comportamento Obtido**                   |
+|                    **Comportamento Esperado**                     |                   **Comportamento Obtido**                    |
 | :---------------------------------------------------------------: | :-----------------------------------------------------------: |
 | O sistema deve salvar a nova data e hora e confirmar a alteração. | Nada acontece e a avaliação mantém a data e a hora originais. |
 
@@ -2563,7 +2563,7 @@
 | Endereço e data não registrados. |
 | Google Chrome                    |
 
-|       **Funcionalidade Afetada**      |          **Caso de Teste Relacionado**           |
+|      **Funcionalidade Afetada**       |          **Caso de Teste Relacionado**           |
 | :-----------------------------------: | :----------------------------------------------: |
 | Avaliações / Alteração de data e hora | C10-CT08: Alteração da data e hora da avaliação. |
 
@@ -2591,8 +2591,8 @@
 | 4. Informar a hora "25:99".                            |
 | 5. Clicar no botão "Salvar".                           |
 
-|                         **Comportamento Esperado**                        |                  **Comportamento Obtido**                  |
-| :-----------------------------------------------------------------------: | :--------------------------------------------------------: |
+|                        **Comportamento Esperado**                         |            **Comportamento Obtido**             |
+| :-----------------------------------------------------------------------: | :---------------------------------------------: |
 | O sistema deve informar que a hora é inválida antes de enviar o cadastro. | O sistema exibe "Erro ao cadastrar Avaliação.". |
 
 | **Ambiente**                     |
@@ -2654,7 +2654,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                   |
 | ------------------------------------------------------ |
@@ -2663,7 +2663,7 @@
 | 3. Clicar no botão "Salvar" sem alterar nenhum campo.  |
 | 4. Verificar a mensagem exibida.                       |
 
-|                  **Comportamento Esperado**                 |                       **Comportamento Obtido**                       |
+|                 **Comportamento Esperado**                  |                       **Comportamento Obtido**                       |
 | :---------------------------------------------------------: | :------------------------------------------------------------------: |
 | O sistema deve salvar a turma e exibir mensagem de sucesso. | O sistema exibe "Erro ao salvar turma." e nenhuma alteração é salva. |
 
@@ -2700,7 +2700,7 @@
 | 4. Informar a hora inicial 11:00 e a hora final 10:00.                              |
 | 5. Clicar no botão "Salvar".                                                        |
 
-|                          **Comportamento Esperado**                         |                  **Comportamento Obtido**                 |
+|                         **Comportamento Esperado**                          |                 **Comportamento Obtido**                  |
 | :-------------------------------------------------------------------------: | :-------------------------------------------------------: |
 | O sistema deve informar que a hora final deve ser maior que a hora inicial. | A turma é cadastrada com o horário "11:00:00 - 10:00:00". |
 
@@ -2735,7 +2735,7 @@
 | 2. Clicar no botão "Gerar aulas".         |
 | 3. Observar o retorno exibido ao usuário. |
 
-|                                    **Comportamento Esperado**                                    |                                 **Comportamento Obtido**                                |
+|                                    **Comportamento Esperado**                                    |                                **Comportamento Obtido**                                 |
 | :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
 | O sistema deve informar quantas aulas foram geradas ou o motivo de nenhuma aula ter sido gerada. | Nenhuma mensagem é exibida e a tela continua com "Nenhuma aula encontrada no periodo.". |
 
@@ -2762,7 +2762,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                         |
 | ------------------------------------------------------------ |
@@ -2772,7 +2772,7 @@
 | 4. Clicar no botão "Salvar".                                 |
 | 5. Verificar o status do caixa na listagem.                  |
 
-|             **Comportamento Esperado**             |          **Comportamento Obtido**         |
+|             **Comportamento Esperado**             |         **Comportamento Obtido**          |
 | :------------------------------------------------: | :---------------------------------------: |
 | O caixa deve ser fechado com os totais conferidos. | Nada acontece e o caixa permanece aberto. |
 
@@ -2808,7 +2808,7 @@
 | 3. Clicar no botão "Salvar" sem clicar em "Buscar Contas". |
 | 4. Verificar o status do caixa na listagem.                |
 
-|                           **Comportamento Esperado**                          |         **Comportamento Obtido**         |
+|                          **Comportamento Esperado**                           |         **Comportamento Obtido**         |
 | :---------------------------------------------------------------------------: | :--------------------------------------: |
 | O sistema deve exigir a busca e a conferência das contas antes do fechamento. | O caixa é fechado com os totais zerados. |
 
@@ -2844,7 +2844,7 @@
 | 3. Clicar novamente em "Abrir Caixa" e selecionar o local "Teste2". |
 | 4. Clicar no botão "Salvar".                                        |
 
-|                      **Comportamento Esperado**                     |          **Comportamento Obtido**         |
+|                     **Comportamento Esperado**                      |         **Comportamento Obtido**          |
 | :-----------------------------------------------------------------: | :---------------------------------------: |
 | O sistema deve informar que já existe um caixa aberto para o local. | Um segundo caixa é aberto no mesmo local. |
 
@@ -2879,7 +2879,7 @@
 | 2. Abrir um novo caixa.                                          |
 | 3. Observar os indicadores "Caixas Abertos" e "Caixas Fechados". |
 
-|                           **Comportamento Esperado**                           |               **Comportamento Obtido**              |
+|                           **Comportamento Esperado**                           |              **Comportamento Obtido**               |
 | :----------------------------------------------------------------------------: | :-------------------------------------------------: |
 | "Caixas Abertos" deve aumentar em 1 e "Caixas Fechados" deve permanecer igual. | "Caixas Fechados" diminui em 1 a cada caixa aberto. |
 
@@ -2942,7 +2942,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                              |
 | ----------------------------------------------------------------- |
@@ -2951,7 +2951,7 @@
 | 3. Procurar na linha da conta uma opção de pagamento.             |
 | 4. Clicar em "Visualizar" e procurar uma opção de pagamento.      |
 
-|                           **Comportamento Esperado**                          |             **Comportamento Obtido**             |
+|                          **Comportamento Esperado**                           |             **Comportamento Obtido**             |
 | :---------------------------------------------------------------------------: | :----------------------------------------------: |
 | O sistema deve permitir registrar o pagamento e alterar o status para "PAGO". | Não há nenhuma opção para registrar o pagamento. |
 
@@ -3022,7 +3022,7 @@
 | 3. Confirmar a mensagem "Deseja deletar esta conta?". |
 | 4. Verificar a mensagem exibida.                      |
 
-|                  **Comportamento Esperado**                  |                   **Comportamento Obtido**                  |
+|                  **Comportamento Esperado**                  |                  **Comportamento Obtido**                   |
 | :----------------------------------------------------------: | :---------------------------------------------------------: |
 | O sistema deve excluir a conta e exibir mensagem de sucesso. | A conta é excluída, mas o sistema exibe "Erro no servidor". |
 
@@ -3066,7 +3066,7 @@
 | Endereço e data não registrados. |
 | Google Chrome                    |
 
-|   **Funcionalidade Afetada**  |      **Caso de Teste Relacionado**       |
+|  **Funcionalidade Afetada**   |      **Caso de Teste Relacionado**       |
 | :---------------------------: | :--------------------------------------: |
 | Contas a Pagar / Visualização | C13-CT07: Visualização da conta a pagar. |
 
@@ -3078,8 +3078,8 @@
 
 ### 🐞 **Bug 83: Despesa fixa aceita valor negativo e erro interno com valor em texto**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                             |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ID**  | **Descrição**                                                                                                                                                                                                  |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | BUG-083 | O campo "Valor" da despesa fixa não possui validação: o valor "-100" é aceito e a despesa é cadastrada com "-R$ 100,00"; ao informar "abc", o sistema exibe a mensagem genérica "Erro ao salvar despesa fixa". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
@@ -3121,7 +3121,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                           |
 | ------------------------------------------------------------------------------ |
@@ -3131,7 +3131,7 @@
 | 4. Clicar em "Adicionar Treino" e depois em "Salvar Ficha".                    |
 | 5. Voltar à listagem e clicar em "Visualizar" da ficha.                        |
 
-|                       **Comportamento Esperado**                      |                        **Comportamento Obtido**                       |
+|                      **Comportamento Esperado**                       |                       **Comportamento Obtido**                        |
 | :-------------------------------------------------------------------: | :-------------------------------------------------------------------: |
 | O sistema deve salvar os treinos e permitir abrir a ficha cadastrada. | O sistema exibe "Erro no servidor" ao salvar e ao visualizar a ficha. |
 
@@ -3167,7 +3167,7 @@
 | 3. Não selecionar o objetivo (campo sem opções).              |
 | 4. Clicar em "Criar Nova Ficha".                              |
 
-|                                  **Comportamento Esperado**                                 |         **Comportamento Obtido**         |
+|                                 **Comportamento Esperado**                                  |         **Comportamento Obtido**         |
 | :-----------------------------------------------------------------------------------------: | :--------------------------------------: |
 | O sistema deve informar "Escolha o objetivo do treino." e orientar o cadastro de objetivos. | O sistema exibe "Erro ao salvar Ficha.". |
 
@@ -3176,7 +3176,7 @@
 | Endereço e data não registrados. |
 | Google Chrome                    |
 
-|  **Funcionalidade Afetada** |       **Caso de Teste Relacionado**       |
+| **Funcionalidade Afetada**  |       **Caso de Teste Relacionado**       |
 | :-------------------------: | :---------------------------------------: |
 | Fichas de Treino / Cadastro | C14-CT03: Cadastro de ficha sem objetivo. |
 
@@ -3201,9 +3201,9 @@
 | 1. Acessar "Ficha de Treino".                             |
 | 2. Abrir o DevTools do navegador na aba "Network".        |
 | 3. Clicar em "Deletar" de uma ficha de teste e confirmar. |
-| 4. Na aba Network, abrir a resposta da exclusão.    |
+| 4. Na aba Network, abrir a resposta da exclusão.          |
 
-|                           **Comportamento Esperado**                           |                 **Comportamento Obtido**                |
+|                           **Comportamento Esperado**                           |                **Comportamento Obtido**                 |
 | :----------------------------------------------------------------------------: | :-----------------------------------------------------: |
 | A resposta deve trazer apenas o resultado da operação, sem expor comandos SQL. | No DevTools, a resposta mostra o comando SQL executado. |
 
@@ -3212,7 +3212,7 @@
 | Endereço e data não registrados. |
 | Google Chrome                    |
 
-|  **Funcionalidade Afetada** |     **Caso de Teste Relacionado**      |
+| **Funcionalidade Afetada**  |     **Caso de Teste Relacionado**      |
 | :-------------------------: | :------------------------------------: |
 | Fichas de Treino / Exclusão | C14-CT07: Exclusão de ficha de treino. |
 
@@ -3278,7 +3278,7 @@
 | 4. Clicar no botão "Salvar Lead".                                                   |
 | 5. Verificar a listagem.                                                            |
 
-|                           **Comportamento Esperado**                          |       **Comportamento Obtido**      |
+|                          **Comportamento Esperado**                           |      **Comportamento Obtido**       |
 | :---------------------------------------------------------------------------: | :---------------------------------: |
 | O sistema deve informar que já existe um lead com o mesmo e-mail ou telefone. | O lead é cadastrado em duplicidade. |
 
@@ -3287,7 +3287,7 @@
 | Endereço e data não registrados. |
 | Google Chrome                    |
 
-|   **Funcionalidade Afetada**  |     **Caso de Teste Relacionado**     |
+|  **Funcionalidade Afetada**   |     **Caso de Teste Relacionado**     |
 | :---------------------------: | :-----------------------------------: |
 | Prospecção / Cadastro de lead | C15-CT10: Cadastro de lead duplicado. |
 
@@ -3314,7 +3314,7 @@
 | 3. Clicar no botão "Buscar".                 |
 | 4. Verificar a listagem exibida.             |
 
-|                   **Comportamento Esperado**                   |          **Comportamento Obtido**         |
+|                   **Comportamento Esperado**                   |         **Comportamento Obtido**          |
 | :------------------------------------------------------------: | :---------------------------------------: |
 | O sistema deve informar que nenhum colaborador foi encontrado. | A listagem exibe uma linha vazia com "/". |
 
@@ -3343,14 +3343,14 @@
 | :-------------------: | :------------------------: | :--------: |
 |         Média         |           Média            |   Aberto   |
 
-| **Passo a passo para simular o bug**                           |
-| -------------------------------------------------------------- |
-| 1. Acessar o perfil de um colaborador e clicar em "Editar".    |
-| 2. Abrir o DevTools do navegador na aba "Network".             |
-| 3. Alterar o nome e clicar em "Salvar".                        |
-| 4. Na aba Network, abrir a resposta da alteração. |
+| **Passo a passo para simular o bug**                        |
+| ----------------------------------------------------------- |
+| 1. Acessar o perfil de um colaborador e clicar em "Editar". |
+| 2. Abrir o DevTools do navegador na aba "Network".          |
+| 3. Alterar o nome e clicar em "Salvar".                     |
+| 4. Na aba Network, abrir a resposta da alteração.           |
 
-|                           **Comportamento Esperado**                           |                 **Comportamento Obtido**                |
+|                           **Comportamento Esperado**                           |                **Comportamento Obtido**                 |
 | :----------------------------------------------------------------------------: | :-----------------------------------------------------: |
 | A resposta deve trazer apenas o resultado da operação, sem expor comandos SQL. | No DevTools, a resposta mostra o comando SQL executado. |
 
@@ -3386,7 +3386,7 @@
 | 3. Tentar alterar o nome da função.                      |
 | 4. Procurar na listagem uma opção para excluir a função. |
 
-|             **Comportamento Esperado**             |                  **Comportamento Obtido**                 |
+|             **Comportamento Esperado**             |                 **Comportamento Obtido**                  |
 | :------------------------------------------------: | :-------------------------------------------------------: |
 | O sistema deve permitir alterar e excluir funções. | Os campos são somente leitura e não há opção de exclusão. |
 
@@ -3422,7 +3422,7 @@
 | 3. Clicar novamente em "Nova Função" e informar o mesmo nome. |
 | 4. Clicar no botão "Salvar Função".                           |
 
-|            **Comportamento Esperado**           |        **Comportamento Obtido**       |
+|           **Comportamento Esperado**            |       **Comportamento Obtido**        |
 | :---------------------------------------------: | :-----------------------------------: |
 | O sistema deve informar que a função já existe. | A função é cadastrada em duplicidade. |
 
@@ -3449,7 +3449,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                  |
 | --------------------------------------------------------------------- |
@@ -3528,7 +3528,7 @@
 | 1. Acessar a tela de produtos do SIFIT. |
 | 2. Observar a coluna "Valor / Pontos".  |
 
-|                           **Comportamento Esperado**                          |                      **Comportamento Obtido**                     |
+|                          **Comportamento Esperado**                           |                     **Comportamento Obtido**                      |
 | :---------------------------------------------------------------------------: | :---------------------------------------------------------------: |
 | Os valores devem ser exibidos como "R$ 1.550,00", "R$ 7.000,99" e "R$ 49,90". | Os valores são exibidos como "R$ 1550", "R$ 7000.99" e "R$ 49.9". |
 
@@ -3555,7 +3555,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                       |
 | ---------------------------------------------------------- |
@@ -3564,7 +3564,7 @@
 | 3. Clicar em "Iniciar" e em "Finalizar Anamnese".          |
 | 4. Verificar a listagem e os indicadores.                  |
 
-|                          **Comportamento Esperado**                         |                            **Comportamento Obtido**                           |
+|                         **Comportamento Esperado**                          |                           **Comportamento Obtido**                            |
 | :-------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
 | A anamnese deve constar na listagem e os indicadores devem ser atualizados. | A listagem exibe "Nenhuma ficha encontrada" e os indicadores permanecem em 0. |
 
@@ -3573,7 +3573,7 @@
 | Endereço e data não registrados. |
 | Google Chrome                    |
 
-|   **Funcionalidade Afetada**  |        **Caso de Teste Relacionado**        |
+|  **Funcionalidade Afetada**   |        **Caso de Teste Relacionado**        |
 | :---------------------------: | :-----------------------------------------: |
 | Fichas de Anamnese / Listagem | C18-CT07: Listagem das anamneses aplicadas. |
 
@@ -3591,7 +3591,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                 |
 | -------------------------------------------------------------------- |
@@ -3600,7 +3600,7 @@
 | 3. Selecionar o modelo "Triplet" (1 pergunta) e clicar em "Iniciar". |
 | 4. Verificar se a pergunta é exibida.                                |
 
-|                       **Comportamento Esperado**                      |                       **Comportamento Obtido**                      |
+|                      **Comportamento Esperado**                       |                      **Comportamento Obtido**                       |
 | :-------------------------------------------------------------------: | :-----------------------------------------------------------------: |
 | A pergunta do modelo deve ser exibida para resposta antes da revisão. | O assistente pula para "Revisar e Finalizar" sem exibir a pergunta. |
 
@@ -3621,8 +3621,8 @@
 
 ### 🐞 **Bug 98: Assistente de anamnese avança sem aluno e falha com erro interno**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                  |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **ID**  | **Descrição**                                                                                                                                                                                                           |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | BUG-098 | Ao clicar em "Próxima" sem selecionar aluno, o assistente avança para a escolha do modelo. Ao concluir o fluxo, o sistema exibe "Erro no servidor - Erro interno inesperado.", porque a anamnese foi enviada sem aluno. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
@@ -3636,7 +3636,7 @@
 | 3. Selecionar o modelo "Triplet", clicar em "Iniciar" e em "Finalizar Anamnese". |
 | 4. Verificar as mensagens exibidas.                                              |
 
-|                            **Comportamento Esperado**                            |                    **Comportamento Obtido**                   |
+|                            **Comportamento Esperado**                            |                   **Comportamento Obtido**                    |
 | :------------------------------------------------------------------------------: | :-----------------------------------------------------------: |
 | O sistema deve impedir o avanço e informar que é necessário selecionar um aluno. | O assistente avança e a finalização exibe "Erro no servidor". |
 
@@ -3722,7 +3722,7 @@
 | :--------------------------------: | :-------------------------------------------------------------: |
 | Página Inicial / Filtro de período | C02-CT09: Filtro de período com data inicial maior que a final. |
 
-|                          **Evidência(s)**                         |
+|                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:100](https://jam.dev/c/5f7f9e52-3989-42d5-99c2-66b747dec9e3) |
 
@@ -3745,7 +3745,7 @@
 | 3. Informar a data de nascimento 31/12/2027.             |
 | 4. Clicar em "Cadastrar Cliente" e visualizar o cliente. |
 
-|                               **Comportamento Esperado**                              |                  **Comportamento Obtido**                 |
+|                              **Comportamento Esperado**                               |                 **Comportamento Obtido**                  |
 | :-----------------------------------------------------------------------------------: | :-------------------------------------------------------: |
 | O sistema deve rejeitar a data futura e informar que a data de nascimento é inválida. | O cliente é cadastrado e a ficha exibe a idade "-2 anos". |
 
@@ -3760,7 +3760,7 @@
 | :------------------------: | :----------------------------------------------------------: |
 |    Clientes / Cadastro     | C04-CT12: Cadastro de cliente com data de nascimento futura. |
 
-|                          **Evidência(s)**                         |
+|                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:101](https://jam.dev/c/f3cd80a9-c549-4e43-8957-182eaa983f3d) |
 
@@ -3782,7 +3782,7 @@
 | 2. Informar o CPF "111.111.111-11".                      |
 | 3. Clicar em "Cadastrar Cliente" ou "Salvar Alterações". |
 
-|                       **Comportamento Esperado**                      |         **Comportamento Obtido**         |
+|                      **Comportamento Esperado**                       |         **Comportamento Obtido**         |
 | :-------------------------------------------------------------------: | :--------------------------------------: |
 | O sistema deve informar que o CPF é inválido e não salvar o cadastro. | O CPF inválido é salvo sem nenhum aviso. |
 
@@ -3793,11 +3793,11 @@
 | Google Chrome 155             |
 | 23/10/2026 a 24/10/2026       |
 
-|    **Funcionalidade Afetada**   |          **Caso de Teste Relacionado**          |
+|   **Funcionalidade Afetada**    |          **Caso de Teste Relacionado**          |
 | :-----------------------------: | :---------------------------------------------: |
 | Clientes / Cadastro e alteração | C04-CT13: Cadastro de cliente com CPF inválido. |
 
-|                          **Evidência(s)**                         |
+|                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:102](https://jam.dev/c/aee4435d-fdbd-4a84-bfe5-d8a28801ecd7) |
 
@@ -3819,7 +3819,7 @@
 | 2. Manter o filtro "Status" em "Ativo".     |
 | 3. Observar a coluna de status da listagem. |
 
-|          **Comportamento Esperado**         |            **Comportamento Obtido**           |
+|         **Comportamento Esperado**          |           **Comportamento Obtido**            |
 | :-----------------------------------------: | :-------------------------------------------: |
 | Somente clientes ativos devem ser listados. | A listagem exibe clientes com status INATIVO. |
 
@@ -3834,7 +3834,7 @@
 | :--------------------------: | :-----------------------------------------------: |
 | Clientes / Filtro por status | C04-CT14: Filtro de clientes pelo status "Ativo". |
 
-|                          **Evidência(s)**                         |
+|                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:103](https://jam.dev/c/a6adccf3-ae4c-47f8-9343-8ad793e5758e) |
 
@@ -3872,7 +3872,7 @@
 | :------------------------: | :----------------------------------------------------------: |
 |  Clientes / Visualização   | C04-CT15: Visualização da ficha de cliente recém-cadastrado. |
 
-|                          **Evidência(s)**                         |
+|                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:104](https://jam.dev/c/a4c73bde-5ac1-43ad-8a47-3ebde1f4e346) |
 
@@ -3894,7 +3894,7 @@
 | 2. Clicar em "Salvar".                                                      |
 | 3. Na janela "Quantidade Parcelas", informar "2026/05/192" no campo "Data". |
 
-|                   **Comportamento Esperado**                  |         **Comportamento Obtido**        |
+|                  **Comportamento Esperado**                   |        **Comportamento Obtido**         |
 | :-----------------------------------------------------------: | :-------------------------------------: |
 | Somente datas válidas no padrão DD/MM/AAAA devem ser aceitas. | A data inválida "2026/05/192" é aceita. |
 
@@ -3909,6 +3909,6 @@
 | :------------------------: | :----------------------------------------------: |
 |   Matrículas / Parcelas    | C06-CT13: Data inválida na parcela da matrícula. |
 
-|                          **Evidência(s)**                         |
+|                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:105](https://jam.dev/c/02ee32cf-7b68-4011-9cd9-d0faaba8470e) |

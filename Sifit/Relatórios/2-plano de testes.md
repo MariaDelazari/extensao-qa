@@ -7,7 +7,7 @@
 - **Ambiente de Testes**: https://sifit.centrion.com.br/ até 23/10/2026. Em 24/10/2026, o professor pediu para continuar os testes em https://sifitalfa.centrion.com.br/
 - **Tipo de Teste**: Teste funcional manual
 - **Data do Documento**: 12/10/2026. Versão unificada do grupo em 12/11/2026.
-- **Responsáveis**: Maria Eduarda Pacheco Delazari, RA: 240017; Ville Nunes Figueiredo da Silva, RA: 14534; Keltton Felipe, RA: ...; Daniel Satel Pereira, RA: 14567; Rafael Colombo da Silva, RA: 14551
+- **Responsáveis**: Maria Eduarda Pacheco Delazari, RA: 240017; Ville Nunes Figueiredo da Silva, RA: 14534; Keltton Felipe Alves Silveira, RA: 14509; Daniel Satel Pereira, RA: 14567; Rafael Colombo da Silva, RA: 14551
 
 ---
 
@@ -162,33 +162,33 @@ Quando houve diferença de prioridade entre os trabalhos, ficou a maior.
 
 ### 📌 11. **Riscos Identificados**
 
-| Risco                                                                             | Impacto | Mitigação                                                      |
-| --------------------------------------------------------------------------------- | ------- | -------------------------------------------------------------- |
-| A versão do sistema não foi registrada                                            | Médio   | Anotar a versão na próxima execução                            |
-| O erro no servidor no login inválido esconde a mensagem de credencial incorreta           | Alto    | Conferir a resposta no DevTools além do texto da tela |
-| Os testes de formulário vazio criaram 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12) | Médio | Excluir os registros depois de gravar os vídeos dos BUG-030, 031 e 032 |
-| A sessão se comporta de um jeito no retorno ao sistema e de outro no `/dashboard` | Alto    | Repetir os dois caminhos no mesmo vídeo, como no BUG-005       |
-| Ambiente compartilhado: outros usuários alteram ou excluem dados                  | Alto    | Usar registros de teste identificáveis pelo nome e não fixar IDs na documentação |
-| Execuções em datas e endereços diferentes deram resultados diferentes (C01-CT01, C01-CT02, C02-CT01, C04-CT04, C04-CT10, C06-CT07, C09-CT03) | Médio | O resultado de cada execução está descrito no caso. Repetir no Sifit Unialfa antes da entrega |
-| Os casos executados por automação de navegador não mostram o aviso nativo do navegador ("Preencha este campo.") | Médio | Conferir em vídeo os BUG-025, 026 e 027, que estão em revisão |
-| 126 casos e 60 bugs ainda sem vídeo                                               | Alto    | Gravar os vídeos seguindo o `5-Roteiro-de-videos.md` e os casos que ainda estão sem vídeo |
-| Ações que enviam mensagens ou cobranças reais (WhatsApp e Pagar.me)              | Alto    | Manter essas ações fora do escopo                              |
-| Dados pessoais reais na base                                                      | Alto    | Não publicar prints com nome ou CPF de terceiros (LGPD)        |
-| Testes limitados a um único usuário (perfil administrador)                        | Médio   | Documentar esse limite no escopo                               |
+| Risco                                                                                                                                        | Impacto | Mitigação                                                                                     |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | ------- | --------------------------------------------------------------------------------------------- |
+| A versão do sistema não foi registrada                                                                                                       | Médio   | Anotar a versão na próxima execução                                                           |
+| O erro no servidor no login inválido esconde a mensagem de credencial incorreta                                                              | Alto    | Conferir a resposta no DevTools além do texto da tela                                         |
+| Os testes de formulário vazio criaram 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12)        | Médio   | Excluir os registros depois de gravar os vídeos dos BUG-030, 031 e 032                        |
+| A sessão se comporta de um jeito no retorno ao sistema e de outro no `/dashboard`                                                            | Alto    | Repetir os dois caminhos no mesmo vídeo, como no BUG-005                                      |
+| Ambiente compartilhado: outros usuários alteram ou excluem dados                                                                             | Alto    | Usar registros de teste identificáveis pelo nome e não fixar IDs na documentação              |
+| Execuções em datas e endereços diferentes deram resultados diferentes (C01-CT01, C01-CT02, C02-CT01, C04-CT04, C04-CT10, C06-CT07, C09-CT03) | Médio   | O resultado de cada execução está descrito no caso. Repetir no Sifit Unialfa antes da entrega |
+| Os casos executados por automação de navegador não mostram o aviso nativo do navegador ("Preencha este campo.")                              | Médio   | Conferir em vídeo os BUG-025, 026 e 027, que estão em revisão                                 |
+| 126 casos e 60 bugs ainda sem vídeo                                                                                                          | Alto    | Gravar os vídeos seguindo o `5-Roteiro-de-videos.md` e os casos que ainda estão sem vídeo     |
+| Ações que enviam mensagens ou cobranças reais (WhatsApp e Pagar.me)                                                                          | Alto    | Manter essas ações fora do escopo                                                             |
+| Dados pessoais reais na base                                                                                                                 | Alto    | Não publicar prints com nome ou CPF de terceiros (LGPD)                                       |
+| Testes limitados a um único usuário (perfil administrador)                                                                                   | Médio   | Documentar esse limite no escopo                                                              |
 
 ---
 
 ### 🧾 12. **Dados de Teste Criados no Ambiente**
 
-| Registro criado | Caso |
-| --------------- | ---- |
-| Cliente de teste (cadastrado e depois editado) | C04-CT12 e C04-CT10 |
-| Exercício de teste no grupo Peitoral | C14-CT10 |
-| Plano de teste | C05-CT07 |
-| Matrícula do cliente de teste no plano de teste | C06-CT07 |
-| Parcela gerada pela matrícula | C07-CT12 |
-| Check-in do cliente de teste | C09-CT03 |
-| Registros identificados pelo nome (por exemplo, "Produto Teste Ville") | Vários cenários |
+| Registro criado                                                                  | Caso                          |
+| -------------------------------------------------------------------------------- | ----------------------------- |
+| Cliente de teste (cadastrado e depois editado)                                   | C04-CT12 e C04-CT10           |
+| Exercício de teste no grupo Peitoral                                             | C14-CT10                      |
+| Plano de teste                                                                   | C05-CT07                      |
+| Matrícula do cliente de teste no plano de teste                                  | C06-CT07                      |
+| Parcela gerada pela matrícula                                                    | C07-CT12                      |
+| Check-in do cliente de teste                                                     | C09-CT03                      |
+| Registros identificados pelo nome (por exemplo, "Produto Teste Ville")           | Vários cenários               |
 | Registros em branco: Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12 | C19-CT04, C19-CT07 e C19-CT08 |
 
 Os códigos dos registros não ficam fixos neste documento, porque o ambiente é compartilhado e os dados são alterados por outras pessoas.
@@ -199,10 +199,10 @@ Os códigos dos registros não ficam fixos neste documento, porque o ambiente é
 
 Estes casos foram escritos, mas não foram executados, e não têm vídeo nem resultado. Por isso não entram nos cenários nem na conta do relatório final. Para entrar, cada um precisa ser executado, gravado e receber o próximo ID do cenário.
 
-| Caso proposto                                           | Requisito | Situação      |
-| :------------------------------------------------------ | :-------- | :------------ |
-| Prevenção de duplo clique no botão Entrar               | RF01      | Não executado |
-| Data de término anterior à data de início na matrícula  | RF06      | Não executado |
+| Caso proposto                                          | Requisito | Situação      |
+| :----------------------------------------------------- | :-------- | :------------ |
+| Prevenção de duplo clique no botão Entrar              | RF01      | Não executado |
+| Data de término anterior à data de início na matrícula | RF06      | Não executado |
 
 ---
 
