@@ -26,7 +26,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/8c15372c-42b7-4a72-8446-575dc0e3832c) |
 
 ---
 
@@ -57,7 +57,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/cc68070f-6346-44e5-a153-9a7b02a98c7c) |
 
 ---
 
@@ -88,7 +88,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/fd9f32a9-65ec-462f-8efd-a75a4cea0fba) |
 
 ---
 
@@ -119,7 +119,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/3ccce354-1fec-4fee-9208-7f49f4df8755) |
 
 ---
 
@@ -150,7 +150,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/79127d51-5a1e-4d1f-b783-0641890aed82) |
 
 ---
 
@@ -181,7 +181,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/f333fef6-b58e-44dc-b74d-2c57379d41ac) |
 
 ---
 
@@ -211,7 +211,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/b7528526-350e-4605-81b1-7036a6611c7b) |
 
 ---
 
@@ -242,6 +242,6 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/06c1d1cb-512b-465d-9edd-226a1ca3873a) |
 
 ---

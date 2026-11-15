@@ -26,7 +26,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/3afd6de0-6e55-4c72-b534-83a3c7e1f0aa) |
 
 ---
 
@@ -56,7 +56,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/e0158f83-6485-4071-a904-4a593a82a7c6) |
 
 ---
 
@@ -86,7 +86,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/86adbabc-fcc6-4ac7-a6ce-2bf251ce83b1) |
 
 ---
 
@@ -112,11 +112,11 @@
 
 | **Resultado da execução**                                                                                             |
 | :-------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** Nenhuma mensagem é exibida. No DevTools, o servidor responde sem erro, mas a tela não informa que salvou. |
+| **Passou** A mensagem é exibida. No DevTools, o servidor responde sem erro |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/b4e7f7c2-a581-48b5-82c4-0f8de57204c5) |
 
 ---
 
@@ -147,7 +147,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/d5d00889-9666-4b1a-8da0-be6d110e499b) |
 
 ---
 
@@ -177,6 +177,6 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/6af5fef8-b57b-44d4-ba42-c41f4525b462) |
 
 ---
