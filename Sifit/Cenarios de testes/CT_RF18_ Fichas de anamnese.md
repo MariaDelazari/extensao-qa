@@ -209,3 +209,33 @@
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |
 | [Vídeo](https://jam.dev/c/cf2b3c9e-97ad-4eaa-abaa-560774bcf950) |
+
+---
+
+### Caso de Teste 08: Busca de ficha de anamnese pelo nome do cliente.
+
+| ID       | Descrição                                                                                   |
+| :------- | :------------------------------------------------------------------------------------------ |
+| C18-CT08 | Verificar se a busca da tela de fichas de anamnese encontra as fichas pelo nome do cliente. |
+
+| **Pré-condições**                                                                              |
+| :--------------------------------------------------------------------------------------------- |
+| O usuário deve estar autenticado e existir anamnese finalizada para aluno com "teste" no nome. |
+
+| **Passos**                                                                        |
+| :-------------------------------------------------------------------------------- |
+| **DADO** que estamos na tela de fichas de anamnese                                |
+| **QUANDO** digitarmos "teste" no campo "Buscar por cliente..." e apertarmos Enter |
+| **ENTÃO** a listagem deverá exibir as fichas dos clientes com "teste" no nome     |
+
+| **Critérios de aceitação**                           |
+| :--------------------------------------------------- |
+| A busca deve filtrar as fichas pelo nome do cliente. |
+
+| **Resultado da execução**                                                                                                                                                                              |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** O campo não tem botão, nada acontece ao apertar Enter e a listagem continua com "Nenhuma ficha encontrada", embora existam anamneses finalizadas (a lista não carrega as fichas, BUG-093). |
+
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/6353a0d5-a1c5-4903-b350-cd9fdd7941bf) |
