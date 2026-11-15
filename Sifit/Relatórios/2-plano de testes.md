@@ -51,7 +51,7 @@ Verificar manualmente os requisitos funcionais do Sifit: o login, a página inic
 - Grupos musculares (RF23), Modelos de ficha (RF24) e Configurações (RF25)
 - Relatórios (RF26), Importar avaliações (RF27) e Inteligência & Automação com Resultados IA (RF28)
 - Local de contas (RF29) e Métricas do cliente (RF32)
-- Modelos e categorias de anamnese (RF33): 13 casos escritos em `Pendentes de evidencias` (C33-CT01 a C33-CT13), aguardando a gravação
+- Modelos e categorias de anamnese (RF33): 15 casos executados em 15/11/2026 (C33-CT01 a C33-CT15, 11 passaram e 4 falharam, BUG-135 a BUG-138), aguardando a gravação dos vídeos
 
 **Excluído:**
 

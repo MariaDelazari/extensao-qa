@@ -187,6 +187,10 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, e o BUG-126 em RF30 
 | BUG-132 | Categoria de conta a pagar duplicada é aceita                                       | Baixa      | Aberto     |
 | BUG-133 | Bandeira cadastrada não aparece na listagem                                         | Alta       | Aberto     |
 | BUG-134 | Pontuação aceita data final anterior à inicial                                      | Média      | Aberto     |
+| BUG-135 | Indicador "Com perguntas" mostra o total de categorias                              | Média      | Aberto     |
+| BUG-136 | Categoria de anamnese duplicada é aceita                                            | Baixa      | Aberto     |
+| BUG-137 | Edição do modelo apaga a marcação de pergunta obrigatória                           | Média      | Aberto     |
+| BUG-138 | Preview do modelo de anamnese não mostra as perguntas                               | Média      | Aberto     |
 
 ---
 
@@ -201,8 +205,8 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, e o BUG-126 em RF30 
 
 - Crítica: 3
 - Alta: 25
-- Média: 56
-- Baixa: 38
+- Média: 59
+- Baixa: 39
 
 **Em revisão:** 1 (BUG-026). **Cancelado:** 1 (BUG-025, o vídeo mostrou o aviso "Preencha este campo.").
 
