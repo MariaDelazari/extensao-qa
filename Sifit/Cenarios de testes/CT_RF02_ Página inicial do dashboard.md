@@ -238,9 +238,9 @@
 | :-------------------------------------------------------------------------------------------------------------------- |
 | **Falhou.** Em 15/11/2026 o card mostra "1 avaliações pendentes" e a lista filtrada por Pendente mostra 5 avaliações. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/32d0c4a0-db6d-4f38-9f3a-eeceee068739) |
 
 ---
 
