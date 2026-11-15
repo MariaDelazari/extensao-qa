@@ -75,7 +75,7 @@
 | :---------------------------------------------------------------------------------------------- |
 | **DADO** que clicamos em "Nova Anamnese"                                                        |
 | **E** informamos "teste" no campo "Nome do aluno..." e clicamos na lupa                         |
-| **QUANDO** clicarmos no aluno "Teste" na lista                                                  |
+| **QUANDO** clicarmos no aluno "teste" na lista                                                  |
 | **ENTÃO** o aluno deverá ser selecionado e o assistente deverá avançar para a escolha do modelo |
 
 | **Critérios de aceitação**                     |
@@ -88,7 +88,7 @@
 
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |
-| [Vídeo](https://jam.dev/c/5f3df121-2ce5-4546-9adb-ecb7e73ea94a) |
+| [Vídeo](https://jam.dev/c/cbd1c663-2c5a-47de-834a-4428ff608390) |
 
 ---
 
@@ -194,7 +194,7 @@
 
 | **Passos**                                                                                                                               |
 | :--------------------------------------------------------------------------------------------------------------------------------------- |
-| **DADO** que finalizamos a anamnese do aluno Teste                                                                                       |
+| **DADO** que finalizamos a anamnese da aluna Maria Teste                                                                                 |
 | **QUANDO** acessarmos a tela de fichas de anamnese                                                                                       |
 | **ENTÃO** a anamnese deverá constar na listagem e os indicadores "Total de fichas", "Concluídas" e "Clientes avaliados" deverão exibir 1 |
 
@@ -202,10 +202,10 @@
 | :-------------------------------------------- |
 | O sistema deve exibir as anamneses aplicadas. |
 
-| **Resultado da execução**                                                                 |
-| :---------------------------------------------------------------------------------------- |
-| **Falhou.** A listagem exibe "Nenhuma ficha encontrada" e os indicadores permanecem em 0. |
+| **Resultado da execução**                                                                                                                                               |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** A listagem exibe "Nenhuma ficha encontrada" e os indicadores permanecem em 0, mesmo buscando "Maria Teste"; o perfil da aluna também não mostra a anamnese. |
 
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |
-| [Vídeo](https://jam.dev/c/5f3df121-2ce5-4546-9adb-ecb7e73ea94a) |
+| [Vídeo](https://jam.dev/c/cf2b3c9e-97ad-4eaa-abaa-560774bcf950) |

@@ -3473,9 +3473,9 @@
 
 ### 🐞 **Bug 93: Anamneses aplicadas não aparecem na listagem**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                          |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-093 | Após finalizar a anamnese do aluno Teste (a API responde 201), a tela de fichas de anamnese continua exibindo "Nenhuma ficha encontrada" e todos os indicadores em 0. No DevTools, a lista é recarregada com o "id" vazio e volta sem nenhum registro. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                      |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| BUG-093 | Após finalizar a anamnese da aluna Maria Teste (a API responde 201), a tela de fichas de anamnese continua exibindo "Nenhuma ficha encontrada" e todos os indicadores em 0, mesmo buscando pelo nome da aluna. O card "Anamnese" do perfil da aluna também não mostra a anamnese. No DevTools, a lista é recarregada com o "id" vazio e volta sem nenhum registro. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3484,13 +3484,13 @@
 | **Passo a passo para simular o bug**                                                         |
 | -------------------------------------------------------------------------------------------- |
 | 1. Acessar "Fichas Anamnese" e clicar em "Nova Anamnese".                                    |
-| 2. Buscar "teste", selecionar o aluno "Teste" e o modelo "Manual SIFIT Anamnese Inicial".    |
+| 2. Buscar "Maria Teste", selecionar a aluna e o modelo "Manual SIFIT Anamnese Inicial".      |
 | 3. Clicar em "Iniciar", responder a pergunta, clicar em "Revisar" e em "Finalizar Anamnese". |
-| 4. Verificar a listagem e os indicadores.                                                    |
+| 4. Verificar a listagem, os indicadores e o card "Anamnese" do perfil da aluna.              |
 
-|                         **Comportamento Esperado**                          |                           **Comportamento Obtido**                            |
-| :-------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
-| A anamnese deve constar na listagem e os indicadores devem ser atualizados. | A listagem exibe "Nenhuma ficha encontrada" e os indicadores permanecem em 0. |
+|                                    **Comportamento Esperado**                                     |                           **Comportamento Obtido**                            |
+| :-----------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
+| A anamnese deve constar na listagem e no perfil da aluna, e os indicadores devem ser atualizados. | A listagem exibe "Nenhuma ficha encontrada" e os indicadores permanecem em 0. |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -3506,7 +3506,7 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:93](https://jam.dev/c/5f3df121-2ce5-4546-9adb-ecb7e73ea94a) |
+| [BUG:93](https://jam.dev/c/cf2b3c9e-97ad-4eaa-abaa-560774bcf950) |
 
 ---
 
