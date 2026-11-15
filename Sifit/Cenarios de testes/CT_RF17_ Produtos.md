@@ -26,7 +26,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/b86137e5-8f1d-4e19-a26f-af3c0c50cfe8) |
 
 ---
 
@@ -57,7 +57,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/725c86c2-f7e0-41fa-b46b-635f9723a5b4) |
 
 ---
 
@@ -88,7 +88,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/fa7272bd-ac2d-4f7f-8317-4becf7d84408) |
 
 ---
 
@@ -119,7 +119,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/a8978dbe-467f-4bd5-9373-568dc8e68635) |
 
 ---
 
@@ -136,7 +136,7 @@
 | **Passos**                                                              |
 | :---------------------------------------------------------------------- |
 | **DADO** que abrimos a janela "Novo" produto                            |
-| **E** informamos o nome "Produto Teste Ville Negativo" e o preço "-50"  |
+| **E** informamos o nome "teste" e o preço "-50"  |
 | **QUANDO** clicarmos no botão "Salvar"                                  |
 | **ENTÃO** o sistema deverá informar que o preço deve ser maior que zero |
 
@@ -150,7 +150,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/8cd301f3-fb86-4d12-a9da-b5c93bfb8cb5) |
 
 ---
 
@@ -167,7 +167,7 @@
 | **Passos**                                                                                                                         |
 | :--------------------------------------------------------------------------------------------------------------------------------- |
 | **DADO** que abrimos a janela "Novo" produto                                                                                       |
-| **E** informamos o nome "Produto Teste Ville", a descrição "Teste Ville Nunes", o tipo "Venda" e o preço                           |
+| **E** informamos o nome "Teste", a descrição "Teste", o tipo "Venda" e o preço                           |
 | **QUANDO** clicarmos no botão "Salvar"                                                                                             |
 | **ENTÃO** o produto deverá constar na listagem e os indicadores "Total de produtos", "Ativos" e "Para venda" deverão aumentar em 1 |
 
@@ -181,7 +181,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/f8410fc9-7ac6-47b4-8466-734dc5648d0b) |
 
 ---
 
@@ -198,7 +198,7 @@
 | **Passos**                                                                             |
 | :------------------------------------------------------------------------------------- |
 | **DADO** que abrimos a janela "Novo" produto                                           |
-| **E** informamos o nome "Produto Teste Ville Pontos" e selecionamos o tipo "Pontuação" |
+| **E** informamos o nome "Teste" e selecionamos o tipo "Pontuação" |
 | **E** informamos 100 no campo "Pontuação"                                              |
 | **QUANDO** clicarmos no botão "Salvar"                                                 |
 | **ENTÃO** o produto deverá constar na listagem com o tipo "Pontuação" e 100 pontos     |
@@ -213,7 +213,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/e6251ffd-1db6-469d-99bc-d508659171b4) |
 
 ---
 
@@ -231,7 +231,7 @@
 | :------------------------------------------------------------------------------------------ |
 | **DADO** que estamos na tela de produtos                                                    |
 | **QUANDO** observarmos a coluna "Valor / Pontos" dos produtos "Notebook" e "Notebook Gamer" |
-| **ENTÃO** os valores deverão ser exibidos como "R$ 1.550,00" e "R$ 7.000,99"                |
+| **ENTÃO** os valores deverão ser exibidos como"R$ 7.000,99"                |
 
 | **Critérios de aceitação**                                                   |
 | :--------------------------------------------------------------------------- |
@@ -239,11 +239,11 @@
 
 | **Resultado da execução**                                                     |
 | :---------------------------------------------------------------------------- |
-| **Falhou.** Os valores são exibidos como "R$ 1550", "R$ 7000.99" e "R$ 49.9". |
+| **Falhou.** Os valores são exibidos como "R$ 7000.99" e "R$ 49.9". |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/86b3dbc8-a5b6-4025-a71f-f949e3b9929a) |
 
 ---
 
@@ -259,8 +259,8 @@
 
 | **Passos**                                                             |
 | :--------------------------------------------------------------------- |
-| **DADO** que clicamos em "Visualizar" do produto "Produto Teste Ville" |
-| **E** alteramos o nome para "Produto Teste Ville Editado" e o preço    |
+| **DADO** que clicamos em "Visualizar" do produto "Teste" |
+| **E** alteramos o nome para "Teste s" e o preço para 102   |
 | **QUANDO** clicarmos no botão "Salvar"                                 |
 | **ENTÃO** a listagem deverá exibir o nome e o preço atualizados        |
 
@@ -274,7 +274,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/bd238e43-df7a-4815-8e33-1090ee9d86c3) |
 
 ---
 
@@ -305,7 +305,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/2c85cb1b-1856-4f3a-be42-43a062252ceb) |
 
 ---
 
@@ -336,4 +336,4 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/c4983af1-8cad-4e02-b04e-1fea706fddb2) |
