@@ -5047,3 +5047,157 @@
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:134](https://jam.dev/c/833e99ee-b5f7-4568-88fd-e40b7b818da6) |
+
+---
+
+### 🐞 **Bug 135: Indicador "Com perguntas" mostra o total de categorias**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                      |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| BUG-135 | Na tela "Categorias de Anamnese", o indicador "Com perguntas" mostra a quantidade total de categorias. Ao cadastrar uma categoria nova, que ainda não tem nenhuma pergunta, o indicador aumenta junto com o Total. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Baixa            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                                  |
+| ----------------------------------------------------------------------------------------------------- |
+| 1. Entrar no Sifit Unialfa e abrir Saúde → "Categorias".                                              |
+| 2. Anotar os indicadores Total e "Com perguntas".                                                     |
+| 3. Clicar em "Nova Categoria", informar o nome "Categoria Teste Maria" e clicar em "Criar Categoria". |
+| 4. Olhar o indicador "Com perguntas".                                                                 |
+
+|                               **Comportamento Esperado**                               |            **Comportamento Obtido**             |
+| :------------------------------------------------------------------------------------: | :---------------------------------------------: |
+| O indicador "Com perguntas" deve contar só as categorias que têm perguntas vinculadas. | O indicador passou de 3 para 4, igual ao Total. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
+
+|      **Funcionalidade Afetada**      |            **Caso de Teste Relacionado**            |
+| :----------------------------------: | :-------------------------------------------------: |
+| Categorias de Anamnese / Indicadores | C33-CT04: Indicador "Com perguntas" das categorias. |
+
+|            **Evidência(s)**             |
+| :-------------------------------------: |
+| [BUG:135](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 136: Categoria de anamnese duplicada é aceita**
+
+| **ID**  | **Descrição**                                                                                                                               |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-136 | O sistema aceita cadastrar uma segunda categoria de anamnese com o mesmo nome de uma existente ("Categoria Teste Maria"), sem nenhum aviso. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Baixa         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                        |
+| ------------------------------------------------------------------------------------------- |
+| 1. Entrar no Sifit Unialfa e abrir Saúde → "Categorias".                                    |
+| 2. Cadastrar a categoria "Categoria Teste Maria".                                           |
+| 3. Clicar de novo em "Nova Categoria", informar o mesmo nome e clicar em "Criar Categoria". |
+
+|                      **Comportamento Esperado**                       |                               **Comportamento Obtido**                                |
+| :-------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
+| O sistema deve informar que a categoria já existe e não salvar outra. | A segunda categoria é salva (resposta 201) e a listagem mostra duas com o mesmo nome. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
+
+|    **Funcionalidade Afetada**     |       **Caso de Teste Relacionado**        |
+| :-------------------------------: | :----------------------------------------: |
+| Categorias de Anamnese / Cadastro | C33-CT05: Cadastro de categoria duplicada. |
+
+|            **Evidência(s)**             |
+| :-------------------------------------: |
+| [BUG:136](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 137: Edição do modelo não mostra a pergunta obrigatória e apaga a marcação**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                              |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-137 | Na página "Editar Modelo", a pergunta salva como obrigatória aparece com "Obrigatória" desmarcada, embora a API devolva "obrigatoria": "1". Se a edição for salva sem marcar de novo, a marcação de obrigatória é apagada. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                                            |
+| --------------------------------------------------------------------------------------------------------------- |
+| 1. Entrar no Sifit Unialfa e abrir Saúde → "Modelos".                                                           |
+| 2. Criar o modelo "Modelo Teste Maria" com a pergunta "Manual SIFIT Lesão" marcada como "Obrigatória" e salvar. |
+| 3. Clicar em "Editar" no modelo.                                                                                |
+| 4. Olhar a caixa "Obrigatória" e o "Resumo do Modelo".                                                          |
+
+|                                **Comportamento Esperado**                                 |                                       **Comportamento Obtido**                                        |
+| :---------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: |
+| A pergunta deve aparecer com "Obrigatória" marcada e o resumo deve mostrar 1 obrigatória. | A caixa aparece desmarcada (Obrigatórias 0, Opcionais 1) e, ao salvar a edição, a marcação é perdida. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
+
+|  **Funcionalidade Afetada**  |            **Caso de Teste Relacionado**            |
+| :--------------------------: | :-------------------------------------------------: |
+| Modelos de Anamnese / Edição | C33-CT12: Pergunta obrigatória na edição do modelo. |
+
+|            **Evidência(s)**             |
+| :-------------------------------------: |
+| [BUG:137](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 138: Preview do modelo de anamnese não mostra as perguntas**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                    |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-138 | O botão "Preview" dos modelos de anamnese abre a janela com o nome e a descrição, mas sempre mostra "Nenhuma pergunta adicionada ainda.", mesmo nos modelos cujo card informa "1 perguntas" ("Triplet", "Manual SIFIT Anamnese Inicial" e "Modelo Teste Maria"). |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                  |
+| ----------------------------------------------------- |
+| 1. Entrar no Sifit Unialfa e abrir Saúde → "Modelos". |
+| 2. Clicar em "Preview" no modelo "Triplet".           |
+| 3. Repetir no modelo "Manual SIFIT Anamnese Inicial". |
+
+|          **Comportamento Esperado**           |                         **Comportamento Obtido**                          |
+| :-------------------------------------------: | :-----------------------------------------------------------------------: |
+| O preview deve listar as perguntas do modelo. | A janela mostra "Nenhuma pergunta adicionada ainda." em todos os modelos. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
+
+|  **Funcionalidade Afetada**   |     **Caso de Teste Relacionado**      |
+| :---------------------------: | :------------------------------------: |
+| Modelos de Anamnese / Preview | C33-CT13: Preview do modelo "Triplet". |
+
+|            **Evidência(s)**             |
+| :-------------------------------------: |
+| [BUG:138](coloque o link do video aqui) |
