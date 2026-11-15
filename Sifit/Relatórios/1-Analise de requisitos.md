@@ -501,3 +501,20 @@ Cada requisito tem o mesmo número do cenário e do arquivo de casos: o RF01 é 
 - Oferecer a categoria cadastrada no campo "Categoria" de Contas a Pagar → Nova Conta.
 
 **Resultado esperado:** A categoria só é salva com o nome, sem duplicidade, aparece na listagem e fica disponível na conta a pagar.
+
+### 🩺 RF33 - Modelos e categorias de anamnese
+
+**Cenário de teste:** C33 (`CT_RF33_`)
+
+**Descrição:** O sistema deve permitir manter as categorias que organizam as perguntas de anamnese (menu Saúde → Categorias, `/anamnese/categorias`) e os modelos de anamnese aplicados aos alunos (menu Saúde → Modelos, `/anamnese/modelos`).
+
+**Funcionalidades esperadas:**
+
+- Abrir as telas pelo menu, com busca, indicadores e listagem.
+- Cadastrar categoria exigindo o nome, sem duplicidade, com ícone, cor e status.
+- Alterar, inativar e excluir categoria, com confirmação na exclusão.
+- Cadastrar modelo exigindo o nome, com descrição, status e perguntas (obrigatórias ou opcionais).
+- Mostrar no card e no preview a quantidade real de perguntas do modelo.
+- Alterar, inativar e excluir modelo, com confirmação na exclusão.
+
+**Resultado esperado:** Categorias e modelos só são salvos com nome, aparecem na listagem e nos indicadores, e o modelo mostra as perguntas que realmente tem.
