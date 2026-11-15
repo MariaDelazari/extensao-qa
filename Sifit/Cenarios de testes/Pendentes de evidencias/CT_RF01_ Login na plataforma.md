@@ -26,9 +26,9 @@
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Falhou.** O login válido mostrou "Erro no servidor" ou entrou com o nome "Jair" no lugar da conta de teste. Em 28/10/2026 o login com a senha atual entrou e a saudação mostrou "Jair". Em outra execução, o caso passou. Em 23 a 24/10/2026, no sifit.centrion.com.br, o caso passou: redirecionado para /dashboard com a mensagem "Boa noite, (nome do usuário)!". |
 
-| **Evidência(s)**                                                |
-| :-------------------------------------------------------------- |
-| [Vídeo](https://jam.dev/c/070f284b-e3a2-4514-8fe3-4290f33d77ee) |
+| **Evidência(s)**                      |
+| :------------------------------------ |
+| [Vídeo](coloque o link do video aqui) |
 
 ---
 
