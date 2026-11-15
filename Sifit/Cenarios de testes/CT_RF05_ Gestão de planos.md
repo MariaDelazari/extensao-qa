@@ -360,13 +360,13 @@
 | :------------------------------------------------------------- |
 | O cadastro deve ser bloqueado e o campo obrigatório informado. |
 
-| **Resultado da execução**                                                                                                                                                                                                                       |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Passou.** Validação do navegador exibida no campo Nome. Em 28/10/2026, no Sifit Unialfa, o caso falhou: nada acontece e nenhuma mensagem aparece. O BUG-025 está em revisão: a execução automatizada não captura o aviso nativo do navegador. |
+| **Resultado da execução**                                                                                                             |
+| :------------------------------------------------------------------------------------------------------------------------------------ |
+| **Passou.** Ao salvar o formulário vazio, o navegador mostra o aviso "Preencha este campo." no campo Nome e o cadastro não é enviado. |
 
-| **Evidência(s)**                    |
-| :---------------------------------- |
-| [Print](../Evidencias/C05-CT12.png) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/0d9b898b-bccd-4ad6-a5f8-662bc2b52f43) |
 
 ---
 

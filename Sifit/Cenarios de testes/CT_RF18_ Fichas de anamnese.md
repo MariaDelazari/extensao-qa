@@ -24,9 +24,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/5f3df121-2ce5-4546-9adb-ecb7e73ea94a) |
 
 ---
 
@@ -51,13 +51,13 @@
 | :------------------------------------------------------ |
 | O assistente não deve avançar sem um aluno selecionado. |
 
-| **Resultado da execução**                                                 |
-| :------------------------------------------------------------------------ |
-| **Falhou.** O assistente avança e a finalização exibe "Erro no servidor". |
+| **Resultado da execução**                                                                                                                                  |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** O assistente avança sem aluno e, ao finalizar, exibe "Erro no servidor - Erro interno inesperado." (erro 500, a anamnese é enviada sem aluno). |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/44970843-eb49-4f00-af64-7d96b50732bb) |
 
 ---
 
@@ -67,15 +67,15 @@
 | :------- | :------------------------------------------------------------- |
 | C18-CT03 | Verificar se o aluno é encontrado e selecionado no assistente. |
 
-| **Pré-condições**                                                    |
-| :------------------------------------------------------------------- |
-| O usuário deve estar autenticado e existir o cliente "Steven Kaiki". |
+| **Pré-condições**                                                       |
+| :---------------------------------------------------------------------- |
+| O usuário deve estar autenticado e existir cliente com "teste" no nome. |
 
 | **Passos**                                                                                      |
 | :---------------------------------------------------------------------------------------------- |
 | **DADO** que clicamos em "Nova Anamnese"                                                        |
-| **E** informamos "Steven" no campo "Nome do aluno..." e clicamos na lupa                        |
-| **QUANDO** clicarmos no aluno "Steven Kaiki" na lista                                           |
+| **E** informamos "teste" no campo "Nome do aluno..." e clicamos na lupa                         |
+| **QUANDO** clicarmos no aluno "Teste" na lista                                                  |
 | **ENTÃO** o aluno deverá ser selecionado e o assistente deverá avançar para a escolha do modelo |
 
 | **Critérios de aceitação**                     |
@@ -86,9 +86,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/5f3df121-2ce5-4546-9adb-ecb7e73ea94a) |
 
 ---
 
@@ -98,15 +98,15 @@
 | :------- | :--------------------------------------------------------------------------- |
 | C18-CT04 | Verificar se a etapa de escolha do modelo exibe o nome do aluno selecionado. |
 
-| **Pré-condições**                                                          |
-| :------------------------------------------------------------------------- |
-| O usuário deve estar autenticado e ter selecionado o aluno "Steven Kaiki". |
+| **Pré-condições**                                                   |
+| :------------------------------------------------------------------ |
+| O usuário deve estar autenticado e ter selecionado o aluno "Teste". |
 
-| **Passos**                                                                                  |
-| :------------------------------------------------------------------------------------------ |
-| **DADO** que selecionamos o aluno "Steven Kaiki"                                            |
-| **QUANDO** a etapa "Selecionar Modelo" for exibida                                          |
-| **ENTÃO** o texto deverá exibir "Escolha o modelo de anamnese a aplicar para Steven Kaiki." |
+| **Passos**                                                                           |
+| :----------------------------------------------------------------------------------- |
+| **DADO** que selecionamos o aluno "Teste"                                            |
+| **QUANDO** a etapa "Selecionar Modelo" for exibida                                   |
+| **ENTÃO** o texto deverá exibir "Escolha o modelo de anamnese a aplicar para Teste." |
 
 | **Critérios de aceitação**                    |
 | :-------------------------------------------- |
@@ -116,9 +116,9 @@
 | :------------------------------------------------- |
 | **Falhou.** O texto é exibido sem o nome do aluno. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/f7962e88-0797-496a-ae36-b2783ec59583) |
 
 ---
 
@@ -128,13 +128,13 @@
 | :------- | :------------------------------------------------------------------------------ |
 | C18-CT05 | Verificar se as perguntas do modelo selecionado são apresentadas para resposta. |
 
-| **Pré-condições**                                                             |
-| :---------------------------------------------------------------------------- |
-| O usuário deve estar autenticado e existir o modelo "Triplet" com 1 pergunta. |
+| **Pré-condições**                                                                      |
+| :------------------------------------------------------------------------------------- |
+| O usuário deve estar autenticado e existir o modelo "Triplet", que informa 1 pergunta. |
 
 | **Passos**                                                                                           |
 | :--------------------------------------------------------------------------------------------------- |
-| **DADO** que selecionamos o aluno "Steven Kaiki" e o modelo "Triplet" (1 pergunta)                   |
+| **DADO** que selecionamos o aluno "Teste" e o modelo "Triplet" (1 pergunta)                          |
 | **QUANDO** clicarmos no botão "Iniciar"                                                              |
 | **ENTÃO** a pergunta do modelo deverá ser exibida para resposta antes da etapa "Revisar e Finalizar" |
 
@@ -142,13 +142,13 @@
 | :----------------------------------------------------- |
 | O assistente deve exibir todas as perguntas do modelo. |
 
-| **Resultado da execução**                                                       |
-| :------------------------------------------------------------------------------ |
-| **Falhou.** O assistente pula para "Revisar e Finalizar" sem exibir a pergunta. |
+| **Resultado da execução**                                                                                                                                          |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** O card informa "1 perguntas", mas o assistente pula para "Revisar e Finalizar" sem exibir pergunta, e a anamnese é salva como concluída sem respostas. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/f7962e88-0797-496a-ae36-b2783ec59583) |
 
 ---
 
@@ -162,23 +162,23 @@
 | :----------------------------------------------------------------------- |
 | O usuário deve estar autenticado e estar na etapa "Revisar e Finalizar". |
 
-| **Passos**                                                                      |
-| :------------------------------------------------------------------------------ |
-| **DADO** que estamos na etapa "Revisar e Finalizar" da anamnese de Steven Kaiki |
-| **QUANDO** clicarmos no botão "Finalizar Anamnese"                              |
-| **ENTÃO** a anamnese deverá ser salva e o assistente deverá ser fechado         |
+| **Passos**                                                                     |
+| :----------------------------------------------------------------------------- |
+| **DADO** que estamos na etapa "Revisar e Finalizar" da anamnese do aluno Teste |
+| **QUANDO** clicarmos no botão "Finalizar Anamnese"                             |
+| **ENTÃO** a anamnese deverá ser salva e o assistente deverá ser fechado        |
 
 | **Critérios de aceitação**                 |
 | :----------------------------------------- |
 | O sistema deve salvar a anamnese aplicada. |
 
-| **Resultado da execução**                                                  |
-| :------------------------------------------------------------------------- |
-| **Passou.** O sistema se comportou como descrito no critério de aceitação. |
+| **Resultado da execução**                                                     |
+| :---------------------------------------------------------------------------- |
+| **Passou.** A anamnese é salva (a API responde 201) e o assistente é fechado. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/5f3df121-2ce5-4546-9adb-ecb7e73ea94a) |
 
 ---
 
@@ -194,7 +194,7 @@
 
 | **Passos**                                                                                                                               |
 | :--------------------------------------------------------------------------------------------------------------------------------------- |
-| **DADO** que finalizamos a anamnese de Steven Kaiki                                                                                      |
+| **DADO** que finalizamos a anamnese do aluno Teste                                                                                       |
 | **QUANDO** acessarmos a tela de fichas de anamnese                                                                                       |
 | **ENTÃO** a anamnese deverá constar na listagem e os indicadores "Total de fichas", "Concluídas" e "Clientes avaliados" deverão exibir 1 |
 
@@ -206,6 +206,6 @@
 | :---------------------------------------------------------------------------------------- |
 | **Falhou.** A listagem exibe "Nenhuma ficha encontrada" e os indicadores permanecem em 0. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/5f3df121-2ce5-4546-9adb-ecb7e73ea94a) |
