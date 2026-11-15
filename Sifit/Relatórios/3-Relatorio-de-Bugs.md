@@ -2629,10 +2629,13 @@
 | :---------------------------------------------------------: | :------------------------------------------------------------------: |
 | O sistema deve salvar a turma e exibir mensagem de sucesso. | O sistema exibe "Erro ao salvar turma." e nenhuma alteração é salva. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
@@ -2666,10 +2669,13 @@
 | :-------------------------------------------------------------------------: | :-------------------------------------------------------: |
 | O sistema deve informar que a hora final deve ser maior que a hora inicial. | A turma é cadastrada com o horário "11:00:00 - 10:00:00". |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
 
 | **Funcionalidade Afetada** |                 **Caso de Teste Relacionado**                  |
 | :------------------------: | :------------------------------------------------------------: |
@@ -2703,10 +2709,13 @@
 | :------------------------------------------------: | :---------------------------------------: |
 | O caixa deve ser fechado com os totais conferidos. | Nada acontece e o caixa permanece aberto. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
 
 | **Funcionalidade Afetada** |               **Caso de Teste Relacionado**               |
 | :------------------------: | :-------------------------------------------------------: |
@@ -2739,10 +2748,13 @@
 | :---------------------------------------------------------------------------: | :--------------------------------------: |
 | O sistema deve exigir a busca e a conferência das contas antes do fechamento. | O caixa é fechado com os totais zerados. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
 
 | **Funcionalidade Afetada** |            **Caso de Teste Relacionado**            |
 | :------------------------: | :-------------------------------------------------: |
@@ -2775,10 +2787,13 @@
 | :-----------------------------------------------------------------: | :---------------------------------------: |
 | O sistema deve informar que já existe um caixa aberto para o local. | Um segundo caixa é aberto no mesmo local. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
 
 | **Funcionalidade Afetada** |             **Caso de Teste Relacionado**             |
 | :------------------------: | :---------------------------------------------------: |
@@ -2811,10 +2826,13 @@
 | :------------------------------------------------------------------------------: | :--------------------------------------------------------: |
 | A listagem inicial deve exibir somente os caixas do período exibido nos filtros. | A listagem inicial exibe todos os caixas, fora do período. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
 
 | **Funcionalidade Afetada** |             **Caso de Teste Relacionado**              |
 | :------------------------: | :----------------------------------------------------: |
@@ -3210,10 +3228,13 @@
 | :------------------------------------------------------------: | :---------------------------------------: |
 | O sistema deve informar que nenhum colaborador foi encontrado. | A listagem exibe uma linha vazia com "/". |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
 
 | **Funcionalidade Afetada** |             **Caso de Teste Relacionado**              |
 | :------------------------: | :----------------------------------------------------: |
@@ -3246,10 +3267,13 @@
 | :----------------------------------------------------------------------------: | :-----------------------------------------------------: |
 | A resposta deve trazer apenas o resultado da operação, sem expor comandos SQL. | No DevTools, a resposta mostra o comando SQL executado. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
 
 | **Funcionalidade Afetada** |    **Caso de Teste Relacionado**    |
 | :------------------------: | :---------------------------------: |
@@ -3283,10 +3307,13 @@
 | :------------------------------------------------: | :-------------------------------------------------------: |
 | O sistema deve permitir alterar e excluir funções. | Os campos são somente leitura e não há opção de exclusão. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
 
 |   **Funcionalidade Afetada**   |       **Caso de Teste Relacionado**       |
 | :----------------------------: | :---------------------------------------: |
@@ -3319,10 +3346,13 @@
 | :---------------------------------------------: | :-----------------------------------: |
 | O sistema deve informar que a função já existe. | A função é cadastrada em duplicidade. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
 
 | **Funcionalidade Afetada** |      **Caso de Teste Relacionado**      |
 | :------------------------: | :-------------------------------------: |
@@ -3805,3 +3835,509 @@
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:102](https://jam.dev/c/02ee32cf-7b68-4011-9cd9-d0faaba8470e) |
+
+---
+
+### 🐞 **Bug 103: Sistema permite cadastrar grupo duplicado**
+
+| **ID**  | **Descrição**                                                                                                                                                                           |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-103 | Foi possível cadastrar duas vezes o grupo "Grupo Teste Ville" (códigos #8 e #9), sem nenhum aviso. Como grupos não podem ser excluídos (BUG-105), a duplicidade não pode ser corrigida. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Baixa         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                |
+| ------------------------------------------------------------------- |
+| 1. Acessar a tela "Grupos" do SIFIT.                                |
+| 2. Cadastrar o grupo "Grupo Teste Ville".                           |
+| 3. Clicar novamente no botão de novo grupo e informar o mesmo nome. |
+| 4. Clicar no botão "Salvar Grupo".                                  |
+
+|           **Comportamento Esperado**           |       **Comportamento Obtido**       |
+| :--------------------------------------------: | :----------------------------------: |
+| O sistema deve informar que o grupo já existe. | O grupo é cadastrado em duplicidade. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** |     **Caso de Teste Relacionado**      |
+| :------------------------: | :------------------------------------: |
+|     Grupos / Cadastro      | C20-CT07: Cadastro de grupo duplicado. |
+
+|             **Evidência(s)**            |
+| :-------------------------------------: |
+| [BUG:103](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 104: Status "Inativo" do grupo não é salvo**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                               |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-104 | Ao alterar o status de um grupo para "Inativo" e salvar, a tela envia "status": "inativo" e a API responde sem erro, mas o grupo continua "ATIVO" e o indicador "Ativos" não muda. O mesmo ocorre ao cadastrar um grupo novo como "Inativo". Os outros campos (nome e Mostrar Home) são salvos normalmente. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**          |
+| --------------------------------------------- |
+| 1. Acessar a tela "Grupos" do SIFIT.          |
+| 2. Clicar no botão de visualizar de um grupo. |
+| 3. Selecionar "Inativo" no campo "Status".    |
+| 4. Clicar no botão "Salvar Grupo".            |
+| 5. Verificar o status do grupo na listagem.   |
+
+|                           **Comportamento Esperado**                           |               **Comportamento Obtido**               |
+| :----------------------------------------------------------------------------: | :--------------------------------------------------: |
+| O grupo deve constar como "INATIVO" e o indicador "Ativos" deve diminuir em 1. | O grupo continua "ATIVO" e os indicadores não mudam. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado**  |
+| :------------------------: | :----------------------------: |
+|     Grupos / Alteração     | C20-CT09: Inativação de grupo. |
+
+|             **Evidência(s)**            |
+| :-------------------------------------: |
+| [BUG:104](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 105: Grupo não pode ser excluído**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                       |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-105 | Ao confirmar a mensagem "Deseja deletar o Grupo?", a janela fecha sem nenhuma mensagem e o grupo continua na listagem. No DevTools (aba Network), a exclusão retorna erro 500 com "Erro interno inesperado.". Ocorreu com grupos recém-criados, sem nenhum vínculo. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                |
+| --------------------------------------------------- |
+| 1. Acessar a tela "Grupos" do SIFIT.                |
+| 2. Clicar no botão de excluir de um grupo de teste. |
+| 3. Clicar em "Confirmar".                           |
+| 4. Verificar a listagem.                            |
+
+|                 **Comportamento Esperado**                 |                  **Comportamento Obtido**                  |
+| :--------------------------------------------------------: | :--------------------------------------------------------: |
+| O grupo deve ser excluído e deixar de constar na listagem. | Nenhuma mensagem é exibida e o grupo continua na listagem. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| :------------------------: | :---------------------------: |
+|     Grupos / Exclusão      |  C20-CT10: Exclusão de grupo. |
+
+|             **Evidência(s)**            |
+| :-------------------------------------: |
+| [BUG:105](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 106: Listagem de modelos de contrato aparece vazia**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                      |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-106 | A tela "Modelos Contrato" exibe só os títulos das colunas, mas a API retorna 9 modelos cadastrados. No HTML da tabela, cada modelo aparece como um elemento "corpo-modelo" sem conteúdo, o que indica que o componente da linha não é carregado. Sem a listagem, não é possível visualizar, alterar nem excluir modelos pela tela. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|          Alta         |            Alta            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                            |
+| ------------------------------------------------------------------------------- |
+| 1. Acessar o menu "Modelos Contrato".                                           |
+| 2. Observar a listagem.                                                         |
+| 3. Abrir o DevTools (aba Network) e conferir a resposta da listagem de modelos. |
+
+|                           **Comportamento Esperado**                          |                  **Comportamento Obtido**                  |
+| :---------------------------------------------------------------------------: | :--------------------------------------------------------: |
+| A listagem deve exibir o código, o nome e o status de cada modelo cadastrado. | A listagem aparece vazia, embora a API retorne os modelos. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
+
+|   **Funcionalidade Afetada**   |                                          **Caso de Teste Relacionado**                                          |
+| :----------------------------: | :-------------------------------------------------------------------------------------------------------------: |
+| Modelos de contrato / Listagem | C21-CT01: Acesso à listagem de modelos de contrato. C21-CT06: Cadastro de modelo de contrato com dados válidos. |
+
+|             **Evidência(s)**            |
+| :-------------------------------------: |
+| [BUG:106](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 107: Modelo de contrato é salvo sem texto**
+
+| **ID**  | **Descrição**                                                                                                                                                     |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-107 | O cadastro de modelo de contrato exige o título, mas aceita salvar com o texto do contrato vazio. O modelo "Contrato Teste Ville" foi salvo sem texto (código 8). |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Baixa         |           Baixa            |   Aberto   |
+
+| **Passo a passo para simular o bug**         |
+| -------------------------------------------- |
+| 1. Clicar em "Adicionar Modelo Contrato".    |
+| 2. Informar o título "Contrato Teste Ville". |
+| 3. Deixar o texto do contrato vazio.         |
+| 4. Clicar em "Salvar modelo".                |
+
+|                   **Comportamento Esperado**                   |   **Comportamento Obtido**  |
+| :------------------------------------------------------------: | :-------------------------: |
+| O sistema deve informar que o texto do contrato é obrigatório. | O modelo é salvo sem texto. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
+
+|   **Funcionalidade Afetada**   |         **Caso de Teste Relacionado**          |
+| :----------------------------: | :--------------------------------------------: |
+| Modelos de contrato / Cadastro | C21-CT03: Salvar modelo de contrato sem texto. |
+
+|             **Evidência(s)**            |
+| :-------------------------------------: |
+| [BUG:107](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 108: Variável do contrato não fica na posição do cursor**
+
+| **ID**  | **Descrição**                                                                                                                                                                                  |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-108 | Ao clicar numa variável (ex.: {nome_aluno}) e continuar digitando, o texto digitado fica antes da variável. Ao inserir várias variáveis, elas se acumulam no fim do texto, em ordem invertida. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Baixa         |           Baixa            |   Aberto   |
+
+| **Passo a passo para simular o bug**      |
+| ----------------------------------------- |
+| 1. Clicar em "Adicionar Modelo Contrato". |
+| 2. Digitar "Eu, " no texto do contrato.   |
+| 3. Clicar na variável "{nome_aluno}".     |
+| 4. Continuar digitando ", CPF ".          |
+| 5. Observar a ordem do texto.             |
+
+|          **Comportamento Esperado**          |        **Comportamento Obtido**        |
+| :------------------------------------------: | :------------------------------------: |
+| O texto deve ficar "Eu, {nome_aluno}, CPF ". | O texto fica "Eu, , CPF {nome_aluno}". |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
+
+|  **Funcionalidade Afetada** |             **Caso de Teste Relacionado**             |
+| :-------------------------: | :---------------------------------------------------: |
+| Modelos de contrato / Texto | C21-CT04: Inserção de variáveis no texto do contrato. |
+
+|             **Evidência(s)**            |
+| :-------------------------------------: |
+| [BUG:108](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 109: Box - Turmas não avisa nada ao salvar modalidade ou turma vazia**
+
+| **ID**  | **Descrição**                                                                                                                                                                      |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-109 | Na tela "Box - Turmas", ao clicar em "Modalidade" ou em "Turma" com os campos vazios, o registro não é salvo, mas nenhuma mensagem orienta o usuário sobre os campos obrigatórios. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Baixa         |           Baixa            |   Aberto   |
+
+| **Passo a passo para simular o bug**                 |
+| ---------------------------------------------------- |
+| 1. Acessar o menu "Box - Turmas".                    |
+| 2. Sem preencher nada, clicar no botão "Modalidade". |
+| 3. Sem preencher nada, clicar no botão "Turma".      |
+
+|            **Comportamento Esperado**           |           **Comportamento Obtido**          |
+| :---------------------------------------------: | :-----------------------------------------: |
+| O sistema deve informar os campos obrigatórios. | Nada acontece e nenhuma mensagem é exibida. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** |                  **Caso de Teste Relacionado**                   |
+| :------------------------: | :--------------------------------------------------------------: |
+|  Box - Turmas / Cadastro   | C22-CT02: Salvar modalidade vazia. C22-CT06: Salvar turma vazia. |
+
+|             **Evidência(s)**            |
+| :-------------------------------------: |
+| [BUG:109](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 110: Erro 500 sem mensagem ao cadastrar modalidade duplicada**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                  |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-110 | Ao cadastrar uma modalidade com o nome de uma já existente ("Modalidade Teste Ville"), a modalidade não é duplicada, mas a tela não mostra nenhuma mensagem. No DevTools (aba Network), a API retorna erro 500 com "Erro interno inesperado.". |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                             |
+| ---------------------------------------------------------------- |
+| 1. Acessar o menu "Box - Turmas".                                |
+| 2. Cadastrar a modalidade "Modalidade Teste Ville".              |
+| 3. Informar de novo o mesmo nome e clicar no botão "Modalidade". |
+| 4. Observar a tela e a aba Network do DevTools.                  |
+
+|              **Comportamento Esperado**             |               **Comportamento Obtido**               |
+| :-------------------------------------------------: | :--------------------------------------------------: |
+| O sistema deve informar que a modalidade já existe. | Nenhuma mensagem é exibida e a API retorna erro 500. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** |        **Caso de Teste Relacionado**        |
+| :------------------------: | :-----------------------------------------: |
+| Box - Turmas / Modalidades | C22-CT04: Cadastro de modalidade duplicada. |
+
+|             **Evidência(s)**            |
+| :-------------------------------------: |
+| [BUG:110](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 111: Turma do Box aceita hora final anterior à hora inicial**
+
+| **ID**  | **Descrição**                                                                                                                                          |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| BUG-111 | O sistema permite cadastrar uma turma do Box com hora inicial 11:00 e hora final 10:00. A turma é salva e exibida com o horário "11:00:00 - 10:00:00". |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                    |
+| ----------------------------------------------------------------------- |
+| 1. Acessar o menu "Box - Turmas".                                       |
+| 2. Informar o nome "Turma Box Ville Horario", a modalidade e o dia Ter. |
+| 3. Informar a hora inicial 11:00 e a hora final 10:00.                  |
+| 4. Clicar no botão "Turma".                                             |
+
+|                          **Comportamento Esperado**                         |                  **Comportamento Obtido**                 |
+| :-------------------------------------------------------------------------: | :-------------------------------------------------------: |
+| O sistema deve informar que a hora final deve ser maior que a hora inicial. | A turma é cadastrada com o horário "11:00:00 - 10:00:00". |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** |                 **Caso de Teste Relacionado**                  |
+| :------------------------: | :------------------------------------------------------------: |
+|   Box - Turmas / Turmas    | C22-CT08: Cadastro de turma com hora final anterior à inicial. |
+
+|             **Evidência(s)**            |
+| :-------------------------------------: |
+| [BUG:111](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 112: Turma do Box é cadastrada sem dias da semana**
+
+| **ID**  | **Descrição**                                                                                                                                               |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-112 | O sistema permite cadastrar uma turma recorrente do Box sem nenhum dia da semana selecionado. A turma "Turma Box Ville Sem Dia" foi salva sem dias de aula. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                   |
+| ------------------------------------------------------ |
+| 1. Acessar o menu "Box - Turmas".                      |
+| 2. Informar o nome, a modalidade e o horário da turma. |
+| 3. Não selecionar nenhum dia da semana.                |
+| 4. Clicar no botão "Turma".                            |
+
+|            **Comportamento Esperado**            |       **Comportamento Obtido**       |
+| :----------------------------------------------: | :----------------------------------: |
+| O sistema deve exigir ao menos um dia da semana. | A turma é cadastrada sem nenhum dia. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** |          **Caso de Teste Relacionado**          |
+| :------------------------: | :---------------------------------------------: |
+|   Box - Turmas / Turmas    | C22-CT09: Cadastro de turma sem dias da semana. |
+
+|             **Evidência(s)**            |
+| :-------------------------------------: |
+| [BUG:112](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 113: Turma do Box aceita quantidade de vagas negativa**
+
+| **ID**  | **Descrição**                                                                                                                  |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| BUG-113 | O campo de vagas da turma do Box aceita valor negativo. A turma "Turma Box Ville Vagas" foi cadastrada e listada com -5 vagas. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                            |
+| --------------------------------------------------------------- |
+| 1. Acessar o menu "Box - Turmas".                               |
+| 2. Informar o nome, a modalidade, o horário e um dia da semana. |
+| 3. Informar -5 no campo de vagas.                               |
+| 4. Clicar no botão "Turma".                                     |
+
+|                     **Comportamento Esperado**                     |      **Comportamento Obtido**      |
+| :----------------------------------------------------------------: | :--------------------------------: |
+| O sistema deve aceitar somente quantidade de vagas maior que zero. | A turma é cadastrada com -5 vagas. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** |          **Caso de Teste Relacionado**           |
+| :------------------------: | :----------------------------------------------: |
+|   Box - Turmas / Turmas    | C22-CT10: Cadastro de turma com vagas negativas. |
+
+|             **Evidência(s)**            |
+| :-------------------------------------: |
+| [BUG:113](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 114: Modalidade inativa aparece no cadastro de turma do Box**
+
+| **ID**  | **Descrição**                                                                                                                                  |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-114 | O campo "Modalidade" do cadastro de turma lista a modalidade inativa "Leo valesk", e a turma "Turma Box Ville Inativa" foi cadastrada com ela. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Baixa         |           Baixa            |   Aberto   |
+
+| **Passo a passo para simular o bug**                    |
+| ------------------------------------------------------- |
+| 1. Acessar o menu "Box - Turmas".                       |
+| 2. Conferir que a modalidade "Leo valesk" está inativa. |
+| 3. Abrir o campo "Modalidade" do cadastro de turma.     |
+
+|            **Comportamento Esperado**           |            **Comportamento Obtido**            |
+| :---------------------------------------------: | :--------------------------------------------: |
+| O campo deve listar somente modalidades ativas. | A modalidade inativa aparece e pode ser usada. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** |            **Caso de Teste Relacionado**            |
+| :------------------------: | :-------------------------------------------------: |
+|   Box - Turmas / Turmas    | C22-CT11: Cadastro de turma com modalidade inativa. |
+
+|             **Evidência(s)**            |
+| :-------------------------------------: |
+| [BUG:114](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 115: Exclusão de turma do Box não pede confirmação e mantém a turma na lista**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                      |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-115 | Ao clicar no botão de excluir de uma turma do Box, a ação é executada na hora, sem confirmação. A API responde sem erro, mas a turma continua na listagem: pela API, ela só passa para "inativo", e a listagem não tem coluna de status. O mesmo ocorre com modalidades, que ficam como "inativo". |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                 |
+| ---------------------------------------------------- |
+| 1. Acessar o menu "Box - Turmas".                    |
+| 2. Clicar no botão de excluir de uma turma de teste. |
+| 3. Observar se há confirmação.                       |
+| 4. Verificar a listagem de turmas.                   |
+
+|                    **Comportamento Esperado**                   |              **Comportamento Obtido**              |
+| :-------------------------------------------------------------: | :------------------------------------------------: |
+| O sistema deve pedir confirmação e retirar a turma da listagem. | Não há confirmação e a turma continua na listagem. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| :------------------------: | :---------------------------: |
+|  Box - Turmas / Exclusão   |  C22-CT13: Exclusão de turma. |
+
+|             **Evidência(s)**            |
+| :-------------------------------------: |
+| [BUG:115](coloque o link do video aqui) |

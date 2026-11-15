@@ -2,7 +2,7 @@
 
 **Sistema testado:** Sifit Centrion
 **Responsável:** Maria Eduarda Pacheco Delazari, RA: 240017; Ville Nunes Figueiredo da Silva, RA: 14534; Keltton Felipe Alves Silveira, RA: 14509; Daniel Satel Pereira, RA: 14567; Rafael Colombo da Silva, RA: 14551
-**Data de execução:** 12/10/2026 a 28/10/2026. Em 24/10/2026, os testes passaram para o endereço indicado abaixo.
+**Data de execução:** 12/10/2026 a 28/10/2026, e 15/11/2026 para Grupos, Modelos de contrato e Box - Turmas (C20 a C22). Em 24/10/2026, os testes passaram para o endereço indicado abaixo.
 **Ambiente:** Sifit Centrion até 23/10/2026. A partir de 24/10/2026, Sifit Unialfa.
 
 - Sistema operacional: Ubuntu 26.04 LTS, Linux e Windows 11
@@ -16,13 +16,13 @@
 
 | Total de Casos de Teste | Casos Passaram | Casos Falharam | Bugs Registrados |
 | ----------------------- | -------------- | -------------- | ---------------- |
-| 221                     | 118            | 103            | 102              |
+| 250                     | 132            | 118            | 115              |
 
-Os 221 casos estão nos cenários C01 a C19. Um caso falhou quando existe um bug aberto apontando para ele: 103 falharam e 118 passaram. 118 + 103 = 221. O relatório de bugs tem 102 bugs: 100 abertos e 2 em revisão (BUG-025 e BUG-026), que não fazem nenhum caso falhar.
+Os 250 casos estão nos cenários C01 a C22. Um caso falhou quando existe um bug aberto apontando para ele: 118 falharam e 132 passaram. 132 + 118 = 250. O relatório de bugs tem 115 bugs: 113 abertos e 2 em revisão (BUG-025 e BUG-026), que não fazem nenhum caso falhar.
 
 Alguns casos foram executados mais de uma vez, em datas ou endereços diferentes. O resultado do caso junta essas execuções, e a evidência é o vídeo que mostra o resultado registrado. Nos casos C01-CT01, C01-CT02, C02-CT01, C04-CT04, C04-CT10, C06-CT07 e C09-CT03, uma execução passou e outra encontrou a falha; o caso conta como falhou.
 
-Evidências: 136 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados com `[Vídeo](coloque o link do video aqui)`). Dos 102 bugs, 66 têm vídeo ou print, e 36 aguardam o vídeo (`[BUG:NN](coloque o link do video aqui)`). O roteiro está em `5-Roteiro-de-videos.md`.
+Evidências: 136 casos têm vídeo ou print, e 114 aguardam o vídeo (marcados com `[Vídeo](coloque o link do video aqui)`). Dos 115 bugs, 66 têm vídeo ou print, e 49 aguardam o vídeo (`[BUG:NN](coloque o link do video aqui)`). O roteiro está em `5-Roteiro-de-videos.md`.
 
 ---
 
@@ -49,6 +49,9 @@ Evidências: 136 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados co
 | RF17      | Produtos                        | 11             | 7              | 4                | BUG-027, BUG-090, BUG-091, BUG-092                                                                         |
 | RF18      | Fichas de anamnese              | 7              | 3              | 4                | BUG-093, BUG-094, BUG-095, BUG-096                                                                         |
 | RF19      | Cadastros de apoio              | 9              | 4              | 5                | BUG-028, BUG-029, BUG-030, BUG-031, BUG-032                                                                |
+| RF20      | Grupos                          | 10             | 7              | 3                | BUG-103, BUG-104, BUG-105                                                                                  |
+| RF21      | Modelos de contrato             | 6              | 2              | 4                | BUG-106, BUG-107, BUG-108                                                                                  |
+| RF22      | Box - Turmas                    | 13             | 5              | 8                | BUG-109, BUG-110, BUG-111, BUG-112, BUG-113, BUG-114, BUG-115                                              |
 
 O BUG-007 aparece em RF01 e RF02, e o BUG-014 em RF02 e RF03, porque cada um aponta para casos dos dois cenários.
 
@@ -160,6 +163,19 @@ O BUG-007 aparece em RF01 e RF02, e o BUG-014 em RF02 e RF03, porque cada um apo
 | BUG-100 | Filtro de status "Ativo" lista clientes inativos                                    | Média      | Aberto     |
 | BUG-101 | Ficha do cliente exibe "null" e objetivos fictícios                                 | Baixa      | Aberto     |
 | BUG-102 | Campo "Data" da parcela aceita data inválida                                        | Média      | Aberto     |
+| BUG-103 | Sistema permite cadastrar grupo duplicado                                           | Baixa      | Aberto     |
+| BUG-104 | Status "Inativo" do grupo não é salvo                                               | Média      | Aberto     |
+| BUG-105 | Grupo não pode ser excluído                                                         | Média      | Aberto     |
+| BUG-106 | Listagem de modelos de contrato aparece vazia                                       | Alta       | Aberto     |
+| BUG-107 | Modelo de contrato é salvo sem texto                                                | Baixa      | Aberto     |
+| BUG-108 | Variável do contrato não fica na posição do cursor                                  | Baixa      | Aberto     |
+| BUG-109 | Box - Turmas não avisa nada ao salvar modalidade ou turma vazia                     | Baixa      | Aberto     |
+| BUG-110 | Erro 500 sem mensagem ao cadastrar modalidade duplicada                             | Média      | Aberto     |
+| BUG-111 | Turma do Box aceita hora final anterior à hora inicial                              | Média      | Aberto     |
+| BUG-112 | Turma do Box é cadastrada sem dias da semana                                        | Média      | Aberto     |
+| BUG-113 | Turma do Box aceita quantidade de vagas negativa                                    | Média      | Aberto     |
+| BUG-114 | Modalidade inativa aparece no cadastro de turma do Box                              | Baixa      | Aberto     |
+| BUG-115 | Exclusão de turma do Box não pede confirmação e mantém a turma na lista             | Média      | Aberto     |
 
 ---
 
@@ -167,15 +183,15 @@ O BUG-007 aparece em RF01 e RF02, e o BUG-014 em RF02 e RF03, porque cada um apo
 
 **Casos por status:**
 
-- Passaram: 118
-- Falharam: 103
+- Passaram: 132
+- Falharam: 118
 
 **Severidade dos bugs abertos:**
 
 - Crítica: 2
-- Alta: 22
-- Média: 46
-- Baixa: 30
+- Alta: 23
+- Média: 53
+- Baixa: 35
 
 **Em revisão:** 2
 
@@ -208,6 +224,10 @@ As hipóteses abaixo foram levantadas a partir do comportamento na tela, do cons
 - **BUG-083, BUG-087**: as rotas de exclusão de ficha e de atualização de colaborador devolvem a saída de depuração do SQL, o que indica modo de depuração ativo no back-end de homologação.
 - **BUG-027, BUG-090**: o back-end grava o campo "valor" mesmo para produtos de pontuação e não trata o valor vazio, devolvendo o erro do banco de dados ("Data truncated for column 'valor'") na resposta.
 - **BUG-093, BUG-094, BUG-095**: a listagem consulta as fichas com o parâmetro "id" nulo; o assistente não carrega as perguntas do modelo e não valida o aluno antes de avançar, enviando a anamnese sem respostas ou sem aluno.
+- **BUG-104, BUG-105, BUG-110**: a rota de gravação de grupo ignora o campo de status enviado pela tela; as exclusões de grupo e o cadastro de modalidade duplicada retornam erro 500 e a tela não trata a resposta da API.
+- **BUG-106**: a API retorna os modelos de contrato, mas a tabela renderiza cada linha como um elemento "corpo-modelo" vazio, o que indica que o componente da linha não está registrado no front-end.
+- **BUG-109, BUG-111, BUG-112, BUG-113, BUG-114**: o cadastro do Box (SifitBox) não valida os campos na tela e o back-end aceita horário invertido, turma sem dias, vagas negativas e modalidade inativa; o mesmo padrão aparece em Turmas (BUG-071).
+- **BUG-115**: a exclusão do Box faz uma inativação (exclusão lógica), mas a listagem de turmas não filtra nem mostra o status.
 
 | Grupo de bugs                                                 | Causa raiz provável                                                                                                                  |
 | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
@@ -226,7 +246,7 @@ No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado.
 
 - Plano de Testes
 - Análise de requisitos
-- Casos de teste (C01 a C19); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C02, C04, C06 e C09 a C19)
+- Casos de teste (C01 a C22); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C02, C04, C06 e C09 a C22)
 - Relatório de bugs, com o vídeo da falha
 - Vídeos no Jam e prints na pasta `Sifit/Evidencias`
 - Roteiro dos vídeos a gravar (`5-Roteiro-de-videos.md`)
@@ -235,12 +255,14 @@ No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado.
 
 ## ✅ **Conclusão**
 
-Dos 221 casos, 118 passaram e 103 falharam, com 102 bugs registrados: 100 abertos e 2 em revisão. No login, só o usuário inexistente e o logout passaram: o login válido mostra erro no servidor ou entra mostrando o nome Jair, a senha incorreta já mostrou erro no servidor, os campos vazios seguem para a API sem aviso, os espaços nas pontas derrubam o login, o link "Esqueci minha senha" não faz nada e a sessão não é controlada.
+Dos 250 casos, 132 passaram e 118 falharam, com 115 bugs registrados: 113 abertos e 2 em revisão. No login, só o usuário inexistente e o logout passaram: o login válido mostra erro no servidor ou entra mostrando o nome Jair, a senha incorreta já mostrou erro no servidor, os campos vazios seguem para a API sem aviso, os espaços nas pontas derrubam o login, o link "Esqueci minha senha" não faz nada e a sessão não é controlada.
 
 As falhas mais graves impedem o uso de módulos centrais. Não é possível cadastrar nem alterar clientes (BUG-035 e BUG-039, severidade Crítica) e fornecedores (BUG-059 e BUG-060). A inativação do plano não é salva (BUG-045). O fechamento de caixa com conferência não é gravado (BUG-072). Não há como registrar o pagamento de conta a pagar (BUG-076). A ficha de treino não abre nem salva (BUG-081). A avaliação realizada não é salva (BUG-066). As anamneses aplicadas não aparecem (BUG-093 e BUG-094). Também se repetem formulários vazios que geram erro 500, respostas da API que expõem comandos SQL, registros em branco aceitos (Atividades, Objetivos de Treino e Tipos de Pagamento) e números que mudam de uma tela para outra (alunos em risco, avaliações pendentes, check-ins do dia, matrículas ativas contra clientes ativos e totais de contas a receber).
 
 Funcionam bem a prospecção (11 de 12 casos), as turmas (11 de 13) e a validação do campo obrigatório em Clientes, Matrículas, Avaliações, Fornecedores, Turmas, Bandeiras, Pontuação, Tipos de Documentos, Exercícios e Categorias Crossfit.
 
-Ficaram fora do escopo: Pagar.me, WhatsApp e Aplicativo. Ainda não têm caso de teste: Grupos, Modelos de contrato, Box - Turmas, Grupos musculares, Modelos de ficha, Configurações, Relatórios, Importar avaliações, Inteligência & Automação, Resultados IA, Local de contas, Bancos, Banco recorrente, Categorias de conta a pagar, Métricas do cliente e Modelos e categorias de anamnese (RF20 a RF33 no plano). O teste de formulário vazio criou 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12), que devem ser excluídos.
+Ficaram fora do escopo: Pagar.me, WhatsApp e Aplicativo. Ainda não têm caso de teste: Grupos musculares, Modelos de ficha, Configurações, Relatórios, Importar avaliações, Inteligência & Automação, Resultados IA, Local de contas, Bancos, Banco recorrente, Categorias de conta a pagar, Métricas do cliente e Modelos e categorias de anamnese (RF23 a RF33 no plano). O teste de formulário vazio criou 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12), que devem ser excluídos.
+
+Em Grupos, Modelos de contrato e Box - Turmas (C20 a C22, testados em 15/11/2026), os modelos de contrato não aparecem na listagem (BUG-106, severidade Alta), o status "Inativo" do grupo não é salvo (BUG-104) e o grupo não pode ser excluído (BUG-105). O cadastro de turmas do Box aceita horário invertido, turma sem dias e vagas negativas (BUG-111 a BUG-113). Ficaram no ambiente os grupos de teste #8, #9 e #10, que não podem ser excluídos nem inativados, e os modelos de contrato 8 e 9, que não aparecem na listagem. A modalidade e as turmas de teste do Box ficaram inativas.
 
 Até 23/10/2026 os testes usaram https://sifit.centrion.com.br/. A partir de 24/10/2026, usam https://sifitalfa.centrion.com.br/. A versão interna do sistema não foi anotada.
