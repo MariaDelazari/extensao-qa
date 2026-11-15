@@ -26,7 +26,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/13942010-f437-428e-8747-1c523040fa3b) |
 
 ---
 
@@ -57,7 +57,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/f6e2782b-ce43-4d0b-bc14-28e3338a4d16) |
 
 ---
 
@@ -89,7 +89,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/fdb31036-892c-4358-80bb-b60ad16015c4) |
 
 ---
 
@@ -101,12 +101,12 @@
 
 | **Pré-condições**                                                                                       |
 | :------------------------------------------------------------------------------------------------------ |
-| O usuário deve estar autenticado e existir objetivo de treino cadastrado (ex.: "Objetivo Teste Ville"). |
+| O usuário deve estar autenticado e existir objetivo de treino cadastrado (ex.: "Objetivo Teste"). |
 
 | **Passos**                                                                                                                  |
 | :-------------------------------------------------------------------------------------------------------------------------- |
 | **DADO** que abrimos a janela "Cadastrar Ficha"                                                                             |
-| **E** selecionamos o aluno "Steven Kaiki", o personal "Santhago" e o objetivo "Objetivo Teste Ville"                        |
+| **E** selecionamos o aluno "teste", o personal "Santhago" e o objetivo "Objetivo Teste"                        |
 | **QUANDO** clicarmos no botão "Criar Nova Ficha"                                                                            |
 | **ENTÃO** deveremos ser direcionados à tela de montagem dos treinos e a ficha deverá constar na listagem com status "ATIVO" |
 
@@ -120,7 +120,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/f79b29ee-3191-486c-bcb3-c268576d2219) |
 
 ---
 
@@ -147,11 +147,11 @@
 
 | **Resultado da execução**                                                         |
 | :-------------------------------------------------------------------------------- |
-| **Falhou.** O sistema exibe "Erro no servidor" ao salvar e ao visualizar a ficha. |
+| **Falhou.** O sistema não salva a ficha |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/d40fc5fa-b91a-4e90-9810-94a6f8718717) |
 
 ---
 
@@ -177,11 +177,11 @@
 
 | **Resultado da execução**                                                         |
 | :-------------------------------------------------------------------------------- |
-| **Falhou.** O sistema exibe "Erro no servidor" ao salvar e ao visualizar a ficha. |
+| **Falhou.** O sistema exibe a aba, mas não exibe o que foi salvo no cadastro (C14-CT05) |
 
-| **Evidência(s)**                      |
+| **Evidência(s)**                      |   
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/d40fc5fa-b91a-4e90-9810-94a6f8718717) |
 
 ---
 
@@ -212,7 +212,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/c3be0023-ef70-45ec-8a65-da5ec85166eb) |
 
 ---
 
@@ -242,7 +242,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/420ee657-a0e0-4360-a98b-2996e6cbbaae) |
 
 ---
 
@@ -347,12 +347,12 @@
 
 | **Pré-condições**                                                               |
 | :------------------------------------------------------------------------------ |
-| O usuário deve estar autenticado e existir o exercício "Exercício Teste Ville". |
+| O usuário deve estar autenticado e existir o exercício "Teste". |
 
 | **Passos**                                                                 |
 | :------------------------------------------------------------------------- |
-| **DADO** que clicamos em "Visualizar" do exercício "Exercício Teste Ville" |
-| **E** alteramos o nome para "Exercício Teste Ville Editado"                |
+| **DADO** que clicamos em "Visualizar" do exercício "Teste" |
+| **E** alteramos o nome para "Teste a"                |
 | **QUANDO** clicarmos no botão "Salvar"                                     |
 | **ENTÃO** o exercício deverá ser exibido com o novo nome                   |
 
@@ -366,7 +366,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/f28072fd-6020-4b89-a6af-9730e5b574d8) |
 
 ---
 

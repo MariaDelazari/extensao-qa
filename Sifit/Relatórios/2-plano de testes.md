@@ -196,8 +196,8 @@ Quando houve diferença de prioridade entre os trabalhos, ficou a maior.
 | Registros em branco: Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12 | C19-CT04, C19-CT07 e C19-CT08 |
 | Grupos #8, #9 e #10 (não podem ser excluídos, BUG-105)                           | C20-CT05, C20-CT07 e C20-CT09 |
 | Modelos de contrato 8 e 9 (não aparecem na listagem, BUG-106)                    | C21-CT03 e C21-CT06           |
-| Bancos 8 a 17 (a exclusão de banco não é segura, BUG-119)                        | C30-CT03 a C30-CT06           |
-| Categorias de conta a pagar 25 a 29 (não aparecem na listagem, BUG-120)          | C31-CT03 a C31-CT05           |
+| Bancos 8 a 17 (a exclusão de banco não é segura, BUG-129)                        | C30-CT03 a C30-CT06           |
+| Categorias de conta a pagar 25 a 29 (não aparecem na listagem, BUG-130)          | C31-CT03 a C31-CT05           |
 
 Os códigos dos registros não ficam fixos neste documento, porque o ambiente é compartilhado e os dados são alterados por outras pessoas.
 
