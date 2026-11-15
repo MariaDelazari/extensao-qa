@@ -3954,9 +3954,6 @@
 | :---------------------------------------------------------------: |
 | [BUG:105](https://jam.dev/c/e30de4bd-5de2-4dfb-87a2-f09bab3a8440) |
 
-
-| [BUG:115](https://jam.dev/c/e7b3f5ff-5bd1-4fde-be72-0c33ebfac152) |
-
 ---
 
 ### 🐞 **Bug 106: Listagem de modelos de contrato aparece vazia**
