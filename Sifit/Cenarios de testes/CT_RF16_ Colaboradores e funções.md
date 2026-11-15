@@ -26,7 +26,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/8918e423-b497-4e6b-984b-e82fc5700e75) |
 
 ---
 
@@ -57,7 +57,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/646eeecf-b173-44b1-aa63-a79a13d598eb) |
 
 ---
 
@@ -88,7 +88,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/fd885338-b1b1-4689-8a94-a0de9885af05) |
 
 ---
 
@@ -119,7 +119,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/fa03cb2a-8ed4-45cf-a70a-6a8a999ab4da) |
 
 ---
 
@@ -151,7 +151,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/7497e363-2789-4cb4-9098-2ee4d423c3e7) |
 
 ---
 
@@ -183,7 +183,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/4e8caa28-0972-44c6-b4e8-34fb85ac989d) |
 
 ---
 
@@ -214,7 +214,8 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/4c015a99-0c38-4e9d-a68b-3e38d60df197) |
+| [Print](../Evidencias/C16-CT07.png) |
 
 ---
 
@@ -245,7 +246,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/9427e088-d278-4bf3-adbf-38145550d055) |
 
 ---
 
@@ -276,7 +277,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/e9a554e5-d99d-45e5-ae9d-7705448c4536) |
 
 ---
 
@@ -307,7 +308,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/42190ad4-dbbd-4064-9b7f-25a8c468b64a) |
 
 ---
 
@@ -337,7 +338,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/753b282c-0dd6-4175-83e1-d99b4d719b9b) |
 
 ---
 
@@ -368,7 +369,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/9eef811c-978a-46a7-8187-9a23d251ea88) |
 
 ---
 
@@ -395,11 +396,11 @@
 
 | **Resultado da execução**                                                                                                                                                                                                                                        |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Passou.** O sistema se comportou como descrito no critério de aceitação. Em 28/10/2026, no Sifit Unialfa, o caso falhou: nada acontece e nenhuma mensagem aparece. O BUG-027 está em revisão: a execução automatizada não captura o aviso nativo do navegador. |
+| **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/9e3bb636-5c64-407d-a73e-295a47022426) |
 
 ---
 
@@ -416,7 +417,7 @@
 | **Passos**                                                                                                  |
 | :---------------------------------------------------------------------------------------------------------- |
 | **DADO** que abrimos a janela "Nova Função"                                                                 |
-| **E** informamos o nome "Função Teste Ville", o tipo "Externo" e Personal "Sim"                             |
+| **E** informamos o nome "Função Testes Ville", o tipo "Externo" e Personal "Sim"                             |
 | **QUANDO** clicarmos no botão "Salvar Função"                                                               |
 | **ENTÃO** a função deverá constar na listagem e os indicadores "Funções" e "Personal" deverão aumentar em 1 |
 
@@ -430,7 +431,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/79433cc8-2a6c-461a-bbbb-d088d8aaa307) |
 
 ---
 
@@ -446,7 +447,7 @@
 
 | **Passos**                                                     |
 | :------------------------------------------------------------- |
-| **DADO** que a função "Função Teste Ville" já está cadastrada  |
+| **DADO** que a função "Função Testes Ville" já está cadastrada  |
 | **E** abrimos a janela "Nova Função" e informamos o mesmo nome |
 | **QUANDO** clicarmos no botão "Salvar Função"                  |
 | **ENTÃO** o sistema deverá informar que a função já existe     |
@@ -461,7 +462,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/05a2cb17-c81f-45f1-a9be-05fa709d4f82) |
 
 ---
 
@@ -491,7 +492,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/cf5d18c4-dc37-4ca9-af67-469cb7f230d2) |
 
 ---
 
@@ -522,4 +523,4 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/d6fe6b79-b073-45ce-aec5-1291e7f3dd64) |

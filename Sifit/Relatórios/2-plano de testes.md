@@ -7,7 +7,7 @@
 - **Ambiente de Testes**: https://sifit.centrion.com.br/ até 23/10/2026. Em 24/10/2026, o professor pediu para continuar os testes em https://sifitalfa.centrion.com.br/
 - **Tipo de Teste**: Teste funcional manual
 - **Data do Documento**: 12/10/2026. Versão unificada do grupo em 12/11/2026.
-- **Responsáveis**: Maria Eduarda Pacheco Delazari, RA: 240017; Ville Nunes Figueiredo da Silva, RA: 14534; Keltton Felipe, RA: ...; Daniel Satel Pereira, RA: 14567; Rafael Colombo da Silva, RA: 14551
+- **Responsáveis**: Maria Eduarda Pacheco Delazari, RA: 240017; Ville Nunes Figueiredo da Silva, RA: 14534; Keltton Felipe Alves Silveira, RA: 14509; Daniel Satel Pereira, RA: 14567; Rafael Colombo da Silva, RA: 14551
 
 ---
 
@@ -40,10 +40,12 @@ Verificar manualmente os requisitos funcionais do Sifit: o login, a página inic
 - RF17 Produtos: cadastro de venda e de pontuação, alteração, inativação e exclusão
 - RF18 Fichas de anamnese: assistente de aplicação e listagem
 - RF19 Cadastros de apoio (9 telas): salvar com o formulário vazio
+- RF20 Grupos: busca, filtros, indicadores, cadastro, duplicidade, alteração, inativação e exclusão
+- RF21 Modelos de contrato: listagem, cadastro, variáveis do texto e pré-visualização
+- RF22 Box - Turmas: modalidades e turmas recorrentes (cadastro, validações, alteração e exclusão)
 
-**Incluído, ainda sem caso de teste (próximos cenários, RF20 a RF33):**
+**Incluído, ainda sem caso de teste (próximos cenários, RF23 a RF33):**
 
-- Grupos (RF20), Modelos de contrato (RF21) e Box - Turmas (RF22)
 - Grupos musculares (RF23), Modelos de ficha (RF24) e Configurações (RF25)
 - Relatórios (RF26), Importar avaliações (RF27) e Inteligência & Automação com Resultados IA (RF28)
 - Local de contas (RF29), Bancos e Banco recorrente (RF30), Categorias de conta a pagar (RF31) e Métricas do cliente (RF32)
@@ -96,7 +98,7 @@ Verificar manualmente os requisitos funcionais do Sifit: o login, a página inic
 - Os casos deste plano foram executados e têm vídeo ou print.
 - As falhas encontradas foram registradas no relatório de bugs, com vídeo.
 - O relatório final informa quantos casos passaram, quantos falharam e qual bug está ligado a cada um.
-- Situação atual: 126 dos 221 casos e 60 dos 105 bugs ainda aguardam o vídeo (ver o relatório final).
+- Situação atual: 85 dos 251 casos e 35 dos 115 bugs ainda aguardam o vídeo (ver o relatório final).
 
 ---
 
@@ -107,8 +109,8 @@ Verificar manualmente os requisitos funcionais do Sifit: o login, a página inic
 | Planejamento de Testes      | 07/10/2026  | 23/10/2026 |
 | Levantamento de requisitos  | 17/10/2026  | 22/10/2026 |
 | Criação de Casos de Teste   | 13/10/2026  | 25/10/2026 |
-| Execução dos Testes Manuais | 12/10/2026  | 28/10/2026 |
-| Registro e Report de Bugs   | 12/10/2026  | 28/10/2026 |
+| Execução dos Testes Manuais | 12/10/2026  | 15/11/2026 |
+| Registro e Report de Bugs   | 12/10/2026  | 15/11/2026 |
 | Unificação dos trabalhos    | 12/11/2026  | 13/11/2026 |
 | Encerramento e Evidências   | 12/10/2026  | Pendente   |
 
@@ -162,34 +164,36 @@ Quando houve diferença de prioridade entre os trabalhos, ficou a maior.
 
 ### 📌 11. **Riscos Identificados**
 
-| Risco                                                                             | Impacto | Mitigação                                                      |
-| --------------------------------------------------------------------------------- | ------- | -------------------------------------------------------------- |
-| A versão do sistema não foi registrada                                            | Médio   | Anotar a versão na próxima execução                            |
-| O erro no servidor no login inválido esconde a mensagem de credencial incorreta           | Alto    | Conferir a resposta no DevTools além do texto da tela |
-| Os testes de formulário vazio criaram 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12) | Médio | Excluir os registros depois de gravar os vídeos dos BUG-030, 031 e 032 |
-| A sessão se comporta de um jeito no retorno ao sistema e de outro no `/dashboard` | Alto    | Repetir os dois caminhos no mesmo vídeo, como no BUG-005       |
-| Ambiente compartilhado: outros usuários alteram ou excluem dados                  | Alto    | Usar registros de teste identificáveis pelo nome e não fixar IDs na documentação |
-| Execuções em datas e endereços diferentes deram resultados diferentes (C01-CT01, C01-CT02, C02-CT01, C04-CT04, C04-CT10, C06-CT07, C09-CT03) | Médio | O resultado de cada execução está descrito no caso. Repetir no Sifit Unialfa antes da entrega |
-| Os casos executados por automação de navegador não mostram o aviso nativo do navegador ("Preencha este campo.") | Médio | Conferir em vídeo os BUG-025, 026 e 027, que estão em revisão |
-| 126 casos e 60 bugs ainda sem vídeo                                               | Alto    | Gravar os vídeos seguindo o `5-Roteiro-de-videos.md` e os casos que ainda estão sem vídeo |
-| Ações que enviam mensagens ou cobranças reais (WhatsApp e Pagar.me)              | Alto    | Manter essas ações fora do escopo                              |
-| Dados pessoais reais na base                                                      | Alto    | Não publicar prints com nome ou CPF de terceiros (LGPD)        |
-| Testes limitados a um único usuário (perfil administrador)                        | Médio   | Documentar esse limite no escopo                               |
+| Risco                                                                                                                                        | Impacto | Mitigação                                                                                     |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | ------- | --------------------------------------------------------------------------------------------- |
+| A versão do sistema não foi registrada                                                                                                       | Médio   | Anotar a versão na próxima execução                                                           |
+| O erro no servidor no login inválido esconde a mensagem de credencial incorreta                                                              | Alto    | Conferir a resposta no DevTools além do texto da tela                                         |
+| Os testes de formulário vazio criaram 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12)        | Médio   | Excluir os registros depois de gravar os vídeos dos BUG-029, 030 e 031                        |
+| A sessão se comporta de um jeito no retorno ao sistema e de outro no `/dashboard`                                                            | Alto    | Repetir os dois caminhos no mesmo vídeo, como no BUG-005                                      |
+| Ambiente compartilhado: outros usuários alteram ou excluem dados                                                                             | Alto    | Usar registros de teste identificáveis pelo nome e não fixar IDs na documentação              |
+| Execuções em datas e endereços diferentes deram resultados diferentes (C01-CT01, C01-CT02, C02-CT01, C04-CT04, C04-CT10, C06-CT07, C09-CT03) | Médio   | O resultado de cada execução está descrito no caso. Repetir no Sifit Unialfa antes da entrega |
+| Os casos executados por automação de navegador não mostram o aviso nativo do navegador ("Preencha este campo.")                              | Médio   | Conferir em vídeo os BUG-025 e 026, que estão em revisão                                 |
+| 85 casos e 35 bugs ainda sem vídeo                                                                                                           | Alto    | Gravar os vídeos seguindo o `5-Roteiro-de-videos.md` e os casos que ainda estão sem vídeo     |
+| Ações que enviam mensagens ou cobranças reais (WhatsApp e Pagar.me)                                                                          | Alto    | Manter essas ações fora do escopo                                                             |
+| Dados pessoais reais na base                                                                                                                 | Alto    | Não publicar prints com nome ou CPF de terceiros (LGPD)                                       |
+| Testes limitados a um único usuário (perfil administrador)                                                                                   | Médio   | Documentar esse limite no escopo                                                              |
 
 ---
 
 ### 🧾 12. **Dados de Teste Criados no Ambiente**
 
-| Registro criado | Caso |
-| --------------- | ---- |
-| Cliente de teste (cadastrado e depois editado) | C04-CT12 e C04-CT10 |
-| Exercício de teste no grupo Peitoral | C14-CT10 |
-| Plano de teste | C05-CT07 |
-| Matrícula do cliente de teste no plano de teste | C06-CT07 |
-| Parcela gerada pela matrícula | C07-CT12 |
-| Check-in do cliente de teste | C09-CT03 |
-| Registros identificados pelo nome (por exemplo, "Produto Teste Ville") | Vários cenários |
+| Registro criado                                                                  | Caso                          |
+| -------------------------------------------------------------------------------- | ----------------------------- |
+| Cliente de teste (cadastrado e depois editado)                                   | C04-CT12 e C04-CT10           |
+| Exercício de teste no grupo Peitoral                                             | C14-CT10                      |
+| Plano de teste                                                                   | C05-CT07                      |
+| Matrícula do cliente de teste no plano de teste                                  | C06-CT07                      |
+| Parcela gerada pela matrícula                                                    | C07-CT12                      |
+| Check-in do cliente de teste                                                     | C09-CT03                      |
+| Registros identificados pelo nome (por exemplo, "Produto Teste Ville")           | Vários cenários               |
 | Registros em branco: Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12 | C19-CT04, C19-CT07 e C19-CT08 |
+| Grupos #8, #9 e #10 (não podem ser excluídos, BUG-105)                           | C20-CT05, C20-CT07 e C20-CT09 |
+| Modelos de contrato 8 e 9 (não aparecem na listagem, BUG-106)                    | C21-CT03 e C21-CT06           |
 
 Os códigos dos registros não ficam fixos neste documento, porque o ambiente é compartilhado e os dados são alterados por outras pessoas.
 
@@ -199,10 +203,10 @@ Os códigos dos registros não ficam fixos neste documento, porque o ambiente é
 
 Estes casos foram escritos, mas não foram executados, e não têm vídeo nem resultado. Por isso não entram nos cenários nem na conta do relatório final. Para entrar, cada um precisa ser executado, gravado e receber o próximo ID do cenário.
 
-| Caso proposto                                           | Requisito | Situação      |
-| :------------------------------------------------------ | :-------- | :------------ |
-| Prevenção de duplo clique no botão Entrar               | RF01      | Não executado |
-| Data de término anterior à data de início na matrícula  | RF06      | Não executado |
+| Caso proposto                                          | Requisito | Situação      |
+| :----------------------------------------------------- | :-------- | :------------ |
+| Prevenção de duplo clique no botão Entrar              | RF01      | Não executado |
+| Data de término anterior à data de início na matrícula | RF06      | Não executado |
 
 ---
 
@@ -210,7 +214,7 @@ Estes casos foram escritos, mas não foram executados, e não têm vídeo nem re
 
 - Plano de Testes
 - Análise de requisitos
-- Casos de teste (C01 a C19); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo ficam em `Cenarios de testes/Pendentes de evidencias`
+- Casos de teste (C01 a C22); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo ficam em `Cenarios de testes/Pendentes de evidencias`
 - Roteiro dos vídeos a gravar (`5-Roteiro-de-videos.md`)
 - Relatório de bugs com vídeos
 - Relatório final de execução

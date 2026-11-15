@@ -26,7 +26,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/f0c5a138-6479-449c-86fa-384bcea27ad5) |
 
 ---
 
@@ -43,7 +43,7 @@
 | **Passos**                                                                                                                             |
 | :------------------------------------------------------------------------------------------------------------------------------------- |
 | **DADO** que acessamos a tela de caixas                                                                                                |
-| **E** o filtro exibe o período de 01/10/2026 a 31/10/2026                                                                              |
+| **E** o filtro exibe o período de 01/11/2026 a 30/11/2026                                                                              |
 | **QUANDO** a listagem for carregada                                                                                                    |
 | **ENTÃO** deverão ser exibidos somente os caixas do período e o indicador "Registros no Periodo" deverá corresponder a essa quantidade |
 
@@ -57,7 +57,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/82036612-21df-45fd-9051-b8b1a767a3c2) |
 
 ---
 
@@ -73,7 +73,7 @@
 
 | **Passos**                                                                      |
 | :------------------------------------------------------------------------------ |
-| **DADO** que estamos na tela de caixas com o período de 01/10/2026 a 31/10/2026 |
+| **DADO** que estamos na tela de caixas com o período de 01/11/2026 a 30/11/2026 |
 | **QUANDO** clicarmos no botão "Buscar"                                          |
 | **ENTÃO** a listagem deverá exibir somente os caixas abertos no período         |
 
@@ -87,7 +87,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/6153e5a6-e72c-43f2-8b43-998e8b24d41e) |
 
 ---
 
@@ -118,7 +118,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/ace6baab-bb26-4f50-a1f0-2e5013acb247) |
 
 ---
 
@@ -148,7 +148,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/a8e5937f-abbc-4f1d-b15e-a3fad92d53a1) |
 
 ---
 
@@ -179,7 +179,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/00e2006c-624e-4e78-8105-99f9377c84b0) |
 
 ---
 
@@ -210,7 +210,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/b7d36398-27a6-40dc-9237-19bf4a1f07ba) |
 
 ---
 
@@ -241,7 +241,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/72e7c612-fc70-4d19-a5e1-5343c9fa0225) |
 
 ---
 
@@ -257,21 +257,21 @@
 
 | **Passos**                                                                                                          |
 | :------------------------------------------------------------------------------------------------------------------ |
-| **DADO** que os indicadores exibem 3 caixas abertos e 17 fechados                                                   |
+| **DADO** que os indicadores exibem 8 caixas abertos e 0 fechados                                                   |
 | **QUANDO** abrirmos um novo caixa                                                                                   |
-| **ENTÃO** o indicador "Caixas Abertos" deverá passar para 4 e o indicador "Caixas Fechados" deverá permanecer em 17 |
+| **ENTÃO** o indicador "Caixas Abertos" deverá passar para 9 e o indicador "Caixas Fechados" deverá permanecer em 0 |
 
 | **Critérios de aceitação**                                                    |
 | :---------------------------------------------------------------------------- |
 | Os indicadores devem refletir a quantidade real de caixas abertos e fechados. |
 
-| **Resultado da execução**                                       |
-| :-------------------------------------------------------------- |
-| **Falhou.** "Caixas Fechados" diminui em 1 a cada caixa aberto. |
+| **Resultado da execução**                                                  |
+| :------------------------------------------------------------------------- |
+| **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/00d3e0a6-48cb-491f-9335-fff62035d2cf) |
 
 ---
 
@@ -302,7 +302,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/aa6da264-81a2-49bb-8666-d1fd604e8d8a) |
 
 ---
 
@@ -333,4 +333,4 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/765bd31b-51f2-4c38-901c-69fd16c38677) |
