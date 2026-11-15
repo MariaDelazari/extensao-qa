@@ -143,8 +143,13 @@ Em 24/10/2026, os testes passaram para https://sifitalfa.centrion.com.br/. A dat
 | RF17      | Produtos                        | Baixa      |
 | RF18      | Fichas de anamnese              | Baixa      |
 | RF19      | Cadastros de apoio              | Média      |
+| RF20      | Grupos                          | Média      |
+| RF21      | Modelos de contrato             | Média      |
+| RF22      | Box - Turmas                    | Média      |
+| RF30      | Bancos e Banco recorrente       | Média      |
+| RF31      | Categorias de conta a pagar     | Baixa      |
 
-**Cenário de cada requisito:** o número do RF é o número do cenário e do arquivo. O RF01 é testado em C01 (`CT_RF01_ Login na plataforma.md`), o RF02 em C02, e assim por diante, até o RF19 em C19.
+**Cenário de cada requisito:** o número do RF é o número do cenário e do arquivo. O RF01 é testado em C01 (`CT_RF01_ Login na plataforma.md`), o RF02 em C02, e assim por diante, até o RF31 em C31.
 
 Quando houve diferença de prioridade entre os trabalhos, ficou a maior.
 

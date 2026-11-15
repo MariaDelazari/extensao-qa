@@ -417,3 +417,87 @@ Cada requisito tem o mesmo número do cenário e do arquivo de casos: o RF01 é 
 - Informar o campo obrigatório que falta.
 
 **Resultado esperado:** Nenhum registro em branco é criado e o campo obrigatório é indicado.
+
+---
+
+### 👥 RF20 - Grupos
+
+**Cenário de teste:** C20 (`CT_RF20_`)
+
+**Descrição:** O sistema deve permitir listar, buscar, cadastrar, alterar, inativar e excluir grupos.
+
+**Funcionalidades esperadas:**
+
+- Listar os grupos com os indicadores Grupos, Ativos, Mostrar Home e Caixa Externo, com busca e filtros.
+- Cadastrar grupo exigindo o nome, sem duplicidade.
+- Alterar o grupo e salvar o status "Inativo".
+- Excluir grupo após a confirmação.
+
+**Resultado esperado:** O grupo só é salvo com o nome, sem duplicidade, e as alterações de status e a exclusão ficam gravadas.
+
+---
+
+### 📝 RF21 - Modelos de contrato
+
+**Cenário de teste:** C21 (`CT_RF21_`)
+
+**Descrição:** O sistema deve permitir listar, cadastrar e pré-visualizar modelos de contrato com variáveis.
+
+**Funcionalidades esperadas:**
+
+- Listar os modelos de contrato cadastrados.
+- Cadastrar modelo exigindo o título e o texto.
+- Inserir variáveis (ex.: nome do cliente) no texto do contrato.
+- Pré-visualizar o contrato com as variáveis preenchidas.
+
+**Resultado esperado:** O modelo só é salvo com título e texto e aparece na listagem.
+
+---
+
+### 🏋️ RF22 - Box - Turmas
+
+**Cenário de teste:** C22 (`CT_RF22_`)
+
+**Descrição:** O sistema deve permitir manter as modalidades e as turmas recorrentes do Box (SifitBox).
+
+**Funcionalidades esperadas:**
+
+- Cadastrar modalidade exigindo o nome, sem duplicidade, e alterá-la.
+- Cadastrar turma recorrente com nome, modalidade ativa, horário (hora final maior que a inicial), ao menos um dia da semana e vagas maiores que zero.
+- Alterar a turma e excluí-la após a confirmação.
+
+**Resultado esperado:** A modalidade e a turma só são salvas com dados válidos, e o sistema orienta o que falta.
+
+---
+
+### 🏦 RF30 - Bancos e Banco recorrente
+
+**Cenário de teste:** C30 (`CT_RF30_`)
+
+**Descrição:** O sistema deve permitir manter os bancos usados no financeiro. As telas Bancos (`/bancos`) e Banco Recorrente (`/banco-recorrente`) não estão no menu e só abrem pelo link.
+
+**Funcionalidades esperadas:**
+
+- Acessar as telas pelo menu.
+- Listar os bancos cadastrados.
+- Cadastrar banco exigindo o nome, sem duplicidade.
+- Visualizar, alterar e excluir o banco após a confirmação, sem afetar outros cadastros.
+
+**Resultado esperado:** O banco só é salvo com o nome, sem duplicidade, e a exclusão remove somente o banco escolhido.
+
+---
+
+### 🏷️ RF31 - Categorias de conta a pagar
+
+**Cenário de teste:** C31 (`CT_RF31_`)
+
+**Descrição:** O sistema deve permitir manter as categorias usadas nas contas a pagar. A tela (`/categorias-conta-pagar`) não está no menu e só abre pelo link.
+
+**Funcionalidades esperadas:**
+
+- Acessar a tela pelo menu.
+- Listar as categorias cadastradas.
+- Cadastrar categoria exigindo o nome, sem duplicidade.
+- Oferecer a categoria cadastrada no campo "Categoria" de Contas a Pagar → Nova Conta.
+
+**Resultado esperado:** A categoria só é salva com o nome, sem duplicidade, aparece na listagem e fica disponível na conta a pagar.
