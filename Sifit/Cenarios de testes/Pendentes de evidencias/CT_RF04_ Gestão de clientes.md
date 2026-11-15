@@ -485,10 +485,10 @@
 | :---------------------------------------------------- |
 | O campo Código recusa caracteres que não são números. |
 
-| **Resultado da execução**                            |
-| :--------------------------------------------------- |
-| **Falhou.** O campo aceitou e manteve o texto "abc". |
+| **Resultado da execução**                                                                                                            |
+| :----------------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** O campo aceita "abc" e, ao clicar em "Buscar", o sistema exibe "Erro no servidor - Erro interno inesperado." (erro 500). |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/545c2000-bc02-4893-bca4-cb1a41468cd0) |

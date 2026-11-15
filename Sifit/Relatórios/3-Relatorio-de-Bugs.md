@@ -634,9 +634,9 @@
 
 ### 🐞 **Bug 17: Campo Código da busca de clientes aceita letras**
 
-| **ID**  | **Descrição**                                                                     |
-| ------- | --------------------------------------------------------------------------------- |
-| BUG-017 | O campo Código da busca de clientes aceita letras, embora o código seja numérico. |
+| **ID**  | **Descrição**                                                                                                                                                                                     |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-017 | O campo Código da busca de clientes aceita letras, embora o código seja numérico. Ao buscar "abc", o sistema exibe "Erro no servidor - Erro interno inesperado." e a requisição retorna erro 500. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -647,10 +647,11 @@
 | 1. Entrar no Sifit Unialfa.          |
 | 2. Abrir "Clientes" (`/clientes`).   |
 | 3. Digitar "abc" no campo Código.    |
+| 4. Clicar em "Buscar".               |
 
-|    **Comportamento Esperado**    |   **Comportamento Obtido**    |
-| :------------------------------: | :---------------------------: |
-| O campo deve aceitar só números. | O campo mantém o texto "abc". |
+|                         **Comportamento Esperado**                         |                      **Comportamento Obtido**                       |
+| :------------------------------------------------------------------------: | :-----------------------------------------------------------------: |
+| O campo deve aceitar só números e a busca não deve gerar erro no servidor. | O campo aceita "abc" e a busca exibe "Erro no servidor" (erro 500). |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -658,15 +659,15 @@
 | https://sifitalfa.centrion.com.br/ |
 | Desktop Ubuntu 26.04 LTS           |
 | Google Chrome 150.0.7871.46        |
-| 28/10/2026                         |
+| 15/11/2026                         |
 
 | **Funcionalidade Afetada**  |       **Caso de Teste Relacionado**       |
 | :-------------------------: | :---------------------------------------: |
 | Clientes / Busca por código | C04-CT16: Digitar letras no campo Código. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:17](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:17](https://jam.dev/c/545c2000-bc02-4893-bca4-cb1a41468cd0) |
 
 ---
 
@@ -943,13 +944,13 @@
 
 ### 🐞 **Bug 25: Cadastro de Planos não avisa nada ao salvar vazio**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                |
-| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-025 | Ao clicar em "Salvar Plano" com o formulário vazio, o sistema não mostra nenhuma mensagem e o cadastro não é salvo. Este registro está em revisão: veio de uma execução automatizada em 28/10/2026, sem vídeo, e em outras execuções o navegador mostrou o aviso "Preencha este campo." ao salvar o mesmo formulário vazio. Se o vídeo do roteiro mostrar o aviso, o bug deve ser cancelado. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                           |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-025 | Ao clicar em "Salvar Plano" com o formulário vazio, o sistema não mostraria nenhuma mensagem. Bug cancelado em 15/11/2026: o vídeo mostra o aviso do navegador "Preencha este campo." no campo Nome e o cadastro não é enviado. O registro veio de uma execução automatizada (28/10/2026), que não captura o aviso nativo do navegador. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|         Média         |           Média            | Em revisão |
+|         Média         |           Média            | Cancelado  |
 
 | **Passo a passo para simular o bug**             |
 | ------------------------------------------------ |
@@ -958,9 +959,9 @@
 | 3. Clicar em "Novo Plano".                       |
 | 4. Sem preencher nada, clicar em "Salvar Plano". |
 
-|               **Comportamento Esperado**               |                                   **Comportamento Obtido**                                    |
-| :----------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
-| O sistema deve informar o campo obrigatório que falta. | Nada acontece e nenhuma mensagem aparece. A pessoa não sabe por que o cadastro não foi salvo. |
+|               **Comportamento Esperado**               |                                         **Comportamento Obtido**                                         |
+| :----------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
+| O sistema deve informar o campo obrigatório que falta. | O navegador mostra "Preencha este campo." no campo Nome e o cadastro não é enviado (bug não confirmado). |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -968,15 +969,15 @@
 | https://sifitalfa.centrion.com.br/ |
 | Desktop Ubuntu 26.04 LTS           |
 | Google Chrome 150.0.7871.46        |
-| 28/10/2026                         |
+| 15/11/2026                         |
 
 | **Funcionalidade Afetada** |            **Caso de Teste Relacionado**            |
 | :------------------------: | :-------------------------------------------------: |
 |     Planos / Cadastro      | C05-CT12: Cadastro de plano com o formulário vazio. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:25](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:25](https://jam.dev/c/0d9b898b-bccd-4ad6-a5f8-662bc2b52f43) |
 
 ---
 
@@ -3472,45 +3473,48 @@
 
 ### 🐞 **Bug 93: Anamneses aplicadas não aparecem na listagem**
 
-| **ID**  | **Descrição**                                                                                                                                                                           |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-093 | Após finalizar a anamnese do aluno Steven Kaiki (o assistente termina sem erro), a tela de fichas de anamnese continua exibindo "Nenhuma ficha encontrada" e todos os indicadores em 0. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                          |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| BUG-093 | Após finalizar a anamnese do aluno Teste (a API responde 201), a tela de fichas de anamnese continua exibindo "Nenhuma ficha encontrada" e todos os indicadores em 0. No DevTools, a lista é recarregada com o "id" vazio e volta sem nenhum registro. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
 |         Alta          |            Alta            |   Aberto   |
 
-| **Passo a passo para simular o bug**                       |
-| ---------------------------------------------------------- |
-| 1. Acessar "Fichas Anamnese" e clicar em "Nova Anamnese".  |
-| 2. Selecionar o aluno "Steven Kaiki" e o modelo "Triplet". |
-| 3. Clicar em "Iniciar" e em "Finalizar Anamnese".          |
-| 4. Verificar a listagem e os indicadores.                  |
+| **Passo a passo para simular o bug**                                                         |
+| -------------------------------------------------------------------------------------------- |
+| 1. Acessar "Fichas Anamnese" e clicar em "Nova Anamnese".                                    |
+| 2. Buscar "teste", selecionar o aluno "Teste" e o modelo "Manual SIFIT Anamnese Inicial".    |
+| 3. Clicar em "Iniciar", responder a pergunta, clicar em "Revisar" e em "Finalizar Anamnese". |
+| 4. Verificar a listagem e os indicadores.                                                    |
 
 |                         **Comportamento Esperado**                          |                           **Comportamento Obtido**                            |
 | :-------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
 | A anamnese deve constar na listagem e os indicadores devem ser atualizados. | A listagem exibe "Nenhuma ficha encontrada" e os indicadores permanecem em 0. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
 
 |  **Funcionalidade Afetada**   |        **Caso de Teste Relacionado**        |
 | :---------------------------: | :-----------------------------------------: |
 | Fichas de Anamnese / Listagem | C18-CT07: Listagem das anamneses aplicadas. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:93](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:93](https://jam.dev/c/5f3df121-2ce5-4546-9adb-ecb7e73ea94a) |
 
 ---
 
 ### 🐞 **Bug 94: Perguntas do modelo de anamnese não são exibidas**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                  |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-094 | O modelo "Triplet" informa "1 perguntas", mas ao clicar em "Iniciar" o assistente vai direto para a etapa "Revisar e Finalizar", sem exibir a pergunta. A anamnese é finalizada e gravada com a lista de respostas vazia e status "concluida". |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                      |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-094 | O modelo "Triplet" informa "1 perguntas", mas ao clicar em "Iniciar" o assistente vai direto para a etapa "Revisar e Finalizar", sem exibir a pergunta. A anamnese é finalizada e gravada com a lista de respostas vazia e status "concluida". No DevTools, o modelo é carregado com a lista de perguntas vazia, embora o card informe 1 pergunta. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3519,7 +3523,7 @@
 | **Passo a passo para simular o bug**                                 |
 | -------------------------------------------------------------------- |
 | 1. Acessar "Fichas Anamnese" e clicar em "Nova Anamnese".            |
-| 2. Selecionar o aluno "Steven Kaiki".                                |
+| 2. Selecionar o aluno "Teste".                                       |
 | 3. Selecionar o modelo "Triplet" (1 pergunta) e clicar em "Iniciar". |
 | 4. Verificar se a pergunta é exibida.                                |
 
@@ -3527,26 +3531,29 @@
 | :-------------------------------------------------------------------: | :-----------------------------------------------------------------: |
 | A pergunta do modelo deve ser exibida para resposta antes da revisão. | O assistente pula para "Revisar e Finalizar" sem exibir a pergunta. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
 
 |   **Funcionalidade Afetada**   |        **Caso de Teste Relacionado**        |
 | :----------------------------: | :-----------------------------------------: |
 | Fichas de Anamnese / Aplicação | C18-CT05: Exibição das perguntas do modelo. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:94](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:94](https://jam.dev/c/f7962e88-0797-496a-ae36-b2783ec59583) |
 
 ---
 
 ### 🐞 **Bug 95: Assistente de anamnese avança sem aluno e falha com erro interno**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                           |
-| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-095 | Ao clicar em "Próxima" sem selecionar aluno, o assistente avança para a escolha do modelo. Ao concluir o fluxo, o sistema exibe "Erro no servidor - Erro interno inesperado.", porque a anamnese foi enviada sem aluno. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                        |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-095 | Ao clicar em "Próxima" sem selecionar aluno, o assistente avança para a escolha do modelo. Ao concluir o fluxo, o sistema exibe "Erro no servidor - Erro interno inesperado.", porque a anamnese foi enviada sem aluno. No DevTools, a requisição de aplicar a anamnese vai sem o campo do aluno e retorna erro 500. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3563,18 +3570,21 @@
 | :------------------------------------------------------------------------------: | :-----------------------------------------------------------: |
 | O sistema deve impedir o avanço e informar que é necessário selecionar um aluno. | O assistente avança e a finalização exibe "Erro no servidor". |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
 
 |   **Funcionalidade Afetada**   |      **Caso de Teste Relacionado**      |
 | :----------------------------: | :-------------------------------------: |
 | Fichas de Anamnese / Aplicação | C18-CT02: Avançar sem selecionar aluno. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:95](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:95](https://jam.dev/c/44970843-eb49-4f00-af64-7d96b50732bb) |
 
 ---
 
@@ -3591,25 +3601,28 @@
 | **Passo a passo para simular o bug**                      |
 | --------------------------------------------------------- |
 | 1. Acessar "Fichas Anamnese" e clicar em "Nova Anamnese". |
-| 2. Selecionar o aluno "Steven Kaiki".                     |
+| 2. Selecionar o aluno "Teste".                            |
 | 3. Observar o texto da etapa "Selecionar Modelo".         |
 
-|                            **Comportamento Esperado**                            |        **Comportamento Obtido**        |
-| :------------------------------------------------------------------------------: | :------------------------------------: |
-| O texto deve exibir "Escolha o modelo de anamnese a aplicar para Steven Kaiki.". | O texto é exibido sem o nome do aluno. |
+|                        **Comportamento Esperado**                         |        **Comportamento Obtido**        |
+| :-----------------------------------------------------------------------: | :------------------------------------: |
+| O texto deve exibir "Escolha o modelo de anamnese a aplicar para Teste.". | O texto é exibido sem o nome do aluno. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
 
 |   **Funcionalidade Afetada**   |           **Caso de Teste Relacionado**           |
 | :----------------------------: | :-----------------------------------------------: |
 | Fichas de Anamnese / Aplicação | C18-CT04: Exibição do aluno na escolha do modelo. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:96](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:96](https://jam.dev/c/f7962e88-0797-496a-ae36-b2783ec59583) |
 
 ---
 
@@ -4306,7 +4319,7 @@
 
 ---
 
-### 🐞 **Bug 125: Janela "Alterar Data / Hora" aceita data e hora sem formato**
+### 🐞 **Bug 115: Janela "Alterar Data / Hora" aceita data e hora sem formato**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                         |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -4342,7 +4355,7 @@
 
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
-| [BUG:105](https://jam.dev/c/02ee32cf-7b68-4011-9cd9-d0faaba8470e) |
+| [BUG:115](https://jam.dev/c/e7b3f5ff-5bd1-4fde-be72-0c33ebfac152) |
 
 ---
 
