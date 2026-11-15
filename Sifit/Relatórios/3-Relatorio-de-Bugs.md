@@ -673,9 +673,9 @@
 
 ### 🐞 **Bug 18: Matrículas ativas pertencem a clientes inativos**
 
-| **ID**  | **Descrição**                                                                                                                                                           |
-| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-018 | A tela de Matrículas mostra 3 matrículas ativas, mas a tela de Clientes mostra só 1 cliente ativo. Os clientes das outras duas matrículas ativas aparecem como INATIVO. |
+| **ID**  | **Descrição**                                                                                                                                                                         |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-018 | A tela de Matrículas mostra 5 matrículas ativas, entre elas 242 (Marcelo Longo Zandonadi) e 241 (Rafaela Andrade), mas na tela de Clientes esses dois clientes aparecem como INATIVO. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -688,9 +688,9 @@
 | 3. Abrir "Clientes" (`/clientes`) com Status "Ativo" e depois com "Todos".     |
 | 4. Procurar os nomes das matrículas ativas.                                    |
 
-|                                                      **Comportamento Esperado**                                                       |                                                                                                                  **Comportamento Obtido**                                                                                                                  |
-| :-----------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Cada matrícula ativa deve pertencer a um cliente ativo, e a quantidade de clientes ativos deve ser coerente com as matrículas ativas. | Matrículas ativas: 242 (Marcelo Longo Zandonadi), 241 (Rafaela Andrade) e 240 (Lila). Clientes ativos: apenas 408 (Lila). Os cadastros de Marcelo Longo Zandonadi e Rafaela Andrade aparecem como INATIVO. A Página Inicial também mostra 1 cliente ativo. |
+|                                                      **Comportamento Esperado**                                                       |                                                                                         **Comportamento Obtido**                                                                                          |
+| :-----------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Cada matrícula ativa deve pertencer a um cliente ativo, e a quantidade de clientes ativos deve ser coerente com as matrículas ativas. | Matrículas ativas: 245, 244, 243, 242 (Marcelo Longo Zandonadi) e 241 (Rafaela Andrade). No filtro Status "Inativo" de Clientes, Marcelo Longo Zandonadi (2) e Rafaela Andrade (4) aparecem como INATIVO. |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -698,15 +698,15 @@
 | https://sifitalfa.centrion.com.br/ |
 | Desktop Ubuntu 26.04 LTS           |
 | Google Chrome 150.0.7871.46        |
-| 28/10/2026                         |
+| 15/11/2026                         |
 
 | **Funcionalidade Afetada** |                **Caso de Teste Relacionado**                 |
 | :------------------------: | :----------------------------------------------------------: |
 |   Matrículas / Clientes    | C06-CT14: Conferir matrículas ativas com os clientes ativos. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:18](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:18](https://jam.dev/c/cc19bcc5-2551-41a2-8604-18c219d92dc2) |
 
 ---
 
@@ -1086,15 +1086,15 @@
 | https://sifitalfa.centrion.com.br/ |
 | Desktop Ubuntu 26.04 LTS           |
 | Google Chrome 150.0.7871.46        |
-| 28/10/2026                         |
+| 15/11/2026                         |
 
 | **Funcionalidade Afetada** |           **Caso de Teste Relacionado**           |
 | :------------------------: | :-----------------------------------------------: |
 |    Enquetes / Cadastro     | C19-CT03: Salvar Enquetes com o formulário vazio. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:28](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:28](https://jam.dev/c/dd7d65bf-73c2-44c1-90b5-4c508e583251) |
 
 ---
 
@@ -1118,7 +1118,7 @@
 
 |              **Comportamento Esperado**              |                                                     **Comportamento Obtido**                                                     |
 | :--------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: |
-| O sistema deve exigir o nome e não criar o registro. | O formulário vazio é salvo e a lista passa de 4 para 5 registros, com a linha 5 sem nome. Nenhuma mensagem de validação aparece. |
+| O sistema deve exigir o nome e não criar o registro. | O formulário vazio é salvo e a lista passa de 7 para 8 registros, com a linha 8 sem nome. Nenhuma mensagem de validação aparece. |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -1126,15 +1126,15 @@
 | https://sifitalfa.centrion.com.br/ |
 | Desktop Ubuntu 26.04 LTS           |
 | Google Chrome 150.0.7871.46        |
-| 28/10/2026                         |
+| 15/11/2026                         |
 
 | **Funcionalidade Afetada** |            **Caso de Teste Relacionado**            |
 | :------------------------: | :-------------------------------------------------: |
 |   Atividades / Cadastro    | C19-CT04: Salvar Atividades com o formulário vazio. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:29](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:29](https://jam.dev/c/38fffd95-5da2-45ca-8f34-3494850a1658) |
 
 ---
 
@@ -1156,9 +1156,9 @@
 | 4. Sem preencher nada, clicar em "Salvar".            |
 | 5. Olhar a lista.                                     |
 
-|              **Comportamento Esperado**              |                                                    **Comportamento Obtido**                                                     |
-| :--------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------: |
-| O sistema deve exigir o nome e não criar o registro. | O formulário vazio é salvo e a lista passa de 0 para 1 registro, com a linha 1 sem nome. Nenhuma mensagem de validação aparece. |
+|              **Comportamento Esperado**              |                                                     **Comportamento Obtido**                                                      |
+| :--------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: |
+| O sistema deve exigir o nome e não criar o registro. | O formulário vazio é salvo e a lista passa de 7 para 8 registros, com o código 9 sem nome. Nenhuma mensagem de validação aparece. |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -1166,15 +1166,15 @@
 | https://sifitalfa.centrion.com.br/ |
 | Desktop Ubuntu 26.04 LTS           |
 | Google Chrome 150.0.7871.46        |
-| 28/10/2026                         |
+| 15/11/2026                         |
 
 |   **Funcionalidade Afetada**   |                **Caso de Teste Relacionado**                 |
 | :----------------------------: | :----------------------------------------------------------: |
 | Objetivos de Treino / Cadastro | C19-CT07: Salvar Objetivos de Treino com o formulário vazio. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:30](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:30](https://jam.dev/c/c9c3d7ea-9cca-4eaa-b867-a3699a4fd485) |
 
 ---
 
@@ -1196,9 +1196,9 @@
 | 4. Sem preencher nada, clicar em "Salvar".          |
 | 5. Olhar a lista.                                   |
 
-|              **Comportamento Esperado**              |                                                      **Comportamento Obtido**                                                       |
-| :--------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------: |
-| O sistema deve exigir o nome e não criar o registro. | O formulário vazio é salvo e a lista passa de 10 para 11 registros, com a linha 12 sem nome. Nenhuma mensagem de validação aparece. |
+|              **Comportamento Esperado**              |                                                       **Comportamento Obtido**                                                       |
+| :--------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------: |
+| O sistema deve exigir o nome e não criar o registro. | O formulário vazio é salvo e a lista passa de 19 para 20 registros, com o código 25 sem nome. Nenhuma mensagem de validação aparece. |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -1206,15 +1206,15 @@
 | https://sifitalfa.centrion.com.br/ |
 | Desktop Ubuntu 26.04 LTS           |
 | Google Chrome 150.0.7871.46        |
-| 28/10/2026                         |
+| 15/11/2026                         |
 
 |  **Funcionalidade Afetada**   |                **Caso de Teste Relacionado**                |
 | :---------------------------: | :---------------------------------------------------------: |
 | Tipos de Pagamento / Cadastro | C19-CT08: Salvar Tipos de Pagamento com o formulário vazio. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:31](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:31](https://jam.dev/c/74ea4701-c61e-48eb-863f-a931c5d5d9b8) |
 
 ---
 
@@ -1235,9 +1235,9 @@
 | 3. Clicar em "Nova Pergunta".                             |
 | 4. Sem preencher nada, clicar em "Salvar".                |
 
-|                          **Comportamento Esperado**                          |          **Comportamento Obtido**           |
-| :--------------------------------------------------------------------------: | :-----------------------------------------: |
-| O sistema deve informar o campo obrigatório que falta, sem erro de servidor. | A tela mostra só "Erro ao salvar pergunta". |
+|                          **Comportamento Esperado**                          |                                         **Comportamento Obtido**                                         |
+| :--------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
+| O sistema deve informar o campo obrigatório que falta, sem erro de servidor. | A tela mostra só "Erro ao salvar pergunta" e a requisição retorna erro 500 ("Erro interno inesperado."). |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -1245,15 +1245,15 @@
 | https://sifitalfa.centrion.com.br/ |
 | Desktop Ubuntu 26.04 LTS           |
 | Google Chrome 150.0.7871.46        |
-| 28/10/2026                         |
+| 15/11/2026                         |
 
 |    **Funcionalidade Afetada**    |                 **Caso de Teste Relacionado**                  |
 | :------------------------------: | :------------------------------------------------------------: |
 | Perguntas de Anamnese / Cadastro | C19-CT09: Salvar Perguntas de Anamnese com o formulário vazio. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:32](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:32](https://jam.dev/c/841a6835-d43d-4ca1-82bc-772d6587b1e6) |
 
 ---
 
@@ -4969,3 +4969,81 @@
 |                          **Evidência(s)**                         |
 | :---------------------------------------------------------------: |
 | [BUG:132](https://jam.dev/c/4f5e6f3b-1d3d-4ecf-88a2-40e3019b5a2c) |
+
+---
+
+### 🐞 **Bug 133: Bandeira cadastrada não aparece na listagem**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                    |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-133 | Ao salvar uma bandeira de cartão com nome, taxas e parcela, o sistema responde que a bandeira foi criada (201), mas a listagem continua com "Nenhuma bandeira encontrada.", mesmo depois de recarregar a página. No DevTools, a lista é carregada e volta vazia. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|          Alta         |            Alta            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                                   |
+| ------------------------------------------------------------------------------------------------------ |
+| 1. Entrar no Sifit Unialfa e abrir "Bandeiras" (`/bandeiras`).                                         |
+| 2. Clicar em "Nova Bandeira".                                                                          |
+| 3. Informar o nome "Bandeira", a taxa adicional 10,00, a taxa débito 5,00 e a parcela 1 com taxa 2,00. |
+| 4. Clicar em "Salvar" e olhar a listagem.                                                              |
+
+|         **Comportamento Esperado**          |                      **Comportamento Obtido**                       |
+| :-----------------------------------------: | :-----------------------------------------------------------------: |
+| A bandeira salva deve aparecer na listagem. | A listagem mostra "Nenhuma bandeira encontrada." e "0 registro(s)". |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
+
+|   **Funcionalidade Afetada**    |                **Caso de Teste Relacionado**                |
+| :-----------------------------: | :---------------------------------------------------------: |
+| Bandeiras / Cadastro e listagem | C19-CT10: Cadastro de bandeira de cartão com dados válidos. |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:133](https://jam.dev/c/cbf1a04a-129c-4ee1-a09d-791c326cbc26) |
+
+---
+
+### 🐞 **Bug 134: Pontuação aceita data final anterior à inicial**
+
+| **ID**  | **Descrição**                                                                                                                           |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-134 | O cadastro de pontuação aceita e salva um período com a data final anterior à data inicial (30/11/2026 a 02/11/2026), sem nenhum aviso. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                      |
+| ----------------------------------------------------------------------------------------- |
+| 1. Entrar no Sifit Unialfa e abrir "Pontuação" (`/pontuacao`).                            |
+| 2. Clicar em "Nova Pontuação".                                                            |
+| 3. Informar o nome "Primeiro lugar", a data inicial 30/11/2026 e a data final 02/11/2026. |
+| 4. Clicar em "Salvar" e olhar a listagem.                                                 |
+
+|                                      **Comportamento Esperado**                                      |                           **Comportamento Obtido**                           |
+| :--------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------: |
+| O sistema deve impedir o período invertido e informar que a data final deve ser posterior à inicial. | A pontuação é salva e a listagem mostra o período "2026-11-30 — 2026-11-02". |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** |                   **Caso de Teste Relacionado**                    |
+| :------------------------: | :----------------------------------------------------------------: |
+|    Pontuação / Cadastro    | C19-CT12: Cadastro de pontuação com data final anterior à inicial. |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:134](https://jam.dev/c/833e99ee-b5f7-4568-88fd-e40b7b818da6) |

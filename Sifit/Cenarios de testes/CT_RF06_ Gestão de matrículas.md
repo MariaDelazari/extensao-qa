@@ -424,13 +424,13 @@
 | :-------------------------------------------------------------------------- |
 | A quantidade e os nomes dos clientes ativos batem com as matrículas ativas. |
 
-| **Resultado da execução**                                                                                                                                                                                                                      |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** Matrículas tem 3 ativas (242 - Marcelo Longo Zandonadi, 241 - Rafaela Andrade, 240 - Lila). Clientes com Status "Ativo" mostra só 1 (408 - Lila); os cadastros de Marcelo Longo Zandonadi e Rafaela Andrade aparecem como INATIVO. |
+| **Resultado da execução**                                                                                                                                                                                                                          |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** Em 15/11/2026, Matrículas mostra 5 ativas, entre elas 242 - Marcelo Longo Zandonadi e 241 - Rafaela Andrade. Em Clientes, esses dois cadastros aparecem como INATIVO (filtro Status "Inativo"), e o card de clientes ativos mostra 13. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/3743daa3-da02-4939-bd85-1cbf634c797d) |
 
 ---
 

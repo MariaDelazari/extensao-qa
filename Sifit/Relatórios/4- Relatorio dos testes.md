@@ -48,7 +48,7 @@ Evidências: 178 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados co
 | RF16      | Colaboradores e funções         | 17             | 11             | 6                | BUG-024, BUG-086, BUG-087, BUG-088, BUG-089                                                                |
 | RF17      | Produtos                        | 11             | 7              | 4                | BUG-027, BUG-090, BUG-091, BUG-092                                                                         |
 | RF18      | Fichas de anamnese              | 8              | 3              | 4                | BUG-093, BUG-094, BUG-095, BUG-096                                                                         |
-| RF19      | Cadastros de apoio              | 9              | 4              | 5                | BUG-028, BUG-029, BUG-030, BUG-031, BUG-032                                                                |
+| RF19      | Cadastros de apoio              | 12             | 5              | 7                | BUG-028, BUG-029, BUG-030, BUG-031, BUG-032, BUG-133, BUG-134                                              |
 | RF20      | Grupos                          | 10             | 7              | 3                | BUG-103, BUG-104, BUG-105                                                                                  |
 | RF21      | Modelos de contrato             | 6              | 3              | 3                | BUG-106, BUG-107                                                                                           |
 | RF22      | Box - Turmas                    | 13             | 5              | 8                | BUG-108, BUG-109, BUG-110, BUG-111, BUG-112, BUG-113, BUG-114                                              |
@@ -185,6 +185,8 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, e o BUG-126 em RF30 
 | BUG-130 | Listagem de categorias de conta a pagar aparece vazia                               | Alta       | Aberto     |
 | BUG-131 | Categoria de conta a pagar é salva sem nome                                         | Baixa      | Aberto     |
 | BUG-132 | Categoria de conta a pagar duplicada é aceita                                       | Baixa      | Aberto     |
+| BUG-133 | Bandeira cadastrada não aparece na listagem                                         | Alta       | Aberto     |
+| BUG-134 | Pontuação aceita data final anterior à inicial                                      | Média      | Aberto     |
 
 ---
 
@@ -198,8 +200,8 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, e o BUG-126 em RF30 
 **Severidade dos bugs abertos:**
 
 - Crítica: 3
-- Alta: 24
-- Média: 55
+- Alta: 25
+- Média: 56
 - Baixa: 38
 
 **Em revisão:** 1 (BUG-026). **Cancelado:** 1 (BUG-025, o vídeo mostrou o aviso "Preencha este campo.").
@@ -258,7 +260,7 @@ No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado.
 
 - Plano de Testes
 - Análise de requisitos
-- Casos de teste (C01 a C22, C30 e C31); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C06, C10, C13, C15, C19 e C33)
+- Casos de teste (C01 a C22, C30 e C31); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C10, C13, C15 e C33)
 - Relatório de bugs, com o vídeo da falha
 - Vídeos no Jam e prints na pasta `Sifit/Evidencias`
 - Roteiro dos vídeos a gravar (`5-Roteiro-de-videos.md`)
