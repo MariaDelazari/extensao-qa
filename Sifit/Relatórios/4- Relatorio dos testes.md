@@ -16,13 +16,13 @@
 
 | Total de Casos de Teste | Casos Passaram | Casos Falharam | Bugs Registrados |
 | ----------------------- | -------------- | -------------- | ---------------- |
-| 221                     | 117            | 104            | 103              |
+| 221                     | 118            | 103            | 102              |
 
-Os 221 casos estão nos cenários C01 a C19. Um caso falhou quando existe um bug aberto apontando para ele: 104 falharam e 117 passaram. 117 + 104 = 221. O relatório de bugs tem 103 bugs: 101 abertos e 2 em revisão (BUG-025 e BUG-026), que não fazem nenhum caso falhar.
+Os 221 casos estão nos cenários C01 a C19. Um caso falhou quando existe um bug aberto apontando para ele: 103 falharam e 118 passaram. 118 + 103 = 221. O relatório de bugs tem 102 bugs: 100 abertos e 2 em revisão (BUG-025 e BUG-026), que não fazem nenhum caso falhar.
 
 Alguns casos foram executados mais de uma vez, em datas ou endereços diferentes. O resultado do caso junta essas execuções, e a evidência é o vídeo que mostra o resultado registrado. Nos casos C01-CT01, C01-CT02, C02-CT01, C04-CT04, C04-CT10, C06-CT07 e C09-CT03, uma execução passou e outra encontrou a falha; o caso conta como falhou.
 
-Evidências: 95 casos têm vídeo ou print, e 126 aguardam o vídeo (marcados com `[Vídeo](coloque o link do video aqui)`). Dos 103 bugs, 60 têm vídeo ou print, e 43 aguardam o vídeo (`[BUG:NN](coloque o link do video aqui)`). O roteiro está em `5-Roteiro-de-videos.md`.
+Evidências: 136 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados com `[Vídeo](coloque o link do video aqui)`). Dos 102 bugs, 66 têm vídeo ou print, e 36 aguardam o vídeo (`[BUG:NN](coloque o link do video aqui)`). O roteiro está em `5-Roteiro-de-videos.md`.
 
 ---
 
@@ -31,23 +31,23 @@ Evidências: 95 casos têm vídeo ou print, e 126 aguardam o vídeo (marcados co
 | Código RF | Módulo                          | Casos Testados | Casos Passaram | Bugs encontrados | Bug(s) Associado(s)                                                                                        |
 | --------- | ------------------------------- | -------------- | -------------- | ---------------- | ---------------------------------------------------------------------------------------------------------- |
 | RF01      | Login na plataforma             | 9              | 2              | 8                | BUG-001, BUG-002, BUG-003, BUG-004, BUG-005, BUG-006, BUG-007, BUG-011                                     |
-| RF02      | Página inicial do dashboard     | 10             | 3              | 9                | BUG-007, BUG-008, BUG-009, BUG-010, BUG-014, BUG-015, BUG-033, BUG-034, BUG-098                            |
+| RF02      | Página inicial do dashboard     | 10             | 3              | 9                | BUG-007, BUG-008, BUG-009, BUG-010, BUG-014, BUG-015, BUG-033, BUG-034, BUG-097                            |
 | RF03      | Dashboard                       | 4              | 1              | 3                | BUG-012, BUG-013, BUG-014                                                                                  |
-| RF04      | Gestão de clientes              | 16             | 4              | 12               | BUG-016, BUG-017, BUG-035, BUG-036, BUG-037, BUG-038, BUG-039, BUG-040, BUG-099, BUG-100, BUG-101, BUG-102 |
+| RF04      | Gestão de clientes              | 16             | 4              | 12               | BUG-016, BUG-017, BUG-035, BUG-036, BUG-037, BUG-038, BUG-039, BUG-040, BUG-098, BUG-099, BUG-100, BUG-101 |
 | RF05      | Gestão de planos                | 14             | 8              | 6                | BUG-041, BUG-042, BUG-043, BUG-044, BUG-045, BUG-046 (em revisão: BUG-025)                                 |
-| RF06      | Gestão de matrículas            | 14             | 4              | 9                | BUG-018, BUG-047, BUG-048, BUG-049, BUG-050, BUG-051, BUG-052, BUG-053, BUG-103                            |
+| RF06      | Gestão de matrículas            | 14             | 4              | 9                | BUG-018, BUG-047, BUG-048, BUG-049, BUG-050, BUG-051, BUG-052, BUG-053, BUG-102                            |
 | RF07      | Contas a receber                | 13             | 8              | 5                | BUG-019, BUG-054, BUG-055, BUG-056, BUG-057                                                                |
 | RF08      | Gestão de fornecedores          | 9              | 6              | 3                | BUG-058, BUG-059, BUG-060                                                                                  |
 | RF09      | Check-in e presenças            | 12             | 4              | 7                | BUG-022, BUG-023, BUG-061, BUG-062, BUG-063, BUG-064, BUG-065                                              |
 | RF10      | Avaliações físicas              | 11             | 7              | 4                | BUG-066, BUG-067, BUG-068, BUG-069                                                                         |
 | RF11      | Turmas e SifitBox               | 13             | 11             | 2                | BUG-070, BUG-071                                                                                           |
-| RF12      | Caixas                          | 11             | 5              | 6                | BUG-021, BUG-072, BUG-073, BUG-074, BUG-075, BUG-076                                                       |
-| RF13      | Contas a pagar e despesas fixas | 16             | 10             | 6                | BUG-020, BUG-077, BUG-078, BUG-079, BUG-080, BUG-081                                                       |
-| RF14      | Fichas de treino e exercícios   | 13             | 8              | 4                | BUG-082, BUG-083, BUG-084, BUG-085                                                                         |
-| RF15      | Prospecção                      | 12             | 11             | 1                | BUG-086 (em revisão: BUG-026)                                                                              |
-| RF16      | Colaboradores e funções         | 17             | 11             | 6                | BUG-024, BUG-087, BUG-088, BUG-089, BUG-090                                                              |
-| RF17      | Produtos                        | 11             | 7              | 4                | BUG-027, BUG-091, BUG-092, BUG-093                                                                         |
-| RF18      | Fichas de anamnese              | 7              | 3              | 4                | BUG-094, BUG-095, BUG-096, BUG-097                                                                         |
+| RF12      | Caixas                          | 11             | 6              | 5                | BUG-021, BUG-072, BUG-073, BUG-074, BUG-075                                                                |
+| RF13      | Contas a pagar e despesas fixas | 16             | 10             | 6                | BUG-020, BUG-076, BUG-077, BUG-078, BUG-079, BUG-080                                                       |
+| RF14      | Fichas de treino e exercícios   | 13             | 8              | 4                | BUG-081, BUG-082, BUG-083, BUG-084                                                                         |
+| RF15      | Prospecção                      | 12             | 11             | 1                | BUG-085 (em revisão: BUG-026)                                                                              |
+| RF16      | Colaboradores e funções         | 17             | 11             | 6                | BUG-024, BUG-086, BUG-087, BUG-088, BUG-089                                                              |
+| RF17      | Produtos                        | 11             | 7              | 4                | BUG-027, BUG-090, BUG-091, BUG-092                                                                         |
+| RF18      | Fichas de anamnese              | 7              | 3              | 4                | BUG-093, BUG-094, BUG-095, BUG-096                                                                         |
 | RF19      | Cadastros de apoio              | 9              | 4              | 5                | BUG-028, BUG-029, BUG-030, BUG-031, BUG-032                                                                |
 
 O BUG-007 aparece em RF01 e RF02, e o BUG-014 em RF02 e RF03, porque cada um aponta para casos dos dois cenários.
@@ -132,35 +132,34 @@ O BUG-007 aparece em RF01 e RF02, e o BUG-014 em RF02 e RF03, porque cada um apo
 | BUG-072 | Fechamento de caixa não é salvo após "Buscar Contas"                                | Alta       | Aberto     |
 | BUG-073 | Caixa pode ser fechado sem a conferência das contas                                 | Média      | Aberto     |
 | BUG-074 | Sistema permite abrir mais de um caixa no mesmo local                               | Média      | Aberto     |
-| BUG-075 | Indicador "Caixas Fechados" é reduzido ao abrir um caixa                            | Baixa      | Aberto     |
-| BUG-076 | Listagem inicial de caixas ignora o período exibido no filtro                       | Baixa      | Aberto     |
-| BUG-077 | Não é possível registrar o pagamento de conta a pagar                               | Alta       | Aberto     |
-| BUG-078 | Indicadores "Total a Pagar" e "Valor Restante" exibem zero                          | Média      | Aberto     |
-| BUG-079 | Erro no servidor exibido após excluir conta a pagar                                 | Baixa      | Aberto     |
-| BUG-080 | Visualização da conta a pagar exibe códigos internos e campos vazios                | Baixa      | Aberto     |
-| BUG-081 | Despesa fixa aceita valor negativo e erro interno com valor em texto                | Média      | Aberto     |
-| BUG-082 | Ficha de treino não pode ser aberta nem salva                                       | Alta       | Aberto     |
-| BUG-083 | Mensagem genérica ao criar ficha sem objetivo do treino                             | Média      | Aberto     |
-| BUG-084 | Exclusão de ficha de treino expõe comandos SQL                                      | Média      | Aberto     |
-| BUG-085 | Sistema permite cadastrar exercício duplicado no mesmo grupo                        | Baixa      | Aberto     |
-| BUG-086 | Sistema permite cadastrar lead duplicado                                            | Baixa      | Aberto     |
-| BUG-087 | Busca de colaborador por código inexistente exibe linha vazia                       | Baixa      | Aberto     |
-| BUG-088 | Alteração de colaborador expõe comandos SQL                                         | Média      | Aberto     |
-| BUG-089 | Funções não podem ser alteradas nem excluídas                                       | Média      | Aberto     |
-| BUG-090 | Sistema permite cadastrar função duplicada                                          | Baixa      | Aberto     |
-| BUG-091 | Produto do tipo Pontuação não pode ser cadastrado                                   | Alta       | Aberto     |
-| BUG-092 | Sistema permite cadastrar produto com preço negativo                                | Média      | Aberto     |
-| BUG-093 | Valores dos produtos exibidos sem formatação monetária                              | Baixa      | Aberto     |
-| BUG-094 | Anamneses aplicadas não aparecem na listagem                                        | Alta       | Aberto     |
-| BUG-095 | Perguntas do modelo de anamnese não são exibidas                                    | Alta       | Aberto     |
-| BUG-096 | Assistente de anamnese avança sem aluno e falha com erro interno                    | Média      | Aberto     |
-| BUG-097 | Nome do aluno não é exibido na escolha do modelo de anamnese                        | Baixa      | Aberto     |
-| BUG-098 | Filtro de período aceita data inicial maior que a final                             | Baixa      | Aberto     |
-| BUG-099 | Cadastro de cliente aceita data de nascimento futura                                | Média      | Aberto     |
-| BUG-100 | CPF inválido é aceito no cadastro de cliente                                        | Média      | Aberto     |
-| BUG-101 | Filtro de status "Ativo" lista clientes inativos                                    | Média      | Aberto     |
-| BUG-102 | Ficha do cliente exibe "null" e objetivos fictícios                                 | Baixa      | Aberto     |
-| BUG-103 | Campo "Data" da parcela aceita data inválida                                        | Média      | Aberto     |
+| BUG-075 | Listagem inicial de caixas ignora o período exibido no filtro                       | Baixa      | Aberto     |
+| BUG-076 | Não é possível registrar o pagamento de conta a pagar                               | Alta       | Aberto     |
+| BUG-077 | Indicadores "Total a Pagar" e "Valor Restante" exibem zero                          | Média      | Aberto     |
+| BUG-078 | Erro no servidor exibido após excluir conta a pagar                                 | Baixa      | Aberto     |
+| BUG-079 | Visualização da conta a pagar exibe códigos internos e campos vazios                | Baixa      | Aberto     |
+| BUG-080 | Despesa fixa aceita valor negativo e erro interno com valor em texto                | Média      | Aberto     |
+| BUG-081 | Ficha de treino não pode ser aberta nem salva                                       | Alta       | Aberto     |
+| BUG-082 | Mensagem genérica ao criar ficha sem objetivo do treino                             | Média      | Aberto     |
+| BUG-083 | Exclusão de ficha de treino expõe comandos SQL                                      | Média      | Aberto     |
+| BUG-084 | Sistema permite cadastrar exercício duplicado no mesmo grupo                        | Baixa      | Aberto     |
+| BUG-085 | Sistema permite cadastrar lead duplicado                                            | Baixa      | Aberto     |
+| BUG-086 | Busca de colaborador por código inexistente exibe linha vazia                       | Baixa      | Aberto     |
+| BUG-087 | Alteração de colaborador expõe comandos SQL                                         | Média      | Aberto     |
+| BUG-088 | Funções não podem ser alteradas nem excluídas                                       | Média      | Aberto     |
+| BUG-089 | Sistema permite cadastrar função duplicada                                          | Baixa      | Aberto     |
+| BUG-090 | Produto do tipo Pontuação não pode ser cadastrado                                   | Alta       | Aberto     |
+| BUG-091 | Sistema permite cadastrar produto com preço negativo                                | Média      | Aberto     |
+| BUG-092 | Valores dos produtos exibidos sem formatação monetária                              | Baixa      | Aberto     |
+| BUG-093 | Anamneses aplicadas não aparecem na listagem                                        | Alta       | Aberto     |
+| BUG-094 | Perguntas do modelo de anamnese não são exibidas                                    | Alta       | Aberto     |
+| BUG-095 | Assistente de anamnese avança sem aluno e falha com erro interno                    | Média      | Aberto     |
+| BUG-096 | Nome do aluno não é exibido na escolha do modelo de anamnese                        | Baixa      | Aberto     |
+| BUG-097 | Filtro de período aceita data inicial maior que a final                             | Baixa      | Aberto     |
+| BUG-098 | Cadastro de cliente aceita data de nascimento futura                                | Média      | Aberto     |
+| BUG-099 | CPF inválido é aceito no cadastro de cliente                                        | Média      | Aberto     |
+| BUG-100 | Filtro de status "Ativo" lista clientes inativos                                    | Média      | Aberto     |
+| BUG-101 | Ficha do cliente exibe "null" e objetivos fictícios                                 | Baixa      | Aberto     |
+| BUG-102 | Campo "Data" da parcela aceita data inválida                                        | Média      | Aberto     |
 
 ---
 
@@ -168,15 +167,15 @@ O BUG-007 aparece em RF01 e RF02, e o BUG-014 em RF02 e RF03, porque cada um apo
 
 **Casos por status:**
 
-- Passaram: 117
-- Falharam: 104
+- Passaram: 118
+- Falharam: 103
 
 **Severidade dos bugs abertos:**
 
 - Crítica: 2
 - Alta: 22
 - Média: 46
-- Baixa: 31
+- Baixa: 30
 
 **Em revisão:** 2
 
@@ -202,24 +201,24 @@ As hipóteses abaixo foram levantadas a partir do comportamento na tela, do cons
 - **BUG-061, BUG-062, BUG-063, BUG-064**: o check-in é gravado em uma tabela própria (a API retorna o código do check-in), mas não gera o registro de presença nem atualiza o status; o horário é armazenado em UTC e exibido sem conversão para o fuso de Brasília; a liberação do check-in não consulta a situação da matrícula do cliente.
 - **BUG-066, BUG-067, BUG-068**: a rota de registro da avaliação retorna erro 500 mesmo com dados válidos, o botão "Salvar" da alteração de data e hora não dispara nenhuma requisição e os campos de hora não são validados na tela antes do envio.
 - **BUG-070, BUG-071**: a rota de atualização de turma retorna erro 500 mesmo sem alterações, o que indica falha no back-end independente dos dados enviados; o horário não é validado nem na tela nem no back-end.
-- **BUG-021, BUG-072, BUG-073, BUG-074, BUG-075**: o fluxo de fechamento não valida se as contas foram conferidas e deixa de enviar o fechamento após a busca das contas; a abertura não verifica se já existe caixa aberto para o local nem valida o local antes do envio; o indicador de caixas fechados é calculado sobre um total fixo, e não sobre a quantidade real de caixas.
-- **BUG-020, BUG-077, BUG-078, BUG-079, BUG-080, BUG-081**: a tela de contas a pagar não implementa a ação de pagamento nem calcula os indicadores de valores; os formulários de contas a pagar e despesas fixas não validam os campos na tela e o back-end aceita valores negativos ou devolve erro 500 para dados inválidos.
-- **BUG-082, BUG-084**: o banco de dados de homologação não possui a coluna "descanso_padrao" utilizada pela consulta da ficha, o que indica migração de banco não aplicada no ambiente; a rota de exclusão devolve a saída de depuração do SQL na resposta.
+- **BUG-021, BUG-072, BUG-073, BUG-074**: o fluxo de fechamento não valida se as contas foram conferidas e deixa de enviar o fechamento após a busca das contas; a abertura não verifica se já existe caixa aberto para o local nem valida o local antes do envio.
+- **BUG-020, BUG-076, BUG-077, BUG-078, BUG-079, BUG-080**: a tela de contas a pagar não implementa a ação de pagamento nem calcula os indicadores de valores; os formulários de contas a pagar e despesas fixas não validam os campos na tela e o back-end aceita valores negativos ou devolve erro 500 para dados inválidos.
+- **BUG-081, BUG-083**: o banco de dados de homologação não possui a coluna "descanso_padrao" utilizada pela consulta da ficha, o que indica migração de banco não aplicada no ambiente; a rota de exclusão devolve a saída de depuração do SQL na resposta.
 - **BUG-024**: os campos de seleção exibem a primeira opção visualmente, mas o valor vinculado ao formulário permanece vazio, e o back-end não valida esses campos antes de gravar; o mesmo padrão de erro 500 em cadastros ocorre em Clientes (BUG-035) e Fornecedores (BUG-059).
-- **BUG-084, BUG-088**: as rotas de exclusão de ficha e de atualização de colaborador devolvem a saída de depuração do SQL, o que indica modo de depuração ativo no back-end de homologação.
-- **BUG-027, BUG-091**: o back-end grava o campo "valor" mesmo para produtos de pontuação e não trata o valor vazio, devolvendo o erro do banco de dados ("Data truncated for column 'valor'") na resposta.
-- **BUG-094, BUG-095, BUG-096**: a listagem consulta as fichas com o parâmetro "id" nulo; o assistente não carrega as perguntas do modelo e não valida o aluno antes de avançar, enviando a anamnese sem respostas ou sem aluno.
+- **BUG-083, BUG-087**: as rotas de exclusão de ficha e de atualização de colaborador devolvem a saída de depuração do SQL, o que indica modo de depuração ativo no back-end de homologação.
+- **BUG-027, BUG-090**: o back-end grava o campo "valor" mesmo para produtos de pontuação e não trata o valor vazio, devolvendo o erro do banco de dados ("Data truncated for column 'valor'") na resposta.
+- **BUG-093, BUG-094, BUG-095**: a listagem consulta as fichas com o parâmetro "id" nulo; o assistente não carrega as perguntas do modelo e não valida o aluno antes de avançar, enviando a anamnese sem respostas ou sem aluno.
 
 | Grupo de bugs                                                 | Causa raiz provável                                                                                                                  |
 | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-004, BUG-043, BUG-065, BUG-085, BUG-099, BUG-100, BUG-103 | Validações ausentes ou parciais no front-end e sem regra no back-end (dados inválidos chegam ao banco; campo faltante gera HTTP 500) |
-| BUG-016, BUG-101                                              | Filtros não enviados na listagem inicial e na troca de página                                                                        |
+| BUG-004, BUG-043, BUG-065, BUG-084, BUG-098, BUG-099, BUG-102 | Validações ausentes ou parciais no front-end e sem regra no back-end (dados inválidos chegam ao banco; campo faltante gera HTTP 500) |
+| BUG-016, BUG-100                                              | Filtros não enviados na listagem inicial e na troca de página                                                                        |
 | BUG-010, BUG-019, BUG-062                                     | Indicadores calculados com consulta diferente da usada nas listagens                                                                 |
 | BUG-063                                                       | Data e hora gravadas em UTC sem conversão para America/Sao_Paulo                                                                     |
-| BUG-102                                                       | Componentes da ficha com valores fixos (mock) e campos nulos exibidos como "null"                                                    |
-| BUG-002, BUG-046, BUG-098                                     | Regras de negócio não implementadas (recuperação de senha, filtro de plano ativo, validação de período)                              |
+| BUG-101                                                       | Componentes da ficha com valores fixos (mock) e campos nulos exibidos como "null"                                                    |
+| BUG-002, BUG-046, BUG-097                                     | Regras de negócio não implementadas (recuperação de senha, filtro de plano ativo, validação de período)                              |
 
-No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado. A coluna `cpf` da tabela `pessoas` é guardada criptografada, por isso a validação do CPF inválido (BUG-100) foi feita pela tela de edição.
+No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado. A coluna `cpf` da tabela `pessoas` é guardada criptografada, por isso a validação do CPF inválido (BUG-099) foi feita pela tela de edição.
 
 ---
 
@@ -236,9 +235,9 @@ No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado.
 
 ## ✅ **Conclusão**
 
-Dos 221 casos, 117 passaram e 104 falharam, com 103 bugs registrados: 101 abertos e 2 em revisão. No login, só o usuário inexistente e o logout passaram: o login válido mostra erro no servidor ou entra mostrando o nome Jair, a senha incorreta já mostrou erro no servidor, os campos vazios seguem para a API sem aviso, os espaços nas pontas derrubam o login, o link "Esqueci minha senha" não faz nada e a sessão não é controlada.
+Dos 221 casos, 118 passaram e 103 falharam, com 102 bugs registrados: 100 abertos e 2 em revisão. No login, só o usuário inexistente e o logout passaram: o login válido mostra erro no servidor ou entra mostrando o nome Jair, a senha incorreta já mostrou erro no servidor, os campos vazios seguem para a API sem aviso, os espaços nas pontas derrubam o login, o link "Esqueci minha senha" não faz nada e a sessão não é controlada.
 
-As falhas mais graves impedem o uso de módulos centrais. Não é possível cadastrar nem alterar clientes (BUG-035 e BUG-039, severidade Crítica) e fornecedores (BUG-059 e BUG-060). A inativação do plano não é salva (BUG-045). O fechamento de caixa com conferência não é gravado (BUG-072). Não há como registrar o pagamento de conta a pagar (BUG-077). A ficha de treino não abre nem salva (BUG-082). A avaliação realizada não é salva (BUG-066). As anamneses aplicadas não aparecem (BUG-094 e BUG-095). Também se repetem formulários vazios que geram erro 500, respostas da API que expõem comandos SQL, registros em branco aceitos (Atividades, Objetivos de Treino e Tipos de Pagamento) e números que mudam de uma tela para outra (alunos em risco, avaliações pendentes, check-ins do dia, matrículas ativas contra clientes ativos e totais de contas a receber).
+As falhas mais graves impedem o uso de módulos centrais. Não é possível cadastrar nem alterar clientes (BUG-035 e BUG-039, severidade Crítica) e fornecedores (BUG-059 e BUG-060). A inativação do plano não é salva (BUG-045). O fechamento de caixa com conferência não é gravado (BUG-072). Não há como registrar o pagamento de conta a pagar (BUG-076). A ficha de treino não abre nem salva (BUG-081). A avaliação realizada não é salva (BUG-066). As anamneses aplicadas não aparecem (BUG-093 e BUG-094). Também se repetem formulários vazios que geram erro 500, respostas da API que expõem comandos SQL, registros em branco aceitos (Atividades, Objetivos de Treino e Tipos de Pagamento) e números que mudam de uma tela para outra (alunos em risco, avaliações pendentes, check-ins do dia, matrículas ativas contra clientes ativos e totais de contas a receber).
 
 Funcionam bem a prospecção (11 de 12 casos), as turmas (11 de 13) e a validação do campo obrigatório em Clientes, Matrículas, Avaliações, Fornecedores, Turmas, Bandeiras, Pontuação, Tipos de Documentos, Exercícios e Categorias Crossfit.
 

@@ -822,7 +822,7 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:21](coloque o link do video aqui) |
+| [BUG:21](https://jam.dev/c/00e2006c-624e-4e78-8105-99f9377c84b0) |
 
 ---
 
@@ -2685,7 +2685,7 @@
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                            |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-072 | Na janela "Fechamento de Caixa", após selecionar o local e clicar em "Buscar Contas", o botão "Salvar" não executa nenhuma ação: nada acontece e o caixa permanece "ABERTO". O fechamento só é salvo quando o usuário não busca as contas (ver BUG-047). |
+| BUG-072 | Na janela "Fechamento de Caixa", após selecionar o local e clicar em "Buscar Contas", o botão "Salvar" não executa nenhuma ação: nada acontece e o caixa permanece "ABERTO". O fechamento só é salvo quando o usuário não busca as contas (ver BUG-073). |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2714,7 +2714,7 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:72](coloque o link do video aqui) |
+| [BUG:72](https://jam.dev/c/aa6da264-81a2-49bb-8666-d1fd604e8d8a) |
 
 ---
 
@@ -2750,7 +2750,7 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:73](coloque o link do video aqui) |
+| [BUG:73](https://jam.dev/c/765bd31b-51f2-4c38-901c-69fd16c38677) |
 
 ---
 
@@ -2786,50 +2786,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:74](coloque o link do video aqui) |
+| [BUG:74](https://jam.dev/c/72e7c612-fc70-4d19-a5e1-5343c9fa0225) |
 
 ---
 
-### 🐞 **Bug 75: Indicador "Caixas Fechados" é reduzido ao abrir um caixa**
-
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                           |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-075 | Com 3 caixas abertos e 17 fechados, ao abrir um novo caixa o indicador "Caixas Fechados" passa para 16 e, ao abrir outro, para 15, embora nenhum caixa tenha sido reaberto. Após fechar os 2 caixas de teste, o indicador volta a 17, quando deveria ser 19. O valor parece ser calculado como 20 menos a quantidade de caixas abertos. |
-
-| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
-| :-------------------: | :------------------------: | :--------: |
-|         Baixa         |           Média            |   Aberto   |
-
-| **Passo a passo para simular o bug**                             |
-| ---------------------------------------------------------------- |
-| 1. Acessar a tela de caixas do SIFIT e anotar os indicadores.    |
-| 2. Abrir um novo caixa.                                          |
-| 3. Observar os indicadores "Caixas Abertos" e "Caixas Fechados". |
-
-|                           **Comportamento Esperado**                           |              **Comportamento Obtido**               |
-| :----------------------------------------------------------------------------: | :-------------------------------------------------: |
-| "Caixas Abertos" deve aumentar em 1 e "Caixas Fechados" deve permanecer igual. | "Caixas Fechados" diminui em 1 a cada caixa aberto. |
-
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
-
-| **Funcionalidade Afetada** |            **Caso de Teste Relacionado**            |
-| :------------------------: | :-------------------------------------------------: |
-|    Caixas / Indicadores    | C12-CT09: Indicadores de caixas abertos e fechados. |
-
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:75](coloque o link do video aqui) |
-
----
-
-### 🐞 **Bug 76: Listagem inicial de caixas ignora o período exibido no filtro**
+### 🐞 **Bug 75: Listagem inicial de caixas ignora o período exibido no filtro**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                              |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-076 | Ao acessar a tela, o filtro exibe o período de 01/10/2026 a 31/10/2026, mas a listagem mostra todos os 20 caixas (de 2022 a 2026) e o indicador "Registros no Periodo" exibe 20. Somente após clicar em "Buscar" o período é aplicado e a listagem passa a exibir 1 caixa. |
+| BUG-075 | Ao acessar a tela, o filtro exibe o período de 01/10/2026 a 31/10/2026, mas a listagem mostra todos os 20 caixas (de 2022 a 2026) e o indicador "Registros no Periodo" exibe 20. Somente após clicar em "Buscar" o período é aplicado e a listagem passa a exibir 1 caixa. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2857,15 +2822,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:76](coloque o link do video aqui) |
+| [BUG:75](https://jam.dev/c/82036612-21df-45fd-9051-b8b1a767a3c2) |
 
 ---
 
-### 🐞 **Bug 77: Não é possível registrar o pagamento de conta a pagar**
+### 🐞 **Bug 76: Não é possível registrar o pagamento de conta a pagar**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                          |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-077 | Não existe opção para registrar o pagamento de uma conta pendente: a linha da listagem possui apenas os botões "Visualizar" e "Deletar", e a janela "Visualizar Conta a Pagar" possui apenas o botão "Fechar". Assim, as contas permanecem "PENDENTE" indefinidamente. |
+| BUG-076 | Não existe opção para registrar o pagamento de uma conta pendente: a linha da listagem possui apenas os botões "Visualizar" e "Deletar", e a janela "Visualizar Conta a Pagar" possui apenas o botão "Fechar". Assim, as contas permanecem "PENDENTE" indefinidamente. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2893,15 +2858,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:77](coloque o link do video aqui) |
+| [BUG:76](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 78: Indicadores "Total a Pagar" e "Valor Restante" exibem zero**
+### 🐞 **Bug 77: Indicadores "Total a Pagar" e "Valor Restante" exibem zero**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                     |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-078 | Com contas pendentes listadas (ex.: R$ 200,00 da conta 24 e R$ 50,00 da conta de teste), os indicadores "Total a Pagar" e "Valor Restante" permanecem em 0, enquanto "Contas Listadas" é atualizado corretamente. |
+| BUG-077 | Com contas pendentes listadas (ex.: R$ 200,00 da conta 24 e R$ 50,00 da conta de teste), os indicadores "Total a Pagar" e "Valor Restante" permanecem em 0, enquanto "Contas Listadas" é atualizado corretamente. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2928,15 +2893,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:78](coloque o link do video aqui) |
+| [BUG:77](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 79: Erro no servidor exibido após excluir conta a pagar**
+### 🐞 **Bug 78: Erro no servidor exibido após excluir conta a pagar**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                     |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-079 | Ao confirmar a exclusão de uma conta a pagar, a conta é excluída, mas em seguida o sistema exibe "Erro no servidor - Erro interno inesperado.", pois tenta carregar novamente a conta que acabou de ser removida. |
+| BUG-078 | Ao confirmar a exclusão de uma conta a pagar, a conta é excluída, mas em seguida o sistema exibe "Erro no servidor - Erro interno inesperado.", pois tenta carregar novamente a conta que acabou de ser removida. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2964,15 +2929,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:79](coloque o link do video aqui) |
+| [BUG:78](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 80: Visualização da conta a pagar exibe códigos internos e campos vazios**
+### 🐞 **Bug 79: Visualização da conta a pagar exibe códigos internos e campos vazios**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                           |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-080 | Na janela "Visualizar Conta a Pagar", o campo "Codigo" fica vazio, o tipo é exibido como "DESPESA_FORNECEDOR", a categoria e o tipo de documento são exibidos pelo código interno (ex.: "Categoria 3", "Tipo 1") e a data de emissão é exibida no formato "2026-10-25". |
+| BUG-079 | Na janela "Visualizar Conta a Pagar", o campo "Codigo" fica vazio, o tipo é exibido como "DESPESA_FORNECEDOR", a categoria e o tipo de documento são exibidos pelo código interno (ex.: "Categoria 3", "Tipo 1") e a data de emissão é exibida no formato "2026-10-25". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2999,15 +2964,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:80](coloque o link do video aqui) |
+| [BUG:79](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 81: Despesa fixa aceita valor negativo e erro interno com valor em texto**
+### 🐞 **Bug 80: Despesa fixa aceita valor negativo e erro interno com valor em texto**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                  |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-081 | O campo "Valor" da despesa fixa não possui validação: o valor "-100" é aceito e a despesa é cadastrada com "-R$ 100,00"; ao informar "abc", o sistema exibe a mensagem genérica "Erro ao salvar despesa fixa". |
+| BUG-080 | O campo "Valor" da despesa fixa não possui validação: o valor "-100" é aceito e a despesa é cadastrada com "-R$ 100,00"; ao informar "abc", o sistema exibe a mensagem genérica "Erro ao salvar despesa fixa". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3036,15 +3001,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:81](coloque o link do video aqui) |
+| [BUG:80](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 82: Ficha de treino não pode ser aberta nem salva**
+### 🐞 **Bug 81: Ficha de treino não pode ser aberta nem salva**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                  |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-082 | Após criar a ficha, a tela de montagem dos treinos é exibida, mas ao clicar em "Salvar Ficha" o sistema exibe "Erro no servidor - Erro interno inesperado.". Ao clicar em "Visualizar" na listagem, o sistema também exibe "Erro no servidor". |
+| BUG-081 | Após criar a ficha, a tela de montagem dos treinos é exibida, mas ao clicar em "Salvar Ficha" o sistema exibe "Erro no servidor - Erro interno inesperado.". Ao clicar em "Visualizar" na listagem, o sistema também exibe "Erro no servidor". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3073,15 +3038,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:82](coloque o link do video aqui) |
+| [BUG:81](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 83: Mensagem genérica ao criar ficha sem objetivo do treino**
+### 🐞 **Bug 82: Mensagem genérica ao criar ficha sem objetivo do treino**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                                     |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-083 | Ao criar a ficha sem objetivo, o sistema exibe apenas "Erro ao salvar Ficha.". A tela não diz que o objetivo é obrigatório. Além disso, o campo "Objetivo" não apresenta opções quando não há objetivos cadastrados, sem orientar o usuário a cadastrá-los em "Objetivos Treino". |
+| BUG-082 | Ao criar a ficha sem objetivo, o sistema exibe apenas "Erro ao salvar Ficha.". A tela não diz que o objetivo é obrigatório. Além disso, o campo "Objetivo" não apresenta opções quando não há objetivos cadastrados, sem orientar o usuário a cadastrá-los em "Objetivos Treino". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3109,15 +3074,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:83](coloque o link do video aqui) |
+| [BUG:82](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 84: Exclusão de ficha de treino expõe comandos SQL**
+### 🐞 **Bug 83: Exclusão de ficha de treino expõe comandos SQL**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                   |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-084 | Ao excluir uma ficha de treino, a exclusão é realizada, porém no DevTools (aba Network), a resposta mostra o comando SQL executado e os parâmetros ("DELETE FROM ficha_treino WHERE id = 1 AND empresa_id = ..."), expondo detalhes internos do banco de dados. |
+| BUG-083 | Ao excluir uma ficha de treino, a exclusão é realizada, porém no DevTools (aba Network), a resposta mostra o comando SQL executado e os parâmetros ("DELETE FROM ficha_treino WHERE id = 1 AND empresa_id = ..."), expondo detalhes internos do banco de dados. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3145,15 +3110,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:84](coloque o link do video aqui) |
+| [BUG:83](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 85: Sistema permite cadastrar exercício duplicado no mesmo grupo**
+### 🐞 **Bug 84: Sistema permite cadastrar exercício duplicado no mesmo grupo**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                        |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-085 | É possível cadastrar duas vezes o mesmo exercício no mesmo grupo muscular, sem nenhum aviso. Em uma das execuções, um exercício de teste foi cadastrado duas vezes no grupo "Peitoral" e o total passou de 6 para 7. |
+| BUG-084 | É possível cadastrar duas vezes o mesmo exercício no mesmo grupo muscular, sem nenhum aviso. Em uma das execuções, um exercício de teste foi cadastrado duas vezes no grupo "Peitoral" e o total passou de 6 para 7. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3183,15 +3148,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:85](https://jam.dev/c/a84d54b0-8ca9-4871-9a16-5c563024a8f4) |
+| [BUG:84](https://jam.dev/c/a84d54b0-8ca9-4871-9a16-5c563024a8f4) |
 
 ---
 
-### 🐞 **Bug 86: Sistema permite cadastrar lead duplicado**
+### 🐞 **Bug 85: Sistema permite cadastrar lead duplicado**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                 |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-086 | Foi possível cadastrar duas vezes o lead "Lead Teste Ville" com o mesmo e-mail (lead.ville@teste.com) e o mesmo telefone ((44) 99999-0000), sem nenhum aviso. Os dois registros passam a constar na listagem (códigos 6 e 7). |
+| BUG-085 | Foi possível cadastrar duas vezes o lead "Lead Teste Ville" com o mesmo e-mail (lead.ville@teste.com) e o mesmo telefone ((44) 99999-0000), sem nenhum aviso. Os dois registros passam a constar na listagem (códigos 6 e 7). |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3220,15 +3185,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:86](coloque o link do video aqui) |
+| [BUG:85](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 87: Busca de colaborador por código inexistente exibe linha vazia**
+### 🐞 **Bug 86: Busca de colaborador por código inexistente exibe linha vazia**
 
 | **ID**  | **Descrição**                                                                                                                                                         |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-087 | Ao pesquisar o código "999" na tela de colaboradores, a listagem exibe uma linha vazia contendo apenas "/", em vez de informar que nenhum colaborador foi encontrado. |
+| BUG-086 | Ao pesquisar o código "999" na tela de colaboradores, a listagem exibe uma linha vazia contendo apenas "/", em vez de informar que nenhum colaborador foi encontrado. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3256,15 +3221,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:87](https://jam.dev/c/fd885338-b1b1-4689-8a94-a0de9885af05) |
+| [BUG:86](https://jam.dev/c/fd885338-b1b1-4689-8a94-a0de9885af05) |
 
 ---
 
-### 🐞 **Bug 88: Alteração de colaborador expõe comandos SQL**
+### 🐞 **Bug 87: Alteração de colaborador expõe comandos SQL**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                     |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-088 | Ao salvar a alteração de um colaborador, a alteração é realizada, porém no DevTools (aba Network), a resposta mostra o comando SQL executado ("UPDATE pessoas SET nome = :nome, cpf = :cpf, ...") e seus parâmetros, expondo detalhes internos do banco de dados. |
+| BUG-087 | Ao salvar a alteração de um colaborador, a alteração é realizada, porém no DevTools (aba Network), a resposta mostra o comando SQL executado ("UPDATE pessoas SET nome = :nome, cpf = :cpf, ...") e seus parâmetros, expondo detalhes internos do banco de dados. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3292,16 +3257,16 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:88](https://jam.dev/c/4c015a99-0c38-4e9d-a68b-3e38d60df197) |
+| [BUG:87](https://jam.dev/c/4c015a99-0c38-4e9d-a68b-3e38d60df197) |
 | [Print](../Evidencias/C16-CT07.png) |
 
 ---
 
-### 🐞 **Bug 89: Funções não podem ser alteradas nem excluídas**
+### 🐞 **Bug 88: Funções não podem ser alteradas nem excluídas**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                                     |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-089 | Na tela de funções, a janela aberta pelo botão "Visualizar" exibe todos os campos somente para leitura, com os botões "Fechar" e "Voltar", e a listagem não possui botão de exclusão. Assim, uma função cadastrada com erro (ex.: duplicada) não pode ser corrigida nem removida. |
+| BUG-088 | Na tela de funções, a janela aberta pelo botão "Visualizar" exibe todos os campos somente para leitura, com os botões "Fechar" e "Voltar", e a listagem não possui botão de exclusão. Assim, uma função cadastrada com erro (ex.: duplicada) não pode ser corrigida nem removida. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3329,15 +3294,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:89](https://jam.dev/c/cf5d18c4-dc37-4ca9-af67-469cb7f230d2) |
+| [BUG:88](https://jam.dev/c/cf5d18c4-dc37-4ca9-af67-469cb7f230d2) |
 
 ---
 
-### 🐞 **Bug 90: Sistema permite cadastrar função duplicada**
+### 🐞 **Bug 89: Sistema permite cadastrar função duplicada**
 
 | **ID**  | **Descrição**                                                                                                                                                                               |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-090 | Foi possível cadastrar duas vezes a função "Função Teste Ville" (códigos #9 e #10), sem nenhum aviso. Como funções não podem ser excluídas (BUG-089), a duplicidade não pode ser corrigida. |
+| BUG-089 | Foi possível cadastrar duas vezes a função "Função Teste Ville" (códigos #9 e #10), sem nenhum aviso. Como funções não podem ser excluídas (BUG-088), a duplicidade não pode ser corrigida. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3365,15 +3330,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:90](https://jam.dev/c/05a2cb17-c81f-45f1-a9be-05fa709d4f82) |
+| [BUG:89](https://jam.dev/c/05a2cb17-c81f-45f1-a9be-05fa709d4f82) |
 
 ---
 
-### 🐞 **Bug 91: Produto do tipo Pontuação não pode ser cadastrado**
+### 🐞 **Bug 90: Produto do tipo Pontuação não pode ser cadastrado**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                        |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-091 | Ao selecionar o tipo "Pontuação", o campo "Preço" é substituído pelo campo "Pontuação". Ao salvar o produto com 100 pontos, o sistema exibe "Erro ao salvar produto". Assim, nenhum produto de troca por pontos pode ser cadastrado. |
+| BUG-090 | Ao selecionar o tipo "Pontuação", o campo "Preço" é substituído pelo campo "Pontuação". Ao salvar o produto com 100 pontos, o sistema exibe "Erro ao salvar produto". Assim, nenhum produto de troca por pontos pode ser cadastrado. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3401,15 +3366,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:91](coloque o link do video aqui) |
+| [BUG:90](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 92: Sistema permite cadastrar produto com preço negativo**
+### 🐞 **Bug 91: Sistema permite cadastrar produto com preço negativo**
 
 | **ID**  | **Descrição**                                                                                                                                            |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-092 | O campo "Preço" aceita valores negativos: o produto "Produto Teste Ville Negativo" foi cadastrado com o preço "-50" e exibido na listagem como "R$ -50". |
+| BUG-091 | O campo "Preço" aceita valores negativos: o produto "Produto Teste Ville Negativo" foi cadastrado com o preço "-50" e exibido na listagem como "R$ -50". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3437,15 +3402,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:92](coloque o link do video aqui) |
+| [BUG:91](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 93: Valores dos produtos exibidos sem formatação monetária**
+### 🐞 **Bug 92: Valores dos produtos exibidos sem formatação monetária**
 
 | **ID**  | **Descrição**                                                                                                                                                                           |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-093 | Na listagem de produtos, os valores são exibidos sem separador de milhar, sem casas decimais fixas e com ponto como separador decimal, por exemplo "R$ 1550", "R$ 7000.99" e "R$ 49.9". |
+| BUG-092 | Na listagem de produtos, os valores são exibidos sem separador de milhar, sem casas decimais fixas e com ponto como separador decimal, por exemplo "R$ 1550", "R$ 7000.99" e "R$ 49.9". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3471,15 +3436,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:93](coloque o link do video aqui) |
+| [BUG:92](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 94: Anamneses aplicadas não aparecem na listagem**
+### 🐞 **Bug 93: Anamneses aplicadas não aparecem na listagem**
 
 | **ID**  | **Descrição**                                                                                                                                                                           |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-094 | Após finalizar a anamnese do aluno Steven Kaiki (o assistente termina sem erro), a tela de fichas de anamnese continua exibindo "Nenhuma ficha encontrada" e todos os indicadores em 0. |
+| BUG-093 | Após finalizar a anamnese do aluno Steven Kaiki (o assistente termina sem erro), a tela de fichas de anamnese continua exibindo "Nenhuma ficha encontrada" e todos os indicadores em 0. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3507,15 +3472,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:94](coloque o link do video aqui) |
+| [BUG:93](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 95: Perguntas do modelo de anamnese não são exibidas**
+### 🐞 **Bug 94: Perguntas do modelo de anamnese não são exibidas**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                  |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-095 | O modelo "Triplet" informa "1 perguntas", mas ao clicar em "Iniciar" o assistente vai direto para a etapa "Revisar e Finalizar", sem exibir a pergunta. A anamnese é finalizada e gravada com a lista de respostas vazia e status "concluida". |
+| BUG-094 | O modelo "Triplet" informa "1 perguntas", mas ao clicar em "Iniciar" o assistente vai direto para a etapa "Revisar e Finalizar", sem exibir a pergunta. A anamnese é finalizada e gravada com a lista de respostas vazia e status "concluida". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3543,15 +3508,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:95](coloque o link do video aqui) |
+| [BUG:94](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 96: Assistente de anamnese avança sem aluno e falha com erro interno**
+### 🐞 **Bug 95: Assistente de anamnese avança sem aluno e falha com erro interno**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                           |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-096 | Ao clicar em "Próxima" sem selecionar aluno, o assistente avança para a escolha do modelo. Ao concluir o fluxo, o sistema exibe "Erro no servidor - Erro interno inesperado.", porque a anamnese foi enviada sem aluno. |
+| BUG-095 | Ao clicar em "Próxima" sem selecionar aluno, o assistente avança para a escolha do modelo. Ao concluir o fluxo, o sistema exibe "Erro no servidor - Erro interno inesperado.", porque a anamnese foi enviada sem aluno. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3579,15 +3544,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:96](coloque o link do video aqui) |
+| [BUG:95](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 97: Nome do aluno não é exibido na escolha do modelo de anamnese**
+### 🐞 **Bug 96: Nome do aluno não é exibido na escolha do modelo de anamnese**
 
 | **ID**  | **Descrição**                                                                                                                                                                                         |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-097 | Na etapa "Selecionar Modelo", o texto é exibido como "Escolha o modelo de anamnese a aplicar para .", sem o nome do aluno selecionado, embora o aluno seja exibido no cabeçalho das etapas seguintes. |
+| BUG-096 | Na etapa "Selecionar Modelo", o texto é exibido como "Escolha o modelo de anamnese a aplicar para .", sem o nome do aluno selecionado, embora o aluno seja exibido no cabeçalho das etapas seguintes. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3614,15 +3579,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:97](coloque o link do video aqui) |
+| [BUG:96](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 98: Filtro de período aceita data inicial maior que a final**
+### 🐞 **Bug 97: Filtro de período aceita data inicial maior que a final**
 
 | **ID**  | **Descrição**                                                                                                                                         |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-098 | O filtro de período da Página Inicial aceita a data inicial 31/10/2026 com a data final 01/10/2026, sem aviso, e os cards continuam exibindo valores. |
+| BUG-097 | O filtro de período da Página Inicial aceita a data inicial 31/10/2026 com a data final 01/10/2026, sem aviso, e os cards continuam exibindo valores. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3652,15 +3617,15 @@
 
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
-| [BUG:98](https://jam.dev/c/5f7f9e52-3989-42d5-99c2-66b747dec9e3) |
+| [BUG:97](https://jam.dev/c/5f7f9e52-3989-42d5-99c2-66b747dec9e3) |
 
 ---
 
-### 🐞 **Bug 99: Cadastro de cliente aceita data de nascimento futura**
+### 🐞 **Bug 98: Cadastro de cliente aceita data de nascimento futura**
 
 | **ID**  | **Descrição**                                                                                                                       |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-099 | O cadastro de cliente aceita a data de nascimento 31/12/2027, posterior à data atual, e a ficha do cliente exibe a idade "-2 anos". |
+| BUG-098 | O cadastro de cliente aceita a data de nascimento 31/12/2027, posterior à data atual, e a ficha do cliente exibe a idade "-2 anos". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3690,15 +3655,15 @@
 
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
-| [BUG:99](https://jam.dev/c/f3cd80a9-c549-4e43-8957-182eaa983f3d) |
+| [BUG:98](https://jam.dev/c/f3cd80a9-c549-4e43-8957-182eaa983f3d) |
 
 ---
 
-### 🐞 **Bug 100: CPF inválido é aceito no cadastro de cliente**
+### 🐞 **Bug 99: CPF inválido é aceito no cadastro de cliente**
 
 | **ID**  | **Descrição**                                                                                            |
 | ------- | -------------------------------------------------------------------------------------------------------- |
-| BUG-100 | O cadastro e a alteração de cliente aceitam o CPF "111.111.111-11", sem validação do dígito verificador. |
+| BUG-099 | O cadastro e a alteração de cliente aceitam o CPF "111.111.111-11", sem validação do dígito verificador. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3727,15 +3692,15 @@
 
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
-| [BUG:100](https://jam.dev/c/aee4435d-fdbd-4a84-bfe5-d8a28801ecd7) |
+| [BUG:99](https://jam.dev/c/aee4435d-fdbd-4a84-bfe5-d8a28801ecd7) |
 
 ---
 
-### 🐞 **Bug 101: Filtro de status "Ativo" lista clientes inativos**
+### 🐞 **Bug 100: Filtro de status "Ativo" lista clientes inativos**
 
 | **ID**  | **Descrição**                                                                               |
 | ------- | ------------------------------------------------------------------------------------------- |
-| BUG-101 | Com o filtro "Status" em "Ativo", a listagem de clientes exibe clientes com status INATIVO. |
+| BUG-100 | Com o filtro "Status" em "Ativo", a listagem de clientes exibe clientes com status INATIVO. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3764,15 +3729,15 @@
 
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
-| [BUG:101](https://jam.dev/c/a6adccf3-ae4c-47f8-9343-8ad793e5758e) |
+| [BUG:100](https://jam.dev/c/a6adccf3-ae4c-47f8-9343-8ad793e5758e) |
 
 ---
 
-### 🐞 **Bug 102: Ficha do cliente exibe "null" e objetivos fictícios**
+### 🐞 **Bug 101: Ficha do cliente exibe "null" e objetivos fictícios**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                      |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-102 | A ficha de um cliente cadastrado sem telefone e sem endereço exibe o telefone como "null", o bairro como "null" na alteração e o card "Objetivos" com "Perda de peso e ganho de resistência" e "Progresso geral 60%", sem que esses dados tenham sido cadastrados. |
+| BUG-101 | A ficha de um cliente cadastrado sem telefone e sem endereço exibe o telefone como "null", o bairro como "null" na alteração e o card "Objetivos" com "Perda de peso e ganho de resistência" e "Progresso geral 60%", sem que esses dados tenham sido cadastrados. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3802,15 +3767,15 @@
 
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
-| [BUG:102](https://jam.dev/c/a4c73bde-5ac1-43ad-8a47-3ebde1f4e346) |
+| [BUG:101](https://jam.dev/c/a4c73bde-5ac1-43ad-8a47-3ebde1f4e346) |
 
 ---
 
-### 🐞 **Bug 103: Campo "Data" da parcela aceita data inválida**
+### 🐞 **Bug 102: Campo "Data" da parcela aceita data inválida**
 
 | **ID**  | **Descrição**                                                                                                        |
 | ------- | -------------------------------------------------------------------------------------------------------------------- |
-| BUG-103 | O campo "Data" da janela "Quantidade Parcelas", exibida ao salvar a matrícula, aceita a data inválida "2026/05/192". |
+| BUG-102 | O campo "Data" da janela "Quantidade Parcelas", exibida ao salvar a matrícula, aceita a data inválida "2026/05/192". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3839,4 +3804,4 @@
 
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
-| [BUG:103](https://jam.dev/c/02ee32cf-7b68-4011-9cd9-d0faaba8470e) |
+| [BUG:102](https://jam.dev/c/02ee32cf-7b68-4011-9cd9-d0faaba8470e) |
