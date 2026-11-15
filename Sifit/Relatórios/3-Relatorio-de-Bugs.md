@@ -4343,3 +4343,271 @@
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:115](https://jam.dev/c/e7b3f5ff-5bd1-4fde-be72-0c33ebfac152) |
+
+---
+
+### 🐞 **Bug 116: Telas de bancos e de categorias de conta a pagar não estão no menu**
+
+| **ID**  | **Descrição**                                                                                                                                                          |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-116 | As telas Bancos, Banco Recorrente e Categorias de Conta a Pagar não aparecem no menu lateral. Elas só abrem pelo link, e Bancos e Categorias abrem sem o menu lateral. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                      |
+| ----------------------------------------------------------------------------------------- |
+| 1. Acessar o SIFIT autenticado.                                                           |
+| 2. Procurar "Bancos", "Banco Recorrente" e "Categorias" de conta a pagar no menu lateral. |
+| 3. Abrir https://sifitalfa.centrion.com.br/bancos pelo link.                              |
+
+|    **Comportamento Esperado**    |              **Comportamento Obtido**             |
+| :------------------------------: | :-----------------------------------------------: |
+| As telas devem ter item no menu. | Não há item no menu; as telas só abrem pelo link. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
+
+|      **Funcionalidade Afetada**      |                                    **Caso de Teste Relacionado**                                    |
+| :----------------------------------: | :-------------------------------------------------------------------------------------------------: |
+| Bancos / Categorias de conta a pagar | C30-CT01: Acesso às telas de bancos pelo menu. C31-CT01: Acesso à tela Categorias de Conta a Pagar. |
+
+|                                **Evidência(s)**                                |
+| :----------------------------------------------------------------------------: |
+|   [BUG:116 - bancos](https://jam.dev/c/a7570689-c2c4-46f2-b064-c9b9a0030a0b)   |
+| [BUG:116 - categorias](https://jam.dev/c/5fe27a74-c994-4c78-9906-aaae1ba17b39) |
+
+---
+
+### 🐞 **Bug 117: Banco é salvo sem nome**
+
+| **ID**  | **Descrição**                                                                                                      |
+| ------- | ------------------------------------------------------------------------------------------------------------------ |
+| BUG-117 | Na tela Bancos, ao clicar em "Salvar" com os campos vazios, nenhuma mensagem aparece e um banco sem nome é criado. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Baixa         |           Baixa            |   Aberto   |
+
+| **Passo a passo para simular o bug**               |
+| -------------------------------------------------- |
+| 1. Abrir https://sifitalfa.centrion.com.br/bancos. |
+| 2. Sem preencher nada, clicar em "Salvar".         |
+| 3. Olhar a listagem.                               |
+
+|            **Comportamento Esperado**           |   **Comportamento Obtido**  |
+| :---------------------------------------------: | :-------------------------: |
+| O sistema deve avisar que o nome é obrigatório. | Um banco sem nome é criado. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| :------------------------: | :---------------------------: |
+|     Bancos / Cadastro      | C30-CT03: Salvar banco vazio. |
+
+|                          **Evidência(s)**                         |
+| :---------------------------------------------------------------: |
+| [BUG:117](https://jam.dev/c/76f082bc-40ee-47db-aaeb-0d181408c68c) |
+
+---
+
+### 🐞 **Bug 118: Banco duplicado é aceito**
+
+| **ID**  | **Descrição**                                                                                                          |
+| ------- | ---------------------------------------------------------------------------------------------------------------------- |
+| BUG-118 | O sistema deixa cadastrar de novo um banco com o mesmo nome e código ("Banco Teste Ville", 999), sem nenhuma mensagem. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Baixa         |           Baixa            |   Aberto   |
+
+| **Passo a passo para simular o bug**                       |
+| ---------------------------------------------------------- |
+| 1. Abrir https://sifitalfa.centrion.com.br/bancos.         |
+| 2. Cadastrar o banco "Banco Teste Ville" com o código 999. |
+| 3. Cadastrar de novo o mesmo nome e código.                |
+
+|          **Comportamento Esperado**          |         **Comportamento Obtido**        |
+| :------------------------------------------: | :-------------------------------------: |
+| O sistema deve avisar que o banco já existe. | O banco aparece duas vezes na listagem. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** |     **Caso de Teste Relacionado**      |
+| :------------------------: | :------------------------------------: |
+|     Bancos / Cadastro      | C30-CT05: Cadastro de banco duplicado. |
+
+|                          **Evidência(s)**                         |
+| :---------------------------------------------------------------: |
+| [BUG:118](https://jam.dev/c/f1723af8-3f46-4586-8c15-340990fd857a) |
+
+---
+
+### 🐞 **Bug 119: Excluir banco chama a exclusão de tipo de pagamento**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                             |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-119 | Na tela Bancos, o X de excluir pergunta "Deseja deletar o Tipo de Pagamento?". Ao confirmar, aparece "Erro ao deletar tipo de pagamento" e o banco continua na lista. A tela envia o código do banco para a exclusão de tipo de pagamento (/deleta/tipo-pagamento): se o tipo de pagamento com o mesmo código não estiver em uso, ele pode ser apagado no lugar do banco. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|        Crítica        |          Crítica           |   Aberto   |
+
+| **Passo a passo para simular o bug**               |
+| -------------------------------------------------- |
+| 1. Abrir https://sifitalfa.centrion.com.br/bancos. |
+| 2. Clicar no X do banco "Banco Brasil".            |
+| 3. Ler a mensagem e clicar em "Confirmar".         |
+
+|                **Comportamento Esperado**               |                                              **Comportamento Obtido**                                             |
+| :-----------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: |
+| A confirmação deve falar do banco e excluir só o banco. | A confirmação fala de Tipo de Pagamento, aparece "Erro ao deletar tipo de pagamento" e o banco continua na lista. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| :------------------------: | :---------------------------: |
+|     Bancos / Exclusão      |  C30-CT07: Exclusão de banco. |
+
+|             **Evidência(s)**            |
+| :-------------------------------------: |
+| [BUG:119](https://jam.dev/c/6849358c-8f8d-44ce-96f5-e1ae38ec4006) |
+
+---
+
+### 🐞 **Bug 120: Listagem de categorias de conta a pagar aparece vazia**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                     |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-120 | A tela Categorias de Conta a Pagar mostra a tabela vazia, só com os títulos das colunas. No DevTools (aba Network), a API /categoria-contas-pagar retorna as categorias cadastradas (ex.: "Contas do dia a dia"), que aparecem no campo "Categoria" da conta a pagar. Sem a listagem, não há como alterar nem excluir categorias. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|          Alta         |            Alta            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                 |
+| -------------------------------------------------------------------- |
+| 1. Acessar https://sifitalfa.centrion.com.br/categorias-conta-pagar. |
+| 2. Observar a listagem.                                              |
+| 3. Conferir a resposta da API na aba Network do DevTools.            |
+
+|                      **Comportamento Esperado**                      |                  **Comportamento Obtido**                  |
+| :------------------------------------------------------------------: | :--------------------------------------------------------: |
+| A listagem deve exibir o código e o nome das categorias cadastradas. | A listagem fica vazia, embora a API retorne as categorias. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
+
+|       **Funcionalidade Afetada**       |   **Caso de Teste Relacionado**   |
+| :------------------------------------: | :-------------------------------: |
+| Categorias de conta a pagar / Listagem | C31-CT02: Listagem de categorias. |
+
+|                          **Evidência(s)**                         |
+| :---------------------------------------------------------------: |
+| [BUG:120](https://jam.dev/c/8803140b-f4b4-4e45-b612-a4bb026a45ac) |
+
+---
+
+### 🐞 **Bug 121: Categoria de conta a pagar é salva sem nome**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                    |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-121 | Na tela Categorias de Conta a Pagar, ao clicar em "Salvar" com o nome vazio, nenhuma mensagem aparece e uma categoria sem nome é criada. Ela aparece como opção em branco no campo "Categoria" da conta a pagar. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Baixa         |           Baixa            |   Aberto   |
+
+| **Passo a passo para simular o bug**                               |
+| ------------------------------------------------------------------ |
+| 1. Abrir https://sifitalfa.centrion.com.br/categorias-conta-pagar. |
+| 2. Sem preencher o nome, clicar em "Salvar".                       |
+| 3. Em Contas a Pagar → Nova Conta, abrir o campo "Categoria".      |
+
+|            **Comportamento Esperado**           |                          **Comportamento Obtido**                         |
+| :---------------------------------------------: | :-----------------------------------------------------------------------: |
+| O sistema deve avisar que o nome é obrigatório. | Uma categoria sem nome é criada e aparece em branco no campo "Categoria". |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
+
+|       **Funcionalidade Afetada**       |   **Caso de Teste Relacionado**   |
+| :------------------------------------: | :-------------------------------: |
+| Categorias de conta a pagar / Cadastro | C31-CT03: Salvar categoria vazia. |
+
+|                          **Evidência(s)**                         |
+| :---------------------------------------------------------------: |
+| [BUG:121](https://jam.dev/c/9e6b78ae-531e-49b3-8b84-15cf25b861f1) |
+
+---
+
+### 🐞 **Bug 122: Categoria de conta a pagar duplicada é aceita**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                          |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-122 | O sistema permite cadastrar de novo a categoria "Categoria Teste Ville" (categoria 29), sem nenhuma mensagem. O campo "Categoria" da conta a pagar já mostra nomes repetidos: "Boleto" 4 vezes, "Pix" 6 vezes e "Pix Sicredi" 5 vezes. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Baixa         |           Baixa            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                 |
+| -------------------------------------------------------------------- |
+| 1. Acessar https://sifitalfa.centrion.com.br/categorias-conta-pagar. |
+| 2. Cadastrar a categoria "Categoria Teste Ville".                    |
+| 3. Informar de novo o mesmo nome e clicar em "Salvar".               |
+| 4. Abrir o campo "Categoria" em Contas a Pagar → Nova Conta.         |
+
+|             **Comportamento Esperado**             |                      **Comportamento Obtido**                      |
+| :------------------------------------------------: | :----------------------------------------------------------------: |
+| O sistema deve informar que a categoria já existe. | A categoria é cadastrada de novo e o campo mostra nomes repetidos. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 15/11/2026                         |
+
+|       **Funcionalidade Afetada**       |       **Caso de Teste Relacionado**        |
+| :------------------------------------: | :----------------------------------------: |
+| Categorias de conta a pagar / Cadastro | C31-CT05: Cadastro de categoria duplicada. |
+
+|                          **Evidência(s)**                         |
+| :---------------------------------------------------------------: |
+| [BUG:122](https://jam.dev/c/4f5e6f3b-1d3d-4ecf-88a2-40e3019b5a2c) |

@@ -43,12 +43,14 @@ Verificar manualmente os requisitos funcionais do Sifit: o login, a página inic
 - RF20 Grupos: busca, filtros, indicadores, cadastro, duplicidade, alteração, inativação e exclusão
 - RF21 Modelos de contrato: listagem, cadastro, variáveis do texto e pré-visualização
 - RF22 Box - Turmas: modalidades e turmas recorrentes (cadastro, validações, alteração e exclusão)
+- RF30 Bancos e Banco recorrente: acesso, listagem, salvar vazio, cadastro, duplicidade, alteração e exclusão (as telas só abrem pelo link)
+- RF31 Categorias de conta a pagar: acesso, listagem, salvar vazio, cadastro e duplicidade
 
-**Incluído, ainda sem caso de teste (próximos cenários, RF23 a RF33):**
+**Incluído, ainda sem caso de teste (próximos cenários, RF23 a RF29, RF32 e RF33):**
 
 - Grupos musculares (RF23), Modelos de ficha (RF24) e Configurações (RF25)
 - Relatórios (RF26), Importar avaliações (RF27) e Inteligência & Automação com Resultados IA (RF28)
-- Local de contas (RF29), Bancos e Banco recorrente (RF30), Categorias de conta a pagar (RF31) e Métricas do cliente (RF32)
+- Local de contas (RF29) e Métricas do cliente (RF32)
 - Modelos e categorias de anamnese (RF33)
 
 **Excluído:**
@@ -98,7 +100,7 @@ Verificar manualmente os requisitos funcionais do Sifit: o login, a página inic
 - Os casos deste plano foram executados e têm vídeo ou print.
 - As falhas encontradas foram registradas no relatório de bugs, com vídeo.
 - O relatório final informa quantos casos passaram, quantos falharam e qual bug está ligado a cada um.
-- Situação atual: 85 dos 251 casos e 35 dos 115 bugs ainda aguardam o vídeo (ver o relatório final).
+- Situação atual: 85 dos 263 casos e 35 dos 122 bugs ainda aguardam o vídeo (ver o relatório final).
 
 ---
 
@@ -194,6 +196,8 @@ Quando houve diferença de prioridade entre os trabalhos, ficou a maior.
 | Registros em branco: Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12 | C19-CT04, C19-CT07 e C19-CT08 |
 | Grupos #8, #9 e #10 (não podem ser excluídos, BUG-105)                           | C20-CT05, C20-CT07 e C20-CT09 |
 | Modelos de contrato 8 e 9 (não aparecem na listagem, BUG-106)                    | C21-CT03 e C21-CT06           |
+| Bancos 8 a 17 (a exclusão de banco não é segura, BUG-119)                        | C30-CT03 a C30-CT06           |
+| Categorias de conta a pagar 25 a 29 (não aparecem na listagem, BUG-120)          | C31-CT03 a C31-CT05           |
 
 Os códigos dos registros não ficam fixos neste documento, porque o ambiente é compartilhado e os dados são alterados por outras pessoas.
 
@@ -214,7 +218,7 @@ Estes casos foram escritos, mas não foram executados, e não têm vídeo nem re
 
 - Plano de Testes
 - Análise de requisitos
-- Casos de teste (C01 a C22); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo ficam em `Cenarios de testes/Pendentes de evidencias`
+- Casos de teste (C01 a C22, C30 e C31); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo ficam em `Cenarios de testes/Pendentes de evidencias`
 - Roteiro dos vídeos a gravar (`5-Roteiro-de-videos.md`)
 - Relatório de bugs com vídeos
 - Relatório final de execução

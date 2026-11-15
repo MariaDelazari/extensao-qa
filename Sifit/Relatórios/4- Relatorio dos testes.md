@@ -2,7 +2,7 @@
 
 **Sistema testado:** Sifit Centrion
 **Responsável:** Maria Eduarda Pacheco Delazari, RA: 240017; Ville Nunes Figueiredo da Silva, RA: 14534; Keltton Felipe Alves Silveira, RA: 14509; Daniel Satel Pereira, RA: 14567; Rafael Colombo da Silva, RA: 14551
-**Data de execução:** 12/10/2026 a 28/10/2026, e 15/11/2026 para Grupos, Modelos de contrato e Box - Turmas (C20 a C22). Em 24/10/2026, os testes passaram para o endereço indicado abaixo.
+**Data de execução:** 12/10/2026 a 28/10/2026, e 15/11/2026 para Grupos, Modelos de contrato, Box - Turmas, Bancos e Categorias de conta a pagar (C20 a C22, C30 e C31). Em 24/10/2026, os testes passaram para o endereço indicado abaixo.
 **Ambiente:** Sifit Centrion até 23/10/2026. A partir de 24/10/2026, Sifit Unialfa.
 
 - Sistema operacional: Ubuntu 26.04 LTS, Linux e Windows 11
@@ -16,13 +16,13 @@
 
 | Total de Casos de Teste | Casos Passaram | Casos Falharam | Bugs Registrados |
 | ----------------------- | -------------- | -------------- | ---------------- |
-| 251                     | 133            | 118            | 115              |
+| 263                     | 137            | 126            | 122              |
 
-Os 251 casos estão nos cenários C01 a C22. Um caso falhou quando existe um bug aberto apontando para ele: 118 falharam e 133 passaram. 133 + 118 = 251. O relatório de bugs tem 115 bugs: 113 abertos e 2 em revisão (BUG-025 e BUG-026), que não fazem nenhum caso falhar.
+Os 263 casos estão nos cenários C01 a C22, C30 e C31. Um caso falhou quando existe um bug aberto apontando para ele: 126 falharam e 137 passaram. 137 + 126 = 263. O relatório de bugs tem 122 bugs: 120 abertos e 2 em revisão (BUG-025 e BUG-026), que não fazem nenhum caso falhar.
 
 Alguns casos foram executados mais de uma vez, em datas ou endereços diferentes. O resultado do caso junta essas execuções, e a evidência é o vídeo que mostra o resultado registrado. Nos casos C01-CT01, C01-CT02, C02-CT01, C04-CT04, C04-CT10, C06-CT07 e C09-CT03, uma execução passou e outra encontrou a falha; o caso conta como falhou.
 
-Evidências: 166 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados com `[Vídeo](coloque o link do video aqui)`). Dos 115 bugs, 80 têm vídeo ou print, e 35 aguardam o vídeo (`[BUG:NN](coloque o link do video aqui)`). O roteiro está em `5-Roteiro-de-videos.md`.
+Evidências: 178 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados com `[Vídeo](coloque o link do video aqui)`). Dos 122 bugs, 87 têm vídeo ou print, e 35 aguardam o vídeo (`[BUG:NN](coloque o link do video aqui)`). O roteiro está em `5-Roteiro-de-videos.md`.
 
 ---
 
@@ -52,8 +52,10 @@ Evidências: 166 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados co
 | RF20      | Grupos                          | 10             | 7              | 3                | BUG-103, BUG-104, BUG-105                                                                                  |
 | RF21      | Modelos de contrato             | 6              | 3              | 3                | BUG-106, BUG-107                                                                                           |
 | RF22      | Box - Turmas                    | 13             | 5              | 8                | BUG-108, BUG-109, BUG-110, BUG-111, BUG-112, BUG-113, BUG-114                                              |
+| RF30      | Bancos e Banco Recorrente       | 7              | 3              | 4                | BUG-116, BUG-117, BUG-118, BUG-119                                                                         |
+| RF31      | Categorias de conta a pagar     | 5              | 1              | 4                | BUG-116, BUG-120, BUG-121, BUG-122                                                                         |
 
-O BUG-007 aparece em RF01 e RF02, e o BUG-014 em RF02 e RF03, porque cada um aponta para casos dos dois cenários.
+O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, e o BUG-116 em RF30 e RF31, porque cada um aponta para casos dos dois cenários.
 
 ---
 
@@ -176,6 +178,13 @@ O BUG-007 aparece em RF01 e RF02, e o BUG-014 em RF02 e RF03, porque cada um apo
 | BUG-113 | Modalidade inativa aparece no cadastro de turma do Box                              | Baixa      | Aberto     |
 | BUG-114 | Exclusão de turma do Box não pede confirmação e mantém a turma na lista             | Média      | Aberto     |
 | BUG-115 | Janela "Alterar Data / Hora" aceita data e hora sem formato                         | Média      | Aberto     |
+| BUG-116 | Telas de bancos e de categorias de conta a pagar não estão no menu                  | Média      | Aberto     |
+| BUG-117 | Banco é salvo sem nome                                                              | Baixa      | Aberto     |
+| BUG-118 | Banco duplicado é aceito                                                            | Baixa      | Aberto     |
+| BUG-119 | Excluir banco chama a exclusão de tipo de pagamento                                 | Crítica    | Aberto     |
+| BUG-120 | Listagem de categorias de conta a pagar aparece vazia                               | Alta       | Aberto     |
+| BUG-121 | Categoria de conta a pagar é salva sem nome                                         | Baixa      | Aberto     |
+| BUG-122 | Categoria de conta a pagar duplicada é aceita                                       | Baixa      | Aberto     |
 
 ---
 
@@ -183,15 +192,15 @@ O BUG-007 aparece em RF01 e RF02, e o BUG-014 em RF02 e RF03, porque cada um apo
 
 **Casos por status:**
 
-- Passaram: 133
-- Falharam: 118
+- Passaram: 137
+- Falharam: 126
 
 **Severidade dos bugs abertos:**
 
-- Crítica: 2
-- Alta: 23
-- Média: 54
-- Baixa: 34
+- Crítica: 3
+- Alta: 24
+- Média: 55
+- Baixa: 38
 
 **Em revisão:** 2
 
@@ -228,6 +237,9 @@ As hipóteses abaixo foram levantadas a partir do comportamento na tela, do cons
 - **BUG-106**: a API retorna os modelos de contrato, mas a tabela renderiza cada linha como um elemento "corpo-modelo" vazio, o que indica que o componente da linha não está registrado no front-end.
 - **BUG-108, BUG-110, BUG-111, BUG-112, BUG-113**: o cadastro do Box (SifitBox) não valida os campos na tela e o back-end aceita horário invertido, turma sem dias, vagas negativas e modalidade inativa; o mesmo padrão aparece em Turmas (BUG-071).
 - **BUG-114**: a exclusão do Box faz uma inativação (exclusão lógica), mas a listagem de turmas não filtra nem mostra o status.
+- **BUG-116, BUG-119**: as telas de Bancos, Banco Recorrente e Categorias de conta a pagar parecem copiadas de outras telas e não foram terminadas: não estão no menu, abrem fora do layout e a exclusão de banco usa a rota e a mensagem de Tipos de Pagamento.
+- **BUG-117, BUG-118, BUG-121, BUG-122**: o back-end de bancos e categorias aceita nome vazio e nome duplicado, e a tela não valida nada antes de enviar.
+- **BUG-120**: a API retorna as categorias, mas a tabela da tela não as renderiza.
 
 | Grupo de bugs                                                          | Causa raiz provável                                                                                                                  |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
@@ -246,7 +258,7 @@ No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado.
 
 - Plano de Testes
 - Análise de requisitos
-- Casos de teste (C01 a C22); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C02, C04, C06, C09, C10, C13 a C15 e C17 a C19)
+- Casos de teste (C01 a C22, C30 e C31); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C02, C04, C06, C09, C10, C13 a C15, C17 a C19 e C31)
 - Relatório de bugs, com o vídeo da falha
 - Vídeos no Jam e prints na pasta `Sifit/Evidencias`
 - Roteiro dos vídeos a gravar (`5-Roteiro-de-videos.md`)
@@ -255,14 +267,16 @@ No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado.
 
 ## ✅ **Conclusão**
 
-Dos 251 casos, 133 passaram e 118 falharam, com 115 bugs registrados: 113 abertos e 2 em revisão. No login, só o usuário inexistente e o logout passaram: o login válido mostra erro no servidor ou entra mostrando o nome Jair, a senha incorreta já mostrou erro no servidor, os campos vazios seguem para a API sem aviso, os espaços nas pontas derrubam o login, o link "Esqueci minha senha" não faz nada e a sessão não é controlada.
+Dos 263 casos, 137 passaram e 126 falharam, com 122 bugs registrados: 120 abertos e 2 em revisão. No login, só o usuário inexistente e o logout passaram: o login válido mostra erro no servidor ou entra mostrando o nome Jair, a senha incorreta já mostrou erro no servidor, os campos vazios seguem para a API sem aviso, os espaços nas pontas derrubam o login, o link "Esqueci minha senha" não faz nada e a sessão não é controlada.
 
 As falhas mais graves impedem o uso de módulos centrais. Não é possível cadastrar nem alterar clientes (BUG-035 e BUG-039, severidade Crítica) e fornecedores (BUG-059 e BUG-060). A inativação do plano não é salva (BUG-045). O fechamento de caixa com conferência não é gravado (BUG-072). Não há como registrar o pagamento de conta a pagar (BUG-076). A ficha de treino não abre nem salva (BUG-081). A avaliação realizada não é salva (BUG-066). As anamneses aplicadas não aparecem (BUG-093 e BUG-094). Também se repetem formulários vazios que geram erro 500, respostas da API que expõem comandos SQL, registros em branco aceitos (Atividades, Objetivos de Treino e Tipos de Pagamento) e números que mudam de uma tela para outra (alunos em risco, avaliações pendentes, check-ins do dia, matrículas ativas contra clientes ativos e totais de contas a receber).
 
 Funcionam bem a prospecção (11 de 12 casos), as turmas (11 de 13) e a validação do campo obrigatório em Clientes, Matrículas, Avaliações, Fornecedores, Turmas, Bandeiras, Pontuação, Tipos de Documentos, Exercícios e Categorias Crossfit.
 
-Ficaram fora do escopo: Pagar.me, WhatsApp e Aplicativo. Ainda não têm caso de teste: Grupos musculares, Modelos de ficha, Configurações, Relatórios, Importar avaliações, Inteligência & Automação, Resultados IA, Local de contas, Bancos, Banco recorrente, Categorias de conta a pagar, Métricas do cliente e Modelos e categorias de anamnese (RF23 a RF33 no plano). O teste de formulário vazio criou 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12), que devem ser excluídos.
+Ficaram fora do escopo: Pagar.me, WhatsApp e Aplicativo. Ainda não têm caso de teste: Grupos musculares, Modelos de ficha, Configurações, Relatórios, Importar avaliações, Inteligência & Automação, Resultados IA, Local de contas, Métricas do cliente e Modelos e categorias de anamnese (RF23 a RF29, RF32 e RF33 no plano). O teste de formulário vazio criou 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12), que devem ser excluídos.
 
 Em Grupos, Modelos de contrato e Box - Turmas (C20 a C22, testados em 15/11/2026), os modelos de contrato não aparecem na listagem (BUG-106, severidade Alta), o status "Inativo" do grupo não é salvo (BUG-104) e o grupo não pode ser excluído (BUG-105). O cadastro de turmas do Box aceita horário invertido, turma sem dias e vagas negativas (BUG-110 a BUG-112). Ficaram no ambiente os grupos de teste #8, #9 e #10, que não podem ser excluídos nem inativados, e os modelos de contrato 8 e 9, que não aparecem na listagem. A modalidade e as turmas de teste do Box ficaram inativas.
+
+Em Bancos, Banco Recorrente e Categorias de conta a pagar (C30 e C31, testados em 15/11/2026), as três telas não têm item no menu e só abrem pelo link (BUG-116). O botão de excluir banco chama a exclusão de Tipo de Pagamento com o id do banco (BUG-119, severidade Crítica): no teste, só não apagou o tipo de pagamento 11 porque ele estava em uso. A listagem de categorias fica vazia (BUG-120), e as duas telas aceitam registros sem nome e duplicados. Na gravação do C30-CT07, a exclusão do Banco Brasil mostrou "Erro ao deletar tipo de pagamento", e o tipo de pagamento 1 (Dinheiro) continuou cadastrado. Como a exclusão de banco não é segura, os registros de teste não foram excluídos: bancos 8 a 17 e categorias 25 a 29 e as gravadas nos vídeos.
 
 Até 23/10/2026 os testes usaram https://sifit.centrion.com.br/. A partir de 24/10/2026, usam https://sifitalfa.centrion.com.br/. A versão interna do sistema não foi anotada.
