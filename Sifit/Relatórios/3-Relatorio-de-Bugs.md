@@ -3842,7 +3842,7 @@
 
 | **ID**  | **Descrição**                                                                                                                                                                           |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-103 | Foi possível cadastrar duas vezes o grupo "Grupo Teste Ville" (códigos #8 e #9), sem nenhum aviso. Como grupos não podem ser excluídos (BUG-105), a duplicidade não pode ser corrigida. |
+| BUG-103 | Foi possível cadastrar mais de uma vez o grupo "Grupo Teste Ville" (códigos #11, #12 e #13), sem nenhum aviso. Como grupos não podem ser excluídos (BUG-105), a duplicidade não pode ser corrigida. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3871,9 +3871,9 @@
 | :------------------------: | :------------------------------------: |
 |     Grupos / Cadastro      | C20-CT07: Cadastro de grupo duplicado. |
 
-|             **Evidência(s)**            |
-| :-------------------------------------: |
-| [BUG:103](coloque o link do video aqui) |
+|                          **Evidência(s)**                         |
+| :---------------------------------------------------------------: |
+| [BUG:103](https://jam.dev/c/96a9fe9b-5a85-45a2-9798-159a31ea714b) |
 
 ---
 
@@ -3911,9 +3911,9 @@
 | :------------------------: | :----------------------------: |
 |     Grupos / Alteração     | C20-CT09: Inativação de grupo. |
 
-|             **Evidência(s)**            |
-| :-------------------------------------: |
-| [BUG:104](coloque o link do video aqui) |
+|                          **Evidência(s)**                         |
+| :---------------------------------------------------------------: |
+| [BUG:104](https://jam.dev/c/98c0d5c7-f010-434f-a6ea-d44ddb49ffbb) |
 
 ---
 
@@ -3921,7 +3921,7 @@
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                       |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-105 | Ao confirmar a mensagem "Deseja deletar o Grupo?", a janela fecha sem nenhuma mensagem e o grupo continua na listagem. No DevTools (aba Network), a exclusão retorna erro 500 com "Erro interno inesperado.". Ocorreu com grupos recém-criados, sem nenhum vínculo. |
+| BUG-105 | Ao confirmar a mensagem "Deseja deletar o Grupo?", aparece a mensagem "Erro ao deletar Grupo" e o grupo continua na listagem. No DevTools (aba Network), a exclusão retorna erro 500 com "Erro interno inesperado.". Ocorreu com grupos recém-criados, sem nenhum vínculo. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3936,7 +3936,7 @@
 
 |                 **Comportamento Esperado**                 |                  **Comportamento Obtido**                  |
 | :--------------------------------------------------------: | :--------------------------------------------------------: |
-| O grupo deve ser excluído e deixar de constar na listagem. | Nenhuma mensagem é exibida e o grupo continua na listagem. |
+| O grupo deve ser excluído e deixar de constar na listagem. | Aparece "Erro ao deletar Grupo" e o grupo continua. |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -3950,9 +3950,9 @@
 | :------------------------: | :---------------------------: |
 |     Grupos / Exclusão      |  C20-CT10: Exclusão de grupo. |
 
-|             **Evidência(s)**            |
-| :-------------------------------------: |
-| [BUG:105](coloque o link do video aqui) |
+|                          **Evidência(s)**                         |
+| :---------------------------------------------------------------: |
+| [BUG:105](https://jam.dev/c/e30de4bd-5de2-4dfb-87a2-f09bab3a8440) |
 
 ---
 
@@ -3988,9 +3988,10 @@
 | :----------------------------: | :-------------------------------------------------------------------------------------------------------------: |
 | Modelos de contrato / Listagem | C21-CT01: Acesso à listagem de modelos de contrato. C21-CT06: Cadastro de modelo de contrato com dados válidos. |
 
-|             **Evidência(s)**            |
-| :-------------------------------------: |
-| [BUG:106](coloque o link do video aqui) |
+|                          **Evidência(s)**                         |
+| :---------------------------------------------------------------: |
+| [BUG:106](https://jam.dev/c/e1e3d8bf-996d-4aaa-9868-e8f046bfdf01) |
+| [Vídeo](https://jam.dev/c/fa52093b-2cba-4328-9ce9-fa00a0af85d5)   |
 
 ---
 
@@ -4027,57 +4028,17 @@
 | :----------------------------: | :--------------------------------------------: |
 | Modelos de contrato / Cadastro | C21-CT03: Salvar modelo de contrato sem texto. |
 
-|             **Evidência(s)**            |
-| :-------------------------------------: |
-| [BUG:107](coloque o link do video aqui) |
+|                          **Evidência(s)**                         |
+| :---------------------------------------------------------------: |
+| [BUG:107](https://jam.dev/c/648e27ae-8a17-496f-9886-1925dd6fc62a) |
 
 ---
 
-### 🐞 **Bug 108: Variável do contrato não fica na posição do cursor**
-
-| **ID**  | **Descrição**                                                                                                                                                                                  |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-108 | Ao clicar numa variável (ex.: {nome_aluno}) e continuar digitando, o texto digitado fica antes da variável. Ao inserir várias variáveis, elas se acumulam no fim do texto, em ordem invertida. |
-
-| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
-| :-------------------: | :------------------------: | :--------: |
-|         Baixa         |           Baixa            |   Aberto   |
-
-| **Passo a passo para simular o bug**      |
-| ----------------------------------------- |
-| 1. Clicar em "Adicionar Modelo Contrato". |
-| 2. Digitar "Eu, " no texto do contrato.   |
-| 3. Clicar na variável "{nome_aluno}".     |
-| 4. Continuar digitando ", CPF ".          |
-| 5. Observar a ordem do texto.             |
-
-|          **Comportamento Esperado**          |        **Comportamento Obtido**        |
-| :------------------------------------------: | :------------------------------------: |
-| O texto deve ficar "Eu, {nome_aluno}, CPF ". | O texto fica "Eu, , CPF {nome_aluno}". |
-
-| **Ambiente**                       |
-| ---------------------------------- |
-| Sifit Unialfa                      |
-| https://sifitalfa.centrion.com.br/ |
-| Desktop Ubuntu 26.04 LTS           |
-| Google Chrome 155.0.8059.84        |
-| 15/11/2026                         |
-
-|  **Funcionalidade Afetada** |             **Caso de Teste Relacionado**             |
-| :-------------------------: | :---------------------------------------------------: |
-| Modelos de contrato / Texto | C21-CT04: Inserção de variáveis no texto do contrato. |
-
-|             **Evidência(s)**            |
-| :-------------------------------------: |
-| [BUG:108](coloque o link do video aqui) |
-
----
-
-### 🐞 **Bug 109: Box - Turmas não avisa nada ao salvar modalidade ou turma vazia**
+### 🐞 **Bug 108: Box - Turmas não avisa nada ao salvar modalidade ou turma vazia**
 
 | **ID**  | **Descrição**                                                                                                                                                                      |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-109 | Na tela "Box - Turmas", ao clicar em "Modalidade" ou em "Turma" com os campos vazios, o registro não é salvo, mas nenhuma mensagem orienta o usuário sobre os campos obrigatórios. |
+| BUG-108 | Na tela "Box - Turmas", ao clicar em "Modalidade" ou em "Turma" com os campos vazios, o registro não é salvo, mas nenhuma mensagem orienta o usuário sobre os campos obrigatórios. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -4107,15 +4068,15 @@
 
 |             **Evidência(s)**            |
 | :-------------------------------------: |
-| [BUG:109](coloque o link do video aqui) |
+| [BUG:108](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 110: Erro 500 sem mensagem ao cadastrar modalidade duplicada**
+### 🐞 **Bug 109: Erro 500 sem mensagem ao cadastrar modalidade duplicada**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                  |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-110 | Ao cadastrar uma modalidade com o nome de uma já existente ("Modalidade Teste Ville"), a modalidade não é duplicada, mas a tela não mostra nenhuma mensagem. No DevTools (aba Network), a API retorna erro 500 com "Erro interno inesperado.". |
+| BUG-109 | Ao cadastrar uma modalidade com o nome de uma já existente ("Modalidade Teste Ville"), a modalidade não é duplicada, mas a tela não mostra nenhuma mensagem. No DevTools (aba Network), a API retorna erro 500 com "Erro interno inesperado.". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -4146,15 +4107,15 @@
 
 |             **Evidência(s)**            |
 | :-------------------------------------: |
-| [BUG:110](coloque o link do video aqui) |
+| [BUG:109](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 111: Turma do Box aceita hora final anterior à hora inicial**
+### 🐞 **Bug 110: Turma do Box aceita hora final anterior à hora inicial**
 
 | **ID**  | **Descrição**                                                                                                                                          |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-111 | O sistema permite cadastrar uma turma do Box com hora inicial 11:00 e hora final 10:00. A turma é salva e exibida com o horário "11:00:00 - 10:00:00". |
+| BUG-110 | O sistema permite cadastrar uma turma do Box com hora inicial 11:00 e hora final 10:00. A turma é salva e exibida com o horário "11:00:00 - 10:00:00". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -4185,15 +4146,15 @@
 
 |             **Evidência(s)**            |
 | :-------------------------------------: |
-| [BUG:111](coloque o link do video aqui) |
+| [BUG:110](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 112: Turma do Box é cadastrada sem dias da semana**
+### 🐞 **Bug 111: Turma do Box é cadastrada sem dias da semana**
 
 | **ID**  | **Descrição**                                                                                                                                               |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-112 | O sistema permite cadastrar uma turma recorrente do Box sem nenhum dia da semana selecionado. A turma "Turma Box Ville Sem Dia" foi salva sem dias de aula. |
+| BUG-111 | O sistema permite cadastrar uma turma recorrente do Box sem nenhum dia da semana selecionado. A turma "Turma Box Ville Sem Dia" foi salva sem dias de aula. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -4224,15 +4185,15 @@
 
 |             **Evidência(s)**            |
 | :-------------------------------------: |
-| [BUG:112](coloque o link do video aqui) |
+| [BUG:111](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 113: Turma do Box aceita quantidade de vagas negativa**
+### 🐞 **Bug 112: Turma do Box aceita quantidade de vagas negativa**
 
 | **ID**  | **Descrição**                                                                                                                  |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-113 | O campo de vagas da turma do Box aceita valor negativo. A turma "Turma Box Ville Vagas" foi cadastrada e listada com -5 vagas. |
+| BUG-112 | O campo de vagas da turma do Box aceita valor negativo. A turma "Turma Box Ville Vagas" foi cadastrada e listada com -5 vagas. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -4263,15 +4224,15 @@
 
 |             **Evidência(s)**            |
 | :-------------------------------------: |
-| [BUG:113](coloque o link do video aqui) |
+| [BUG:112](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 114: Modalidade inativa aparece no cadastro de turma do Box**
+### 🐞 **Bug 113: Modalidade inativa aparece no cadastro de turma do Box**
 
 | **ID**  | **Descrição**                                                                                                                                  |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-114 | O campo "Modalidade" do cadastro de turma lista a modalidade inativa "Leo valesk", e a turma "Turma Box Ville Inativa" foi cadastrada com ela. |
+| BUG-113 | O campo "Modalidade" do cadastro de turma lista a modalidade inativa "Leo valesk", e a turma "Turma Box Ville Inativa" foi cadastrada com ela. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -4301,15 +4262,15 @@
 
 |             **Evidência(s)**            |
 | :-------------------------------------: |
-| [BUG:114](coloque o link do video aqui) |
+| [BUG:113](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 115: Exclusão de turma do Box não pede confirmação e mantém a turma na lista**
+### 🐞 **Bug 114: Exclusão de turma do Box não pede confirmação e mantém a turma na lista**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                                                      |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-115 | Ao clicar no botão de excluir de uma turma do Box, a ação é executada na hora, sem confirmação. A API responde sem erro, mas a turma continua na listagem: pela API, ela só passa para "inativo", e a listagem não tem coluna de status. O mesmo ocorre com modalidades, que ficam como "inativo". |
+| BUG-114 | Ao clicar no botão de excluir de uma turma do Box, a ação é executada na hora, sem confirmação. A API responde sem erro, mas a turma continua na listagem: pela API, ela só passa para "inativo", e a listagem não tem coluna de status. O mesmo ocorre com modalidades, que ficam como "inativo". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -4340,4 +4301,4 @@
 
 |             **Evidência(s)**            |
 | :-------------------------------------: |
-| [BUG:115](coloque o link do video aqui) |
+| [BUG:114](coloque o link do video aqui) |

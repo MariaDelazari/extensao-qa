@@ -26,7 +26,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/e1e3d8bf-996d-4aaa-9868-e8f046bfdf01) |
 
 ---
 
@@ -57,7 +57,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/1f86937d-e686-478a-a544-3b2b78cf2a2e) |
 
 ---
 
@@ -88,7 +88,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/648e27ae-8a17-496f-9886-1925dd6fc62a) |
 
 ---
 
@@ -113,13 +113,13 @@
 | :--------------------------------------------------------------------------------------------- |
 | A variável deve ser inserida onde está o cursor e o texto seguinte deve continuar depois dela. |
 
-| **Resultado da execução**                                                                                                                                                                                                     |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** O texto digitado depois do clique fica antes da variável. Com {nome_aluno}, {cpf_aluno} e {plano_nome}, o resultado foi "Eu, , CPF , contrato o plano  de teste do Ville. {plano_nome} {cpf_aluno} {nome_aluno}". |
+| **Resultado da execução**                                                                                                       |
+| :------------------------------------------------------------------------------------------------------------------------------ |
+| **Passou.** A variável "{nome_aluno}" entrou onde estava o cursor e o texto ficou "Eu {nome_aluno} , CPF ,", na ordem digitada. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/275469f2-d6a9-4c74-bf1b-40865a698dd1) |
 
 ---
 
@@ -149,7 +149,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/dbc50623-2b07-4c57-85aa-5a67c0fd999c) |
 
 ---
 
@@ -174,10 +174,10 @@
 | :----------------------------------------------------- |
 | O sistema deve salvar o modelo e exibi-lo na listagem. |
 
-| **Resultado da execução**                                                                                    |
-| :----------------------------------------------------------------------------------------------------------- |
-| **Falhou.** O modelo foi salvo (a API retornou o código 9), mas não aparece na listagem, que continua vazia. |
+| **Resultado da execução**                                                                                                                 |
+| :---------------------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** O modelo "Contrato Completo Ville" foi salvo e a tela voltou para a listagem, mas ele não aparece: a listagem continua vazia. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/fa52093b-2cba-4328-9ce9-fa00a0af85d5) |

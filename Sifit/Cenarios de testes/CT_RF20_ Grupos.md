@@ -26,7 +26,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/f8e34ef4-b566-48d9-b6d9-ae522c79cae5) |
 
 ---
 
@@ -57,7 +57,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/e3b9f290-2e1b-4256-b9ba-b4946e2e3415) |
 
 ---
 
@@ -88,7 +88,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/1040acdf-d32b-4310-8d62-c420cf5ec489) |
 
 ---
 
@@ -119,7 +119,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/e1015bf2-10bd-4025-a41a-1a0a2820aac4) |
 
 ---
 
@@ -150,7 +150,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/5effbf47-9aa1-46c1-a795-2fe177f7ce8f) |
 
 ---
 
@@ -181,7 +181,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/0c02a6fb-d377-4a8d-a5af-5255164d94ee) |
 
 ---
 
@@ -206,13 +206,13 @@
 | :--------------------------------------------------- |
 | O sistema não deve permitir grupos com o mesmo nome. |
 
-| **Resultado da execução**                                                                    |
-| :------------------------------------------------------------------------------------------- |
-| **Falhou.** O grupo foi cadastrado de novo (códigos #8 e #9 com o nome "Grupo Teste Ville"). |
+| **Resultado da execução**                                                                                                    |
+| :--------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** O grupo foi cadastrado de novo. A busca por "Grupo Teste Ville" lista os grupos #11, #12 e #13 com o mesmo nome. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/96a9fe9b-5a85-45a2-9798-159a31ea714b) |
 
 ---
 
@@ -243,7 +243,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/6ff4f77e-08fe-4b54-a843-dbf57844a531) |
 
 ---
 
@@ -268,13 +268,13 @@
 | :------------------------------------------------------------------ |
 | O sistema deve salvar o status do grupo e atualizar os indicadores. |
 
-| **Resultado da execução**                                                                                                                               |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Falhou.** O grupo continua "ATIVO" e o indicador "Ativos" não muda. O mesmo ocorre ao cadastrar um grupo novo como "Inativo" ("Grupo Inativo Ville"). |
+| **Resultado da execução**                                                                                                                                                     |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** Depois de salvar o grupo #8 como "Inativo", ele continua "ATIVO" e o indicador "Ativos" continua em 12. O mesmo ocorre ao cadastrar um grupo novo como "Inativo". |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/98c0d5c7-f010-434f-a6ea-d44ddb49ffbb) |
 
 ---
 
@@ -299,10 +299,10 @@
 | :------------------------------------------------------ |
 | O sistema deve solicitar confirmação e excluir o grupo. |
 
-| **Resultado da execução**                                                                                                                                               |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** A confirmação fecha sem nenhuma mensagem e o grupo continua na listagem. No DevTools (aba Network), a exclusão retorna erro 500 "Erro interno inesperado.". |
+| **Resultado da execução**                                                                                                    |
+| :--------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** Ao confirmar a exclusão do grupo #10, aparece a mensagem "Erro ao deletar Grupo" e o grupo continua na listagem. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/e30de4bd-5de2-4dfb-87a2-f09bab3a8440) |
