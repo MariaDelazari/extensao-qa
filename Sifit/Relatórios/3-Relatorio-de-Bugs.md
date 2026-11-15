@@ -3912,3 +3912,348 @@
 |                          **Evidência(s)**                         |
 | :---------------------------------------------------------------: |
 | [BUG:105](https://jam.dev/c/02ee32cf-7b68-4011-9cd9-d0faaba8470e) |
+
+---
+
+### 🐞 **Bug 116: Cadastro de grupo muscular sem tipo de membro mostra erro genérico**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                              |
+| :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-116 | Ao salvar um grupo muscular com o formulário vazio ou sem o "Tipo Membro", a tela mostra só "Erro ao salvar grupo" e o servidor responde com erro 500. O campo "Tipo Membro" não tem a opção "Selecione" nem a marca de obrigatório, então o usuário não sabe o que falta. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+| Baixa                 | Média                      | Aberto     |
+
+| **Passo a passo para simular o bug**                 |
+| :--------------------------------------------------- |
+| 1. Acessar a tela "Grupos Musculares" do SIFIT.      |
+| 2. Clicar no botão "Cadastrar grupo".                |
+| 3. Informar só o nome, sem escolher o "Tipo Membro". |
+| 4. Clicar no botão "Salvar".                         |
+
+| **Comportamento Esperado**                                | **Comportamento Obtido**                     |
+| :-------------------------------------------------------: | :------------------------------------------: |
+| O sistema deve indicar que o "Tipo Membro" é obrigatório. | "Erro ao salvar grupo", sem indicar o campo. |
+
+| **Ambiente**                       |
+| :--------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome (informar a versão)  |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada**   | **Caso de Teste Relacionado**                                                                                       |
+| :--------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
+| Grupos Musculares / Cadastro | C23-CT07: Salvar Grupos Musculares com o formulário vazio; C23-CT08: Cadastro de grupo muscular sem tipo de membro. |
+
+| **Evidência(s)**                        |
+| :-------------------------------------: |
+| [BUG:116](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 117: Grupo muscular é salvo sem nome**
+
+| **ID**  | **Descrição**                                                                                                                               |
+| :------ | :------------------------------------------------------------------------------------------------------------------------------------------ |
+| BUG-117 | Com o "Tipo Membro" selecionado e o "Nome" vazio, o grupo é salvo e aparece na listagem e na biblioteca de exercícios com o nome em branco. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+| Média                 | Média                      | Aberto     |
+
+| **Passo a passo para simular o bug**                |
+| :-------------------------------------------------- |
+| 1. Acessar a tela "Grupos Musculares" do SIFIT.     |
+| 2. Clicar no botão "Cadastrar grupo".               |
+| 3. Deixar o "Nome" vazio e selecionar "Inferiores". |
+| 4. Clicar no botão "Salvar".                        |
+
+| **Comportamento Esperado**             | **Comportamento Obtido**              |
+| :------------------------------------: | :-----------------------------------: |
+| O sistema deve exigir o nome do grupo. | O grupo é salvo com o nome em branco. |
+
+| **Ambiente**                       |
+| :--------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome (informar a versão)  |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada**   | **Caso de Teste Relacionado**                  |
+| :--------------------------: | :--------------------------------------------: |
+| Grupos Musculares / Cadastro | C23-CT09: Cadastro de grupo muscular sem nome. |
+
+| **Evidência(s)**                        |
+| :-------------------------------------: |
+| [BUG:117](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 118: Grupo muscular duplicado é aceito**
+
+| **ID**  | **Descrição**                                                                                                 |
+| :------ | :------------------------------------------------------------------------------------------------------------ |
+| BUG-118 | Foi possível cadastrar duas vezes o grupo "Grupo Teste Keltton" com o mesmo tipo de membro, sem nenhum aviso. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+| Baixa                 | Baixa                      | Aberto     |
+
+| **Passo a passo para simular o bug**                          |
+| :------------------------------------------------------------ |
+| 1. Acessar a tela "Grupos Musculares" do SIFIT.               |
+| 2. Cadastrar o grupo "Grupo Teste Keltton" como "Superiores". |
+| 3. Cadastrar de novo o mesmo nome e tipo.                     |
+
+| **Comportamento Esperado**                     | **Comportamento Obtido**             |
+| :--------------------------------------------: | :----------------------------------: |
+| O sistema deve informar que o grupo já existe. | O grupo é cadastrado em duplicidade. |
+
+| **Ambiente**                       |
+| :--------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome (informar a versão)  |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada**   | **Caso de Teste Relacionado**                   |
+| :--------------------------: | :---------------------------------------------: |
+| Grupos Musculares / Cadastro | C23-CT11: Cadastro de grupo muscular duplicado. |
+
+| **Evidência(s)**                        |
+| :-------------------------------------: |
+| [BUG:118](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 119: Exclusão de grupo muscular com exercícios mostra erro genérico**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                |
+| :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-119 | Ao excluir um grupo que tem exercício vinculado, a exclusão é bloqueada (correto), mas a tela mostra só "Erro ao deletar Grupo" e o servidor responde com erro 500 e "Erro interno inesperado.", sem explicar que o grupo possui exercícios. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+| Baixa                 | Baixa                      | Aberto     |
+
+| **Passo a passo para simular o bug**                                             |
+| :------------------------------------------------------------------------------- |
+| 1. Cadastrar um grupo de teste e, em "Exercícios", adicionar um exercício a ele. |
+| 2. Em "Grupos Musculares", clicar em "Deletar" no grupo de teste.                |
+| 3. Confirmar a exclusão.                                                         |
+
+| **Comportamento Esperado**                                                     | **Comportamento Obtido**            |
+| :----------------------------------------------------------------------------: | :---------------------------------: |
+| O sistema deve informar que o grupo possui exercícios e não pode ser excluído. | "Erro ao deletar Grupo" (erro 500). |
+
+| **Ambiente**                       |
+| :--------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome (informar a versão)  |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada**   | **Caso de Teste Relacionado**                                 |
+| :--------------------------: | :-----------------------------------------------------------: |
+| Grupos Musculares / Exclusão | C23-CT15: Exclusão de grupo muscular com exercício vinculado. |
+
+| **Evidência(s)**                        |
+| :-------------------------------------: |
+| [BUG:119](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 120: Não é possível criar modelo de ficha**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                    |
+| :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-120 | Ao criar um modelo com nome e personal, a tela mostra só "Erro ao salvar modelo.". No DevTools, o servidor responde "Escolha o objetivo do treino.", mas a janela "Novo Modelo de Ficha" não tem campo de objetivo. Nenhum modelo pode ser criado por esta tela. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+| Alta                  | Alta                       | Aberto     |
+
+| **Passo a passo para simular o bug**                                 |
+| :------------------------------------------------------------------- |
+| 1. Acessar o menu "Modelo Ficha".                                    |
+| 2. Clicar no botão "Nova Ficha".                                     |
+| 3. Informar o nome "Modelo Teste Keltton" e selecionar uma personal. |
+| 4. Clicar no botão "Criar Modelo".                                   |
+
+| **Comportamento Esperado**          | **Comportamento Obtido**                           |
+| :---------------------------------: | :------------------------------------------------: |
+| O modelo deve ser criado e listado. | "Erro ao salvar modelo." e nenhum modelo é criado. |
+
+| **Ambiente**                       |
+| :--------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome (informar a versão)  |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado**             |
+| :------------------------: | :---------------------------------------: |
+| Modelo Ficha / Cadastro    | C24-CT06: Criar modelo com dados válidos. |
+
+| **Evidência(s)**                        |
+| :-------------------------------------: |
+| [BUG:120](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 121: "Alterar" do modelo de ficha abre a ficha de treino de um aluno**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                      |
+| :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-121 | O botão "Alterar" do modelo #1 abre "/ficha-treino/alterar/1", que é a ficha de treino do aluno "Manual SIFIT Aluno Exemplo", e não o modelo. A listagem de modelos e a ficha de treino usam códigos diferentes, mas a tela usa o código do modelo para abrir a ficha. Pelo mesmo motivo, o "Deletar" do modelo pode apagar a ficha de um aluno (não testado, para não apagar dados de terceiros). |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+| Alta                  | Alta                       | Aberto     |
+
+| **Passo a passo para simular o bug**              |
+| :------------------------------------------------ |
+| 1. Acessar o menu "Modelo Ficha".                 |
+| 2. Clicar no botão "Alterar" do modelo #1.        |
+| 3. Observar o título e o endereço da tela aberta. |
+
+| **Comportamento Esperado**                    | **Comportamento Obtido**            |
+| :-------------------------------------------: | :---------------------------------: |
+| O sistema deve abrir o modelo #1 para edição. | Abre a ficha de treino de um aluno. |
+
+| **Ambiente**                       |
+| :--------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome (informar a versão)  |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado**           |
+| :------------------------: | :-------------------------------------: |
+| Modelo Ficha / Alteração   | C24-CT07: Alteração de modelo de ficha. |
+
+| **Evidência(s)**                        |
+| :-------------------------------------: |
+| [BUG:121](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 122: Configurações não confirmam o salvamento**
+
+| **ID**  | **Descrição**                                                                                                                                                   |
+| :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-122 | Ao clicar em "Salvar Configurações", o servidor responde sem erro, mas a tela não mostra nenhuma mensagem. O usuário não sabe se as configurações foram salvas. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+| Baixa                 | Baixa                      | Aberto     |
+
+| **Passo a passo para simular o bug**       |
+| :----------------------------------------- |
+| 1. Acessar o menu "Configurações".         |
+| 2. Clicar no botão "Salvar Configurações". |
+
+| **Comportamento Esperado**                     | **Comportamento Obtido**    |
+| :--------------------------------------------: | :-------------------------: |
+| O sistema deve exibir uma mensagem de sucesso. | Nenhuma mensagem é exibida. |
+
+| **Ambiente**                       |
+| :--------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome (informar a versão)  |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado**                     |
+| :------------------------: | :-----------------------------------------------: |
+| Configurações / Salvar     | C25-CT04: Confirmação ao salvar as configurações. |
+
+| **Evidência(s)**                        |
+| :-------------------------------------: |
+| [BUG:122](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 123: "Dias para contar cliente como ausente" aceita valor negativo**
+
+| **ID**  | **Descrição**                                                                                                                                                        |
+| :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-123 | O campo aceita e salva "-5" sem nenhum aviso. O valor é usado para classificar clientes como ausentes, então um número negativo distorce os indicadores de ausentes. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+| Média                 | Média                      | Aberto     |
+
+| **Passo a passo para simular o bug**                         |
+| :----------------------------------------------------------- |
+| 1. Acessar o menu "Configurações", aba "Home".               |
+| 2. Informar "-5" em "Dias para contar cliente como ausente". |
+| 3. Clicar no botão "Salvar Configurações".                   |
+| 4. Reabrir a tela. Ao final, voltar o valor para 120.        |
+
+| **Comportamento Esperado**                                | **Comportamento Obtido** |
+| :-------------------------------------------------------: | :----------------------: |
+| O sistema deve rejeitar valores menores ou iguais a zero. | O valor -5 é salvo.      |
+
+| **Ambiente**                       |
+| :--------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome (informar a versão)  |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado**                           |
+| :------------------------: | :-----------------------------------------------------: |
+| Configurações / Home       | C25-CT05: Dias para cliente ausente com valor negativo. |
+
+| **Evidência(s)**                        |
+| :-------------------------------------: |
+| [BUG:123](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 124: Senha da biometria e token do Pagar.me aparecem em texto aberto**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                              |
+| :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-124 | Na tela de configurações, a "Senha" do aparelho de biometria (aba "Biometria") e o "Token Pagar.me" (aba "Pagamento") são campos de texto comum e mostram o valor completo. Qualquer pessoa com acesso à tela, ou um print, expõe essas credenciais. O "ACCESS TOKEN" da aba "Integrações" já é mascarado. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+| Média                 | Alta                       | Aberto     |
+
+| **Passo a passo para simular o bug**                            |
+| :-------------------------------------------------------------- |
+| 1. Acessar o menu "Configurações".                              |
+| 2. Abrir a aba "Biometria" e observar o campo "Senha".          |
+| 3. Abrir a aba "Pagamento" e observar o campo "Token Pagar.me". |
+
+| **Comportamento Esperado**                        | **Comportamento Obtido**             |
+| :-----------------------------------------------: | :----------------------------------: |
+| Senhas e tokens devem aparecer mascarados (••••). | Os valores aparecem em texto aberto. |
+
+| **Ambiente**                       |
+| :--------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome (informar a versão)  |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada**            | **Caso de Teste Relacionado**           |
+| :-----------------------------------: | :-------------------------------------: |
+| Configurações / Biometria e Pagamento | C25-CT06: Ocultação de senhas e tokens. |
+
+| **Evidência(s)**                        |
+| :-------------------------------------: |
+| [BUG:124](coloque o link do video aqui) |
