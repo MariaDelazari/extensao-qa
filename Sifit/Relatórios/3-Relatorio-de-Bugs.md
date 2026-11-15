@@ -936,7 +936,8 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:24](coloque o link do video aqui) |
+| [BUG:24](https://jam.dev/c/fa03cb2a-8ed4-45cf-a70a-6a8a999ab4da) |
+  [BUG:24](https://jam.dev/c/4e8caa28-0972-44c6-b4e8-34fb85ac989d) |
 
 ---
 
@@ -1018,50 +1019,11 @@
 
 ---
 
-### 🐞 **Bug 27: Cadastro de Funções não avisa nada ao salvar vazio**
-
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                 |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-027 | Ao clicar em "Salvar Função" com o formulário vazio, o sistema não mostra nenhuma mensagem e o cadastro não é salvo. Este registro está em revisão: veio de uma execução automatizada em 28/10/2026, sem vídeo, e em outras execuções o navegador mostrou o aviso "Preencha este campo." ao salvar o mesmo formulário vazio. Se o vídeo do roteiro mostrar o aviso, o bug deve ser cancelado. |
-
-| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
-| :-------------------: | :------------------------: | :--------: |
-|         Média         |           Média            | Em revisão |
-
-| **Passo a passo para simular o bug**              |
-| ------------------------------------------------- |
-| 1. Entrar no Sifit Unialfa.                       |
-| 2. Abrir "Funções" (`/funcoes`).                  |
-| 3. Clicar em "Nova Função".                       |
-| 4. Sem preencher nada, clicar em "Salvar Função". |
-
-|               **Comportamento Esperado**               |                                   **Comportamento Obtido**                                    |
-| :----------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
-| O sistema deve informar o campo obrigatório que falta. | Nada acontece e nenhuma mensagem aparece. A pessoa não sabe por que o cadastro não foi salvo. |
-
-| **Ambiente**                       |
-| ---------------------------------- |
-| Sifit Unialfa                      |
-| https://sifitalfa.centrion.com.br/ |
-| Desktop Ubuntu 26.04 LTS           |
-| Google Chrome 150.0.7871.46        |
-| 28/10/2026                         |
-
-| **Funcionalidade Afetada** |     **Caso de Teste Relacionado**      |
-| :------------------------: | :------------------------------------: |
-|     Funções / Cadastro     | C16-CT13: Cadastro de função sem nome. |
-
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:27](coloque o link do video aqui) |
-
----
-
-### 🐞 **Bug 28: Erro genérico ao salvar produto vazio**
+### 🐞 **Bug 27: Erro genérico ao salvar produto vazio**
 
 | **ID**  | **Descrição**                                                                                         |
 | ------- | ----------------------------------------------------------------------------------------------------- |
-| BUG-028 | Ao salvar um produto vazio, a tela mostra só "Erro ao salvar produto", sem indicar o campo que falta. |
+| BUG-027 | Ao salvar um produto vazio, a tela mostra só "Erro ao salvar produto", sem indicar o campo que falta. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1092,15 +1054,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:28](coloque o link do video aqui) |
+| [BUG:27](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 29: Erro genérico ao salvar enquete vazia**
+### 🐞 **Bug 28: Erro genérico ao salvar enquete vazia**
 
 | **ID**  | **Descrição**                                                                                 |
 | ------- | --------------------------------------------------------------------------------------------- |
-| BUG-029 | Ao salvar uma enquete vazia, a tela mostra "Erro ao salvar enquete", sem indicar o que falta. |
+| BUG-028 | Ao salvar uma enquete vazia, a tela mostra "Erro ao salvar enquete", sem indicar o que falta. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1131,15 +1093,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:29](coloque o link do video aqui) |
+| [BUG:28](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 30: Atividades permite salvar registro em branco**
+### 🐞 **Bug 29: Atividades permite salvar registro em branco**
 
 | **ID**  | **Descrição**                                                                             |
 | ------- | ----------------------------------------------------------------------------------------- |
-| BUG-030 | Ao salvar o formulário de Atividades vazio, o sistema aceita e cria um registro sem nome. |
+| BUG-029 | Ao salvar o formulário de Atividades vazio, o sistema aceita e cria um registro sem nome. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1171,15 +1133,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:30](coloque o link do video aqui) |
+| [BUG:29](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 31: Objetivos de Treino permite salvar registro em branco**
+### 🐞 **Bug 30: Objetivos de Treino permite salvar registro em branco**
 
 | **ID**  | **Descrição**                                                                                      |
 | ------- | -------------------------------------------------------------------------------------------------- |
-| BUG-031 | Ao salvar o formulário de Objetivos de Treino vazio, o sistema aceita e cria um registro sem nome. |
+| BUG-030 | Ao salvar o formulário de Objetivos de Treino vazio, o sistema aceita e cria um registro sem nome. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1211,15 +1173,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:31](coloque o link do video aqui) |
+| [BUG:30](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 32: Tipos de Pagamento permite salvar registro em branco**
+### 🐞 **Bug 31: Tipos de Pagamento permite salvar registro em branco**
 
 | **ID**  | **Descrição**                                                                                     |
 | ------- | ------------------------------------------------------------------------------------------------- |
-| BUG-032 | Ao salvar o formulário de Tipos de Pagamento vazio, o sistema aceita e cria um registro sem nome. |
+| BUG-031 | Ao salvar o formulário de Tipos de Pagamento vazio, o sistema aceita e cria um registro sem nome. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1251,15 +1213,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:32](coloque o link do video aqui) |
+| [BUG:31](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 33: Erro ao salvar pergunta de anamnese vazia**
+### 🐞 **Bug 32: Erro ao salvar pergunta de anamnese vazia**
 
 | **ID**  | **Descrição**                                                                                                  |
 | ------- | -------------------------------------------------------------------------------------------------------------- |
-| BUG-033 | Ao salvar uma pergunta de anamnese vazia, a tela mostra só "Erro ao salvar pergunta", sem indicar o que falta. |
+| BUG-032 | Ao salvar uma pergunta de anamnese vazia, a tela mostra só "Erro ao salvar pergunta", sem indicar o que falta. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1290,15 +1252,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:33](coloque o link do video aqui) |
+| [BUG:32](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 34: Quantidade de clientes ausentes diverge entre a Página Inicial e a tela de Clientes**
+### 🐞 **Bug 33: Quantidade de clientes ausentes diverge entre a Página Inicial e a tela de Clientes**
 
 | **ID**  | **Descrição**                                                                                                                                                                               |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-034 | A Página Inicial exibe 4 clientes ausentes (Rafael Santos, Jerome Lionel, Steven Kaiki e Lila, todos sem visitas registradas), enquanto o indicador "Ausentes" da tela de Clientes exibe 0. |
+| BUG-033 | A Página Inicial exibe 4 clientes ausentes (Rafael Santos, Jerome Lionel, Steven Kaiki e Lila, todos sem visitas registradas), enquanto o indicador "Ausentes" da tela de Clientes exibe 0. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1326,15 +1288,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:34](https://jam.dev/c/7cde0ad8-fe3a-4a3b-9a14-0805dca3875b) |
+| [BUG:33](https://jam.dev/c/7cde0ad8-fe3a-4a3b-9a14-0805dca3875b) |
 
 ---
 
-### 🐞 **Bug 35: Lista de desistências vazia, embora o total informe 3 desistências**
+### 🐞 **Bug 34: Lista de desistências vazia, embora o total informe 3 desistências**
 
 | **ID**  | **Descrição**                                                                                                                                                                |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-035 | Ao clicar no card "Desistências no Período", que exibe 3, a janela exibe a mensagem "Nenhuma desistência encontrada no período." e, logo abaixo, "Total de desistências: 3". |
+| BUG-034 | Ao clicar no card "Desistências no Período", que exibe 3, a janela exibe a mensagem "Nenhuma desistência encontrada no período." e, logo abaixo, "Total de desistências: 3". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1362,15 +1324,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:35](https://jam.dev/c/9b8a90d6-7d67-426f-8c6b-48eb4b8e1296) |
+| [BUG:34](https://jam.dev/c/9b8a90d6-7d67-426f-8c6b-48eb4b8e1296) |
 
 ---
 
-### 🐞 **Bug 36: Erro ao cadastrar cliente com dados válidos**
+### 🐞 **Bug 35: Erro ao cadastrar cliente com dados válidos**
 
 | **ID**  | **Descrição**                                                                                                                                                                                          |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-036 | Ao preencher todos os campos obrigatórios (e também os opcionais) com dados válidos e clicar em "Cadastrar Cliente", o sistema exibe a mensagem "Erro ao criar cliente." e o cliente não é cadastrado. |
+| BUG-035 | Ao preencher todos os campos obrigatórios (e também os opcionais) com dados válidos e clicar em "Cadastrar Cliente", o sistema exibe a mensagem "Erro ao criar cliente." e o cliente não é cadastrado. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1399,15 +1361,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:36](https://jam.dev/c/e21003f6-a3e5-4f6f-9ea2-755f25b7ff91) |
+| [BUG:35](https://jam.dev/c/e21003f6-a3e5-4f6f-9ea2-755f25b7ff91) |
 
 ---
 
-### 🐞 **Bug 37: Busca por código não retorna clientes sem matrícula**
+### 🐞 **Bug 36: Busca por código não retorna clientes sem matrícula**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                               |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-037 | Ao pesquisar pelo código de um cliente que não possui matrícula (ex.: 406 e 408), a listagem retorna vazia, embora o cliente exista e apareça na listagem padrão. Para clientes com matrícula (ex.: 398), a busca funciona. |
+| BUG-036 | Ao pesquisar pelo código de um cliente que não possui matrícula (ex.: 406 e 408), a listagem retorna vazia, embora o cliente exista e apareça na listagem padrão. Para clientes com matrícula (ex.: 398), a busca funciona. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1435,15 +1397,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:37](https://jam.dev/c/e36fb928-6b21-4210-b361-cc99a1358cf9) |
+| [BUG:36](https://jam.dev/c/e36fb928-6b21-4210-b361-cc99a1358cf9) |
 
 ---
 
-### 🐞 **Bug 38: Listagem não respeita a quantidade de registros por página**
+### 🐞 **Bug 37: Listagem não respeita a quantidade de registros por página**
 
 | **ID**  | **Descrição**                                                                                                                                                                       |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-038 | Com a opção "50" registros por página selecionada e o filtro "Status" em "Todos", a primeira página exibe todos os 126 clientes cadastrados, enquanto a página 2 exibe 50 clientes. |
+| BUG-037 | Com a opção "50" registros por página selecionada e o filtro "Status" em "Todos", a primeira página exibe todos os 126 clientes cadastrados, enquanto a página 2 exibe 50 clientes. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1471,15 +1433,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:38](https://jam.dev/c/7e9313e8-1a42-4e1f-99be-f22711d0d555) |
+| [BUG:37](https://jam.dev/c/7e9313e8-1a42-4e1f-99be-f22711d0d555) |
 
 ---
 
-### 🐞 **Bug 39: Ausência de mensagem quando a busca não encontra clientes**
+### 🐞 **Bug 38: Ausência de mensagem quando a busca não encontra clientes**
 
 | **ID**  | **Descrição**                                                                                                                                           |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-039 | Ao pesquisar um nome que não está cadastrado, o sistema exibe apenas a tabela vazia, sem nenhuma mensagem informando que nenhum cliente foi encontrado. |
+| BUG-038 | Ao pesquisar um nome que não está cadastrado, o sistema exibe apenas a tabela vazia, sem nenhuma mensagem informando que nenhum cliente foi encontrado. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1507,15 +1469,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:39](https://jam.dev/c/1400615a-e41d-4ab8-95d5-5a68bd56510d) |
+| [BUG:38](https://jam.dev/c/1400615a-e41d-4ab8-95d5-5a68bd56510d) |
 
 ---
 
-### 🐞 **Bug 40: Erro ao salvar alterações dos dados do cliente**
+### 🐞 **Bug 39: Erro ao salvar alterações dos dados do cliente**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                        |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-040 | Ao alterar os dados de um cliente existente (ex.: nome ou status) e clicar em "Salvar Alterações", o sistema exibe a mensagem "Erro ao criar cliente." e as alterações não são salvas. Além disso, a mensagem exibida menciona "criar" em uma operação de alteração. |
+| BUG-039 | Ao alterar os dados de um cliente existente (ex.: nome ou status) e clicar em "Salvar Alterações", o sistema exibe a mensagem "Erro ao criar cliente." e as alterações não são salvas. Além disso, a mensagem exibida menciona "criar" em uma operação de alteração. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1544,15 +1506,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:40](https://jam.dev/c/ef0c7a28-0a2f-4bb6-9c78-3fc0995ec51f) |
+| [BUG:39](https://jam.dev/c/ef0c7a28-0a2f-4bb6-9c78-3fc0995ec51f) |
 
 ---
 
-### 🐞 **Bug 41: Erro no servidor ao acessar cliente excluído**
+### 🐞 **Bug 40: Erro no servidor ao acessar cliente excluído**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                                     |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-041 | Ao acessar pela URL a tela de visualização ou alteração de um cliente que foi excluído (ex.: /visualizar-cliente/407), o sistema exibe o modal "Erro no servidor - Erro interno inesperado." e, na tela de alteração, carrega o formulário vazio com o botão "Cadastrar Cliente". |
+| BUG-040 | Ao acessar pela URL a tela de visualização ou alteração de um cliente que foi excluído (ex.: /visualizar-cliente/407), o sistema exibe o modal "Erro no servidor - Erro interno inesperado." e, na tela de alteração, carrega o formulário vazio com o botão "Cadastrar Cliente". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1579,15 +1541,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:41](https://jam.dev/c/132ddc8a-ed22-488c-9527-d95562c4b9d8) |
+| [BUG:40](https://jam.dev/c/132ddc8a-ed22-488c-9527-d95562c4b9d8) |
 
 ---
 
-### 🐞 **Bug 42: Coluna "Alunos", ranking e receita estimada dos planos exibem valores zerados**
+### 🐞 **Bug 41: Coluna "Alunos", ranking e receita estimada dos planos exibem valores zerados**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                              |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-042 | Na tela de planos, a coluna "Alunos" exibe 0 para todos os planos e o indicador "Receita Estimada" exibe R$ 0,00, embora o indicador "Alunos em Planos" mostre 2 e o ranking mostre o plano "Treino Livre" com 1 aluno. No ranking, a mensalidade do "Treino Livre" é exibida como R$ 0,00, embora o plano custe R$ 52,00. |
+| BUG-041 | Na tela de planos, a coluna "Alunos" exibe 0 para todos os planos e o indicador "Receita Estimada" exibe R$ 0,00, embora o indicador "Alunos em Planos" mostre 2 e o ranking mostre o plano "Treino Livre" com 1 aluno. No ranking, a mensalidade do "Treino Livre" é exibida como R$ 0,00, embora o plano custe R$ 52,00. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1615,15 +1577,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:42](https://jam.dev/c/a5ed20f9-d1e4-4e37-90ce-9941e6799792) |
+| [BUG:41](https://jam.dev/c/a5ed20f9-d1e4-4e37-90ce-9941e6799792) |
 
 ---
 
-### 🐞 **Bug 43: Busca por código retorna planos cujo código apenas contém o valor informado**
+### 🐞 **Bug 42: Busca por código retorna planos cujo código apenas contém o valor informado**
 
 | **ID**  | **Descrição**                                                                                                                                                            |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-043 | Ao pesquisar o código "1", a listagem retorna os planos #1, #11, #16, #41 e #51, ou seja, todos os planos cujo código contém o dígito "1", em vez de somente o plano #1. |
+| BUG-042 | Ao pesquisar o código "1", a listagem retorna os planos #1, #11, #16, #41 e #51, ou seja, todos os planos cujo código contém o dígito "1", em vez de somente o plano #1. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1651,15 +1613,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:43](https://jam.dev/c/ec3ca053-5d62-438d-aa52-034d12e49b9a) |
+| [BUG:42](https://jam.dev/c/ec3ca053-5d62-438d-aa52-034d12e49b9a) |
 
 ---
 
-### 🐞 **Bug 44: Erro interno com exposição de SQL ao salvar plano sem grupo**
+### 🐞 **Bug 43: Erro interno com exposição de SQL ao salvar plano sem grupo**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                     |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-044 | Ao salvar um plano informando apenas o nome, o sistema exibe a mensagem genérica "Erro ao salvar plano". No DevTools (aba Network), a resposta mostra uma mensagem do banco de dados dizendo que o grupo não pode ficar vazio. Ou seja, o campo "Grupo" não é validado e o sistema expõe detalhes internos. O campo Grupo não tem opção selecionada nem indicação de obrigatório. |
+| BUG-043 | Ao salvar um plano informando apenas o nome, o sistema exibe a mensagem genérica "Erro ao salvar plano". No DevTools (aba Network), a resposta mostra uma mensagem do banco de dados dizendo que o grupo não pode ficar vazio. Ou seja, o campo "Grupo" não é validado e o sistema expõe detalhes internos. O campo Grupo não tem opção selecionada nem indicação de obrigatório. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1688,15 +1650,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:44](https://jam.dev/c/fa85a065-f8b6-45aa-989b-d65a05e2eb66) |
+| [BUG:43](https://jam.dev/c/fa85a065-f8b6-45aa-989b-d65a05e2eb66) |
 
 ---
 
-### 🐞 **Bug 45: Sistema permite cadastrar plano com quantidade de parcelas negativa**
+### 🐞 **Bug 44: Sistema permite cadastrar plano com quantidade de parcelas negativa**
 
 | **ID**  | **Descrição**                                                                                |
 | ------- | -------------------------------------------------------------------------------------------- |
-| BUG-045 | O campo "Parcelas" aceita valores negativos e o plano é salvo normalmente com "-3" parcelas. |
+| BUG-044 | O campo "Parcelas" aceita valores negativos e o plano é salvo normalmente com "-3" parcelas. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1725,15 +1687,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:45](https://jam.dev/c/1a785e1d-5f84-4b11-9c13-50be1961a7f4) |
+| [BUG:44](https://jam.dev/c/1a785e1d-5f84-4b11-9c13-50be1961a7f4) |
 
 ---
 
-### 🐞 **Bug 46: Inativação do plano não é salva**
+### 🐞 **Bug 45: Inativação do plano não é salva**
 
 | **ID**  | **Descrição**                                                                                                                                                                                   |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-046 | Ao alterar o status de um plano para "Inativo" e clicar em "Salvar Plano", o plano permanece "ATIVO" na listagem e ao ser reaberto. As demais alterações (nome e valor) são salvas normalmente. |
+| BUG-045 | Ao alterar o status de um plano para "Inativo" e clicar em "Salvar Plano", o plano permanece "ATIVO" na listagem e ao ser reaberto. As demais alterações (nome e valor) são salvas normalmente. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1762,15 +1724,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:46](https://jam.dev/c/9f76f60c-600d-4c55-b9ae-8eb8069889e9) |
+| [BUG:45](https://jam.dev/c/9f76f60c-600d-4c55-b9ae-8eb8069889e9) |
 
 ---
 
-### 🐞 **Bug 47: Planos inativos são exibidos no cadastro de matrícula**
+### 🐞 **Bug 46: Planos inativos são exibidos no cadastro de matrícula**
 
 | **ID**  | **Descrição**                                                                                                                                                                                     |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-047 | No campo "Modalidade" da tela "Cadastrar Matrícula", são exibidos planos com status "INATIVO" (ex.: "AVA" e "Teste Final"), permitindo matricular clientes em planos que não estão mais em vigor. |
+| BUG-046 | No campo "Modalidade" da tela "Cadastrar Matrícula", são exibidos planos com status "INATIVO" (ex.: "AVA" e "Teste Final"), permitindo matricular clientes em planos que não estão mais em vigor. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1798,15 +1760,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:47](https://jam.dev/c/96013002-d0e4-4057-8dc1-383ef6437707) |
+| [BUG:46](https://jam.dev/c/96013002-d0e4-4057-8dc1-383ef6437707) |
 
 ---
 
-### 🐞 **Bug 48: Desconto não é aplicado ao valor total da matrícula**
+### 🐞 **Bug 47: Desconto não é aplicado ao valor total da matrícula**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                    |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-048 | Ao informar um desconto no cadastro da matrícula, o campo "Valor Total" não é recalculado. Na tela "Visualizar Matrícula", o campo "Desconto" exibe o valor da parcela (R$ 52,00) em vez do desconto informado, inclusive quando o desconto é 0. |
+| BUG-047 | Ao informar um desconto no cadastro da matrícula, o campo "Valor Total" não é recalculado. Na tela "Visualizar Matrícula", o campo "Desconto" exibe o valor da parcela (R$ 52,00) em vez do desconto informado, inclusive quando o desconto é 0. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1835,15 +1797,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:48](https://jam.dev/c/561a6194-6092-4ce0-a67f-71e0da5a84ca) |
+| [BUG:47](https://jam.dev/c/561a6194-6092-4ce0-a67f-71e0da5a84ca) |
 
 ---
 
-### 🐞 **Bug 49: Mensagem incorreta ao cadastrar matrícula para cliente com matrícula ativa**
+### 🐞 **Bug 48: Mensagem incorreta ao cadastrar matrícula para cliente com matrícula ativa**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                              |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-049 | Ao tentar cadastrar uma matrícula para um cliente que já possui matrícula ativa, o sistema impede o cadastro, porém exibe a mensagem genérica "Erro ao Cadastrar com Assinatura". A tela não informa que o cliente já tem matrícula ativa. |
+| BUG-048 | Ao tentar cadastrar uma matrícula para um cliente que já possui matrícula ativa, o sistema impede o cadastro, porém exibe a mensagem genérica "Erro ao Cadastrar com Assinatura". A tela não informa que o cliente já tem matrícula ativa. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1872,15 +1834,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:49](https://jam.dev/c/7058b67e-1662-4ab3-9b6c-5bdb8f2c041c) |
+| [BUG:48](https://jam.dev/c/7058b67e-1662-4ab3-9b6c-5bdb8f2c041c) |
 
 ---
 
-### 🐞 **Bug 50: Paginação não permite acessar matrículas além da primeira página**
+### 🐞 **Bug 49: Paginação não permite acessar matrículas além da primeira página**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                                 |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-050 | Com a opção "50" registros por página, a listagem exibe 50 matrículas e apenas a página "1", com o botão "Próxima" desabilitado. Ao alterar para "100" registros por página, são exibidas 84 matrículas, ou seja, 34 matrículas ficam inacessíveis com a configuração padrão. |
+| BUG-049 | Com a opção "50" registros por página, a listagem exibe 50 matrículas e apenas a página "1", com o botão "Próxima" desabilitado. Ao alterar para "100" registros por página, são exibidas 84 matrículas, ou seja, 34 matrículas ficam inacessíveis com a configuração padrão. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1908,15 +1870,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:50](https://jam.dev/c/de75bafc-86f6-45f1-9e87-83269324988b) |
+| [BUG:49](https://jam.dev/c/de75bafc-86f6-45f1-9e87-83269324988b) |
 
 ---
 
-### 🐞 **Bug 51: Erro no servidor ao excluir matrícula, embora a exclusão seja efetivada**
+### 🐞 **Bug 50: Erro no servidor ao excluir matrícula, embora a exclusão seja efetivada**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                    |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-051 | Ao confirmar a exclusão de uma matrícula, o sistema exibe o modal "Erro no servidor - Erro interno inesperado.", porém a matrícula é removida da listagem. O usuário é informado de uma falha em uma operação que foi realizada. |
+| BUG-050 | Ao confirmar a exclusão de uma matrícula, o sistema exibe o modal "Erro no servidor - Erro interno inesperado.", porém a matrícula é removida da listagem. O usuário é informado de uma falha em uma operação que foi realizada. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1944,15 +1906,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:51](https://jam.dev/c/21646323-7507-4ece-a3b1-16ab9def23ef) |
+| [BUG:50](https://jam.dev/c/21646323-7507-4ece-a3b1-16ab9def23ef) |
 
 ---
 
-### 🐞 **Bug 52: Mensagem de validação permanece após selecionar o tipo de pagamento**
+### 🐞 **Bug 51: Mensagem de validação permanece após selecionar o tipo de pagamento**
 
 | **ID**  | **Descrição**                                                                                                                                                                                      |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-052 | Após tentar salvar a matrícula sem tipo de pagamento, a mensagem "Selecione o Tipo de Pagamento" é exibida abaixo do campo e permanece na tela mesmo depois que o tipo de pagamento é selecionado. |
+| BUG-051 | Após tentar salvar a matrícula sem tipo de pagamento, a mensagem "Selecione o Tipo de Pagamento" é exibida abaixo do campo e permanece na tela mesmo depois que o tipo de pagamento é selecionado. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -1981,15 +1943,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:52](https://jam.dev/c/5a82af04-828e-49bb-9853-4e01baa8aa28) |
+| [BUG:51](https://jam.dev/c/5a82af04-828e-49bb-9853-4e01baa8aa28) |
 
 ---
 
-### 🐞 **Bug 53: Ausência de mensagem quando a busca não encontra matrículas**
+### 🐞 **Bug 52: Ausência de mensagem quando a busca não encontra matrículas**
 
 | **ID**  | **Descrição**                                                                                                                                               |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-053 | Ao pesquisar um nome que não possui matrícula, o sistema exibe apenas a tabela vazia, sem nenhuma mensagem informando que nenhuma matrícula foi encontrada. |
+| BUG-052 | Ao pesquisar um nome que não possui matrícula, o sistema exibe apenas a tabela vazia, sem nenhuma mensagem informando que nenhuma matrícula foi encontrada. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2017,15 +1979,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:53](https://jam.dev/c/d1626ff1-a6d5-43c0-a063-d9127141bb66) |
+| [BUG:52](https://jam.dev/c/d1626ff1-a6d5-43c0-a063-d9127141bb66) |
 
 ---
 
-### 🐞 **Bug 54: Campo "Dia Vencimento" aceita data e exibe erro de SQL ao salvar a matrícula**
+### 🐞 **Bug 53: Campo "Dia Vencimento" aceita data e exibe erro de SQL ao salvar a matrícula**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                    |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-054 | O campo "Dia Vencimento" do cadastro de matrícula aceita qualquer texto, como uma data completa ("26/11/2026"). Ao salvar, o sistema exibe a janela "Não foi possível concluir" com uma mensagem do banco de dados ("Data too long for column 'dia_venc_pag'"), sem orientar que o campo deve conter apenas o dia (1 a 31) e expondo detalhes internos do banco. |
+| BUG-053 | O campo "Dia Vencimento" do cadastro de matrícula aceita qualquer texto, como uma data completa ("26/11/2026"). Ao salvar, o sistema exibe a janela "Não foi possível concluir" com uma mensagem do banco de dados ("Data too long for column 'dia_venc_pag'"), sem orientar que o campo deve conter apenas o dia (1 a 31) e expondo detalhes internos do banco. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2054,15 +2016,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:54](https://jam.dev/c/f6c8984a-4de5-4654-86d1-0b7e676b04bc) |
+| [BUG:53](https://jam.dev/c/f6c8984a-4de5-4654-86d1-0b7e676b04bc) |
 
 ---
 
-### 🐞 **Bug 55: Indicador "Contas Atrasadas" diverge do filtro de contas vencidas**
+### 🐞 **Bug 54: Indicador "Contas Atrasadas" diverge do filtro de contas vencidas**
 
 | **ID**  | **Descrição**                                                                                                      |
 | ------- | ------------------------------------------------------------------------------------------------------------------ |
-| BUG-055 | O indicador "Contas Atrasadas" exibe 2, porém ao filtrar a listagem pelo status "Vencido" nenhuma conta é exibida. |
+| BUG-054 | O indicador "Contas Atrasadas" exibe 2, porém ao filtrar a listagem pelo status "Vencido" nenhuma conta é exibida. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2090,15 +2052,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:55](https://jam.dev/c/e32d62f2-82da-4f71-b65d-8c9ebfff90c1) |
+| [BUG:54](https://jam.dev/c/e32d62f2-82da-4f71-b65d-8c9ebfff90c1) |
 
 ---
 
-### 🐞 **Bug 56: Recebimento é registrado sem tipo de pagamento**
+### 🐞 **Bug 55: Recebimento é registrado sem tipo de pagamento**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                            |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-056 | Ao efetuar o recebimento de uma conta sem selecionar o tipo de pagamento, o sistema registra o recebimento normalmente. Na visualização da conta, o campo "Tipo de Pagamento" fica vazio, o que prejudica o controle financeiro e o fechamento de caixa. |
+| BUG-055 | Ao efetuar o recebimento de uma conta sem selecionar o tipo de pagamento, o sistema registra o recebimento normalmente. Na visualização da conta, o campo "Tipo de Pagamento" fica vazio, o que prejudica o controle financeiro e o fechamento de caixa. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2127,15 +2089,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:56](https://jam.dev/c/46be9dfa-3e49-40c1-a8f7-0771f9f8a67e) |
+| [BUG:55](https://jam.dev/c/46be9dfa-3e49-40c1-a8f7-0771f9f8a67e) |
 
 ---
 
-### 🐞 **Bug 57: Recebimento aceita valor maior que o valor a receber sem alerta**
+### 🐞 **Bug 56: Recebimento aceita valor maior que o valor a receber sem alerta**
 
 | **ID**  | **Descrição**                                                                                                                                                                |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-057 | Ao efetuar o recebimento de uma conta de R$ 75,50 informando o valor recebido de R$ 100,00, o sistema registra o recebimento sem nenhum alerta sobre a diferença de valores. |
+| BUG-056 | Ao efetuar o recebimento de uma conta de R$ 75,50 informando o valor recebido de R$ 100,00, o sistema registra o recebimento sem nenhum alerta sobre a diferença de valores. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2164,15 +2126,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:57](https://jam.dev/c/f28fd023-7766-4e7e-87eb-419aad2d2797) |
+| [BUG:56](https://jam.dev/c/f28fd023-7766-4e7e-87eb-419aad2d2797) |
 
 ---
 
-### 🐞 **Bug 58: Ausência de mensagem quando a busca não encontra contas a receber**
+### 🐞 **Bug 57: Ausência de mensagem quando a busca não encontra contas a receber**
 
 | **ID**  | **Descrição**                                                                                                                                         |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-058 | Ao pesquisar um nome de cliente inexistente, o sistema exibe apenas a tabela vazia, sem nenhuma mensagem informando que nenhuma conta foi encontrada. |
+| BUG-057 | Ao pesquisar um nome de cliente inexistente, o sistema exibe apenas a tabela vazia, sem nenhuma mensagem informando que nenhuma conta foi encontrada. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2200,15 +2162,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:58](https://jam.dev/c/22ec822a-9cc2-412b-b1dd-3354f81136a8) |
+| [BUG:57](https://jam.dev/c/22ec822a-9cc2-412b-b1dd-3354f81136a8) |
 
 ---
 
-### 🐞 **Bug 59: Busca por código inexistente exibe erro no servidor e mantém todos os fornecedores**
+### 🐞 **Bug 58: Busca por código inexistente exibe erro no servidor e mantém todos os fornecedores**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-059 | Ao pesquisar um código que não existe (ex.: "999"), o sistema exibe a janela "Erro no servidor - Ocorreu um erro interno no servidor" e a listagem continua exibindo todos os 8 fornecedores cadastrados, em vez de informar que nenhum fornecedor foi encontrado. Em testes anteriores, a busca por código inexistente ou parcial (ex.: "29") também retornava todos os fornecedores. A busca funciona somente com o código exato (ex.: "394"). |
+| BUG-058 | Ao pesquisar um código que não existe (ex.: "999"), o sistema exibe a janela "Erro no servidor - Ocorreu um erro interno no servidor" e a listagem continua exibindo todos os 8 fornecedores cadastrados, em vez de informar que nenhum fornecedor foi encontrado. Em testes anteriores, a busca por código inexistente ou parcial (ex.: "29") também retornava todos os fornecedores. A busca funciona somente com o código exato (ex.: "394"). |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2236,15 +2198,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:59](https://jam.dev/c/7e669c65-5f1a-4cc5-b773-2062825d4618) |
+| [BUG:58](https://jam.dev/c/7e669c65-5f1a-4cc5-b773-2062825d4618) |
 
 ---
 
-### 🐞 **Bug 60: Erro ao cadastrar fornecedor com dados válidos**
+### 🐞 **Bug 59: Erro ao cadastrar fornecedor com dados válidos**
 
 | **ID**  | **Descrição**                                                                                                                                                                                 |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-060 | Ao salvar um novo fornecedor, o sistema exibe a mensagem "Erro ao salvar fornecedor." e o fornecedor não é cadastrado, tanto com todos os campos preenchidos quanto informando apenas o nome. |
+| BUG-059 | Ao salvar um novo fornecedor, o sistema exibe a mensagem "Erro ao salvar fornecedor." e o fornecedor não é cadastrado, tanto com todos os campos preenchidos quanto informando apenas o nome. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2273,15 +2235,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:60](https://jam.dev/c/2c2c4c60-b617-44b6-8337-1cc44e327fd9) |
+| [BUG:59](https://jam.dev/c/2c2c4c60-b617-44b6-8337-1cc44e327fd9) |
 
 ---
 
-### 🐞 **Bug 61: Erro interno com exposição de SQL ao alterar fornecedor**
+### 🐞 **Bug 60: Erro interno com exposição de SQL ao alterar fornecedor**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-061 | Ao alterar qualquer dado de um fornecedor existente (nome ou status) e clicar em "Salvar", o sistema exibe "Erro no servidor - Ocorreu um erro interno no servidor." e a alteração não é salva. No DevTools (aba Network), a resposta mostra uma mensagem do banco de dados dizendo que o tipo de pessoa (Física ou Jurídica) não pode ficar vazio. O problema ocorre com os fornecedores 299 (Jao) e 394 (Copel). Além disso, salvar com o nome vazio não é validado na tela e também gera o erro do servidor. |
+| BUG-060 | Ao alterar qualquer dado de um fornecedor existente (nome ou status) e clicar em "Salvar", o sistema exibe "Erro no servidor - Ocorreu um erro interno no servidor." e a alteração não é salva. No DevTools (aba Network), a resposta mostra uma mensagem do banco de dados dizendo que o tipo de pessoa (Física ou Jurídica) não pode ficar vazio. O problema ocorre com os fornecedores 299 (Jao) e 394 (Copel). Além disso, salvar com o nome vazio não é validado na tela e também gera o erro do servidor. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2310,15 +2272,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:61](https://jam.dev/c/1bd0c308-c44d-42f3-8560-57ce86b98b1b) |
+| [BUG:60](https://jam.dev/c/1bd0c308-c44d-42f3-8560-57ce86b98b1b) |
 
 ---
 
-### 🐞 **Bug 62: Check-ins realizados não aparecem na tela de Presenças**
+### 🐞 **Bug 61: Check-ins realizados não aparecem na tela de Presenças**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                         |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-062 | Após realizar 3 check-ins no dia (Jerome Lionel, Lila e Steven Kaiki), a tela de Presenças exibe "Total no período 0" e a mensagem "Nenhuma presença encontrada", tanto no período da semana quanto no atalho "Hoje". |
+| BUG-061 | Após realizar 3 check-ins no dia (Jerome Lionel, Lila e Steven Kaiki), a tela de Presenças exibe "Total no período 0" e a mensagem "Nenhuma presença encontrada", tanto no período da semana quanto no atalho "Hoje". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2346,15 +2308,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:62](coloque o link do video aqui) |
+| [BUG:61](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 63: Check-in permanece "Pendente" e não há retorno ao registrar entrada novamente**
+### 🐞 **Bug 62: Check-in permanece "Pendente" e não há retorno ao registrar entrada novamente**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                                      |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-063 | Após o check-in, o cliente permanece com status "Pendente" na listagem, com o botão "Registrar entrada" disponível, e o indicador "Presentes agora" continua em 0. Ao clicar novamente em "Registrar entrada", nada acontece e nenhuma mensagem é exibida. Na janela de check-in manual, o mesmo cliente ainda aparece como "Cliente liberado para realizar o check-in.". Não existe opção para registrar a saída. |
+| BUG-062 | Após o check-in, o cliente permanece com status "Pendente" na listagem, com o botão "Registrar entrada" disponível, e o indicador "Presentes agora" continua em 0. Ao clicar novamente em "Registrar entrada", nada acontece e nenhuma mensagem é exibida. Na janela de check-in manual, o mesmo cliente ainda aparece como "Cliente liberado para realizar o check-in.". Não existe opção para registrar a saída. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2384,15 +2346,15 @@
 
 |           **Evidência(s)**           |
 | :----------------------------------: |
-| [BUG:63](../Evidencias/C09-CT07.png) |
+| [BUG:62](../Evidencias/C09-CT07.png) |
 
 ---
 
-### 🐞 **Bug 64: Horário de entrada do check-in exibido com 3 horas a mais**
+### 🐞 **Bug 63: Horário de entrada do check-in exibido com 3 horas a mais**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                              |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-064 | O check-in realizado às 18:11 (horário exibido no relógio da própria tela) é apresentado na coluna "Entrada" como 21:11, ou seja, com 3 horas de diferença, o que indica a exibição do horário em UTC em vez do horário de Brasília. Em outra execução, o check-in feito às 13:54 apareceu na coluna "Entrada" como 16:54. |
+| BUG-063 | O check-in realizado às 18:11 (horário exibido no relógio da própria tela) é apresentado na coluna "Entrada" como 21:11, ou seja, com 3 horas de diferença, o que indica a exibição do horário em UTC em vez do horário de Brasília. Em outra execução, o check-in feito às 13:54 apareceu na coluna "Entrada" como 16:54. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2421,15 +2383,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:64](https://jam.dev/c/26554c0c-5651-4795-968e-f46eb3ccf1ea) |
+| [BUG:63](https://jam.dev/c/26554c0c-5651-4795-968e-f46eb3ccf1ea) |
 
 ---
 
-### 🐞 **Bug 65: Cliente sem matrícula ativa é liberado para check-in**
+### 🐞 **Bug 64: Cliente sem matrícula ativa é liberado para check-in**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                       |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-065 | Ao selecionar no check-in manual a cliente "Lila", que não possui matrícula ativa (consta como "Sem Matrícula" na tela de Clientes), o sistema exibe "Cliente liberado para realizar o check-in." e registra a entrada normalmente. |
+| BUG-064 | Ao selecionar no check-in manual a cliente "Lila", que não possui matrícula ativa (consta como "Sem Matrícula" na tela de Clientes), o sistema exibe "Cliente liberado para realizar o check-in." e registra a entrada normalmente. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2457,15 +2419,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:65](coloque o link do video aqui) |
+| [BUG:64](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 66: Ausência de mensagens no check-in manual e na entrada rápida**
+### 🐞 **Bug 65: Ausência de mensagens no check-in manual e na entrada rápida**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                          |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-066 | Ao registrar um check-in com sucesso (manual ou pela entrada rápida), nenhuma mensagem de confirmação é exibida. Ao clicar em "Realizar check-in" com o campo "Código do cliente" vazio, nada acontece e nenhuma orientação é exibida. |
+| BUG-065 | Ao registrar um check-in com sucesso (manual ou pela entrada rápida), nenhuma mensagem de confirmação é exibida. Ao clicar em "Realizar check-in" com o campo "Código do cliente" vazio, nada acontece e nenhuma orientação é exibida. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2495,15 +2457,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:66](https://jam.dev/c/569cdd92-c448-4afe-bcc1-cd034d787e0a) |
+| [BUG:65](https://jam.dev/c/569cdd92-c448-4afe-bcc1-cd034d787e0a) |
 
 ---
 
-### 🐞 **Bug 67: Erro ao salvar avaliação realizada**
+### 🐞 **Bug 66: Erro ao salvar avaliação realizada**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                                      |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-067 | Ao clicar em "Fazer Avaliação", informar altura (1,75) e peso (80) e clicar em "Salvar", o sistema exibe "Erro ao salvar avaliação" e a avaliação permanece "PENDENTE". O mesmo ocorre ao salvar sem medidas, caso em que o sistema também não orienta o preenchimento dos campos. |
+| BUG-066 | Ao clicar em "Fazer Avaliação", informar altura (1,75) e peso (80) e clicar em "Salvar", o sistema exibe "Erro ao salvar avaliação" e a avaliação permanece "PENDENTE". O mesmo ocorre ao salvar sem medidas, caso em que o sistema também não orienta o preenchimento dos campos. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2532,15 +2494,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:67](coloque o link do video aqui) |
+| [BUG:66](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 68: Alteração de data e hora da avaliação não é salva**
+### 🐞 **Bug 67: Alteração de data e hora da avaliação não é salva**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                           |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-068 | Na janela "Alterar Data / Hora", ao informar a nova data (26/10/2026) e a nova hora (11:00) e clicar em "Salvar", nada acontece, nenhuma mensagem é exibida e a avaliação permanece com a data e a hora originais. O mesmo ocorre com os campos vazios. |
+| BUG-067 | Na janela "Alterar Data / Hora", ao informar a nova data (26/10/2026) e a nova hora (11:00) e clicar em "Salvar", nada acontece, nenhuma mensagem é exibida e a avaliação permanece com a data e a hora originais. O mesmo ocorre com os campos vazios. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2569,15 +2531,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:68](coloque o link do video aqui) |
+| [BUG:67](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 69: Cadastro de avaliação aceita hora inválida e retorna erro interno**
+### 🐞 **Bug 68: Cadastro de avaliação aceita hora inválida e retorna erro interno**
 
 | **ID**  | **Descrição**                                                                                                                                                                       |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-069 | O campo de hora aceita valores inexistentes, como "25:99". Ao salvar, o sistema exibe a mensagem genérica "Erro ao cadastrar Avaliação.", em vez de informar que a hora é inválida. |
+| BUG-068 | O campo de hora aceita valores inexistentes, como "25:99". Ao salvar, o sistema exibe a mensagem genérica "Erro ao cadastrar Avaliação.", em vez de informar que a hora é inválida. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2606,15 +2568,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:69](coloque o link do video aqui) |
+| [BUG:68](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 70: IMC exibido sem formatação**
+### 🐞 **Bug 69: IMC exibido sem formatação**
 
 | **ID**  | **Descrição**                                                                                                                                                 |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-070 | Ao informar altura 1,75 e peso 80 na tela "Fazer Avaliação", o campo "IMC" exibe "26.122448979591837", com ponto como separador decimal e sem arredondamento. |
+| BUG-069 | Ao informar altura 1,75 e peso 80 na tela "Fazer Avaliação", o campo "IMC" exibe "26.122448979591837", com ponto como separador decimal e sem arredondamento. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2642,15 +2604,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:70](coloque o link do video aqui) |
+| [BUG:69](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 71: Erro ao salvar alterações da turma**
+### 🐞 **Bug 70: Erro ao salvar alterações da turma**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                          |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-071 | Ao clicar em "Editar" de qualquer turma e em "Salvar", o sistema exibe "Erro ao salvar turma.". O erro ocorre ao alterar nome, horário ou status e até ao salvar sem nenhuma alteração (testado nas turmas #10 e #11). |
+| BUG-070 | Ao clicar em "Editar" de qualquer turma e em "Salvar", o sistema exibe "Erro ao salvar turma.". O erro ocorre ao alterar nome, horário ou status e até ao salvar sem nenhuma alteração (testado nas turmas #10 e #11). |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2678,15 +2640,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:71](coloque o link do video aqui) |
+| [BUG:70](https://jam.dev/c/e0e2ffd3-1142-433c-b5b9-fbdc31a6ac9c) |
 
 ---
 
-### 🐞 **Bug 72: Cadastro de turma aceita hora final anterior à hora inicial**
+### 🐞 **Bug 71: Cadastro de turma aceita hora final anterior à hora inicial**
 
 | **ID**  | **Descrição**                                                                                                                                               |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-072 | O sistema permite cadastrar uma turma com hora inicial 11:00 e hora final 10:00. A turma é salva e exibida na listagem com o horário "11:00:00 - 10:00:00". |
+| BUG-071 | O sistema permite cadastrar uma turma com hora inicial 11:00 e hora final 10:00. A turma é salva e exibida na listagem com o horário "11:00:00 - 10:00:00". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2715,50 +2677,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:72](coloque o link do video aqui) |
+| [BUG:71](https://jam.dev/c/27a62498-c64a-4479-a706-29a846758f0c) |
 
 ---
 
-### 🐞 **Bug 73: "Gerar aulas" do SifitBox não informa o resultado**
-
-| **ID**  | **Descrição**                                                                                                                                                               |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-073 | Ao clicar em "Gerar aulas" na tela do SifitBox, nenhuma mensagem é exibida. O usuário não é informado se aulas foram geradas, nem o motivo de nenhuma aula ter sido criada. |
-
-| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
-| :-------------------: | :------------------------: | :--------: |
-|         Baixa         |           Baixa            |   Aberto   |
-
-| **Passo a passo para simular o bug**      |
-| ----------------------------------------- |
-| 1. Acessar o menu "SifitBox".             |
-| 2. Clicar no botão "Gerar aulas".         |
-| 3. Observar o retorno exibido ao usuário. |
-
-|                                    **Comportamento Esperado**                                    |                                **Comportamento Obtido**                                 |
-| :----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
-| O sistema deve informar quantas aulas foram geradas ou o motivo de nenhuma aula ter sido gerada. | Nenhuma mensagem é exibida e a tela continua com "Nenhuma aula encontrada no periodo.". |
-
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
-
-| **Funcionalidade Afetada** |      **Caso de Teste Relacionado**      |
-| :------------------------: | :-------------------------------------: |
-|      SifitBox / Aulas      | C11-CT13: Geração de aulas do SifitBox. |
-
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:73](coloque o link do video aqui) |
-
----
-
-### 🐞 **Bug 74: Fechamento de caixa não é salvo após "Buscar Contas"**
+### 🐞 **Bug 72: Fechamento de caixa não é salvo após "Buscar Contas"**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                            |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-074 | Na janela "Fechamento de Caixa", após selecionar o local e clicar em "Buscar Contas", o botão "Salvar" não executa nenhuma ação: nada acontece e o caixa permanece "ABERTO". O fechamento só é salvo quando o usuário não busca as contas (ver BUG-048). |
+| BUG-072 | Na janela "Fechamento de Caixa", após selecionar o local e clicar em "Buscar Contas", o botão "Salvar" não executa nenhuma ação: nada acontece e o caixa permanece "ABERTO". O fechamento só é salvo quando o usuário não busca as contas (ver BUG-047). |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2787,15 +2714,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:74](coloque o link do video aqui) |
+| [BUG:72](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 75: Caixa pode ser fechado sem a conferência das contas**
+### 🐞 **Bug 73: Caixa pode ser fechado sem a conferência das contas**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                          |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-075 | Embora a janela oriente "Confira o periodo, busque as contas e valide os totais antes de salvar", ao clicar em "Salvar" sem buscar as contas o caixa é fechado com todos os totais zerados (entradas, saídas e total). |
+| BUG-073 | Embora a janela oriente "Confira o periodo, busque as contas e valide os totais antes de salvar", ao clicar em "Salvar" sem buscar as contas o caixa é fechado com todos os totais zerados (entradas, saídas e total). |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2823,15 +2750,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:75](coloque o link do video aqui) |
+| [BUG:73](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 76: Sistema permite abrir mais de um caixa no mesmo local**
+### 🐞 **Bug 74: Sistema permite abrir mais de um caixa no mesmo local**
 
 | **ID**  | **Descrição**                                                                                                                                                                                  |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-076 | Com um caixa já aberto no local "Teste2", foi possível abrir um segundo caixa no mesmo local e na mesma data (caixas #29 e #30). O sistema passou a ter 5 caixas abertos para apenas 4 locais. |
+| BUG-074 | Com um caixa já aberto no local "Teste2", foi possível abrir um segundo caixa no mesmo local e na mesma data (caixas #29 e #30). O sistema passou a ter 5 caixas abertos para apenas 4 locais. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2859,15 +2786,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:76](coloque o link do video aqui) |
+| [BUG:74](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 77: Indicador "Caixas Fechados" é reduzido ao abrir um caixa**
+### 🐞 **Bug 75: Indicador "Caixas Fechados" é reduzido ao abrir um caixa**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                           |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-077 | Com 3 caixas abertos e 17 fechados, ao abrir um novo caixa o indicador "Caixas Fechados" passa para 16 e, ao abrir outro, para 15, embora nenhum caixa tenha sido reaberto. Após fechar os 2 caixas de teste, o indicador volta a 17, quando deveria ser 19. O valor parece ser calculado como 20 menos a quantidade de caixas abertos. |
+| BUG-075 | Com 3 caixas abertos e 17 fechados, ao abrir um novo caixa o indicador "Caixas Fechados" passa para 16 e, ao abrir outro, para 15, embora nenhum caixa tenha sido reaberto. Após fechar os 2 caixas de teste, o indicador volta a 17, quando deveria ser 19. O valor parece ser calculado como 20 menos a quantidade de caixas abertos. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2894,15 +2821,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:77](coloque o link do video aqui) |
+| [BUG:75](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 78: Listagem inicial de caixas ignora o período exibido no filtro**
+### 🐞 **Bug 76: Listagem inicial de caixas ignora o período exibido no filtro**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                              |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-078 | Ao acessar a tela, o filtro exibe o período de 01/10/2026 a 31/10/2026, mas a listagem mostra todos os 20 caixas (de 2022 a 2026) e o indicador "Registros no Periodo" exibe 20. Somente após clicar em "Buscar" o período é aplicado e a listagem passa a exibir 1 caixa. |
+| BUG-076 | Ao acessar a tela, o filtro exibe o período de 01/10/2026 a 31/10/2026, mas a listagem mostra todos os 20 caixas (de 2022 a 2026) e o indicador "Registros no Periodo" exibe 20. Somente após clicar em "Buscar" o período é aplicado e a listagem passa a exibir 1 caixa. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2930,15 +2857,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:78](coloque o link do video aqui) |
+| [BUG:76](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 79: Não é possível registrar o pagamento de conta a pagar**
+### 🐞 **Bug 77: Não é possível registrar o pagamento de conta a pagar**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                          |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-079 | Não existe opção para registrar o pagamento de uma conta pendente: a linha da listagem possui apenas os botões "Visualizar" e "Deletar", e a janela "Visualizar Conta a Pagar" possui apenas o botão "Fechar". Assim, as contas permanecem "PENDENTE" indefinidamente. |
+| BUG-077 | Não existe opção para registrar o pagamento de uma conta pendente: a linha da listagem possui apenas os botões "Visualizar" e "Deletar", e a janela "Visualizar Conta a Pagar" possui apenas o botão "Fechar". Assim, as contas permanecem "PENDENTE" indefinidamente. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2966,15 +2893,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:79](coloque o link do video aqui) |
+| [BUG:77](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 80: Indicadores "Total a Pagar" e "Valor Restante" exibem zero**
+### 🐞 **Bug 78: Indicadores "Total a Pagar" e "Valor Restante" exibem zero**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                     |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-080 | Com contas pendentes listadas (ex.: R$ 200,00 da conta 24 e R$ 50,00 da conta de teste), os indicadores "Total a Pagar" e "Valor Restante" permanecem em 0, enquanto "Contas Listadas" é atualizado corretamente. |
+| BUG-078 | Com contas pendentes listadas (ex.: R$ 200,00 da conta 24 e R$ 50,00 da conta de teste), os indicadores "Total a Pagar" e "Valor Restante" permanecem em 0, enquanto "Contas Listadas" é atualizado corretamente. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3001,15 +2928,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:80](coloque o link do video aqui) |
+| [BUG:78](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 81: Erro no servidor exibido após excluir conta a pagar**
+### 🐞 **Bug 79: Erro no servidor exibido após excluir conta a pagar**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                     |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-081 | Ao confirmar a exclusão de uma conta a pagar, a conta é excluída, mas em seguida o sistema exibe "Erro no servidor - Erro interno inesperado.", pois tenta carregar novamente a conta que acabou de ser removida. |
+| BUG-079 | Ao confirmar a exclusão de uma conta a pagar, a conta é excluída, mas em seguida o sistema exibe "Erro no servidor - Erro interno inesperado.", pois tenta carregar novamente a conta que acabou de ser removida. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3037,15 +2964,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:81](coloque o link do video aqui) |
+| [BUG:79](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 82: Visualização da conta a pagar exibe códigos internos e campos vazios**
+### 🐞 **Bug 80: Visualização da conta a pagar exibe códigos internos e campos vazios**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                           |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-082 | Na janela "Visualizar Conta a Pagar", o campo "Codigo" fica vazio, o tipo é exibido como "DESPESA_FORNECEDOR", a categoria e o tipo de documento são exibidos pelo código interno (ex.: "Categoria 3", "Tipo 1") e a data de emissão é exibida no formato "2026-10-25". |
+| BUG-080 | Na janela "Visualizar Conta a Pagar", o campo "Codigo" fica vazio, o tipo é exibido como "DESPESA_FORNECEDOR", a categoria e o tipo de documento são exibidos pelo código interno (ex.: "Categoria 3", "Tipo 1") e a data de emissão é exibida no formato "2026-10-25". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3072,15 +2999,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:82](coloque o link do video aqui) |
+| [BUG:80](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 83: Despesa fixa aceita valor negativo e erro interno com valor em texto**
+### 🐞 **Bug 81: Despesa fixa aceita valor negativo e erro interno com valor em texto**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                  |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-083 | O campo "Valor" da despesa fixa não possui validação: o valor "-100" é aceito e a despesa é cadastrada com "-R$ 100,00"; ao informar "abc", o sistema exibe a mensagem genérica "Erro ao salvar despesa fixa". |
+| BUG-081 | O campo "Valor" da despesa fixa não possui validação: o valor "-100" é aceito e a despesa é cadastrada com "-R$ 100,00"; ao informar "abc", o sistema exibe a mensagem genérica "Erro ao salvar despesa fixa". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3109,15 +3036,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:83](coloque o link do video aqui) |
+| [BUG:81](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 84: Ficha de treino não pode ser aberta nem salva**
+### 🐞 **Bug 82: Ficha de treino não pode ser aberta nem salva**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                  |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-084 | Após criar a ficha, a tela de montagem dos treinos é exibida, mas ao clicar em "Salvar Ficha" o sistema exibe "Erro no servidor - Erro interno inesperado.". Ao clicar em "Visualizar" na listagem, o sistema também exibe "Erro no servidor". |
+| BUG-082 | Após criar a ficha, a tela de montagem dos treinos é exibida, mas ao clicar em "Salvar Ficha" o sistema exibe "Erro no servidor - Erro interno inesperado.". Ao clicar em "Visualizar" na listagem, o sistema também exibe "Erro no servidor". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3146,15 +3073,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:84](coloque o link do video aqui) |
+| [BUG:82](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 85: Mensagem genérica ao criar ficha sem objetivo do treino**
+### 🐞 **Bug 83: Mensagem genérica ao criar ficha sem objetivo do treino**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                                     |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-085 | Ao criar a ficha sem objetivo, o sistema exibe apenas "Erro ao salvar Ficha.". A tela não diz que o objetivo é obrigatório. Além disso, o campo "Objetivo" não apresenta opções quando não há objetivos cadastrados, sem orientar o usuário a cadastrá-los em "Objetivos Treino". |
+| BUG-083 | Ao criar a ficha sem objetivo, o sistema exibe apenas "Erro ao salvar Ficha.". A tela não diz que o objetivo é obrigatório. Além disso, o campo "Objetivo" não apresenta opções quando não há objetivos cadastrados, sem orientar o usuário a cadastrá-los em "Objetivos Treino". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3182,15 +3109,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:85](coloque o link do video aqui) |
+| [BUG:83](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 86: Exclusão de ficha de treino expõe comandos SQL**
+### 🐞 **Bug 84: Exclusão de ficha de treino expõe comandos SQL**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                   |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-086 | Ao excluir uma ficha de treino, a exclusão é realizada, porém no DevTools (aba Network), a resposta mostra o comando SQL executado e os parâmetros ("DELETE FROM ficha_treino WHERE id = 1 AND empresa_id = ..."), expondo detalhes internos do banco de dados. |
+| BUG-084 | Ao excluir uma ficha de treino, a exclusão é realizada, porém no DevTools (aba Network), a resposta mostra o comando SQL executado e os parâmetros ("DELETE FROM ficha_treino WHERE id = 1 AND empresa_id = ..."), expondo detalhes internos do banco de dados. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3218,15 +3145,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:86](coloque o link do video aqui) |
+| [BUG:84](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 87: Sistema permite cadastrar exercício duplicado no mesmo grupo**
+### 🐞 **Bug 85: Sistema permite cadastrar exercício duplicado no mesmo grupo**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                        |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-087 | É possível cadastrar duas vezes o mesmo exercício no mesmo grupo muscular, sem nenhum aviso. Em uma das execuções, um exercício de teste foi cadastrado duas vezes no grupo "Peitoral" e o total passou de 6 para 7. |
+| BUG-085 | É possível cadastrar duas vezes o mesmo exercício no mesmo grupo muscular, sem nenhum aviso. Em uma das execuções, um exercício de teste foi cadastrado duas vezes no grupo "Peitoral" e o total passou de 6 para 7. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3256,15 +3183,15 @@
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
-| [BUG:87](https://jam.dev/c/a84d54b0-8ca9-4871-9a16-5c563024a8f4) |
+| [BUG:85](https://jam.dev/c/a84d54b0-8ca9-4871-9a16-5c563024a8f4) |
 
 ---
 
-### 🐞 **Bug 88: Sistema permite cadastrar lead duplicado**
+### 🐞 **Bug 86: Sistema permite cadastrar lead duplicado**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                 |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-088 | Foi possível cadastrar duas vezes o lead "Lead Teste Ville" com o mesmo e-mail (lead.ville@teste.com) e o mesmo telefone ((44) 99999-0000), sem nenhum aviso. Os dois registros passam a constar na listagem (códigos 6 e 7). |
+| BUG-086 | Foi possível cadastrar duas vezes o lead "Lead Teste Ville" com o mesmo e-mail (lead.ville@teste.com) e o mesmo telefone ((44) 99999-0000), sem nenhum aviso. Os dois registros passam a constar na listagem (códigos 6 e 7). |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3293,15 +3220,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:88](coloque o link do video aqui) |
+| [BUG:86](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 89: Busca de colaborador por código inexistente exibe linha vazia**
+### 🐞 **Bug 87: Busca de colaborador por código inexistente exibe linha vazia**
 
 | **ID**  | **Descrição**                                                                                                                                                         |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-089 | Ao pesquisar o código "999" na tela de colaboradores, a listagem exibe uma linha vazia contendo apenas "/", em vez de informar que nenhum colaborador foi encontrado. |
+| BUG-087 | Ao pesquisar o código "999" na tela de colaboradores, a listagem exibe uma linha vazia contendo apenas "/", em vez de informar que nenhum colaborador foi encontrado. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3329,15 +3256,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:89](coloque o link do video aqui) |
+| [BUG:87](https://jam.dev/c/fd885338-b1b1-4689-8a94-a0de9885af05) |
 
 ---
 
-### 🐞 **Bug 90: Alteração de colaborador expõe comandos SQL**
+### 🐞 **Bug 88: Alteração de colaborador expõe comandos SQL**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                     |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-090 | Ao salvar a alteração de um colaborador, a alteração é realizada, porém no DevTools (aba Network), a resposta mostra o comando SQL executado ("UPDATE pessoas SET nome = :nome, cpf = :cpf, ...") e seus parâmetros, expondo detalhes internos do banco de dados. |
+| BUG-088 | Ao salvar a alteração de um colaborador, a alteração é realizada, porém no DevTools (aba Network), a resposta mostra o comando SQL executado ("UPDATE pessoas SET nome = :nome, cpf = :cpf, ...") e seus parâmetros, expondo detalhes internos do banco de dados. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3365,15 +3292,16 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:90](coloque o link do video aqui) |
+| [BUG:88](https://jam.dev/c/4c015a99-0c38-4e9d-a68b-3e38d60df197) |
+| [Print](../Evidencias/C16-CT07.png) |
 
 ---
 
-### 🐞 **Bug 91: Funções não podem ser alteradas nem excluídas**
+### 🐞 **Bug 89: Funções não podem ser alteradas nem excluídas**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                                     |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-091 | Na tela de funções, a janela aberta pelo botão "Visualizar" exibe todos os campos somente para leitura, com os botões "Fechar" e "Voltar", e a listagem não possui botão de exclusão. Assim, uma função cadastrada com erro (ex.: duplicada) não pode ser corrigida nem removida. |
+| BUG-089 | Na tela de funções, a janela aberta pelo botão "Visualizar" exibe todos os campos somente para leitura, com os botões "Fechar" e "Voltar", e a listagem não possui botão de exclusão. Assim, uma função cadastrada com erro (ex.: duplicada) não pode ser corrigida nem removida. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3401,15 +3329,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:91](coloque o link do video aqui) |
+| [BUG:89](https://jam.dev/c/cf5d18c4-dc37-4ca9-af67-469cb7f230d2) |
 
 ---
 
-### 🐞 **Bug 92: Sistema permite cadastrar função duplicada**
+### 🐞 **Bug 90: Sistema permite cadastrar função duplicada**
 
 | **ID**  | **Descrição**                                                                                                                                                                               |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-092 | Foi possível cadastrar duas vezes a função "Função Teste Ville" (códigos #9 e #10), sem nenhum aviso. Como funções não podem ser excluídas (BUG-067), a duplicidade não pode ser corrigida. |
+| BUG-090 | Foi possível cadastrar duas vezes a função "Função Teste Ville" (códigos #9 e #10), sem nenhum aviso. Como funções não podem ser excluídas (BUG-089), a duplicidade não pode ser corrigida. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3437,15 +3365,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:92](coloque o link do video aqui) |
+| [BUG:90](https://jam.dev/c/05a2cb17-c81f-45f1-a9be-05fa709d4f82) |
 
 ---
 
-### 🐞 **Bug 93: Produto do tipo Pontuação não pode ser cadastrado**
+### 🐞 **Bug 91: Produto do tipo Pontuação não pode ser cadastrado**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                        |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-093 | Ao selecionar o tipo "Pontuação", o campo "Preço" é substituído pelo campo "Pontuação". Ao salvar o produto com 100 pontos, o sistema exibe "Erro ao salvar produto". Assim, nenhum produto de troca por pontos pode ser cadastrado. |
+| BUG-091 | Ao selecionar o tipo "Pontuação", o campo "Preço" é substituído pelo campo "Pontuação". Ao salvar o produto com 100 pontos, o sistema exibe "Erro ao salvar produto". Assim, nenhum produto de troca por pontos pode ser cadastrado. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3473,15 +3401,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:93](coloque o link do video aqui) |
+| [BUG:91](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 94: Sistema permite cadastrar produto com preço negativo**
+### 🐞 **Bug 92: Sistema permite cadastrar produto com preço negativo**
 
 | **ID**  | **Descrição**                                                                                                                                            |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-094 | O campo "Preço" aceita valores negativos: o produto "Produto Teste Ville Negativo" foi cadastrado com o preço "-50" e exibido na listagem como "R$ -50". |
+| BUG-092 | O campo "Preço" aceita valores negativos: o produto "Produto Teste Ville Negativo" foi cadastrado com o preço "-50" e exibido na listagem como "R$ -50". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3509,15 +3437,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:94](coloque o link do video aqui) |
+| [BUG:92](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 95: Valores dos produtos exibidos sem formatação monetária**
+### 🐞 **Bug 93: Valores dos produtos exibidos sem formatação monetária**
 
 | **ID**  | **Descrição**                                                                                                                                                                           |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-095 | Na listagem de produtos, os valores são exibidos sem separador de milhar, sem casas decimais fixas e com ponto como separador decimal, por exemplo "R$ 1550", "R$ 7000.99" e "R$ 49.9". |
+| BUG-093 | Na listagem de produtos, os valores são exibidos sem separador de milhar, sem casas decimais fixas e com ponto como separador decimal, por exemplo "R$ 1550", "R$ 7000.99" e "R$ 49.9". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3543,15 +3471,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:95](coloque o link do video aqui) |
+| [BUG:93](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 96: Anamneses aplicadas não aparecem na listagem**
+### 🐞 **Bug 94: Anamneses aplicadas não aparecem na listagem**
 
 | **ID**  | **Descrição**                                                                                                                                                                           |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-096 | Após finalizar a anamnese do aluno Steven Kaiki (o assistente termina sem erro), a tela de fichas de anamnese continua exibindo "Nenhuma ficha encontrada" e todos os indicadores em 0. |
+| BUG-094 | Após finalizar a anamnese do aluno Steven Kaiki (o assistente termina sem erro), a tela de fichas de anamnese continua exibindo "Nenhuma ficha encontrada" e todos os indicadores em 0. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3579,15 +3507,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:96](coloque o link do video aqui) |
+| [BUG:94](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 97: Perguntas do modelo de anamnese não são exibidas**
+### 🐞 **Bug 95: Perguntas do modelo de anamnese não são exibidas**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                  |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-097 | O modelo "Triplet" informa "1 perguntas", mas ao clicar em "Iniciar" o assistente vai direto para a etapa "Revisar e Finalizar", sem exibir a pergunta. A anamnese é finalizada e gravada com a lista de respostas vazia e status "concluida". |
+| BUG-095 | O modelo "Triplet" informa "1 perguntas", mas ao clicar em "Iniciar" o assistente vai direto para a etapa "Revisar e Finalizar", sem exibir a pergunta. A anamnese é finalizada e gravada com a lista de respostas vazia e status "concluida". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3615,15 +3543,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:97](coloque o link do video aqui) |
+| [BUG:95](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 98: Assistente de anamnese avança sem aluno e falha com erro interno**
+### 🐞 **Bug 96: Assistente de anamnese avança sem aluno e falha com erro interno**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                           |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-098 | Ao clicar em "Próxima" sem selecionar aluno, o assistente avança para a escolha do modelo. Ao concluir o fluxo, o sistema exibe "Erro no servidor - Erro interno inesperado.", porque a anamnese foi enviada sem aluno. |
+| BUG-096 | Ao clicar em "Próxima" sem selecionar aluno, o assistente avança para a escolha do modelo. Ao concluir o fluxo, o sistema exibe "Erro no servidor - Erro interno inesperado.", porque a anamnese foi enviada sem aluno. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3651,15 +3579,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:98](coloque o link do video aqui) |
+| [BUG:96](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 99: Nome do aluno não é exibido na escolha do modelo de anamnese**
+### 🐞 **Bug 97: Nome do aluno não é exibido na escolha do modelo de anamnese**
 
 | **ID**  | **Descrição**                                                                                                                                                                                         |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-099 | Na etapa "Selecionar Modelo", o texto é exibido como "Escolha o modelo de anamnese a aplicar para .", sem o nome do aluno selecionado, embora o aluno seja exibido no cabeçalho das etapas seguintes. |
+| BUG-097 | Na etapa "Selecionar Modelo", o texto é exibido como "Escolha o modelo de anamnese a aplicar para .", sem o nome do aluno selecionado, embora o aluno seja exibido no cabeçalho das etapas seguintes. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3686,15 +3614,15 @@
 
 |            **Evidência(s)**            |
 | :------------------------------------: |
-| [BUG:99](coloque o link do video aqui) |
+| [BUG:97](coloque o link do video aqui) |
 
 ---
 
-### 🐞 **Bug 100: Filtro de período aceita data inicial maior que a final**
+### 🐞 **Bug 98: Filtro de período aceita data inicial maior que a final**
 
 | **ID**  | **Descrição**                                                                                                                                         |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-100 | O filtro de período da Página Inicial aceita a data inicial 31/10/2026 com a data final 01/10/2026, sem aviso, e os cards continuam exibindo valores. |
+| BUG-098 | O filtro de período da Página Inicial aceita a data inicial 31/10/2026 com a data final 01/10/2026, sem aviso, e os cards continuam exibindo valores. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3724,15 +3652,15 @@
 
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
-| [BUG:100](https://jam.dev/c/5f7f9e52-3989-42d5-99c2-66b747dec9e3) |
+| [BUG:98](https://jam.dev/c/5f7f9e52-3989-42d5-99c2-66b747dec9e3) |
 
 ---
 
-### 🐞 **Bug 101: Cadastro de cliente aceita data de nascimento futura**
+### 🐞 **Bug 99: Cadastro de cliente aceita data de nascimento futura**
 
 | **ID**  | **Descrição**                                                                                                                       |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-101 | O cadastro de cliente aceita a data de nascimento 31/12/2027, posterior à data atual, e a ficha do cliente exibe a idade "-2 anos". |
+| BUG-099 | O cadastro de cliente aceita a data de nascimento 31/12/2027, posterior à data atual, e a ficha do cliente exibe a idade "-2 anos". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3762,15 +3690,15 @@
 
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
-| [BUG:101](https://jam.dev/c/f3cd80a9-c549-4e43-8957-182eaa983f3d) |
+| [BUG:99](https://jam.dev/c/f3cd80a9-c549-4e43-8957-182eaa983f3d) |
 
 ---
 
-### 🐞 **Bug 102: CPF inválido é aceito no cadastro de cliente**
+### 🐞 **Bug 100: CPF inválido é aceito no cadastro de cliente**
 
 | **ID**  | **Descrição**                                                                                            |
 | ------- | -------------------------------------------------------------------------------------------------------- |
-| BUG-102 | O cadastro e a alteração de cliente aceitam o CPF "111.111.111-11", sem validação do dígito verificador. |
+| BUG-100 | O cadastro e a alteração de cliente aceitam o CPF "111.111.111-11", sem validação do dígito verificador. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3799,15 +3727,15 @@
 
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
-| [BUG:102](https://jam.dev/c/aee4435d-fdbd-4a84-bfe5-d8a28801ecd7) |
+| [BUG:100](https://jam.dev/c/aee4435d-fdbd-4a84-bfe5-d8a28801ecd7) |
 
 ---
 
-### 🐞 **Bug 103: Filtro de status "Ativo" lista clientes inativos**
+### 🐞 **Bug 101: Filtro de status "Ativo" lista clientes inativos**
 
 | **ID**  | **Descrição**                                                                               |
 | ------- | ------------------------------------------------------------------------------------------- |
-| BUG-103 | Com o filtro "Status" em "Ativo", a listagem de clientes exibe clientes com status INATIVO. |
+| BUG-101 | Com o filtro "Status" em "Ativo", a listagem de clientes exibe clientes com status INATIVO. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3836,15 +3764,15 @@
 
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
-| [BUG:103](https://jam.dev/c/a6adccf3-ae4c-47f8-9343-8ad793e5758e) |
+| [BUG:101](https://jam.dev/c/a6adccf3-ae4c-47f8-9343-8ad793e5758e) |
 
 ---
 
-### 🐞 **Bug 104: Ficha do cliente exibe "null" e objetivos fictícios**
+### 🐞 **Bug 102: Ficha do cliente exibe "null" e objetivos fictícios**
 
 | **ID**  | **Descrição**                                                                                                                                                                                                                                                      |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-104 | A ficha de um cliente cadastrado sem telefone e sem endereço exibe o telefone como "null", o bairro como "null" na alteração e o card "Objetivos" com "Perda de peso e ganho de resistência" e "Progresso geral 60%", sem que esses dados tenham sido cadastrados. |
+| BUG-102 | A ficha de um cliente cadastrado sem telefone e sem endereço exibe o telefone como "null", o bairro como "null" na alteração e o card "Objetivos" com "Perda de peso e ganho de resistência" e "Progresso geral 60%", sem que esses dados tenham sido cadastrados. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3874,15 +3802,15 @@
 
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
-| [BUG:104](https://jam.dev/c/a4c73bde-5ac1-43ad-8a47-3ebde1f4e346) |
+| [BUG:102](https://jam.dev/c/a4c73bde-5ac1-43ad-8a47-3ebde1f4e346) |
 
 ---
 
-### 🐞 **Bug 105: Campo "Data" da parcela aceita data inválida**
+### 🐞 **Bug 103: Campo "Data" da parcela aceita data inválida**
 
 | **ID**  | **Descrição**                                                                                                        |
 | ------- | -------------------------------------------------------------------------------------------------------------------- |
-| BUG-105 | O campo "Data" da janela "Quantidade Parcelas", exibida ao salvar a matrícula, aceita a data inválida "2026/05/192". |
+| BUG-103 | O campo "Data" da janela "Quantidade Parcelas", exibida ao salvar a matrícula, aceita a data inválida "2026/05/192". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -3911,4 +3839,4 @@
 
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
-| [BUG:105](https://jam.dev/c/02ee32cf-7b68-4011-9cd9-d0faaba8470e) |
+| [BUG:103](https://jam.dev/c/02ee32cf-7b68-4011-9cd9-d0faaba8470e) |

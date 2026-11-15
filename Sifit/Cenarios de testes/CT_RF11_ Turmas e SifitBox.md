@@ -26,7 +26,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/0a6761d3-b462-403a-a5a1-a2c6a362de22) |
 
 ---
 
@@ -57,7 +57,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/268262fb-0fb4-4e03-afe3-7785b7a611d7) |
 
 ---
 
@@ -88,7 +88,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/6538f365-2148-444d-88c1-00a47832e129) |
 
 ---
 
@@ -118,7 +118,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/45bef45d-55ff-4901-bbbf-9bfad89f0ecf) |
 
 ---
 
@@ -149,7 +149,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/c1308af0-af60-4bb9-b0f3-c4ff26e4c2cc) |
 
 ---
 
@@ -180,7 +180,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/d5adb0bb-d00e-4e1d-b58e-ee14ee5a8e1f) |
 
 ---
 
@@ -212,7 +212,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/22b7ce80-8305-459c-b280-15f6560215db) |
 
 ---
 
@@ -243,7 +243,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/147e273f-611d-4015-b96a-a6a0f9235aed) |
 
 ---
 
@@ -275,7 +275,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/27a62498-c64a-4479-a706-29a846758f0c) |
 
 ---
 
@@ -306,7 +306,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/e0e2ffd3-1142-433c-b5b9-fbdc31a6ac9c) |
 
 ---
 
@@ -337,7 +337,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/700663ee-4244-4c8b-bedb-1532d3c982ec) |
 
 ---
 
@@ -367,7 +367,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/467fb3c1-e302-4c84-9d47-7df614d4d979) |
 
 ---
 
@@ -391,10 +391,10 @@
 | :------------------------------------------------------------------ |
 | O sistema deve informar ao usuário o resultado da geração de aulas. |
 
-| **Resultado da execução**                                                                           |
-| :-------------------------------------------------------------------------------------------------- |
-| **Falhou.** Nenhuma mensagem é exibida e a tela continua com "Nenhuma aula encontrada no periodo.". |
+| **Resultado da execução**                                                       |
+| :------------------------------------------------------------------------------ |
+| **Passou.** O sistema informou quantas aulas foram geradas e elas apareceram na tela. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/588929fb-4da0-47b6-8cb8-2d1e51ba4156) |

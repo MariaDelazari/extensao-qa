@@ -26,7 +26,7 @@
 
 | **Evidência(s)**                      |
 | :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| [Vídeo](https://jam.dev/c/f0c5a138-6479-449c-86fa-384bcea27ad5) |
 
 ---
 
@@ -43,7 +43,7 @@
 | **Passos**                                                                                                                             |
 | :------------------------------------------------------------------------------------------------------------------------------------- |
 | **DADO** que acessamos a tela de caixas                                                                                                |
-| **E** o filtro exibe o período de 01/10/2026 a 31/10/2026                                                                              |
+| **E** o filtro exibe o período de 01/11/2026 a 31/11/2026                                                                              |
 | **QUANDO** a listagem for carregada                                                                                                    |
 | **ENTÃO** deverão ser exibidos somente os caixas do período e o indicador "Registros no Periodo" deverá corresponder a essa quantidade |
 
