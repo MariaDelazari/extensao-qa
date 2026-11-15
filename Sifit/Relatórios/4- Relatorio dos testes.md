@@ -35,7 +35,7 @@ Evidências: 178 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados co
 | RF03      | Dashboard                       | 4              | 1              | 3                | BUG-012, BUG-013, BUG-014                                                                                  |
 | RF04      | Gestão de clientes              | 16             | 4              | 12               | BUG-016, BUG-017, BUG-035, BUG-036, BUG-037, BUG-038, BUG-039, BUG-040, BUG-098, BUG-099, BUG-100, BUG-101 |
 | RF05      | Gestão de planos                | 14             | 8              | 6                | BUG-041, BUG-042, BUG-043, BUG-044, BUG-045, BUG-046 (cancelado: BUG-025)                                  |
-| RF06      | Gestão de matrículas            | 14             | 4              | 10               | BUG-018, BUG-047, BUG-048, BUG-049, BUG-050, BUG-051, BUG-052, BUG-053, BUG-102                            |
+| RF06      | Gestão de matrículas            | 15             | 4              | 10               | BUG-018, BUG-047, BUG-048, BUG-049, BUG-050, BUG-051, BUG-052, BUG-053, BUG-102                            |
 | RF07      | Contas a receber                | 13             | 8              | 5                | BUG-019, BUG-054, BUG-055, BUG-056, BUG-057                                                                |
 | RF08      | Gestão de fornecedores          | 9              | 6              | 3                | BUG-058, BUG-059, BUG-060                                                                                  |
 | RF09      | Check-in e presenças            | 12             | 4              | 8                | BUG-022, BUG-023, BUG-061, BUG-062, BUG-063, BUG-064, BUG-065                                              |
@@ -47,7 +47,7 @@ Evidências: 178 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados co
 | RF15      | Prospecção                      | 12             | 11             | 1                | BUG-085 (em revisão: BUG-026)                                                                              |
 | RF16      | Colaboradores e funções         | 17             | 11             | 6                | BUG-024, BUG-086, BUG-087, BUG-088, BUG-089                                                                |
 | RF17      | Produtos                        | 11             | 7              | 4                | BUG-027, BUG-090, BUG-091, BUG-092                                                                         |
-| RF18      | Fichas de anamnese              | 7              | 3              | 4                | BUG-093, BUG-094, BUG-095, BUG-096                                                                         |
+| RF18      | Fichas de anamnese              | 8              | 3              | 4                | BUG-093, BUG-094, BUG-095, BUG-096                                                                         |
 | RF19      | Cadastros de apoio              | 9              | 4              | 5                | BUG-028, BUG-029, BUG-030, BUG-031, BUG-032                                                                |
 | RF20      | Grupos                          | 10             | 7              | 3                | BUG-103, BUG-104, BUG-105                                                                                  |
 | RF21      | Modelos de contrato             | 6              | 3              | 3                | BUG-106, BUG-107                                                                                           |

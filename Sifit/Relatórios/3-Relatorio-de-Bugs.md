@@ -2011,9 +2011,9 @@
 | Endereço e data não registrados. |
 | Google Chrome                    |
 
-|     **Funcionalidade Afetada**     |           **Caso de Teste Relacionado**            |
-| :--------------------------------: | :------------------------------------------------: |
-| Matrículas / Cadastro de matrícula | C06-CT07: Cadastro de matrícula com dados válidos. |
+|     **Funcionalidade Afetada**     |                                          **Caso de Teste Relacionado**                                          |
+| :--------------------------------: | :-------------------------------------------------------------------------------------------------------------: |
+| Matrículas / Cadastro de matrícula | C06-CT07: Cadastro de matrícula com dados válidos. C06-CT16: Cadastro de matrícula com Dia Vencimento inválido. |
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |
@@ -3500,9 +3500,9 @@
 | Google Chrome 150.0.7871.46        |
 | 15/11/2026                         |
 
-|  **Funcionalidade Afetada**   |        **Caso de Teste Relacionado**        |
-| :---------------------------: | :-----------------------------------------: |
-| Fichas de Anamnese / Listagem | C18-CT07: Listagem das anamneses aplicadas. |
+|  **Funcionalidade Afetada**   |                                     **Caso de Teste Relacionado**                                      |
+| :---------------------------: | :----------------------------------------------------------------------------------------------------: |
+| Fichas de Anamnese / Listagem | C18-CT07: Listagem das anamneses aplicadas. C18-CT08: Busca de ficha de anamnese pelo nome do cliente. |
 
 |                         **Evidência(s)**                         |
 | :--------------------------------------------------------------: |

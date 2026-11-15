@@ -431,3 +431,34 @@
 | **Evidência(s)**                      |
 | :------------------------------------ |
 | [Vídeo](coloque o link do video aqui) |
+
+---
+
+### Caso de Teste 16: Cadastro de matrícula com Dia Vencimento inválido.
+
+| ID       | Descrição                                                  |
+| :------- | :--------------------------------------------------------- |
+| C06-CT16 | O campo "Dia Vencimento" só aceita um dia do mês (1 a 31). |
+
+| **Pré-condições**                                                                                |
+| :----------------------------------------------------------------------------------------------- |
+| Autenticado no Sifit Unialfa (https://sifitalfa.centrion.com.br/) com a conta marcelo_zandonadi. |
+
+| **Passos**                                                                                             |
+| :----------------------------------------------------------------------------------------------------- |
+| **DADO** que estamos em `/adicionar-matricula` com cliente, modalidade e tipo de pagamento preenchidos |
+| **E** informamos "456456456" no campo "Dia Vencimento"                                                 |
+| **QUANDO** clicarmos no botão "Salvar"                                                                 |
+| **ENTÃO** o sistema informa que o dia de vencimento deve ser de 1 a 31                                 |
+
+| **Critérios de aceitação**                                                 |
+| :------------------------------------------------------------------------- |
+| O campo recusa valores fora de 1 a 31, sem mostrar erro do banco de dados. |
+
+| **Resultado da execução**                                                                                                                                            |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** O campo aceita "456456456" e "15/11/2026" e, ao salvar, aparece "Não foi possível concluir" com o erro de SQL "Data too long for column 'dia_venc_pag'". |
+
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/a42460a4-3174-4773-b2c1-8763072bd960) |
