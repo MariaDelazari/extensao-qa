@@ -475,11 +475,12 @@
 | :----------------------------------------------------------------------------------------------- |
 | Autenticado no Sifit Unialfa (https://sifitalfa.centrion.com.br/) com a conta marcelo_zandonadi. |
 
-| **Passos**                                 |
-| :----------------------------------------- |
-| **DADO** que estamos em `/clientes`        |
-| **QUANDO** digitamos "abc" no campo Código |
-| **ENTÃO** o campo não aceita as letras     |
+| **Passos**                             |
+| :------------------------------------- |
+| **DADO** que estamos em `/clientes`    |
+| **E** digitamos "abc" no campo Código  |
+| **QUANDO** clicamos em "Buscar"        |
+| **ENTÃO** o campo não aceita as letras |
 
 | **Critérios de aceitação**                            |
 | :---------------------------------------------------- |

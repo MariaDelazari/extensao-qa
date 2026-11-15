@@ -569,7 +569,7 @@
 | **Passo a passo para simular o bug**                                                 |
 | ------------------------------------------------------------------------------------ |
 | 1. Entrar no Sifit Unialfa e olhar o card de avaliações pendentes da Página Inicial. |
-| 2. Clicar em "Ver detalhes" do card (rota `/avaliacoes?status=pendente`).            |
+| 2. Clicar em "Ver detalhes" do card (abre `/avaliacoes` com o filtro Pendente).      |
 | 3. Contar as linhas da lista com status PENDENTE.                                    |
 
 |                           **Comportamento Esperado**                           |                                                       **Comportamento Obtido**                                                        |

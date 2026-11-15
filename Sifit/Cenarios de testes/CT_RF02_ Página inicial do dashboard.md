@@ -223,12 +223,12 @@
 | :---------------------------------------------------------- |
 | A página inicial `/dashboard` está aberta no Sifit Unialfa. |
 
-| **Passos**                                                                   |
-| :--------------------------------------------------------------------------- |
-| **DADO** que estamos na página inicial                                       |
-| **QUANDO** abrimos o detalhe das avaliações pendentes                        |
-| **ENTÃO** a rota `/avaliacoes?status=pendente` abre a tela Avaliações        |
-| **E** a quantidade do card é a mesma quantidade da lista com status Pendente |
+| **Passos**                                                                         |
+| :--------------------------------------------------------------------------------- |
+| **DADO** que estamos na página inicial                                             |
+| **QUANDO** abrimos o detalhe das avaliações pendentes                              |
+| **ENTÃO** a tela Avaliações (`/avaliacoes`) abre com o filtro Status em "Pendente" |
+| **E** a quantidade do card é a mesma quantidade da lista com status Pendente       |
 
 | **Critérios de aceitação**                                                 |
 | :------------------------------------------------------------------------- |
