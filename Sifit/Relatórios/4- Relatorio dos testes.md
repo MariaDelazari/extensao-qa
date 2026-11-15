@@ -75,7 +75,7 @@ O BUG-007 aparece em RF01 e RF02, e o BUG-014 em RF02 e RF03, porque cada um apo
 | BUG-012 | Dashboard mostra o título "Despesas Fixas"                                          | Média      | Aberto     |
 | BUG-013 | Títulos dos gráficos do Dashboard ficam ilegíveis                                   | Baixa      | Aberto     |
 | BUG-014 | Quantidade de alunos em risco diverge entre as telas                                | Alta       | Aberto     |
-| BUG-015 | Card de avaliações pendentes mostra 0, mas a lista tem pendentes                    | Alta       | Aberto     |
+| BUG-015 | Card de avaliações pendentes mostra 1, mas a lista tem 5 pendentes                  | Alta       | Aberto     |
 | BUG-016 | Paginação de clientes mostra 3 páginas para 1 resultado                             | Baixa      | Aberto     |
 | BUG-017 | Campo Código da busca de clientes aceita letras                                     | Baixa      | Aberto     |
 | BUG-018 | Matrículas ativas pertencem a clientes inativos                                     | Alta       | Aberto     |

@@ -236,7 +236,7 @@
 
 | **Resultado da execução**                                                                                             |
 | :-------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** Em 28/10/2026 o card mostra "0 avaliações pendentes" e a lista filtrada por Pendente mostra 4 avaliações. |
+| **Falhou.** Em 15/11/2026 o card mostra "1 avaliações pendentes" e a lista filtrada por Pendente mostra 5 avaliações. |
 
 | **Evidência(s)**                      |
 | :------------------------------------ |

@@ -556,11 +556,11 @@
 
 ---
 
-### 🐞 **Bug 15: Card de avaliações pendentes mostra 0, mas a lista tem pendentes**
+### 🐞 **Bug 15: Card de avaliações pendentes mostra 1, mas a lista tem 5 pendentes**
 
 | **ID**  | **Descrição**                                                                                                                  |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-015 | O card da Página Inicial mostra "0 avaliações pendentes", mas a lista de avaliações filtrada por Pendente mostra 4 avaliações. |
+| BUG-015 | O card da Página Inicial mostra "1 avaliações pendentes", mas a lista de avaliações filtrada por Pendente mostra 5 avaliações. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -572,9 +572,9 @@
 | 2. Clicar em "Ver detalhes" do card (rota `/avaliacoes?status=pendente`).            |
 | 3. Contar as linhas da lista com status PENDENTE.                                    |
 
-|                           **Comportamento Esperado**                           |                                                     **Comportamento Obtido**                                                     |
-| :----------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: |
-| O número do card deve ser igual à quantidade de avaliações pendentes da lista. | O card mostra "0 avaliações pendentes". A lista abre com o filtro Pendente e mostra 4 avaliações PENDENTE (#79, #69, #67 e #52). |
+|                           **Comportamento Esperado**                           |                                                       **Comportamento Obtido**                                                        |
+| :----------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------: |
+| O número do card deve ser igual à quantidade de avaliações pendentes da lista. | O card mostra "1 avaliações pendentes". A lista abre com o filtro Pendente e mostra 5 avaliações PENDENTE (#95, #79, #69, #67 e #52). |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -582,15 +582,15 @@
 | https://sifitalfa.centrion.com.br/ |
 | Desktop Ubuntu 26.04 LTS           |
 | Google Chrome 150.0.7871.46        |
-| 28/10/2026                         |
+| 15/11/2026                         |
 
 |      **Funcionalidade Afetada**       |           **Caso de Teste Relacionado**            |
 | :-----------------------------------: | :------------------------------------------------: |
 | Página inicial / Avaliações pendentes | C02-CT08: Abrir as avaliações pendentes pelo card. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:15](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:15](https://jam.dev/c/32d0c4a0-db6d-4f38-9f3a-eeceee068739) |
 
 ---
 
