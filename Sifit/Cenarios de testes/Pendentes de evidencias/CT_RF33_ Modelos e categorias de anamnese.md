@@ -20,13 +20,13 @@
 | :----------------------------------------------------------------- |
 | A tela de categorias abre pelo menu com todos os seus componentes. |
 
-| **Resultado da execução**                                                                                                                                                                                         |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Passou.** A tela abriu em `/anamnese/categorias` com a busca, o filtro "Todos os status", o botão "Nova Categoria", os indicadores (Total 3, Ativas 3, Inativas 0, Com perguntas 3) e as categorias em cartões. |
+| **Resultado da execução**                                                                                                                                                                                                                                                                                                                                                                              |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Passou.** A tela abriu em `/anamnese/categorias` com a busca, o filtro "Todos os status", o botão "Nova Categoria", os indicadores (Total 3, Ativas 3, Inativas 0, Com perguntas 3) e as categorias em cartões. O filtro "Ativo" mostrou as 3 categorias e o "Inativo" mostrou "Nenhuma categoria encontrada". Ao passar o mouse no cartão aparecem os ícones de editar (lápis) e excluir (lixeira). |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/02ba0e96-2464-40cb-b20f-1a134cd9f29c) |
 
 ---
 
@@ -195,7 +195,7 @@
 
 | **Passos**                                                                                                     |
 | :------------------------------------------------------------------------------------------------------------- |
-| **DADO** que clicamos no botão "Editar" do cartão "Categoria Teste Maria"                                      |
+| **DADO** que passamos o mouse no cartão "Categoria Teste Maria" e clicamos no ícone de lápis (Editar)          |
 | **E** alteramos o status para Inativo na janela "Editar Categoria"                                             |
 | **QUANDO** clicarmos no botão "Atualizar"                                                                      |
 | **ENTÃO** a categoria deverá aparecer como Inativo, e os indicadores Ativas e Inativas deverão ser atualizados |
@@ -224,11 +224,11 @@
 | :------------------------------------------- |
 | Existir a categoria "Categoria Teste Maria". |
 
-| **Passos**                                                                                             |
-| :----------------------------------------------------------------------------------------------------- |
-| **DADO** que clicamos no botão "Excluir" do cartão "Categoria Teste Maria"                             |
-| **QUANDO** confirmarmos a mensagem "Excluir a categoria "Categoria Teste Maria"?" no botão "Confirmar" |
-| **ENTÃO** a categoria deverá sair da listagem e o indicador Total deverá diminuir em 1                 |
+| **Passos**                                                                                               |
+| :------------------------------------------------------------------------------------------------------- |
+| **DADO** que passamos o mouse no cartão "Categoria Teste Maria" e clicamos no ícone de lixeira (Excluir) |
+| **QUANDO** confirmarmos a mensagem "Excluir a categoria "Categoria Teste Maria"?" no botão "Confirmar"   |
+| **ENTÃO** a categoria deverá sair da listagem e o indicador Total deverá diminuir em 1                   |
 
 | **Critérios de aceitação**                         |
 | :------------------------------------------------- |
