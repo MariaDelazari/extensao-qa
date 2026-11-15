@@ -4335,9 +4335,9 @@
 | Google Chrome 150.0.7871.46        |
 | 15/11/2026                         |
 
-|      **Funcionalidade Afetada**       |          **Caso de Teste Relacionado**           |
-| :-----------------------------------: | :----------------------------------------------: |
-| Avaliações / Alteração de data e hora | C10-CT08: Alteração da data e hora da avaliação. |
+|      **Funcionalidade Afetada**       |                **Caso de Teste Relacionado**                |
+| :-----------------------------------: | :---------------------------------------------------------: |
+| Avaliações / Alteração de data e hora | C10-CT12: Alteração da avaliação com data e hora inválidas. |
 
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |

@@ -98,7 +98,7 @@ Verificar manualmente os requisitos funcionais do Sifit: o login, a página inic
 - Os casos deste plano foram executados e têm vídeo ou print.
 - As falhas encontradas foram registradas no relatório de bugs, com vídeo.
 - O relatório final informa quantos casos passaram, quantos falharam e qual bug está ligado a cada um.
-- Situação atual: 98 dos 250 casos e 43 dos 114 bugs ainda aguardam o vídeo (ver o relatório final).
+- Situação atual: 98 dos 251 casos e 42 dos 115 bugs ainda aguardam o vídeo (ver o relatório final).
 
 ---
 

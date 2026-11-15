@@ -340,3 +340,36 @@
 | **Evidência(s)**                      |
 | :------------------------------------ |
 | [Vídeo](coloque o link do video aqui) |
+
+---
+
+### Caso de Teste 12: Alteração da avaliação com data e hora inválidas.
+
+| ID       | Descrição                                                                       |
+| :------- | :------------------------------------------------------------------------------ |
+| C10-CT12 | Verificar se a janela "Alterar Data / Hora" impede data e hora fora do formato. |
+
+| **Pré-condições**                                                                                |
+| :----------------------------------------------------------------------------------------------- |
+| O usuário deve estar autenticado e existir avaliação pendente (ex.: Manual SIFIT Aluno Exemplo). |
+
+| **Passos**                                                                   |
+| :--------------------------------------------------------------------------- |
+| **DADO** que estamos na tela de avaliações com o filtro Pendente             |
+| **E** clicamos no botão "Alterar" da avaliação de Manual SIFIT Aluno Exemplo |
+| **E** informamos a nova data "101010" e a nova hora "1411"                   |
+| **QUANDO** clicarmos no botão "Salvar"                                       |
+| **ENTÃO** o sistema deverá informar que a data e a hora são inválidas        |
+| **E** a janela de outra avaliação deverá abrir sem os valores digitados      |
+
+| **Critérios de aceitação**                                                           |
+| :----------------------------------------------------------------------------------- |
+| Os campos aceitam só data DD/MM/AAAA e hora HH:MM, com mensagem para valor inválido. |
+
+| **Resultado da execução**                                                                                                                    |
+| :------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** Os valores são aceitos, "Salvar" não faz nada nem mostra mensagem, e "101010" e "1411" aparecem na janela das outras avaliações. |
+
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/e7b3f5ff-5bd1-4fde-be72-0c33ebfac152) |
