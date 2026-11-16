@@ -191,6 +191,9 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, e o BUG-126 em RF30 
 | BUG-136 | Categoria de anamnese duplicada é aceita                                            | Baixa      | Aberto     |
 | BUG-137 | Edição do modelo apaga a marcação de pergunta obrigatória                           | Média      | Aberto     |
 | BUG-138 | Preview do modelo de anamnese não mostra as perguntas                               | Média      | Aberto     |
+| BUG-139 | Modelo de anamnese é salvo sem nenhuma pergunta                                     | Baixa      | Aberto     |
+| BUG-140 | Pergunta obrigatória da anamnese pode ficar sem resposta                            | Média      | Aberto     |
+| BUG-141 | Modelo de anamnese já aplicado pode ser excluído                                    | Média      | Aberto     |
 
 ---
 
@@ -205,8 +208,8 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, e o BUG-126 em RF30 
 
 - Crítica: 3
 - Alta: 25
-- Média: 59
-- Baixa: 39
+- Média: 61
+- Baixa: 40
 
 **Em revisão:** 1 (BUG-026). **Cancelado:** 1 (BUG-025, o vídeo mostrou o aviso "Preencha este campo.").
 
