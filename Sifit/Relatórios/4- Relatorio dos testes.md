@@ -28,34 +28,35 @@ Evidências: 178 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados co
 
 ## 🔍 **Cobertura por Módulo**
 
-| Código RF | Módulo                          | Casos Testados | Casos Passaram | Bugs encontrados | Bug(s) Associado(s)                                                                                        |
-| --------- | ------------------------------- | -------------- | -------------- | ---------------- | ---------------------------------------------------------------------------------------------------------- |
-| RF01      | Login na plataforma             | 9              | 2              | 7                | BUG-001, BUG-002, BUG-003, BUG-004, BUG-005, BUG-006, BUG-007, BUG-011                                     |
-| RF02      | Página inicial do dashboard     | 10             | 3              | 7                | BUG-007, BUG-008, BUG-009, BUG-010, BUG-014, BUG-015, BUG-033, BUG-034, BUG-097                            |
-| RF03      | Dashboard                       | 4              | 1              | 3                | BUG-012, BUG-013, BUG-014                                                                                  |
-| RF04      | Gestão de clientes              | 16             | 4              | 12               | BUG-016, BUG-017, BUG-035, BUG-036, BUG-037, BUG-038, BUG-039, BUG-040, BUG-098, BUG-099, BUG-100, BUG-101 |
-| RF05      | Gestão de planos                | 14             | 8              | 6                | BUG-041, BUG-042, BUG-043, BUG-044, BUG-045, BUG-046 (cancelado: BUG-025)                                  |
-| RF06      | Gestão de matrículas            | 15             | 4              | 10               | BUG-018, BUG-047, BUG-048, BUG-049, BUG-050, BUG-051, BUG-052, BUG-053, BUG-102                            |
-| RF07      | Contas a receber                | 13             | 8              | 5                | BUG-019, BUG-054, BUG-055, BUG-056, BUG-057                                                                |
-| RF08      | Gestão de fornecedores          | 9              | 6              | 3                | BUG-058, BUG-059, BUG-060                                                                                  |
-| RF09      | Check-in e presenças            | 12             | 4              | 8                | BUG-022, BUG-023, BUG-061, BUG-062, BUG-063, BUG-064, BUG-065                                              |
-| RF10      | Avaliações físicas              | 12             | 7              | 5                | BUG-066, BUG-067, BUG-068, BUG-069, BUG-115                                                                |
-| RF11      | Turmas e SifitBox               | 13             | 11             | 2                | BUG-070, BUG-071                                                                                           |
-| RF12      | Caixas                          | 11             | 6              | 5                | BUG-021, BUG-072, BUG-073, BUG-074, BUG-075                                                                |
-| RF13      | Contas a pagar e despesas fixas | 16             | 10             | 6                | BUG-020, BUG-076, BUG-077, BUG-078, BUG-079, BUG-080                                                       |
-| RF14      | Fichas de treino e exercícios   | 13             | 8              | 5                | BUG-081, BUG-082, BUG-083, BUG-084                                                                         |
-| RF15      | Prospecção                      | 14             | 12             | 2                | BUG-085, BUG-142 (cancelado: BUG-026)                                                                      |
-| RF16      | Colaboradores e funções         | 17             | 11             | 6                | BUG-024, BUG-086, BUG-087, BUG-088, BUG-089                                                                |
-| RF17      | Produtos                        | 11             | 7              | 4                | BUG-027, BUG-090, BUG-091, BUG-092                                                                         |
-| RF18      | Fichas de anamnese              | 8              | 3              | 4                | BUG-093, BUG-094, BUG-095, BUG-096                                                                         |
-| RF19      | Cadastros de apoio              | 12             | 5              | 7                | BUG-028, BUG-029, BUG-030, BUG-031, BUG-032, BUG-133, BUG-134                                              |
-| RF20      | Grupos                          | 10             | 7              | 3                | BUG-103, BUG-104, BUG-105                                                                                  |
-| RF21      | Modelos de contrato             | 6              | 3              | 3                | BUG-106, BUG-107                                                                                           |
-| RF22      | Box - Turmas                    | 13             | 5              | 8                | BUG-108, BUG-109, BUG-110, BUG-111, BUG-112, BUG-113, BUG-114                                              |
-| RF29      | Local Contas                    | 4              | 1              | 3                | BUG-143, BUG-144, BUG-145, BUG-146                                                                         |
-| RF30      | Bancos e Banco Recorrente       | 7              | 3              | 4                | BUG-126, BUG-127, BUG-128, BUG-129                                                                         |
-| RF31      | Categorias de conta a pagar     | 5              | 1              | 4                | BUG-126, BUG-130, BUG-131, BUG-132                                                                         |
-| RF32      | Métricas do cliente             | 2              | 0              | 2                | BUG-143, BUG-147, BUG-148                                                                                  |
+| Código RF | Módulo                           | Casos Testados | Casos Passaram | Bugs encontrados | Bug(s) Associado(s)                                                                                        |
+| --------- | -------------------------------- | -------------- | -------------- | ---------------- | ---------------------------------------------------------------------------------------------------------- |
+| RF01      | Login na plataforma              | 9              | 2              | 7                | BUG-001, BUG-002, BUG-003, BUG-004, BUG-005, BUG-006, BUG-007, BUG-011                                     |
+| RF02      | Página inicial do dashboard      | 10             | 3              | 7                | BUG-007, BUG-008, BUG-009, BUG-010, BUG-014, BUG-015, BUG-033, BUG-034, BUG-097                            |
+| RF03      | Dashboard                        | 4              | 1              | 3                | BUG-012, BUG-013, BUG-014                                                                                  |
+| RF04      | Gestão de clientes               | 16             | 4              | 12               | BUG-016, BUG-017, BUG-035, BUG-036, BUG-037, BUG-038, BUG-039, BUG-040, BUG-098, BUG-099, BUG-100, BUG-101 |
+| RF05      | Gestão de planos                 | 14             | 8              | 6                | BUG-041, BUG-042, BUG-043, BUG-044, BUG-045, BUG-046 (cancelado: BUG-025)                                  |
+| RF06      | Gestão de matrículas             | 15             | 4              | 10               | BUG-018, BUG-047, BUG-048, BUG-049, BUG-050, BUG-051, BUG-052, BUG-053, BUG-102                            |
+| RF07      | Contas a receber                 | 13             | 8              | 5                | BUG-019, BUG-054, BUG-055, BUG-056, BUG-057                                                                |
+| RF08      | Gestão de fornecedores           | 9              | 6              | 3                | BUG-058, BUG-059, BUG-060                                                                                  |
+| RF09      | Check-in e presenças             | 12             | 4              | 8                | BUG-022, BUG-023, BUG-061, BUG-062, BUG-063, BUG-064, BUG-065                                              |
+| RF10      | Avaliações físicas               | 12             | 7              | 5                | BUG-066, BUG-067, BUG-068, BUG-069, BUG-115                                                                |
+| RF11      | Turmas e SifitBox                | 13             | 11             | 2                | BUG-070, BUG-071                                                                                           |
+| RF12      | Caixas                           | 11             | 6              | 5                | BUG-021, BUG-072, BUG-073, BUG-074, BUG-075                                                                |
+| RF13      | Contas a pagar e despesas fixas  | 16             | 10             | 6                | BUG-020, BUG-076, BUG-077, BUG-078, BUG-079, BUG-080                                                       |
+| RF14      | Fichas de treino e exercícios    | 13             | 8              | 5                | BUG-081, BUG-082, BUG-083, BUG-084                                                                         |
+| RF15      | Prospecção                       | 14             | 12             | 2                | BUG-085, BUG-142 (cancelado: BUG-026)                                                                      |
+| RF16      | Colaboradores e funções          | 17             | 11             | 6                | BUG-024, BUG-086, BUG-087, BUG-088, BUG-089                                                                |
+| RF17      | Produtos                         | 11             | 7              | 4                | BUG-027, BUG-090, BUG-091, BUG-092                                                                         |
+| RF18      | Fichas de anamnese               | 8              | 3              | 4                | BUG-093, BUG-094, BUG-095, BUG-096                                                                         |
+| RF19      | Cadastros de apoio               | 12             | 5              | 7                | BUG-028, BUG-029, BUG-030, BUG-031, BUG-032, BUG-133, BUG-134                                              |
+| RF20      | Grupos                           | 10             | 7              | 3                | BUG-103, BUG-104, BUG-105                                                                                  |
+| RF21      | Modelos de contrato              | 6              | 3              | 3                | BUG-106, BUG-107                                                                                           |
+| RF22      | Box - Turmas                     | 13             | 5              | 8                | BUG-108, BUG-109, BUG-110, BUG-111, BUG-112, BUG-113, BUG-114                                              |
+| RF29      | Local Contas                     | 4              | 1              | 3                | BUG-143, BUG-144, BUG-145, BUG-146                                                                         |
+| RF30      | Bancos e Banco Recorrente        | 7              | 3              | 4                | BUG-126, BUG-127, BUG-128, BUG-129                                                                         |
+| RF31      | Categorias de conta a pagar      | 5              | 1              | 4                | BUG-126, BUG-130, BUG-131, BUG-132                                                                         |
+| RF32      | Métricas do cliente              | 2              | 0              | 2                | BUG-143, BUG-147, BUG-148                                                                                  |
+| RF33      | Modelos e categorias de anamnese | 21             | 14             | 7                | BUG-135, BUG-136, BUG-137, BUG-138, BUG-139, BUG-140, BUG-141                                              |
 
 O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, o BUG-126 em RF30 e RF31 e o BUG-143 em RF29 e RF32, porque cada um aponta para casos dos dois cenários.
 
@@ -276,7 +277,7 @@ No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado.
 
 - Plano de Testes
 - Análise de requisitos
-- Casos de teste (C01 a C22, C30 e C31); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C10 e C13)
+- Casos de teste (C01 a C25 e C29 a C33); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C10 e C13)
 - Relatório de bugs, com o vídeo da falha
 - Vídeos no Jam e prints na pasta `Sifit/Evidencias`
 - Roteiro dos vídeos a gravar (`5-Roteiro-de-videos.md`)
@@ -291,7 +292,7 @@ As falhas mais graves impedem o uso de módulos centrais. Não é possível cada
 
 Funcionam bem a prospecção (11 de 12 casos), as turmas (11 de 13) e a validação do campo obrigatório em Clientes, Matrículas, Avaliações, Fornecedores, Turmas, Bandeiras, Pontuação, Tipos de Documentos, Exercícios e Categorias Crossfit.
 
-Ficaram fora do escopo: Pagar.me, WhatsApp e Aplicativo. Ainda não têm caso de teste: Grupos musculares, Modelos de ficha, Configurações, Relatórios, Importar avaliações, Inteligência & Automação, Resultados IA, Modelos e categorias de anamnese (RF23 a RF28 e RF33 no plano). O teste de formulário vazio criou 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12), que devem ser excluídos.
+Ficaram fora do escopo: Pagar.me, WhatsApp e Aplicativo. Ainda não têm caso de teste: Relatórios, Importar avaliações, Inteligência & Automação e Resultados IA (RF26 a RF28 no plano). O teste de formulário vazio criou 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12), que devem ser excluídos.
 
 Em Grupos, Modelos de contrato e Box - Turmas (C20 a C22, testados em 15/11/2026), os modelos de contrato não aparecem na listagem (BUG-106, severidade Alta), o status "Inativo" do grupo não é salvo (BUG-104) e o grupo não pode ser excluído (BUG-105). O cadastro de turmas do Box aceita horário invertido, turma sem dias e vagas negativas (BUG-110 a BUG-112). Ficaram no ambiente os grupos de teste #8, #9 e #10, que não podem ser excluídos nem inativados, e os modelos de contrato 8 e 9, que não aparecem na listagem. A modalidade e as turmas de teste do Box ficaram inativas.
 

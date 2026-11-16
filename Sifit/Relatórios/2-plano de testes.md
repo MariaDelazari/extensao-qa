@@ -47,12 +47,12 @@ Verificar manualmente os requisitos funcionais do Sifit: o login, a página inic
 - RF30 Bancos e Banco recorrente: acesso, listagem, salvar vazio, cadastro, duplicidade, alteração e exclusão (as telas só abrem pelo link)
 - RF31 Categorias de conta a pagar: acesso, listagem, salvar vazio, cadastro e duplicidade
 - RF32 Métricas do cliente: acesso e busca das métricas e listas do período (a tela só abre pelo link)
+- RF33 Modelos e categorias de anamnese: categorias e modelos (busca, indicadores, cadastro, duplicidade, perguntas, preview, alteração, inativação e exclusão)
 
-**Incluído, ainda sem caso de teste (próximos cenários, RF23 a RF28 e RF33):**
+**Incluído, ainda sem caso de teste (próximos cenários, RF23 a RF28):**
 
 - Grupos musculares (RF23), Modelos de ficha (RF24) e Configurações (RF25)
 - Relatórios (RF26), Importar avaliações (RF27) e Inteligência & Automação com Resultados IA (RF28)
-- Modelos e categorias de anamnese (RF33): 21 casos executados com vídeo (C33-CT01 a C33-CT21, 14 passaram e 7 falharam, BUG-135 a BUG-141)
 
 **Excluído:**
 
@@ -123,36 +123,37 @@ Em 24/10/2026, os testes passaram para https://sifitalfa.centrion.com.br/. A dat
 
 ### 📋 9. **Módulos a Serem Testados**
 
-| Código RF | Módulo                          | Prioridade |
-| --------- | ------------------------------- | ---------- |
-| RF01      | Login na plataforma             | Alta       |
-| RF02      | Página inicial do dashboard     | Alta       |
-| RF03      | Dashboard                       | Média      |
-| RF04      | Gestão de clientes              | Alta       |
-| RF05      | Gestão de planos                | Alta       |
-| RF06      | Gestão de matrículas            | Alta       |
-| RF07      | Contas a receber                | Alta       |
-| RF08      | Gestão de fornecedores          | Baixa      |
-| RF09      | Check-in e presenças            | Alta       |
-| RF10      | Avaliações físicas              | Média      |
-| RF11      | Turmas e SifitBox               | Média      |
-| RF12      | Caixas                          | Alta       |
-| RF13      | Contas a pagar e despesas fixas | Alta       |
-| RF14      | Fichas de treino e exercícios   | Média      |
-| RF15      | Prospecção                      | Média      |
-| RF16      | Colaboradores e funções         | Média      |
-| RF17      | Produtos                        | Baixa      |
-| RF18      | Fichas de anamnese              | Baixa      |
-| RF19      | Cadastros de apoio              | Média      |
-| RF20      | Grupos                          | Média      |
-| RF21      | Modelos de contrato             | Média      |
-| RF22      | Box - Turmas                    | Média      |
-| RF29      | Local Contas                    | Média      |
-| RF30      | Bancos e Banco recorrente       | Média      |
-| RF31      | Categorias de conta a pagar     | Baixa      |
-| RF32      | Métricas do cliente             | Baixa      |
+| Código RF | Módulo                           | Prioridade |
+| --------- | -------------------------------- | ---------- |
+| RF01      | Login na plataforma              | Alta       |
+| RF02      | Página inicial do dashboard      | Alta       |
+| RF03      | Dashboard                        | Média      |
+| RF04      | Gestão de clientes               | Alta       |
+| RF05      | Gestão de planos                 | Alta       |
+| RF06      | Gestão de matrículas             | Alta       |
+| RF07      | Contas a receber                 | Alta       |
+| RF08      | Gestão de fornecedores           | Baixa      |
+| RF09      | Check-in e presenças             | Alta       |
+| RF10      | Avaliações físicas               | Média      |
+| RF11      | Turmas e SifitBox                | Média      |
+| RF12      | Caixas                           | Alta       |
+| RF13      | Contas a pagar e despesas fixas  | Alta       |
+| RF14      | Fichas de treino e exercícios    | Média      |
+| RF15      | Prospecção                       | Média      |
+| RF16      | Colaboradores e funções          | Média      |
+| RF17      | Produtos                         | Baixa      |
+| RF18      | Fichas de anamnese               | Baixa      |
+| RF19      | Cadastros de apoio               | Média      |
+| RF20      | Grupos                           | Média      |
+| RF21      | Modelos de contrato              | Média      |
+| RF22      | Box - Turmas                     | Média      |
+| RF29      | Local Contas                     | Média      |
+| RF30      | Bancos e Banco recorrente        | Média      |
+| RF31      | Categorias de conta a pagar      | Baixa      |
+| RF32      | Métricas do cliente              | Baixa      |
+| RF33      | Modelos e categorias de anamnese | Baixa      |
 
-**Cenário de cada requisito:** o número do RF é o número do cenário e do arquivo. O RF01 é testado em C01 (`CT_RF01_ Login na plataforma.md`), o RF02 em C02, e assim por diante, até o RF31 em C31.
+**Cenário de cada requisito:** o número do RF é o número do cenário e do arquivo. O RF01 é testado em C01 (`CT_RF01_ Login na plataforma.md`), o RF02 em C02, e assim por diante, até o RF33 em C33.
 
 Quando houve diferença de prioridade entre os trabalhos, ficou a maior.
 
