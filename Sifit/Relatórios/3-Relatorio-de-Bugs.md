@@ -5052,20 +5052,20 @@
 
 ### 🐞 **Bug 135: Indicador "Com perguntas" mostra o total de categorias**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                      |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| BUG-135 | Na tela "Categorias de Anamnese", o indicador "Com perguntas" mostra a quantidade total de categorias. Ao cadastrar uma categoria nova, que ainda não tem nenhuma pergunta, o indicador aumenta junto com o Total. |
+| **ID**  | **Descrição**                                                                                                                                                                                                     |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-135 | Na tela "Categorias de Anamnese", o indicador "Com perguntas" mostra a quantidade total de categorias. Ao cadastrar a categoria "Objetivos", que não tem nenhuma pergunta, o indicador aumenta junto com o Total. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
 |         Média         |           Baixa            |   Aberto   |
 
-| **Passo a passo para simular o bug**                                                                  |
-| ----------------------------------------------------------------------------------------------------- |
-| 1. Entrar no Sifit Unialfa e abrir Saúde → "Categorias".                                              |
-| 2. Anotar os indicadores Total e "Com perguntas".                                                     |
-| 3. Clicar em "Nova Categoria", informar o nome "Categoria Teste Maria" e clicar em "Criar Categoria". |
-| 4. Olhar o indicador "Com perguntas".                                                                 |
+| **Passo a passo para simular o bug**                                                      |
+| ----------------------------------------------------------------------------------------- |
+| 1. Entrar no Sifit Unialfa e abrir Saúde → "Categorias".                                  |
+| 2. Anotar os indicadores Total e "Com perguntas".                                         |
+| 3. Clicar em "Nova Categoria", informar o nome "Objetivos" e clicar em "Criar Categoria". |
+| 4. Olhar o indicador "Com perguntas".                                                     |
 
 |                               **Comportamento Esperado**                               |            **Comportamento Obtido**             |
 | :------------------------------------------------------------------------------------: | :---------------------------------------------: |
@@ -5083,17 +5083,17 @@
 | :----------------------------------: | :-------------------------------------------------: |
 | Categorias de Anamnese / Indicadores | C33-CT04: Indicador "Com perguntas" das categorias. |
 
-|            **Evidência(s)**             |
-| :-------------------------------------: |
-| [BUG:135](coloque o link do video aqui) |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:135](https://jam.dev/c/af41c04d-af50-455c-9e5c-b7c779dc710b) |
 
 ---
 
 ### 🐞 **Bug 136: Categoria de anamnese duplicada é aceita**
 
-| **ID**  | **Descrição**                                                                                                                               |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-136 | O sistema aceita cadastrar uma segunda categoria de anamnese com o mesmo nome de uma existente ("Categoria Teste Maria"), sem nenhum aviso. |
+| **ID**  | **Descrição**                                                                                              |
+| ------- | ---------------------------------------------------------------------------------------------------------- |
+| BUG-136 | O sistema aceita cadastrar duas categorias de anamnese com o mesmo nome ("Teste Maria"), sem nenhum aviso. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -5102,12 +5102,12 @@
 | **Passo a passo para simular o bug**                                                        |
 | ------------------------------------------------------------------------------------------- |
 | 1. Entrar no Sifit Unialfa e abrir Saúde → "Categorias".                                    |
-| 2. Cadastrar a categoria "Categoria Teste Maria".                                           |
+| 2. Cadastrar a categoria "Teste Maria".                                                     |
 | 3. Clicar de novo em "Nova Categoria", informar o mesmo nome e clicar em "Criar Categoria". |
 
-|                      **Comportamento Esperado**                       |                               **Comportamento Obtido**                                |
-| :-------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
-| O sistema deve informar que a categoria já existe e não salvar outra. | A segunda categoria é salva (resposta 201) e a listagem mostra duas com o mesmo nome. |
+|                      **Comportamento Esperado**                       |                               **Comportamento Obtido**                               |
+| :-------------------------------------------------------------------: | :----------------------------------------------------------------------------------: |
+| O sistema deve informar que a categoria já existe e não salvar outra. | As duas categorias são salvas (resposta 201) e a listagem mostra duas "Teste Maria". |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -5121,9 +5121,9 @@
 | :-------------------------------: | :----------------------------------------: |
 | Categorias de Anamnese / Cadastro | C33-CT05: Cadastro de categoria duplicada. |
 
-|            **Evidência(s)**             |
-| :-------------------------------------: |
-| [BUG:136](coloque o link do video aqui) |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:136](https://jam.dev/c/d4c4a693-3fe8-44ac-b617-4176f81de4d0) |
 
 ---
 
@@ -5137,12 +5137,12 @@
 | :-------------------: | :------------------------: | :--------: |
 |         Média         |           Média            |   Aberto   |
 
-| **Passo a passo para simular o bug**                                                                            |
-| --------------------------------------------------------------------------------------------------------------- |
-| 1. Entrar no Sifit Unialfa e abrir Saúde → "Modelos".                                                           |
-| 2. Criar o modelo "Modelo Teste Maria" com a pergunta "Manual SIFIT Lesão" marcada como "Obrigatória" e salvar. |
-| 3. Clicar em "Editar" no modelo.                                                                                |
-| 4. Olhar a caixa "Obrigatória" e o "Resumo do Modelo".                                                          |
+| **Passo a passo para simular o bug**                                     |
+| ------------------------------------------------------------------------ |
+| 1. Entrar no Sifit Unialfa e abrir Saúde → "Modelos".                    |
+| 2. Criar um modelo com uma pergunta marcada como "Obrigatória" e salvar. |
+| 3. Clicar em "Editar" no modelo.                                         |
+| 4. Olhar a caixa "Obrigatória" e o "Resumo do Modelo".                   |
 
 |                                **Comportamento Esperado**                                 |                                       **Comportamento Obtido**                                        |
 | :---------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: |
@@ -5158,7 +5158,7 @@
 
 |  **Funcionalidade Afetada**  |            **Caso de Teste Relacionado**            |
 | :--------------------------: | :-------------------------------------------------: |
-| Modelos de Anamnese / Edição | C33-CT12: Pergunta obrigatória na edição do modelo. |
+| Modelos de Anamnese / Edição | C33-CT14: Pergunta obrigatória na edição do modelo. |
 
 |            **Evidência(s)**             |
 | :-------------------------------------: |
@@ -5168,23 +5168,23 @@
 
 ### 🐞 **Bug 138: Preview do modelo de anamnese não mostra as perguntas**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                    |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-138 | O botão "Preview" dos modelos de anamnese abre a janela com o nome e a descrição, mas sempre mostra "Nenhuma pergunta adicionada ainda.", mesmo nos modelos cujo card informa "1 perguntas" ("Triplet", "Manual SIFIT Anamnese Inicial" e "Modelo Teste Maria"). |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                             |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-138 | O botão "Preview" dos modelos de anamnese abre a janela com o nome e a descrição, mas sempre mostra "Nenhuma pergunta adicionada ainda.", mesmo nos modelos cujo card informa perguntas ("Teste de MOdelo de Anamnese", com 3, e "Manual SIFIT Anamnese Inicial", com 1). |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
 |         Média         |           Média            |   Aberto   |
 
-| **Passo a passo para simular o bug**                  |
-| ----------------------------------------------------- |
-| 1. Entrar no Sifit Unialfa e abrir Saúde → "Modelos". |
-| 2. Clicar em "Preview" no modelo "Triplet".           |
-| 3. Repetir no modelo "Manual SIFIT Anamnese Inicial". |
+| **Passo a passo para simular o bug**                             |
+| ---------------------------------------------------------------- |
+| 1. Entrar no Sifit Unialfa e abrir Saúde → "Modelos".            |
+| 2. Criar o modelo "Teste de MOdelo de Anamnese" com 3 perguntas. |
+| 3. Clicar em "Preview" no modelo.                                |
 
-|          **Comportamento Esperado**           |                         **Comportamento Obtido**                          |
-| :-------------------------------------------: | :-----------------------------------------------------------------------: |
-| O preview deve listar as perguntas do modelo. | A janela mostra "Nenhuma pergunta adicionada ainda." em todos os modelos. |
+|          **Comportamento Esperado**           |                                 **Comportamento Obtido**                                  |
+| :-------------------------------------------: | :---------------------------------------------------------------------------------------: |
+| O preview deve listar as perguntas do modelo. | A janela mostra "Nenhuma pergunta adicionada ainda." embora o card informe "3 perguntas". |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -5194,10 +5194,125 @@
 | Google Chrome 150.0.7871.46        |
 | 15/11/2026                         |
 
-|  **Funcionalidade Afetada**   |     **Caso de Teste Relacionado**      |
-| :---------------------------: | :------------------------------------: |
-| Modelos de Anamnese / Preview | C33-CT13: Preview do modelo "Triplet". |
+|  **Funcionalidade Afetada**   | **Caso de Teste Relacionado** |
+| :---------------------------: | :---------------------------: |
+| Modelos de Anamnese / Preview | C33-CT15: Preview do modelo.  |
 
-|            **Evidência(s)**             |
-| :-------------------------------------: |
-| [BUG:138](coloque o link do video aqui) |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:138](https://jam.dev/c/3e474a32-d535-4cd2-b81d-2991c422973a) |
+
+---
+
+### 🐞 **Bug 139: Modelo de anamnese é salvo sem nenhuma pergunta**
+
+| **ID**  | **Descrição**                                                                                                                                      |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-139 | O cadastro de modelo de anamnese libera o botão "Salvar Modelo" só com o nome e salva o modelo sem nenhuma pergunta ("Cardio", com "0 perguntas"). |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Baixa         |           Baixa            |   Aberto   |
+
+| **Passo a passo para simular o bug**                      |
+| --------------------------------------------------------- |
+| 1. Entrar no Sifit Unialfa e abrir Saúde → "Modelos".     |
+| 2. Clicar em "Novo Modelo" e informar só o nome "Cardio". |
+| 3. Clicar em "Salvar Modelo" sem adicionar perguntas.     |
+
+|                       **Comportamento Esperado**                        |                       **Comportamento Obtido**                        |
+| :---------------------------------------------------------------------: | :-------------------------------------------------------------------: |
+| O sistema deve exigir pelo menos uma pergunta antes de salvar o modelo. | O modelo é salvo (resposta 201) e aparece na lista com "0 perguntas". |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
+
+|   **Funcionalidade Afetada**   |        **Caso de Teste Relacionado**        |
+| :----------------------------: | :-----------------------------------------: |
+| Modelos de Anamnese / Cadastro | C33-CT11: Cadastro de modelo sem perguntas. |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:139](https://jam.dev/c/4c7b3ed2-4921-4d6c-a25c-11bb71834727) |
+
+---
+
+### 🐞 **Bug 140: Pergunta obrigatória da anamnese pode ficar sem resposta**
+
+| **ID**  | **Descrição**                                                                                                                                                                            |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-140 | Ao aplicar um modelo de anamnese com pergunta obrigatória, o assistente deixa avançar com a pergunta em branco e finaliza a ficha como concluída sem nenhuma resposta ("respostas": []). |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |            Alta            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                                            |
+| --------------------------------------------------------------------------------------------------------------- |
+| 1. Entrar no Sifit Unialfa e abrir Saúde → "Fichas Anamnese".                                                   |
+| 2. Clicar em "Nova Anamnese" e selecionar a aluna "Maria Teste".                                                |
+| 3. Escolher o modelo "Teste de MOdelo de Anamnese", que tem a pergunta "Qual é o nome da academia" obrigatória. |
+| 4. Deixar a pergunta em branco, clicar em "Próxima", "Revisar" e "Finalizar Anamnese".                          |
+
+|                                  **Comportamento Esperado**                                   |                    **Comportamento Obtido**                     |
+| :-------------------------------------------------------------------------------------------: | :-------------------------------------------------------------: |
+| O sistema deve impedir o avanço e informar que a pergunta obrigatória precisa ser respondida. | A anamnese é salva como concluída sem respostas (resposta 201). |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
+
+|   **Funcionalidade Afetada**   |               **Caso de Teste Relacionado**                |
+| :----------------------------: | :--------------------------------------------------------: |
+| Fichas de Anamnese / Aplicação | C33-CT16: Aplicação com pergunta obrigatória sem resposta. |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:140](https://jam.dev/c/f0ee966a-4873-4846-a15c-b9d2adaedb07) |
+
+---
+
+### 🐞 **Bug 141: Modelo de anamnese já aplicado pode ser excluído**
+
+| **ID**  | **Descrição**                                                                                                                                                    |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-141 | O sistema permite excluir um modelo de anamnese que já foi aplicado ("Teste de MOdelo de Anamnese", com "1 aplicações"), sem bloquear nem oferecer a inativação. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                           |
+| ---------------------------------------------------------------------------------------------- |
+| 1. Entrar no Sifit Unialfa e abrir Saúde → "Modelos".                                          |
+| 2. Localizar um modelo com aplicações no card ("Teste de MOdelo de Anamnese", "1 aplicações"). |
+| 3. Clicar na lixeira e em "Confirmar".                                                         |
+
+|                              **Comportamento Esperado**                               |      **Comportamento Obtido**       |
+| :-----------------------------------------------------------------------------------: | :---------------------------------: |
+| O sistema deve bloquear a exclusão de modelo já aplicado ou oferecer apenas inativar. | O modelo é excluído (resposta 200). |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
+
+|   **Funcionalidade Afetada**   |       **Caso de Teste Relacionado**       |
+| :----------------------------: | :---------------------------------------: |
+| Modelos de Anamnese / Exclusão | C33-CT21: Exclusão de modelo já aplicado. |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:141](https://jam.dev/c/3b99f4b6-a0bd-4ea4-adda-e6aeac468e5e) |
