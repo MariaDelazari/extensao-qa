@@ -306,32 +306,32 @@
 
 ### Caso de Teste 11: Alteração do estágio do lead.
 
-| ID       | Descrição                                                    |
-| :------- | :----------------------------------------------------------- |
-| C15-CT11 | Verificar se o nome e o estágio do lead podem ser alterados. |
+| ID       | Descrição                                         |
+| :------- | :------------------------------------------------ |
+| C15-CT11 | Verificar se o estágio do lead pode ser alterado. |
 
-| **Pré-condições**                                                     |
-| :-------------------------------------------------------------------- |
-| O usuário deve estar autenticado e existir o lead "Lead Teste Ville". |
+| **Pré-condições**                                                                                     |
+| :---------------------------------------------------------------------------------------------------- |
+| O usuário deve estar autenticado e existir o lead "Maria Teste" (código 8) no estágio "Novo Contato". |
 
-| **Passos**                                                                                                                             |
-| :------------------------------------------------------------------------------------------------------------------------------------- |
-| **DADO** que clicamos em "Visualizar" do lead "Lead Teste Ville"                                                                       |
-| **E** alteramos o nome para "Lead Teste Ville Editado" e o estágio para "Interessado"                                                  |
-| **QUANDO** clicarmos no botão "Salvar Lead"                                                                                            |
-| **ENTÃO** a listagem deverá exibir o lead com o novo nome e o estágio "Interessado", e o indicador "Interessados" deverá aumentar em 1 |
+| **Passos**                                                                                                            |
+| :-------------------------------------------------------------------------------------------------------------------- |
+| **DADO** que clicamos na lupa (Visualizar) do lead "Maria Teste"                                                      |
+| **E** alteramos o estágio para "Interessado"                                                                          |
+| **QUANDO** clicarmos no botão "Salvar Lead"                                                                           |
+| **ENTÃO** a listagem deverá exibir o lead no estágio "Interessado", e o indicador "Interessados" deverá aumentar em 1 |
 
 | **Critérios de aceitação**                                      |
 | :-------------------------------------------------------------- |
 | O sistema deve salvar as alterações e atualizar os indicadores. |
 
-| **Resultado da execução**                                                  |
-| :------------------------------------------------------------------------- |
-| **Passou.** O sistema se comportou como descrito no critério de aceitação. |
+| **Resultado da execução**                                                                                                                                                              |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Passou.** A janela "Visualizar Lead" abriu com os dados do lead; ao salvar (resposta 200), o lead passou a "Interessado", Novos Contatos foi de 1 para 0 e Interessados de 0 para 1. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/e788dfb6-76f9-4cb2-a990-19c0300176c6) |
 
 ---
 
