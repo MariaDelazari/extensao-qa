@@ -60,33 +60,33 @@
 
 ---
 
-### Caso de Teste 03: Busca de lead pelo telefone e pelo e-mail.
+### Caso de Teste 03: Busca de lead pelo telefone.
 
-| ID       | Descrição                                                         |
-| :------- | :---------------------------------------------------------------- |
-| C15-CT03 | Verificar se a busca encontra o lead pelo telefone e pelo e-mail. |
+| ID       | Descrição                                           |
+| :------- | :-------------------------------------------------- |
+| C15-CT03 | Verificar se a busca encontra o lead pelo telefone. |
 
-| **Pré-condições**                                                     |
-| :-------------------------------------------------------------------- |
-| O usuário deve estar autenticado e existir o lead "Lead Teste Ville". |
+| **Pré-condições**                                                                          |
+| :----------------------------------------------------------------------------------------- |
+| O usuário deve estar autenticado e existir o lead "Teste Maria" com o telefone 4474005974. |
 
-| **Passos**                                                                                               |
-| :------------------------------------------------------------------------------------------------------- |
-| **DADO** que existe o lead "Lead Teste Ville" com telefone (44) 99999-0000 e e-mail lead.ville@teste.com |
-| **QUANDO** informarmos o telefone e, depois, parte do e-mail no campo de busca                           |
-| **ENTÃO** a listagem deverá exibir o lead "Lead Teste Ville" nas duas buscas                             |
+| **Passos**                                                                                 |
+| :----------------------------------------------------------------------------------------- |
+| **DADO** que copiamos o telefone "4474005974" na janela "Visualizar Lead" da "Teste Maria" |
+| **QUANDO** colarmos o telefone no campo de busca                                           |
+| **ENTÃO** a listagem deverá exibir só o lead "Teste Maria"                                 |
 
-| **Critérios de aceitação**                                   |
-| :----------------------------------------------------------- |
-| O sistema deve encontrar o lead pelo telefone e pelo e-mail. |
+| **Critérios de aceitação**                     |
+| :--------------------------------------------- |
+| O sistema deve encontrar o lead pelo telefone. |
 
-| **Resultado da execução**                                                  |
-| :------------------------------------------------------------------------- |
-| **Passou.** O sistema se comportou como descrito no critério de aceitação. |
+| **Resultado da execução**                                                                           |
+| :-------------------------------------------------------------------------------------------------- |
+| **Passou.** Com o telefone "4474005974" na busca, a listagem mostrou só a "Teste Maria" (código 1). |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/824d6a8a-afa7-42d9-abaf-cd62e7af4bcd) |
 
 ---
 
@@ -395,3 +395,34 @@
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |
 | [Vídeo](https://jam.dev/c/3b272b31-fdc0-4818-a515-351268d7aa8e) |
+
+---
+
+### Caso de Teste 14: Busca de lead pelo código.
+
+| ID       | Descrição                                         |
+| :------- | :------------------------------------------------ |
+| C15-CT14 | Verificar se a busca encontra o lead pelo código. |
+
+| **Pré-condições**                                                                                   |
+| :-------------------------------------------------------------------------------------------------- |
+| O usuário deve estar autenticado e existirem os leads de código 1 ("Teste Maria") e 2 ("joazinho"). |
+
+| **Passos**                                                       |
+| :--------------------------------------------------------------- |
+| **DADO** que estamos na tela de prospecção                       |
+| **QUANDO** informarmos "1" e, depois, "2" no campo de busca      |
+| **ENTÃO** a listagem deverá exibir só o lead do código informado |
+| **E** o botão "Limpar" deverá trazer de volta todos os leads     |
+
+| **Critérios de aceitação**                   |
+| :------------------------------------------- |
+| O sistema deve encontrar o lead pelo código. |
+
+| **Resultado da execução**                                                                                                 |
+| :------------------------------------------------------------------------------------------------------------------------ |
+| **Passou.** Com "1" a listagem mostrou só a "Teste Maria", com "2" só o "joazinho", e o "Limpar" trouxe os dois de volta. |
+
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/8eb37367-15ff-4e43-a4f8-9d65509b5a73) |

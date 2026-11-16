@@ -44,7 +44,7 @@ Evidências: 178 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados co
 | RF12      | Caixas                          | 11             | 6              | 5                | BUG-021, BUG-072, BUG-073, BUG-074, BUG-075                                                                |
 | RF13      | Contas a pagar e despesas fixas | 16             | 10             | 6                | BUG-020, BUG-076, BUG-077, BUG-078, BUG-079, BUG-080                                                       |
 | RF14      | Fichas de treino e exercícios   | 13             | 8              | 5                | BUG-081, BUG-082, BUG-083, BUG-084                                                                         |
-| RF15      | Prospecção                      | 13             | 11             | 2                | BUG-085, BUG-142 (cancelado: BUG-026)                                                                      |
+| RF15      | Prospecção                      | 14             | 12             | 2                | BUG-085, BUG-142 (cancelado: BUG-026)                                                                      |
 | RF16      | Colaboradores e funções         | 17             | 11             | 6                | BUG-024, BUG-086, BUG-087, BUG-088, BUG-089                                                                |
 | RF17      | Produtos                        | 11             | 7              | 4                | BUG-027, BUG-090, BUG-091, BUG-092                                                                         |
 | RF18      | Fichas de anamnese              | 8              | 3              | 4                | BUG-093, BUG-094, BUG-095, BUG-096                                                                         |
