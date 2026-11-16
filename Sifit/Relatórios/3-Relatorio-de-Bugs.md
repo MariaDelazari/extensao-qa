@@ -4457,7 +4457,7 @@
 |         Baixa         |           Média            |   Aberto   |
 
 | **Passo a passo para simular o bug**                 |
-| :--------------------------------------------------- |
+| ---------------------------------------------------- |
 | 1. Acessar a tela "Grupos Musculares" do SIFIT.      |
 | 2. Clicar no botão "Cadastrar grupo".                |
 | 3. Informar só o nome, sem escolher o "Tipo Membro". |
@@ -4496,7 +4496,7 @@
 |         Média         |           Média            |   Aberto   |
 
 | **Passo a passo para simular o bug**                |
-| :-------------------------------------------------- |
+| --------------------------------------------------- |
 | 1. Acessar a tela "Grupos Musculares" do SIFIT.     |
 | 2. Clicar no botão "Cadastrar grupo".               |
 | 3. Deixar o "Nome" vazio e selecionar "Inferiores". |
@@ -4535,7 +4535,7 @@
 |         Baixa         |           Baixa            |   Aberto   |
 
 | **Passo a passo para simular o bug**                          |
-| :------------------------------------------------------------ |
+| ------------------------------------------------------------- |
 | 1. Acessar a tela "Grupos Musculares" do SIFIT.               |
 | 2. Cadastrar o grupo "Grupo Teste Keltton" como "Superiores". |
 | 3. Cadastrar de novo o mesmo nome e tipo.                     |
@@ -4573,7 +4573,7 @@
 |         Baixa         |           Baixa            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                             |
-| :------------------------------------------------------------------------------- |
+| -------------------------------------------------------------------------------- |
 | 1. Cadastrar um grupo de teste e, em "Exercícios", adicionar um exercício a ele. |
 | 2. Em "Grupos Musculares", clicar em "Deletar" no grupo de teste.                |
 | 3. Confirmar a exclusão.                                                         |
@@ -4611,7 +4611,7 @@
 |         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                 |
-| :------------------------------------------------------------------- |
+| -------------------------------------------------------------------- |
 | 1. Acessar o menu "Modelo Ficha".                                    |
 | 2. Clicar no botão "Nova Ficha".                                     |
 | 3. Informar o nome "Modelo Teste Keltton" e selecionar uma personal. |
@@ -4650,7 +4650,7 @@
 |         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**              |
-| :------------------------------------------------ |
+| ------------------------------------------------- |
 | 1. Acessar o menu "Modelo Ficha".                 |
 | 2. Clicar no botão "Alterar" do modelo #1.        |
 | 3. Observar o título e o endereço da tela aberta. |
@@ -4688,7 +4688,7 @@
 |         Baixa         |           Baixa            |   Aberto   |
 
 | **Passo a passo para simular o bug**       |
-| :----------------------------------------- |
+| ------------------------------------------ |
 | 1. Acessar o menu "Configurações".         |
 | 2. Clicar no botão "Salvar Configurações". |
 
@@ -4725,7 +4725,7 @@
 |         Média         |           Média            |   Aberto   |
 
 | **Passo a passo para simular o bug**                         |
-| :----------------------------------------------------------- |
+| ------------------------------------------------------------ |
 | 1. Acessar o menu "Configurações", aba "Home".               |
 | 2. Informar "-5" em "Dias para contar cliente como ausente". |
 | 3. Clicar no botão "Salvar Configurações".                   |
@@ -4764,7 +4764,7 @@
 |         Média         |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                            |
-| :-------------------------------------------------------------- |
+| --------------------------------------------------------------- |
 | 1. Acessar o menu "Configurações".                              |
 | 2. Abrir a aba "Biometria" e observar o campo "Senha".          |
 | 3. Abrir a aba "Pagamento" e observar o campo "Token Pagar.me". |
