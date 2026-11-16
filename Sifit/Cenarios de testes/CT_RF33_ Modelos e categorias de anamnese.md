@@ -405,27 +405,27 @@
 | :------- | :-------------------------------------------------------------------------- |
 | C33-CT14 | Verificar se a edição do modelo mostra a pergunta marcada como obrigatória. |
 
-| **Pré-condições**                                                           |
-| :-------------------------------------------------------------------------- |
-| Existir um modelo com pergunta marcada como obrigatória (como no C33-CT12). |
+| **Pré-condições**                                                                                       |
+| :------------------------------------------------------------------------------------------------------ |
+| Existir o modelo "Teste de Pergunta Obrigatoria", criado com as 3 perguntas marcadas como obrigatórias. |
 
-| **Passos**                                                                                             |
-| :----------------------------------------------------------------------------------------------------- |
-| **DADO** que estamos na tela "Modelos de Anamnese"                                                     |
-| **QUANDO** clicarmos em "Editar" no modelo que tem a pergunta obrigatória                              |
-| **ENTÃO** a pergunta deverá aparecer com "Obrigatória" marcada e o resumo deverá mostrar 1 obrigatória |
+| **Passos**                                                                 |
+| :------------------------------------------------------------------------- |
+| **DADO** que estamos na tela "Modelos de Anamnese"                         |
+| **QUANDO** clicarmos em "Editar" no modelo "Teste de Pergunta Obrigatoria" |
+| **ENTÃO** as 3 perguntas deverão aparecer com "Obrigatória" marcada        |
 
 | **Critérios de aceitação**                               |
 | :------------------------------------------------------- |
 | A edição mostra a marcação de obrigatória que foi salva. |
 
-| **Resultado da execução**                                                                                                                                                                                                                  |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** Em 15/11/2026, a página "Editar Modelo" abriu com "Obrigatória" desmarcada (Obrigatórias 0, Opcionais 1), embora a API devolva a pergunta com "obrigatoria": "1". Ao salvar a edição sem marcar de novo, a marcação é apagada. |
+| **Resultado da execução**                                                                                                                                                                                                                                                           |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** O modelo foi criado com as 3 perguntas obrigatórias (resposta 201), mas a página "Editar Modelo" abriu com as 3 caixas "Obrigatória" desmarcadas, embora a API guarde "obrigatoria": "1". Ao salvar a edição (resposta 200), as perguntas deixaram de ser obrigatórias. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/3f31d9eb-7fdc-4e40-8686-ca8ddb689fec) |
 
 ---
 

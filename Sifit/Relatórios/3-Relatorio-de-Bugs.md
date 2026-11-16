@@ -5129,24 +5129,24 @@
 
 ### 🐞 **Bug 137: Edição do modelo não mostra a pergunta obrigatória e apaga a marcação**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                              |
-| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-137 | Na página "Editar Modelo", a pergunta salva como obrigatória aparece com "Obrigatória" desmarcada, embora a API devolva "obrigatoria": "1". Se a edição for salva sem marcar de novo, a marcação de obrigatória é apagada. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                   |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-137 | Na página "Editar Modelo", as perguntas salvas como obrigatórias aparecem com "Obrigatória" desmarcada, embora a API devolva "obrigatoria": "1". Se a edição for salva sem marcar de novo, a marcação de obrigatória é apagada. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
 |         Média         |           Média            |   Aberto   |
 
-| **Passo a passo para simular o bug**                                     |
-| ------------------------------------------------------------------------ |
-| 1. Entrar no Sifit Unialfa e abrir Saúde → "Modelos".                    |
-| 2. Criar um modelo com uma pergunta marcada como "Obrigatória" e salvar. |
-| 3. Clicar em "Editar" no modelo.                                         |
-| 4. Olhar a caixa "Obrigatória" e o "Resumo do Modelo".                   |
+| **Passo a passo para simular o bug**                                                                       |
+| ---------------------------------------------------------------------------------------------------------- |
+| 1. Entrar no Sifit Unialfa e abrir Saúde → "Modelos".                                                      |
+| 2. Criar o modelo "Teste de Pergunta Obrigatoria" com as 3 perguntas marcadas como "Obrigatória" e salvar. |
+| 3. Clicar em "Editar" no modelo.                                                                           |
+| 4. Olhar a caixa "Obrigatória" e o "Resumo do Modelo".                                                     |
 
-|                                **Comportamento Esperado**                                 |                                       **Comportamento Obtido**                                        |
-| :---------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: |
-| A pergunta deve aparecer com "Obrigatória" marcada e o resumo deve mostrar 1 obrigatória. | A caixa aparece desmarcada (Obrigatórias 0, Opcionais 1) e, ao salvar a edição, a marcação é perdida. |
+|               **Comportamento Esperado**               |                           **Comportamento Obtido**                            |
+| :----------------------------------------------------: | :---------------------------------------------------------------------------: |
+| As perguntas devem aparecer com "Obrigatória" marcada. | As 3 caixas aparecem desmarcadas e, ao salvar a edição, a marcação é perdida. |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -5160,9 +5160,9 @@
 | :--------------------------: | :-------------------------------------------------: |
 | Modelos de Anamnese / Edição | C33-CT14: Pergunta obrigatória na edição do modelo. |
 
-|            **Evidência(s)**             |
-| :-------------------------------------: |
-| [BUG:137](coloque o link do video aqui) |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:137](https://jam.dev/c/3f31d9eb-7fdc-4e40-8686-ca8ddb689fec) |
 
 ---
 
@@ -5283,9 +5283,9 @@
 
 ### 🐞 **Bug 141: Modelo de anamnese já aplicado pode ser excluído**
 
-| **ID**  | **Descrição**                                                                                                                                                    |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-141 | O sistema permite excluir um modelo de anamnese que já foi aplicado ("Teste de MOdelo de Anamnese", com "1 aplicações"), sem bloquear nem oferecer a inativação. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                          |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-141 | O sistema permite excluir um modelo de anamnese que já foi aplicado ("Teste de MOdelo de Anamnese", com "1 aplicações"), sem bloquear nem oferecer a inativação. Depois da exclusão, um modelo novo criado recebeu o mesmo id e passou a mostrar "1 aplicações" sem ter sido aplicado. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
