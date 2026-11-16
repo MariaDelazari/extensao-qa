@@ -52,10 +52,10 @@ Evidências: 178 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados co
 | RF20      | Grupos                          | 10             | 7              | 3                | BUG-103, BUG-104, BUG-105                                                                                  |
 | RF21      | Modelos de contrato             | 6              | 3              | 3                | BUG-106, BUG-107                                                                                           |
 | RF22      | Box - Turmas                    | 13             | 5              | 8                | BUG-108, BUG-109, BUG-110, BUG-111, BUG-112, BUG-113, BUG-114                                              |
-| RF29      | Local Contas                    | 6              | 1              | 5                | BUG-143, BUG-144, BUG-145, BUG-146, BUG-147                                                                |
+| RF29      | Local Contas                    | 4              | 1              | 3                | BUG-143, BUG-144, BUG-145, BUG-146                                                                         |
 | RF30      | Bancos e Banco Recorrente       | 7              | 3              | 4                | BUG-126, BUG-127, BUG-128, BUG-129                                                                         |
 | RF31      | Categorias de conta a pagar     | 5              | 1              | 4                | BUG-126, BUG-130, BUG-131, BUG-132                                                                         |
-| RF32      | Métricas do cliente             | 6              | 1              | 5                | BUG-143, BUG-148, BUG-149, BUG-150                                                                         |
+| RF32      | Métricas do cliente             | 6              | 1              | 5                | BUG-143, BUG-147, BUG-148, BUG-149                                                                         |
 
 O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, o BUG-126 em RF30 e RF31 e o BUG-143 em RF29 e RF32, porque cada um aponta para casos dos dois cenários.
 
@@ -199,12 +199,11 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, o BUG-126 em RF30 e 
 | BUG-142 | Telefone do lead aceita letras                                                      | Média      | Aberto    |
 | BUG-143 | Telas Local Contas e Métricas de Clientes não estão no menu                         | Média      | Aberto    |
 | BUG-144 | Listagem de Local Contas fica vazia                                                 | Alta       | Aberto    |
-| BUG-145 | Botão "Adicionar Local" não funciona                                                | Alta       | Aberto    |
-| BUG-146 | Cadastro de Local Contas salva uma despesa fixa                                     | Alta       | Aberto    |
-| BUG-147 | Erro no servidor ao salvar Local Contas com campos vazios                           | Média      | Aberto    |
-| BUG-148 | Métricas de Clientes não exibe as métricas                                          | Alta       | Aberto    |
-| BUG-149 | Listas de Métricas de Clientes aparecem abertas, vazias e não fecham                | Média      | Aberto    |
-| BUG-150 | Métricas de Clientes aceita período invertido                                       | Baixa      | Aberto    |
+| BUG-145 | Cadastro de Local Contas usa o formulário de Despesas Fixas e dá erro               | Alta       | Aberto    |
+| BUG-146 | Erro no servidor ao salvar Local Contas com campos vazios                           | Média      | Aberto    |
+| BUG-147 | Métricas de Clientes não exibe as métricas                                          | Alta       | Aberto    |
+| BUG-148 | Listas de Métricas de Clientes aparecem abertas, vazias e não fecham                | Média      | Aberto    |
+| BUG-149 | Métricas de Clientes aceita período invertido                                       | Baixa      | Aberto    |
 
 ---
 
@@ -218,7 +217,7 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, o BUG-126 em RF30 e 
 **Severidade dos bugs abertos:**
 
 - Crítica: 3
-- Alta: 29
+- Alta: 28
 - Média: 65
 - Baixa: 41
 
@@ -278,7 +277,7 @@ No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado.
 
 - Plano de Testes
 - Análise de requisitos
-- Casos de teste (C01 a C22, C30 e C31); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C10, C13, C29 e C32)
+- Casos de teste (C01 a C22, C30 e C31); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C10, C13 e C32)
 - Relatório de bugs, com o vídeo da falha
 - Vídeos no Jam e prints na pasta `Sifit/Evidencias`
 - Roteiro dos vídeos a gravar (`5-Roteiro-de-videos.md`)
@@ -299,6 +298,6 @@ Em Grupos, Modelos de contrato e Box - Turmas (C20 a C22, testados em 15/11/2026
 
 Em Bancos, Banco Recorrente e Categorias de conta a pagar (C30 e C31, testados em 15/11/2026), as três telas não têm item no menu e só abrem pelo link (BUG-126). O botão de excluir banco chama a exclusão de Tipo de Pagamento com o id do banco (BUG-129, severidade Crítica): no teste, só não apagou o tipo de pagamento 11 porque ele estava em uso. A listagem de categorias fica vazia (BUG-130), e as duas telas aceitam registros sem nome e duplicados. Na gravação do C30-CT07, a exclusão do Banco Brasil mostrou "Erro ao deletar tipo de pagamento", e o tipo de pagamento 1 (Dinheiro) continuou cadastrado. Como a exclusão de banco não é segura, os registros de teste não foram excluídos: bancos 8 a 17 e categorias 25 a 29 e as gravadas nos vídeos.
 
-Em Local Contas e Métricas do cliente (C29 e C32, testados em 15/11/2026), as duas telas não têm item no menu e abrem sem o menu lateral (BUG-143). Local Contas não funciona: a listagem fica vazia embora a API devolva 4 locais (BUG-144), "Adicionar Local" não faz nada (BUG-145) e o formulário da tela é o de Despesas Fixas, que grava o registro como despesa fixa (BUG-146). Métricas do cliente não mostra nenhuma métrica nem gráfico, embora a API devolva os números (BUG-148), e as listas de clientes aparecem abertas, vazias e não fecham (BUG-149). A despesa fixa criada no teste do C29-CT04 (#20) foi excluída.
+Em Local Contas e Métricas do cliente (C29 e C32, testados em 15/11/2026), as duas telas não têm item no menu e abrem sem o menu lateral (BUG-143). Local Contas não funciona: a listagem fica vazia embora a API devolva 4 locais (BUG-144) e o formulário da tela é o de Despesas Fixas, que responde erro 500 com a mensagem "Erro ao deletar Despesa" (BUG-145 e BUG-146). Métricas do cliente não mostra nenhuma métrica nem gráfico, embora a API devolva os números (BUG-147), e as listas de clientes aparecem abertas, vazias e não fecham (BUG-148).
 
 Até 23/10/2026 os testes usaram https://sifit.centrion.com.br/. A partir de 24/10/2026, usam https://sifitalfa.centrion.com.br/. A versão interna do sistema não foi anotada.
