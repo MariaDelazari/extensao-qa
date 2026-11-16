@@ -24,8 +24,8 @@
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Falhou.** Não há item no menu. A tela completa só abre pelo link /categorias-conta-pagar, sem o menu lateral e sem o cabeçalho. Em Contas a Pagar → Nova Conta, o botão "ADD CAT" abre só a janela "Adicionar Categoria", com o campo nome. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
 | [Vídeo](https://jam.dev/c/5fe27a74-c994-4c78-9906-aaae1ba17b39) |
 
 ---
@@ -56,8 +56,8 @@
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Falhou.** A listagem aparece vazia, só com os títulos das colunas. No DevTools (aba Network), a API (/categoria-contas-pagar) retorna as categorias cadastradas, que também aparecem no campo "Categoria" da conta a pagar. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
 | [Vídeo](https://jam.dev/c/8803140b-f4b4-4e45-b612-a4bb026a45ac) |
 
 ---
@@ -88,8 +88,8 @@
 | :------------------------------------------------------------------- |
 | **Falhou.** Nenhuma mensagem aparece e a categoria é salva sem nome. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
 | [Vídeo](https://jam.dev/c/9e6b78ae-531e-49b3-8b84-15cf25b861f1) |
 
 ---
@@ -120,8 +120,8 @@
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Passou.** A categoria 26 "Categoria Teste Ville" foi criada e aparece no campo "Categoria" da nova conta a pagar. Não aparece mensagem de sucesso, e ela não aparece na listagem da tela (ver C31-CT02). |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
 | [Vídeo](https://jam.dev/c/3412258c-7bc9-43bc-a62e-e39b4a45e862) |
 
 ---
@@ -153,6 +153,6 @@
 | :------------------------------------------------------------------------------ |
 | **Falhou.** A categoria é salva de novo com o mesmo nome, sem nenhuma mensagem. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
 | [Vídeo](https://jam.dev/c/4f5e6f3b-1d3d-4ecf-88a2-40e3019b5a2c) |
