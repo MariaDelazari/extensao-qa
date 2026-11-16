@@ -1278,10 +1278,13 @@
 | :-----------------------------------------------------------------: | :----------------------------------------------------: |
 | As duas telas devem exibir a mesma quantidade de clientes ausentes. | A Página Inicial exibe 4 e a tela de Clientes exibe 0. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
@@ -1314,10 +1317,13 @@
 | :------------------------------------------------: | :---------------------------------------------------------------: |
 | A janela deve listar as 3 desistências do período. | A janela informa que não há desistências, mas exibe o total de 3. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 |  **Funcionalidade Afetada**   |   **Caso de Teste Relacionado**    |
 | :---------------------------: | :--------------------------------: |
@@ -1351,10 +1357,13 @@
 | :----------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
 | O sistema deve cadastrar o cliente, exibir mensagem de sucesso e apresentá-lo na listagem. | O sistema exibe o modal "Erro - Erro ao criar cliente." e o cliente não é cadastrado. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 |   **Funcionalidade Afetada**   |          **Caso de Teste Relacionado**           |
 | :----------------------------: | :----------------------------------------------: |
@@ -1387,10 +1396,13 @@
 | :------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------: |
 | O sistema deve exibir o cliente que possui o código informado. | A tela de clientes fica totalmente em branco após clicar em "Buscar", embora o cliente 408 esteja cadastrado e ativo. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 | **Funcionalidade Afetada**  |     **Caso de Teste Relacionado**     |
 | :-------------------------: | :-----------------------------------: |
@@ -1423,10 +1435,13 @@
 | :--------------------------------------------------: | :---------------------------------------------------------------------------------: |
 | A primeira página deve exibir no máximo 50 clientes. | A primeira página exibe todos os clientes cadastrados (125 no momento da gravação). |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 | **Funcionalidade Afetada** |         **Caso de Teste Relacionado**         |
 | :------------------------: | :-------------------------------------------: |
@@ -1459,10 +1474,13 @@
 | :------------------------------------------------------------------: | :--------------------------------------------------------------------------: |
 | O sistema deve exibir uma mensagem como "Nenhum cliente encontrado". | O sistema exibe somente o cabeçalho da tabela, sem registros e sem mensagem. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 | **Funcionalidade Afetada** |          **Caso de Teste Relacionado**           |
 | :------------------------: | :----------------------------------------------: |
@@ -1496,10 +1514,13 @@
 | :------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
 | O sistema deve salvar as alterações, exibir mensagem de sucesso e apresentar os dados atualizados na listagem. | O sistema exibe o modal "Erro - Erro ao criar cliente." e o cliente permanece com os dados anteriores. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 |          **Funcionalidade Afetada**          |       **Caso de Teste Relacionado**       |
 | :------------------------------------------: | :---------------------------------------: |
@@ -1531,10 +1552,13 @@
 | :--------------------------------------------------------------------------------------------------: | :------------------------------------------------------------: |
 | O sistema deve informar que o cliente não foi encontrado e redirecionar para a listagem de clientes. | O sistema exibe "Erro no servidor - Erro interno inesperado.". |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 |     **Funcionalidade Afetada**     |        **Caso de Teste Relacionado**         |
 | :--------------------------------: | :------------------------------------------: |
@@ -1567,10 +1591,13 @@
 | :-------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: |
 | A coluna "Alunos", o ranking e a receita estimada devem refletir as matrículas ativas (ex.: Treino Livre com 1 aluno e mensalidade R$ 52,00). | A coluna "Alunos" exibe 0, a receita estimada exibe R$ 0,00 e a mensalidade no ranking exibe R$ 0,00. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 |   **Funcionalidade Afetada**    |                    **Caso de Teste Relacionado**                    |
 | :-----------------------------: | :-----------------------------------------------------------------: |
@@ -1603,10 +1630,13 @@
 | :-------------------------------------------------: | :------------------------------------------------: |
 | O sistema deve exibir somente o plano de código #1. | O sistema exibe os planos #1, #11, #16, #41 e #51. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 | **Funcionalidade Afetada** |     **Caso de Teste Relacionado**     |
 | :------------------------: | :-----------------------------------: |
@@ -1640,10 +1670,13 @@
 | :-----------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: |
 | O sistema deve informar que o campo "Grupo" é obrigatório, sem erro interno e sem expor detalhes do banco de dados. | A tela mostra só "Erro ao salvar plano". No DevTools, a resposta mostra a mensagem do banco de dados. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 | **Funcionalidade Afetada** |     **Caso de Teste Relacionado**      |
 | :------------------------: | :------------------------------------: |
@@ -1677,10 +1710,13 @@
 | :------------------------------------------------------------------------------------------------: | :-------------------------------------: |
 | O sistema deve impedir o cadastro e informar que a quantidade de parcelas deve ser maior que zero. | O plano é cadastrado com "-3" parcelas. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 | **Funcionalidade Afetada** |                  **Caso de Teste Relacionado**                   |
 | :------------------------: | :--------------------------------------------------------------: |
@@ -1714,10 +1750,13 @@
 | :----------------------------------------: | :-----------------------------------: |
 | O plano deve constar com status "INATIVO". | O plano permanece com status "ATIVO". |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 | **Funcionalidade Afetada**  | **Caso de Teste Relacionado**  |
 | :-------------------------: | :----------------------------: |
@@ -1750,10 +1789,13 @@
 | :-------------------------------------------------------------: | :---------------------------------------------------------------: |
 | Somente planos ativos devem ser exibidos no campo "Modalidade". | Os planos inativos "AVA" e "Teste Final" são exibidos como opção. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 | **Funcionalidade Afetada** |            **Caso de Teste Relacionado**             |
 | :------------------------: | :--------------------------------------------------: |
@@ -1787,10 +1829,13 @@
 | :--------------------------------------------------------------------------------: | :-----------------------------------------------------------------------: |
 | O valor total deve ser R$ 42,00 e a visualização deve exibir desconto de R$ 10,00. | O valor total permanece R$ 52,00 e a visualização exibe "Desconto 52,00". |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 |      **Funcionalidade Afetada**      |                                **Caso de Teste Relacionado**                                 |
 | :----------------------------------: | :------------------------------------------------------------------------------------------: |
@@ -1824,10 +1869,13 @@
 | :--------------------------------------------------------------: | :------------------------------------------------------------: |
 | O sistema deve informar que o cliente já possui matrícula ativa. | O sistema exibe a mensagem "Erro ao Cadastrar com Assinatura". |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 |     **Funcionalidade Afetada**     |                   **Caso de Teste Relacionado**                   |
 | :--------------------------------: | :---------------------------------------------------------------: |
@@ -1860,10 +1908,13 @@
 | :--------------------------------------------------------------------: | :-------------------------------------------------------------------------: |
 | A paginação deve exibir 2 páginas e permitir acessar as 84 matrículas. | A paginação exibe somente a página 1 e o botão "Próxima" fica desabilitado. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 | **Funcionalidade Afetada** |         **Caso de Teste Relacionado**          |
 | :------------------------: | :--------------------------------------------: |
@@ -1896,10 +1947,13 @@
 | :--------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | O sistema deve excluir a matrícula e exibir mensagem de sucesso. | O sistema exibe "Erro no servidor - Erro interno inesperado." e a listagem não é atualizada (a matrícula continua aparecendo até a página ser recarregada), embora a exclusão seja efetivada. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 |     **Funcionalidade Afetada**     |  **Caso de Teste Relacionado**   |
 | :--------------------------------: | :------------------------------: |
@@ -1933,10 +1987,13 @@
 | :---------------------------------------------------------------------: | :-----------------------------------------------------------: |
 | A mensagem de validação deve desaparecer quando o campo for preenchido. | A mensagem "Selecione o Tipo de Pagamento" permanece exibida. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 |     **Funcionalidade Afetada**     |             **Caso de Teste Relacionado**              |
 | :--------------------------------: | :----------------------------------------------------: |
@@ -1969,10 +2026,13 @@
 | :---------------------------------------------------------------------: | :--------------------------------------------------------------------------: |
 | O sistema deve exibir uma mensagem como "Nenhuma matrícula encontrada". | O sistema exibe somente o cabeçalho da tabela, sem registros e sem mensagem. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 | **Funcionalidade Afetada**  |           **Caso de Teste Relacionado**            |
 | :-------------------------: | :------------------------------------------------: |
@@ -2006,10 +2066,13 @@
 | :---------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
 | O campo deve aceitar apenas números de 1 a 31 e o sistema deve informar o formato correto, sem expor erros do banco de dados. | O sistema exibe "Não foi possível concluir" com uma mensagem do banco de dados. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 |     **Funcionalidade Afetada**     |                                          **Caso de Teste Relacionado**                                          |
 | :--------------------------------: | :-------------------------------------------------------------------------------------------------------------: |
@@ -2042,10 +2105,13 @@
 | :------------------------------------------------------------------: | :---------------------------------: |
 | A listagem deve exibir as 2 contas atrasadas indicadas no indicador. | A listagem não exibe nenhuma conta. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 |        **Funcionalidade Afetada**        |              **Caso de Teste Relacionado**               |
 | :--------------------------------------: | :------------------------------------------------------: |
@@ -2079,10 +2145,13 @@
 | :------------------------------------------------------------------------------------: | :-------------------------------------------------------: |
 | O sistema deve exigir a seleção do tipo de pagamento antes de registrar o recebimento. | O recebimento é registrado com o tipo de pagamento vazio. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 |   **Funcionalidade Afetada**   |             **Caso de Teste Relacionado**             |
 | :----------------------------: | :---------------------------------------------------: |
@@ -2116,10 +2185,13 @@
 | :------------------------------------------------------------------------------------------: | :---------------------------------------------------------: |
 | O sistema deve alertar sobre a divergência ou impedir o recebimento acima do valor da conta. | O recebimento é registrado com R$ 100,00 sem nenhum alerta. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 |   **Funcionalidade Afetada**   |                **Caso de Teste Relacionado**                 |
 | :----------------------------: | :----------------------------------------------------------: |
@@ -2152,10 +2224,13 @@
 | :-----------------------------------------------------------------: | :--------------------------------------------------------------------------: |
 | O sistema deve exibir uma mensagem como "Nenhuma conta encontrada". | O sistema exibe somente o cabeçalho da tabela, sem registros e sem mensagem. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 26/10/2026                         |
 
 | **Funcionalidade Afetada** |         **Caso de Teste Relacionado**          |
 | :------------------------: | :--------------------------------------------: |
@@ -2188,10 +2263,13 @@
 | :-----------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
 | A listagem não deve exibir fornecedores e o sistema deve informar que nenhum fornecedor foi encontrado. | O sistema exibe "Erro no servidor" e a listagem continua com todos os 8 fornecedores. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 27/10/2026                         |
 
 |   **Funcionalidade Afetada**    |             **Caso de Teste Relacionado**             |
 | :-----------------------------: | :---------------------------------------------------: |
@@ -2225,10 +2303,13 @@
 | :-----------------------------------------------------------------: | :---------------------------------------------------------------------------: |
 | O sistema deve cadastrar o fornecedor e exibir mensagem de sucesso. | O sistema exibe "Erro ao salvar fornecedor." e o fornecedor não é cadastrado. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 27/10/2026                         |
 
 | **Funcionalidade Afetada** |            **Caso de Teste Relacionado**            |
 | :------------------------: | :-------------------------------------------------: |
@@ -2262,10 +2343,13 @@
 | :-----------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
 | O sistema deve salvar a alteração e exibir o nome atualizado na listagem. | O sistema exibe "Erro no servidor" e o fornecedor permanece com o nome "Jao". |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 155.0.8059.84        |
+| 27/10/2026                         |
 
 | **Funcionalidade Afetada** |        **Caso de Teste Relacionado**         |
 | :------------------------: | :------------------------------------------: |
