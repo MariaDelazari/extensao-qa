@@ -5358,3 +5358,311 @@
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:142](https://jam.dev/c/3b272b31-fdc0-4818-a515-351268d7aa8e) |
+
+---
+
+### 🐞 **Bug 143: Telas Local Contas e Métricas de Clientes não estão no menu**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                  |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| BUG-143 | As telas Local Contas e Métricas de Clientes não aparecem no menu lateral. Elas só abrem pelo link (/local-contas e /metricas-cliente) e abrem sem o menu lateral. Em Local Contas, o topo mostra o título "Fichas de Treino". |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                           |
+| ---------------------------------------------------------------------------------------------- |
+| 1. Entrar no Sifit Unialfa e procurar "Local Contas" e "Métricas de Clientes" no menu lateral. |
+| 2. Acessar o link https://sifitalfa.centrion.com.br/local-contas.                              |
+| 3. Acessar o link https://sifitalfa.centrion.com.br/metricas-cliente.                          |
+
+|                           **Comportamento Esperado**                            |                                         **Comportamento Obtido**                                          |
+| :-----------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------: |
+| As telas devem ter item no menu e abrir com o menu lateral e o título corretos. | Não há item no menu, as telas abrem sem o menu lateral e Local Contas mostra o título "Fichas de Treino". |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
+
+|     **Funcionalidade Afetada**      |                                      **Caso de Teste Relacionado**                                      |
+| :---------------------------------: | :-----------------------------------------------------------------------------------------------------: |
+| Local Contas / Métricas de Clientes | C29-CT01: Acesso à tela Local Contas pelo menu. C32-CT01: Acesso à tela Métricas de Clientes pelo menu. |
+
+|            **Evidência(s)**             |
+| :-------------------------------------: |
+| [BUG:143](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 144: Listagem de Local Contas fica vazia**
+
+| **ID**  | **Descrição**                                                                                                                                                |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| BUG-144 | A tabela da tela Local Contas fica vazia, mas a API (GET /api/local-contas/1) devolve 4 locais cadastrados: Caixa Academia, Caixa Muay Thai, Teste e Teste2. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Alta          |            Alta            |   Aberto   |
+
+| **Passo a passo para simular o bug**                              |
+| ----------------------------------------------------------------- |
+| 1. Entrar no Sifit Unialfa.                                       |
+| 2. Acessar o link https://sifitalfa.centrion.com.br/local-contas. |
+| 3. Observar a tabela "Código / Nome".                             |
+
+|              **Comportamento Esperado**               |                **Comportamento Obtido**                |
+| :---------------------------------------------------: | :----------------------------------------------------: |
+| A tabela deve listar os locais de contas cadastrados. | A tabela fica vazia (a API responde 200 com 4 locais). |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** |      **Caso de Teste Relacionado**       |
+| :------------------------: | :--------------------------------------: |
+|  Local Contas / Listagem   | C29-CT02: Listagem dos locais de contas. |
+
+|            **Evidência(s)**             |
+| :-------------------------------------: |
+| [BUG:144](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 145: Botão "Adicionar Local" não funciona**
+
+| **ID**  | **Descrição**                                                                                                                                                                |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-145 | "Adicionar Local" aparece como texto solto na tela Local Contas e não faz nada ao clicar. No DevTools, o elemento é uma tag <base-button> que não foi transformada em botão. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Alta          |            Alta            |   Aberto   |
+
+| **Passo a passo para simular o bug**                              |
+| ----------------------------------------------------------------- |
+| 1. Entrar no Sifit Unialfa.                                       |
+| 2. Acessar o link https://sifitalfa.centrion.com.br/local-contas. |
+| 3. Clicar em "Adicionar Local".                                   |
+
+|        **Comportamento Esperado**         | **Comportamento Obtido** |
+| :---------------------------------------: | :----------------------: |
+| Deve abrir o cadastro de local de contas. |      Nada acontece.      |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** |   **Caso de Teste Relacionado**    |
+| :------------------------: | :--------------------------------: |
+|  Local Contas / Cadastro   | C29-CT03: Botão "Adicionar Local". |
+
+|            **Evidência(s)**             |
+| :-------------------------------------: |
+| [BUG:145](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 146: Cadastro de Local Contas salva uma despesa fixa**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| BUG-146 | O formulário da tela Local Contas é o de Despesas Fixas (título "Despesas Fixas", com valor e recorrência). Ao salvar, o sistema chama a rota de despesa fixa (POST /api/cria/despesa-fixa/1): o registro "Local Teste Maria" foi gravado como despesa fixa #20, não entrou na lista de locais e nenhuma mensagem apareceu. O código digitado não é enviado. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Alta          |            Alta            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                                   |
+| ------------------------------------------------------------------------------------------------------ |
+| 1. Entrar no Sifit Unialfa.                                                                            |
+| 2. Acessar o link https://sifitalfa.centrion.com.br/local-contas.                                      |
+| 3. Preencher código "99", nome "Local Teste Maria", status "Ativo", valor "150" e recorrência "1 Mês". |
+| 4. Clicar em "Salvar".                                                                                 |
+| 5. Abrir Financeiro → "Despesas Fixas".                                                                |
+
+|                                    **Comportamento Esperado**                                     |                                 **Comportamento Obtido**                                 |
+| :-----------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------: |
+| O local de contas deve ser salvo e aparecer na listagem de Local Contas, com mensagem de sucesso. | O registro é salvo como despesa fixa (#20), sem mensagem, e não aparece em Local Contas. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** |     **Caso de Teste Relacionado**      |
+| :------------------------: | :------------------------------------: |
+|  Local Contas / Cadastro   | C29-CT04: Cadastro de local de contas. |
+
+|            **Evidência(s)**             |
+| :-------------------------------------: |
+| [BUG:146](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 147: Erro no servidor ao salvar Local Contas com campos vazios**
+
+| **ID**  | **Descrição**                                                                                                                                                                                 |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-147 | Ao clicar em "Salvar" com o formulário da tela Local Contas vazio, nenhuma mensagem aparece na tela e a API (POST /api/cria/despesa-fixa/1) responde erro 500 com "Erro interno inesperado.". |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                              |
+| ----------------------------------------------------------------- |
+| 1. Entrar no Sifit Unialfa.                                       |
+| 2. Acessar o link https://sifitalfa.centrion.com.br/local-contas. |
+| 3. Sem preencher nenhum campo, clicar em "Salvar".                |
+
+|                       **Comportamento Esperado**                        |        **Comportamento Obtido**         |
+| :---------------------------------------------------------------------: | :-------------------------------------: |
+| O sistema deve avisar os campos obrigatórios e não enviar o formulário. | Nenhum aviso na tela e erro 500 na API. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
+
+| **Funcionalidade Afetada** |    **Caso de Teste Relacionado**     |
+| :------------------------: | :----------------------------------: |
+|  Local Contas / Validação  | C29-CT05: Salvar o formulário vazio. |
+
+|            **Evidência(s)**             |
+| :-------------------------------------: |
+| [BUG:147](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 148: Métricas de Clientes não exibe as métricas**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                        |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-148 | Ao clicar em "Buscar" na tela Métricas de Clientes, nada aparece: "Gênero" fica sem gráfico. A tela chama a mesma rota da Página Inicial (POST /api/dados-principais-home/1), que devolve 14 clientes ativos, 4 matrículas, 10 sem matrícula e 2 personais, sem dados de gênero, e nenhum desses números é mostrado. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Alta          |            Alta            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                  |
+| --------------------------------------------------------------------- |
+| 1. Entrar no Sifit Unialfa.                                           |
+| 2. Acessar o link https://sifitalfa.centrion.com.br/metricas-cliente. |
+| 3. Manter o período 01/11/2026 a 30/11/2026 e clicar em "Buscar".     |
+
+|                            **Comportamento Esperado**                             |                         **Comportamento Obtido**                         |
+| :-------------------------------------------------------------------------------: | :----------------------------------------------------------------------: |
+| A tela deve exibir as métricas dos clientes do período, como o gráfico de gênero. | Nenhuma métrica nem gráfico aparece (a API responde 200 com os números). |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
+
+|   **Funcionalidade Afetada**    |        **Caso de Teste Relacionado**        |
+| :-----------------------------: | :-----------------------------------------: |
+| Métricas de Clientes / Exibição | C32-CT02: Exibição das métricas do período. |
+
+|            **Evidência(s)**             |
+| :-------------------------------------: |
+| [BUG:148](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 149: Listas de Métricas de Clientes aparecem abertas, vazias e não fecham**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                      |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-149 | As listas Clientes Ausentes, Clientes Sem Matrículas e Personais aparecem abertas na página, como janelas soltas, ficam vazias (a API informa 10 clientes sem matrícula e 2 personais) e o botão "Fechar" não fecha nenhuma delas. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                  |
+| --------------------------------------------------------------------- |
+| 1. Entrar no Sifit Unialfa.                                           |
+| 2. Acessar o link https://sifitalfa.centrion.com.br/metricas-cliente. |
+| 3. Clicar em "Buscar".                                                |
+| 4. Clicar em "Fechar" abaixo de "Clientes Ausentes".                  |
+
+|                                          **Comportamento Esperado**                                           |                       **Comportamento Obtido**                       |
+| :-----------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------: |
+| As listas devem abrir só quando escolhidas, mostrar os clientes de cada grupo e fechar ao clicar em "Fechar". | As listas ficam sempre na página, vazias, e o "Fechar" não faz nada. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
+
+|  **Funcionalidade Afetada**   |                                      **Caso de Teste Relacionado**                                      |
+| :---------------------------: | :-----------------------------------------------------------------------------------------------------: |
+| Métricas de Clientes / Listas | C32-CT03: Listas de Clientes Ausentes, Sem Matrículas e Personais. C32-CT04: Botão "Fechar" das listas. |
+
+|            **Evidência(s)**             |
+| :-------------------------------------: |
+| [BUG:149](coloque o link do video aqui) |
+
+---
+
+### 🐞 **Bug 150: Métricas de Clientes aceita período invertido**
+
+| **ID**  | **Descrição**                                                                                                                             |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-150 | A tela Métricas de Clientes aceita a data inicial 30/11/2026 e a data final 01/11/2026 sem aviso e envia a busca com o período invertido. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Baixa         |           Baixa            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                           |
+| ------------------------------------------------------------------------------ |
+| 1. Entrar no Sifit Unialfa.                                                    |
+| 2. Acessar o link https://sifitalfa.centrion.com.br/metricas-cliente.          |
+| 3. Escolher no calendário a data inicial 30/11/2026 e a data final 01/11/2026. |
+| 4. Clicar em "Buscar".                                                         |
+
+|                         **Comportamento Esperado**                         |          **Comportamento Obtido**           |
+| :------------------------------------------------------------------------: | :-----------------------------------------: |
+| O sistema deve avisar que a data inicial é maior que a final e não buscar. | A busca é enviada (resposta 200) sem aviso. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 15/11/2026                         |
+
+|   **Funcionalidade Afetada**   |             **Caso de Teste Relacionado**             |
+| :----------------------------: | :---------------------------------------------------: |
+| Métricas de Clientes / Período | C32-CT05: Período com data inicial maior que a final. |
+
+|            **Evidência(s)**             |
+| :-------------------------------------: |
+| [BUG:150](coloque o link do video aqui) |

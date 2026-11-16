@@ -43,14 +43,15 @@ Verificar manualmente os requisitos funcionais do Sifit: o login, a página inic
 - RF20 Grupos: busca, filtros, indicadores, cadastro, duplicidade, alteração, inativação e exclusão
 - RF21 Modelos de contrato: listagem, cadastro, variáveis do texto e pré-visualização
 - RF22 Box - Turmas: modalidades e turmas recorrentes (cadastro, validações, alteração e exclusão)
+- RF29 Local Contas: acesso, listagem, botão "Adicionar Local", cadastro, salvar vazio e cancelar (a tela só abre pelo link)
 - RF30 Bancos e Banco recorrente: acesso, listagem, salvar vazio, cadastro, duplicidade, alteração e exclusão (as telas só abrem pelo link)
 - RF31 Categorias de conta a pagar: acesso, listagem, salvar vazio, cadastro e duplicidade
+- RF32 Métricas do cliente: acesso, métricas do período, listas de clientes, botão "Fechar", período invertido e calendário (a tela só abre pelo link)
 
-**Incluído, ainda sem caso de teste (próximos cenários, RF23 a RF29, RF32 e RF33):**
+**Incluído, ainda sem caso de teste (próximos cenários, RF23 a RF28 e RF33):**
 
 - Grupos musculares (RF23), Modelos de ficha (RF24) e Configurações (RF25)
 - Relatórios (RF26), Importar avaliações (RF27) e Inteligência & Automação com Resultados IA (RF28)
-- Local de contas (RF29) e Métricas do cliente (RF32)
 - Modelos e categorias de anamnese (RF33): 21 casos executados com vídeo (C33-CT01 a C33-CT21, 14 passaram e 7 falharam, BUG-135 a BUG-141)
 
 **Excluído:**
@@ -146,8 +147,10 @@ Em 24/10/2026, os testes passaram para https://sifitalfa.centrion.com.br/. A dat
 | RF20      | Grupos                          | Média      |
 | RF21      | Modelos de contrato             | Média      |
 | RF22      | Box - Turmas                    | Média      |
+| RF29      | Local Contas                    | Média      |
 | RF30      | Bancos e Banco recorrente       | Média      |
 | RF31      | Categorias de conta a pagar     | Baixa      |
+| RF32      | Métricas do cliente             | Baixa      |
 
 **Cenário de cada requisito:** o número do RF é o número do cenário e do arquivo. O RF01 é testado em C01 (`CT_RF01_ Login na plataforma.md`), o RF02 em C02, e assim por diante, até o RF31 em C31.
 

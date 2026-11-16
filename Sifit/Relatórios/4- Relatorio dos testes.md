@@ -52,149 +52,159 @@ Evidências: 178 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados co
 | RF20      | Grupos                          | 10             | 7              | 3                | BUG-103, BUG-104, BUG-105                                                                                  |
 | RF21      | Modelos de contrato             | 6              | 3              | 3                | BUG-106, BUG-107                                                                                           |
 | RF22      | Box - Turmas                    | 13             | 5              | 8                | BUG-108, BUG-109, BUG-110, BUG-111, BUG-112, BUG-113, BUG-114                                              |
+| RF29      | Local Contas                    | 6              | 1              | 5                | BUG-143, BUG-144, BUG-145, BUG-146, BUG-147                                                                |
 | RF30      | Bancos e Banco Recorrente       | 7              | 3              | 4                | BUG-126, BUG-127, BUG-128, BUG-129                                                                         |
 | RF31      | Categorias de conta a pagar     | 5              | 1              | 4                | BUG-126, BUG-130, BUG-131, BUG-132                                                                         |
+| RF32      | Métricas do cliente             | 6              | 1              | 5                | BUG-143, BUG-148, BUG-149, BUG-150                                                                         |
 
-O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, e o BUG-126 em RF30 e RF31, porque cada um aponta para casos dos dois cenários.
+O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, o BUG-126 em RF30 e RF31 e o BUG-143 em RF29 e RF32, porque cada um aponta para casos dos dois cenários.
 
 ---
 
 ## 🐞 **Resumo dos Bugs Reportados**
 
-| ID      | Título                                                                              | Severidade | Status     |
-| ------- | ----------------------------------------------------------------------------------- | ---------- | ---------- |
-| BUG-001 | Falha no login ao inserir espaços extras nas credenciais válidas                    | Média      | Aberto     |
-| BUG-002 | Link "Esqueci minha senha" não funciona                                             | Média      | Aberto     |
-| BUG-003 | Erro interno do servidor ao validar credenciais inválidas no login                  | Alta       | Aberto     |
-| BUG-004 | Ausência de validação de campos obrigatórios no login                               | Média      | Aberto     |
-| BUG-005 | Falha na persistência e no controle da sessão de login                              | Alta       | Aberto     |
-| BUG-006 | Erro interno do servidor ao autenticar com credenciais válidas                      | Alta       | Aberto     |
-| BUG-007 | Inconsistência na identificação do usuário e na autenticação                        | Média      | Aberto     |
-| BUG-008 | Radar de Evasão mostra a faixa errada de alunos                                     | Média      | Aberto     |
-| BUG-009 | Cobrança e perfil de Rafael Santos não fecham com a lista                           | Alta       | Aberto     |
-| BUG-010 | Card de valor em aberto não confere com o detalhe                                   | Alta       | Aberto     |
-| BUG-011 | O campo de senha não deixa ver o que foi digitado                                   | Média      | Aberto     |
-| BUG-012 | Dashboard mostra o título "Despesas Fixas"                                          | Média      | Aberto     |
-| BUG-013 | Títulos dos gráficos do Dashboard ficam ilegíveis                                   | Baixa      | Aberto     |
-| BUG-014 | Quantidade de alunos em risco diverge entre as telas                                | Alta       | Aberto     |
-| BUG-015 | Card de avaliações pendentes mostra 1, mas a lista tem 5 pendentes                  | Alta       | Aberto     |
-| BUG-016 | Paginação de clientes mostra 3 páginas para 1 resultado                             | Baixa      | Aberto     |
-| BUG-017 | Campo Código da busca de clientes aceita letras                                     | Baixa      | Aberto     |
-| BUG-018 | Matrículas ativas pertencem a clientes inativos                                     | Alta       | Aberto     |
-| BUG-019 | Totais de Contas a Receber não fecham com a listagem                                | Média      | Aberto     |
-| BUG-020 | Erro no servidor ao salvar conta a pagar com campos vazios                          | Média      | Aberto     |
-| BUG-021 | Erro no servidor ao abrir caixa com campos vazios                                   | Média      | Aberto     |
-| BUG-022 | Check-ins do dia não batem com a lista de check-ins                                 | Alta       | Aberto     |
-| BUG-023 | Horário de pico diferente entre Página Inicial e Check-in                           | Baixa      | Aberto     |
-| BUG-024 | Erro no servidor ao salvar colaborador com campos vazios                            | Média      | Aberto     |
-| BUG-025 | Cadastro de Planos não avisa nada ao salvar vazio                                   | Média      | Cancelado  |
-| BUG-026 | Cadastro de Prospecção não avisa nada ao salvar vazio                               | Média      | Cancelado  |
-| BUG-027 | Erro genérico ao salvar produto vazio                                               | Baixa      | Aberto     |
-| BUG-028 | Erro genérico ao salvar enquete vazia                                               | Baixa      | Aberto     |
-| BUG-029 | Atividades permite salvar registro em branco                                        | Média      | Aberto     |
-| BUG-030 | Objetivos de Treino permite salvar registro em branco                               | Média      | Aberto     |
-| BUG-031 | Tipos de Pagamento permite salvar registro em branco                                | Média      | Aberto     |
-| BUG-032 | Erro ao salvar pergunta de anamnese vazia                                           | Média      | Aberto     |
-| BUG-033 | Quantidade de clientes ausentes diverge entre a Página Inicial e a tela de Clientes | Média      | Aberto     |
-| BUG-034 | Lista de desistências vazia, embora o total informe 3 desistências                  | Média      | Aberto     |
-| BUG-035 | Erro ao cadastrar cliente com dados válidos                                         | Crítica    | Aberto     |
-| BUG-036 | Busca por código não retorna clientes sem matrícula                                 | Média      | Aberto     |
-| BUG-037 | Listagem não respeita a quantidade de registros por página                          | Baixa      | Aberto     |
-| BUG-038 | Ausência de mensagem quando a busca não encontra clientes                           | Baixa      | Aberto     |
-| BUG-039 | Erro ao salvar alterações dos dados do cliente                                      | Crítica    | Aberto     |
-| BUG-040 | Erro no servidor ao acessar cliente excluído                                        | Baixa      | Aberto     |
-| BUG-041 | Coluna "Alunos", ranking e receita estimada dos planos exibem valores zerados       | Média      | Aberto     |
-| BUG-042 | Busca por código retorna planos cujo código apenas contém o valor informado         | Baixa      | Aberto     |
-| BUG-043 | Erro interno com exposição de SQL ao salvar plano sem grupo                         | Média      | Aberto     |
-| BUG-044 | Sistema permite cadastrar plano com quantidade de parcelas negativa                 | Média      | Aberto     |
-| BUG-045 | Inativação do plano não é salva                                                     | Alta       | Aberto     |
-| BUG-046 | Planos inativos são exibidos no cadastro de matrícula                               | Média      | Aberto     |
-| BUG-047 | Desconto não é aplicado ao valor total da matrícula                                 | Média      | Aberto     |
-| BUG-048 | Mensagem incorreta ao cadastrar matrícula para cliente com matrícula ativa          | Baixa      | Aberto     |
-| BUG-049 | Paginação não permite acessar matrículas além da primeira página                    | Média      | Aberto     |
-| BUG-050 | Erro no servidor ao excluir matrícula, embora a exclusão seja efetivada             | Média      | Aberto     |
-| BUG-051 | Mensagem de validação permanece após selecionar o tipo de pagamento                 | Baixa      | Aberto     |
-| BUG-052 | Ausência de mensagem quando a busca não encontra matrículas                         | Baixa      | Aberto     |
-| BUG-053 | Campo "Dia Vencimento" aceita data e exibe erro de SQL ao salvar a matrícula        | Média      | Aberto     |
-| BUG-054 | Indicador "Contas Atrasadas" diverge do filtro de contas vencidas                   | Média      | Aberto     |
-| BUG-055 | Recebimento é registrado sem tipo de pagamento                                      | Média      | Aberto     |
-| BUG-056 | Recebimento aceita valor maior que o valor a receber sem alerta                     | Baixa      | Aberto     |
-| BUG-057 | Ausência de mensagem quando a busca não encontra contas a receber                   | Baixa      | Aberto     |
-| BUG-058 | Busca por código inexistente exibe erro no servidor e mantém todos os fornecedores  | Baixa      | Aberto     |
-| BUG-059 | Erro ao cadastrar fornecedor com dados válidos                                      | Alta       | Aberto     |
-| BUG-060 | Erro interno com exposição de SQL ao alterar fornecedor                             | Alta       | Aberto     |
-| BUG-061 | Check-ins realizados não aparecem na tela de Presenças                              | Alta       | Aberto     |
-| BUG-062 | Check-in permanece "Pendente" e não há retorno ao registrar entrada novamente       | Média      | Aberto     |
-| BUG-063 | Horário de entrada do check-in exibido com 3 horas a mais                           | Média      | Aberto     |
-| BUG-064 | Cliente sem matrícula ativa é liberado para check-in                                | Alta       | Aberto     |
-| BUG-065 | Ausência de mensagens no check-in manual e na entrada rápida                        | Baixa      | Aberto     |
-| BUG-066 | Erro ao salvar avaliação realizada                                                  | Alta       | Aberto     |
-| BUG-067 | Alteração de data e hora da avaliação não é salva                                   | Média      | Aberto     |
-| BUG-068 | Cadastro de avaliação aceita hora inválida e retorna erro interno                   | Baixa      | Aberto     |
-| BUG-069 | IMC exibido sem formatação                                                          | Baixa      | Aberto     |
-| BUG-070 | Erro ao salvar alterações da turma                                                  | Alta       | Aberto     |
-| BUG-071 | Cadastro de turma aceita hora final anterior à hora inicial                         | Média      | Aberto     |
-| BUG-072 | Fechamento de caixa não é salvo após "Buscar Contas"                                | Alta       | Aberto     |
-| BUG-073 | Caixa pode ser fechado sem a conferência das contas                                 | Média      | Aberto     |
-| BUG-074 | Sistema permite abrir mais de um caixa no mesmo local                               | Média      | Aberto     |
-| BUG-075 | Listagem inicial de caixas ignora o período exibido no filtro                       | Baixa      | Aberto     |
-| BUG-076 | Não é possível registrar o pagamento de conta a pagar                               | Alta       | Aberto     |
-| BUG-077 | Indicadores "Total a Pagar" e "Valor Restante" exibem zero                          | Média      | Aberto     |
-| BUG-078 | Erro no servidor exibido após excluir conta a pagar                                 | Baixa      | Aberto     |
-| BUG-079 | Visualização da conta a pagar exibe códigos internos e campos vazios                | Baixa      | Aberto     |
-| BUG-080 | Despesa fixa aceita valor negativo e erro interno com valor em texto                | Média      | Aberto     |
-| BUG-081 | Ficha de treino não pode ser aberta nem salva                                       | Alta       | Aberto     |
-| BUG-082 | Mensagem genérica ao criar ficha sem objetivo do treino                             | Média      | Aberto     |
-| BUG-083 | Exclusão de ficha de treino expõe comandos SQL                                      | Média      | Aberto     |
-| BUG-084 | Sistema permite cadastrar exercício duplicado no mesmo grupo                        | Baixa      | Aberto     |
-| BUG-085 | Sistema permite cadastrar lead duplicado                                            | Baixa      | Aberto     |
-| BUG-086 | Busca de colaborador por código inexistente exibe linha vazia                       | Baixa      | Aberto     |
-| BUG-087 | Alteração de colaborador expõe comandos SQL                                         | Média      | Aberto     |
-| BUG-088 | Funções não podem ser alteradas nem excluídas                                       | Média      | Aberto     |
-| BUG-089 | Sistema permite cadastrar função duplicada                                          | Baixa      | Aberto     |
-| BUG-090 | Produto do tipo Pontuação não pode ser cadastrado                                   | Alta       | Aberto     |
-| BUG-091 | Sistema permite cadastrar produto com preço negativo                                | Média      | Aberto     |
-| BUG-092 | Valores dos produtos exibidos sem formatação monetária                              | Baixa      | Aberto     |
-| BUG-093 | Anamneses aplicadas não aparecem na listagem                                        | Alta       | Aberto     |
-| BUG-094 | Perguntas do modelo de anamnese não são exibidas                                    | Alta       | Aberto     |
-| BUG-095 | Assistente de anamnese avança sem aluno e falha com erro interno                    | Média      | Aberto     |
-| BUG-096 | Nome do aluno não é exibido na escolha do modelo de anamnese                        | Baixa      | Aberto     |
-| BUG-097 | Filtro de período aceita data inicial maior que a final                             | Baixa      | Aberto     |
-| BUG-098 | Cadastro de cliente aceita data de nascimento futura                                | Média      | Aberto     |
-| BUG-099 | CPF inválido é aceito no cadastro de cliente                                        | Média      | Aberto     |
-| BUG-100 | Filtro de status "Ativo" lista clientes inativos                                    | Média      | Aberto     |
-| BUG-101 | Ficha do cliente exibe "null" e objetivos fictícios                                 | Baixa      | Aberto     |
-| BUG-102 | Campo "Data" da parcela aceita data inválida                                        | Média      | Aberto     |
-| BUG-103 | Sistema permite cadastrar grupo duplicado                                           | Baixa      | Aberto     |
-| BUG-104 | Status "Inativo" do grupo não é salvo                                               | Média      | Aberto     |
-| BUG-105 | Grupo não pode ser excluído                                                         | Média      | Aberto     |
-| BUG-106 | Listagem de modelos de contrato aparece vazia                                       | Alta       | Aberto     |
-| BUG-107 | Modelo de contrato é salvo sem texto                                                | Baixa      | Aberto     |
-| BUG-108 | Box - Turmas não avisa nada ao salvar modalidade ou turma vazia                     | Baixa      | Aberto     |
-| BUG-109 | Erro 500 e mensagem genérica ao cadastrar modalidade duplicada                      | Média      | Aberto     |
-| BUG-110 | Turma do Box aceita hora final anterior à hora inicial                              | Média      | Aberto     |
-| BUG-111 | Turma do Box é cadastrada sem dias da semana                                        | Média      | Aberto     |
-| BUG-112 | Turma do Box aceita quantidade de vagas negativa                                    | Média      | Aberto     |
-| BUG-113 | Modalidade inativa aparece no cadastro de turma do Box                              | Baixa      | Aberto     |
-| BUG-114 | Exclusão de turma do Box não pede confirmação e mantém a turma na lista             | Média      | Aberto     |
-| BUG-115 | Janela "Alterar Data / Hora" aceita data e hora sem formato                         | Média      | Aberto     |
-| BUG-126 | Telas de bancos e de categorias de conta a pagar não estão no menu                  | Média      | Aberto     |
-| BUG-127 | Banco é salvo sem nome                                                              | Baixa      | Aberto     |
-| BUG-128 | Banco duplicado é aceito                                                            | Baixa      | Aberto     |
-| BUG-129 | Excluir banco chama a exclusão de tipo de pagamento                                 | Crítica    | Aberto     |
-| BUG-130 | Listagem de categorias de conta a pagar aparece vazia                               | Alta       | Aberto     |
-| BUG-131 | Categoria de conta a pagar é salva sem nome                                         | Baixa      | Aberto     |
-| BUG-132 | Categoria de conta a pagar duplicada é aceita                                       | Baixa      | Aberto     |
-| BUG-133 | Bandeira cadastrada não aparece na listagem                                         | Alta       | Aberto     |
-| BUG-134 | Pontuação aceita data final anterior à inicial                                      | Média      | Aberto     |
-| BUG-135 | Indicador "Com perguntas" mostra o total de categorias                              | Média      | Aberto     |
-| BUG-136 | Categoria de anamnese duplicada é aceita                                            | Baixa      | Aberto     |
-| BUG-137 | Edição do modelo apaga a marcação de pergunta obrigatória                           | Média      | Aberto     |
-| BUG-138 | Preview do modelo de anamnese não mostra as perguntas                               | Média      | Aberto     |
-| BUG-139 | Modelo de anamnese é salvo sem nenhuma pergunta                                     | Baixa      | Aberto     |
-| BUG-140 | Pergunta obrigatória da anamnese pode ficar sem resposta                            | Média      | Aberto     |
-| BUG-141 | Modelo de anamnese já aplicado pode ser excluído                                    | Média      | Aberto     |
-| BUG-142 | Telefone do lead aceita letras                                                      | Média      | Aberto     |
+| ID      | Título                                                                              | Severidade | Status    |
+| ------- | ----------------------------------------------------------------------------------- | ---------- | --------- |
+| BUG-001 | Falha no login ao inserir espaços extras nas credenciais válidas                    | Média      | Aberto    |
+| BUG-002 | Link "Esqueci minha senha" não funciona                                             | Média      | Aberto    |
+| BUG-003 | Erro interno do servidor ao validar credenciais inválidas no login                  | Alta       | Aberto    |
+| BUG-004 | Ausência de validação de campos obrigatórios no login                               | Média      | Aberto    |
+| BUG-005 | Falha na persistência e no controle da sessão de login                              | Alta       | Aberto    |
+| BUG-006 | Erro interno do servidor ao autenticar com credenciais válidas                      | Alta       | Aberto    |
+| BUG-007 | Inconsistência na identificação do usuário e na autenticação                        | Média      | Aberto    |
+| BUG-008 | Radar de Evasão mostra a faixa errada de alunos                                     | Média      | Aberto    |
+| BUG-009 | Cobrança e perfil de Rafael Santos não fecham com a lista                           | Alta       | Aberto    |
+| BUG-010 | Card de valor em aberto não confere com o detalhe                                   | Alta       | Aberto    |
+| BUG-011 | O campo de senha não deixa ver o que foi digitado                                   | Média      | Aberto    |
+| BUG-012 | Dashboard mostra o título "Despesas Fixas"                                          | Média      | Aberto    |
+| BUG-013 | Títulos dos gráficos do Dashboard ficam ilegíveis                                   | Baixa      | Aberto    |
+| BUG-014 | Quantidade de alunos em risco diverge entre as telas                                | Alta       | Aberto    |
+| BUG-015 | Card de avaliações pendentes mostra 1, mas a lista tem 5 pendentes                  | Alta       | Aberto    |
+| BUG-016 | Paginação de clientes mostra 3 páginas para 1 resultado                             | Baixa      | Aberto    |
+| BUG-017 | Campo Código da busca de clientes aceita letras                                     | Baixa      | Aberto    |
+| BUG-018 | Matrículas ativas pertencem a clientes inativos                                     | Alta       | Aberto    |
+| BUG-019 | Totais de Contas a Receber não fecham com a listagem                                | Média      | Aberto    |
+| BUG-020 | Erro no servidor ao salvar conta a pagar com campos vazios                          | Média      | Aberto    |
+| BUG-021 | Erro no servidor ao abrir caixa com campos vazios                                   | Média      | Aberto    |
+| BUG-022 | Check-ins do dia não batem com a lista de check-ins                                 | Alta       | Aberto    |
+| BUG-023 | Horário de pico diferente entre Página Inicial e Check-in                           | Baixa      | Aberto    |
+| BUG-024 | Erro no servidor ao salvar colaborador com campos vazios                            | Média      | Aberto    |
+| BUG-025 | Cadastro de Planos não avisa nada ao salvar vazio                                   | Média      | Cancelado |
+| BUG-026 | Cadastro de Prospecção não avisa nada ao salvar vazio                               | Média      | Cancelado |
+| BUG-027 | Erro genérico ao salvar produto vazio                                               | Baixa      | Aberto    |
+| BUG-028 | Erro genérico ao salvar enquete vazia                                               | Baixa      | Aberto    |
+| BUG-029 | Atividades permite salvar registro em branco                                        | Média      | Aberto    |
+| BUG-030 | Objetivos de Treino permite salvar registro em branco                               | Média      | Aberto    |
+| BUG-031 | Tipos de Pagamento permite salvar registro em branco                                | Média      | Aberto    |
+| BUG-032 | Erro ao salvar pergunta de anamnese vazia                                           | Média      | Aberto    |
+| BUG-033 | Quantidade de clientes ausentes diverge entre a Página Inicial e a tela de Clientes | Média      | Aberto    |
+| BUG-034 | Lista de desistências vazia, embora o total informe 3 desistências                  | Média      | Aberto    |
+| BUG-035 | Erro ao cadastrar cliente com dados válidos                                         | Crítica    | Aberto    |
+| BUG-036 | Busca por código não retorna clientes sem matrícula                                 | Média      | Aberto    |
+| BUG-037 | Listagem não respeita a quantidade de registros por página                          | Baixa      | Aberto    |
+| BUG-038 | Ausência de mensagem quando a busca não encontra clientes                           | Baixa      | Aberto    |
+| BUG-039 | Erro ao salvar alterações dos dados do cliente                                      | Crítica    | Aberto    |
+| BUG-040 | Erro no servidor ao acessar cliente excluído                                        | Baixa      | Aberto    |
+| BUG-041 | Coluna "Alunos", ranking e receita estimada dos planos exibem valores zerados       | Média      | Aberto    |
+| BUG-042 | Busca por código retorna planos cujo código apenas contém o valor informado         | Baixa      | Aberto    |
+| BUG-043 | Erro interno com exposição de SQL ao salvar plano sem grupo                         | Média      | Aberto    |
+| BUG-044 | Sistema permite cadastrar plano com quantidade de parcelas negativa                 | Média      | Aberto    |
+| BUG-045 | Inativação do plano não é salva                                                     | Alta       | Aberto    |
+| BUG-046 | Planos inativos são exibidos no cadastro de matrícula                               | Média      | Aberto    |
+| BUG-047 | Desconto não é aplicado ao valor total da matrícula                                 | Média      | Aberto    |
+| BUG-048 | Mensagem incorreta ao cadastrar matrícula para cliente com matrícula ativa          | Baixa      | Aberto    |
+| BUG-049 | Paginação não permite acessar matrículas além da primeira página                    | Média      | Aberto    |
+| BUG-050 | Erro no servidor ao excluir matrícula, embora a exclusão seja efetivada             | Média      | Aberto    |
+| BUG-051 | Mensagem de validação permanece após selecionar o tipo de pagamento                 | Baixa      | Aberto    |
+| BUG-052 | Ausência de mensagem quando a busca não encontra matrículas                         | Baixa      | Aberto    |
+| BUG-053 | Campo "Dia Vencimento" aceita data e exibe erro de SQL ao salvar a matrícula        | Média      | Aberto    |
+| BUG-054 | Indicador "Contas Atrasadas" diverge do filtro de contas vencidas                   | Média      | Aberto    |
+| BUG-055 | Recebimento é registrado sem tipo de pagamento                                      | Média      | Aberto    |
+| BUG-056 | Recebimento aceita valor maior que o valor a receber sem alerta                     | Baixa      | Aberto    |
+| BUG-057 | Ausência de mensagem quando a busca não encontra contas a receber                   | Baixa      | Aberto    |
+| BUG-058 | Busca por código inexistente exibe erro no servidor e mantém todos os fornecedores  | Baixa      | Aberto    |
+| BUG-059 | Erro ao cadastrar fornecedor com dados válidos                                      | Alta       | Aberto    |
+| BUG-060 | Erro interno com exposição de SQL ao alterar fornecedor                             | Alta       | Aberto    |
+| BUG-061 | Check-ins realizados não aparecem na tela de Presenças                              | Alta       | Aberto    |
+| BUG-062 | Check-in permanece "Pendente" e não há retorno ao registrar entrada novamente       | Média      | Aberto    |
+| BUG-063 | Horário de entrada do check-in exibido com 3 horas a mais                           | Média      | Aberto    |
+| BUG-064 | Cliente sem matrícula ativa é liberado para check-in                                | Alta       | Aberto    |
+| BUG-065 | Ausência de mensagens no check-in manual e na entrada rápida                        | Baixa      | Aberto    |
+| BUG-066 | Erro ao salvar avaliação realizada                                                  | Alta       | Aberto    |
+| BUG-067 | Alteração de data e hora da avaliação não é salva                                   | Média      | Aberto    |
+| BUG-068 | Cadastro de avaliação aceita hora inválida e retorna erro interno                   | Baixa      | Aberto    |
+| BUG-069 | IMC exibido sem formatação                                                          | Baixa      | Aberto    |
+| BUG-070 | Erro ao salvar alterações da turma                                                  | Alta       | Aberto    |
+| BUG-071 | Cadastro de turma aceita hora final anterior à hora inicial                         | Média      | Aberto    |
+| BUG-072 | Fechamento de caixa não é salvo após "Buscar Contas"                                | Alta       | Aberto    |
+| BUG-073 | Caixa pode ser fechado sem a conferência das contas                                 | Média      | Aberto    |
+| BUG-074 | Sistema permite abrir mais de um caixa no mesmo local                               | Média      | Aberto    |
+| BUG-075 | Listagem inicial de caixas ignora o período exibido no filtro                       | Baixa      | Aberto    |
+| BUG-076 | Não é possível registrar o pagamento de conta a pagar                               | Alta       | Aberto    |
+| BUG-077 | Indicadores "Total a Pagar" e "Valor Restante" exibem zero                          | Média      | Aberto    |
+| BUG-078 | Erro no servidor exibido após excluir conta a pagar                                 | Baixa      | Aberto    |
+| BUG-079 | Visualização da conta a pagar exibe códigos internos e campos vazios                | Baixa      | Aberto    |
+| BUG-080 | Despesa fixa aceita valor negativo e erro interno com valor em texto                | Média      | Aberto    |
+| BUG-081 | Ficha de treino não pode ser aberta nem salva                                       | Alta       | Aberto    |
+| BUG-082 | Mensagem genérica ao criar ficha sem objetivo do treino                             | Média      | Aberto    |
+| BUG-083 | Exclusão de ficha de treino expõe comandos SQL                                      | Média      | Aberto    |
+| BUG-084 | Sistema permite cadastrar exercício duplicado no mesmo grupo                        | Baixa      | Aberto    |
+| BUG-085 | Sistema permite cadastrar lead duplicado                                            | Baixa      | Aberto    |
+| BUG-086 | Busca de colaborador por código inexistente exibe linha vazia                       | Baixa      | Aberto    |
+| BUG-087 | Alteração de colaborador expõe comandos SQL                                         | Média      | Aberto    |
+| BUG-088 | Funções não podem ser alteradas nem excluídas                                       | Média      | Aberto    |
+| BUG-089 | Sistema permite cadastrar função duplicada                                          | Baixa      | Aberto    |
+| BUG-090 | Produto do tipo Pontuação não pode ser cadastrado                                   | Alta       | Aberto    |
+| BUG-091 | Sistema permite cadastrar produto com preço negativo                                | Média      | Aberto    |
+| BUG-092 | Valores dos produtos exibidos sem formatação monetária                              | Baixa      | Aberto    |
+| BUG-093 | Anamneses aplicadas não aparecem na listagem                                        | Alta       | Aberto    |
+| BUG-094 | Perguntas do modelo de anamnese não são exibidas                                    | Alta       | Aberto    |
+| BUG-095 | Assistente de anamnese avança sem aluno e falha com erro interno                    | Média      | Aberto    |
+| BUG-096 | Nome do aluno não é exibido na escolha do modelo de anamnese                        | Baixa      | Aberto    |
+| BUG-097 | Filtro de período aceita data inicial maior que a final                             | Baixa      | Aberto    |
+| BUG-098 | Cadastro de cliente aceita data de nascimento futura                                | Média      | Aberto    |
+| BUG-099 | CPF inválido é aceito no cadastro de cliente                                        | Média      | Aberto    |
+| BUG-100 | Filtro de status "Ativo" lista clientes inativos                                    | Média      | Aberto    |
+| BUG-101 | Ficha do cliente exibe "null" e objetivos fictícios                                 | Baixa      | Aberto    |
+| BUG-102 | Campo "Data" da parcela aceita data inválida                                        | Média      | Aberto    |
+| BUG-103 | Sistema permite cadastrar grupo duplicado                                           | Baixa      | Aberto    |
+| BUG-104 | Status "Inativo" do grupo não é salvo                                               | Média      | Aberto    |
+| BUG-105 | Grupo não pode ser excluído                                                         | Média      | Aberto    |
+| BUG-106 | Listagem de modelos de contrato aparece vazia                                       | Alta       | Aberto    |
+| BUG-107 | Modelo de contrato é salvo sem texto                                                | Baixa      | Aberto    |
+| BUG-108 | Box - Turmas não avisa nada ao salvar modalidade ou turma vazia                     | Baixa      | Aberto    |
+| BUG-109 | Erro 500 e mensagem genérica ao cadastrar modalidade duplicada                      | Média      | Aberto    |
+| BUG-110 | Turma do Box aceita hora final anterior à hora inicial                              | Média      | Aberto    |
+| BUG-111 | Turma do Box é cadastrada sem dias da semana                                        | Média      | Aberto    |
+| BUG-112 | Turma do Box aceita quantidade de vagas negativa                                    | Média      | Aberto    |
+| BUG-113 | Modalidade inativa aparece no cadastro de turma do Box                              | Baixa      | Aberto    |
+| BUG-114 | Exclusão de turma do Box não pede confirmação e mantém a turma na lista             | Média      | Aberto    |
+| BUG-115 | Janela "Alterar Data / Hora" aceita data e hora sem formato                         | Média      | Aberto    |
+| BUG-126 | Telas de bancos e de categorias de conta a pagar não estão no menu                  | Média      | Aberto    |
+| BUG-127 | Banco é salvo sem nome                                                              | Baixa      | Aberto    |
+| BUG-128 | Banco duplicado é aceito                                                            | Baixa      | Aberto    |
+| BUG-129 | Excluir banco chama a exclusão de tipo de pagamento                                 | Crítica    | Aberto    |
+| BUG-130 | Listagem de categorias de conta a pagar aparece vazia                               | Alta       | Aberto    |
+| BUG-131 | Categoria de conta a pagar é salva sem nome                                         | Baixa      | Aberto    |
+| BUG-132 | Categoria de conta a pagar duplicada é aceita                                       | Baixa      | Aberto    |
+| BUG-133 | Bandeira cadastrada não aparece na listagem                                         | Alta       | Aberto    |
+| BUG-134 | Pontuação aceita data final anterior à inicial                                      | Média      | Aberto    |
+| BUG-135 | Indicador "Com perguntas" mostra o total de categorias                              | Média      | Aberto    |
+| BUG-136 | Categoria de anamnese duplicada é aceita                                            | Baixa      | Aberto    |
+| BUG-137 | Edição do modelo apaga a marcação de pergunta obrigatória                           | Média      | Aberto    |
+| BUG-138 | Preview do modelo de anamnese não mostra as perguntas                               | Média      | Aberto    |
+| BUG-139 | Modelo de anamnese é salvo sem nenhuma pergunta                                     | Baixa      | Aberto    |
+| BUG-140 | Pergunta obrigatória da anamnese pode ficar sem resposta                            | Média      | Aberto    |
+| BUG-141 | Modelo de anamnese já aplicado pode ser excluído                                    | Média      | Aberto    |
+| BUG-142 | Telefone do lead aceita letras                                                      | Média      | Aberto    |
+| BUG-143 | Telas Local Contas e Métricas de Clientes não estão no menu                         | Média      | Aberto    |
+| BUG-144 | Listagem de Local Contas fica vazia                                                 | Alta       | Aberto    |
+| BUG-145 | Botão "Adicionar Local" não funciona                                                | Alta       | Aberto    |
+| BUG-146 | Cadastro de Local Contas salva uma despesa fixa                                     | Alta       | Aberto    |
+| BUG-147 | Erro no servidor ao salvar Local Contas com campos vazios                           | Média      | Aberto    |
+| BUG-148 | Métricas de Clientes não exibe as métricas                                          | Alta       | Aberto    |
+| BUG-149 | Listas de Métricas de Clientes aparecem abertas, vazias e não fecham                | Média      | Aberto    |
+| BUG-150 | Métricas de Clientes aceita período invertido                                       | Baixa      | Aberto    |
 
 ---
 
@@ -208,9 +218,9 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, e o BUG-126 em RF30 
 **Severidade dos bugs abertos:**
 
 - Crítica: 3
-- Alta: 25
-- Média: 62
-- Baixa: 40
+- Alta: 29
+- Média: 65
+- Baixa: 41
 
 **Em revisão:** 0. **Cancelados:** 2 (BUG-025 e BUG-026, os vídeos mostraram o aviso "Preencha este campo.").
 
@@ -268,7 +278,7 @@ No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado.
 
 - Plano de Testes
 - Análise de requisitos
-- Casos de teste (C01 a C22, C30 e C31); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C10 e C13)
+- Casos de teste (C01 a C22, C30 e C31); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C10, C13, C29 e C32)
 - Relatório de bugs, com o vídeo da falha
 - Vídeos no Jam e prints na pasta `Sifit/Evidencias`
 - Roteiro dos vídeos a gravar (`5-Roteiro-de-videos.md`)
@@ -283,10 +293,12 @@ As falhas mais graves impedem o uso de módulos centrais. Não é possível cada
 
 Funcionam bem a prospecção (11 de 12 casos), as turmas (11 de 13) e a validação do campo obrigatório em Clientes, Matrículas, Avaliações, Fornecedores, Turmas, Bandeiras, Pontuação, Tipos de Documentos, Exercícios e Categorias Crossfit.
 
-Ficaram fora do escopo: Pagar.me, WhatsApp e Aplicativo. Ainda não têm caso de teste: Grupos musculares, Modelos de ficha, Configurações, Relatórios, Importar avaliações, Inteligência & Automação, Resultados IA, Local de contas, Métricas do cliente e Modelos e categorias de anamnese (RF23 a RF29, RF32 e RF33 no plano). O teste de formulário vazio criou 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12), que devem ser excluídos.
+Ficaram fora do escopo: Pagar.me, WhatsApp e Aplicativo. Ainda não têm caso de teste: Grupos musculares, Modelos de ficha, Configurações, Relatórios, Importar avaliações, Inteligência & Automação, Resultados IA, Modelos e categorias de anamnese (RF23 a RF28 e RF33 no plano). O teste de formulário vazio criou 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12), que devem ser excluídos.
 
 Em Grupos, Modelos de contrato e Box - Turmas (C20 a C22, testados em 15/11/2026), os modelos de contrato não aparecem na listagem (BUG-106, severidade Alta), o status "Inativo" do grupo não é salvo (BUG-104) e o grupo não pode ser excluído (BUG-105). O cadastro de turmas do Box aceita horário invertido, turma sem dias e vagas negativas (BUG-110 a BUG-112). Ficaram no ambiente os grupos de teste #8, #9 e #10, que não podem ser excluídos nem inativados, e os modelos de contrato 8 e 9, que não aparecem na listagem. A modalidade e as turmas de teste do Box ficaram inativas.
 
 Em Bancos, Banco Recorrente e Categorias de conta a pagar (C30 e C31, testados em 15/11/2026), as três telas não têm item no menu e só abrem pelo link (BUG-126). O botão de excluir banco chama a exclusão de Tipo de Pagamento com o id do banco (BUG-129, severidade Crítica): no teste, só não apagou o tipo de pagamento 11 porque ele estava em uso. A listagem de categorias fica vazia (BUG-130), e as duas telas aceitam registros sem nome e duplicados. Na gravação do C30-CT07, a exclusão do Banco Brasil mostrou "Erro ao deletar tipo de pagamento", e o tipo de pagamento 1 (Dinheiro) continuou cadastrado. Como a exclusão de banco não é segura, os registros de teste não foram excluídos: bancos 8 a 17 e categorias 25 a 29 e as gravadas nos vídeos.
+
+Em Local Contas e Métricas do cliente (C29 e C32, testados em 15/11/2026), as duas telas não têm item no menu e abrem sem o menu lateral (BUG-143). Local Contas não funciona: a listagem fica vazia embora a API devolva 4 locais (BUG-144), "Adicionar Local" não faz nada (BUG-145) e o formulário da tela é o de Despesas Fixas, que grava o registro como despesa fixa (BUG-146). Métricas do cliente não mostra nenhuma métrica nem gráfico, embora a API devolva os números (BUG-148), e as listas de clientes aparecem abertas, vazias e não fecham (BUG-149). A despesa fixa criada no teste do C29-CT04 (#20) foi excluída.
 
 Até 23/10/2026 os testes usaram https://sifit.centrion.com.br/. A partir de 24/10/2026, usam https://sifitalfa.centrion.com.br/. A versão interna do sistema não foi anotada.
