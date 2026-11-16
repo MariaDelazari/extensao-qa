@@ -100,23 +100,23 @@
 | :---------------------------------------------------- |
 | O usuário deve estar autenticado na plataforma SIFIT. |
 
-| **Passos**                                                                 |
-| :------------------------------------------------------------------------- |
-| **DADO** que estamos na tela de prospecção                                 |
-| **QUANDO** informarmos um nome inexistente no campo de busca               |
-| **ENTÃO** o sistema deverá apresentar a mensagem "Nenhum lead encontrado." |
+| **Passos**                                                                                      |
+| :---------------------------------------------------------------------------------------------- |
+| **DADO** que estamos na tela de prospecção                                                      |
+| **QUANDO** informarmos um nome que não corresponde a nenhum lead ("joazinho") no campo de busca |
+| **ENTÃO** o sistema deverá apresentar a mensagem "Nenhum lead encontrado."                      |
 
 | **Critérios de aceitação**                                                             |
 | :------------------------------------------------------------------------------------- |
 | O sistema deve exibir uma mensagem informativa quando a busca não retornar resultados. |
 
-| **Resultado da execução**                                                  |
-| :------------------------------------------------------------------------- |
-| **Passou.** O sistema se comportou como descrito no critério de aceitação. |
+| **Resultado da execução**                                                                                                        |
+| :------------------------------------------------------------------------------------------------------------------------------- |
+| **Passou.** Com "joazinho" na busca, que não corresponde a nenhum lead cadastrado, a listagem mostrou "Nenhum lead encontrado.". |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/bfdd9a29-0f7e-400c-9c6e-bb1891cafbe6) |
 
 ---
 
