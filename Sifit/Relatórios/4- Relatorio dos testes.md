@@ -55,7 +55,7 @@ Evidências: 178 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados co
 | RF29      | Local Contas                    | 4              | 1              | 3                | BUG-143, BUG-144, BUG-145, BUG-146                                                                         |
 | RF30      | Bancos e Banco Recorrente       | 7              | 3              | 4                | BUG-126, BUG-127, BUG-128, BUG-129                                                                         |
 | RF31      | Categorias de conta a pagar     | 5              | 1              | 4                | BUG-126, BUG-130, BUG-131, BUG-132                                                                         |
-| RF32      | Métricas do cliente             | 6              | 1              | 5                | BUG-143, BUG-147, BUG-148, BUG-149                                                                         |
+| RF32      | Métricas do cliente             | 2              | 0              | 2                | BUG-143, BUG-147, BUG-148                                                                                  |
 
 O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, o BUG-126 em RF30 e RF31 e o BUG-143 em RF29 e RF32, porque cada um aponta para casos dos dois cenários.
 
@@ -203,7 +203,6 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, o BUG-126 em RF30 e 
 | BUG-146 | Erro no servidor ao salvar Local Contas com campos vazios                           | Média      | Aberto    |
 | BUG-147 | Métricas de Clientes não exibe as métricas                                          | Alta       | Aberto    |
 | BUG-148 | Listas de Métricas de Clientes aparecem abertas, vazias e não fecham                | Média      | Aberto    |
-| BUG-149 | Métricas de Clientes aceita período invertido                                       | Baixa      | Aberto    |
 
 ---
 
@@ -219,7 +218,7 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, o BUG-126 em RF30 e 
 - Crítica: 3
 - Alta: 28
 - Média: 65
-- Baixa: 41
+- Baixa: 40
 
 **Em revisão:** 0. **Cancelados:** 2 (BUG-025 e BUG-026, os vídeos mostraram o aviso "Preencha este campo.").
 
@@ -277,7 +276,7 @@ No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado.
 
 - Plano de Testes
 - Análise de requisitos
-- Casos de teste (C01 a C22, C30 e C31); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C10, C13 e C32)
+- Casos de teste (C01 a C22, C30 e C31); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C10 e C13)
 - Relatório de bugs, com o vídeo da falha
 - Vídeos no Jam e prints na pasta `Sifit/Evidencias`
 - Roteiro dos vídeos a gravar (`5-Roteiro-de-videos.md`)
