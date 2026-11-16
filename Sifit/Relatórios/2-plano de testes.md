@@ -46,7 +46,7 @@ Verificar manualmente os requisitos funcionais do Sifit: o login, a página inic
 - RF29 Local Contas: acesso e listagem, cadastro, salvar vazio e cancelar (a tela só abre pelo link)
 - RF30 Bancos e Banco recorrente: acesso, listagem, salvar vazio, cadastro, duplicidade, alteração e exclusão (as telas só abrem pelo link)
 - RF31 Categorias de conta a pagar: acesso, listagem, salvar vazio, cadastro e duplicidade
-- RF32 Métricas do cliente: acesso, métricas do período, listas de clientes, botão "Fechar", período invertido e calendário (a tela só abre pelo link)
+- RF32 Métricas do cliente: acesso e busca das métricas e listas do período (a tela só abre pelo link)
 
 **Incluído, ainda sem caso de teste (próximos cenários, RF23 a RF28 e RF33):**
 

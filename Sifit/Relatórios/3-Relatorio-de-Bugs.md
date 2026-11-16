@@ -5524,11 +5524,11 @@
 | :-------------------: | :------------------------: | :--------: |
 |         Alta          |            Alta            |   Aberto   |
 
-| **Passo a passo para simular o bug**                                  |
-| --------------------------------------------------------------------- |
-| 1. Entrar no Sifit Unialfa.                                           |
-| 2. Acessar o link https://sifitalfa.centrion.com.br/metricas-cliente. |
-| 3. Manter o período 01/11/2026 a 30/11/2026 e clicar em "Buscar".     |
+| **Passo a passo para simular o bug**                                                 |
+| ------------------------------------------------------------------------------------ |
+| 1. Entrar no Sifit Unialfa.                                                          |
+| 2. Acessar o link https://sifitalfa.centrion.com.br/metricas-cliente.                |
+| 3. Escolher no calendário o período de 01/11/2026 a 27/11/2026 e clicar em "Buscar". |
 
 |                            **Comportamento Esperado**                             |                         **Comportamento Obtido**                         |
 | :-------------------------------------------------------------------------------: | :----------------------------------------------------------------------: |
@@ -5542,13 +5542,13 @@
 | Google Chrome 150.0.7871.46        |
 | 15/11/2026                         |
 
-|   **Funcionalidade Afetada**    |        **Caso de Teste Relacionado**        |
-| :-----------------------------: | :-----------------------------------------: |
-| Métricas de Clientes / Exibição | C32-CT02: Exibição das métricas do período. |
+|   **Funcionalidade Afetada**    |      **Caso de Teste Relacionado**       |
+| :-----------------------------: | :--------------------------------------: |
+| Métricas de Clientes / Exibição | C32-CT02: Busca das métricas do período. |
 
-|            **Evidência(s)**             |
-| :-------------------------------------: |
-| [BUG:147](coloque o link do video aqui) |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:147](https://jam.dev/c/25449cc3-2e0f-4c99-a48d-bfe50ccf32df) |
 
 ---
 
@@ -5581,49 +5581,10 @@
 | Google Chrome 150.0.7871.46        |
 | 15/11/2026                         |
 
-|  **Funcionalidade Afetada**   |                                      **Caso de Teste Relacionado**                                      |
-| :---------------------------: | :-----------------------------------------------------------------------------------------------------: |
-| Métricas de Clientes / Listas | C32-CT03: Listas de Clientes Ausentes, Sem Matrículas e Personais. C32-CT04: Botão "Fechar" das listas. |
+|  **Funcionalidade Afetada**   |      **Caso de Teste Relacionado**       |
+| :---------------------------: | :--------------------------------------: |
+| Métricas de Clientes / Listas | C32-CT02: Busca das métricas do período. |
 
-|            **Evidência(s)**             |
-| :-------------------------------------: |
-| [BUG:148](coloque o link do video aqui) |
-
----
-
-### 🐞 **Bug 149: Métricas de Clientes aceita período invertido**
-
-| **ID**  | **Descrição**                                                                                                                             |
-| ------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-149 | A tela Métricas de Clientes aceita a data inicial 30/11/2026 e a data final 01/11/2026 sem aviso e envia a busca com o período invertido. |
-
-| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
-| :-------------------: | :------------------------: | :--------: |
-|         Baixa         |           Baixa            |   Aberto   |
-
-| **Passo a passo para simular o bug**                                           |
-| ------------------------------------------------------------------------------ |
-| 1. Entrar no Sifit Unialfa.                                                    |
-| 2. Acessar o link https://sifitalfa.centrion.com.br/metricas-cliente.          |
-| 3. Escolher no calendário a data inicial 30/11/2026 e a data final 01/11/2026. |
-| 4. Clicar em "Buscar".                                                         |
-
-|                         **Comportamento Esperado**                         |          **Comportamento Obtido**           |
-| :------------------------------------------------------------------------: | :-----------------------------------------: |
-| O sistema deve avisar que a data inicial é maior que a final e não buscar. | A busca é enviada (resposta 200) sem aviso. |
-
-| **Ambiente**                       |
-| ---------------------------------- |
-| Sifit Unialfa                      |
-| https://sifitalfa.centrion.com.br/ |
-| Desktop Ubuntu 26.04 LTS           |
-| Google Chrome 150.0.7871.46        |
-| 15/11/2026                         |
-
-|   **Funcionalidade Afetada**   |             **Caso de Teste Relacionado**             |
-| :----------------------------: | :---------------------------------------------------: |
-| Métricas de Clientes / Período | C32-CT05: Período com data inicial maior que a final. |
-
-|            **Evidência(s)**             |
-| :-------------------------------------: |
-| [BUG:149](coloque o link do video aqui) |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:148](https://jam.dev/c/25449cc3-2e0f-4c99-a48d-bfe50ccf32df) |
