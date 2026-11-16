@@ -470,6 +470,23 @@ Cada requisito tem o mesmo número do cenário e do arquivo de casos: o RF01 é 
 
 ---
 
+### 🧾 RF29 - Local Contas
+
+**Cenário de teste:** C29 (`CT_RF29_`)
+
+**Descrição:** O sistema deve permitir manter os locais onde ficam as contas da academia (ex.: Caixa Academia). A tela Local Contas (`/local-contas`) não está no menu e só abre pelo link.
+
+**Funcionalidades esperadas:**
+
+- Acessar a tela pelo menu.
+- Listar os locais de contas cadastrados.
+- Cadastrar local pelo botão "Adicionar Local", exigindo os campos obrigatórios.
+- Cancelar o cadastro sem salvar.
+
+**Resultado esperado:** O local só é salvo com os campos obrigatórios, como local de contas, e aparece na listagem.
+
+---
+
 ### 🏦 RF30 - Bancos e Banco recorrente
 
 **Cenário de teste:** C30 (`CT_RF30_`)
@@ -501,6 +518,23 @@ Cada requisito tem o mesmo número do cenário e do arquivo de casos: o RF01 é 
 - Oferecer a categoria cadastrada no campo "Categoria" de Contas a Pagar → Nova Conta.
 
 **Resultado esperado:** A categoria só é salva com o nome, sem duplicidade, aparece na listagem e fica disponível na conta a pagar.
+
+### 📊 RF32 - Métricas do cliente
+
+**Cenário de teste:** C32 (`CT_RF32_`)
+
+**Descrição:** O sistema deve mostrar as métricas dos clientes em um período (gênero, clientes ausentes, sem matrícula e personais). A tela Métricas de Clientes (`/metricas-cliente`) não está no menu e só abre pelo link.
+
+**Funcionalidades esperadas:**
+
+- Acessar a tela pelo menu.
+- Escolher o período pelo calendário, recusando data inicial maior que a final.
+- Exibir as métricas e o gráfico de gênero do período.
+- Abrir e fechar as listas de Clientes Ausentes, Sem Matrículas e Personais com os clientes de cada grupo.
+
+**Resultado esperado:** As métricas e as listas mostram os números do período escolhido, os mesmos da API.
+
+---
 
 ### 🩺 RF33 - Modelos e categorias de anamnese
 
