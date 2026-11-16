@@ -480,7 +480,7 @@ Cada requisito tem o mesmo número do cenário e do arquivo de casos: o RF01 é 
 
 - Acessar a tela pelo menu.
 - Listar os locais de contas cadastrados.
-- Cadastrar local pelo botão "Adicionar Local", exigindo os campos obrigatórios.
+- Cadastrar local exigindo os campos obrigatórios.
 - Cancelar o cadastro sem salvar.
 
 **Resultado esperado:** O local só é salvo com os campos obrigatórios, como local de contas, e aparece na listagem.

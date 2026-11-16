@@ -43,7 +43,7 @@ Verificar manualmente os requisitos funcionais do Sifit: o login, a página inic
 - RF20 Grupos: busca, filtros, indicadores, cadastro, duplicidade, alteração, inativação e exclusão
 - RF21 Modelos de contrato: listagem, cadastro, variáveis do texto e pré-visualização
 - RF22 Box - Turmas: modalidades e turmas recorrentes (cadastro, validações, alteração e exclusão)
-- RF29 Local Contas: acesso, listagem, botão "Adicionar Local", cadastro, salvar vazio e cancelar (a tela só abre pelo link)
+- RF29 Local Contas: acesso e listagem, cadastro, salvar vazio e cancelar (a tela só abre pelo link)
 - RF30 Bancos e Banco recorrente: acesso, listagem, salvar vazio, cadastro, duplicidade, alteração e exclusão (as telas só abrem pelo link)
 - RF31 Categorias de conta a pagar: acesso, listagem, salvar vazio, cadastro e duplicidade
 - RF32 Métricas do cliente: acesso, métricas do período, listas de clientes, botão "Fechar", período invertido e calendário (a tela só abre pelo link)
