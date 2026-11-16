@@ -821,8 +821,8 @@
 | :------------------------: | :--------------------------------------: |
 |    Caixas / Abrir caixa    | C12-CT06: Abrir caixa com campos vazios. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
 | [BUG:21](https://jam.dev/c/00e2006c-624e-4e78-8105-99f9377c84b0) |
 
 ---
@@ -935,10 +935,10 @@
 | :------------------------: | :-------------------------------------------------------------------------------------------------------------: |
 |  Colaboradores / Cadastro  | C16-CT04: Cadastrar colaborador com campos vazios. C16-CT06: Cadastro de colaborador sem alterar Status e Sexo. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
 | [BUG:24](https://jam.dev/c/fa03cb2a-8ed4-45cf-a70a-6a8a999ab4da) |
-  [BUG:24](https://jam.dev/c/4e8caa28-0972-44c6-b4e8-34fb85ac989d) |
+| [BUG:24](https://jam.dev/c/4e8caa28-0972-44c6-b4e8-34fb85ac989d) |
 
 ---
 
@@ -2726,8 +2726,8 @@
 | :------------------------: | :---------------------------: |
 |     Turmas / Alteração     | C11-CT10: Alteração de turma. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
 | [BUG:70](https://jam.dev/c/e0e2ffd3-1142-433c-b5b9-fbdc31a6ac9c) |
 
 ---
@@ -2766,8 +2766,8 @@
 | :------------------------: | :------------------------------------------------------------: |
 |     Turmas / Cadastro      | C11-CT09: Cadastro de turma com hora final anterior à inicial. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
 | [BUG:71](https://jam.dev/c/27a62498-c64a-4479-a706-29a846758f0c) |
 
 ---
@@ -2806,8 +2806,8 @@
 | :------------------------: | :-------------------------------------------------------: |
 |    Caixas / Fechamento     | C12-CT10: Fechamento de caixa com conferência das contas. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
 | [BUG:72](https://jam.dev/c/aa6da264-81a2-49bb-8666-d1fd604e8d8a) |
 
 ---
@@ -2845,8 +2845,8 @@
 | :------------------------: | :-------------------------------------------------: |
 |    Caixas / Fechamento     | C12-CT11: Fechamento de caixa sem buscar as contas. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
 | [BUG:73](https://jam.dev/c/765bd31b-51f2-4c38-901c-69fd16c38677) |
 
 ---
@@ -2884,8 +2884,8 @@
 | :------------------------: | :---------------------------------------------------: |
 |     Caixas / Abertura      | C12-CT08: Abertura de caixa duplicado no mesmo local. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
 | [BUG:74](https://jam.dev/c/72e7c612-fc70-4d19-a5e1-5343c9fa0225) |
 
 ---
@@ -2923,8 +2923,8 @@
 | :------------------------: | :----------------------------------------------------: |
 |     Caixas / Listagem      | C12-CT02: Listagem inicial conforme o período exibido. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
 | [BUG:75](https://jam.dev/c/82036612-21df-45fd-9051-b8b1a767a3c2) |
 
 ---
@@ -3328,8 +3328,8 @@
 | :------------------------: | :----------------------------------------------------: |
 |   Colaboradores / Busca    | C16-CT03: Busca de colaborador com código inexistente. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
 | [BUG:86](https://jam.dev/c/fd885338-b1b1-4689-8a94-a0de9885af05) |
 
 ---
@@ -3367,10 +3367,10 @@
 | :------------------------: | :---------------------------------: |
 | Colaboradores / Alteração  | C16-CT07: Alteração de colaborador. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
 | [BUG:87](https://jam.dev/c/4c015a99-0c38-4e9d-a68b-3e38d60df197) |
-| [Print](../Evidencias/C16-CT07.png) |
+|               [Print](../Evidencias/C16-CT07.png)                |
 
 ---
 
@@ -3407,8 +3407,8 @@
 | :----------------------------: | :---------------------------------------: |
 | Funções / Alteração e exclusão | C16-CT16: Alteração e exclusão de função. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
 | [BUG:88](https://jam.dev/c/cf5d18c4-dc37-4ca9-af67-469cb7f230d2) |
 
 ---
@@ -3446,8 +3446,8 @@
 | :------------------------: | :-------------------------------------: |
 |     Funções / Cadastro     | C16-CT15: Cadastro de função duplicada. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
 | [BUG:89](https://jam.dev/c/05a2cb17-c81f-45f1-a9be-05fa709d4f82) |
 
 ---
@@ -3745,8 +3745,8 @@
 | :--------------------------------: | :-------------------------------------------------------------: |
 | Página Inicial / Filtro de período | C02-CT09: Filtro de período com data inicial maior que a final. |
 
-|                         **Evidência(s)**                          |
-| :---------------------------------------------------------------: |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
 | [BUG:97](https://jam.dev/c/5f7f9e52-3989-42d5-99c2-66b747dec9e3) |
 
 ---
@@ -3783,8 +3783,8 @@
 | :------------------------: | :----------------------------------------------------------: |
 |    Clientes / Cadastro     | C04-CT12: Cadastro de cliente com data de nascimento futura. |
 
-|                         **Evidência(s)**                          |
-| :---------------------------------------------------------------: |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
 | [BUG:98](https://jam.dev/c/f3cd80a9-c549-4e43-8957-182eaa983f3d) |
 
 ---
@@ -3820,8 +3820,8 @@
 | :-----------------------------: | :---------------------------------------------: |
 | Clientes / Cadastro e alteração | C04-CT13: Cadastro de cliente com CPF inválido. |
 
-|                         **Evidência(s)**                          |
-| :---------------------------------------------------------------: |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
 | [BUG:99](https://jam.dev/c/aee4435d-fdbd-4a84-bfe5-d8a28801ecd7) |
 
 ---
@@ -3940,8 +3940,8 @@
 
 ### 🐞 **Bug 103: Sistema permite cadastrar grupo duplicado**
 
-| **ID**  | **Descrição**                                                                                                                                                                           |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ID**  | **Descrição**                                                                                                                                                                                       |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | BUG-103 | Foi possível cadastrar mais de uma vez o grupo "Grupo Teste Ville" (códigos #11, #12 e #13), sem nenhum aviso. Como grupos não podem ser excluídos (BUG-105), a duplicidade não pode ser corrigida. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
@@ -3971,7 +3971,7 @@
 | :------------------------: | :------------------------------------: |
 |     Grupos / Cadastro      | C20-CT07: Cadastro de grupo duplicado. |
 
-|                          **Evidência(s)**                         |
+|                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:103](https://jam.dev/c/96a9fe9b-5a85-45a2-9798-159a31ea714b) |
 
@@ -4011,7 +4011,7 @@
 | :------------------------: | :----------------------------: |
 |     Grupos / Alteração     | C20-CT09: Inativação de grupo. |
 
-|                          **Evidência(s)**                         |
+|                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:104](https://jam.dev/c/98c0d5c7-f010-434f-a6ea-d44ddb49ffbb) |
 
@@ -4019,8 +4019,8 @@
 
 ### 🐞 **Bug 105: Grupo não pode ser excluído**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                       |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                              |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | BUG-105 | Ao confirmar a mensagem "Deseja deletar o Grupo?", aparece a mensagem "Erro ao deletar Grupo" e o grupo continua na listagem. No DevTools (aba Network), a exclusão retorna erro 500 com "Erro interno inesperado.". Ocorreu com grupos recém-criados, sem nenhum vínculo. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
@@ -4034,8 +4034,8 @@
 | 3. Clicar em "Confirmar".                           |
 | 4. Verificar a listagem.                            |
 
-|                 **Comportamento Esperado**                 |                  **Comportamento Obtido**                  |
-| :--------------------------------------------------------: | :--------------------------------------------------------: |
+|                 **Comportamento Esperado**                 |              **Comportamento Obtido**               |
+| :--------------------------------------------------------: | :-------------------------------------------------: |
 | O grupo deve ser excluído e deixar de constar na listagem. | Aparece "Erro ao deletar Grupo" e o grupo continua. |
 
 | **Ambiente**                       |
@@ -4048,9 +4048,9 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-|     Grupos / Exclusão      |  C20-CT10: Exclusão de grupo. |
+|     Grupos / Exclusão      | C20-CT10: Exclusão de grupo.  |
 
-|                          **Evidência(s)**                         |
+|                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:105](https://jam.dev/c/e30de4bd-5de2-4dfb-87a2-f09bab3a8440) |
 
@@ -4064,7 +4064,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                            |
 | ------------------------------------------------------------------------------- |
@@ -4072,7 +4072,7 @@
 | 2. Observar a listagem.                                                         |
 | 3. Abrir o DevTools (aba Network) e conferir a resposta da listagem de modelos. |
 
-|                           **Comportamento Esperado**                          |                  **Comportamento Obtido**                  |
+|                          **Comportamento Esperado**                           |                  **Comportamento Obtido**                  |
 | :---------------------------------------------------------------------------: | :--------------------------------------------------------: |
 | A listagem deve exibir o código, o nome e o status de cada modelo cadastrado. | A listagem aparece vazia, embora a API retorne os modelos. |
 
@@ -4088,10 +4088,10 @@
 | :----------------------------: | :-------------------------------------------------------------------------------------------------------------: |
 | Modelos de contrato / Listagem | C21-CT01: Acesso à listagem de modelos de contrato. C21-CT06: Cadastro de modelo de contrato com dados válidos. |
 
-|                          **Evidência(s)**                         |
+|                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:106](https://jam.dev/c/e1e3d8bf-996d-4aaa-9868-e8f046bfdf01) |
-| [Vídeo](https://jam.dev/c/fa52093b-2cba-4328-9ce9-fa00a0af85d5)   |
+|  [Vídeo](https://jam.dev/c/fa52093b-2cba-4328-9ce9-fa00a0af85d5)  |
 
 ---
 
@@ -4112,7 +4112,7 @@
 | 3. Deixar o texto do contrato vazio.         |
 | 4. Clicar em "Salvar modelo".                |
 
-|                   **Comportamento Esperado**                   |   **Comportamento Obtido**  |
+|                   **Comportamento Esperado**                   |  **Comportamento Obtido**   |
 | :------------------------------------------------------------: | :-------------------------: |
 | O sistema deve informar que o texto do contrato é obrigatório. | O modelo é salvo sem texto. |
 
@@ -4128,7 +4128,7 @@
 | :----------------------------: | :--------------------------------------------: |
 | Modelos de contrato / Cadastro | C21-CT03: Salvar modelo de contrato sem texto. |
 
-|                          **Evidência(s)**                         |
+|                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:107](https://jam.dev/c/648e27ae-8a17-496f-9886-1925dd6fc62a) |
 
@@ -4150,7 +4150,7 @@
 | 2. Sem preencher nada, clicar no botão "Modalidade". |
 | 3. Sem preencher nada, clicar no botão "Turma".      |
 
-|            **Comportamento Esperado**           |           **Comportamento Obtido**          |
+|           **Comportamento Esperado**            |          **Comportamento Obtido**           |
 | :---------------------------------------------: | :-----------------------------------------: |
 | O sistema deve informar os campos obrigatórios. | Nada acontece e nenhuma mensagem é exibida. |
 
@@ -4166,17 +4166,17 @@
 | :------------------------: | :--------------------------------------------------------------: |
 |  Box - Turmas / Cadastro   | C22-CT02: Salvar modalidade vazia. C22-CT06: Salvar turma vazia. |
 
-|             **Evidência(s)**            |
-| :-------------------------------------: |
+|                                **Evidência(s)**                                |
+| :----------------------------------------------------------------------------: |
 | [BUG:108 - modalidade](https://jam.dev/c/bbce3086-ea71-4f96-984f-30bece9b67e4) |
-| [BUG:108 - turma](https://jam.dev/c/3587cecb-d159-4fcb-9c58-534e9430bcea) |
+|   [BUG:108 - turma](https://jam.dev/c/3587cecb-d159-4fcb-9c58-534e9430bcea)    |
 
 ---
 
 ### 🐞 **Bug 109: Erro 500 e mensagem genérica ao cadastrar modalidade duplicada**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                  |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                   |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | BUG-109 | Ao cadastrar uma modalidade com o nome de uma já existente ("Modalidade Teste Ville"), a modalidade não é duplicada, mas a tela mostra só a mensagem genérica "Erro ao salvar modalidade", sem informar que o nome já existe. No DevTools (aba Network), a API retorna erro 500 com "Erro interno inesperado.". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
@@ -4190,8 +4190,8 @@
 | 3. Informar de novo o mesmo nome e clicar no botão "Modalidade". |
 | 4. Observar a tela e a aba Network do DevTools.                  |
 
-|              **Comportamento Esperado**             |               **Comportamento Obtido**               |
-| :-------------------------------------------------: | :--------------------------------------------------: |
+|             **Comportamento Esperado**              |                   **Comportamento Obtido**                    |
+| :-------------------------------------------------: | :-----------------------------------------------------------: |
 | O sistema deve informar que a modalidade já existe. | Aparece "Erro ao salvar modalidade" e a API retorna erro 500. |
 
 | **Ambiente**                       |
@@ -4206,8 +4206,8 @@
 | :------------------------: | :-----------------------------------------: |
 | Box - Turmas / Modalidades | C22-CT04: Cadastro de modalidade duplicada. |
 
-|             **Evidência(s)**            |
-| :-------------------------------------: |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
 | [BUG:109](https://jam.dev/c/b66fe3ca-342c-4605-9fa7-10417c54e174) |
 
 ---
@@ -4229,7 +4229,7 @@
 | 3. Informar a hora inicial 11:00 e a hora final 10:00.                  |
 | 4. Clicar no botão "Turma".                                             |
 
-|                          **Comportamento Esperado**                         |                  **Comportamento Obtido**                 |
+|                         **Comportamento Esperado**                          |                 **Comportamento Obtido**                  |
 | :-------------------------------------------------------------------------: | :-------------------------------------------------------: |
 | O sistema deve informar que a hora final deve ser maior que a hora inicial. | A turma é cadastrada com o horário "11:00:00 - 10:00:00". |
 
@@ -4245,8 +4245,8 @@
 | :------------------------: | :------------------------------------------------------------: |
 |   Box - Turmas / Turmas    | C22-CT08: Cadastro de turma com hora final anterior à inicial. |
 
-|             **Evidência(s)**            |
-| :-------------------------------------: |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
 | [BUG:110](https://jam.dev/c/005742d4-d9e7-4724-8363-f5636b983438) |
 
 ---
@@ -4284,8 +4284,8 @@
 | :------------------------: | :---------------------------------------------: |
 |   Box - Turmas / Turmas    | C22-CT09: Cadastro de turma sem dias da semana. |
 
-|             **Evidência(s)**            |
-| :-------------------------------------: |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
 | [BUG:111](https://jam.dev/c/b504ede6-2ed2-4caf-9c94-a83e4702866c) |
 
 ---
@@ -4300,12 +4300,12 @@
 | :-------------------: | :------------------------: | :--------: |
 |         Média         |           Média            |   Aberto   |
 
-| **Passo a passo para simular o bug**                            |
-| --------------------------------------------------------------- |
-| 1. Acessar o menu "Box - Turmas".                               |
-| 2. Informar o nome, a modalidade e um dia da semana.            |
-| 3. Informar -5 no campo de vagas.                               |
-| 4. Clicar no botão "Turma".                                     |
+| **Passo a passo para simular o bug**                 |
+| ---------------------------------------------------- |
+| 1. Acessar o menu "Box - Turmas".                    |
+| 2. Informar o nome, a modalidade e um dia da semana. |
+| 3. Informar -5 no campo de vagas.                    |
+| 4. Clicar no botão "Turma".                          |
 
 |                     **Comportamento Esperado**                     |      **Comportamento Obtido**      |
 | :----------------------------------------------------------------: | :--------------------------------: |
@@ -4323,16 +4323,16 @@
 | :------------------------: | :----------------------------------------------: |
 |   Box - Turmas / Turmas    | C22-CT10: Cadastro de turma com vagas negativas. |
 
-|             **Evidência(s)**            |
-| :-------------------------------------: |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
 | [BUG:112](https://jam.dev/c/24af9192-9c04-47b9-8937-7641f4446a78) |
 
 ---
 
 ### 🐞 **Bug 113: Modalidade inativa aparece no cadastro de turma do Box**
 
-| **ID**  | **Descrição**                                                                                                                                  |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ID**  | **Descrição**                                                                                                                                |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | BUG-113 | O campo "Modalidade" do cadastro de turma lista a modalidade inativa "Leo valesk", e a turma "Turma Box Ville Vagas" foi cadastrada com ela. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
@@ -4345,7 +4345,7 @@
 | 2. Conferir que a modalidade "Leo valesk" está inativa. |
 | 3. Abrir o campo "Modalidade" do cadastro de turma.     |
 
-|            **Comportamento Esperado**           |            **Comportamento Obtido**            |
+|           **Comportamento Esperado**            |            **Comportamento Obtido**            |
 | :---------------------------------------------: | :--------------------------------------------: |
 | O campo deve listar somente modalidades ativas. | A modalidade inativa aparece e pode ser usada. |
 
@@ -4361,16 +4361,16 @@
 | :------------------------: | :-------------------------------------------------: |
 |   Box - Turmas / Turmas    | C22-CT11: Cadastro de turma com modalidade inativa. |
 
-|             **Evidência(s)**            |
-| :-------------------------------------: |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
 | [BUG:113](https://jam.dev/c/e12097b4-c4db-4d08-9cf7-372201929e55) |
 
 ---
 
 ### 🐞 **Bug 114: Exclusão de turma do Box não pede confirmação e mantém a turma na lista**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                      |
-| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                               |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | BUG-114 | Ao clicar no botão de excluir de uma turma do Box, a ação é executada na hora, sem confirmação, e os dados da turma são carregados no formulário com o status "Inativo". A API responde sem erro, mas a turma continua na listagem: pela API, ela só passa para "inativo", e a listagem não tem coluna de status. O mesmo ocorre com modalidades, que ficam como "inativo". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
@@ -4384,7 +4384,7 @@
 | 3. Observar se há confirmação.                       |
 | 4. Verificar a listagem de turmas.                   |
 
-|                    **Comportamento Esperado**                   |              **Comportamento Obtido**              |
+|                   **Comportamento Esperado**                    |              **Comportamento Obtido**              |
 | :-------------------------------------------------------------: | :------------------------------------------------: |
 | O sistema deve pedir confirmação e retirar a turma da listagem. | Não há confirmação e a turma continua na listagem. |
 
@@ -4398,10 +4398,10 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-|  Box - Turmas / Exclusão   |  C22-CT13: Exclusão de turma. |
+|  Box - Turmas / Exclusão   | C22-CT13: Exclusão de turma.  |
 
-|             **Evidência(s)**            |
-| :-------------------------------------: |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
 | [BUG:114](https://jam.dev/c/b1f29d33-a1f6-45c6-a289-8aa62f3d39a6) |
 
 ---
@@ -4454,7 +4454,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-| Baixa                 | Média                      | Aberto     |
+|         Baixa         |           Média            |   Aberto   |
 
 | **Passo a passo para simular o bug**                 |
 | :--------------------------------------------------- |
@@ -4475,11 +4475,11 @@
 | Google Chrome (informar a versão)  |
 | 15/11/2026                         |
 
-| **Funcionalidade Afetada**   | **Caso de Teste Relacionado**                                                                                       |
+|  **Funcionalidade Afetada**  |                                            **Caso de Teste Relacionado**                                            |
 | :--------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
 | Grupos Musculares / Cadastro | C23-CT07: Salvar Grupos Musculares com o formulário vazio; C23-CT08: Cadastro de grupo muscular sem tipo de membro. |
 
-| **Evidência(s)**                        |
+|            **Evidência(s)**             |
 | :-------------------------------------: |
 | [BUG:116](coloque o link do video aqui) |
 
@@ -4493,7 +4493,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-| Média                 | Média                      | Aberto     |
+|         Média         |           Média            |   Aberto   |
 
 | **Passo a passo para simular o bug**                |
 | :-------------------------------------------------- |
@@ -4502,7 +4502,7 @@
 | 3. Deixar o "Nome" vazio e selecionar "Inferiores". |
 | 4. Clicar no botão "Salvar".                        |
 
-| **Comportamento Esperado**             | **Comportamento Obtido**              |
+|       **Comportamento Esperado**       |       **Comportamento Obtido**        |
 | :------------------------------------: | :-----------------------------------: |
 | O sistema deve exigir o nome do grupo. | O grupo é salvo com o nome em branco. |
 
@@ -4514,11 +4514,11 @@
 | Google Chrome (informar a versão)  |
 | 15/11/2026                         |
 
-| **Funcionalidade Afetada**   | **Caso de Teste Relacionado**                  |
+|  **Funcionalidade Afetada**  |         **Caso de Teste Relacionado**          |
 | :--------------------------: | :--------------------------------------------: |
 | Grupos Musculares / Cadastro | C23-CT09: Cadastro de grupo muscular sem nome. |
 
-| **Evidência(s)**                        |
+|            **Evidência(s)**             |
 | :-------------------------------------: |
 | [BUG:117](coloque o link do video aqui) |
 
@@ -4532,7 +4532,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-| Baixa                 | Baixa                      | Aberto     |
+|         Baixa         |           Baixa            |   Aberto   |
 
 | **Passo a passo para simular o bug**                          |
 | :------------------------------------------------------------ |
@@ -4540,7 +4540,7 @@
 | 2. Cadastrar o grupo "Grupo Teste Keltton" como "Superiores". |
 | 3. Cadastrar de novo o mesmo nome e tipo.                     |
 
-| **Comportamento Esperado**                     | **Comportamento Obtido**             |
+|           **Comportamento Esperado**           |       **Comportamento Obtido**       |
 | :--------------------------------------------: | :----------------------------------: |
 | O sistema deve informar que o grupo já existe. | O grupo é cadastrado em duplicidade. |
 
@@ -4552,11 +4552,11 @@
 | Google Chrome (informar a versão)  |
 | 15/11/2026                         |
 
-| **Funcionalidade Afetada**   | **Caso de Teste Relacionado**                   |
+|  **Funcionalidade Afetada**  |          **Caso de Teste Relacionado**          |
 | :--------------------------: | :---------------------------------------------: |
 | Grupos Musculares / Cadastro | C23-CT11: Cadastro de grupo muscular duplicado. |
 
-| **Evidência(s)**                        |
+|            **Evidência(s)**             |
 | :-------------------------------------: |
 | [BUG:118](coloque o link do video aqui) |
 
@@ -4570,7 +4570,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-| Baixa                 | Baixa                      | Aberto     |
+|         Baixa         |           Baixa            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                             |
 | :------------------------------------------------------------------------------- |
@@ -4578,7 +4578,7 @@
 | 2. Em "Grupos Musculares", clicar em "Deletar" no grupo de teste.                |
 | 3. Confirmar a exclusão.                                                         |
 
-| **Comportamento Esperado**                                                     | **Comportamento Obtido**            |
+|                           **Comportamento Esperado**                           |      **Comportamento Obtido**       |
 | :----------------------------------------------------------------------------: | :---------------------------------: |
 | O sistema deve informar que o grupo possui exercícios e não pode ser excluído. | "Erro ao deletar Grupo" (erro 500). |
 
@@ -4590,11 +4590,11 @@
 | Google Chrome (informar a versão)  |
 | 15/11/2026                         |
 
-| **Funcionalidade Afetada**   | **Caso de Teste Relacionado**                                 |
+|  **Funcionalidade Afetada**  |                 **Caso de Teste Relacionado**                 |
 | :--------------------------: | :-----------------------------------------------------------: |
 | Grupos Musculares / Exclusão | C23-CT15: Exclusão de grupo muscular com exercício vinculado. |
 
-| **Evidência(s)**                        |
+|            **Evidência(s)**             |
 | :-------------------------------------: |
 | [BUG:119](coloque o link do video aqui) |
 
@@ -4608,7 +4608,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-| Alta                  | Alta                       | Aberto     |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                 |
 | :------------------------------------------------------------------- |
@@ -4617,7 +4617,7 @@
 | 3. Informar o nome "Modelo Teste Keltton" e selecionar uma personal. |
 | 4. Clicar no botão "Criar Modelo".                                   |
 
-| **Comportamento Esperado**          | **Comportamento Obtido**                           |
+|     **Comportamento Esperado**      |              **Comportamento Obtido**              |
 | :---------------------------------: | :------------------------------------------------: |
 | O modelo deve ser criado e listado. | "Erro ao salvar modelo." e nenhum modelo é criado. |
 
@@ -4629,11 +4629,11 @@
 | Google Chrome (informar a versão)  |
 | 15/11/2026                         |
 
-| **Funcionalidade Afetada** | **Caso de Teste Relacionado**             |
+| **Funcionalidade Afetada** |       **Caso de Teste Relacionado**       |
 | :------------------------: | :---------------------------------------: |
-| Modelo Ficha / Cadastro    | C24-CT06: Criar modelo com dados válidos. |
+|  Modelo Ficha / Cadastro   | C24-CT06: Criar modelo com dados válidos. |
 
-| **Evidência(s)**                        |
+|            **Evidência(s)**             |
 | :-------------------------------------: |
 | [BUG:120](coloque o link do video aqui) |
 
@@ -4647,7 +4647,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-| Alta                  | Alta                       | Aberto     |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**              |
 | :------------------------------------------------ |
@@ -4655,7 +4655,7 @@
 | 2. Clicar no botão "Alterar" do modelo #1.        |
 | 3. Observar o título e o endereço da tela aberta. |
 
-| **Comportamento Esperado**                    | **Comportamento Obtido**            |
+|          **Comportamento Esperado**           |      **Comportamento Obtido**       |
 | :-------------------------------------------: | :---------------------------------: |
 | O sistema deve abrir o modelo #1 para edição. | Abre a ficha de treino de um aluno. |
 
@@ -4667,11 +4667,11 @@
 | Google Chrome (informar a versão)  |
 | 15/11/2026                         |
 
-| **Funcionalidade Afetada** | **Caso de Teste Relacionado**           |
+| **Funcionalidade Afetada** |      **Caso de Teste Relacionado**      |
 | :------------------------: | :-------------------------------------: |
-| Modelo Ficha / Alteração   | C24-CT07: Alteração de modelo de ficha. |
+|  Modelo Ficha / Alteração  | C24-CT07: Alteração de modelo de ficha. |
 
-| **Evidência(s)**                        |
+|            **Evidência(s)**             |
 | :-------------------------------------: |
 | [BUG:121](coloque o link do video aqui) |
 
@@ -4685,14 +4685,14 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-| Baixa                 | Baixa                      | Aberto     |
+|         Baixa         |           Baixa            |   Aberto   |
 
 | **Passo a passo para simular o bug**       |
 | :----------------------------------------- |
 | 1. Acessar o menu "Configurações".         |
 | 2. Clicar no botão "Salvar Configurações". |
 
-| **Comportamento Esperado**                     | **Comportamento Obtido**    |
+|           **Comportamento Esperado**           |  **Comportamento Obtido**   |
 | :--------------------------------------------: | :-------------------------: |
 | O sistema deve exibir uma mensagem de sucesso. | Nenhuma mensagem é exibida. |
 
@@ -4704,11 +4704,11 @@
 | Google Chrome (informar a versão)  |
 | 15/11/2026                         |
 
-| **Funcionalidade Afetada** | **Caso de Teste Relacionado**                     |
+| **Funcionalidade Afetada** |           **Caso de Teste Relacionado**           |
 | :------------------------: | :-----------------------------------------------: |
-| Configurações / Salvar     | C25-CT04: Confirmação ao salvar as configurações. |
+|   Configurações / Salvar   | C25-CT04: Confirmação ao salvar as configurações. |
 
-| **Evidência(s)**                        |
+|            **Evidência(s)**             |
 | :-------------------------------------: |
 | [BUG:122](coloque o link do video aqui) |
 
@@ -4722,7 +4722,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-| Média                 | Média                      | Aberto     |
+|         Média         |           Média            |   Aberto   |
 
 | **Passo a passo para simular o bug**                         |
 | :----------------------------------------------------------- |
@@ -4731,9 +4731,9 @@
 | 3. Clicar no botão "Salvar Configurações".                   |
 | 4. Reabrir a tela. Ao final, voltar o valor para 120.        |
 
-| **Comportamento Esperado**                                | **Comportamento Obtido** |
+|                **Comportamento Esperado**                 | **Comportamento Obtido** |
 | :-------------------------------------------------------: | :----------------------: |
-| O sistema deve rejeitar valores menores ou iguais a zero. | O valor -5 é salvo.      |
+| O sistema deve rejeitar valores menores ou iguais a zero. |   O valor -5 é salvo.    |
 
 | **Ambiente**                       |
 | :--------------------------------- |
@@ -4743,11 +4743,11 @@
 | Google Chrome (informar a versão)  |
 | 15/11/2026                         |
 
-| **Funcionalidade Afetada** | **Caso de Teste Relacionado**                           |
+| **Funcionalidade Afetada** |              **Caso de Teste Relacionado**              |
 | :------------------------: | :-----------------------------------------------------: |
-| Configurações / Home       | C25-CT05: Dias para cliente ausente com valor negativo. |
+|    Configurações / Home    | C25-CT05: Dias para cliente ausente com valor negativo. |
 
-| **Evidência(s)**                        |
+|            **Evidência(s)**             |
 | :-------------------------------------: |
 | [BUG:123](coloque o link do video aqui) |
 
@@ -4761,7 +4761,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-| Média                 | Alta                       | Aberto     |
+|         Média         |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                            |
 | :-------------------------------------------------------------- |
@@ -4769,7 +4769,7 @@
 | 2. Abrir a aba "Biometria" e observar o campo "Senha".          |
 | 3. Abrir a aba "Pagamento" e observar o campo "Token Pagar.me". |
 
-| **Comportamento Esperado**                        | **Comportamento Obtido**             |
+|            **Comportamento Esperado**             |       **Comportamento Obtido**       |
 | :-----------------------------------------------: | :----------------------------------: |
 | Senhas e tokens devem aparecer mascarados (••••). | Os valores aparecem em texto aberto. |
 
@@ -4781,11 +4781,11 @@
 | Google Chrome (informar a versão)  |
 | 15/11/2026                         |
 
-| **Funcionalidade Afetada**            | **Caso de Teste Relacionado**           |
+|      **Funcionalidade Afetada**       |      **Caso de Teste Relacionado**      |
 | :-----------------------------------: | :-------------------------------------: |
 | Configurações / Biometria e Pagamento | C25-CT06: Ocultação de senhas e tokens. |
 
-| **Evidência(s)**                        |
+|            **Evidência(s)**             |
 | :-------------------------------------: |
 | [BUG:124](coloque o link do video aqui) |
 
@@ -4807,7 +4807,7 @@
 | 2. Procurar "Bancos", "Banco Recorrente" e "Categorias" de conta a pagar no menu lateral. |
 | 3. Abrir https://sifitalfa.centrion.com.br/bancos pelo link.                              |
 
-|    **Comportamento Esperado**    |              **Comportamento Obtido**             |
+|    **Comportamento Esperado**    |             **Comportamento Obtido**              |
 | :------------------------------: | :-----------------------------------------------: |
 | As telas devem ter item no menu. | Não há item no menu; as telas só abrem pelo link. |
 
@@ -4846,7 +4846,7 @@
 | 2. Sem preencher nada, clicar em "Salvar".         |
 | 3. Olhar a listagem.                               |
 
-|            **Comportamento Esperado**           |   **Comportamento Obtido**  |
+|           **Comportamento Esperado**            |  **Comportamento Obtido**   |
 | :---------------------------------------------: | :-------------------------: |
 | O sistema deve avisar que o nome é obrigatório. | Um banco sem nome é criado. |
 
@@ -4862,7 +4862,7 @@
 | :------------------------: | :---------------------------: |
 |     Bancos / Cadastro      | C30-CT03: Salvar banco vazio. |
 
-|                          **Evidência(s)**                         |
+|                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:127](https://jam.dev/c/76f082bc-40ee-47db-aaeb-0d181408c68c) |
 
@@ -4884,7 +4884,7 @@
 | 2. Cadastrar o banco "Banco Teste Ville" com o código 999. |
 | 3. Cadastrar de novo o mesmo nome e código.                |
 
-|          **Comportamento Esperado**          |         **Comportamento Obtido**        |
+|          **Comportamento Esperado**          |        **Comportamento Obtido**         |
 | :------------------------------------------: | :-------------------------------------: |
 | O sistema deve avisar que o banco já existe. | O banco aparece duas vezes na listagem. |
 
@@ -4900,7 +4900,7 @@
 | :------------------------: | :------------------------------------: |
 |     Bancos / Cadastro      | C30-CT05: Cadastro de banco duplicado. |
 
-|                          **Evidência(s)**                         |
+|                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:128](https://jam.dev/c/f1723af8-3f46-4586-8c15-340990fd857a) |
 
@@ -4922,7 +4922,7 @@
 | 2. Clicar no X do banco "Banco Brasil".            |
 | 3. Ler a mensagem e clicar em "Confirmar".         |
 
-|                **Comportamento Esperado**               |                                              **Comportamento Obtido**                                             |
+|               **Comportamento Esperado**                |                                             **Comportamento Obtido**                                              |
 | :-----------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: |
 | A confirmação deve falar do banco e excluir só o banco. | A confirmação fala de Tipo de Pagamento, aparece "Erro ao deletar tipo de pagamento" e o banco continua na lista. |
 
@@ -4936,10 +4936,10 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-|     Bancos / Exclusão      |  C30-CT07: Exclusão de banco. |
+|     Bancos / Exclusão      | C30-CT07: Exclusão de banco.  |
 
-|             **Evidência(s)**            |
-| :-------------------------------------: |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
 | [BUG:129](https://jam.dev/c/6849358c-8f8d-44ce-96f5-e1ae38ec4006) |
 
 ---
@@ -4952,7 +4952,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                 |
 | -------------------------------------------------------------------- |
@@ -4976,7 +4976,7 @@
 | :------------------------------------: | :-------------------------------: |
 | Categorias de conta a pagar / Listagem | C31-CT02: Listagem de categorias. |
 
-|                          **Evidência(s)**                         |
+|                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:130](https://jam.dev/c/8803140b-f4b4-4e45-b612-a4bb026a45ac) |
 
@@ -4998,7 +4998,7 @@
 | 2. Sem preencher o nome, clicar em "Salvar".                       |
 | 3. Em Contas a Pagar → Nova Conta, abrir o campo "Categoria".      |
 
-|            **Comportamento Esperado**           |                          **Comportamento Obtido**                         |
+|           **Comportamento Esperado**            |                         **Comportamento Obtido**                          |
 | :---------------------------------------------: | :-----------------------------------------------------------------------: |
 | O sistema deve avisar que o nome é obrigatório. | Uma categoria sem nome é criada e aparece em branco no campo "Categoria". |
 
@@ -5014,7 +5014,7 @@
 | :------------------------------------: | :-------------------------------: |
 | Categorias de conta a pagar / Cadastro | C31-CT03: Salvar categoria vazia. |
 
-|                          **Evidência(s)**                         |
+|                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:131](https://jam.dev/c/9e6b78ae-531e-49b3-8b84-15cf25b861f1) |
 
@@ -5053,7 +5053,7 @@
 | :------------------------------------: | :----------------------------------------: |
 | Categorias de conta a pagar / Cadastro | C31-CT05: Cadastro de categoria duplicada. |
 
-|                          **Evidência(s)**                         |
+|                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:132](https://jam.dev/c/4f5e6f3b-1d3d-4ecf-88a2-40e3019b5a2c) |
 
@@ -5067,7 +5067,7 @@
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|          Alta         |            Alta            |   Aberto   |
+|         Alta          |            Alta            |   Aberto   |
 
 | **Passo a passo para simular o bug**                                                                   |
 | ------------------------------------------------------------------------------------------------------ |
