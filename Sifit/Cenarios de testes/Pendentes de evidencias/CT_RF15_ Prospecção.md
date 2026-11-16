@@ -20,13 +20,13 @@
 | :----------------------------------------------------------------------------------- |
 | O sistema deve exibir a tela de prospecção com todos os seus componentes carregados. |
 
-| **Resultado da execução**                                                  |
-| :------------------------------------------------------------------------- |
-| **Passou.** O sistema se comportou como descrito no critério de aceitação. |
+| **Resultado da execução**                                                                                                                                                                                             |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Passou.** A tela abriu com a busca "Nome, e-mail, telefone ou código", o filtro "Estágio", os botões "Limpar" e "Adicionar Lead", os indicadores (Leads 6, Novos Contatos 2, Interessados 2) e a listagem de leads. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/a4b29552-e468-43d4-a17e-0ef80e7914b5) |
 
 ---
 
@@ -36,27 +36,27 @@
 | :------- | :--------------------------------------------------------------- |
 | C15-CT02 | Verificar se a busca pelo nome retorna os leads correspondentes. |
 
-| **Pré-condições**                                               |
-| :-------------------------------------------------------------- |
-| O usuário deve estar autenticado e existirem leads cadastrados. |
+| **Pré-condições**                                                    |
+| :------------------------------------------------------------------- |
+| O usuário deve estar autenticado e existirem os leads "Maria Teste". |
 
-| **Passos**                                                                |
-| :------------------------------------------------------------------------ |
-| **DADO** que estamos na tela de prospecção                                |
-| **QUANDO** informarmos "joão" no campo de busca                           |
-| **ENTÃO** a listagem deverá exibir os leads "João Rabelo" e "João Coelho" |
+| **Passos**                                                   |
+| :----------------------------------------------------------- |
+| **DADO** que estamos na tela de prospecção                   |
+| **QUANDO** informarmos "Maria" no campo de busca             |
+| **ENTÃO** a listagem deverá exibir só os leads "Maria Teste" |
 
 | **Critérios de aceitação**                                                                 |
 | :----------------------------------------------------------------------------------------- |
 | O sistema deve filtrar os leads pelo nome, sem diferenciar letras maiúsculas e minúsculas. |
 
-| **Resultado da execução**                                                  |
-| :------------------------------------------------------------------------- |
-| **Passou.** O sistema se comportou como descrito no critério de aceitação. |
+| **Resultado da execução**                                                                       |
+| :---------------------------------------------------------------------------------------------- |
+| **Passou.** Com "Maria" na busca, a listagem mostrou só os leads "Maria Teste" (códigos 8 e 9). |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/552d263b-192b-4ff8-8e74-cb5ffe847d24) |
 
 ---
 
@@ -130,23 +130,23 @@
 | :---------------------------------------------------- |
 | O usuário deve estar autenticado na plataforma SIFIT. |
 
-| **Passos**                                                                                  |
-| :------------------------------------------------------------------------------------------ |
-| **DADO** que estamos na tela de prospecção                                                  |
-| **QUANDO** selecionarmos "Proposta" no filtro "Estágio"                                     |
-| **ENTÃO** a listagem deverá exibir somente o lead "Teste A", que está no estágio "Proposta" |
+| **Passos**                                                                                                 |
+| :--------------------------------------------------------------------------------------------------------- |
+| **DADO** que estamos na tela de prospecção                                                                 |
+| **QUANDO** selecionarmos "Proposta" no filtro "Estágio"                                                    |
+| **ENTÃO** a listagem deverá exibir somente o lead "Maria Teste" (código 9), que está no estágio "Proposta" |
 
 | **Critérios de aceitação**                                |
 | :-------------------------------------------------------- |
 | O sistema deve filtrar os leads pelo estágio selecionado. |
 
-| **Resultado da execução**                                                  |
-| :------------------------------------------------------------------------- |
-| **Passou.** O sistema se comportou como descrito no critério de aceitação. |
+| **Resultado da execução**                                                                                                                                                   |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Passou.** O filtro "Proposta" mostrou só o lead 9 e o "Novo Contato" só o lead 8; "Interessado", "Fez Aula Experimental" e "Fechado" mostraram "Nenhum lead encontrado.". |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/b9896da9-7a57-477c-b2d7-98a81ca5653d) |
 
 ---
 
@@ -170,13 +170,13 @@
 | :-------------------------------------------------------------- |
 | O sistema deve remover os filtros e exibir a listagem completa. |
 
-| **Resultado da execução**                                                  |
-| :------------------------------------------------------------------------- |
-| **Passou.** O sistema se comportou como descrito no critério de aceitação. |
+| **Resultado da execução**                                                                                                                                   |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Passou.** Com "Maria" na busca e um estágio no filtro, o botão "Limpar" limpou a busca, voltou o filtro para "Todos" e a listagem mostrou todos os leads. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/552d263b-192b-4ff8-8e74-cb5ffe847d24) |
 
 ---
 
@@ -201,13 +201,13 @@
 | :--------------------------------------------------------------- |
 | O sistema deve impedir o cadastro até que o nome seja informado. |
 
-| **Resultado da execução**                                                                                                                                                                                                                                        |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Passou.** O sistema se comportou como descrito no critério de aceitação. Em 28/10/2026, no Sifit Unialfa, o caso falhou: nada acontece e nenhuma mensagem aparece. O BUG-026 está em revisão: a execução automatizada não captura o aviso nativo do navegador. |
+| **Resultado da execução**                                                                                                                 |
+| :---------------------------------------------------------------------------------------------------------------------------------------- |
+| **Passou.** Ao clicar em "Salvar Lead" com o nome vazio, o navegador mostrou "Preencha este campo." no campo Nome e o lead não foi salvo. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/be15afd3-1f5d-487e-97b0-a2dbe4dbe192) |
 
 ---
 
@@ -221,24 +221,24 @@
 | :---------------------------------------------------- |
 | O usuário deve estar autenticado na plataforma SIFIT. |
 
-| **Passos**                                                            |
-| :-------------------------------------------------------------------- |
-| **DADO** que abrimos a janela "Adicionar Lead"                        |
-| **E** informamos o nome "Lead Teste Ville" e o e-mail "emailinvalido" |
-| **QUANDO** clicarmos no botão "Salvar Lead"                           |
-| **ENTÃO** o sistema deverá informar que o e-mail é inválido           |
+| **Passos**                                                  |
+| :---------------------------------------------------------- |
+| **DADO** que abrimos a janela "Adicionar Lead"              |
+| **E** informamos o nome "teste" e o e-mail "dasda"          |
+| **QUANDO** clicarmos no botão "Salvar Lead"                 |
+| **ENTÃO** o sistema deverá informar que o e-mail é inválido |
 
 | **Critérios de aceitação**                                                 |
 | :------------------------------------------------------------------------- |
 | O sistema deve impedir o cadastro até que um e-mail válido seja informado. |
 
-| **Resultado da execução**                                                  |
-| :------------------------------------------------------------------------- |
-| **Passou.** O sistema se comportou como descrito no critério de aceitação. |
+| **Resultado da execução**                                                                                                        |
+| :------------------------------------------------------------------------------------------------------------------------------- |
+| **Passou.** O navegador mostrou "Inclua um "@" no endereço de e-mail. "dasda" está com um "@" faltando." e o lead não foi salvo. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/56ef8c16-8929-4811-a413-144bb3d1f7f0) |
 
 ---
 
@@ -255,7 +255,7 @@
 | **Passos**                                                                                                                        |
 | :-------------------------------------------------------------------------------------------------------------------------------- |
 | **DADO** que abrimos a janela "Adicionar Lead"                                                                                    |
-| **E** informamos o nome "Lead Teste Ville", o e-mail "lead.ville@teste.com", o telefone e a observação "Teste Ville Nunes"        |
+| **E** informamos o nome "Maria Teste" e mantemos o estágio "Novo Contato"                                                         |
 | **QUANDO** clicarmos no botão "Salvar Lead"                                                                                       |
 | **ENTÃO** o lead deverá constar na listagem como "Novo Contato" e os indicadores "Leads" e "Novos Contatos" deverão aumentar em 1 |
 
@@ -263,13 +263,13 @@
 | :---------------------------------------------------------- |
 | O sistema deve cadastrar o lead e atualizar os indicadores. |
 
-| **Resultado da execução**                                                  |
-| :------------------------------------------------------------------------- |
-| **Passou.** O sistema se comportou como descrito no critério de aceitação. |
+| **Resultado da execução**                                                                                                                                             |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Passou.** O lead "Maria Teste" apareceu na listagem como "Novo Contato" (resposta 200), e os indicadores Leads e Novos Contatos passaram de 6 para 7 e de 2 para 3. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/be15afd3-1f5d-487e-97b0-a2dbe4dbe192) |
 
 ---
 
@@ -341,25 +341,57 @@
 | :------- | :------------------------------------------------------ |
 | C15-CT12 | Verificar se o lead é excluído ao confirmar a exclusão. |
 
-| **Pré-condições**                                                    |
-| :------------------------------------------------------------------- |
-| O usuário deve estar autenticado e existir lead de teste cadastrado. |
+| **Pré-condições**                                               |
+| :-------------------------------------------------------------- |
+| O usuário deve estar autenticado e existirem leads cadastrados. |
 
 | **Passos**                                                                                    |
 | :-------------------------------------------------------------------------------------------- |
 | **DADO** que estamos na tela de prospecção                                                    |
-| **E** clicamos no botão "Deletar" do lead "Lead Teste Ville Editado"                          |
-| **QUANDO** confirmarmos a mensagem "Deseja deletar este lead?"                                |
+| **E** clicamos no "X" (excluir) de um lead                                                    |
+| **QUANDO** confirmarmos a exclusão no botão "Confirmar"                                       |
 | **ENTÃO** o lead não deverá mais constar na listagem e os indicadores deverão ser atualizados |
 
 | **Critérios de aceitação**                             |
 | :----------------------------------------------------- |
 | O sistema deve solicitar confirmação e excluir o lead. |
 
-| **Resultado da execução**                                                  |
-| :------------------------------------------------------------------------- |
-| **Passou.** O sistema se comportou como descrito no critério de aceitação. |
+| **Resultado da execução**                                                                                                                                                               |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Passou.** Ao confirmar, o lead saiu da listagem e os indicadores foram atualizados (Leads de 8 para 7 na primeira exclusão); a gravação exclui 6 leads e a lista termina com Leads 2. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/ee6f43d1-b3ca-42b0-8e96-8e91ec6c1938) |
+
+
+---
+
+### Caso de Teste 13: Cadastro de lead com telefone com letras.
+
+| ID       | Descrição                                                    |
+| :------- | :----------------------------------------------------------- |
+| C15-CT13 | Verificar se o campo Telefone do lead aceita apenas números. |
+
+| **Pré-condições**                                     |
+| :---------------------------------------------------- |
+| O usuário deve estar autenticado na plataforma SIFIT. |
+
+| **Passos**                                                                                                               |
+| :----------------------------------------------------------------------------------------------------------------------- |
+| **DADO** que abrimos a janela "Adicionar Lead"                                                                           |
+| **E** informamos o nome "Maria Teste", o estágio "Proposta", o e-mail "mariateste@gmail.com" e o telefone "6asdasdasdad" |
+| **QUANDO** clicarmos no botão "Salvar Lead"                                                                              |
+| **ENTÃO** o sistema deverá recusar o telefone com letras e informar o formato correto                                    |
+
+| **Critérios de aceitação**                                         |
+| :----------------------------------------------------------------- |
+| O campo Telefone aceita apenas números no formato (00) 00000-0000. |
+
+| **Resultado da execução**                                                                                                      |
+| :----------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** O lead foi salvo com o telefone "6asdasdasdad" (resposta 200) e "Visualizar Lead" mostra o telefone com as letras. |
+
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/3b272b31-fdc0-4818-a515-351268d7aa8e) |

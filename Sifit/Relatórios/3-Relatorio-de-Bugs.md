@@ -983,13 +983,13 @@
 
 ### 🐞 **Bug 26: Cadastro de Prospecção não avisa nada ao salvar vazio**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                               |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-026 | Ao clicar em "Salvar Lead" com o formulário vazio, o sistema não mostra nenhuma mensagem e o cadastro não é salvo. Este registro está em revisão: veio de uma execução automatizada em 28/10/2026, sem vídeo, e em outras execuções o navegador mostrou o aviso "Preencha este campo." ao salvar o mesmo formulário vazio. Se o vídeo do roteiro mostrar o aviso, o bug deve ser cancelado. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                    |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-026 | Ao clicar em "Salvar Lead" com o formulário vazio, o sistema não mostraria nenhuma mensagem. Bug cancelado em 16/11/2026: o vídeo mostra o aviso do navegador "Preencha este campo." no campo Nome e o lead não é salvo. O registro veio de uma execução automatizada (28/10/2026), que não captura o aviso nativo do navegador. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|         Média         |           Média            | Em revisão |
+|         Média         |           Média            | Cancelado  |
 
 | **Passo a passo para simular o bug**            |
 | ----------------------------------------------- |
@@ -1008,15 +1008,15 @@
 | https://sifitalfa.centrion.com.br/ |
 | Desktop Ubuntu 26.04 LTS           |
 | Google Chrome 150.0.7871.46        |
-| 28/10/2026                         |
+| 16/11/2026                         |
 
 | **Funcionalidade Afetada** |    **Caso de Teste Relacionado**     |
 | :------------------------: | :----------------------------------: |
 |   Prospecção / Cadastro    | C15-CT07: Cadastro de lead sem nome. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:26](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:26](https://jam.dev/c/be15afd3-1f5d-487e-97b0-a2dbe4dbe192) |
 
 ---
 
@@ -4376,9 +4376,9 @@
 | 3. Informar só o nome, sem escolher o "Tipo Membro". |
 | 4. Clicar no botão "Salvar".                         |
 
-| **Comportamento Esperado**                                | **Comportamento Obtido**                     |
-| :-------------------------------------------------------: | :------------------------------------------: |
-| O sistema deve indicar que o "Tipo Membro" é obrigatório. | "Erro ao salvar grupo", sem indicar o campo. |
+|                **Comportamento Esperado**                 |                                      **Comportamento Obtido**                                      |
+| :-------------------------------------------------------: | :------------------------------------------------------------------------------------------------: |
+| O sistema deve indicar que o "Tipo Membro" é obrigatório. | O navegador mostra "Preencha este campo." no campo Nome e o lead não é salvo (bug não confirmado). |
 
 | **Ambiente**                       |
 | :--------------------------------- |
@@ -5316,3 +5316,42 @@
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:141](https://jam.dev/c/3b99f4b6-a0bd-4ea4-adda-e6aeac468e5e) |
+
+---
+
+### 🐞 **Bug 142: Telefone do lead aceita letras**
+
+| **ID**  | **Descrição**                                                                                                                                              |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-142 | O campo Telefone do cadastro de lead aceita letras: o lead "Maria Teste" foi salvo com o telefone "6asdasdasdad" e a visualização mostra o telefone assim. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                                                   |
+| ---------------------------------------------------------------------------------------------------------------------- |
+| 1. Entrar no Sifit Unialfa e abrir "Prospecção".                                                                       |
+| 2. Clicar em "Adicionar Lead" e informar o nome "Maria Teste", o estágio "Proposta" e o e-mail "mariateste@gmail.com". |
+| 3. Informar "6asdasdasdad" no campo Telefone e clicar em "Salvar Lead".                                                |
+| 4. Abrir "Visualizar Lead" do lead salvo.                                                                              |
+
+|                   **Comportamento Esperado**                    |                   **Comportamento Obtido**                   |
+| :-------------------------------------------------------------: | :----------------------------------------------------------: |
+| O campo deve aceitar apenas números no formato (00) 00000-0000. | O lead é salvo (resposta 200) com o telefone "6asdasdasdad". |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 16/11/2026                         |
+
+|  **Funcionalidade Afetada**   |            **Caso de Teste Relacionado**            |
+| :---------------------------: | :-------------------------------------------------: |
+| Prospecção / Cadastro de lead | C15-CT13: Cadastro de lead com telefone com letras. |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:142](https://jam.dev/c/3b272b31-fdc0-4818-a515-351268d7aa8e) |
