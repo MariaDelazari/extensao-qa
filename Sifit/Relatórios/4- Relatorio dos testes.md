@@ -18,7 +18,7 @@
 | ----------------------- | -------------- | -------------- | ---------------- |
 | 263                     | 137            | 126            | 122              |
 
-Os 263 casos estão nos cenários C01 a C22, C30 e C31. Um caso falhou quando existe um bug aberto apontando para ele: 126 falharam e 137 passaram. 137 + 126 = 263. O relatório de bugs tem 122 bugs: 120 abertos, 1 em revisão (BUG-026) e 1 cancelado (BUG-025), que não fazem nenhum caso falhar.
+Os 263 casos estão nos cenários C01 a C22, C30 e C31. Um caso falhou quando existe um bug aberto apontando para ele: 126 falharam e 137 passaram. 137 + 126 = 263. O relatório de bugs tem 122 bugs: 120 abertos e 2 cancelados (BUG-025 e BUG-026), que não fazem nenhum caso falhar.
 
 Alguns casos foram executados mais de uma vez, em datas ou endereços diferentes. O resultado do caso junta essas execuções, e a evidência é o vídeo que mostra o resultado registrado. Nos casos C01-CT01, C01-CT02, C02-CT01, C04-CT04, C04-CT10, C06-CT07 e C09-CT03, uma execução passou e outra encontrou a falha; o caso conta como falhou.
 
@@ -44,7 +44,7 @@ Evidências: 178 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados co
 | RF12      | Caixas                          | 11             | 6              | 5                | BUG-021, BUG-072, BUG-073, BUG-074, BUG-075                                                                |
 | RF13      | Contas a pagar e despesas fixas | 16             | 10             | 6                | BUG-020, BUG-076, BUG-077, BUG-078, BUG-079, BUG-080                                                       |
 | RF14      | Fichas de treino e exercícios   | 13             | 8              | 5                | BUG-081, BUG-082, BUG-083, BUG-084                                                                         |
-| RF15      | Prospecção                      | 12             | 11             | 1                | BUG-085 (em revisão: BUG-026)                                                                              |
+| RF15      | Prospecção                      | 13             | 11             | 2                | BUG-085, BUG-142 (cancelado: BUG-026)                                                                      |
 | RF16      | Colaboradores e funções         | 17             | 11             | 6                | BUG-024, BUG-086, BUG-087, BUG-088, BUG-089                                                                |
 | RF17      | Produtos                        | 11             | 7              | 4                | BUG-027, BUG-090, BUG-091, BUG-092                                                                         |
 | RF18      | Fichas de anamnese              | 8              | 3              | 4                | BUG-093, BUG-094, BUG-095, BUG-096                                                                         |
@@ -88,7 +88,7 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, e o BUG-126 em RF30 
 | BUG-023 | Horário de pico diferente entre Página Inicial e Check-in                           | Baixa      | Aberto     |
 | BUG-024 | Erro no servidor ao salvar colaborador com campos vazios                            | Média      | Aberto     |
 | BUG-025 | Cadastro de Planos não avisa nada ao salvar vazio                                   | Média      | Cancelado  |
-| BUG-026 | Cadastro de Prospecção não avisa nada ao salvar vazio                               | Média      | Em revisão |
+| BUG-026 | Cadastro de Prospecção não avisa nada ao salvar vazio                               | Média      | Cancelado  |
 | BUG-027 | Erro genérico ao salvar produto vazio                                               | Baixa      | Aberto     |
 | BUG-028 | Erro genérico ao salvar enquete vazia                                               | Baixa      | Aberto     |
 | BUG-029 | Atividades permite salvar registro em branco                                        | Média      | Aberto     |
@@ -194,6 +194,7 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, e o BUG-126 em RF30 
 | BUG-139 | Modelo de anamnese é salvo sem nenhuma pergunta                                     | Baixa      | Aberto     |
 | BUG-140 | Pergunta obrigatória da anamnese pode ficar sem resposta                            | Média      | Aberto     |
 | BUG-141 | Modelo de anamnese já aplicado pode ser excluído                                    | Média      | Aberto     |
+| BUG-142 | Telefone do lead aceita letras                                                      | Média      | Aberto     |
 
 ---
 
@@ -208,10 +209,10 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, e o BUG-126 em RF30 
 
 - Crítica: 3
 - Alta: 25
-- Média: 61
+- Média: 62
 - Baixa: 40
 
-**Em revisão:** 1 (BUG-026). **Cancelado:** 1 (BUG-025, o vídeo mostrou o aviso "Preencha este campo.").
+**Em revisão:** 0. **Cancelados:** 2 (BUG-025 e BUG-026, os vídeos mostraram o aviso "Preencha este campo.").
 
 ---
 
@@ -276,7 +277,7 @@ No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado.
 
 ## ✅ **Conclusão**
 
-Dos 263 casos, 137 passaram e 126 falharam, com 122 bugs registrados: 120 abertos, 1 em revisão e 1 cancelado. No login, só o usuário inexistente e o logout passaram: o login válido mostra erro no servidor ou entra mostrando o nome Jair, a senha incorreta já mostrou erro no servidor, os campos vazios seguem para a API sem aviso, os espaços nas pontas derrubam o login, o link "Esqueci minha senha" não faz nada e a sessão não é controlada.
+Dos 263 casos, 137 passaram e 126 falharam, com 122 bugs registrados: 120 abertos e 2 cancelados. No login, só o usuário inexistente e o logout passaram: o login válido mostra erro no servidor ou entra mostrando o nome Jair, a senha incorreta já mostrou erro no servidor, os campos vazios seguem para a API sem aviso, os espaços nas pontas derrubam o login, o link "Esqueci minha senha" não faz nada e a sessão não é controlada.
 
 As falhas mais graves impedem o uso de módulos centrais. Não é possível cadastrar nem alterar clientes (BUG-035 e BUG-039, severidade Crítica) e fornecedores (BUG-059 e BUG-060). A inativação do plano não é salva (BUG-045). O fechamento de caixa com conferência não é gravado (BUG-072). Não há como registrar o pagamento de conta a pagar (BUG-076). A ficha de treino não abre nem salva (BUG-081). A avaliação realizada não é salva (BUG-066). As anamneses aplicadas não aparecem (BUG-093 e BUG-094). Também se repetem formulários vazios que geram erro 500, respostas da API que expõem comandos SQL, registros em branco aceitos (Atividades, Objetivos de Treino e Tipos de Pagamento) e números que mudam de uma tela para outra (alunos em risco, avaliações pendentes, check-ins do dia, matrículas ativas contra clientes ativos e totais de contas a receber).
 
