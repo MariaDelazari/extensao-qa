@@ -3173,38 +3173,41 @@
 
 ### 🐞 **Bug 85: Sistema permite cadastrar lead duplicado**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                 |
-| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-085 | Foi possível cadastrar duas vezes o lead "Lead Teste Ville" com o mesmo e-mail (lead.ville@teste.com) e o mesmo telefone ((44) 99999-0000), sem nenhum aviso. Os dois registros passam a constar na listagem (códigos 6 e 7). |
+| **ID**  | **Descrição**                                                                                                                                                                       |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-085 | Foi possível cadastrar três vezes o lead "Teste Maria" com os mesmos dados (estágio Proposta), sem nenhum aviso. Os três registros passam a constar na listagem (códigos 1, 2 e 3). |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
 |         Baixa         |           Média            |   Aberto   |
 
-| **Passo a passo para simular o bug**                                                |
-| ----------------------------------------------------------------------------------- |
-| 1. Acessar a tela de prospecção do SIFIT.                                           |
-| 2. Cadastrar o lead "Lead Teste Ville" com e-mail e telefone.                       |
-| 3. Clicar novamente em "Adicionar Lead" e informar o mesmo nome, e-mail e telefone. |
-| 4. Clicar no botão "Salvar Lead".                                                   |
-| 5. Verificar a listagem.                                                            |
+| **Passo a passo para simular o bug**                                |
+| ------------------------------------------------------------------- |
+| 1. Acessar a tela de prospecção do SIFIT.                           |
+| 2. Cadastrar o lead "Teste Maria" no estágio "Proposta".            |
+| 3. Clicar novamente em "Adicionar Lead" e informar os mesmos dados. |
+| 4. Clicar no botão "Salvar Lead".                                   |
+| 5. Verificar a listagem.                                            |
 
-|                          **Comportamento Esperado**                           |      **Comportamento Obtido**       |
-| :---------------------------------------------------------------------------: | :---------------------------------: |
-| O sistema deve informar que já existe um lead com o mesmo e-mail ou telefone. | O lead é cadastrado em duplicidade. |
+|                   **Comportamento Esperado**                   |      **Comportamento Obtido**       |
+| :------------------------------------------------------------: | :---------------------------------: |
+| O sistema deve informar que já existe um lead com esses dados. | O lead é cadastrado em duplicidade. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Ubuntu 26.04 LTS           |
+| Google Chrome 150.0.7871.46        |
+| 16/11/2026                         |
 
 |  **Funcionalidade Afetada**   |     **Caso de Teste Relacionado**     |
 | :---------------------------: | :-----------------------------------: |
 | Prospecção / Cadastro de lead | C15-CT10: Cadastro de lead duplicado. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:85](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:85](https://jam.dev/c/1986b658-ab9f-4ede-be76-c17e49256338) |
 
 ---
 

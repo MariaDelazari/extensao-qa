@@ -275,32 +275,32 @@
 
 ### Caso de Teste 10: Cadastro de lead duplicado.
 
-| ID       | Descrição                                                                                            |
-| :------- | :--------------------------------------------------------------------------------------------------- |
-| C15-CT10 | Verificar se o sistema impede o cadastro de lead com o mesmo e-mail e telefone de um lead existente. |
+| ID       | Descrição                                                                                  |
+| :------- | :----------------------------------------------------------------------------------------- |
+| C15-CT10 | Verificar se o sistema impede o cadastro de lead com os mesmos dados de um lead existente. |
 
-| **Pré-condições**                                                     |
-| :-------------------------------------------------------------------- |
-| O usuário deve estar autenticado e existir o lead "Lead Teste Ville". |
+| **Pré-condições**                                     |
+| :---------------------------------------------------- |
+| O usuário deve estar autenticado na plataforma SIFIT. |
 
-| **Passos**                                                                           |
-| :----------------------------------------------------------------------------------- |
-| **DADO** que o lead "Lead Teste Ville" já está cadastrado                            |
-| **E** abrimos a janela "Adicionar Lead" e informamos o mesmo nome, e-mail e telefone |
-| **QUANDO** clicarmos no botão "Salvar Lead"                                          |
-| **ENTÃO** o sistema deverá informar que já existe um lead com esses dados            |
+| **Passos**                                                                   |
+| :--------------------------------------------------------------------------- |
+| **DADO** que cadastramos o lead "Teste Maria" no estágio "Proposta"          |
+| **E** abrimos de novo a janela "Adicionar Lead" e informamos os mesmos dados |
+| **QUANDO** clicarmos no botão "Salvar Lead"                                  |
+| **ENTÃO** o sistema deverá informar que já existe um lead com esses dados    |
 
 | **Critérios de aceitação**                    |
 | :-------------------------------------------- |
 | O sistema não deve permitir leads duplicados. |
 
-| **Resultado da execução**                       |
-| :---------------------------------------------- |
-| **Falhou.** O lead é cadastrado em duplicidade. |
+| **Resultado da execução**                                                                                                                                              |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** O lead "Teste Maria" foi salvo três vezes com os mesmos dados (resposta 200 nas três) e a listagem passou a mostrar três leads iguais (Leads de 0 para 3). |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/1986b658-ab9f-4ede-be76-c17e49256338) |
 
 ---
 
