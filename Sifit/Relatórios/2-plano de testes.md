@@ -46,15 +46,14 @@ Verificar manualmente os requisitos funcionais do Sifit: o login, a página inic
 - RF23 Grupos musculares: busca, filtro por tipo de membro, paginação, cadastro, validações, duplicidade, alteração e exclusão
 - RF24 Modelos de ficha: busca pelo criador e pelo código, criação, alteração e exclusão
 - RF25 Configurações: abas, cancelar, salvar, validação de valores e ocultação de senhas e tokens
+- RF26 Relatórios: acesso, 7 modelos, filtros dinâmicos, geração de PDF, datas vazias, período invertido, período sem registros e limite de ano
+- RF27 Importar avaliações: acesso, navegação, contraste no modo escuro, instruções/planilha modelo, envio fora do padrão e rejeição de extensão inválida (`.pdf`)
+- RF28 Inteligência & Automação e Resultados IA: filtros de período, coerência de indicadores, atividade recente, modais de configuração, resultados de risco, consultas de leitura e prévia de cobranças (sem disparar envios reais)
 - RF29 Local Contas: acesso e listagem, cadastro, salvar vazio e cancelar (a tela só abre pelo link)
 - RF30 Bancos e Banco recorrente: acesso, listagem, salvar vazio, cadastro, duplicidade, alteração e exclusão (as telas só abrem pelo link)
 - RF31 Categorias de conta a pagar: acesso, listagem, salvar vazio, cadastro e duplicidade
 - RF32 Métricas do cliente: acesso e busca das métricas e listas do período (a tela só abre pelo link)
 - RF33 Modelos e categorias de anamnese: categorias e modelos (busca, indicadores, cadastro, duplicidade, perguntas, preview, alteração, inativação e exclusão)
-
-**Incluído, ainda sem caso de teste (próximos cenários, RF26 a RF28):**
-
-- Relatórios (RF26), Importar avaliações (RF27) e Inteligência & Automação com Resultados IA (RF28)
 
 **Excluído:**
 
@@ -103,7 +102,7 @@ Verificar manualmente os requisitos funcionais do Sifit: o login, a página inic
 - Os casos deste plano foram executados e têm vídeo ou print.
 - As falhas encontradas foram registradas no relatório de bugs, com vídeo.
 - O relatório final informa quantos casos passaram, quantos falharam e qual bug está ligado a cada um.
-- Situação atual: 85 dos 263 casos e 35 dos 122 bugs ainda aguardam o vídeo (ver o relatório final).
+- Situação atual: todos os 348 casos (C01 a C33) e todos os 165 bugs abertos têm evidência em vídeo ou print (ver o relatório final).
 
 ---
 
@@ -113,13 +112,13 @@ Verificar manualmente os requisitos funcionais do Sifit: o login, a página inic
 | --------------------------- | ----------- | ---------- |
 | Planejamento de Testes      | 07/10/2026  | 23/10/2026 |
 | Levantamento de requisitos  | 17/10/2026  | 22/10/2026 |
-| Criação de Casos de Teste   | 13/10/2026  | 25/10/2026 |
-| Execução dos Testes Manuais | 12/10/2026  | 15/11/2026 |
-| Registro e Report de Bugs   | 12/10/2026  | 15/11/2026 |
-| Unificação dos trabalhos    | 12/11/2026  | 13/11/2026 |
-| Encerramento e Evidências   | 12/10/2026  | Pendente   |
+| Criação de Casos de Teste   | 13/10/2026  | 19/11/2026 |
+| Execução dos Testes Manuais | 12/10/2026  | 19/11/2026 |
+| Registro e Report de Bugs   | 12/10/2026  | 19/11/2026 |
+| Unificação dos trabalhos    | 12/11/2026  | 19/11/2026 |
+| Encerramento e Evidências   | 12/10/2026  | 19/11/2026 |
 
-Em 24/10/2026, os testes passaram para https://sifitalfa.centrion.com.br/. A data de execução de parte dos módulos RF09 em diante não foi registrada. Os casos da seção 13 foram especificados em 07/10/2026 e ainda não foram executados.
+Em 24/10/2026, os testes passaram para https://sifitalfa.centrion.com.br/. Em 19/11/2026, foram concluídas as gravações de RF10, RF13, os casos extras da seção 13 (C01-CT10 e C06-CT15) e os módulos novos RF26, RF27 e RF28.
 
 ---
 
@@ -151,8 +150,11 @@ Em 24/10/2026, os testes passaram para https://sifitalfa.centrion.com.br/. A dat
 | RF22      | Box - Turmas                     | Média      |
 | RF23      | Grupos musculares                | Média      |
 | RF24      | Modelos de ficha                 | Média      |
-| RF25      | Configurações                    | Média      |
-| RF29      | Local Contas                     | Média      |
+| RF25      | Configurações                               | Média      |
+| RF26      | Relatórios                                  | Alta       |
+| RF27      | Importar avaliações                         | Média      |
+| RF28      | Inteligência & Automação e Resultados IA    | Alta       |
+| RF29      | Local Contas                                | Média      |
 | RF30      | Bancos e Banco recorrente        | Média      |
 | RF31      | Categorias de conta a pagar      | Baixa      |
 | RF32      | Métricas do cliente              | Baixa      |
@@ -232,7 +234,7 @@ Estes casos foram especificados inicialmente em 07/10/2026 e executados em 19/11
 
 - Plano de Testes
 - Análise de requisitos
-- Casos de teste (C01 a C25 e C29 a C33), todos com evidência: vídeo no Jam ou print em `Sifit/Evidencias`. A pasta `Cenarios de testes/Pendentes de evidencias` ficou vazia
+- Casos de teste (C01 a C33), todos com evidência: vídeo no Jam ou print em `Sifit/Evidencias`. A pasta `Cenarios de testes/Pendentes de evidencias` ficou vazia
 - Relatório de bugs com vídeo (o BUG-062 tem print)
 - Relatório final de execução
 - Prints de evidência (`Sifit/Evidencias`)

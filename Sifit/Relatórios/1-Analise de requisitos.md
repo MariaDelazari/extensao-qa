@@ -520,6 +520,58 @@ Cada requisito tem o mesmo número do cenário e do arquivo de casos: o RF01 é 
 
 ---
 
+### 📄 RF26 - Relatórios
+
+**Cenário de teste:** C26 (`CT_RF26_`)
+
+**Descrição:** O sistema deve permitir gerar relatórios em PDF dos módulos da academia (Avaliações, Clientes, Colaboradores, Matrículas, Contas a Receber, Contas a Pagar e Caixas) com filtros por período e filtros específicos de cada modelo.
+
+**Funcionalidades esperadas:**
+
+- Acessar a tela em `FINANCEIRO > Relatórios` (`/relatorios`), com os 7 modelos disponíveis e rótulos corretamente acentuados.
+- Alternar entre os 7 modelos pelo seletor e pela coluna lateral, exibindo dinamicamente os filtros específicos (`Planos`/`Tipo de Plano` em Matrículas; `Tipo de Pagamento`/`Status`/`Detalhado` em Contas a Receber; `Formato` em Caixas).
+- Validar o intervalo de datas (datas obrigatórias ou coerentes com "Período: Todos", impedir `Data Início` maior que `Data Fim` e limitar anos válidos de 4 dígitos).
+- Aplicar todos os filtros selecionados na requisição `POST /api/relatorio/1`.
+- Retornar PDFs válidos (`application/pdf`) para todos os 7 modelos e formatos disponíveis, sem baixar arquivos corrompidos de 0 bytes nem retornar erro 500.
+
+**Resultado esperado:** Todos os modelos de relatório aplicam os filtros escolhidos, validam o período informado e baixam um arquivo PDF válido.
+
+---
+
+### 📥 RF27 - Importar avaliações
+
+**Cenário de teste:** C27 (`CT_RF27_`)
+
+**Descrição:** O sistema deve permitir importar avaliações físicas em lote a partir de planilhas exportadas do Fineshape (`.csv`, `.tsv` ou `.txt`), com fluxo guiado em 3 etapas (`1 Planilha → 2 Conferência → 3 Resultado`).
+
+**Funcionalidades esperadas:**
+
+- Acessar `/importar-avaliacoes` a partir do botão `Importar` em `/avaliacoes`, mantendo breadcrumb completo, destaque no menu e opção de retorno.
+- Exibir contraste legível tanto no modo claro quanto no modo escuro em todas as etapas.
+- Disponibilizar planilha modelo para download ou especificar claramente as colunas obrigatórias esperadas no cabeçalho.
+- Rejeitar arquivos com extensões não suportadas (como `.pdf`) e validar o cabeçalho antes de avançar para a etapa de conferência.
+
+**Resultado esperado:** O usuário tem orientação clara do formato esperado, recebe rejeição para extensões ou cabeçalhos inválidos e consegue navegar e ler a tela em qualquer tema.
+
+---
+
+### 🤖 RF28 - Inteligência & Automação e Resultados IA
+
+**Cenário de teste:** C28 (`CT_RF28_`)
+
+**Descrição:** O sistema deve exibir os indicadores e achados da Inteligência Sifit por período (`/inteligencia/resultados`) e permitir gerenciar, configurar e consultar as automações da academia (`/inteligencia-automacao`), sem disparar envios indesejados.
+
+**Funcionalidades esperadas:**
+
+- Em `Resultados IA` (`/inteligencia/resultados`), filtrar corretamente por `Hoje`, `Últimos 7 dias`, `Últimos 30 dias` e `Últimos 90 dias`, mantendo coerência entre cards, tabela de eficiência, timeline (com paginação) e bloco lateral `Inteligência Sifit`.
+- Em `Inteligência & Automação` (`/inteligencia-automacao`), atualizar os indicadores, exibir o histórico `Atividade recente` com barra de rolagem interna e impedir execuções duplicadas no mesmo minuto.
+- Nos modais `Configurar`, apresentar campos, destinatários e prévia próprios de cada automação (`Risco de Evasão` e `Aniversariantes`) e tornar `Apenas painel` mutuamente exclusivo com `WhatsApp` e `E-mail`.
+- Em `Ver resultados` e nas consultas de leitura (`Avaliações vencendo`, `Frequência em queda`, `Financeiro diário` e prévia de `Cobranças automáticas`), exibir listas consistentes com os resumos e sem erro no servidor ao alternar datas.
+
+**Resultado esperado:** As duas telas mostram métricas consistentes entre si, configurações coerentes por automação, histórico organizado sem duplicatas e consultas de leitura estáveis.
+
+---
+
 ### 🧾 RF29 - Local Contas
 
 **Cenário de teste:** C29 (`CT_RF29_`)
