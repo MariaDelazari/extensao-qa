@@ -225,7 +225,7 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, o BUG-126 em RF30 e 
 - Média: 65
 - Baixa: 40
 
-**Em revisão:** 0. **Cancelados:** 2 (BUG-025 e BUG-026, os vídeos mostraram o aviso "Preencha este campo.").
+**Em revisão:** 0. **Cancelados:** 3 (BUG-025 e BUG-026, os vídeos mostraram o aviso "Preencha este campo."; BUG-122, o vídeo do C25-CT04 mostra a confirmação "Configurações salvas").
 
 ---
 
