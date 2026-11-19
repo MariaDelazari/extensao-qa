@@ -2,11 +2,11 @@
 
 **Sistema testado:** Sifit Centrion
 **Responsável:** Maria Eduarda Pacheco Delazari, RA: 240017; Ville Nunes Figueiredo da Silva, RA: 14534; Keltton Felipe Alves Silveira, RA: 14509; Daniel Satel Pereira, RA: 14567; Rafael Colombo da Silva, RA: 14551
-**Data de execução:** 12/10/2026 a 28/10/2026, e 15/11/2026 para Grupos, Modelos de contrato, Box - Turmas, Bancos e Categorias de conta a pagar (C20 a C22, C30 e C31). Em 24/10/2026, os testes passaram para o endereço indicado abaixo.
+**Data de execução:** 12/10/2026 a 28/10/2026 e 14/11/2026 a 19/11/2026 (Avaliações, Contas a pagar, Grupos, Modelos de contrato, Box - Turmas, Grupos musculares, Modelos de ficha, Configurações e as telas C29 a C33). Em 24/10/2026, os testes passaram para o endereço indicado abaixo.
 **Ambiente:** Sifit Centrion até 23/10/2026. A partir de 24/10/2026, Sifit Unialfa.
 
-- Sistema operacional: Ubuntu 26.04 LTS, Linux e Windows 11
-- Navegador: Google Chrome 150.0.7871.46 e 155
+- Sistema operacional: Ubuntu 26.04 LTS, Linux, Linux Mint e Windows 11
+- Navegador: Google Chrome 150.0.7871.46, 155 e 157
 - URL até dia 23/10/2026 : https://sifit.centrion.com.br/
 - URL a partir do dia 24/10/2026: https://sifitalfa.centrion.com.br/
 
@@ -16,13 +16,13 @@
 
 | Total de Casos de Teste | Casos Passaram | Casos Falharam | Bugs Registrados |
 | ----------------------- | -------------- | -------------- | ---------------- |
-| 263                     | 137            | 126            | 122              |
+| 328                     | 175            | 153            | 151              |
 
-Os 263 casos estão nos cenários C01 a C22, C30 e C31. Um caso falhou quando existe um bug aberto apontando para ele: 126 falharam e 137 passaram. 137 + 126 = 263. O relatório de bugs tem 122 bugs: 120 abertos e 2 cancelados (BUG-025 e BUG-026), que não fazem nenhum caso falhar.
+Os 328 casos estão nos cenários C01 a C25 e C29 a C33. Um caso falhou quando existe um bug aberto apontando para ele: 153 falharam e 175 passaram. 175 + 153 = 328. O relatório de bugs tem 151 bugs: 148 abertos e 3 cancelados (BUG-025, BUG-026 e BUG-122), que não fazem nenhum caso falhar.
 
 Alguns casos foram executados mais de uma vez, em datas ou endereços diferentes. O resultado do caso junta essas execuções, e a evidência é o vídeo que mostra o resultado registrado. Nos casos C01-CT01, C01-CT02, C02-CT01, C04-CT04, C04-CT10, C06-CT07 e C09-CT03, uma execução passou e outra encontrou a falha; o caso conta como falhou.
 
-Evidências: 178 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados com `[Vídeo](coloque o link do video aqui)`). Dos 122 bugs, 87 têm vídeo ou print, e 35 aguardam o vídeo (`[BUG:NN](coloque o link do video aqui)`). O roteiro está em `5-Roteiro-de-videos.md`.
+Evidências: todos os 328 casos têm evidência, 322 com vídeo no Jam e 6 com print (C05-CT13, C05-CT14, C09-CT05, C09-CT07, C09-CT08, C14-CT09). Todos os 148 bugs abertos têm evidência: 147 com vídeo e 1 com print (BUG-062).
 
 ---
 
@@ -35,7 +35,7 @@ Evidências: 178 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados co
 | RF03      | Dashboard                        | 4              | 1              | 3                | BUG-012, BUG-013, BUG-014                                                                                  |
 | RF04      | Gestão de clientes               | 16             | 4              | 12               | BUG-016, BUG-017, BUG-035, BUG-036, BUG-037, BUG-038, BUG-039, BUG-040, BUG-098, BUG-099, BUG-100, BUG-101 |
 | RF05      | Gestão de planos                 | 14             | 8              | 6                | BUG-041, BUG-042, BUG-043, BUG-044, BUG-045, BUG-046 (cancelado: BUG-025)                                  |
-| RF06      | Gestão de matrículas             | 16             | 5              | 10               | BUG-018, BUG-047, BUG-048, BUG-049, BUG-050, BUG-051, BUG-052, BUG-053, BUG-102                            |
+| RF06      | Gestão de matrículas             | 16             | 5              | 11               | BUG-018, BUG-047, BUG-048, BUG-049, BUG-050, BUG-051, BUG-052, BUG-053, BUG-102                            |
 | RF07      | Contas a receber                 | 13             | 8              | 5                | BUG-019, BUG-054, BUG-055, BUG-056, BUG-057                                                                |
 | RF08      | Gestão de fornecedores           | 9              | 6              | 3                | BUG-058, BUG-059, BUG-060                                                                                  |
 | RF09      | Check-in e presenças             | 12             | 4              | 8                | BUG-022, BUG-023, BUG-061, BUG-062, BUG-063, BUG-064, BUG-065                                              |
@@ -47,18 +47,21 @@ Evidências: 178 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados co
 | RF15      | Prospecção                       | 14             | 12             | 2                | BUG-085, BUG-142 (cancelado: BUG-026)                                                                      |
 | RF16      | Colaboradores e funções          | 17             | 11             | 6                | BUG-024, BUG-086, BUG-087, BUG-088, BUG-089                                                                |
 | RF17      | Produtos                         | 11             | 7              | 4                | BUG-027, BUG-090, BUG-091, BUG-092                                                                         |
-| RF18      | Fichas de anamnese               | 8              | 3              | 4                | BUG-093, BUG-094, BUG-095, BUG-096                                                                         |
+| RF18      | Fichas de anamnese               | 8              | 3              | 5                | BUG-093, BUG-094, BUG-095, BUG-096                                                                         |
 | RF19      | Cadastros de apoio               | 12             | 5              | 7                | BUG-028, BUG-029, BUG-030, BUG-031, BUG-032, BUG-133, BUG-134                                              |
 | RF20      | Grupos                           | 10             | 7              | 3                | BUG-103, BUG-104, BUG-105                                                                                  |
 | RF21      | Modelos de contrato              | 6              | 3              | 3                | BUG-106, BUG-107                                                                                           |
 | RF22      | Box - Turmas                     | 13             | 5              | 8                | BUG-108, BUG-109, BUG-110, BUG-111, BUG-112, BUG-113, BUG-114                                              |
+| RF23      | Grupos musculares                | 15             | 10             | 5                | BUG-116, BUG-117, BUG-118, BUG-119                                                                         |
+| RF24      | Modelos de ficha                 | 8              | 6              | 2                | BUG-120, BUG-121                                                                                           |
+| RF25      | Configurações                    | 6              | 4              | 2                | BUG-123, BUG-124 (cancelado: BUG-122)                                                                      |
 | RF29      | Local Contas                     | 4              | 1              | 3                | BUG-143, BUG-144, BUG-145, BUG-146                                                                         |
 | RF30      | Bancos e Banco Recorrente        | 7              | 3              | 4                | BUG-126, BUG-127, BUG-128, BUG-129                                                                         |
 | RF31      | Categorias de conta a pagar      | 5              | 1              | 4                | BUG-126, BUG-130, BUG-131, BUG-132                                                                         |
 | RF32      | Métricas do cliente              | 2              | 0              | 2                | BUG-143, BUG-147, BUG-148                                                                                  |
 | RF33      | Modelos e categorias de anamnese | 21             | 14             | 7                | BUG-135, BUG-136, BUG-137, BUG-138, BUG-139, BUG-140, BUG-141                                              |
 
-O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, o BUG-126 em RF30 e RF31 e o BUG-143 em RF29 e RF32, porque cada um aponta para casos dos dois cenários.
+O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, o BUG-126 em RF30 e RF31 e o BUG-143 em RF29 e RF32, porque cada um aponta para casos de mais de um cenário. A coluna "Bugs encontrados" conta os casos que falharam.
 
 ---
 
@@ -181,6 +184,15 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, o BUG-126 em RF30 e 
 | BUG-113 | Modalidade inativa aparece no cadastro de turma do Box                              | Baixa      | Aberto    |
 | BUG-114 | Exclusão de turma do Box não pede confirmação e mantém a turma na lista             | Média      | Aberto    |
 | BUG-115 | Janela "Alterar Data / Hora" aceita data e hora sem formato                         | Média      | Aberto    |
+| BUG-116 | Cadastro de grupo muscular sem tipo de membro mostra erro genérico                  | Baixa      | Aberto    |
+| BUG-117 | Grupo muscular é salvo sem nome                                                     | Média      | Aberto    |
+| BUG-118 | Grupo muscular duplicado é aceito                                                   | Baixa      | Aberto    |
+| BUG-119 | Exclusão de grupo muscular com exercícios mostra erro genérico                      | Baixa      | Aberto    |
+| BUG-120 | Não é possível criar modelo de ficha                                                | Alta       | Aberto    |
+| BUG-121 | "Alterar" do modelo de ficha abre a ficha de treino de um aluno                     | Alta       | Aberto    |
+| BUG-122 | Configurações não confirmam o salvamento                                            | Baixa      | Cancelado |
+| BUG-123 | "Dias para contar cliente como ausente" aceita valor negativo                       | Média      | Aberto    |
+| BUG-124 | Senha da biometria e token do Pagar.me aparecem em texto aberto                     | Média      | Aberto    |
 | BUG-126 | Telas de bancos e de categorias de conta a pagar não estão no menu                  | Média      | Aberto    |
 | BUG-127 | Banco é salvo sem nome                                                              | Baixa      | Aberto    |
 | BUG-128 | Banco duplicado é aceito                                                            | Baixa      | Aberto    |
@@ -192,7 +204,7 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, o BUG-126 em RF30 e 
 | BUG-134 | Pontuação aceita data final anterior à inicial                                      | Média      | Aberto    |
 | BUG-135 | Indicador "Com perguntas" mostra o total de categorias                              | Média      | Aberto    |
 | BUG-136 | Categoria de anamnese duplicada é aceita                                            | Baixa      | Aberto    |
-| BUG-137 | Edição do modelo apaga a marcação de pergunta obrigatória                           | Média      | Aberto    |
+| BUG-137 | Edição do modelo não mostra a pergunta obrigatória e apaga a marcação               | Média      | Aberto    |
 | BUG-138 | Preview do modelo de anamnese não mostra as perguntas                               | Média      | Aberto    |
 | BUG-139 | Modelo de anamnese é salvo sem nenhuma pergunta                                     | Baixa      | Aberto    |
 | BUG-140 | Pergunta obrigatória da anamnese pode ficar sem resposta                            | Média      | Aberto    |
@@ -215,15 +227,15 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, o BUG-126 em RF30 e 
 
 **Casos por status:**
 
-- Passaram: 137
-- Falharam: 126
+- Passaram: 175
+- Falharam: 153
 
 **Severidade dos bugs abertos:**
 
 - Crítica: 3
-- Alta: 28
-- Média: 65
-- Baixa: 40
+- Alta: 30
+- Média: 69
+- Baixa: 46
 
 **Em revisão:** 0. **Cancelados:** 3 (BUG-025 e BUG-026, os vídeos mostraram o aviso "Preencha este campo."; BUG-122, o vídeo do C25-CT04 mostra a confirmação "Configurações salvas").
 
@@ -281,24 +293,27 @@ No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado.
 
 - Plano de Testes
 - Análise de requisitos
-- Casos de teste (C01 a C25 e C29 a C33); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Todos os cenários já criados foram movidos para `Cenarios de testes/` (pasta `Pendentes de evidencias` vazia)
+- Casos de teste (C01 a C25 e C29 a C33), todos com evidência: vídeo no Jam ou print. A pasta `Cenarios de testes/Pendentes de evidencias` ficou vazia
 - Relatório de bugs, com o vídeo da falha
 - Vídeos no Jam e prints na pasta `Sifit/Evidencias`
-- Roteiro dos vídeos a gravar (`5-Roteiro-de-videos.md`)
 
 ---
 
 ## ✅ **Conclusão**
 
-Dos 263 casos, 137 passaram e 126 falharam, com 122 bugs registrados: 120 abertos e 2 cancelados. No login, só o usuário inexistente e o logout passaram: o login válido mostra erro no servidor ou entra mostrando o nome Jair, a senha incorreta já mostrou erro no servidor, os campos vazios seguem para a API sem aviso, os espaços nas pontas derrubam o login, o link "Esqueci minha senha" não faz nada e a sessão não é controlada.
+Dos 328 casos, 175 passaram e 153 falharam, com 151 bugs registrados: 148 abertos e 3 cancelados. No login, só o usuário inexistente e o logout passaram: o login válido mostra erro no servidor ou entra mostrando o nome Jair, a senha incorreta já mostrou erro no servidor, os campos vazios seguem para a API sem aviso, os espaços nas pontas derrubam o login, o link "Esqueci minha senha" não faz nada e a sessão não é controlada.
 
 As falhas mais graves impedem o uso de módulos centrais. Não é possível cadastrar nem alterar clientes (BUG-035 e BUG-039, severidade Crítica) e fornecedores (BUG-059 e BUG-060). A inativação do plano não é salva (BUG-045). O fechamento de caixa com conferência não é gravado (BUG-072). Não há como registrar o pagamento de conta a pagar (BUG-076). A ficha de treino não abre nem salva (BUG-081). A avaliação realizada não é salva (BUG-066). As anamneses aplicadas não aparecem (BUG-093 e BUG-094). Também se repetem formulários vazios que geram erro 500, respostas da API que expõem comandos SQL, registros em branco aceitos (Atividades, Objetivos de Treino e Tipos de Pagamento) e números que mudam de uma tela para outra (alunos em risco, avaliações pendentes, check-ins do dia, matrículas ativas contra clientes ativos e totais de contas a receber).
 
-Funcionam bem a prospecção (11 de 12 casos), as turmas (11 de 13) e a validação do campo obrigatório em Clientes, Matrículas, Avaliações, Fornecedores, Turmas, Bandeiras, Pontuação, Tipos de Documentos, Exercícios e Categorias Crossfit.
+Funcionam bem a prospecção (12 de 14 casos), as turmas (11 de 13) e a validação do campo obrigatório em Clientes, Matrículas, Avaliações, Fornecedores, Turmas, Bandeiras, Pontuação, Tipos de Documentos, Exercícios e Categorias Crossfit.
 
 Ficaram fora do escopo: Pagar.me, WhatsApp e Aplicativo. Ainda não têm caso de teste: Relatórios, Importar avaliações, Inteligência & Automação e Resultados IA (RF26 a RF28 no plano). O teste de formulário vazio criou 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12), que devem ser excluídos.
 
 Em Grupos, Modelos de contrato e Box - Turmas (C20 a C22, testados em 15/11/2026), os modelos de contrato não aparecem na listagem (BUG-106, severidade Alta), o status "Inativo" do grupo não é salvo (BUG-104) e o grupo não pode ser excluído (BUG-105). O cadastro de turmas do Box aceita horário invertido, turma sem dias e vagas negativas (BUG-110 a BUG-112). Ficaram no ambiente os grupos de teste #8, #9 e #10, que não podem ser excluídos nem inativados, e os modelos de contrato 8 e 9, que não aparecem na listagem. A modalidade e as turmas de teste do Box ficaram inativas.
+
+Em Grupos musculares, Modelos de ficha e Configurações (C23 a C25, testados em 15/11/2026), o cadastro de grupo muscular aceita grupo sem nome e duplicado (BUG-117 e BUG-118) e mostra só mensagens genéricas de erro (BUG-116 e BUG-119). Não é possível criar modelo de ficha (BUG-120), e "Alterar" do modelo abre a ficha de treino de um aluno (BUG-121). Em Configurações, os dias para contar cliente como ausente aceitam valor negativo (BUG-123), e a senha da biometria e o token do Pagar.me aparecem em texto aberto (BUG-124). O BUG-122 foi cancelado: o vídeo do C25-CT04 mostra a confirmação "Configurações salvas".
+
+Em Avaliações e Contas a pagar (C10 e C13, gravados em 19/11/2026), a despesa fixa não é salva quando o valor é informado com vírgula (BUG-149), a visualização da conta a pagar fica ilegível no modo escuro (BUG-150), o menu lateral volta ao topo a cada atualização (BUG-151) e a listagem de despesas fixas não tem paginação (BUG-152). Também foram gravados o duplo clique em Entrar (C01-CT10) e a data de término anterior à de início na matrícula (C06-CT15), que passaram.
 
 Em Bancos, Banco Recorrente e Categorias de conta a pagar (C30 e C31, testados em 15/11/2026), as três telas não têm item no menu e só abrem pelo link (BUG-126). O botão de excluir banco chama a exclusão de Tipo de Pagamento com o id do banco (BUG-129, severidade Crítica): no teste, só não apagou o tipo de pagamento 11 porque ele estava em uso. A listagem de categorias fica vazia (BUG-130), e as duas telas aceitam registros sem nome e duplicados. Na gravação do C30-CT07, a exclusão do Banco Brasil mostrou "Erro ao deletar tipo de pagamento", e o tipo de pagamento 1 (Dinheiro) continuou cadastrado. Como a exclusão de banco não é segura, os registros de teste não foram excluídos: bancos 8 a 17 e categorias 25 a 29 e as gravadas nos vídeos.
 
