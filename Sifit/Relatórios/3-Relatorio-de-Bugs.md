@@ -859,9 +859,9 @@
 | :------------------------: | :--------------------------------------------------------: |
 |   Check-in / Indicadores   | C09-CT09: Conferir os indicadores do Check-in com a lista. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:22](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:22](https://jam.dev/c/facb0057-661e-4018-bc9c-24c5eb0df11b) |
 
 ---
 
@@ -896,9 +896,9 @@
 | :-------------------------------------------: | :--------------------------------------------------: |
 | Página inicial / Check-in / Pico de movimento | C09-CT12: Conferir o horário de pico entre as telas. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:23](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:23](https://jam.dev/c/786bd26c-8454-4749-97d0-46acd5068129) |
 
 ---
 
@@ -1053,9 +1053,9 @@
 | :------------------------: | :-----------------------------------------------: |
 |    Produtos / Cadastro     | C17-CT04: Salvar Produtos com o formulário vazio. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:27](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:27](https://jam.dev/c/a8978dbe-467f-4bd5-9373-568dc8e68635) |
 
 ---
 
@@ -2382,18 +2382,21 @@
 | :-------------------------------------------------------------: | :---------------------------------------------------: |
 | A tela de Presenças deve listar os check-ins realizados no dia. | A tela exibe "Nenhuma presença encontrada" e total 0. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                   |
+| ------------------------------ |
+| Sifit                          |
+| https://sifit.centrion.com.br/ |
+| Desktop Windows 11             |
+| Google Chrome 157.0.8103.78    |
+| 14/11/2026                     |
 
 | **Funcionalidade Afetada** |             **Caso de Teste Relacionado**              |
 | :------------------------: | :----------------------------------------------------: |
 |    Check-in / Presenças    | C09-CT10: Exibição dos check-ins na tela de Presenças. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:61](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:61](https://jam.dev/c/6da58738-ea13-48ce-8e57-b8b8fba58dce) |
 
 ---
 
@@ -2493,18 +2496,21 @@
 | :-------------------------------------------------------------------------------------: | :-------------------------------------: |
 | O sistema deve informar que a cliente não possui matrícula ativa e bloquear o check-in. | O sistema libera e registra o check-in. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                   |
+| ------------------------------ |
+| Sifit                          |
+| https://sifit.centrion.com.br/ |
+| Desktop Windows 11             |
+| Google Chrome 157.0.8103.78    |
+| 14/11/2026                     |
 
 | **Funcionalidade Afetada**  |           **Caso de Teste Relacionado**            |
 | :-------------------------: | :------------------------------------------------: |
 | Check-in / Regras de acesso | C09-CT04: Check-in de cliente sem matrícula ativa. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:64](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:64](https://jam.dev/c/2b077ed9-1b98-4d00-8261-6b35de1fe006) |
 
 ---
 
@@ -3157,18 +3163,21 @@
 | :-------------------------------------------------------------------: | :-------------------------------------------------------------------: |
 | O sistema deve salvar os treinos e permitir abrir a ficha cadastrada. | O sistema exibe "Erro no servidor" ao salvar e ao visualizar a ficha. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome 157.0.8103.78        |
+| 15/11/2026                         |
 
 |         **Funcionalidade Afetada**         |                                  **Caso de Teste Relacionado**                                   |
 | :----------------------------------------: | :----------------------------------------------------------------------------------------------: |
 | Fichas de Treino / Montagem e visualização | C14-CT05: Montagem e salvamento dos treinos da ficha. C14-CT06: Visualização da ficha de treino. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:81](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:81](https://jam.dev/c/d40fc5fa-b91a-4e90-9810-94a6f8718717) |
 
 ---
 
@@ -3193,18 +3202,21 @@
 | :-----------------------------------------------------------------------------------------: | :--------------------------------------: |
 | O sistema deve informar "Escolha o objetivo do treino." e orientar o cadastro de objetivos. | O sistema exibe "Erro ao salvar Ficha.". |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome 157.0.8103.78        |
+| 15/11/2026                         |
 
 | **Funcionalidade Afetada**  |       **Caso de Teste Relacionado**       |
 | :-------------------------: | :---------------------------------------: |
 | Fichas de Treino / Cadastro | C14-CT03: Cadastro de ficha sem objetivo. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:82](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:82](https://jam.dev/c/fdb31036-892c-4358-80bb-b60ad16015c4) |
 
 ---
 
@@ -3229,18 +3241,21 @@
 | :----------------------------------------------------------------------------: | :-----------------------------------------------------: |
 | A resposta deve trazer apenas o resultado da operação, sem expor comandos SQL. | No DevTools, a resposta mostra o comando SQL executado. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome 157.0.8103.78        |
+| 15/11/2026                         |
 
 | **Funcionalidade Afetada**  |     **Caso de Teste Relacionado**      |
 | :-------------------------: | :------------------------------------: |
 | Fichas de Treino / Exclusão | C14-CT07: Exclusão de ficha de treino. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:83](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:83](https://jam.dev/c/c3be0023-ef70-45ec-8a65-da5ec85166eb) |
 
 ---
 
@@ -3500,18 +3515,21 @@
 | :------------------------------------------------------------------: | :--------------------------------------------------------------------: |
 | O sistema deve cadastrar o produto do tipo Pontuação com 100 pontos. | O sistema exibe "Erro ao salvar produto" e o produto não é cadastrado. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome 157.0.8103.78        |
+| 15/11/2026                         |
 
 | **Funcionalidade Afetada** |          **Caso de Teste Relacionado**           |
 | :------------------------: | :----------------------------------------------: |
 |    Produtos / Cadastro     | C17-CT07: Cadastro de produto do tipo Pontuação. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:90](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:90](https://jam.dev/c/e6251ffd-1db6-469d-99bc-d508659171b4) |
 
 ---
 
@@ -3536,18 +3554,21 @@
 | :----------------------------------------------------------: | :----------------------------------------: |
 | O sistema deve informar que o preço deve ser maior que zero. | O produto é cadastrado com preço negativo. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome 157.0.8103.78        |
+| 15/11/2026                         |
 
 | **Funcionalidade Afetada** |           **Caso de Teste Relacionado**           |
 | :------------------------: | :-----------------------------------------------: |
 |    Produtos / Cadastro     | C17-CT05: Cadastro de produto com preço negativo. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:91](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:91](https://jam.dev/c/8cd301f3-fb86-4d12-a9da-b5c93bfb8cb5) |
 
 ---
 
@@ -3570,18 +3591,21 @@
 | :---------------------------------------------------------------------------: | :---------------------------------------------------------------: |
 | Os valores devem ser exibidos como "R$ 1.550,00", "R$ 7.000,99" e "R$ 49,90". | Os valores são exibidos como "R$ 1550", "R$ 7000.99" e "R$ 49.9". |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome 157.0.8103.78        |
+| 15/11/2026                         |
 
 | **Funcionalidade Afetada** |       **Caso de Teste Relacionado**       |
 | :------------------------: | :---------------------------------------: |
 |    Produtos / Listagem     | C17-CT08: Exibição do valor dos produtos. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:92](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:92](https://jam.dev/c/86b3dbc8-a5b6-4025-a71f-f949e3b9929a) |
 
 ---
 
@@ -4499,16 +4523,16 @@
 | Sifit Unialfa                      |
 | https://sifitalfa.centrion.com.br/ |
 | Desktop Windows 11                 |
-| Google Chrome (informar a versão)  |
+| Google Chrome 157.0.8103.78        |
 | 15/11/2026                         |
 
 |  **Funcionalidade Afetada**  |                                            **Caso de Teste Relacionado**                                            |
 | :--------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
 | Grupos Musculares / Cadastro | C23-CT07: Salvar Grupos Musculares com o formulário vazio; C23-CT08: Cadastro de grupo muscular sem tipo de membro. |
 
-|            **Evidência(s)**             |
-| :-------------------------------------: |
-| [BUG:116](coloque o link do video aqui) |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:116](https://jam.dev/c/0d60d44e-1515-473a-9bec-0256ac5b11ee) |
 
 ---
 
@@ -4538,16 +4562,16 @@
 | Sifit Unialfa                      |
 | https://sifitalfa.centrion.com.br/ |
 | Desktop Windows 11                 |
-| Google Chrome (informar a versão)  |
+| Google Chrome 157.0.8103.78        |
 | 15/11/2026                         |
 
 |  **Funcionalidade Afetada**  |         **Caso de Teste Relacionado**          |
 | :--------------------------: | :--------------------------------------------: |
 | Grupos Musculares / Cadastro | C23-CT09: Cadastro de grupo muscular sem nome. |
 
-|            **Evidência(s)**             |
-| :-------------------------------------: |
-| [BUG:117](coloque o link do video aqui) |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:117](https://jam.dev/c/c795c2dd-5974-4a61-95d1-c4d3fc0734f5) |
 
 ---
 
@@ -4576,16 +4600,16 @@
 | Sifit Unialfa                      |
 | https://sifitalfa.centrion.com.br/ |
 | Desktop Windows 11                 |
-| Google Chrome (informar a versão)  |
+| Google Chrome 157.0.8103.78        |
 | 15/11/2026                         |
 
 |  **Funcionalidade Afetada**  |          **Caso de Teste Relacionado**          |
 | :--------------------------: | :---------------------------------------------: |
 | Grupos Musculares / Cadastro | C23-CT11: Cadastro de grupo muscular duplicado. |
 
-|            **Evidência(s)**             |
-| :-------------------------------------: |
-| [BUG:118](coloque o link do video aqui) |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:118](https://jam.dev/c/413c4e06-4999-4b2e-b9f6-8e13ae2a7e46) |
 
 ---
 
@@ -4614,16 +4638,16 @@
 | Sifit Unialfa                      |
 | https://sifitalfa.centrion.com.br/ |
 | Desktop Windows 11                 |
-| Google Chrome (informar a versão)  |
+| Google Chrome 157.0.8103.78        |
 | 15/11/2026                         |
 
 |  **Funcionalidade Afetada**  |                 **Caso de Teste Relacionado**                 |
 | :--------------------------: | :-----------------------------------------------------------: |
 | Grupos Musculares / Exclusão | C23-CT15: Exclusão de grupo muscular com exercício vinculado. |
 
-|            **Evidência(s)**             |
-| :-------------------------------------: |
-| [BUG:119](coloque o link do video aqui) |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:119](https://jam.dev/c/03438160-a0a6-4bce-b9b6-2c79b0d3a692) |
 
 ---
 
@@ -4653,16 +4677,16 @@
 | Sifit Unialfa                      |
 | https://sifitalfa.centrion.com.br/ |
 | Desktop Windows 11                 |
-| Google Chrome (informar a versão)  |
+| Google Chrome 157.0.8103.78        |
 | 15/11/2026                         |
 
 | **Funcionalidade Afetada** |       **Caso de Teste Relacionado**       |
 | :------------------------: | :---------------------------------------: |
 |  Modelo Ficha / Cadastro   | C24-CT06: Criar modelo com dados válidos. |
 
-|            **Evidência(s)**             |
-| :-------------------------------------: |
-| [BUG:120](coloque o link do video aqui) |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:120](https://jam.dev/c/f333fef6-b58e-44dc-b74d-2c57379d41ac) |
 
 ---
 
@@ -4691,16 +4715,16 @@
 | Sifit Unialfa                      |
 | https://sifitalfa.centrion.com.br/ |
 | Desktop Windows 11                 |
-| Google Chrome (informar a versão)  |
+| Google Chrome 157.0.8103.78        |
 | 15/11/2026                         |
 
 | **Funcionalidade Afetada** |      **Caso de Teste Relacionado**      |
 | :------------------------: | :-------------------------------------: |
 |  Modelo Ficha / Alteração  | C24-CT07: Alteração de modelo de ficha. |
 
-|            **Evidência(s)**             |
-| :-------------------------------------: |
-| [BUG:121](coloque o link do video aqui) |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:121](https://jam.dev/c/b7528526-350e-4605-81b1-7036a6611c7b) |
 
 ---
 
@@ -4728,7 +4752,7 @@
 | Sifit Unialfa                      |
 | https://sifitalfa.centrion.com.br/ |
 | Desktop Windows 11                 |
-| Google Chrome (informar a versão)  |
+| Google Chrome 157.0.8103.78        |
 | 15/11/2026                         |
 
 | **Funcionalidade Afetada** |           **Caso de Teste Relacionado**           |
@@ -4767,16 +4791,16 @@
 | Sifit Unialfa                      |
 | https://sifitalfa.centrion.com.br/ |
 | Desktop Windows 11                 |
-| Google Chrome (informar a versão)  |
+| Google Chrome 157.0.8103.78        |
 | 15/11/2026                         |
 
 | **Funcionalidade Afetada** |              **Caso de Teste Relacionado**              |
 | :------------------------: | :-----------------------------------------------------: |
 |    Configurações / Home    | C25-CT05: Dias para cliente ausente com valor negativo. |
 
-|            **Evidência(s)**             |
-| :-------------------------------------: |
-| [BUG:123](coloque o link do video aqui) |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:123](https://jam.dev/c/d5d00889-9666-4b1a-8da0-be6d110e499b) |
 
 ---
 
@@ -4805,16 +4829,16 @@
 | Sifit Unialfa                      |
 | https://sifitalfa.centrion.com.br/ |
 | Desktop Windows 11                 |
-| Google Chrome (informar a versão)  |
+| Google Chrome 157.0.8103.78        |
 | 15/11/2026                         |
 
 |      **Funcionalidade Afetada**       |      **Caso de Teste Relacionado**      |
 | :-----------------------------------: | :-------------------------------------: |
 | Configurações / Biometria e Pagamento | C25-CT06: Ocultação de senhas e tokens. |
 
-|            **Evidência(s)**             |
-| :-------------------------------------: |
-| [BUG:124](coloque o link do video aqui) |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:124](https://jam.dev/c/6af5fef8-b57b-44d4-ba42-c41f4525b462) |
 
 ---
 
