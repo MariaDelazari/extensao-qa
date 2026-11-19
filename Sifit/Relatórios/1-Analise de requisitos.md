@@ -470,6 +470,56 @@ Cada requisito tem o mesmo número do cenário e do arquivo de casos: o RF01 é 
 
 ---
 
+### 🦵 RF23 - Grupos musculares
+
+**Cenário de teste:** C23 (`CT_RF23_`)
+
+**Descrição:** O sistema deve permitir manter os grupos musculares usados na biblioteca de exercícios, com o tipo de membro (superiores, inferiores etc.).
+
+**Funcionalidades esperadas:**
+
+- Acessar a tela pelo menu, com busca pelo nome, filtro por tipo de membro e paginação.
+- Cadastrar grupo exigindo o nome e o tipo de membro, sem duplicidade.
+- Alterar e excluir o grupo, sem excluir grupo que tenha exercícios vinculados e explicando o motivo.
+- Mostrar o grupo novo na biblioteca de exercícios.
+
+**Resultado esperado:** O grupo só é salvo com nome e tipo de membro, sem duplicidade, e a exclusão é bloqueada com mensagem clara quando há exercícios vinculados.
+
+---
+
+### 📋 RF24 - Modelos de ficha
+
+**Cenário de teste:** C24 (`CT_RF24_`)
+
+**Descrição:** O sistema deve permitir manter modelos de ficha de treino, criados por um personal, para usar como base nas fichas dos alunos.
+
+**Funcionalidades esperadas:**
+
+- Acessar a tela pelo menu e buscar o modelo pelo criador ou pelo código.
+- Criar modelo com nome e personal, avisando o que falta.
+- Alterar o modelo escolhido e excluir após a confirmação.
+
+**Resultado esperado:** O modelo é criado com os dados obrigatórios, e "Alterar" abre o próprio modelo.
+
+---
+
+### ⚙️ RF25 - Configurações
+
+**Cenário de teste:** C25 (`CT_RF25_`)
+
+**Descrição:** O sistema deve permitir ajustar as configurações da academia, divididas em abas (Home, Biometria, Avaliação, Aniversário, Pagamento, Integrações e Design).
+
+**Funcionalidades esperadas:**
+
+- Acessar a tela pelo menu e navegar entre as abas.
+- Cancelar as alterações sem salvar.
+- Salvar com mensagem de confirmação, recusando valores inválidos (ex.: dias negativos para cliente ausente).
+- Mascarar senhas e tokens.
+
+**Resultado esperado:** As configurações só são salvas com valores válidos, o sistema confirma o salvamento e nenhuma senha ou token aparece em texto aberto.
+
+---
+
 ### 🧾 RF29 - Local Contas
 
 **Cenário de teste:** C29 (`CT_RF29_`)
