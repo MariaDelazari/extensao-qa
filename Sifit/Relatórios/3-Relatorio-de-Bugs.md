@@ -2624,7 +2624,7 @@
 
 | **ID**  | **Descrição**                                                                                                                                                                       |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-068 | O campo de hora aceita valores inexistentes, como "25:99". Ao salvar, o sistema exibe a mensagem genérica "Erro ao cadastrar Avaliação.", em vez de informar que a hora é inválida. |
+| BUG-068 | O campo de hora aceita valores inexistentes, como "23:59". Ao salvar, o sistema exibe a mensagem genérica "Erro ao cadastrar Avaliação.", em vez de informar que a hora é inválida. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -2635,25 +2635,28 @@
 | 1. Acessar a tela de avaliações do SIFIT.              |
 | 2. Clicar em "Cadastrar Avaliação".                    |
 | 3. Selecionar o aluno "Lila" e o personal "Gabriella". |
-| 4. Informar a hora "25:99".                            |
+| 4. Informar a hora "23:59".                            |
 | 5. Clicar no botão "Salvar".                           |
 
 |                        **Comportamento Esperado**                         |            **Comportamento Obtido**             |
 | :-----------------------------------------------------------------------: | :---------------------------------------------: |
 | O sistema deve informar que a hora é inválida antes de enviar o cadastro. | O sistema exibe "Erro ao cadastrar Avaliação.". |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Linux Mint 22.3            |
+| Google Chrome 157.0.8103.38        |
+| 19/11/2026                         |
 
 | **Funcionalidade Afetada** |           **Caso de Teste Relacionado**            |
 | :------------------------: | :------------------------------------------------: |
 |   Avaliações / Cadastro    | C10-CT06: Cadastro de avaliação com hora inválida. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:68](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:68](https://jam.dev/c/e40ae90c-7a11-4d3e-ae20-e29414c44bb5) |
 
 ---
 
