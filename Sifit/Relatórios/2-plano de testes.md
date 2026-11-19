@@ -212,14 +212,14 @@ Os códigos dos registros não ficam fixos neste documento, porque o ambiente é
 
 ---
 
-### 🧾 13. **Casos especificados e ainda não executados**
+### 🧾 13. **Casos especificados posteriormente executados**
 
-Estes casos foram escritos, mas não foram executados, e não têm vídeo nem resultado. Por isso não entram nos cenários nem na conta do relatório final. Para entrar, cada um precisa ser executado, gravado e receber o próximo ID do cenário.
+Estes casos foram especificados inicialmente em 07/10/2026 e executados em 19/11/2026 com evidência em vídeo, sendo incorporados aos respectivos cenários.
 
-| Caso proposto                                          | Requisito | Situação      |
-| :----------------------------------------------------- | :-------- | :------------ |
-| Prevenção de duplo clique no botão Entrar              | RF01      | Não executado |
-| Data de término anterior à data de início na matrícula | RF06      | Não executado |
+| Caso proposto                                          | Requisito | Situação                          |
+| :----------------------------------------------------- | :-------- | :-------------------------------- |
+| Prevenção de duplo clique no botão Entrar              | RF01      | Executado em 19/11/2026 (C01-CT10) |
+| Data de término anterior à data de início na matrícula | RF06      | Executado em 19/11/2026 (C06-CT15) |
 
 ---
 

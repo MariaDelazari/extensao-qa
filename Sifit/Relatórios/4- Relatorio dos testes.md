@@ -30,19 +30,19 @@ Evidências: 178 casos têm vídeo ou print, e 85 aguardam o vídeo (marcados co
 
 | Código RF | Módulo                           | Casos Testados | Casos Passaram | Bugs encontrados | Bug(s) Associado(s)                                                                                        |
 | --------- | -------------------------------- | -------------- | -------------- | ---------------- | ---------------------------------------------------------------------------------------------------------- |
-| RF01      | Login na plataforma              | 9              | 2              | 7                | BUG-001, BUG-002, BUG-003, BUG-004, BUG-005, BUG-006, BUG-007, BUG-011                                     |
+| RF01      | Login na plataforma              | 10             | 3              | 7                | BUG-001, BUG-002, BUG-003, BUG-004, BUG-005, BUG-006, BUG-007, BUG-011                                     |
 | RF02      | Página inicial do dashboard      | 10             | 3              | 7                | BUG-007, BUG-008, BUG-009, BUG-010, BUG-014, BUG-015, BUG-033, BUG-034, BUG-097                            |
 | RF03      | Dashboard                        | 4              | 1              | 3                | BUG-012, BUG-013, BUG-014                                                                                  |
 | RF04      | Gestão de clientes               | 16             | 4              | 12               | BUG-016, BUG-017, BUG-035, BUG-036, BUG-037, BUG-038, BUG-039, BUG-040, BUG-098, BUG-099, BUG-100, BUG-101 |
 | RF05      | Gestão de planos                 | 14             | 8              | 6                | BUG-041, BUG-042, BUG-043, BUG-044, BUG-045, BUG-046 (cancelado: BUG-025)                                  |
-| RF06      | Gestão de matrículas             | 15             | 4              | 10               | BUG-018, BUG-047, BUG-048, BUG-049, BUG-050, BUG-051, BUG-052, BUG-053, BUG-102                            |
+| RF06      | Gestão de matrículas             | 16             | 5              | 10               | BUG-018, BUG-047, BUG-048, BUG-049, BUG-050, BUG-051, BUG-052, BUG-053, BUG-102                            |
 | RF07      | Contas a receber                 | 13             | 8              | 5                | BUG-019, BUG-054, BUG-055, BUG-056, BUG-057                                                                |
 | RF08      | Gestão de fornecedores           | 9              | 6              | 3                | BUG-058, BUG-059, BUG-060                                                                                  |
 | RF09      | Check-in e presenças             | 12             | 4              | 8                | BUG-022, BUG-023, BUG-061, BUG-062, BUG-063, BUG-064, BUG-065                                              |
 | RF10      | Avaliações físicas               | 12             | 7              | 5                | BUG-066, BUG-067, BUG-068, BUG-069, BUG-115                                                                |
 | RF11      | Turmas e SifitBox                | 13             | 11             | 2                | BUG-070, BUG-071                                                                                           |
 | RF12      | Caixas                           | 11             | 6              | 5                | BUG-021, BUG-072, BUG-073, BUG-074, BUG-075                                                                |
-| RF13      | Contas a pagar e despesas fixas  | 16             | 10             | 6                | BUG-020, BUG-076, BUG-077, BUG-078, BUG-079, BUG-080                                                       |
+| RF13      | Contas a pagar e despesas fixas  | 16             | 9              | 7                | BUG-020, BUG-076, BUG-077, BUG-078, BUG-079, BUG-080, BUG-149, BUG-150, BUG-151, BUG-152                   |
 | RF14      | Fichas de treino e exercícios    | 13             | 8              | 5                | BUG-081, BUG-082, BUG-083, BUG-084                                                                         |
 | RF15      | Prospecção                       | 14             | 12             | 2                | BUG-085, BUG-142 (cancelado: BUG-026)                                                                      |
 | RF16      | Colaboradores e funções          | 17             | 11             | 6                | BUG-024, BUG-086, BUG-087, BUG-088, BUG-089                                                                |
@@ -204,6 +204,10 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, o BUG-126 em RF30 e 
 | BUG-146 | Erro no servidor ao salvar Local Contas com campos vazios                           | Média      | Aberto    |
 | BUG-147 | Métricas de Clientes não exibe as métricas                                          | Alta       | Aberto    |
 | BUG-148 | Listas de Métricas de Clientes aparecem abertas, vazias e não fecham                | Média      | Aberto    |
+| BUG-149 | Despesa fixa não salva quando o valor é informado com vírgula (aceita apenas ponto) | Média      | Aberto    |
+| BUG-150 | Visualização de conta a pagar com legibilidade ruim no modo escuro                  | Baixa      | Aberto    |
+| BUG-151 | Menu lateral perde a posição de rolagem e volta ao topo a cada atualização          | Baixa      | Aberto    |
+| BUG-152 | Ausência de paginação na listagem de Despesas Fixas                                 | Baixa      | Aberto    |
 
 ---
 
@@ -277,7 +281,7 @@ No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado.
 
 - Plano de Testes
 - Análise de requisitos
-- Casos de teste (C01 a C25 e C29 a C33); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo estão na pasta `Cenarios de testes/Pendentes de evidencias` (C10 e C13)
+- Casos de teste (C01 a C25 e C29 a C33); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Todos os cenários já criados foram movidos para `Cenarios de testes/` (pasta `Pendentes de evidencias` vazia)
 - Relatório de bugs, com o vídeo da falha
 - Vídeos no Jam e prints na pasta `Sifit/Evidencias`
 - Roteiro dos vídeos a gravar (`5-Roteiro-de-videos.md`)

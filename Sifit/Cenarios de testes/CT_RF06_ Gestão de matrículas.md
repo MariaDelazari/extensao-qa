@@ -434,6 +434,37 @@
 
 ---
 
+### Caso de Teste 15: Data de término anterior à data de início na matrícula.
+
+| ID       | Descrição                                                                                        |
+| :------- | :----------------------------------------------------------------------------------------------- |
+| C06-CT15 | Verificar se o sistema impede cadastrar matrícula com "Data Final" anterior à "Data Inicial".    |
+
+| **Pré-condições**                                                                                |
+| :----------------------------------------------------------------------------------------------- |
+| Autenticado no Sifit Unialfa (https://sifitalfa.centrion.com.br/) com a conta marcelo_zandonadi. |
+
+| **Passos**                                                                                                         |
+| :----------------------------------------------------------------------------------------------------------------- |
+| **DADO** que estamos em "Cadastrar Matrícula" (`/adicionar-matricula`)                                             |
+| **E** selecionamos uma modalidade que exibe os campos "Data Inicial" e "Data Final"                                |
+| **QUANDO** tentarmos alterar a "Data Final" para uma data anterior à "Data Inicial" (ou alterar para data passada/futura) |
+| **ENTÃO** o sistema deverá impedir a definição de uma data de término anterior à data de início                    |
+
+| **Critérios de aceitação**                                                                        |
+| :------------------------------------------------------------------------------------------------ |
+| O sistema não deve permitir cadastrar uma matrícula com data de término anterior à data inicial.  |
+
+| **Resultado da execução**                                                                                                                                                                              |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Passou.** Em 19/11/2026 (Desktop Windows 11, Google Chrome 157.0.8103.79), ao escolher a modalidade que exibe "Data Inicial" e "Data Final", os campos não permitem alterar a data para antes do dia atual nem para o futuro, impedindo o período invertido. |
+
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/88c0f798-121f-4812-9b1d-bd7bf84a39fc) |
+
+---
+
 ### Caso de Teste 16: Cadastro de matrícula com Dia Vencimento inválido.
 
 | ID       | Descrição                                                  |
