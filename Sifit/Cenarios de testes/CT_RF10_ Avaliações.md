@@ -24,9 +24,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/4cc1196e-975e-41ba-a7f2-388961a22901) |
 
 ---
 
@@ -55,9 +55,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/aa407d5b-85ca-4a8b-b655-dd511143aeb4) |
 
 ---
 
@@ -86,9 +86,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/54598b0b-6524-404f-875a-144769c7a93c) |
 
 ---
 
@@ -117,9 +117,9 @@
 | :----------------------------------------------------------------------------- |
 | **Passou.** Apareceu o aviso "Selecione um aluno." e o cadastro não foi salvo. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/b259875b-9f35-45b8-a591-eabe9a9680ff) |
 
 ---
 
@@ -149,9 +149,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/f9c55b41-5362-47cd-85d3-88e897b50107) |
 
 ---
 
@@ -181,9 +181,9 @@
 | :--------------------------------------------------------------------- |
 | **Falhou.** O sistema exibe "Erro ao cadastrar Avaliação." (erro 500). |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/e40ae90c-7a11-4d3e-ae20-e29414c44bb5) |
 
 ---
 
@@ -212,9 +212,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/06fb127b-1759-42f9-9c05-3fd34d72d2c2) |
 
 ---
 
@@ -244,9 +244,9 @@
 | :------------------------------------------------------------------------ |
 | **Falhou.** Nada acontece e a avaliação mantém a data e a hora originais. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/768c03f2-5e8a-4a71-a96b-8f45bbff1475) |
 
 ---
 
@@ -275,9 +275,9 @@
 | :----------------------------------------------------- |
 | **Falhou.** O IMC é exibido como "26.122448979591837". |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/1bd88aa4-9f42-4c87-9b9d-44123b1dd71c) |
 
 ---
 
@@ -306,9 +306,9 @@
 | :--------------------------------------------------------------------------------------- |
 | **Falhou.** O sistema exibe "Erro ao salvar avaliação" e a avaliação permanece pendente. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/52667fb8-0a71-495e-80e8-eebc60f9a93b) |
 
 ---
 
@@ -337,9 +337,9 @@
 | :------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. |
 
-| **Evidência(s)**                      |
-| :------------------------------------ |
-| [Vídeo](coloque o link do video aqui) |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/8040a980-6b52-429a-a093-4bdb5a41fdb3) |
 
 ---
 
