@@ -4730,22 +4730,22 @@
 
 ### 🐞 **Bug 122: Configurações não confirmam o salvamento**
 
-| **ID**  | **Descrição**                                                                                                                                                   |
-| :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-122 | Ao clicar em "Salvar Configurações", o servidor responde sem erro, mas a tela não mostra nenhuma mensagem. O usuário não sabe se as configurações foram salvas. |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                        |
+| :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-122 | Ao clicar em "Salvar Configurações", o servidor responde sem erro, mas a tela não mostra nenhuma mensagem. O usuário não sabe se as configurações foram salvas. Bug cancelado em 19/11/2026: o vídeo do C25-CT04 mostra a mensagem "Configurações salvas" com o botão "OK" depois de salvar (resposta 200), e o teste de 19/11/2026 mostrou o mesmo. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
-|         Baixa         |           Baixa            |   Aberto   |
+|         Baixa         |           Baixa            | Cancelado  |
 
 | **Passo a passo para simular o bug**       |
 | ------------------------------------------ |
 | 1. Acessar o menu "Configurações".         |
 | 2. Clicar no botão "Salvar Configurações". |
 
-|           **Comportamento Esperado**           |  **Comportamento Obtido**   |
-| :--------------------------------------------: | :-------------------------: |
-| O sistema deve exibir uma mensagem de sucesso. | Nenhuma mensagem é exibida. |
+|           **Comportamento Esperado**           |                             **Comportamento Obtido**                             |
+| :--------------------------------------------: | :------------------------------------------------------------------------------: |
+| O sistema deve exibir uma mensagem de sucesso. | A mensagem "Configurações salvas" aparece com o botão "OK" (bug não confirmado). |
 
 | **Ambiente**                       |
 | :--------------------------------- |
@@ -4759,9 +4759,9 @@
 | :------------------------: | :-----------------------------------------------: |
 |   Configurações / Salvar   | C25-CT04: Confirmação ao salvar as configurações. |
 
-|            **Evidência(s)**             |
-| :-------------------------------------: |
-| [BUG:122](coloque o link do video aqui) |
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:122](https://jam.dev/c/b4e7f7c2-a581-48b5-82c4-0f8de57204c5) |
 
 ---
 
