@@ -43,15 +43,17 @@ Verificar manualmente os requisitos funcionais do Sifit: o login, a página inic
 - RF20 Grupos: busca, filtros, indicadores, cadastro, duplicidade, alteração, inativação e exclusão
 - RF21 Modelos de contrato: listagem, cadastro, variáveis do texto e pré-visualização
 - RF22 Box - Turmas: modalidades e turmas recorrentes (cadastro, validações, alteração e exclusão)
+- RF23 Grupos musculares: busca, filtro por tipo de membro, paginação, cadastro, validações, duplicidade, alteração e exclusão
+- RF24 Modelos de ficha: busca pelo criador e pelo código, criação, alteração e exclusão
+- RF25 Configurações: abas, cancelar, salvar, validação de valores e ocultação de senhas e tokens
 - RF29 Local Contas: acesso e listagem, cadastro, salvar vazio e cancelar (a tela só abre pelo link)
 - RF30 Bancos e Banco recorrente: acesso, listagem, salvar vazio, cadastro, duplicidade, alteração e exclusão (as telas só abrem pelo link)
 - RF31 Categorias de conta a pagar: acesso, listagem, salvar vazio, cadastro e duplicidade
 - RF32 Métricas do cliente: acesso e busca das métricas e listas do período (a tela só abre pelo link)
 - RF33 Modelos e categorias de anamnese: categorias e modelos (busca, indicadores, cadastro, duplicidade, perguntas, preview, alteração, inativação e exclusão)
 
-**Incluído, ainda sem caso de teste (próximos cenários, RF23 a RF28):**
+**Incluído, ainda sem caso de teste (próximos cenários, RF26 a RF28):**
 
-- Grupos musculares (RF23), Modelos de ficha (RF24) e Configurações (RF25)
 - Relatórios (RF26), Importar avaliações (RF27) e Inteligência & Automação com Resultados IA (RF28)
 
 **Excluído:**
@@ -67,7 +69,7 @@ Verificar manualmente os requisitos funcionais do Sifit: o login, a página inic
 
 ### 🔧 4. **Ferramentas Utilizadas**
 
-- Google Chrome 150.0.7871.46 e 155, no Ubuntu 26.04 LTS, no Linux e no Windows 11
+- Google Chrome 150.0.7871.46, 155 e 157, no Ubuntu 26.04 LTS, no Linux Mint e no Windows 11
 - Ferramentas de inspeção do navegador (DevTools), para analisar envio das requisições e bugs
 - Jam, para gravar os vídeos de execução
 - Prints, quando o caso não tem vídeo (pasta `Sifit/Evidencias`)
@@ -147,6 +149,9 @@ Em 24/10/2026, os testes passaram para https://sifitalfa.centrion.com.br/. A dat
 | RF20      | Grupos                           | Média      |
 | RF21      | Modelos de contrato              | Média      |
 | RF22      | Box - Turmas                     | Média      |
+| RF23      | Grupos musculares                | Média      |
+| RF24      | Modelos de ficha                 | Média      |
+| RF25      | Configurações                    | Média      |
 | RF29      | Local Contas                     | Média      |
 | RF30      | Bancos e Banco recorrente        | Média      |
 | RF31      | Categorias de conta a pagar      | Baixa      |
@@ -175,19 +180,19 @@ Quando houve diferença de prioridade entre os trabalhos, ficou a maior.
 
 ### 📌 11. **Riscos Identificados**
 
-| Risco                                                                                                                                        | Impacto | Mitigação                                                                                                                                                  |
-| -------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| A versão do sistema não foi registrada                                                                                                       | Médio   | Anotar a versão na próxima execução                                                                                                                        |
-| O erro no servidor no login inválido esconde a mensagem de credencial incorreta                                                              | Alto    | Conferir a resposta no DevTools além do texto da tela                                                                                                      |
-| Os testes de formulário vazio criaram 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12)        | Médio   | Excluir os registros depois de gravar os vídeos dos BUG-029, 030 e 031                                                                                     |
-| A sessão se comporta de um jeito no retorno ao sistema e de outro no `/dashboard`                                                            | Alto    | Repetir os dois caminhos no mesmo vídeo, como no BUG-005                                                                                                   |
-| Ambiente compartilhado: outros usuários alteram ou excluem dados                                                                             | Alto    | Usar registros de teste identificáveis pelo nome e não fixar IDs na documentação                                                                           |
-| Execuções em datas e endereços diferentes deram resultados diferentes (C01-CT01, C01-CT02, C02-CT01, C04-CT04, C04-CT10, C06-CT07, C09-CT03) | Médio   | O resultado de cada execução está descrito no caso e a falha registrada é mantida: se o sistema mudou depois, sem aviso do professor, o caso não é refeito |
-| Os casos executados por automação de navegador não mostram o aviso nativo do navegador ("Preencha este campo.")                              | Médio   | Conferido em vídeo: os BUG-025 e BUG-026 foram cancelados (o navegador mostra "Preencha este campo.")                                                      |
-| 85 casos e 35 bugs ainda sem vídeo                                                                                                           | Alto    | Gravar os vídeos seguindo o `5-Roteiro-de-videos.md` e os casos que ainda estão sem vídeo                                                                  |
-| Ações que enviam mensagens ou cobranças reais (WhatsApp e Pagar.me)                                                                          | Alto    | Manter essas ações fora do escopo                                                                                                                          |
-| Dados pessoais reais na base                                                                                                                 | Alto    | Não publicar prints com nome ou CPF de terceiros (LGPD)                                                                                                    |
-| Testes limitados a um único usuário (perfil administrador)                                                                                   | Médio   | Documentar esse limite no escopo                                                                                                                           |
+| Risco                                                                                                                                        | Impacto | Mitigação                                                                                                                                                                     |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| A versão do sistema não foi registrada                                                                                                       | Médio   | Anotar a versão na próxima execução                                                                                                                                           |
+| O erro no servidor no login inválido esconde a mensagem de credencial incorreta                                                              | Alto    | Conferir a resposta no DevTools além do texto da tela                                                                                                                         |
+| Os testes de formulário vazio criaram 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12)        | Médio   | Excluir os registros depois de gravar os vídeos dos BUG-029, 030 e 031                                                                                                        |
+| A sessão se comporta de um jeito no retorno ao sistema e de outro no `/dashboard`                                                            | Alto    | Repetir os dois caminhos no mesmo vídeo, como no BUG-005                                                                                                                      |
+| Ambiente compartilhado: outros usuários alteram ou excluem dados                                                                             | Alto    | Usar registros de teste identificáveis pelo nome e não fixar IDs na documentação                                                                                              |
+| Execuções em datas e endereços diferentes deram resultados diferentes (C01-CT01, C01-CT02, C02-CT01, C04-CT04, C04-CT10, C06-CT07, C09-CT03) | Médio   | O resultado de cada execução está descrito no caso e a falha registrada é mantida: se o sistema mudou depois, sem aviso do professor, o caso não é refeito                    |
+| Os casos executados por automação de navegador não mostram o aviso nativo do navegador ("Preencha este campo.")                              | Médio   | Conferido em vídeo: os BUG-025 e BUG-026 foram cancelados (o navegador mostra "Preencha este campo.") e o BUG-122 também (o vídeo do C25-CT04 mostra a confirmação ao salvar) |
+| 6 casos com print em vez de vídeo (C05-CT13, C05-CT14, C09-CT05, C09-CT07, C09-CT08 e C14-CT09)                                              | Baixo   | O print foi aceito como evidência; todos os outros casos e todos os bugs abertos têm vídeo                                                                                    |
+| Ações que enviam mensagens ou cobranças reais (WhatsApp e Pagar.me)                                                                          | Alto    | Manter essas ações fora do escopo                                                                                                                                             |
+| Dados pessoais reais na base                                                                                                                 | Alto    | Não publicar prints com nome ou CPF de terceiros (LGPD)                                                                                                                       |
+| Testes limitados a um único usuário (perfil administrador)                                                                                   | Médio   | Documentar esse limite no escopo                                                                                                                                              |
 
 ---
 
@@ -216,8 +221,8 @@ Os códigos dos registros não ficam fixos neste documento, porque o ambiente é
 
 Estes casos foram especificados inicialmente em 07/10/2026 e executados em 19/11/2026 com evidência em vídeo, sendo incorporados aos respectivos cenários.
 
-| Caso proposto                                          | Requisito | Situação                          |
-| :----------------------------------------------------- | :-------- | :-------------------------------- |
+| Caso proposto                                          | Requisito | Situação                           |
+| :----------------------------------------------------- | :-------- | :--------------------------------- |
 | Prevenção de duplo clique no botão Entrar              | RF01      | Executado em 19/11/2026 (C01-CT10) |
 | Data de término anterior à data de início na matrícula | RF06      | Executado em 19/11/2026 (C06-CT15) |
 
@@ -227,8 +232,7 @@ Estes casos foram especificados inicialmente em 07/10/2026 e executados em 19/11
 
 - Plano de Testes
 - Análise de requisitos
-- Casos de teste (C01 a C22, C30 e C31); os casos sem vídeo estão marcados com `[Vídeo](coloque o link do video aqui)`. Os cenários com algum caso sem vídeo ficam em `Cenarios de testes/Pendentes de evidencias`
-- Roteiro dos vídeos a gravar (`5-Roteiro-de-videos.md`)
-- Relatório de bugs com vídeos
+- Casos de teste (C01 a C25 e C29 a C33), todos com evidência: vídeo no Jam ou print em `Sifit/Evidencias`. A pasta `Cenarios de testes/Pendentes de evidencias` ficou vazia
+- Relatório de bugs com vídeo (o BUG-062 tem print)
 - Relatório final de execução
 - Prints de evidência (`Sifit/Evidencias`)
