@@ -774,17 +774,17 @@
 | ---------------------------------- |
 | Sifit Unialfa                      |
 | https://sifitalfa.centrion.com.br/ |
-| Desktop Ubuntu 26.04 LTS           |
-| Google Chrome 150.0.7871.46        |
-| 28/10/2026                         |
+| Desktop Windows 11                 |
+| Google Chrome 157.0.8103.79        |
+| 19/11/2026                         |
 
 | **Funcionalidade Afetada**  |          **Caso de Teste Relacionado**           |
 | :-------------------------: | :----------------------------------------------: |
 | Contas a Pagar / Nova conta | C13-CT05: Criar conta a pagar com campos vazios. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:20](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:20](https://jam.dev/c/3aa4b50a-1d75-4883-87c3-fa35085f3792) |
 
 ---
 
@@ -2568,18 +2568,21 @@
 | :--------------------------------------------------------------------: | :--------------------------------------------------------------------------: |
 | O sistema deve salvar a avaliação e alterar o status para "REALIZADO". | O sistema exibe "Erro ao salvar avaliação" e a avaliação permanece pendente. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome 157.0.8103.79        |
+| 19/11/2026                         |
 
 |  **Funcionalidade Afetada**  |       **Caso de Teste Relacionado**        |
 | :--------------------------: | :----------------------------------------: |
 | Avaliações / Fazer avaliação | C10-CT10: Registro da avaliação realizada. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:66](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:66](https://jam.dev/c/52667fb8-0a71-495e-80e8-eebc60f9a93b) |
 
 ---
 
@@ -2605,18 +2608,21 @@
 | :---------------------------------------------------------------: | :-----------------------------------------------------------: |
 | O sistema deve salvar a nova data e hora e confirmar a alteração. | Nada acontece e a avaliação mantém a data e a hora originais. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome 157.0.8103.79        |
+| 19/11/2026                         |
 
 |      **Funcionalidade Afetada**       |          **Caso de Teste Relacionado**           |
 | :-----------------------------------: | :----------------------------------------------: |
 | Avaliações / Alteração de data e hora | C10-CT08: Alteração da data e hora da avaliação. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:67](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:67](https://jam.dev/c/768c03f2-5e8a-4a71-a96b-8f45bbff1475) |
 
 ---
 
@@ -2681,18 +2687,21 @@
 | :----------------------------------: | :----------------------------------------: |
 | O IMC deve ser exibido como "26,12". | O IMC é exibido como "26.122448979591837". |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome 157.0.8103.79        |
+| 19/11/2026                         |
 
 |  **Funcionalidade Afetada**  | **Caso de Teste Relacionado** |
 | :--------------------------: | :---------------------------: |
 | Avaliações / Fazer avaliação |   C10-CT09: Cálculo do IMC.   |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:69](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:69](https://jam.dev/c/1bd88aa4-9f42-4c87-9b9d-44123b1dd71c) |
 
 ---
 
@@ -2953,18 +2962,21 @@
 | :---------------------------------------------------------------------------: | :----------------------------------------------: |
 | O sistema deve permitir registrar o pagamento e alterar o status para "PAGO". | Não há nenhuma opção para registrar o pagamento. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome 157.0.8103.79        |
+| 19/11/2026                         |
 
 | **Funcionalidade Afetada** |       **Caso de Teste Relacionado**       |
 | :------------------------: | :---------------------------------------: |
 | Contas a Pagar / Pagamento | C13-CT08: Registro do pagamento da conta. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:76](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:76](https://jam.dev/c/307cd0ff-21e5-44b5-b7a2-ded60fc96c95) |
 
 ---
 
@@ -2988,18 +3000,21 @@
 | :------------------------------------------------------------------: | :----------------------: |
 | Os indicadores devem exibir a soma dos valores das contas pendentes. | Os indicadores exibem 0. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome 157.0.8103.79        |
+| 19/11/2026                         |
 
 |  **Funcionalidade Afetada**  |       **Caso de Teste Relacionado**       |
 | :--------------------------: | :---------------------------------------: |
 | Contas a Pagar / Indicadores | C13-CT04: Indicadores de valores a pagar. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:77](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:77](https://jam.dev/c/05f04394-5a5c-4b3f-9237-b4788177bbb8) |
 
 ---
 
@@ -3024,18 +3039,21 @@
 | :----------------------------------------------------------: | :---------------------------------------------------------: |
 | O sistema deve excluir a conta e exibir mensagem de sucesso. | A conta é excluída, mas o sistema exibe "Erro no servidor". |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome 157.0.8103.79        |
+| 19/11/2026                         |
 
 | **Funcionalidade Afetada** |    **Caso de Teste Relacionado**     |
 | :------------------------: | :----------------------------------: |
 | Contas a Pagar / Exclusão  | C13-CT09: Exclusão de conta a pagar. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:78](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:78](https://jam.dev/c/fa02b6ec-c0bb-4277-b099-39bacd354146) |
 
 ---
 
@@ -3059,18 +3077,21 @@
 | :------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------: |
 | A visualização deve exibir o código da conta, a categoria e o tipo pelo nome e as datas no formato dd/mm/aaaa. | São exibidos códigos internos, campo de código vazio e data no formato aaaa-mm-dd. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome 157.0.8103.79        |
+| 19/11/2026                         |
 
 |  **Funcionalidade Afetada**   |      **Caso de Teste Relacionado**       |
 | :---------------------------: | :--------------------------------------: |
 | Contas a Pagar / Visualização | C13-CT07: Visualização da conta a pagar. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:79](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:79](https://jam.dev/c/18c81a52-163d-4d2d-a634-8210c2d4b779) |
 
 ---
 
@@ -3084,30 +3105,33 @@
 | :-------------------: | :------------------------: | :--------: |
 |         Média         |           Média            |   Aberto   |
 
-| **Passo a passo para simular o bug**                                |
-| ------------------------------------------------------------------- |
-| 1. Acessar a tela de despesas fixas do SIFIT.                       |
-| 2. Clicar em "Nova Despesa".                                        |
-| 3. Informar o nome "Despesa Teste Ville Negativa" e o valor "-100". |
-| 4. Clicar no botão "Salvar Despesa".                                |
-| 5. Verificar a despesa na listagem.                                 |
+| **Passo a passo para simular o bug**                                 |
+| -------------------------------------------------------------------- |
+| 1. Acessar a tela de despesas fixas do SIFIT.                        |
+| 2. Clicar em "Nova Despesa".                                         |
+| 3. Informar o nome "Despesa Teste Daniel Negativa" e o valor "-100". |
+| 4. Clicar no botão "Salvar Despesa".                                 |
+| 5. Verificar a despesa na listagem.                                  |
 
 |                     **Comportamento Esperado**                     |          **Comportamento Obtido**          |
 | :----------------------------------------------------------------: | :----------------------------------------: |
 | O sistema deve aceitar somente valores numéricos maiores que zero. | A despesa é cadastrada com valor negativo. |
 
-| **Ambiente**                     |
-| -------------------------------- |
-| Endereço e data não registrados. |
-| Google Chrome                    |
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome 157.0.8103.79        |
+| 19/11/2026                         |
 
 | **Funcionalidade Afetada** |             **Caso de Teste Relacionado**              |
 | :------------------------: | :----------------------------------------------------: |
 | Despesas Fixas / Cadastro  | C13-CT13: Cadastro de despesa fixa com valor negativo. |
 
-|            **Evidência(s)**            |
-| :------------------------------------: |
-| [BUG:80](coloque o link do video aqui) |
+|                         **Evidência(s)**                         |
+| :--------------------------------------------------------------: |
+| [BUG:80](https://jam.dev/c/82ffa05e-3837-48eb-acb6-ad7aeae64eb3) |
 
 ---
 
@@ -5675,3 +5699,157 @@
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:148](https://jam.dev/c/25449cc3-2e0f-4c99-a48d-bfe50ccf32df) |
+
+---
+
+### 🐞 **Bug 149: Despesa fixa não salva quando o valor é informado com vírgula (aceita apenas ponto)**
+
+| **ID**  | **Descrição**                                                                                                                                                                     |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-149 | Na alteração de despesa fixa, ao informar o valor usando vírgula como separador decimal (ex.: "89,90"), o sistema não salva a despesa; o salvamento só ocorre usando ponto ("89.90"). |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                 |
+| -------------------------------------------------------------------- |
+| 1. Acessar a tela de despesas fixas do SIFIT.                        |
+| 2. Clicar em "Visualizar" de uma despesa fixa cadastrada.            |
+| 3. Informar o valor usando vírgula (ex.: "89,90").                   |
+| 4. Clicar no botão "Salvar Despesa" e observar que a edição não salva. |
+| 5. Repetir informando "89.90" com ponto e observar que salva.        |
+
+|                                 **Comportamento Esperado**                                  |                            **Comportamento Obtido**                            |
+| :-----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------: |
+| O campo de valor deve aceitar o separador decimal com vírgula (padrão brasileiro) e salvar. | Com vírgula ("89,90") a alteração não é salva; só salva ao usar ponto ("89.90"). |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome 157.0.8103.79        |
+| 19/11/2026                         |
+
+| **Funcionalidade Afetada** |            **Caso de Teste Relacionado**             |
+| :------------------------: | :--------------------------------------------------: |
+| Despesas Fixas / Alteração | C13-CT15: Alteração e inativação de despesa fixa.    |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:149](https://jam.dev/c/5492ac23-096f-4467-a084-22346fd4446d) |
+
+---
+
+### 🐞 **Bug 150: Visualização de conta a pagar com legibilidade ruim no modo escuro**
+
+| **ID**  | **Descrição**                                                                                                                                             |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-150 | Ao abrir a janela "Visualizar Conta a Pagar" com o tema escuro ativado, a visualização apresenta contraste/legibilidade ruim (no modo claro é exibida normalmente). |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Baixa         |           Baixa            |   Aberto   |
+
+| **Passo a passo para simular o bug**                        |
+| ----------------------------------------------------------- |
+| 1. Acessar o Sifit Unialfa com o modo escuro ativado.       |
+| 2. Abrir a tela de Contas a Pagar (`/contas-pagar`).        |
+| 3. Clicar no botão "Visualizar" de uma conta cadastrada.    |
+| 4. Comparar a legibilidade com o modo claro.                |
+
+|                            **Comportamento Esperado**                            |                     **Comportamento Obtido**                      |
+| :------------------------------------------------------------------------------: | :---------------------------------------------------------------: |
+| Os dados da conta devem permanecer legíveis tanto no modo claro quanto no escuro. | No modo claro a leitura é boa, mas no modo escuro fica ruim.      |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome 157.0.8103.79        |
+| 19/11/2026                         |
+
+|  **Funcionalidade Afetada**   |      **Caso de Teste Relacionado**       |
+| :---------------------------: | :--------------------------------------: |
+| Contas a Pagar / Visualização | C13-CT07: Visualização da conta a pagar. |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:150](https://jam.dev/c/18c81a52-163d-4d2d-a634-8210c2d4b779) |
+
+---
+
+### 🐞 **Bug 151: Menu lateral perde a posição de rolagem e volta ao topo a cada atualização**
+
+| **ID**  | **Descrição**                                                                                                                                |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-151 | Ao rolar o menu lateral para selecionar uma opção mais abaixo e navegar ou atualizar a página, o menu volta sempre para o topo da rolagem.   |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Baixa         |           Baixa            |   Aberto   |
+
+| **Passo a passo para simular o bug**                           |
+| -------------------------------------------------------------- |
+| 1. Acessar o Sifit Unialfa.                                    |
+| 2. Rolar o menu lateral até os itens inferiores (ex.: Contas a Pagar). |
+| 3. Selecionar um item ou atualizar a página.                   |
+
+|                       **Comportamento Esperado**                       |                   **Comportamento Obtido**                   |
+| :--------------------------------------------------------------------: | :----------------------------------------------------------: |
+| O menu lateral deve manter a posição/item selecionado visível na tela. | A barra de rolagem do menu sobe sempre de volta para o topo. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome 157.0.8103.79        |
+| 19/11/2026                         |
+
+| **Funcionalidade Afetada** |       **Caso de Teste Relacionado**       |
+| :------------------------: | :---------------------------------------: |
+|  Navegação / Menu lateral  | C13-CT08: Registro do pagamento da conta. |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:151](https://jam.dev/c/307cd0ff-21e5-44b5-b7a2-ded60fc96c95) |
+
+---
+
+### 🐞 **Bug 152: Ausência de paginação na listagem de Despesas Fixas**
+
+| **ID**  | **Descrição**                                                                                                             |
+| ------- | ------------------------------------------------------------------------------------------------------------------------- |
+| BUG-152 | A tela de Despesas Fixas exibe a listagem sem controles de paginação (problema também percebido em outras telas do sistema). |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Baixa         |           Baixa            |   Aberto   |
+
+| **Passo a passo para simular o bug**                 |
+| ---------------------------------------------------- |
+| 1. Acessar o menu "Despesas Fixas" do Sifit Unialfa. |
+| 2. Observar o rodapé da listagem de despesas.        |
+
+|                     **Comportamento Esperado**                     |               **Comportamento Obtido**               |
+| :----------------------------------------------------------------: | :--------------------------------------------------: |
+| A listagem deve oferecer controles de paginação para navegar entre registros. | A listagem não possui controles de paginação. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Windows 11                 |
+| Google Chrome 157.0.8103.79        |
+| 19/11/2026                         |
+
+|  **Funcionalidade Afetada**   |        **Caso de Teste Relacionado**         |
+| :---------------------------: | :------------------------------------------: |
+| Despesas Fixas / Listagem     | C13-CT10: Acesso à tela de despesas fixas.   |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:152](https://jam.dev/c/1556f6f8-af7a-421f-8f56-264d36298ec9) |

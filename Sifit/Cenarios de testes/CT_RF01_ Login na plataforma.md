@@ -280,3 +280,35 @@
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |
 | [Vídeo](https://jam.dev/c/06bd8930-85a1-4de6-8889-eb73d57b799d) |
+
+---
+
+### Caso de Teste 10: Prevenção de duplo clique no botão Entrar.
+
+| ID       | Descrição                                                                                                      |
+| :------- | :------------------------------------------------------------------------------------------------------------- |
+| C01-CT10 | Verificar se cliques rápidos repetidos no botão "Entrar" são tratados sem erro nem efeito colateral indevido.  |
+
+| **Pré-condições**                                                                                                 |
+| :---------------------------------------------------------------------------------------------------------------- |
+| O navegador está na tela de login do Sifit Unialfa (https://sifitalfa.centrion.com.br/), sem sessão autenticada.  |
+
+| **Passos**                                                                                                                         |
+| :--------------------------------------------------------------------------------------------------------------------------------- |
+| **DADO** que estamos na página de login do Sifit Unialfa                                                                           |
+| **E** preenchemos o campo Login com "marcelo_zandonadi" e a senha válida ("password") — e em outra tentativa senha inválida ("87654321") |
+| **QUANDO** clicarmos rapidamente várias vezes seguidas (duplo clique / 5 cliques) no botão "Entrar"                                |
+| **ENTÃO** o sistema deverá processar o login normalmente (com credenciais válidas) ou exibir o aviso esperado (com senha inválida), sem erro ou comportamento anômalo |
+
+| **Critérios de aceitação**                                                                                               |
+| :----------------------------------------------------------------------------------------------------------------------- |
+| Múltiplos cliques rápidos em "Entrar" não devem gerar erro inesperado nem quebrar o fluxo de autenticação ou validação.  |
+
+| **Resultado da execução**                                                                                                                                                                                                    |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Passou.** Em 19/11/2026 (Desktop Windows 11, Google Chrome 157.0.8103.79), com credenciais válidas e 5 cliques rápidos no botão "Entrar", nada mudou de forma anômala e o fluxo seguiu normalmente; com senha inválida ("87654321") e múltiplos cliques, exibiu apenas o erro esperado de usuário/senha inválidos. |
+
+| **Evidência(s)**                                                                      |
+| :------------------------------------------------------------------------------------ |
+| [Vídeo (credenciais válidas)](https://jam.dev/c/777c8d1b-921f-4a3c-a0d3-ea01c777fc90) |
+| [Vídeo (senha inválida)](https://jam.dev/c/14840f5f-a5a9-41d2-b8cb-8dd664c3f6b5)      |
