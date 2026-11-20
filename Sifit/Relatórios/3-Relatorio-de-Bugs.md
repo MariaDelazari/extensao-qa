@@ -5877,3 +5877,650 @@
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
 | [BUG:152](https://jam.dev/c/1556f6f8-af7a-421f-8f56-264d36298ec9) |
+
+---
+
+### 🐞 **Bug 153: Relatórios de Avaliações, Clientes, Colaboradores e Caixas (Normal) retornam resposta vazia e baixam PDF corrompido (0 bytes)**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                 |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-153 | Ao gerar os relatórios de Avaliações, Clientes, Colaboradores ou Caixas (formato Normal), o endpoint `POST /api/relatorio/1` retorna HTTP 200 com `Content-Type: text/html; charset=UTF-8` e corpo vazio (0 bytes). O front-end não valida o conteúdo e baixa um arquivo `relatorio.pdf` de 0 bytes (corrompido) sem exibir aviso ao usuário. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|        Crítica        |            Alta            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                                  |
+| ----------------------------------------------------------------------------------------------------- |
+| 1. Acessar o Sifit Unialfa e abrir `FINANCEIRO > Relatórios` (`/relatorios`).                         |
+| 2. Selecionar `Avaliacoes`, `Clientes`, `Colaboradores` ou `Caixas` (`Formato = Normal`).             |
+| 3. Manter um período válido (ex.: `01/11/2026` a `19/11/2026`).                                       |
+| 4. Clicar em `Gerar Relatorio` e observar o arquivo `relatorio.pdf` baixado e a resposta no DevTools. |
+
+|                                 **Comportamento Esperado**                                 |                                        **Comportamento Obtido**                                        |
+| :----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
+| O sistema deve retornar `application/pdf` válido ou exibir mensagem clara de erro na tela. | A API retorna HTTP 200 com `text/html` vazio (0 bytes) e o navegador baixa `relatorio.pdf` corrompido. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Linux Mint 22.3            |
+| Google Chrome 157.0.8103.38        |
+| 19/11/2026                         |
+
+| **Funcionalidade Afetada** |                               **Caso de Teste Relacionado**                                |
+| :------------------------: | :----------------------------------------------------------------------------------------: |
+|    Relatórios / Geração    | C26-CT04: Geração dos relatórios de Avaliações, Clientes, Colaboradores e Caixas (Normal). |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:153](https://jam.dev/c/58b2c1b6-5cb4-4930-9e72-7c13da351136) |
+
+---
+
+### 🐞 **Bug 154: Filtro "Tipo de Plano" no relatório de Matrículas não é enviado na requisição**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                           |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-154 | Ao selecionar o relatório `Matriculas` e escolher um valor em `Tipo de Plano` (ex.: `Mensal`), o card `Filtros ativos` aumenta para `3`, mas o campo não é incluído no payload JSON enviado em `POST /api/relatorio/1`, ignorando o filtro selecionado. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Alta          |            Alta            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                      |
+| ----------------------------------------------------------------------------------------- |
+| 1. Acessar `FINANCEIRO > Relatórios` (`/relatorios`).                                     |
+| 2. Selecionar o tipo `Matriculas`.                                                        |
+| 3. Selecionar `Mensal` no campo `Tipo de Plano` (observar `Filtros ativos` subir para 3). |
+| 4. Clicar em `Gerar Relatorio` e inspecionar o payload de `POST /api/relatorio/1`.        |
+
+|                                 **Comportamento Esperado**                                  |                                **Comportamento Obtido**                                |
+| :-----------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: |
+| O valor de `Tipo de Plano` deve ser enviado no payload e filtrar o relatório de matrículas. | O payload omite completamente o campo `Tipo de Plano`, gerando o relatório sem filtro. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Linux Mint 22.3            |
+| Google Chrome 157.0.8103.38        |
+| 19/11/2026                         |
+
+| **Funcionalidade Afetada** |                      **Caso de Teste Relacionado**                       |
+| :------------------------: | :----------------------------------------------------------------------: |
+|  Relatórios / Matrículas   | C26-CT05: Geração do relatório de Matrículas com filtro "Tipo de Plano". |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:154](https://jam.dev/c/a8f72746-bcb3-4c64-a6c7-ab3b44d7d969) |
+
+---
+
+### 🐞 **Bug 155: Erro HTTP 500 ao gerar relatório com datas vazias apesar do indicador "Periodo: Todos"**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                      |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-155 | Ao limpar os campos `Data Inicio` e `Data Fim` na tela de Relatórios, o card do topo muda para `Periodo: Todos` (indicando que datas vazias seriam aceitas), mas clicar em `Gerar Relatorio` retorna HTTP 500 (`"Erro interno inesperado."`) e exibe o modal `"Erro no servidor"`. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Alta          |            Alta            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                |
+| ----------------------------------------------------------------------------------- |
+| 1. Acessar `FINANCEIRO > Relatórios` (`/relatorios`) e selecionar `Contas a Pagar`. |
+| 2. Limpar os campos `Data Inicio` e `Data Fim` (card `Periodo` muda para `Todos`).  |
+| 3. Clicar em `Gerar Relatorio`.                                                     |
+
+|                                       **Comportamento Esperado**                                        |                           **Comportamento Obtido**                           |
+| :-----------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------: |
+| Gerar o relatório de todo o período (conforme `Periodo: Todos`) ou exigir as datas com validação clara. | A API retorna HTTP 500 e a tela exibe o modal genérico `"Erro no servidor"`. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Linux Mint 22.3            |
+| Google Chrome 157.0.8103.38        |
+| 19/11/2026                         |
+
+| **Funcionalidade Afetada** |          **Caso de Teste Relacionado**           |
+| :------------------------: | :----------------------------------------------: |
+|   Relatórios / Validação   | C26-CT06: Geração de relatório com datas vazias. |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:155](https://jam.dev/c/89535d14-ee34-4aab-b815-362eecce2494) |
+
+---
+
+### 🐞 **Bug 156: Tela de Relatórios não valida intervalo invertido (Data Início maior que Data Fim)**
+
+| **ID**  | **Descrição**                                                                                                                                                                       |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-156 | A tela de Relatórios permite informar uma `Data Inicio` posterior à `Data Fim` (ex.: `21/11/2026` a `20/11/2026`) e gera/baixa o PDF sem exibir qualquer aviso de período inválido. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                |
+| ----------------------------------------------------------------------------------- |
+| 1. Acessar `FINANCEIRO > Relatórios` (`/relatorios`) e selecionar `Contas a Pagar`. |
+| 2. Informar `Data Inicio = 21/11/2026` e `Data Fim = 20/11/2026`.                   |
+| 3. Clicar em `Gerar Relatorio`.                                                     |
+
+|                                   **Comportamento Esperado**                                    |                             **Comportamento Obtido**                              |
+| :---------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: |
+| O sistema deve bloquear a geração e informar que a data inicial não pode ser maior que a final. | Envia o intervalo invertido (`HTTP 200`) e baixa o PDF silenciosamente sem aviso. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Linux Mint 22.3            |
+| Google Chrome 157.0.8103.38        |
+| 19/11/2026                         |
+
+| **Funcionalidade Afetada** |                             **Caso de Teste Relacionado**                              |
+| :------------------------: | :------------------------------------------------------------------------------------: |
+|   Relatórios / Validação   | C26-CT07: Geração de relatório com período invertido (Data Início maior que Data Fim). |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:156](https://jam.dev/c/ac40efe0-ff86-4ec1-9022-773abce167b0) |
+
+---
+
+### 🐞 **Bug 157: Textos sem acentuação na tela de Relatórios e opções em branco em "Tipo de Pagamento"**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                     |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-157 | A tela `/relatorios` apresenta ausência generalizada de acentuação (`Relatorios`, `Periodo`, `Saida`, `Gerar Relatorio`, `Tipo de Relatorio`, `Data Inicio`, `Avaliacoes`, `Matriculas`, `Modelos disponiveis`, `situacao`, `Historico`, `fisicas`), além de opções em branco no seletor `Tipo de Pagamento` em Contas a Receber. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Baixa         |           Baixa            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                  |
+| ------------------------------------------------------------------------------------- |
+| 1. Acessar `FINANCEIRO > Relatórios` (`/relatorios`).                                 |
+| 2. Observar o título, cards do topo, formulário e lista de modelos na coluna direita. |
+| 3. Selecionar `Contas a Receber` e abrir o seletor `Tipo de Pagamento`.               |
+
+|                                 **Comportamento Esperado**                                 |                                 **Comportamento Obtido**                                  |
+| :----------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
+| Todos os rótulos devem estar corretamente acentuados e sem opções em branco nos seletores. | Vários textos aparecem sem acento e o seletor `Tipo de Pagamento` lista opções em branco. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Linux Mint 22.3            |
+| Google Chrome 157.0.8103.38        |
+| 19/11/2026                         |
+
+| **Funcionalidade Afetada** |                **Caso de Teste Relacionado**                 |
+| :------------------------: | :----------------------------------------------------------: |
+|   Relatórios / Interface   | C26-CT01: Acesso à tela de Relatórios e textos da interface. |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:157](https://jam.dev/c/ce450478-9a53-4d39-bedb-b7e7af98f9fe) |
+
+---
+
+### 🐞 **Bug 158: Tela "Importar Avaliações" não oferece planilha modelo nem lista as colunas obrigatórias**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                              |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-158 | A tela `/importar-avaliacoes` exige que a primeira linha da planilha `.csv`/`.tsv`/`.txt` contenha o cabeçalho com o nome exato das colunas exportadas do Fineshape, mas não oferece download de planilha modelo nem documenta quais colunas são obrigatórias; ao enviar uma planilha aleatória fora do padrão, o sistema ainda avança para `2 Conferência`. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                               |
+| -------------------------------------------------------------------------------------------------- |
+| 1. Acessar `/avaliacoes` e clicar no botão `Importar`.                                             |
+| 2. Ler as instruções da etapa `1 Planilha` em `/importar-avaliacoes` procurando modelo/colunas.    |
+| 3. Enviar uma planilha aleatória fora do formato do Fineshape e observar que avança à conferência. |
+
+|                                 **Comportamento Esperado**                                  |                                        **Comportamento Obtido**                                         |
+| :-----------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: |
+| Disponibilizar arquivo modelo ou listar colunas obrigatórias e validar cabeçalho ao enviar. | Não há modelo nem lista de colunas, e uma planilha aleatória fora do padrão avança para `2 Conferência`. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Linux Mint 22.3            |
+| Google Chrome 157.0.8103.38        |
+| 19/11/2026                         |
+
+|      **Funcionalidade Afetada**       |                                       **Caso de Teste Relacionado**                                       |
+| :-----------------------------------: | :-------------------------------------------------------------------------------------------------------: |
+| Avaliações / Importação de avaliações | C27-CT02: Instruções de importação, ausência de planilha modelo e envio de planilha fora do padrão Fineshape. |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:158](https://jam.dev/c/f215de82-2c59-4db8-aa7a-d915cd04a84f) |
+
+---
+
+### 🐞 **Bug 159: Breadcrumb incompleto e ausência de botão "Voltar" em "Importar Avaliações"**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                      |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-159 | Ao acessar `/importar-avaliacoes` pelo botão `Importar` em `/avaliacoes`, o breadcrumb exibe `Início > Importar Avaliações` (omitindo `Avaliações`), a página não possui botão `"Voltar"` e o menu lateral perde o destaque ativo em `Avaliações`. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Baixa         |           Baixa            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                   |
+| -------------------------------------------------------------------------------------- |
+| 1. Acessar o menu `Avaliações` (`/avaliacoes`).                                        |
+| 2. Clicar no botão `Importar`.                                                         |
+| 3. Observar o breadcrumb, o menu lateral e procurar um botão para retornar à listagem. |
+
+|                                 **Comportamento Esperado**                                 |                                  **Comportamento Obtido**                                   |
+| :----------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
+| Breadcrumb `Início > Avaliações > Importar Avaliações`, destaque no menu e botão `Voltar`. | Breadcrumb omite `Avaliações`, menu perde destaque ativo e não há botão `Voltar` na página. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Linux Mint 22.3            |
+| Google Chrome 157.0.8103.38        |
+| 19/11/2026                         |
+
+|      **Funcionalidade Afetada**      |                            **Caso de Teste Relacionado**                            |
+| :----------------------------------: | :---------------------------------------------------------------------------------: |
+| Avaliações / Navegação da importação | C27-CT01: Acesso, navegação e legibilidade da tela Importar Avaliações.             |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:159](https://jam.dev/c/3662c290-3c8e-470a-84f5-8a0e1c4b1658) |
+
+---
+
+### 🐞 **Bug 160: Inconsistência nos contadores de alunos em risco e período em "Resultados IA"**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-160 | Em `/inteligencia/resultados`, o card `Alunos em risco identificados` permanece em `0` nos 4 períodos (`Hoje`, `Últimos 7 dias`, `Últimos 30 dias` e `Últimos 90 dias`), contradizendo o bloco lateral `Inteligência Sifit` (`1 aluno(s) com risco de evasão`) e `Automações mais eficientes` (`48 identificados` em 30 dias e `56 identificados` em 90 dias). Além disso, `Avaliações vencendo` (`1`) e `Alunos inadimplentes monitorados` (`46`) não mudam com o período e a lista `O que o Sifit identificou` trunca em 15 itens mesmo em 90 dias (23 execuções), sem paginação. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Alta          |            Alta            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                                 |
+| ---------------------------------------------------------------------------------------------------- |
+| 1. Acessar `INTELIGÊNCIA > Resultados IA` (`/inteligencia/resultados`).                              |
+| 2. Alternar entre `Hoje`, `Últimos 7 dias`, `Últimos 30 dias` e `Últimos 90 dias`.                   |
+| 3. Comparar `Alunos em risco identificados` com `Automações mais eficientes` e `Inteligência Sifit`. |
+
+|                                   **Comportamento Esperado**                                   |                                         **Comportamento Obtido**                                         |
+| :--------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
+| Os indicadores devem apresentar números coerentes entre cards, tabela de eficiência e alertas. | Card mostra `0` em todos os períodos, enquanto lateral mostra `1` e tabela soma `48`/`56` identificados. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Linux Mint 22.3            |
+| Google Chrome 157.0.8103.38        |
+| 19/11/2026                         |
+
+|  **Funcionalidade Afetada**  |                       **Caso de Teste Relacionado**                        |
+| :--------------------------: | :------------------------------------------------------------------------: |
+| Inteligência / Resultados IA | C28-CT02: Filtros de período e coerência dos indicadores em Resultados IA. |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:160](https://jam.dev/c/8dd4474b-2e63-4f84-a535-6009d8bdb621) |
+
+---
+
+### 🐞 **Bug 161: "Ver resultados" de Risco de Evasão indica 1 aluno em médio risco, mas exibe lista vazia**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                             |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-161 | Ao clicar em `Ver resultados` no card `Risco de Evasão` em `/inteligencia-automacao`, o cabeçalho informa `"1 aluno(s) analisado(s)"` e o card exibe `"1 Médio risco"`, mas a API `GET /api/automacoes/risco-evasao/resultados/1` retorna `alunos: []`, fazendo as abas exibirem `Todos 0` e `Médio 0` com `"Nenhum aluno neste nível."`. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Alta          |            Alta            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                               |
+| ---------------------------------------------------------------------------------- |
+| 1. Acessar `INTELIGÊNCIA > Inteligência & Automação` (`/inteligencia-automacao`).  |
+| 2. No card `Risco de Evasão`, clicar em `Ver resultados`.                          |
+| 3. Comparar o card `1 Médio risco` com as abas `Todos 0` / `Médio 0` e a listagem. |
+
+|                           **Comportamento Esperado**                            |                              **Comportamento Obtido**                              |
+| :-----------------------------------------------------------------------------: | :--------------------------------------------------------------------------------: |
+| A tabela e as abas devem listar o aluno contabilizado em médio risco no resumo. | O resumo mostra `1 Médio risco`, mas as abas ficam em `0` e a lista retorna vazia. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Linux Mint 22.3            |
+| Google Chrome 157.0.8103.38        |
+| 19/11/2026                         |
+
+|   **Funcionalidade Afetada**   |                 **Caso de Teste Relacionado**                  |
+| :----------------------------: | :------------------------------------------------------------: |
+| Inteligência / Risco de Evasão | C28-CT05: Visualização de "Ver resultados" em Risco de Evasão. |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:161](https://jam.dev/c/d38f763f-92b3-4717-b946-41036f08fa48) |
+
+---
+
+### 🐞 **Bug 162: Modal "Configurar" de Aniversariantes exibe campos e prévia de Risco de Evasão e omite destinatário "Aluno"**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| BUG-162 | Ao clicar em `Configurar` no card `Aniversariantes` em `/inteligencia-automacao`, o modal exibe os campos de `Risco de Evasão` (`Critérios analisados` com Ausência, Inadimplência, Baixa frequência, Treino abandonado e Queda de check-ins; `Sensibilidade`; e `PREVIEW DO RELATÓRIO` com `"43 alunos em risco"`). Além disso, omite o checkbox de destinatário `Aluno` (mesmo constando `["aluno","dono"]` na API) e traz intervalo personalizado de `32 dias`. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Alta          |            Alta            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                                     |
+| -------------------------------------------------------------------------------------------------------- |
+| 1. Acessar `INTELIGÊNCIA > Inteligência & Automação` (`/inteligencia-automacao`).                        |
+| 2. No card `Aniversariantes`, clicar em `Configurar`.                                                    |
+| 3. Observar as seções `Destinatários`, `Critérios analisados`, `Sensibilidade` e `PREVIEW DO RELATÓRIO`. |
+
+|                                  **Comportamento Esperado**                                   |                                         **Comportamento Obtido**                                          |
+| :-------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------: |
+| O modal deve exibir configurações, destinatário `Aluno` e prévia próprios de Aniversariantes. | Reutiliza formulário e prévia de `Risco de Evasão` (`"43 alunos em risco"`) e omite destinatário `Aluno`. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Linux Mint 22.3            |
+| Google Chrome 157.0.8103.38        |
+| 19/11/2026                         |
+
+|        **Funcionalidade Afetada**         |                      **Caso de Teste Relacionado**                      |
+| :---------------------------------------: | :---------------------------------------------------------------------: |
+| Inteligência / Configurar Aniversariantes | C28-CT06: Abertura e inspeção do modal "Configurar" em Aniversariantes. |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:162](https://jam.dev/c/ec8ef843-f515-4b9c-b892-ff446f0a5584) |
+
+---
+
+### 🐞 **Bug 163: Execuções duplicadas no mesmo minuto em "Atividade recente" inflam métricas de automações**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                      |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| BUG-163 | A coluna `Atividade recente` em `/inteligencia-automacao` registra múltiplas execuções idênticas de `Risco de evasão` no mesmo minuto (4x em `31/10/2026 às 19:09`, 2x em `22/10/2026 às 16:20` e 2x em `08/10/2026 às 17:40`), sem bloqueio contra duplo disparo, inflando os totais de execuções, relatórios enviados e alunos identificados em `Resultados IA`. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                |
+| ----------------------------------------------------------------------------------- |
+| 1. Acessar `INTELIGÊNCIA > Inteligência & Automação` (`/inteligencia-automacao`).   |
+| 2. Observar os horários na coluna `Atividade recente` (ex.: `31/10/2026 às 19:09`). |
+| 3. Conferir o reflexo nos totais de `Resultados IA` (30 e 90 dias).                 |
+
+|                                  **Comportamento Esperado**                                  |                                  **Comportamento Obtido**                                   |
+| :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
+| Impedir disparos duplicados no mesmo minuto e não inflar contadores com execuções repetidas. | Registra até 4 execuções idênticas no mesmo minuto, inflando os números de `Resultados IA`. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Linux Mint 22.3            |
+| Google Chrome 157.0.8103.38        |
+| 19/11/2026                         |
+
+|    **Funcionalidade Afetada**    |                                 **Caso de Teste Relacionado**                                 |
+| :------------------------------: | :-------------------------------------------------------------------------------------------: |
+| Inteligência / Atividade recente | C28-CT03: Acesso à tela Inteligência & Automação, botão Atualizar e coluna Atividade recente. |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:163](https://jam.dev/c/4b0cf5cf-f808-40ca-b1e7-b695ee71c24a) |
+
+---
+
+### 🐞 **Bug 164: Coluna "Atividade recente" em Inteligência & Automação não possui barra de rolagem interna**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                         |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-164 | Em `/inteligencia-automacao`, o card `Atividade recente` lista 20 itens sem altura máxima nem `overflow-y: auto`, esticando verticalmente toda a página e deixando um grande espaço vazio abaixo da coluna principal. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Baixa            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                              |
+| --------------------------------------------------------------------------------- |
+| 1. Acessar `INTELIGÊNCIA > Inteligência & Automação` (`/inteligencia-automacao`). |
+| 2. Rolar a página até o final acompanhando a coluna direita `Atividade recente`.  |
+
+|                            **Comportamento Esperado**                             |                                 **Comportamento Obtido**                                  |
+| :-------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
+| A caixa `Atividade recente` deve ter altura limitada com rolagem interna própria. | A lista cresce indefinidamente, alongando toda a página e deixando área vazia à esquerda. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Linux Mint 22.3            |
+| Google Chrome 157.0.8103.38        |
+| 19/11/2026                         |
+
+|     **Funcionalidade Afetada**      |                                 **Caso de Teste Relacionado**                                 |
+| :---------------------------------: | :-------------------------------------------------------------------------------------------: |
+| Inteligência / Layout e usabilidade | C28-CT03: Acesso à tela Inteligência & Automação, botão Atualizar e coluna Atividade recente. |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:164](https://jam.dev/c/4b0cf5cf-f808-40ca-b1e7-b695ee71c24a) |
+
+---
+
+### 🐞 **Bug 165: Canal "Apenas painel" pode ser marcado junto com "WhatsApp" e "E-mail" nas configurações de automação**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                           |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-165 | Nos modais `Configurar` de `Risco de Evasão` e `Aniversariantes`, o checkbox `Apenas painel` aparece marcado simultaneamente com `WhatsApp` (e com `E-mail` em Aniversariantes), contradizendo o texto "Apenas painel". |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Baixa            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                              |
+| --------------------------------------------------------------------------------- |
+| 1. Acessar `INTELIGÊNCIA > Inteligência & Automação` (`/inteligencia-automacao`). |
+| 2. Clicar em `Configurar` em `Risco de Evasão` (ou em `Aniversariantes`).         |
+| 3. Observar a seção `Canais de envio`.                                            |
+
+|                                  **Comportamento Esperado**                                   |                        **Comportamento Obtido**                        |
+| :-------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------: |
+| `Apenas painel` deve ser mutuamente exclusivo com `WhatsApp` e `E-mail` (ou chamar `Painel`). | `Apenas painel` fica marcado ao mesmo tempo que `WhatsApp` e `E-mail`. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Linux Mint 22.3            |
+| Google Chrome 157.0.8103.38        |
+| 19/11/2026                         |
+
+|      **Funcionalidade Afetada**       |                      **Caso de Teste Relacionado**                      |
+| :-----------------------------------: | :---------------------------------------------------------------------: |
+| Inteligência / Configuração de canais | C28-CT04: Abertura e inspeção do modal "Configurar" em Risco de Evasão. |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:165](https://jam.dev/c/f2467c54-cf0f-4c52-9c47-d1f96fc58c08) |
+
+---
+
+### 🐞 **Bug 166: Divergências entre métricas e status de automações em "Resultados IA" e "Central de Automações"**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-166 | Há divergências entre as telas de Inteligência e a API: (1) `Avaliações vencendo` exibe `1` em `Resultados IA`, mas `Verificar agora` em `Central de Automações` exibe `"Nenhum aluno com avaliação vencida para mostrar."` e `"Prazo de 1 dias"` (erro de plural e prazo de `1` dia contra `antecedencia_dias: 7` na API); (2) `Relatórios enviados no mês` exibe `—` quando a API retorna `0`; (3) `GET /api/automacoes/1` lista 7 automações com `ativo: 1`, mas a interface mostra `2 automações ativas` e coloca as outras sob `"Em breve trabalhando por você."`. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                                  |
+| ----------------------------------------------------------------------------------------------------- |
+| 1. Em `/inteligencia/resultados`, observar `Avaliações vencendo: 1`.                                  |
+| 2. Abrir `/inteligencia-automacao`, observar `Relatórios enviados no mês: —` e `2 automações ativas`. |
+| 3. Clicar em `Verificar agora` em `Avaliações vencendo` e comparar o texto e a contagem exibidos.     |
+
+|                                   **Comportamento Esperado**                                   |                                    **Comportamento Obtido**                                    |
+| :--------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: |
+| Contagens, prazos, status de automações e textos de plural devem ser consistentes entre telas. | `Resultados IA` mostra `1`, `Verificar agora` mostra `0` (`"Prazo de 1 dias"`) e `0` vira `—`. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Linux Mint 22.3            |
+| Google Chrome 157.0.8103.38        |
+| 19/11/2026                         |
+
+|     **Funcionalidade Afetada**     |                                              **Caso de Teste Relacionado**                                               |
+| :--------------------------------: | :----------------------------------------------------------------------------------------------------------------------: |
+| Inteligência / Avaliações vencendo | C28-CT07: Consulta das automações disponíveis de leitura (Avaliações vencendo, Frequência em queda e Financeiro diário). |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:166](https://jam.dev/c/08c5a4dc-5745-4cc8-addc-68e15e54d962) |
+
+---
+
+### 🐞 **Bug 167: Campos de data em Relatórios aceitam anos irreais (ex.: 14500) sem validação e imprimem no PDF**
+
+| **ID**  | **Descrição**                                                                                                                                                                                                            |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| BUG-167 | Os campos `Data Inicio` e `Data Fim` em `/relatorios` não possuem limite mínimo/máximo de ano nem validação de 4 dígitos, permitindo digitar anos irreais como `14500` e imprimindo essa data diretamente no PDF gerado. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Baixa            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                |
+| ----------------------------------------------------------------------------------- |
+| 1. Acessar `FINANCEIRO > Relatórios` (`/relatorios`) e selecionar `Contas a Pagar`. |
+| 2. Informar um ano fora de faixa (ex.: `14500`) no campo de data.                   |
+| 3. Clicar em `Gerar Relatorio` e abrir o PDF gerado.                                |
+
+|                              **Comportamento Esperado**                              |                             **Comportamento Obtido**                             |
+| :----------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
+| O campo de data deve limitar anos válidos (4 dígitos dentro de uma faixa aceitável). | O sistema aceita o ano `14500`, gera o relatório e imprime a data irreal no PDF. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Linux Mint 22.3            |
+| Google Chrome 157.0.8103.38        |
+| 19/11/2026                         |
+
+| **Funcionalidade Afetada** |                           **Caso de Teste Relacionado**                           |
+| :------------------------: | :-------------------------------------------------------------------------------: |
+|   Relatórios / Validação   | C26-CT09: Geração de relatório com ano fora do intervalo válido (ex.: ano 14500). |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:167](https://jam.dev/c/e186039e-34bd-4dbb-a4a5-90b6f47182ab) |
+
+---
+
+### 🐞 **Bug 168: Contraste muito baixo e legibilidade ruim no modo escuro em "Importar Avaliações"**
+
+| **ID**  | **Descrição**                                                                                                                                                                                       |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-168 | Na tela `/importar-avaliacoes` com o tema escuro ativado, o contraste entre as letras e o fundo é extremamente baixo tanto na etapa `1 Planilha` (onde quase não se enxerga o rótulo) quanto na etapa `2 Conferência`, prejudicando a leitura. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Baixa            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                              |
+| ------------------------------------------------------------------------------------------------- |
+| 1. Acessar o Sifit Unialfa com o modo escuro ativado.                                             |
+| 2. Abrir `/avaliacoes` e clicar em `Importar` (`/importar-avaliacoes`).                           |
+| 3. Observar a legibilidade dos textos na etapa `1 Planilha` e após enviar um arquivo em `2 Conferência`. |
+
+|                                 **Comportamento Esperado**                                  |                                     **Comportamento Obtido**                                     |
+| :-----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
+| Os textos, etapas do stepper e tabela de conferência devem ter contraste adequado no modo escuro. | Letras quase ilegíveis contra o fundo escuro tanto em `1 Planilha` quanto em `2 Conferência`. |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Linux Mint 22.3            |
+| Google Chrome 157.0.8103.38        |
+| 19/11/2026                         |
+
+|      **Funcionalidade Afetada**       |                                           **Caso de Teste Relacionado**                                            |
+| :-----------------------------------: | :----------------------------------------------------------------------------------------------------------------: |
+| Avaliações / Interface (modo escuro)  | C27-CT01 e C27-CT02: Tela Importar Avaliações (`1 Planilha` e `2 Conferência`).                                    |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:168](https://jam.dev/c/f215de82-2c59-4db8-aa7a-d915cd04a84f) |
+
+---
+
+### 🐞 **Bug 169: Erro no servidor ao alterar rapidamente a data no painel "Financeiro do dia"**
+
+| **ID**  | **Descrição**                                                                                                                                                                            |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-169 | No painel `Financeiro do dia` (aberto via `Ver resumo` em `Financeiro diário` na tela `/inteligencia-automacao`), ao alternar a data rapidamente pelas setas/seletor de data, o sistema exibe o modal `"Erro no servidor"`. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :-------------------: | :------------------------: | :--------: |
+|         Média         |           Média            |   Aberto   |
+
+| **Passo a passo para simular o bug**                                                              |
+| ------------------------------------------------------------------------------------------------- |
+| 1. Acessar `INTELIGÊNCIA > Inteligência & Automação` (`/inteligencia-automacao`).                 |
+| 2. Em `Automações disponíveis`, clicar em `Ver resumo` no card `Financeiro diário`.               |
+| 3. Alterar a data rapidamente usando as setas do seletor de data.                                 |
+
+|                                 **Comportamento Esperado**                                  |                             **Comportamento Obtido**                              |
+| :-----------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: |
+| O sistema deve aplicar debounce/tratamento de requisições concorrentes e carregar o resumo sem erro. | Exibe o modal `"Erro no servidor"` ao alternar a data rapidamente.                |
+
+| **Ambiente**                       |
+| ---------------------------------- |
+| Sifit Unialfa                      |
+| https://sifitalfa.centrion.com.br/ |
+| Desktop Linux Mint 22.3            |
+| Google Chrome 157.0.8103.38        |
+| 19/11/2026                         |
+
+|     **Funcionalidade Afetada**     |                                              **Caso de Teste Relacionado**                                               |
+| :--------------------------------: | :----------------------------------------------------------------------------------------------------------------------: |
+| Inteligência / Financeiro diário   | C28-CT07: Consulta das automações disponíveis de leitura (Avaliações vencendo, Frequência em queda e Financeiro diário). |
+
+|                         **Evidência(s)**                          |
+| :---------------------------------------------------------------: |
+| [BUG:169](https://jam.dev/c/08c5a4dc-5745-4cc8-addc-68e15e54d962) |

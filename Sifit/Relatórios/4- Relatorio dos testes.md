@@ -2,7 +2,7 @@
 
 **Sistema testado:** Sifit Centrion
 **Responsável:** Maria Eduarda Pacheco Delazari, RA: 240017; Ville Nunes Figueiredo da Silva, RA: 14534; Keltton Felipe Alves Silveira, RA: 14509; Daniel Satel Pereira, RA: 14567; Rafael Colombo da Silva, RA: 14551
-**Data de execução:** 12/10/2026 a 28/10/2026 e 14/11/2026 a 19/11/2026 (Avaliações, Contas a pagar, Grupos, Modelos de contrato, Box - Turmas, Grupos musculares, Modelos de ficha, Configurações e as telas C29 a C33). Em 24/10/2026, os testes passaram para o endereço indicado abaixo.
+**Data de execução:** 12/10/2026 a 28/10/2026 e 14/11/2026 a 19/11/2026 (Avaliações, Contas a pagar, Grupos, Modelos de contrato, Box - Turmas, Grupos musculares, Modelos de ficha, Configurações, Relatórios, Importar avaliações, Inteligência & Automação / Resultados IA e as telas C29 a C33). Em 24/10/2026, os testes passaram para o endereço indicado abaixo.
 **Ambiente:** Sifit Centrion até 23/10/2026. A partir de 24/10/2026, Sifit Unialfa.
 
 - Sistema operacional: Ubuntu 26.04 LTS, Linux, Linux Mint e Windows 11
@@ -16,13 +16,13 @@
 
 | Total de Casos de Teste | Casos Passaram | Casos Falharam | Bugs Registrados |
 | ----------------------- | -------------- | -------------- | ---------------- |
-| 328                     | 175            | 153            | 151              |
+| 348                     | 181            | 167            | 168              |
 
-Os 328 casos estão nos cenários C01 a C25 e C29 a C33. Um caso falhou quando existe um bug aberto apontando para ele: 153 falharam e 175 passaram. 175 + 153 = 328. O relatório de bugs tem 151 bugs: 148 abertos e 3 cancelados (BUG-025, BUG-026 e BUG-122), que não fazem nenhum caso falhar.
+Os 348 casos estão nos cenários C01 a C33 (todos os 33 módulos do plano). Um caso falhou quando existe um bug aberto apontando para ele: 167 falharam e 181 passaram. 181 + 167 = 348. O relatório de bugs tem 168 bugs (`BUG-001` a `BUG-169`, sem o número `BUG-125`): 165 abertos e 3 cancelados (BUG-025, BUG-026 e BUG-122), que não fazem nenhum caso falhar.
 
 Alguns casos foram executados mais de uma vez, em datas ou endereços diferentes. O resultado do caso junta essas execuções, e a evidência é o vídeo que mostra o resultado registrado. Nos casos C01-CT01, C01-CT02, C02-CT01, C04-CT04, C04-CT10, C06-CT07 e C09-CT03, uma execução passou e outra encontrou a falha; o caso conta como falhou.
 
-Evidências: todos os 328 casos têm evidência, 322 com vídeo no Jam e 6 com print (C05-CT13, C05-CT14, C09-CT05, C09-CT07, C09-CT08, C14-CT09). Todos os 148 bugs abertos têm evidência: 147 com vídeo e 1 com print (BUG-062).
+Evidências: todos os 348 casos têm evidência, 342 com vídeo no Jam e 6 com print (C05-CT13, C05-CT14, C09-CT05, C09-CT07, C09-CT08, C14-CT09). Todos os 165 bugs abertos têm evidência: 164 com vídeo e 1 com print (BUG-062).
 
 ---
 
@@ -54,8 +54,11 @@ Evidências: todos os 328 casos têm evidência, 322 com vídeo no Jam e 6 com p
 | RF22      | Box - Turmas                     | 13             | 5              | 8                | BUG-108, BUG-109, BUG-110, BUG-111, BUG-112, BUG-113, BUG-114                                              |
 | RF23      | Grupos musculares                | 15             | 10             | 5                | BUG-116, BUG-117, BUG-118, BUG-119                                                                         |
 | RF24      | Modelos de ficha                 | 8              | 6              | 2                | BUG-120, BUG-121                                                                                           |
-| RF25      | Configurações                    | 6              | 4              | 2                | BUG-123, BUG-124 (cancelado: BUG-122)                                                                      |
-| RF29      | Local Contas                     | 4              | 1              | 3                | BUG-143, BUG-144, BUG-145, BUG-146                                                                         |
+| RF25      | Configurações                            | 6              | 4              | 2                | BUG-123, BUG-124 (cancelado: BUG-122)                                                                      |
+| RF26      | Relatórios                               | 9              | 3              | 6                | BUG-153, BUG-154, BUG-155, BUG-156, BUG-157, BUG-167                                                       |
+| RF27      | Importar avaliações                      | 3              | 1              | 2                | BUG-158, BUG-159, BUG-168                                                                                  |
+| RF28      | Inteligência & Automação e Resultados IA | 8              | 2              | 6                | BUG-160, BUG-161, BUG-162, BUG-163, BUG-164, BUG-165, BUG-166, BUG-169                                     |
+| RF29      | Local Contas                             | 4              | 1              | 3                | BUG-143, BUG-144, BUG-145, BUG-146                                                                         |
 | RF30      | Bancos e Banco Recorrente        | 7              | 3              | 4                | BUG-126, BUG-127, BUG-128, BUG-129                                                                         |
 | RF31      | Categorias de conta a pagar      | 5              | 1              | 4                | BUG-126, BUG-130, BUG-131, BUG-132                                                                         |
 | RF32      | Métricas do cliente              | 2              | 0              | 2                | BUG-143, BUG-147, BUG-148                                                                                  |
@@ -219,7 +222,24 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, o BUG-126 em RF30 e 
 | BUG-149 | Despesa fixa não salva quando o valor é informado com vírgula (aceita apenas ponto) | Média      | Aberto    |
 | BUG-150 | Visualização de conta a pagar com legibilidade ruim no modo escuro                  | Baixa      | Aberto    |
 | BUG-151 | Menu lateral perde a posição de rolagem e volta ao topo a cada atualização          | Baixa      | Aberto    |
-| BUG-152 | Ausência de paginação na listagem de Despesas Fixas                                 | Baixa      | Aberto    |
+| BUG-152 | Ausência de paginação na listagem de Despesas Fixas                                                                           | Baixa      | Aberto    |
+| BUG-153 | Relatórios de Avaliações, Clientes, Colaboradores e Caixas (Normal) retornam resposta vazia e baixam PDF corrompido (0 bytes) | Crítica    | Aberto    |
+| BUG-154 | Filtro "Tipo de Plano" no relatório de Matrículas não é enviado na requisição                                                 | Alta       | Aberto    |
+| BUG-155 | Erro HTTP 500 ao gerar relatório com datas vazias apesar do indicador "Periodo: Todos"                                        | Alta       | Aberto    |
+| BUG-156 | Tela de Relatórios não valida intervalo invertido (Data Início maior que Data Fim)                                            | Média      | Aberto    |
+| BUG-157 | Textos sem acentuação na tela de Relatórios e opções em branco em "Tipo de Pagamento"                                         | Baixa      | Aberto    |
+| BUG-158 | Tela "Importar Avaliações" não oferece planilha modelo nem lista as colunas obrigatórias                                      | Média      | Aberto    |
+| BUG-159 | Breadcrumb incompleto e ausência de botão "Voltar" em "Importar Avaliações"                                                   | Baixa      | Aberto    |
+| BUG-160 | Inconsistência nos contadores de alunos em risco e período em "Resultados IA"                                                 | Alta       | Aberto    |
+| BUG-161 | "Ver resultados" de Risco de Evasão indica 1 aluno em médio risco, mas exibe lista vazia                                      | Alta       | Aberto    |
+| BUG-162 | Modal "Configurar" de Aniversariantes exibe campos e prévia de Risco de Evasão e omite destinatário "Aluno"                   | Alta       | Aberto    |
+| BUG-163 | Execuções duplicadas no mesmo minuto em "Atividade recente" inflam métricas de automações                                     | Média      | Aberto    |
+| BUG-164 | Coluna "Atividade recente" em Inteligência & Automação não possui barra de rolagem interna                                    | Média      | Aberto    |
+| BUG-165 | Canal "Apenas painel" pode ser marcado junto com "WhatsApp" e "E-mail" nas configurações de automação                         | Média      | Aberto    |
+| BUG-166 | Divergências entre métricas e status de automações em "Resultados IA" e "Central de Automações"                               | Média      | Aberto    |
+| BUG-167 | Campos de data em Relatórios aceitam anos irreais (ex.: 14500) sem validação e imprimem no PDF                                | Média      | Aberto    |
+| BUG-168 | Contraste muito baixo e legibilidade ruim no modo escuro em "Importar Avaliações"                                             | Média      | Aberto    |
+| BUG-169 | Erro no servidor ao alterar rapidamente a data no painel "Financeiro do dia"                                                  | Média      | Aberto    |
 
 ---
 
@@ -227,15 +247,15 @@ O BUG-007 aparece em RF01 e RF02, o BUG-014 em RF02 e RF03, o BUG-126 em RF30 e 
 
 **Casos por status:**
 
-- Passaram: 175
-- Falharam: 153
+- Passaram: 181
+- Falharam: 167
 
 **Severidade dos bugs abertos:**
 
-- Crítica: 3
-- Alta: 30
-- Média: 69
-- Baixa: 46
+- Crítica: 4
+- Alta: 35
+- Média: 78
+- Baixa: 48
 
 **Em revisão:** 0. **Cancelados:** 3 (BUG-025 e BUG-026, os vídeos mostraram o aviso "Preencha este campo."; BUG-122, o vídeo do C25-CT04 mostra a confirmação "Configurações salvas").
 
@@ -275,6 +295,9 @@ As hipóteses abaixo foram levantadas a partir do comportamento na tela, do cons
 - **BUG-126, BUG-129**: as telas de Bancos, Banco Recorrente e Categorias de conta a pagar parecem copiadas de outras telas e não foram terminadas: não estão no menu, abrem fora do layout e a exclusão de banco usa a rota e a mensagem de Tipos de Pagamento.
 - **BUG-127, BUG-128, BUG-131, BUG-132**: o back-end de bancos e categorias aceita nome vazio e nome duplicado, e a tela não valida nada antes de enviar.
 - **BUG-130**: a API retorna as categorias, mas a tabela da tela não as renderiza.
+- **BUG-153, BUG-154, BUG-155, BUG-156, BUG-157, BUG-167**: na tela de Relatórios (`/relatorios`), 4 modelos retornam corpo vazio (`text/html`, 0 bytes) em `POST /api/relatorio/1` e o front-end não verifica o `Content-Type` antes de criar o Blob PDF; o filtro `Tipo de Plano` de Matrículas não é serializado no payload; datas vazias chegam como string vazia e causam HTTP 500 apesar de a tela indicar `Periodo: Todos`; não há validação de intervalo invertido nem de faixa máxima de ano (aceitando `14500`). Como melhoria adicional de UX, os cards estáticos do topo (`Relatorios: 7`, `Saida: PDF`) quase não mudam e agregam pouco valor.
+- **BUG-158, BUG-159, BUG-168**: em Importar Avaliações (`/importar-avaliacoes`), falta validação do cabeçalho do Fineshape (planilha aleatória avança para `2 Conferência`) e falta planilha modelo/referência de colunas; o tema escuro não ajusta adequadamente as cores do stepper e da tabela de conferência (mesmo problema de contraste visto em `BUG-150`).
+- **BUG-160, BUG-161, BUG-162, BUG-163, BUG-164, BUG-165, BUG-166, BUG-169**: em Inteligência & Automação e Resultados IA, há divergência entre as consultas dos resumos e das listas (`Ver resultados` devolve `resumo.medio: 1` com `alunos: []`; `Resultados IA` mostra `0` em risco e `1` avaliação vencendo contra `0` em `Verificar agora`), o modal `Configurar` de Aniversariantes reutiliza o componente/preview de Risco de Evasão, não há debounce/lock contra execuções duplicadas no mesmo minuto nem na troca rápida de datas em `Financeiro do dia` (`BUG-169`), e faltam paginação em `O que o Sifit identificou` e scroll interno em `Atividade recente`.
 
 | Grupo de bugs                                                          | Causa raiz provável                                                                                                                  |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
@@ -293,7 +316,7 @@ No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado.
 
 - Plano de Testes
 - Análise de requisitos
-- Casos de teste (C01 a C25 e C29 a C33), todos com evidência: vídeo no Jam ou print. A pasta `Cenarios de testes/Pendentes de evidencias` ficou vazia
+- Casos de teste (C01 a C33), todos com evidência: vídeo no Jam ou print. A pasta `Cenarios de testes/Pendentes de evidencias` ficou vazia
 - Relatório de bugs, com o vídeo da falha
 - Vídeos no Jam e prints na pasta `Sifit/Evidencias`
 
@@ -301,13 +324,13 @@ No banco (MySQL Workbench, somente leitura), o cliente de teste aparece gravado.
 
 ## ✅ **Conclusão**
 
-Dos 328 casos, 175 passaram e 153 falharam, com 151 bugs registrados: 148 abertos e 3 cancelados. No login, só o usuário inexistente e o logout passaram: o login válido mostra erro no servidor ou entra mostrando o nome Jair, a senha incorreta já mostrou erro no servidor, os campos vazios seguem para a API sem aviso, os espaços nas pontas derrubam o login, o link "Esqueci minha senha" não faz nada e a sessão não é controlada.
+Dos 348 casos distribuídos nos 33 cenários (C01 a C33), 181 passaram e 167 falharam, com 168 bugs registrados: 165 abertos e 3 cancelados (`BUG-025`, `BUG-026` e `BUG-122`). No login, o duplo clique em Entrar (`C01-CT10`), o usuário inexistente e o logout passaram, mas o login válido já mostrou erro no servidor ou entra mostrando o nome Jair, a senha incorreta já mostrou erro no servidor, os campos vazios seguem para a API sem aviso, os espaços nas pontas derrubam o login, o link "Esqueci minha senha" não faz nada e a sessão não é controlada.
 
-As falhas mais graves impedem o uso de módulos centrais. Não é possível cadastrar nem alterar clientes (BUG-035 e BUG-039, severidade Crítica) e fornecedores (BUG-059 e BUG-060). A inativação do plano não é salva (BUG-045). O fechamento de caixa com conferência não é gravado (BUG-072). Não há como registrar o pagamento de conta a pagar (BUG-076). A ficha de treino não abre nem salva (BUG-081). A avaliação realizada não é salva (BUG-066). As anamneses aplicadas não aparecem (BUG-093 e BUG-094). Também se repetem formulários vazios que geram erro 500, respostas da API que expõem comandos SQL, registros em branco aceitos (Atividades, Objetivos de Treino e Tipos de Pagamento) e números que mudam de uma tela para outra (alunos em risco, avaliações pendentes, check-ins do dia, matrículas ativas contra clientes ativos e totais de contas a receber).
+As falhas mais graves impedem o uso de módulos centrais. Não é possível cadastrar nem alterar clientes (BUG-035 e BUG-039, severidade Crítica) e fornecedores (BUG-059 e BUG-060). A inativação do plano não é salva (BUG-045). O fechamento de caixa com conferência não é gravado (BUG-072). Não há como registrar o pagamento de conta a pagar (BUG-076). A ficha de treino não abre nem salva (BUG-081). A avaliação realizada não é salva (BUG-066). As anamneses aplicadas não aparecem (BUG-093 e BUG-094). Em Relatórios, 4 dos 7 modelos baixam arquivos PDF corrompidos de 0 bytes sem aviso (BUG-153, severidade Crítica). Também se repetem formulários vazios que geram erro 500, respostas da API que expõem comandos SQL, registros em branco aceitos (Atividades, Objetivos de Treino e Tipos de Pagamento), ausência de paginação em listagens longas (Despesas Fixas e Resultados IA), baixo contraste no modo escuro (Contas a Pagar e Importar Avaliações) e números que mudam de uma tela para outra (alunos em risco, avaliações pendentes/vencendo, check-ins do dia, matrículas ativas contra clientes ativos e totais de contas a receber).
 
-Funcionam bem a prospecção (12 de 14 casos), as turmas (11 de 13) e a validação do campo obrigatório em Clientes, Matrículas, Avaliações, Fornecedores, Turmas, Bandeiras, Pontuação, Tipos de Documentos, Exercícios e Categorias Crossfit.
+Funcionam bem a prospecção (12 de 14 casos), as turmas (11 de 13), a rejeição de extensão inválida (`.pdf`) em Importar Avaliações e a validação do campo obrigatório em Clientes, Matrículas, Avaliações, Fornecedores, Turmas, Bandeiras, Pontuação, Tipos de Documentos, Exercícios e Categorias Crossfit.
 
-Ficaram fora do escopo: Pagar.me, WhatsApp e Aplicativo. Ainda não têm caso de teste: Relatórios, Importar avaliações, Inteligência & Automação e Resultados IA (RF26 a RF28 no plano). O teste de formulário vazio criou 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12), que devem ser excluídos.
+Ficaram fora do escopo: Pagar.me, WhatsApp e Aplicativo. Todos os 33 módulos previstos no plano (RF01 a RF33) possuem cenários executados e evidenciados. O teste de formulário vazio criou 3 registros em branco no ambiente (Atividades 5, Objetivos de Treino 1 e Tipos de Pagamento 12), que devem ser excluídos.
 
 Em Grupos, Modelos de contrato e Box - Turmas (C20 a C22, testados em 15/11/2026), os modelos de contrato não aparecem na listagem (BUG-106, severidade Alta), o status "Inativo" do grupo não é salvo (BUG-104) e o grupo não pode ser excluído (BUG-105). O cadastro de turmas do Box aceita horário invertido, turma sem dias e vagas negativas (BUG-110 a BUG-112). Ficaram no ambiente os grupos de teste #8, #9 e #10, que não podem ser excluídos nem inativados, e os modelos de contrato 8 e 9, que não aparecem na listagem. A modalidade e as turmas de teste do Box ficaram inativas.
 
@@ -318,5 +341,7 @@ Em Avaliações e Contas a pagar (C10 e C13, gravados em 19/11/2026), a despesa 
 Em Bancos, Banco Recorrente e Categorias de conta a pagar (C30 e C31, testados em 15/11/2026), as três telas não têm item no menu e só abrem pelo link (BUG-126). O botão de excluir banco chama a exclusão de Tipo de Pagamento com o id do banco (BUG-129, severidade Crítica): no teste, só não apagou o tipo de pagamento 11 porque ele estava em uso. A listagem de categorias fica vazia (BUG-130), e as duas telas aceitam registros sem nome e duplicados. Na gravação do C30-CT07, a exclusão do Banco Brasil mostrou "Erro ao deletar tipo de pagamento", e o tipo de pagamento 1 (Dinheiro) continuou cadastrado. Como a exclusão de banco não é segura, os registros de teste não foram excluídos: bancos 8 a 17 e categorias 25 a 29 e as gravadas nos vídeos.
 
 Em Local Contas e Métricas do cliente (C29 e C32, testados em 15/11/2026), as duas telas não têm item no menu e abrem sem o menu lateral (BUG-143). Local Contas não funciona: a listagem fica vazia embora a API devolva 4 locais (BUG-144) e o formulário da tela é o de Despesas Fixas, que responde erro 500 com a mensagem "Erro ao deletar Despesa" (BUG-145 e BUG-146). Métricas do cliente não mostra nenhuma métrica nem gráfico, embora a API devolva os números (BUG-147), e as listas de clientes aparecem abertas, vazias e não fecham (BUG-148).
+
+Em Relatórios, Importar avaliações e Inteligência & Automação / Resultados IA (C26 a C28, testados em 19/11/2026), quatro modelos de relatório (`Avaliacoes`, `Clientes`, `Colaboradores` e `Caixas` Normal) baixam PDF de 0 bytes corrompido sem aviso (BUG-153, severidade Crítica), datas vazias geram HTTP 500 mesmo exibindo `Periodo: Todos` (BUG-155), o filtro `Tipo de Plano` em Matrículas não é enviado à API (BUG-154) e datas aceitam período invertido e anos irreais como `14500` (BUG-156 e BUG-167). Em Importar Avaliações, arquivos `.pdf` são rejeitados corretamente, mas não há planilha modelo nem validação de cabeçalho do Fineshape (BUG-158), falta botão `Voltar`/breadcrumb completo (BUG-159) e o contraste no modo escuro compromete a leitura (BUG-168). Em Inteligência & Automação e Resultados IA, os contadores de risco e avaliações vencendo divergem entre si e com a lista `Ver resultados` vazia (BUG-160, BUG-161 e BUG-166), o modal `Configurar` de Aniversariantes exibe campos e prévia de Risco de Evasão (BUG-162), há execuções duplicadas no mesmo minuto em `Atividade recente` sem barra de rolagem interna (BUG-163 e BUG-164), `Apenas painel` pode ser marcado junto com WhatsApp/E-mail (BUG-165) e alternar datas rapidamente em `Financeiro do dia` exibe erro no servidor (BUG-169).
 
 Até 23/10/2026 os testes usaram https://sifit.centrion.com.br/. A partir de 24/10/2026, usam https://sifitalfa.centrion.com.br/. A versão interna do sistema não foi anotada.
