@@ -283,32 +283,62 @@
 
 ---
 
-### Caso de Teste 10: Prevenção de duplo clique no botão Entrar.
+### Caso de Teste 10: Duplo clique no botão Entrar com credenciais válidas.
 
-| ID       | Descrição                                                                                                      |
-| :------- | :------------------------------------------------------------------------------------------------------------- |
-| C01-CT10 | Verificar se cliques rápidos repetidos no botão "Entrar" são tratados sem erro nem efeito colateral indevido.  |
+| ID       | Descrição                                                                                                                             |
+| :------- | :------------------------------------------------------------------------------------------------------------------------------------ |
+| C01-CT10 | Verificar se cliques rápidos repetidos no botão "Entrar" com credenciais válidas são tratados sem erro nem efeito colateral indevido. |
 
-| **Pré-condições**                                                                                                 |
+| **Pré-condições**                                                                                                |
+| :--------------------------------------------------------------------------------------------------------------- |
+| O navegador está na tela de login do Sifit Unialfa (https://sifitalfa.centrion.com.br/), sem sessão autenticada. |
+
+| **Passos**                                                                                  |
+| :------------------------------------------------------------------------------------------ |
+| **DADO** que estamos na página de login do Sifit Unialfa                                    |
+| **E** preenchemos o campo Login com "marcelo_zandonadi" e a senha válida "password"         |
+| **QUANDO** clicarmos rapidamente 5 vezes seguidas no botão "Entrar"                         |
+| **ENTÃO** o sistema deverá processar o login normalmente, sem erro ou comportamento anômalo |
+
+| **Critérios de aceitação**                                                                                 |
+| :--------------------------------------------------------------------------------------------------------- |
+| Múltiplos cliques rápidos em "Entrar" não devem gerar erro inesperado nem quebrar o fluxo de autenticação. |
+
+| **Resultado da execução**                                                                                                                                                                             |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Passou.** Em 19/11/2026 (Desktop Windows 11, Google Chrome 157.0.8103.79), com credenciais válidas e 5 cliques rápidos no botão "Entrar", nada mudou de forma anômala e o fluxo seguiu normalmente. |
+
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/777c8d1b-921f-4a3c-a0d3-ea01c777fc90) |
+
+---
+
+### Caso de Teste 11: Duplo clique no botão Entrar com senha inválida.
+
+| ID       | Descrição                                                                                                          |
+| :------- | :----------------------------------------------------------------------------------------------------------------- |
+| C01-CT11 | Verificar se cliques rápidos repetidos no botão "Entrar" com senha inválida mostram só o aviso esperado, sem erro. |
+
+| **Pré-condições**                                                                                                |
+| :--------------------------------------------------------------------------------------------------------------- |
+| O navegador está na tela de login do Sifit Unialfa (https://sifitalfa.centrion.com.br/), sem sessão autenticada. |
+
+| **Passos**                                                                                                        |
 | :---------------------------------------------------------------------------------------------------------------- |
-| O navegador está na tela de login do Sifit Unialfa (https://sifitalfa.centrion.com.br/), sem sessão autenticada.  |
+| **DADO** que estamos na página de login do Sifit Unialfa                                                          |
+| **E** preenchemos o campo Login com "marcelo_zandonadi" e a senha inválida "87654321"                             |
+| **QUANDO** clicarmos rapidamente várias vezes seguidas no botão "Entrar"                                          |
+| **ENTÃO** o sistema deverá exibir apenas o aviso de usuário ou senha inválidos, sem erro ou comportamento anômalo |
 
-| **Passos**                                                                                                                         |
-| :--------------------------------------------------------------------------------------------------------------------------------- |
-| **DADO** que estamos na página de login do Sifit Unialfa                                                                           |
-| **E** preenchemos o campo Login com "marcelo_zandonadi" e a senha válida ("password") — e em outra tentativa senha inválida ("87654321") |
-| **QUANDO** clicarmos rapidamente várias vezes seguidas (duplo clique / 5 cliques) no botão "Entrar"                                |
-| **ENTÃO** o sistema deverá processar o login normalmente (com credenciais válidas) ou exibir o aviso esperado (com senha inválida), sem erro ou comportamento anômalo |
+| **Critérios de aceitação**                                                                                        |
+| :---------------------------------------------------------------------------------------------------------------- |
+| Múltiplos cliques rápidos em "Entrar" com senha inválida não devem gerar erro inesperado nem quebrar a validação. |
 
-| **Critérios de aceitação**                                                                                               |
-| :----------------------------------------------------------------------------------------------------------------------- |
-| Múltiplos cliques rápidos em "Entrar" não devem gerar erro inesperado nem quebrar o fluxo de autenticação ou validação.  |
+| **Resultado da execução**                                                                                                                                                                                |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Passou.** Em 19/11/2026 (Desktop Windows 11, Google Chrome 157.0.8103.79), com senha inválida ("87654321") e múltiplos cliques, o sistema exibiu apenas o erro esperado de usuário ou senha inválidos. |
 
-| **Resultado da execução**                                                                                                                                                                                                    |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Passou.** Em 19/11/2026 (Desktop Windows 11, Google Chrome 157.0.8103.79), com credenciais válidas e 5 cliques rápidos no botão "Entrar", nada mudou de forma anômala e o fluxo seguiu normalmente; com senha inválida ("87654321") e múltiplos cliques, exibiu apenas o erro esperado de usuário/senha inválidos. |
-
-| **Evidência(s)**                                                                      |
-| :------------------------------------------------------------------------------------ |
-| [Vídeo (credenciais válidas)](https://jam.dev/c/777c8d1b-921f-4a3c-a0d3-ea01c777fc90) |
-| [Vídeo (senha inválida)](https://jam.dev/c/14840f5f-a5a9-41d2-b8cb-8dd664c3f6b5)      |
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/14840f5f-a5a9-41d2-b8cb-8dd664c3f6b5) |

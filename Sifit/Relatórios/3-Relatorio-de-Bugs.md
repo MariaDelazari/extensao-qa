@@ -5728,24 +5728,24 @@
 
 ### 🐞 **Bug 149: Despesa fixa não salva quando o valor é informado com vírgula (aceita apenas ponto)**
 
-| **ID**  | **Descrição**                                                                                                                                                                     |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ID**  | **Descrição**                                                                                                                                                                         |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | BUG-149 | Na alteração de despesa fixa, ao informar o valor usando vírgula como separador decimal (ex.: "89,90"), o sistema não salva a despesa; o salvamento só ocorre usando ponto ("89.90"). |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
 |         Média         |           Média            |   Aberto   |
 
-| **Passo a passo para simular o bug**                                 |
-| -------------------------------------------------------------------- |
-| 1. Acessar a tela de despesas fixas do SIFIT.                        |
-| 2. Clicar em "Visualizar" de uma despesa fixa cadastrada.            |
-| 3. Informar o valor usando vírgula (ex.: "89,90").                   |
+| **Passo a passo para simular o bug**                                   |
+| ---------------------------------------------------------------------- |
+| 1. Acessar a tela de despesas fixas do SIFIT.                          |
+| 2. Clicar em "Visualizar" de uma despesa fixa cadastrada.              |
+| 3. Informar o valor usando vírgula (ex.: "89,90").                     |
 | 4. Clicar no botão "Salvar Despesa" e observar que a edição não salva. |
-| 5. Repetir informando "89.90" com ponto e observar que salva.        |
+| 5. Repetir informando "89.90" com ponto e observar que salva.          |
 
-|                                 **Comportamento Esperado**                                  |                            **Comportamento Obtido**                            |
-| :-----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------: |
+|                                 **Comportamento Esperado**                                  |                             **Comportamento Obtido**                             |
+| :-----------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
 | O campo de valor deve aceitar o separador decimal com vírgula (padrão brasileiro) e salvar. | Com vírgula ("89,90") a alteração não é salva; só salva ao usar ponto ("89.90"). |
 
 | **Ambiente**                       |
@@ -5756,9 +5756,9 @@
 | Google Chrome 157.0.8103.79        |
 | 19/11/2026                         |
 
-| **Funcionalidade Afetada** |            **Caso de Teste Relacionado**             |
-| :------------------------: | :--------------------------------------------------: |
-| Despesas Fixas / Alteração | C13-CT15: Alteração e inativação de despesa fixa.    |
+| **Funcionalidade Afetada** |           **Caso de Teste Relacionado**           |
+| :------------------------: | :-----------------------------------------------: |
+| Despesas Fixas / Alteração | C13-CT15: Alteração e inativação de despesa fixa. |
 
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
@@ -5768,24 +5768,24 @@
 
 ### 🐞 **Bug 150: Visualização de conta a pagar com legibilidade ruim no modo escuro**
 
-| **ID**  | **Descrição**                                                                                                                                             |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ID**  | **Descrição**                                                                                                                                                       |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | BUG-150 | Ao abrir a janela "Visualizar Conta a Pagar" com o tema escuro ativado, a visualização apresenta contraste/legibilidade ruim (no modo claro é exibida normalmente). |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
 |         Baixa         |           Baixa            |   Aberto   |
 
-| **Passo a passo para simular o bug**                        |
-| ----------------------------------------------------------- |
-| 1. Acessar o Sifit Unialfa com o modo escuro ativado.       |
-| 2. Abrir a tela de Contas a Pagar (`/contas-pagar`).        |
-| 3. Clicar no botão "Visualizar" de uma conta cadastrada.    |
-| 4. Comparar a legibilidade com o modo claro.                |
+| **Passo a passo para simular o bug**                     |
+| -------------------------------------------------------- |
+| 1. Acessar o Sifit Unialfa com o modo escuro ativado.    |
+| 2. Abrir a tela de Contas a Pagar (`/contas-pagar`).     |
+| 3. Clicar no botão "Visualizar" de uma conta cadastrada. |
+| 4. Comparar a legibilidade com o modo claro.             |
 
-|                            **Comportamento Esperado**                            |                     **Comportamento Obtido**                      |
-| :------------------------------------------------------------------------------: | :---------------------------------------------------------------: |
-| Os dados da conta devem permanecer legíveis tanto no modo claro quanto no escuro. | No modo claro a leitura é boa, mas no modo escuro fica ruim.      |
+|                            **Comportamento Esperado**                             |                   **Comportamento Obtido**                   |
+| :-------------------------------------------------------------------------------: | :----------------------------------------------------------: |
+| Os dados da conta devem permanecer legíveis tanto no modo claro quanto no escuro. | No modo claro a leitura é boa, mas no modo escuro fica ruim. |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -5807,19 +5807,19 @@
 
 ### 🐞 **Bug 151: Menu lateral perde a posição de rolagem e volta ao topo a cada atualização**
 
-| **ID**  | **Descrição**                                                                                                                                |
-| ------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-151 | Ao rolar o menu lateral para selecionar uma opção mais abaixo e navegar ou atualizar a página, o menu volta sempre para o topo da rolagem.   |
+| **ID**  | **Descrição**                                                                                                                              |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| BUG-151 | Ao rolar o menu lateral para selecionar uma opção mais abaixo e navegar ou atualizar a página, o menu volta sempre para o topo da rolagem. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
 |         Baixa         |           Baixa            |   Aberto   |
 
-| **Passo a passo para simular o bug**                           |
-| -------------------------------------------------------------- |
-| 1. Acessar o Sifit Unialfa.                                    |
+| **Passo a passo para simular o bug**                                   |
+| ---------------------------------------------------------------------- |
+| 1. Acessar o Sifit Unialfa.                                            |
 | 2. Rolar o menu lateral até os itens inferiores (ex.: Contas a Pagar). |
-| 3. Selecionar um item ou atualizar a página.                   |
+| 3. Selecionar um item ou atualizar a página.                           |
 
 |                       **Comportamento Esperado**                       |                   **Comportamento Obtido**                   |
 | :--------------------------------------------------------------------: | :----------------------------------------------------------: |
@@ -5845,8 +5845,8 @@
 
 ### 🐞 **Bug 152: Ausência de paginação na listagem de Despesas Fixas**
 
-| **ID**  | **Descrição**                                                                                                             |
-| ------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **ID**  | **Descrição**                                                                                                                |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | BUG-152 | A tela de Despesas Fixas exibe a listagem sem controles de paginação (problema também percebido em outras telas do sistema). |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
@@ -5858,8 +5858,8 @@
 | 1. Acessar o menu "Despesas Fixas" do Sifit Unialfa. |
 | 2. Observar o rodapé da listagem de despesas.        |
 
-|                     **Comportamento Esperado**                     |               **Comportamento Obtido**               |
-| :----------------------------------------------------------------: | :--------------------------------------------------: |
+|                          **Comportamento Esperado**                           |           **Comportamento Obtido**            |
+| :---------------------------------------------------------------------------: | :-------------------------------------------: |
 | A listagem deve oferecer controles de paginação para navegar entre registros. | A listagem não possui controles de paginação. |
 
 | **Ambiente**                       |
@@ -5870,9 +5870,9 @@
 | Google Chrome 157.0.8103.79        |
 | 19/11/2026                         |
 
-|  **Funcionalidade Afetada**   |        **Caso de Teste Relacionado**         |
-| :---------------------------: | :------------------------------------------: |
-| Despesas Fixas / Listagem     | C13-CT10: Acesso à tela de despesas fixas.   |
+| **Funcionalidade Afetada** |           **Caso de Teste Relacionado**            |
+| :------------------------: | :------------------------------------------------: |
+| Despesas Fixas / Listagem  | C13-CT17: Paginação da listagem de despesas fixas. |
 
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
@@ -6074,8 +6074,8 @@
 
 ### 🐞 **Bug 158: Tela "Importar Avaliações" não oferece planilha modelo nem lista as colunas obrigatórias**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                              |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | BUG-158 | A tela `/importar-avaliacoes` exige que a primeira linha da planilha `.csv`/`.tsv`/`.txt` contenha o cabeçalho com o nome exato das colunas exportadas do Fineshape, mas não oferece download de planilha modelo nem documenta quais colunas são obrigatórias; ao enviar uma planilha aleatória fora do padrão, o sistema ainda avança para `2 Conferência`. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
@@ -6088,8 +6088,8 @@
 | 2. Ler as instruções da etapa `1 Planilha` em `/importar-avaliacoes` procurando modelo/colunas.    |
 | 3. Enviar uma planilha aleatória fora do formato do Fineshape e observar que avança à conferência. |
 
-|                                 **Comportamento Esperado**                                  |                                        **Comportamento Obtido**                                         |
-| :-----------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: |
+|                                 **Comportamento Esperado**                                  |                                         **Comportamento Obtido**                                         |
+| :-----------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
 | Disponibilizar arquivo modelo ou listar colunas obrigatórias e validar cabeçalho ao enviar. | Não há modelo nem lista de colunas, e uma planilha aleatória fora do padrão avança para `2 Conferência`. |
 
 | **Ambiente**                       |
@@ -6100,8 +6100,8 @@
 | Google Chrome 157.0.8103.38        |
 | 19/11/2026                         |
 
-|      **Funcionalidade Afetada**       |                                       **Caso de Teste Relacionado**                                       |
-| :-----------------------------------: | :-------------------------------------------------------------------------------------------------------: |
+|      **Funcionalidade Afetada**       |                                         **Caso de Teste Relacionado**                                         |
+| :-----------------------------------: | :-----------------------------------------------------------------------------------------------------------: |
 | Avaliações / Importação de avaliações | C27-CT02: Instruções de importação, ausência de planilha modelo e envio de planilha fora do padrão Fineshape. |
 
 |                         **Evidência(s)**                          |
@@ -6138,9 +6138,9 @@
 | Google Chrome 157.0.8103.38        |
 | 19/11/2026                         |
 
-|      **Funcionalidade Afetada**      |                            **Caso de Teste Relacionado**                            |
-| :----------------------------------: | :---------------------------------------------------------------------------------: |
-| Avaliações / Navegação da importação | C27-CT01: Acesso, navegação e legibilidade da tela Importar Avaliações.             |
+|      **Funcionalidade Afetada**      |                      **Caso de Teste Relacionado**                      |
+| :----------------------------------: | :---------------------------------------------------------------------: |
+| Avaliações / Navegação da importação | C27-CT01: Acesso, navegação e legibilidade da tela Importar Avaliações. |
 
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
@@ -6150,8 +6150,8 @@
 
 ### 🐞 **Bug 160: Inconsistência nos contadores de alunos em risco e período em "Resultados IA"**
 
-| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | BUG-160 | Em `/inteligencia/resultados`, o card `Alunos em risco identificados` permanece em `0` nos 4 períodos (`Hoje`, `Últimos 7 dias`, `Últimos 30 dias` e `Últimos 90 dias`), contradizendo o bloco lateral `Inteligência Sifit` (`1 aluno(s) com risco de evasão`) e `Automações mais eficientes` (`48 identificados` em 30 dias e `56 identificados` em 90 dias). Além disso, `Avaliações vencendo` (`1`) e `Alunos inadimplentes monitorados` (`46`) não mudam com o período e a lista `O que o Sifit identificou` trunca em 15 itens mesmo em 90 dias (23 execuções), sem paginação. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
@@ -6453,22 +6453,22 @@
 
 ### 🐞 **Bug 168: Contraste muito baixo e legibilidade ruim no modo escuro em "Importar Avaliações"**
 
-| **ID**  | **Descrição**                                                                                                                                                                                       |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ID**  | **Descrição**                                                                                                                                                                                                                                  |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | BUG-168 | Na tela `/importar-avaliacoes` com o tema escuro ativado, o contraste entre as letras e o fundo é extremamente baixo tanto na etapa `1 Planilha` (onde quase não se enxerga o rótulo) quanto na etapa `2 Conferência`, prejudicando a leitura. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
 |         Média         |           Baixa            |   Aberto   |
 
-| **Passo a passo para simular o bug**                                                              |
-| ------------------------------------------------------------------------------------------------- |
-| 1. Acessar o Sifit Unialfa com o modo escuro ativado.                                             |
-| 2. Abrir `/avaliacoes` e clicar em `Importar` (`/importar-avaliacoes`).                           |
+| **Passo a passo para simular o bug**                                                                     |
+| -------------------------------------------------------------------------------------------------------- |
+| 1. Acessar o Sifit Unialfa com o modo escuro ativado.                                                    |
+| 2. Abrir `/avaliacoes` e clicar em `Importar` (`/importar-avaliacoes`).                                  |
 | 3. Observar a legibilidade dos textos na etapa `1 Planilha` e após enviar um arquivo em `2 Conferência`. |
 
-|                                 **Comportamento Esperado**                                  |                                     **Comportamento Obtido**                                     |
-| :-----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
+|                                    **Comportamento Esperado**                                     |                                   **Comportamento Obtido**                                    |
+| :-----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
 | Os textos, etapas do stepper e tabela de conferência devem ter contraste adequado no modo escuro. | Letras quase ilegíveis contra o fundo escuro tanto em `1 Planilha` quanto em `2 Conferência`. |
 
 | **Ambiente**                       |
@@ -6479,9 +6479,9 @@
 | Google Chrome 157.0.8103.38        |
 | 19/11/2026                         |
 
-|      **Funcionalidade Afetada**       |                                           **Caso de Teste Relacionado**                                            |
-| :-----------------------------------: | :----------------------------------------------------------------------------------------------------------------: |
-| Avaliações / Interface (modo escuro)  | C27-CT01 e C27-CT02: Tela Importar Avaliações (`1 Planilha` e `2 Conferência`).                                    |
+|      **Funcionalidade Afetada**      |                          **Caso de Teste Relacionado**                          |
+| :----------------------------------: | :-----------------------------------------------------------------------------: |
+| Avaliações / Interface (modo escuro) | C27-CT01 e C27-CT02: Tela Importar Avaliações (`1 Planilha` e `2 Conferência`). |
 
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |
@@ -6491,23 +6491,23 @@
 
 ### 🐞 **Bug 169: Erro no servidor ao alterar rapidamente a data no painel "Financeiro do dia"**
 
-| **ID**  | **Descrição**                                                                                                                                                                            |
-| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ID**  | **Descrição**                                                                                                                                                                                                               |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | BUG-169 | No painel `Financeiro do dia` (aberto via `Ver resumo` em `Financeiro diário` na tela `/inteligencia-automacao`), ao alternar a data rapidamente pelas setas/seletor de data, o sistema exibe o modal `"Erro no servidor"`. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
 |         Média         |           Média            |   Aberto   |
 
-| **Passo a passo para simular o bug**                                                              |
-| ------------------------------------------------------------------------------------------------- |
-| 1. Acessar `INTELIGÊNCIA > Inteligência & Automação` (`/inteligencia-automacao`).                 |
-| 2. Em `Automações disponíveis`, clicar em `Ver resumo` no card `Financeiro diário`.               |
-| 3. Alterar a data rapidamente usando as setas do seletor de data.                                 |
+| **Passo a passo para simular o bug**                                                |
+| ----------------------------------------------------------------------------------- |
+| 1. Acessar `INTELIGÊNCIA > Inteligência & Automação` (`/inteligencia-automacao`).   |
+| 2. Em `Automações disponíveis`, clicar em `Ver resumo` no card `Financeiro diário`. |
+| 3. Alterar a data rapidamente usando as setas do seletor de data.                   |
 
-|                                 **Comportamento Esperado**                                  |                             **Comportamento Obtido**                              |
-| :-----------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: |
-| O sistema deve aplicar debounce/tratamento de requisições concorrentes e carregar o resumo sem erro. | Exibe o modal `"Erro no servidor"` ao alternar a data rapidamente.                |
+|                                      **Comportamento Esperado**                                      |                      **Comportamento Obtido**                      |
+| :--------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------: |
+| O sistema deve aplicar debounce/tratamento de requisições concorrentes e carregar o resumo sem erro. | Exibe o modal `"Erro no servidor"` ao alternar a data rapidamente. |
 
 | **Ambiente**                       |
 | ---------------------------------- |
@@ -6517,9 +6517,9 @@
 | Google Chrome 157.0.8103.38        |
 | 19/11/2026                         |
 
-|     **Funcionalidade Afetada**     |                                              **Caso de Teste Relacionado**                                               |
-| :--------------------------------: | :----------------------------------------------------------------------------------------------------------------------: |
-| Inteligência / Financeiro diário   | C28-CT07: Consulta das automações disponíveis de leitura (Avaliações vencendo, Frequência em queda e Financeiro diário). |
+|    **Funcionalidade Afetada**    |                                              **Caso de Teste Relacionado**                                               |
+| :------------------------------: | :----------------------------------------------------------------------------------------------------------------------: |
+| Inteligência / Financeiro diário | C28-CT07: Consulta das automações disponíveis de leitura (Avaliações vencendo, Frequência em queda e Financeiro diário). |
 
 |                         **Evidência(s)**                          |
 | :---------------------------------------------------------------: |

@@ -102,7 +102,7 @@ Verificar manualmente os requisitos funcionais do Sifit: o login, a página inic
 - Os casos deste plano foram executados e têm vídeo ou print.
 - As falhas encontradas foram registradas no relatório de bugs, com vídeo.
 - O relatório final informa quantos casos passaram, quantos falharam e qual bug está ligado a cada um.
-- Situação atual: todos os 348 casos (C01 a C33) e todos os 165 bugs abertos têm evidência em vídeo ou print (ver o relatório final).
+- Situação atual: todos os 350 casos (C01 a C33) e todos os 165 bugs abertos têm evidência em vídeo ou print (ver o relatório final).
 
 ---
 
@@ -124,41 +124,41 @@ Em 24/10/2026, os testes passaram para https://sifitalfa.centrion.com.br/. Em 19
 
 ### 📋 9. **Módulos a Serem Testados**
 
-| Código RF | Módulo                           | Prioridade |
-| --------- | -------------------------------- | ---------- |
-| RF01      | Login na plataforma              | Alta       |
-| RF02      | Página inicial do dashboard      | Alta       |
-| RF03      | Dashboard                        | Média      |
-| RF04      | Gestão de clientes               | Alta       |
-| RF05      | Gestão de planos                 | Alta       |
-| RF06      | Gestão de matrículas             | Alta       |
-| RF07      | Contas a receber                 | Alta       |
-| RF08      | Gestão de fornecedores           | Baixa      |
-| RF09      | Check-in e presenças             | Alta       |
-| RF10      | Avaliações físicas               | Média      |
-| RF11      | Turmas e SifitBox                | Média      |
-| RF12      | Caixas                           | Alta       |
-| RF13      | Contas a pagar e despesas fixas  | Alta       |
-| RF14      | Fichas de treino e exercícios    | Média      |
-| RF15      | Prospecção                       | Média      |
-| RF16      | Colaboradores e funções          | Média      |
-| RF17      | Produtos                         | Baixa      |
-| RF18      | Fichas de anamnese               | Baixa      |
-| RF19      | Cadastros de apoio               | Média      |
-| RF20      | Grupos                           | Média      |
-| RF21      | Modelos de contrato              | Média      |
-| RF22      | Box - Turmas                     | Média      |
-| RF23      | Grupos musculares                | Média      |
-| RF24      | Modelos de ficha                 | Média      |
-| RF25      | Configurações                               | Média      |
-| RF26      | Relatórios                                  | Alta       |
-| RF27      | Importar avaliações                         | Média      |
-| RF28      | Inteligência & Automação e Resultados IA    | Alta       |
-| RF29      | Local Contas                                | Média      |
-| RF30      | Bancos e Banco recorrente        | Média      |
-| RF31      | Categorias de conta a pagar      | Baixa      |
-| RF32      | Métricas do cliente              | Baixa      |
-| RF33      | Modelos e categorias de anamnese | Baixa      |
+| Código RF | Módulo                                   | Prioridade |
+| --------- | ---------------------------------------- | ---------- |
+| RF01      | Login na plataforma                      | Alta       |
+| RF02      | Página inicial do dashboard              | Alta       |
+| RF03      | Dashboard                                | Média      |
+| RF04      | Gestão de clientes                       | Alta       |
+| RF05      | Gestão de planos                         | Alta       |
+| RF06      | Gestão de matrículas                     | Alta       |
+| RF07      | Contas a receber                         | Alta       |
+| RF08      | Gestão de fornecedores                   | Baixa      |
+| RF09      | Check-in e presenças                     | Alta       |
+| RF10      | Avaliações físicas                       | Média      |
+| RF11      | Turmas e SifitBox                        | Média      |
+| RF12      | Caixas                                   | Alta       |
+| RF13      | Contas a pagar e despesas fixas          | Alta       |
+| RF14      | Fichas de treino e exercícios            | Média      |
+| RF15      | Prospecção                               | Média      |
+| RF16      | Colaboradores e funções                  | Média      |
+| RF17      | Produtos                                 | Baixa      |
+| RF18      | Fichas de anamnese                       | Baixa      |
+| RF19      | Cadastros de apoio                       | Média      |
+| RF20      | Grupos                                   | Média      |
+| RF21      | Modelos de contrato                      | Média      |
+| RF22      | Box - Turmas                             | Média      |
+| RF23      | Grupos musculares                        | Média      |
+| RF24      | Modelos de ficha                         | Média      |
+| RF25      | Configurações                            | Média      |
+| RF26      | Relatórios                               | Alta       |
+| RF27      | Importar avaliações                      | Média      |
+| RF28      | Inteligência & Automação e Resultados IA | Alta       |
+| RF29      | Local Contas                             | Média      |
+| RF30      | Bancos e Banco recorrente                | Média      |
+| RF31      | Categorias de conta a pagar              | Baixa      |
+| RF32      | Métricas do cliente                      | Baixa      |
+| RF33      | Modelos e categorias de anamnese         | Baixa      |
 
 **Cenário de cada requisito:** o número do RF é o número do cenário e do arquivo. O RF01 é testado em C01 (`CT_RF01_ Login na plataforma.md`), o RF02 em C02, e assim por diante, até o RF33 em C33.
 
@@ -223,10 +223,10 @@ Os códigos dos registros não ficam fixos neste documento, porque o ambiente é
 
 Estes casos foram especificados inicialmente em 07/10/2026 e executados em 19/11/2026 com evidência em vídeo, sendo incorporados aos respectivos cenários.
 
-| Caso proposto                                          | Requisito | Situação                           |
-| :----------------------------------------------------- | :-------- | :--------------------------------- |
-| Prevenção de duplo clique no botão Entrar              | RF01      | Executado em 19/11/2026 (C01-CT10) |
-| Data de término anterior à data de início na matrícula | RF06      | Executado em 19/11/2026 (C06-CT15) |
+| Caso proposto                                          | Requisito | Situação                                      |
+| :----------------------------------------------------- | :-------- | :-------------------------------------------- |
+| Prevenção de duplo clique no botão Entrar              | RF01      | Executado em 19/11/2026 (C01-CT10 e C01-CT11) |
+| Data de término anterior à data de início na matrícula | RF06      | Executado em 19/11/2026 (C06-CT15)            |
 
 ---
 

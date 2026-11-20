@@ -163,19 +163,19 @@
 | :---------------------------------------------------------------- |
 | O usuário deve estar autenticado e existir fornecedor cadastrado. |
 
-| **Passos**                                                                                                                                                                                             |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **DADO** que abrimos a janela "Nova Conta"                                                                                                                                                             |
-| **E** informamos o título "Teste Daniel Satel", o fornecedor "Centrion Web", o valor R$ 50,00, a categoria "Contas do dia a dia", o local "Teste2" e os demais campos obrigatórios do formulário       |
-| **QUANDO** clicarmos no botão "Salvar"                                                                                                                                                                 |
-| **ENTÃO** a conta deverá constar na listagem com status "PENDENTE"                                                                                                                                     |
+| **Passos**                                                                                                                                                                                       |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **DADO** que abrimos a janela "Nova Conta"                                                                                                                                                       |
+| **E** informamos o título "Teste Daniel Satel", o fornecedor "Centrion Web", o valor R$ 50,00, a categoria "Contas do dia a dia", o local "Teste2" e os demais campos obrigatórios do formulário |
+| **QUANDO** clicarmos no botão "Salvar"                                                                                                                                                           |
+| **ENTÃO** a conta deverá constar na listagem com status "PENDENTE"                                                                                                                               |
 
 | **Critérios de aceitação**                               |
 | :------------------------------------------------------- |
 | O sistema deve cadastrar a conta e exibi-la na listagem. |
 
-| **Resultado da execução**                                                                                                                                                                                                                                          |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Resultado da execução**                                                                                                                                                                                                                                    |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Passou.** O sistema se comportou como descrito no critério de aceitação. Observação: o roteiro original listava apenas parte dos campos do formulário "Nova Conta", sendo necessário preencher os demais campos exibidos na tela para concluir o cadastro. |
 
 | **Evidência(s)**                                                |
@@ -204,8 +204,8 @@
 | :------------------------------------------------------------ |
 | A visualização deve apresentar os dados completos e legíveis. |
 
-| **Resultado da execução**                                                                                                                                                      |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Resultado da execução**                                                                                                                                                                    |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Falhou.** São exibidos códigos internos, campo de código vazio e data no formato aaaa-mm-dd. Além disso, a visualização apresenta legibilidade ruim no modo escuro (melhor no modo claro). |
 
 | **Evidência(s)**                                                |
@@ -451,9 +451,9 @@
 | :------------------------------------------------------------- |
 | O sistema deve salvar as alterações e a inativação da despesa. |
 
-| **Resultado da execução**                                                                                                                                                  |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Falhou.** Ao informar o valor com vírgula ("89,90"), o sistema não salva a alteração; o salvamento só ocorre ao usar ponto ("89.90").                                    |
+| **Resultado da execução**                                                                                                               |
+| :-------------------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** Ao informar o valor com vírgula ("89,90"), o sistema não salva a alteração; o salvamento só ocorre ao usar ponto ("89.90"). |
 
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |
@@ -489,3 +489,33 @@
 | **Evidência(s)**                                                |
 | :-------------------------------------------------------------- |
 | [Vídeo](https://jam.dev/c/0d3e9333-ba58-457a-8c72-86eaf8199c28) |
+
+---
+
+### Caso de Teste 17: Paginação da listagem de despesas fixas.
+
+| ID       | Descrição                                                                                    |
+| :------- | :------------------------------------------------------------------------------------------- |
+| C13-CT17 | Verificar se a listagem de despesas fixas oferece paginação para navegar entre os registros. |
+
+| **Pré-condições**                                     |
+| :---------------------------------------------------- |
+| O usuário deve estar autenticado na plataforma SIFIT. |
+
+| **Passos**                                                  |
+| :---------------------------------------------------------- |
+| **DADO** que acessamos o menu "Despesas Fixas"              |
+| **QUANDO** rolarmos até o fim da listagem de despesas       |
+| **ENTÃO** a listagem deverá oferecer controles de paginação |
+
+| **Critérios de aceitação**                           |
+| :--------------------------------------------------- |
+| O sistema deve paginar a listagem de despesas fixas. |
+
+| **Resultado da execução**                                                                                                      |
+| :----------------------------------------------------------------------------------------------------------------------------- |
+| **Falhou.** A listagem mostra todos os registros de uma vez, com "14 registro(s)" no rodapé, e não tem controles de paginação. |
+
+| **Evidência(s)**                                                |
+| :-------------------------------------------------------------- |
+| [Vídeo](https://jam.dev/c/1556f6f8-af7a-421f-8f56-264d36298ec9) |
